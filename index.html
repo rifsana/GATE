@@ -92,25 +92,46 @@
       font-size: 15px;
     }
 
-    /* ─── Top Navigation (Single-Row on Desktop with Center Tabs, Responsive on Mobile) ─── */
-    .top-nav {
-      background: var(--bg-surface);
-      border-bottom: 1px solid var(--border);
+    /* ─── Top Floating Pill Navbar (iosdev.in style) ─── */
+    .top-nav-wrapper {
       position: sticky;
-      top: 0;
-      z-index: 100;
-      backdrop-filter: blur(16px);
+      top: 16px;
+      z-index: 1000;
+      width: 100%;
+      padding: 0 20px;
+      pointer-events: none;
+      margin-bottom: 24px;
     }
 
-    .top-nav-inner {
-      max-width: 1200px;
+    .floating-pill-nav {
+      pointer-events: auto;
+      max-width: 1120px;
       margin: 0 auto;
-      height: 60px;
+      height: 56px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      border-radius: 9999px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 28px;
-      gap: 16px;
+      padding: 5px 10px 5px 22px;
+      gap: 12px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+      transition: all 0.2s ease;
+    }
+
+    [data-theme="dark"] .floating-pill-nav {
+      background: rgba(18, 20, 26, 0.85);
+      border-color: rgba(255, 255, 255, 0.12);
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.45);
+    }
+
+    [data-theme="light"] .floating-pill-nav {
+      background: rgba(255, 255, 255, 0.9);
+      border-color: rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
     }
 
     .brand-wrap {
@@ -121,13 +142,14 @@
       font-weight: 700;
       letter-spacing: -0.3px;
       flex-shrink: 0;
+      color: var(--text-1);
     }
 
     .brand-pill {
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 700;
-      padding: 3px 8px;
-      border-radius: var(--radius-sm);
+      padding: 2px 8px;
+      border-radius: 9999px;
       background: var(--accent-muted);
       color: var(--accent);
       border: 1px solid rgba(56,189,248,0.3);
@@ -138,23 +160,20 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 6px;
+      gap: 2px;
       flex: 1;
     }
 
     .tab-btn {
-      padding: 7px 14px;
-      border-radius: var(--radius-sm);
-      border: 1px solid transparent;
+      padding: 7px 15px;
+      border-radius: 9999px;
+      border: none;
       background: transparent;
-      color: var(--text-3);
+      color: var(--text-2);
       font-size: 13.5px;
       font-weight: 500;
       cursor: pointer;
       white-space: nowrap;
-      display: flex;
-      align-items: center;
-      gap: 6px;
       transition: all 0.15s ease;
       font-family: var(--font-sans);
     }
@@ -168,7 +187,6 @@
       color: var(--text-1);
       font-weight: 600;
       background: var(--bg-surface-elevated);
-      border-color: var(--border-strong);
     }
 
     .nav-actions {
@@ -178,73 +196,103 @@
       flex-shrink: 0;
     }
 
-    .tool-btn {
-      height: 34px;
-      padding: 0 12px;
-      border-radius: var(--radius-sm);
+    .tool-btn.icon-only {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
       border: 1px solid var(--border);
       background: transparent;
-      color: var(--text-3);
+      color: var(--text-2);
       font-size: 13px;
-      font-weight: 500;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      justify-content: center;
       transition: all 0.15s ease;
-      white-space: nowrap;
     }
 
-    .tool-btn:hover {
+    .tool-btn.icon-only:hover {
       color: var(--text-1);
       border-color: var(--border-strong);
       background: var(--bg-surface-elevated);
     }
 
-    .tool-btn.active {
-      color: var(--text-1);
-      border-color: var(--border-strong);
-      background: var(--bg-surface-elevated);
+    .sync-pill-btn {
+      height: 38px;
+      padding: 0 18px;
+      border-radius: 9999px;
+      border: none;
+      font-size: 13px;
       font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.15s ease;
+      font-family: var(--font-sans);
+    }
+
+    [data-theme="light"] .sync-pill-btn {
+      background: #0b0c10;
+      color: #ffffff;
+    }
+
+    [data-theme="dark"] .sync-pill-btn {
+      background: #f1f5f9;
+      color: #0b0c10;
+    }
+
+    .sync-pill-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    .sync-status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--text-3);
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    .sync-status-dot.ok {
+      background: var(--success);
+      box-shadow: 0 0 8px var(--success);
     }
 
     /* Mobile & Tablet Responsive (< 960px) */
     @media (max-width: 960px) {
-      .top-nav-inner {
-        flex-wrap: wrap;
+      .top-nav-wrapper {
+        top: 8px;
+        padding: 0 10px;
+        margin-bottom: 16px;
+      }
+      .floating-pill-nav {
+        border-radius: 20px;
         height: auto;
-        padding: 10px 16px 10px;
+        flex-wrap: wrap;
+        padding: 10px 14px 10px;
         gap: 10px;
       }
-      .brand-wrap {
-        order: 1;
-      }
-      .nav-actions {
-        order: 2;
-      }
+      .brand-wrap { order: 1; }
+      .nav-actions { order: 2; }
       .nav-tabs-wrapper {
         order: 3;
         width: 100%;
         overflow-x: auto;
         justify-content: flex-start;
         padding-top: 6px;
-        padding-bottom: 4px;
         border-top: 1px solid var(--border);
         scrollbar-width: none;
       }
-      .nav-tabs-wrapper::-webkit-scrollbar {
-        display: none;
-      }
-      .tab-btn {
-        flex-shrink: 0;
-        padding: 6px 12px;
-        font-size: 13px;
-      }
+      .nav-tabs-wrapper::-webkit-scrollbar { display: none; }
+      .tab-btn { padding: 6px 12px; font-size: 13px; }
     }
 
     @media (max-width: 480px) {
       .brand-pill { display: none; }
-      .tool-btn span { display: none; }
+      .sync-pill-btn { padding: 0 12px; height: 34px; font-size: 12px; }
     }
 
     /* ─── Cloud Sync Modal ────────────────────────────────────────── */
@@ -1009,8 +1057,8 @@
 <body>
 
   <!-- Navigation: 2-row responsive -->
-  <header class="top-nav" id="top-nav">
-    <div class="top-nav-inner">
+  <div class="top-nav-wrapper">
+    <header class="floating-pill-nav" id="top-nav">
       <!-- Brand Left -->
       <div class="brand-wrap">
         <i class="fa-solid fa-graduation-cap" style="color: var(--accent);"></i>
@@ -1018,56 +1066,51 @@
         <span class="brand-pill">IIT Madras</span>
       </div>
 
-      <!-- Center Tabs -->
+      <!-- Center Nav Tabs -->
       <div class="nav-tabs-wrapper">
         <button class="tab-btn active" onclick="switchTab('today')" id="tab-btn-today">
-          <i class="fa-solid fa-bolt" style="font-size: 11px;"></i>
-          <span>Today</span>
+          Today
         </button>
         <button class="tab-btn" onclick="switchTab('syllabus')" id="tab-btn-syllabus">
-          <i class="fa-solid fa-book" style="font-size: 11px;"></i>
-          <span>Syllabus</span>
+          Syllabus
         </button>
         <button class="tab-btn" onclick="switchTab('resources')" id="tab-btn-resources">
-          <i class="fa-solid fa-folder-open" style="font-size: 11px;"></i>
-          <span>Resources</span>
+          Resources
         </button>
         <button class="tab-btn" onclick="switchTab('roadmap')" id="tab-btn-roadmap">
-          <i class="fa-solid fa-timeline" style="font-size: 11px;"></i>
-          <span>139-Day Roadmap</span>
+          139-Day Roadmap
         </button>
         <button class="tab-btn" onclick="switchTab('mistakes')" id="tab-btn-mistakes">
-          <i class="fa-solid fa-triangle-exclamation" style="font-size: 11px;"></i>
-          <span>Mistake Vault</span>
+          Mistake Vault
         </button>
       </div>
 
       <!-- Actions Right -->
       <div class="nav-actions">
-        <!-- Cloud Sync -->
-        <button class="tool-btn" onclick="openCloudSyncModal()" id="btn-cloud" title="Cloud Sync">
-          <span class="sync-status-dot" id="sync-dot"></span>
-          <span>Sync</span>
-        </button>
-
         <!-- Theme toggle -->
-        <button class="tool-btn" onclick="toggleAppTheme()" title="Toggle Theme" id="btn-theme-toggle">
+        <button class="tool-btn icon-only" onclick="toggleAppTheme()" title="Toggle Theme" id="btn-theme-toggle">
           <i class="fa-solid fa-moon"></i>
         </button>
 
         <!-- Download backup -->
-        <button class="tool-btn" onclick="exportDataFile()" title="Export Backup">
+        <button class="tool-btn icon-only" onclick="exportDataFile()" title="Export Backup">
           <i class="fa-solid fa-download"></i>
         </button>
 
         <!-- Upload backup -->
-        <button class="tool-btn" onclick="document.getElementById('importFilePicker').click()" title="Import Backup">
+        <button class="tool-btn icon-only" onclick="document.getElementById('importFilePicker').click()" title="Import Backup">
           <i class="fa-solid fa-upload"></i>
         </button>
         <input type="file" id="importFilePicker" style="display:none;" accept=".json" onchange="importDataFile(event)">
+
+        <!-- Cloud Sync (Pill button like 'My Profile' in iosdev.in) -->
+        <button class="sync-pill-btn" onclick="openCloudSyncModal()" id="btn-cloud" title="Cloud Sync">
+          <span class="sync-status-dot" id="sync-dot"></span>
+          <span>Sync</span>
+        </button>
       </div>
-    </div>
-  </header>
+    </header>
+  </div>
 
   <!-- Cloud Sync Modal -->
   <div class="modal-overlay" id="cloud-modal">
