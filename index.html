@@ -92,7 +92,7 @@
       font-size: 15px;
     }
 
-    /* ─── Top Navigation: 2-row responsive layout ─────────────────── */
+    /* ─── Top Navigation (Single-Row on Desktop with Center Tabs, Responsive on Mobile) ─── */
     .top-nav {
       background: var(--bg-surface);
       border-bottom: 1px solid var(--border);
@@ -102,35 +102,16 @@
       backdrop-filter: blur(16px);
     }
 
-    /* Row 1: Brand + Actions (Centered max-width matching app-main) */
-    .nav-row-top {
-      height: 56px;
-      max-width: 1060px;
+    .top-nav-inner {
+      max-width: 1200px;
       margin: 0 auto;
-      width: 100%;
+      height: 60px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 0 28px;
-      gap: 12px;
+      gap: 16px;
     }
-
-    /* Row 2: Tab strip (Centered tabs matching content) */
-    .nav-row-tabs {
-      border-top: 1px solid var(--border);
-      max-width: 1060px;
-      margin: 0 auto;
-      width: 100%;
-      padding: 0 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-      overflow-x: auto;
-      scrollbar-width: none;
-      height: 44px;
-    }
-    .nav-row-tabs::-webkit-scrollbar { display: none; }
 
     .brand-wrap {
       display: flex;
@@ -153,19 +134,18 @@
       font-family: var(--font-mono);
     }
 
-    /* Hide pill on very small screens */
-    @media (max-width: 400px) {
-      .brand-pill { display: none; }
-    }
-
     .nav-tabs-wrapper {
-      display: contents; /* children flow directly into .nav-row-tabs */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      flex: 1;
     }
 
     .tab-btn {
-      padding: 0 14px;
-      height: 44px;
-      border: none;
+      padding: 7px 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
       background: transparent;
       color: var(--text-3);
       font-size: 13.5px;
@@ -175,20 +155,20 @@
       display: flex;
       align-items: center;
       gap: 6px;
-      transition: color 0.15s ease, background 0.15s ease;
-      border-bottom: 2px solid transparent;
-      flex-shrink: 0;
+      transition: all 0.15s ease;
       font-family: var(--font-sans);
     }
 
     .tab-btn:hover {
       color: var(--text-1);
+      background: var(--bg-surface-elevated);
     }
 
     .tab-btn.active {
       color: var(--text-1);
       font-weight: 600;
-      border-bottom-color: var(--accent);
+      background: var(--bg-surface-elevated);
+      border-color: var(--border-strong);
     }
 
     .nav-actions {
@@ -228,11 +208,43 @@
       font-weight: 600;
     }
 
-    /* Responsive adjustments */
-    @media (max-width: 680px) {
-      .nav-row-top { padding: 0 16px; height: 52px; }
-      .nav-row-tabs { padding: 0 12px; justify-content: flex-start; }
-      .tool-btn span { display: none; } /* hide text labels, show icons only */
+    /* Mobile & Tablet Responsive (< 960px) */
+    @media (max-width: 960px) {
+      .top-nav-inner {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 16px 10px;
+        gap: 10px;
+      }
+      .brand-wrap {
+        order: 1;
+      }
+      .nav-actions {
+        order: 2;
+      }
+      .nav-tabs-wrapper {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-top: 6px;
+        padding-bottom: 4px;
+        border-top: 1px solid var(--border);
+        scrollbar-width: none;
+      }
+      .nav-tabs-wrapper::-webkit-scrollbar {
+        display: none;
+      }
+      .tab-btn {
+        flex-shrink: 0;
+        padding: 6px 12px;
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .brand-pill { display: none; }
+      .tool-btn span { display: none; }
     }
 
     /* ─── Cloud Sync Modal ────────────────────────────────────────── */
@@ -998,14 +1010,39 @@
 
   <!-- Navigation: 2-row responsive -->
   <header class="top-nav" id="top-nav">
-    <!-- Row 1: Brand + Actions -->
-    <div class="nav-row-top">
+    <div class="top-nav-inner">
+      <!-- Brand Left -->
       <div class="brand-wrap">
         <i class="fa-solid fa-graduation-cap" style="color: var(--accent);"></i>
         <span>GATE CS 2027</span>
         <span class="brand-pill">IIT Madras</span>
       </div>
 
+      <!-- Center Tabs -->
+      <div class="nav-tabs-wrapper">
+        <button class="tab-btn active" onclick="switchTab('today')" id="tab-btn-today">
+          <i class="fa-solid fa-bolt" style="font-size: 11px;"></i>
+          <span>Today</span>
+        </button>
+        <button class="tab-btn" onclick="switchTab('syllabus')" id="tab-btn-syllabus">
+          <i class="fa-solid fa-book" style="font-size: 11px;"></i>
+          <span>Syllabus</span>
+        </button>
+        <button class="tab-btn" onclick="switchTab('resources')" id="tab-btn-resources">
+          <i class="fa-solid fa-folder-open" style="font-size: 11px;"></i>
+          <span>Resources</span>
+        </button>
+        <button class="tab-btn" onclick="switchTab('roadmap')" id="tab-btn-roadmap">
+          <i class="fa-solid fa-timeline" style="font-size: 11px;"></i>
+          <span>139-Day Roadmap</span>
+        </button>
+        <button class="tab-btn" onclick="switchTab('mistakes')" id="tab-btn-mistakes">
+          <i class="fa-solid fa-triangle-exclamation" style="font-size: 11px;"></i>
+          <span>Mistake Vault</span>
+        </button>
+      </div>
+
+      <!-- Actions Right -->
       <div class="nav-actions">
         <!-- Cloud Sync -->
         <button class="tool-btn" onclick="openCloudSyncModal()" id="btn-cloud" title="Cloud Sync">
@@ -1027,17 +1064,8 @@
         <button class="tool-btn" onclick="document.getElementById('importFilePicker').click()" title="Import Backup">
           <i class="fa-solid fa-upload"></i>
         </button>
-        <input type="file" id="importFilePicker" style="display:none" onchange="importDataFile(event)" accept=".json">
+        <input type="file" id="importFilePicker" style="display:none;" accept=".json" onchange="importDataFile(event)">
       </div>
-    </div>
-
-    <!-- Row 2: Scrollable Tab Strip -->
-    <div class="nav-row-tabs">
-      <button class="tab-btn active" onclick="switchMainTab('tab-today', this)">Today</button>
-      <button class="tab-btn" onclick="switchMainTab('tab-syllabus', this)">Syllabus</button>
-      <button class="tab-btn" onclick="switchMainTab('tab-resources', this)">Resources</button>
-      <button class="tab-btn" onclick="switchMainTab('tab-roadmap', this)">139-Day Roadmap</button>
-      <button class="tab-btn" onclick="switchMainTab('tab-mistakes', this)">Mistake Vault</button>
     </div>
   </header>
 
