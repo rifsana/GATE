@@ -102,9 +102,12 @@
       backdrop-filter: blur(16px);
     }
 
-    /* Row 1: Brand + Actions */
+    /* Row 1: Brand + Actions (Centered max-width matching app-main) */
     .nav-row-top {
       height: 56px;
+      max-width: 1060px;
+      margin: 0 auto;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -112,13 +115,17 @@
       gap: 12px;
     }
 
-    /* Row 2: Tab strip */
+    /* Row 2: Tab strip (Centered tabs matching content) */
     .nav-row-tabs {
       border-top: 1px solid var(--border);
+      max-width: 1060px;
+      margin: 0 auto;
+      width: 100%;
       padding: 0 20px;
       display: flex;
       align-items: center;
-      gap: 2px;
+      justify-content: center;
+      gap: 4px;
       overflow-x: auto;
       scrollbar-width: none;
       height: 44px;
@@ -224,7 +231,7 @@
     /* Responsive adjustments */
     @media (max-width: 680px) {
       .nav-row-top { padding: 0 16px; height: 52px; }
-      .nav-row-tabs { padding: 0 12px; }
+      .nav-row-tabs { padding: 0 12px; justify-content: flex-start; }
       .tool-btn span { display: none; } /* hide text labels, show icons only */
     }
 
