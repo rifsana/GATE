@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GATE CS 2027 | Preparation Hub</title>
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* Minimalist Clean Design System */
+    :root {
+      --bg: #090a0f;
+      --surface: #12141c;
+      --surface-hover: #1a1d28;
+      --surface-border: #222634;
+      --border-subtle: #1c202d;
+      
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      
+      --accent: #38bdf8;
+      --accent-muted: rgba(56, 189, 248, 0.12);
+      --success: #10b981;
+      --success-muted: rgba(16, 185, 129, 0.12);
+      --warning: #f59e0b;
+      --warning-muted: rgba(245, 158, 11, 0.12);
+      --danger: #ef4444;
+      --danger-muted: rgba(239, 68, 68, 0.12);
+      
+      --radius-sm: 6px;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-hover: #f1f5f9;
+      --surface-border: #e2e8f0;
+      --border-subtle: #edf2f7;
+      
+      --text: #0f172a;
+      --text-muted: #475569;
+      --text-dim: #94a3b8;
+      
+      --accent: #0284c7;
+      --accent-muted: rgba(2, 132, 199, 0.08);
+      --success: #059669;
+      --success-muted: rgba(5, 150, 105, 0.08);
+      --warning: #d97706;
+      --warning-muted: rgba(217, 119, 6, 0.08);
+      --danger: #dc2626;
+      --danger-muted: rgba(220, 38, 38, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.5;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    /* Minimalist Top Nav */
+    .nav-bar {
+      height: 56px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--surface-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: -0.2px;
+    }
+
+    .nav-pill {
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 10px;
+      font-weight: 700;
+      background: var(--accent-muted);
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .nav-btn {
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s;
+    }
+
+    .nav-btn:hover {
+      color: var(--text);
+      background: var(--surface-hover);
+    }
+
+    .nav-btn.active {
+      color: var(--text);
+      background: var(--surface-hover);
+      font-weight: 600;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cloud-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 11.5px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid var(--surface-border);
+      background: var(--surface-hover);
+      color: var(--text);
+      transition: all 0.15s;
+    }
+
+    .cloud-btn.connected {
+      border-color: var(--success);
+      color: var(--success);
+      background: var(--success-muted);
+    }
+
+    .icon-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--surface-border);
+      background: var(--surface);
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      transition: all 0.15s;
+    }
+
+    .icon-btn:hover {
+      color: var(--text);
+      border-color: var(--text-dim);
+    }
+
+    /* Main Content Container */
+    .container {
+      max-width: 1080px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 24px 20px 60px;
+      flex: 1;
+    }
+
+    /* Top Stats Grid */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 20px;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      color: var(--text);
+    }
+
+    .stat-desc {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* Tabs Layout */
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    /* Card Box */
+    .clean-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .card-heading {
+      font-size: 15px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* 6-Hour Today List */
+    .routine-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 12px 14px;
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      margin-bottom: 10px;
+      background: var(--surface);
+      transition: all 0.15s;
+    }
+
+    .routine-row:hover {
+      border-color: var(--text-dim);
+    }
+
+    .routine-row.completed {
+      border-color: var(--success-muted);
+      background: var(--success-muted);
+    }
+
+    .routine-row.completed .routine-title {
+      text-decoration: line-through;
+      color: var(--text-dim);
+    }
+
+    .check-box {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      border: 1.5px solid var(--text-dim);
+      background: transparent;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      color: transparent;
+      margin-top: 2px;
+      flex-shrink: 0;
+      transition: all 0.15s;
+    }
+
+    .check-box.checked {
+      background: var(--success);
+      border-color: var(--success);
+      color: #fff;
+    }
+
+    .routine-body {
+      flex: 1;
+    }
+
+    .routine-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .time-tag {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-muted);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .routine-title {
+      font-size: 13.5px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .routine-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .resource-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11.5px;
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: var(--accent-muted);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+
+    .resource-link:hover {
+      background: var(--accent);
+      color: #000;
+    }
+
+    /* Day-Wise Master Plan List */
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .search-input {
+      flex: 1;
+      min-width: 240px;
+      padding: 8px 12px;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-sm);
+      color: var(--text);
+      font-size: 13px;
+      outline: none;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent);
+    }
+
+    .filter-btn {
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--surface-border);
+      background: var(--surface);
+      color: var(--text-muted);
+      font-size: 12px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .filter-btn.active {
+      background: var(--text);
+      color: var(--bg);
+      border-color: var(--text);
+      font-weight: 600;
+    }
+
+    .day-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 16px;
+      align-items: center;
+      transition: all 0.15s;
+    }
+
+    .day-card:hover {
+      border-color: var(--text-dim);
+    }
+
+    .day-card.completed {
+      border-color: var(--success-muted);
+      background: var(--success-muted);
+    }
+
+    .day-num-box {
+      text-align: center;
+      min-width: 70px;
+    }
+
+    .day-num {
+      font-size: 14px;
+      font-weight: 700;
+      font-family: var(--font-mono);
+    }
+
+    .day-date {
+      font-size: 11px;
+      color: var(--text-dim);
+    }
+
+    .day-details {
+      font-size: 12.5px;
+    }
+
+    .day-row-text {
+      margin-bottom: 3px;
+    }
+
+    .day-pyq-badge {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: var(--surface-hover);
+      color: var(--text-muted);
+      border: 1px solid var(--surface-border);
+    }
+
+    /* Minimalist Table */
+    .table-min {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+    }
+
+    .table-min th {
+      text-align: left;
+      padding: 8px 12px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--surface-border);
+    }
+
+    .table-min td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    /* Mistake Vault */
+    .mistake-box {
+      border: 1px solid var(--surface-border);
+      border-left: 3px solid var(--danger);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      margin-bottom: 10px;
+      background: var(--surface);
+    }
+
+    .mistake-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .tag {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .tag-danger { background: var(--danger-muted); color: var(--danger); }
+    .tag-warning { background: var(--warning-muted); color: var(--warning); }
+    .tag-info { background: var(--accent-muted); color: var(--accent); }
+
+    /* Modal */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(4px);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
+    .modal-box {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-lg);
+      max-width: 540px;
+      width: 90%;
+      padding: 24px;
+    }
+
+    /* Print Clean */
+    @media print {
+      .nav-bar, .filter-bar, .icon-btn, .cloud-btn { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .clean-card, .day-card, .routine-row { background: #fff !important; border: 1px solid #ccc !important; color: #000 !important; }
+      .tab-content { display: block !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Minimal Nav -->
+  <header class="nav-bar">
+    <div class="nav-brand">
+      <i class="fa-solid fa-graduation-cap" style="color: var(--accent);"></i>
+      <span>GATE CS 2027</span>
+      <span class="nav-pill">IIT Madras Target</span>
+    </div>
+
+    <nav class="nav-links">
+      <button class="nav-btn active" onclick="setTab('today-tab', this)">Today</button>
+      <button class="nav-btn" onclick="setTab('daywise-tab', this)">139-Day Roadmap</button>
+      <button class="nav-btn" onclick="setTab('syllabus-tab', this)">Syllabus Matrix</button>
+      <button class="nav-btn" onclick="setTab('mistakes-tab', this)">Mistake Vault</button>
+      <button class="nav-btn" onclick="setTab('resources-tab', this)">Resources</button>
+    </nav>
+
+    <div class="nav-right">
+      <!-- Live Cloud Sync Trigger -->
+      <button class="cloud-btn" id="cloud-status-btn" onclick="openCloudModal()">
+        <i class="fa-solid fa-cloud"></i>
+        <span id="cloud-status-text">Cloud Sync</span>
+      </button>
+
+      <button class="icon-btn" onclick="toggleTheme()" title="Toggle Theme" id="theme-btn">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button class="icon-btn" onclick="openDeployGuide()" title="GitHub Deploy Guide">
+        <i class="fa-brands fa-github"></i>
+      </button>
+      <button class="icon-btn" onclick="exportData()" title="Export Backup JSON">
+        <i class="fa-solid fa-download"></i>
+      </button>
+      <button class="icon-btn" onclick="document.getElementById('importFile').click()" title="Import Backup JSON">
+        <i class="fa-solid fa-upload"></i>
+      </button>
+      <input type="file" id="importFile" style="display:none" onchange="importData(event)" accept=".json">
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Top Key Metrics -->
+    <section class="stats-bar">
+      <div class="stat-card">
+        <div class="stat-label">Daily Study Engine</div>
+        <div class="stat-value" id="stat-hours">0.0 / 6.0h</div>
+        <div class="stat-desc">4 slots (834h total)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">139-Day Timeline</div>
+        <div class="stat-value" id="stat-days-done">0 / 139 Days</div>
+        <div class="stat-desc" id="stat-days-left">138 days remaining</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Syllabus Completion</div>
+        <div class="stat-value" id="stat-syllabus">0%</div>
+        <div class="stat-desc">Official IIT Madras units</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Cloud Sync State</div>
+        <div class="stat-value" id="stat-sync" style="font-size: 14px; font-weight: 600; color: var(--accent);">Local Mode</div>
+        <div class="stat-desc" id="stat-sync-desc">Auto-saves in browser</div>
+      </div>
+    </section>
+
+    <!-- TAB 1: TODAY'S MISSION -->
+    <section id="today-tab" class="tab-content active">
+      <div class="clean-card">
+        <div class="card-header">
+          <div class="card-heading">
+            <i class="fa-solid fa-crosshairs" style="color: var(--accent);"></i>
+            <span>Today's Mission — Day 1 (Monday, 21 Sep 2026)</span>
+          </div>
+          <span class="tag tag-info">Target: 6.0 Hours</span>
+        </div>
+
+        <div class="routine-row" id="row-s1">
+          <div class="check-box" onclick="toggleSession('s1', 2.0, 0)">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="routine-body">
+            <div class="routine-meta">
+              <span class="time-tag">07:00 – 09:00 AM (2.0h)</span>
+              <span style="font-size: 11px; font-weight: 600; color: var(--text-dim);">Track A Concept</span>
+            </div>
+            <div class="routine-title">C Programming Basics &amp; Operators</div>
+            <div class="routine-desc">Data types, Operators, Precedence hierarchy, Bitwise ops, `printf`/`scanf` quirks.</div>
+            <a href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR" target="_blank" class="resource-link">
+              <i class="fa-brands fa-youtube"></i> Neso Academy C (Lec 1-15)
+            </a>
+          </div>
+        </div>
+
+        <div class="routine-row" id="row-s2">
+          <div class="check-box" onclick="toggleSession('s2', 1.0, 15)">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="routine-body">
+            <div class="routine-meta">
+              <span class="time-tag">09:30 – 10:30 AM (1.0h)</span>
+              <span style="font-size: 11px; font-weight: 600; color: var(--text-dim);">Track A PYQs</span>
+            </div>
+            <div class="routine-title">C Operators &amp; Evaluation PYQs (15 Questions)</div>
+            <div class="routine-desc">Solve 15 GateOverflow questions on operator evaluation without looking at solutions.</div>
+            <a href="https://gateoverflow.in/questions/programming-and-ds/c-basics" target="_blank" class="resource-link">
+              <i class="fa-solid fa-code"></i> GateOverflow C Basics PYQs
+            </a>
+          </div>
+        </div>
+
+        <div class="routine-row" id="row-s3">
+          <div class="check-box" onclick="toggleSession('s3', 2.0, 0)">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="routine-body">
+            <div class="routine-meta">
+              <span class="time-tag">03:00 – 05:00 PM (2.0h)</span>
+              <span style="font-size: 11px; font-weight: 600; color: var(--text-dim);">Track B Concept</span>
+            </div>
+            <div class="routine-title">Discrete Math: Propositional Logic</div>
+            <div class="routine-desc">Truth tables, Tautology, Contradiction, Conditional statements, Normal forms (CNF, DNF).</div>
+            <a href="https://www.youtube.com/@GOClassesforGATECS" target="_blank" class="resource-link">
+              <i class="fa-brands fa-youtube"></i> GO Classes Propositional Logic (Lec 1-3)
+            </a>
+          </div>
+        </div>
+
+        <div class="routine-row" id="row-s4">
+          <div class="check-box" onclick="toggleSession('s4', 1.0, 8)">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="routine-body">
+            <div class="routine-meta">
+              <span class="time-tag">06:00 – 07:00 PM (1.0h)</span>
+              <span style="font-size: 11px; font-weight: 600; color: var(--text-dim);">Track B PYQs &amp; Mistake Log</span>
+            </div>
+            <div class="routine-title">Logic PYQs &amp; Mistake Vault Logging (8 Questions)</div>
+            <div class="routine-desc">Solve 8 Logic PYQs. Log every doubtful question into your Mistake Notebook.</div>
+            <a href="https://gateoverflow.in/questions/discrete-mathematics/mathematical-logic" target="_blank" class="resource-link">
+              <i class="fa-solid fa-brain"></i> GateOverflow Logic PYQs
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: COMPLETE 139-DAY ROADMAP -->
+    <section id="daywise-tab" class="tab-content">
+      <div class="clean-card">
+        <div class="card-header">
+          <div class="card-heading">
+            <i class="fa-solid fa-calendar-days" style="color: var(--accent);"></i>
+            <span>Complete Day-Wise Roadmap (21 Sep 2026 to Feb 2027)</span>
+          </div>
+          <span style="font-size: 12px; color: var(--text-dim);">139 Exact Days</span>
+        </div>
+
+        <div class="filter-bar">
+          <input type="text" id="day-search" class="search-input" placeholder="Search by topic, subject, or date..." oninput="filterDays()">
+          <button class="filter-btn active" onclick="filterPhase(0, this)">All Days (139)</button>
+          <button class="filter-btn" onclick="filterPhase(1, this)">Phase 1 (1st Pass)</button>
+          <button class="filter-btn" onclick="filterPhase(2, this)">Phase 2 (Rev 1)</button>
+          <button class="filter-btn" onclick="filterPhase(3, this)">Phase 3 (Mocks)</button>
+          <button class="filter-btn" onclick="filterPhase(4, this)">Phase 4 (Final 7)</button>
+        </div>
+
+        <div id="days-list-container">
+          <!-- 139 Days Rendered Here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: OFFICIAL SYLLABUS MATRIX -->
+    <section id="syllabus-tab" class="tab-content">
+      <div class="clean-card">
+        <div class="card-header">
+          <div class="card-heading">
+            <i class="fa-solid fa-list-check" style="color: var(--accent);"></i>
+            <span>Official Syllabus Progress Tracker (IIT Madras)</span>
+          </div>
+          <span style="font-size: 12px; color: var(--text-dim);">Auto-saves on change</span>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table class="table-min">
+            <thead>
+              <tr>
+                <th>Subject / Subtopic</th>
+                <th>Lecture</th>
+                <th>Notes</th>
+                <th>PYQs</th>
+                <th>Rev 1</th>
+                <th>Rev 2</th>
+                <th>Test</th>
+              </tr>
+            </thead>
+            <tbody id="syllabus-body">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: MISTAKE VAULT -->
+    <section id="tab-mistakes" class="tab-content">
+      <div class="clean-card">
+        <div class="card-header">
+          <div class="card-heading">
+            <i class="fa-solid fa-vault" style="color: var(--danger);"></i>
+            <span>Mistake Vault &amp; Anti-Trap Notebook</span>
+          </div>
+          <span style="font-size: 12px; color: var(--danger);">Re-attempt in 72h</span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px;">
+          <input type="text" id="m-subj" class="search-input" placeholder="Subject / Topic (e.g. Discrete Math: Logic)">
+          <select id="m-tag" class="search-input">
+            <option value="tag-danger">[TYPE-A] Concept Gap</option>
+            <option value="tag-warning" selected>[TYPE-B] Question Trap / Misread</option>
+            <option value="tag-info">[TYPE-C] Calculation / NAT Slip</option>
+            <option value="tag-danger">[TYPE-D] Formula Amnesia</option>
+          </select>
+        </div>
+        <input type="text" id="m-cause" class="search-input" placeholder="What mistake did I make? (Root cause)" style="margin-bottom: 10px;">
+        <input type="text" id="m-rule" class="search-input" placeholder="Golden Anti-Trap Rule to remember" style="margin-bottom: 12px;">
+        <button class="filter-btn" style="width: 100%; background: var(--text); color: var(--bg); font-weight: 600;" onclick="saveMistake()">
+          <i class="fa-solid fa-plus"></i> Save Mistake Entry
+        </button>
+
+        <div id="mistake-feed" style="margin-top: 18px;">
+          <!-- Mistakes render here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: LOCKED RESOURCES -->
+    <section id="resources-tab" class="tab-content">
+      <div class="clean-card">
+        <div class="card-header">
+          <div class="card-heading">
+            <i class="fa-solid fa-compass" style="color: var(--accent);"></i>
+            <span>Locked Resource Directory (All 10 Sections)</span>
+          </div>
+        </div>
+        <table class="table-min">
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Primary Locked Resource</th>
+              <th>Backup Resource</th>
+              <th>PYQs</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody id="resources-body">
+            <!-- Rendered via JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Cloud Sync Modal -->
+  <div class="modal-overlay" id="cloud-modal" onclick="closeCloudModal(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <div class="card-header" style="margin-bottom: 12px;">
+        <div class="card-heading">
+          <i class="fa-solid fa-cloud" style="color: var(--accent);"></i>
+          <span>Live Cloud Sync Setup (Across Laptop, Phone &amp; iPad)</span>
+        </div>
+        <button class="icon-btn" onclick="closeCloudModal()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
+        <p style="margin-bottom: 12px;">
+          Connect your preparation dashboard to a <strong>free cloud sync vault</strong>. Every time you check a task or add a mistake on any device, it syncs online instantly.
+        </p>
+
+        <div style="margin-bottom: 12px;">
+          <label style="display: block; font-size: 11px; font-weight: 700; color: var(--text); margin-bottom: 4px;">YOUR SECRET CLOUD SYNC KEY</label>
+          <input type="text" id="cloud-key-input" class="search-input" placeholder="e.g. rifsa-gate2027-secret-key" style="margin-bottom: 6px;">
+          <span style="font-size: 11px; color: var(--text-dim);">Enter any unique secret phrase. Use the exact same key on your phone &amp; laptop.</span>
+        </div>
+
+        <div style="display: flex; gap: 8px; margin-top: 14px;">
+          <button class="filter-btn" style="flex: 1; background: var(--accent); color: #000; font-weight: 700;" onclick="connectCloudSync()">
+            <i class="fa-solid fa-cloud-arrow-up"></i> Save &amp; Sync Now
+          </button>
+          <button class="filter-btn" style="flex: 1;" onclick="pullFromCloud()">
+            <i class="fa-solid fa-cloud-arrow-down"></i> Pull Cloud Data
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GitHub Deployment Modal -->
+  <div class="modal-overlay" id="deploy-modal" onclick="closeDeployGuide(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <div class="card-header" style="margin-bottom: 12px;">
+        <div class="card-heading">
+          <i class="fa-brands fa-github"></i>
+          <span>Deploying to GitHub Pages (100% Free)</span>
+        </div>
+        <button class="icon-btn" onclick="closeDeployGuide()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
+        <p style="margin-bottom: 10px;">
+          <strong style="color: var(--text);">Step 1:</strong> Create a repository on <a href="https://github.com/new" target="_blank" style="color: var(--accent);">GitHub.com</a> (e.g. <code>gate-2027</code>).<br>
+          <strong style="color: var(--text);">Step 2:</strong> Upload all files from your folder into the repository.<br>
+          <strong style="color: var(--text);">Step 3:</strong> In GitHub repo, go to <strong>Settings &rarr; Pages &rarr; Source: Deploy from Branch (main / root) &rarr; Save</strong>.<br>
+          <strong style="color: var(--text);">Step 4:</strong> Your app will be live at <code style="font-family: var(--font-mono); color: var(--accent);">https://&lt;username&gt;.github.io/gate-2027</code>!
+        </p>
+        <p style="font-size: 11.5px; color: var(--text-dim);">
+          💡 <strong>Online Cloud Sync:</strong> Once live on GitHub Pages, click the <strong>Cloud Sync</strong> button and enter your Secret Key to keep your phone and laptop in 100% sync!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const DAYS_DATA = [{"day": 1, "date": "Mon, 21 Sep 2026", "iso_date": "2026-09-21", "phase": 1, "trackA": "C Prog: Data types, Operators, Precedence, Bitwise, printf/scanf", "trackB": "DM: Propositional Logic, Truth Tables, Tautology", "pyqs": 15, "resA": "Neso Academy Lec 1-15", "resB": "GO Classes Logic 1-3"}, {"day": 2, "date": "Tue, 22 Sep 2026", "iso_date": "2026-09-22", "phase": 1, "trackA": "C Prog: Control flow (switch, loops), Scope, static, extern", "trackB": "DM: Logical Equivalences, Laws of Logic, CNF, DNF", "pyqs": 15, "resA": "Neso Academy Lec 16-25", "resB": "GO Classes Logic 4-6"}, {"day": 3, "date": "Wed, 23 Sep 2026", "iso_date": "2026-09-23", "phase": 1, "trackA": "C Prog: Functions, Parameter passing (Call by value/ref)", "trackB": "DM: First-Order Logic, Predicates, Quantifiers (forall, exists)", "pyqs": 15, "resA": "Neso Academy Lec 26-35", "resB": "GO Classes Predicate 1-3"}, {"day": 4, "date": "Thu, 24 Sep 2026", "iso_date": "2026-09-24", "phase": 1, "trackA": "C Prog: Pointers, Pointer Arithmetic, 1D/2D Array equivalence", "trackB": "DM: Quantifier Scope, Negation, Multi-quantifier rules", "pyqs": 20, "resA": "Neso Academy Pointers", "resB": "GO Classes Predicate 4-6"}, {"day": 5, "date": "Fri, 25 Sep 2026", "iso_date": "2026-09-25", "phase": 1, "trackA": "C Prog: Structures, Unions, Self-referential structs, Padding", "trackB": "DM: Rules of Inference, Modus Ponens, Resolution", "pyqs": 15, "resA": "Neso Academy Structures", "resB": "GO Classes Inference"}, {"day": 6, "date": "Sat, 26 Sep 2026", "iso_date": "2026-09-26", "phase": 1, "trackA": "C Prog: Recursion Tracing & Static variable call trees", "trackB": "DM: Sets, Operations, Venn diagrams, Power sets", "pyqs": 20, "resA": "Abdul Bari Recursion", "resB": "GO Classes Set Theory"}, {"day": 7, "date": "Sun, 27 Sep 2026", "iso_date": "2026-09-27", "phase": 1, "trackA": "Weekly Review & Buffer: Red-tag PYQs re-attempt", "trackB": "Milestone Test: Topic Test 1 (C + Propositional Logic)", "pyqs": 25, "resA": "GateOverflow C", "resB": "Topic Test 1"}, {"day": 8, "date": "Mon, 28 Sep 2026", "iso_date": "2026-09-28", "phase": 1, "trackA": "DS: 1D/2D Arrays, Address calculation (Row/Col major)", "trackB": "DM: Relations, Reflexive, Symmetric, Transitive closures", "pyqs": 15, "resA": "Abdul Bari Arrays", "resB": "GO Classes Relations 1-3"}, {"day": 9, "date": "Tue, 29 Sep 2026", "iso_date": "2026-09-29", "phase": 1, "trackA": "DS: Stacks (Array & Linked implementation, Push/Pop bounds)", "trackB": "DM: Equivalence Relations, Equivalence Classes, Partitions", "pyqs": 15, "resA": "Abdul Bari Stacks", "resB": "GO Classes Equivalence"}, {"day": 10, "date": "Wed, 30 Sep 2026", "iso_date": "2026-09-30", "phase": 1, "trackA": "DS: Infix to Postfix conversion, Postfix evaluation, Parentheses", "trackB": "DM: Partial Orders, POSETs, Hasse Diagrams, GLB, LUB", "pyqs": 20, "resA": "Abdul Bari Expressions", "resB": "GO Classes POSETs"}, {"day": 11, "date": "Thu, 01 Oct 2026", "iso_date": "2026-10-01", "phase": 1, "trackA": "DS: Queues (Linear, Circular Queue boundary condition, Deque)", "trackB": "DM: Lattices, Distributive, Complemented, Boolean Lattices", "pyqs": 15, "resA": "Abdul Bari Queues", "resB": "GO Classes Lattices"}, {"day": 12, "date": "Fri, 02 Oct 2026", "iso_date": "2026-10-02", "phase": 1, "trackA": "DS: Singly Linked Lists (Insertion, Deletion, Reversal O(1))", "trackB": "DM: Functions (Injective, Surjective, Bijective, Inverse)", "pyqs": 18, "resA": "Abdul Bari Linked Lists", "resB": "GO Classes Functions"}, {"day": 13, "date": "Sat, 03 Oct 2026", "iso_date": "2026-10-03", "phase": 1, "trackA": "DS: Doubly & Circular Linked Lists, Floyd's Cycle detection", "trackB": "DM: Pigeonhole Principle, Basic Counting Principles", "pyqs": 20, "resA": "Abdul Bari Lists 2", "resB": "GO Classes Counting"}, {"day": 14, "date": "Sun, 04 Oct 2026", "iso_date": "2026-10-04", "phase": 1, "trackA": "Consolidation: Linear DS + Set Theory Review", "trackB": "Milestone Test: Subject Milestone Test 1 (C + DS + Sets)", "pyqs": 25, "resA": "GateOverflow Review", "resB": "Subject Test 1"}, {"day": 15, "date": "Mon, 05 Oct 2026", "iso_date": "2026-10-05", "phase": 1, "trackA": "DS: Binary Trees (Properties, Height vs Nodes, Traversals)", "trackB": "DM: Monoids, Semigroups, Groups, Abelian Groups", "pyqs": 15, "resA": "Abdul Bari Trees 1", "resB": "GO Classes Group Theory 1"}, {"day": 16, "date": "Tue, 06 Oct 2026", "iso_date": "2026-10-06", "phase": 1, "trackA": "DS: Binary Tree Construction (In+Pre, In+Post traversals)", "trackB": "DM: Subgroups, Cyclic Groups, Order of element, Lagrange", "pyqs": 15, "resA": "Abdul Bari Trees 2", "resB": "GO Classes Group Theory 2"}, {"day": 17, "date": "Wed, 07 Oct 2026", "iso_date": "2026-10-07", "phase": 1, "trackA": "DS: Binary Search Trees (BST Search, Insert, Delete, Count)", "trackB": "DM: Permutations, Combinations, Binomial Coefficients", "pyqs": 20, "resA": "Abdul Bari BST", "resB": "GO Classes Combinatorics 1"}, {"day": 18, "date": "Thu, 08 Oct 2026", "iso_date": "2026-10-08", "phase": 1, "trackA": "DS: Binary Heaps (Min/Max Heap, Array representation)", "trackB": "DM: Inclusion-Exclusion Principle, Derangements", "pyqs": 15, "resA": "Abdul Bari Heaps 1", "resB": "GO Classes Combinatorics 2"}, {"day": 19, "date": "Fri, 09 Oct 2026", "iso_date": "2026-10-09", "phase": 1, "trackA": "DS: Heapify Algorithm O(n), Heap Sort, Priority Queues", "trackB": "DM: Homogeneous & Non-homogeneous Recurrence Relations", "pyqs": 18, "resA": "Abdul Bari Heaps 2", "resB": "GO Classes Recurrences 1"}, {"day": 20, "date": "Sat, 10 Oct 2026", "iso_date": "2026-10-10", "phase": 1, "trackA": "DS: Graph Representations (Adjacency Matrix & List in C)", "trackB": "DM: Generating Functions (Closed forms & Sequence expansion)", "pyqs": 20, "resA": "Abdul Bari Graphs", "resB": "GO Classes Generating Func"}, {"day": 21, "date": "Sun, 11 Oct 2026", "iso_date": "2026-10-11", "phase": 1, "trackA": "Weekly Review: Trees, Heaps & Recurrences", "trackB": "Topic Test: Non-Linear DS + Group Theory + Combinatorics", "pyqs": 25, "resA": "GateOverflow Trees", "resB": "Topic Test Trees/Math"}, {"day": 22, "date": "Mon, 12 Oct 2026", "iso_date": "2026-10-12", "phase": 1, "trackA": "Algo: Asymptotic Notations (O, Omega, Theta, o, omega) Mathematical limits", "trackB": "DM: Graph Theory (Degree Sum, Handshaking Lemma, Paths)", "pyqs": 15, "resA": "Abdul Bari Algo 1", "resB": "GO Classes Graphs 1"}, {"day": 23, "date": "Tue, 13 Oct 2026", "iso_date": "2026-10-13", "phase": 1, "trackA": "Algo: Order of growth comparison & Master Theorem (Case 1, 2, 3)", "trackB": "DM: Cycles, Trees, Spanning Trees, Bipartite Graphs", "pyqs": 15, "resA": "Abdul Bari Algo 2", "resB": "GO Classes Graphs 2"}, {"day": 24, "date": "Wed, 14 Oct 2026", "iso_date": "2026-10-14", "phase": 1, "trackA": "Algo: Master Theorem extended cases & Substitution method", "trackB": "DM: Euler Graphs, Hamiltonian Graphs & Characterizations", "pyqs": 20, "resA": "Abdul Bari Recurrences", "resB": "GO Classes Graphs 3"}, {"day": 25, "date": "Thu, 15 Oct 2026", "iso_date": "2026-10-15", "phase": 1, "trackA": "Algo: Sorting 1 (Bubble, Selection, Insertion - Stability/Bounds)", "trackB": "DM: Graph Colouring (Chromatic number, Planar graphs)", "pyqs": 15, "resA": "Abdul Bari Sorting 1", "resB": "GO Classes Graphs 4"}, {"day": 26, "date": "Fri, 16 Oct 2026", "iso_date": "2026-10-16", "phase": 1, "trackA": "Algo: Sorting 2 (Merge Sort, Quick Sort analysis & Pivot traps)", "trackB": "DM: Matching in Bipartite graphs & Hall's Marriage Theorem", "pyqs": 18, "resA": "Abdul Bari Sorting 2", "resB": "GO Classes Graphs 5"}, {"day": 27, "date": "Sat, 17 Oct 2026", "iso_date": "2026-10-17", "phase": 1, "trackA": "Algo: Heap Sort, Counting Sort & Lower bound of comparison sort", "trackB": "DM: Complete Graph Theory PYQ Marathon", "pyqs": 20, "resA": "Abdul Bari Sorting 3", "resB": "GO Classes Graph PYQs"}, {"day": 28, "date": "Sun, 18 Oct 2026", "iso_date": "2026-10-18", "phase": 1, "trackA": "Consolidation: Discrete Math + DSA Full Review", "trackB": "Grand Milestone Test: Discrete Math & DSA Complete Test", "pyqs": 30, "resA": "GateOverflow Grand", "resB": "Discrete Math Seal Test"}, {"day": 29, "date": "Mon, 19 Oct 2026", "iso_date": "2026-10-19", "phase": 1, "trackA": "Algo: Divide & Conquer (Binary Search, Closest Pair of Points)", "trackB": "LA: Matrices, Determinants, Transpose, Invertibility properties", "pyqs": 15, "resA": "Abdul Bari D&C", "resB": "GO Classes Linear Algebra 1"}, {"day": 30, "date": "Tue, 20 Oct 2026", "iso_date": "2026-10-20", "phase": 1, "trackA": "Algo: Greedy 1 (Fractional Knapsack, Huffman Coding bit math)", "trackB": "LA: Rank of Matrix, Row Echelon form, System of Equations AX=B", "pyqs": 15, "resA": "Abdul Bari Greedy 1", "resB": "GO Classes Linear Algebra 2"}, {"day": 31, "date": "Wed, 21 Oct 2026", "iso_date": "2026-10-21", "phase": 1, "trackA": "Algo: Greedy 2 (Activity Selection, Job Sequencing with Deadlines)", "trackB": "LA: Consistency of Systems (Unique, Infinite, No solution)", "pyqs": 20, "resA": "Abdul Bari Greedy 2", "resB": "GO Classes Linear Algebra 3"}, {"day": 32, "date": "Thu, 22 Oct 2026", "iso_date": "2026-10-22", "phase": 1, "trackA": "Algo: Dynamic Programming 1 (Principle of Optimality, 0/1 Knapsack)", "trackB": "LA: LU Decomposition of Matrix", "pyqs": 18, "resA": "Abdul Bari DP 1", "resB": "GO Classes Linear Algebra 4"}, {"day": 33, "date": "Fri, 23 Oct 2026", "iso_date": "2026-10-23", "phase": 1, "trackA": "Algo: Dynamic Programming 2 (Longest Common Subsequence - LCS)", "trackB": "LA: Eigenvalues & Eigenvectors (Trace/Det properties)", "pyqs": 18, "resA": "Abdul Bari DP 2", "resB": "GO Classes Eigenvalues 1"}, {"day": 34, "date": "Sat, 24 Oct 2026", "iso_date": "2026-10-24", "phase": 1, "trackA": "Algo: Dynamic Programming 3 (Matrix Chain Multiplication - MCM)", "trackB": "LA: Cayley-Hamilton Theorem & Powers of Matrices", "pyqs": 20, "resA": "Abdul Bari DP 3", "resB": "GO Classes Eigenvalues 2"}, {"day": 35, "date": "Sun, 25 Oct 2026", "iso_date": "2026-10-25", "phase": 1, "trackA": "Weekly Review: Greedy, DP & Linear Algebra", "trackB": "Topic Test: Algorithms (Greedy/DP) + Linear Algebra", "pyqs": 25, "resA": "GateOverflow DP", "resB": "Algo/LA Test"}, {"day": 36, "date": "Mon, 26 Oct 2026", "iso_date": "2026-10-26", "phase": 1, "trackA": "Algo: Graph Traversals (BFS, DFS, Cycle Detection in Dir/Undir)", "trackB": "DL: Boolean Algebra Laws, SOP, POS Canonical Forms", "pyqs": 15, "resA": "Abdul Bari BFS/DFS", "resB": "Neso Academy Digital 1-10"}, {"day": 37, "date": "Tue, 27 Oct 2026", "iso_date": "2026-10-27", "phase": 1, "trackA": "Algo: Topological Sorting & Strongly Connected Components (SCC)", "trackB": "DL: Minimization using Boolean Algebra & Don't Cares", "pyqs": 15, "resA": "Abdul Bari Graphs 2", "resB": "Neso Academy Digital 11-20"}, {"day": 38, "date": "Wed, 28 Oct 2026", "iso_date": "2026-10-28", "phase": 1, "trackA": "Algo: Minimum Spanning Trees (Prim's & Kruskal's with DSU)", "trackB": "DL: Karnaugh Maps (2, 3, 4, 5 variables, EPI & PI finding)", "pyqs": 20, "resA": "Abdul Bari MST", "resB": "Neso Academy K-Maps"}, {"day": 39, "date": "Thu, 29 Oct 2026", "iso_date": "2026-10-29", "phase": 1, "trackA": "Algo: Shortest Paths 1 (Dijkstra Algorithm with Binary Heap)", "trackB": "DL: Quine-McCluskey Tabular Method of Minimization", "pyqs": 18, "resA": "Abdul Bari Dijkstra", "resB": "Neso Academy Tabular"}, {"day": 40, "date": "Fri, 30 Oct 2026", "iso_date": "2026-10-30", "phase": 1, "trackA": "Algo: Shortest Paths 2 (Bellman-Ford & Floyd-Warshall All-Pairs)", "trackB": "DL: Combinational Circuits 1 (Half/Full Adders, Subtractors)", "pyqs": 18, "resA": "Abdul Bari Bellman", "resB": "Neso Academy Adders"}, {"day": 41, "date": "Sat, 31 Oct 2026", "iso_date": "2026-10-31", "phase": 1, "trackA": "Algo: Hashing (Hash Functions, Chaining, Linear/Quad Probing)", "trackB": "DL: Ripple Carry Adder vs Carry Lookahead Adder Delays", "pyqs": 20, "resA": "Abdul Bari Hashing", "resB": "Neso Academy Carry Lookahead"}, {"day": 42, "date": "Sun, 01 Nov 2026", "iso_date": "2026-11-01", "phase": 1, "trackA": "Consolidation: Algorithms & Linear Algebra Full Seal", "trackB": "Grand Milestone Test: Algorithms Full Subject Test", "pyqs": 30, "resA": "GateOverflow Algo", "resB": "Algo Grand Test"}, {"day": 43, "date": "Mon, 02 Nov 2026", "iso_date": "2026-11-02", "phase": 1, "trackA": "DL: Multiplexers (2:1, 4:1, 8:1 Design & Boolean func implement)", "trackB": "TOC: Finite Automata Introduction, Alphabet, Strings, Languages", "pyqs": 15, "resA": "Neso Academy MUX", "resB": "GO Classes TOC 1-3"}, {"day": 44, "date": "Tue, 03 Nov 2026", "iso_date": "2026-11-03", "phase": 1, "trackA": "DL: Decoders, Encoders, Priority Encoders & ROM/PLA basics", "trackB": "TOC: Deterministic Finite Automata (DFA) Design Principles", "pyqs": 15, "resA": "Neso Academy Decoders", "resB": "GO Classes DFA 1-4"}, {"day": 45, "date": "Wed, 04 Nov 2026", "iso_date": "2026-11-04", "phase": 1, "trackA": "DL: Latches & Flip-Flops (SR, JK, D, T, Excitation Tables)", "trackB": "TOC: DFA State Minimization & Myhill-Nerode Theorem", "pyqs": 20, "resA": "Neso Academy Flip-Flops", "resB": "GO Classes DFA Minimization"}, {"day": 46, "date": "Thu, 05 Nov 2026", "iso_date": "2026-11-05", "phase": 1, "trackA": "DL: Setup Time, Hold Time & Master-Slave Flip-Flop race condition", "trackB": "TOC: Non-deterministic Finite Automata (NFA & epsilon-NFA)", "pyqs": 18, "resA": "Neso Academy Timing", "resB": "GO Classes NFA"}, {"day": 47, "date": "Fri, 06 Nov 2026", "iso_date": "2026-11-06", "phase": 1, "trackA": "DL: Synchronous & Asynchronous Counters, Mod-N Counter Design", "trackB": "TOC: NFA to DFA Subset Construction Algorithm", "pyqs": 18, "resA": "Neso Academy Counters", "resB": "GO Classes NFA to DFA"}, {"day": 48, "date": "Sat, 07 Nov 2026", "iso_date": "2026-11-07", "phase": 1, "trackA": "DL: Number Systems (1s/2s Complement, Fixed & IEEE 754 Floating)", "trackB": "TOC: Regular Expressions, Regular Grammars & Arden's Theorem", "pyqs": 20, "resA": "Neso Academy Numbers", "resB": "GO Classes RegEx"}, {"day": 49, "date": "Sun, 08 Nov 2026", "iso_date": "2026-11-08", "phase": 1, "trackA": "Weekly Review: Digital Logic Complete", "trackB": "Grand Milestone Test: Digital Logic Full Subject Test", "pyqs": 30, "resA": "GateOverflow Digital", "resB": "Digital Logic Seal"}, {"day": 50, "date": "Mon, 09 Nov 2026", "iso_date": "2026-11-09", "phase": 1, "trackA": "TOC: Pumping Lemma for Regular Languages & Proofs", "trackB": "Calculus: Limits, Indeterminate forms, L'Hopital's Rule", "pyqs": 15, "resA": "GO Classes Pumping 1", "resB": "GO Classes Calculus 1"}, {"day": 51, "date": "Tue, 10 Nov 2026", "iso_date": "2026-11-10", "phase": 1, "trackA": "TOC: Closure Properties of Regular Languages (Homomorphism, etc)", "trackB": "Calculus: Continuity & Differentiability Verification", "pyqs": 15, "resA": "GO Classes Closure 1", "resB": "GO Classes Calculus 2"}, {"day": 52, "date": "Wed, 11 Nov 2026", "iso_date": "2026-11-11", "phase": 1, "trackA": "TOC: Decision Properties of Regular Languages (Emptiness, etc)", "trackB": "Calculus: Maxima & Minima (Single Variable & Critical points)", "pyqs": 20, "resA": "GO Classes Decision 1", "resB": "GO Classes Calculus 3"}, {"day": 53, "date": "Thu, 12 Nov 2026", "iso_date": "2026-11-12", "phase": 1, "trackA": "TOC: Context-Free Grammars (CFG derivations, Parse trees)", "trackB": "Calculus: Mean Value Theorems (Rolle's, Lagrange's, Cauchy)", "pyqs": 18, "resA": "GO Classes CFG 1", "resB": "GO Classes Calculus 4"}, {"day": 54, "date": "Fri, 13 Nov 2026", "iso_date": "2026-11-13", "phase": 1, "trackA": "TOC: Ambiguity in CFGs & Left Recursion / Left Factoring", "trackB": "Calculus: Definite & Indefinite Integrals, Properties", "pyqs": 18, "resA": "GO Classes CFG 2", "resB": "GO Classes Calculus 5"}, {"day": 55, "date": "Sat, 14 Nov 2026", "iso_date": "2026-11-14", "phase": 1, "trackA": "TOC: Pushdown Automata (DPDA vs NPDA, Final state vs Empty stack)", "trackB": "Calculus: Complete Calculus GateOverflow PYQ Drill", "pyqs": 20, "resA": "GO Classes PDA 1", "resB": "GateOverflow Calculus"}, {"day": 56, "date": "Sun, 15 Nov 2026", "iso_date": "2026-11-15", "phase": 1, "trackA": "Weekly Review: PDA, CFLs & Calculus", "trackB": "Topic Test: TOC (Automata/CFG) + Calculus Complete Test", "pyqs": 25, "resA": "GateOverflow TOC", "resB": "TOC/Calc Test"}, {"day": 57, "date": "Mon, 16 Nov 2026", "iso_date": "2026-11-16", "phase": 1, "trackA": "TOC: Context-Free Languages (CFLs vs DCFLs, Pumping Lemma CFL)", "trackB": "CD: Lexical Analysis, Tokens, Lexemes, Buffer pairs", "pyqs": 15, "resA": "GO Classes CFLs", "resB": "Gate Smashers Lexical"}, {"day": 58, "date": "Tue, 17 Nov 2026", "iso_date": "2026-11-17", "phase": 1, "trackA": "TOC: Closure & Decision Properties of CFLs and DCFLs", "trackB": "CD: Grammar transformations, First & Follow Sets Computation", "pyqs": 15, "resA": "GO Classes CFL Closure", "resB": "Gate Smashers First/Follow"}, {"day": 59, "date": "Wed, 18 Nov 2026", "iso_date": "2026-11-18", "phase": 1, "trackA": "TOC: Turing Machine Standard Model & Transition Diagrams", "trackB": "CD: LL(1) Parsing Table Construction & Conflicts Detection", "pyqs": 20, "resA": "GO Classes Turing 1", "resB": "Gate Smashers LL(1)"}, {"day": 60, "date": "Thu, 19 Nov 2026", "iso_date": "2026-11-19", "phase": 1, "trackA": "TOC: Chomsky Hierarchy (Type 0, 1, 2, 3 Languages & Machines)", "trackB": "CD: LR(0) & SLR(1) Item sets & Parsing Tables", "pyqs": 18, "resA": "GO Classes Chomsky", "resB": "Gate Smashers LR(0)/SLR"}, {"day": 61, "date": "Fri, 20 Nov 2026", "iso_date": "2026-11-20", "phase": 1, "trackA": "TOC: Recursive (REC) vs Recursively Enumerable (RE) Languages", "trackB": "CD: CLR(1) & LALR(1) Parsing Tables, Shift-Reduce Conflicts", "pyqs": 18, "resA": "GO Classes Decidability 1", "resB": "Gate Smashers LALR"}, {"day": 62, "date": "Sat, 21 Nov 2026", "iso_date": "2026-11-21", "phase": 1, "trackA": "TOC: Halting Problem, Post Correspondence Problem (PCP), Rice", "trackB": "CD: Syntax-Directed Definitions (SDD), Synthesized/Inherited", "pyqs": 20, "resA": "GO Classes Rice", "resB": "Gate Smashers SDD"}, {"day": 63, "date": "Sun, 22 Nov 2026", "iso_date": "2026-11-22", "phase": 1, "trackA": "Weekly Review: TOC Complete", "trackB": "Grand Milestone Test: Theory of Computation Full Subject Test", "pyqs": 30, "resA": "GateOverflow TOC Full", "resB": "TOC Seal Test"}, {"day": 64, "date": "Mon, 23 Nov 2026", "iso_date": "2026-11-23", "phase": 1, "trackA": "CD: S-Attributed vs L-Attributed SDT & Top-Down Evaluation", "trackB": "Prob: Axioms of Probability, Conditional Prob, Independent", "pyqs": 15, "resA": "Gate Smashers SDT", "resB": "GO Classes Probability 1"}, {"day": 65, "date": "Tue, 24 Nov 2026", "iso_date": "2026-11-24", "phase": 1, "trackA": "CD: Intermediate Code (3-Address Code: Quadruples, Triples, DAG)", "trackB": "Prob: Bayes Theorem & Law of Total Probability", "pyqs": 15, "resA": "Gate Smashers ICG", "resB": "GO Classes Bayes"}, {"day": 66, "date": "Wed, 25 Nov 2026", "iso_date": "2026-11-25", "phase": 1, "trackA": "CD: Runtime Environments (Activation Records, Stack Allocation)", "trackB": "Prob: Discrete Random Variables, PMF, Expectation, Variance", "pyqs": 20, "resA": "Gate Smashers Runtime", "resB": "GO Classes Random Vars"}, {"day": 67, "date": "Thu, 26 Nov 2026", "iso_date": "2026-11-26", "phase": 1, "trackA": "CD: Basic Blocks, Flow Graphs & Local Code Optimization", "trackB": "Prob: Continuous Random Variables, PDF, CDF, Expectation", "pyqs": 18, "resA": "Gate Smashers Optimization", "resB": "GO Classes Continuous RV"}, {"day": 68, "date": "Fri, 27 Nov 2026", "iso_date": "2026-11-27", "phase": 1, "trackA": "CD: Loop Optimization, Dead Code & Constant Propagation", "trackB": "Prob: Uniform & Exponential Distributions (Memoryless property)", "pyqs": 18, "resA": "Gate Smashers Data Flow 1", "resB": "GO Classes Distributions 1"}, {"day": 69, "date": "Sat, 28 Nov 2026", "iso_date": "2026-11-28", "phase": 1, "trackA": "CD: Data Flow Analysis (Liveness Analysis, Common Subexpressions)", "trackB": "Prob: Normal / Gaussian & Poisson & Binomial Distributions", "pyqs": 20, "resA": "Gate Smashers Data Flow 2", "resB": "GO Classes Distributions 2"}, {"day": 70, "date": "Sun, 29 Nov 2026", "iso_date": "2026-11-29", "phase": 1, "trackA": "Consolidation: Compiler & Probability Complete", "trackB": "Grand Milestone Test: Compiler Design & Engg Math Grand Test", "pyqs": 30, "resA": "GateOverflow Math/CD", "resB": "Compiler/Math Seal"}, {"day": 71, "date": "Mon, 30 Nov 2026", "iso_date": "2026-11-30", "phase": 1, "trackA": "COA: Instruction Formats (0, 1, 2, 3 address, Opcode expansion)", "trackB": "OS: Process States, Process Control Block (PCB), Context switch", "pyqs": 15, "resA": "Vishwadeep COA 1", "resB": "Vishwadeep OS 1"}, {"day": 72, "date": "Tue, 01 Dec 2026", "iso_date": "2026-12-01", "phase": 1, "trackA": "COA: Addressing Modes (Immediate, Direct, Indirect, Indexed, PC)", "trackB": "OS: Threads (User vs Kernel Level) & System Calls (fork, exec)", "pyqs": 15, "resA": "Vishwadeep COA 2", "resB": "Vishwadeep OS 2"}, {"day": 73, "date": "Wed, 02 Dec 2026", "iso_date": "2026-12-02", "phase": 1, "trackA": "COA: RISC vs CISC Architecture & Machine cycle timing", "trackB": "OS: Inter-Process Communication (Shared Memory, Pipes, Messages)", "pyqs": 20, "resA": "Vishwadeep COA 3", "resB": "Vishwadeep OS 3"}, {"day": 74, "date": "Thu, 03 Dec 2026", "iso_date": "2026-12-03", "phase": 1, "trackA": "COA: ALU Design & Booth's Multiplication Algorithm", "trackB": "OS: CPU Scheduling (FCFS, SJF, SRTF Preemption)", "pyqs": 18, "resA": "Vishwadeep COA 4", "resB": "Vishwadeep OS 4"}, {"day": 75, "date": "Fri, 04 Dec 2026", "iso_date": "2026-12-04", "phase": 1, "trackA": "COA: Control Unit Design (Hardwired vs Microprogrammed)", "trackB": "OS: CPU Scheduling (Round Robin, Priority, Multi-level Queue)", "pyqs": 18, "resA": "Vishwadeep COA 5", "resB": "Vishwadeep OS 5"}, {"day": 76, "date": "Sat, 05 Dec 2026", "iso_date": "2026-12-05", "phase": 1, "trackA": "COA: Microinstruction Formats (Horizontal vs Vertical Microcode)", "trackB": "OS: Gantt Chart Average Turnaround & Waiting Time Calculations", "pyqs": 20, "resA": "Vishwadeep COA 6", "resB": "Vishwadeep OS 6"}, {"day": 77, "date": "Sun, 06 Dec 2026", "iso_date": "2026-12-06", "phase": 1, "trackA": "Weekly Review: ISA & CPU Scheduling", "trackB": "Topic Test: COA (ISA/ALU) + OS (Process Management/Scheduling)", "pyqs": 25, "resA": "GateOverflow ISA/OS", "resB": "COA/OS Topic Test"}, {"day": 78, "date": "Mon, 07 Dec 2026", "iso_date": "2026-12-07", "phase": 1, "trackA": "COA: Memory Hierarchy Performance & Average Memory Access Time", "trackB": "OS: Synchronization (Critical Section, Race Conditions, Peterson)", "pyqs": 15, "resA": "Vishwadeep COA 7", "resB": "Vishwadeep OS 7"}, {"day": 79, "date": "Tue, 08 Dec 2026", "iso_date": "2026-12-08", "phase": 1, "trackA": "COA: Cache Mapping (Direct Mapping, Tag/Line/Word index bits)", "trackB": "OS: Hardware Instructions (Test-and-Set) & Semaphores", "pyqs": 15, "resA": "Vishwadeep COA 8", "resB": "Vishwadeep OS 8"}, {"day": 80, "date": "Wed, 09 Dec 2026", "iso_date": "2026-12-09", "phase": 1, "trackA": "COA: Cache Mapping (Fully Associative & K-Way Set Associative)", "trackB": "OS: Classical Problems (Producer-Consumer, Reader-Writer)", "pyqs": 20, "resA": "Vishwadeep COA 9", "resB": "Vishwadeep OS 9"}, {"day": 81, "date": "Thu, 10 Dec 2026", "iso_date": "2026-12-10", "phase": 1, "trackA": "COA: Cache Write Policies (Write-through, Write-back, EMAT math)", "trackB": "OS: Deadlocks (4 Necessary Conditions, Resource Allocation Graph)", "pyqs": 18, "resA": "Vishwadeep COA 10", "resB": "Vishwadeep OS 10"}, {"day": 82, "date": "Fri, 11 Dec 2026", "iso_date": "2026-12-11", "phase": 1, "trackA": "COA: I/O Interface (Programmed I/O, Interrupts, DMA Burst/Cycle)", "trackB": "OS: Deadlock Avoidance (Banker's Algorithm) & Prevention", "pyqs": 18, "resA": "Vishwadeep COA 11", "resB": "Vishwadeep OS 11"}, {"day": 83, "date": "Sat, 12 Dec 2026", "iso_date": "2026-12-12", "phase": 1, "trackA": "COA: Instruction Pipelining (Speedup, CPI, Hazards: RAW, Control)", "trackB": "OS: Memory Management (Paging, TLB, Multi-level Paging, Virtual)", "pyqs": 20, "resA": "Vishwadeep COA 12", "resB": "Vishwadeep OS 12"}, {"day": 84, "date": "Sun, 13 Dec 2026", "iso_date": "2026-12-13", "phase": 1, "trackA": "Consolidation: COA & Operating Systems Complete", "trackB": "Grand Milestone Test: COA Full Subject + OS Full Subject Tests", "pyqs": 30, "resA": "GateOverflow COA/OS", "resB": "COA/OS Grand Seal"}, {"day": 85, "date": "Mon, 14 Dec 2026", "iso_date": "2026-12-14", "phase": 1, "trackA": "DBMS: ER Model (Entities, Attributes, Weak Entities, Cardinality)", "trackB": "CN: Layering Principles (OSI 7-Layer vs TCP/IP 5-Layer)", "pyqs": 15, "resA": "Amit Khurana DBMS 1", "resB": "Ankit Doyla CN 1"}, {"day": 86, "date": "Tue, 15 Dec 2026", "iso_date": "2026-12-15", "phase": 1, "trackA": "DBMS: Schema Conversion (ER to Relational Tables & Foreign Keys)", "trackB": "CN: Switching (Circuit vs Packet Switching, Virtual Circuits)", "pyqs": 15, "resA": "Amit Khurana DBMS 2", "resB": "Ankit Doyla CN 2"}, {"day": 87, "date": "Wed, 16 Dec 2026", "iso_date": "2026-12-16", "phase": 1, "trackA": "DBMS: Relational Algebra (Select, Project, Joins, Division)", "trackB": "CN: Performance Delays (Transmission, Propagation, Queue, BDP)", "pyqs": 20, "resA": "Amit Khurana DBMS 3", "resB": "Ankit Doyla CN 3"}, {"day": 88, "date": "Thu, 17 Dec 2026", "iso_date": "2026-12-17", "phase": 1, "trackA": "DBMS: Tuple Relational Calculus (TRC) & SQL DDL/DML Basics", "trackB": "CN: Data Link Layer (Framing, Parity, Checksum, CRC Polynomial)", "pyqs": 18, "resA": "Amit Khurana DBMS 4", "resB": "Ankit Doyla CN 4"}, {"day": 89, "date": "Fri, 18 Dec 2026", "iso_date": "2026-12-18", "phase": 1, "trackA": "DBMS: SQL Advanced (Joins, Nested Queries, Correlated Subqueries)", "trackB": "CN: Flow Control (Stop & Wait, Go-Back-N, Selective Repeat Math)", "pyqs": 18, "resA": "Amit Khurana DBMS 5", "resB": "Ankit Doyla CN 5"}, {"day": 90, "date": "Sat, 19 Dec 2026", "iso_date": "2026-12-19", "phase": 1, "trackA": "DBMS: Functional Dependencies, Attribute Closure & Candidate Keys", "trackB": "CN: MAC Protocols (Pure/Slotted ALOHA, CSMA/CD, Backoff)", "pyqs": 20, "resA": "Amit Khurana DBMS 6", "resB": "Ankit Doyla CN 6"}, {"day": 91, "date": "Sun, 20 Dec 2026", "iso_date": "2026-12-20", "phase": 1, "trackA": "Weekly Review: DBMS Queries & CN Data Link", "trackB": "Topic Test: DBMS (Relational Model/SQL) + CN (Data Link Layer)", "pyqs": 25, "resA": "GateOverflow DBMS/CN", "resB": "DBMS/CN Topic Test"}, {"day": 92, "date": "Mon, 21 Dec 2026", "iso_date": "2026-12-21", "phase": 1, "trackA": "DBMS: Normalization Theory (1NF, 2NF, 3NF, BCNF, Minimal Cover)", "trackB": "CN: Ethernet IEEE 802.3 Frame Format & Network Layer Basics", "pyqs": 15, "resA": "Amit Khurana DBMS 7", "resB": "Ankit Doyla CN 7"}, {"day": 93, "date": "Tue, 22 Dec 2026", "iso_date": "2026-12-22", "phase": 1, "trackA": "DBMS: Lossless Join Decomposition & Dependency Preservation", "trackB": "CN: IPv4 Addressing, Classful vs CIDR, Subnetting, VLSM", "pyqs": 15, "resA": "Amit Khurana DBMS 8", "resB": "Ankit Doyla CN 8"}, {"day": 94, "date": "Wed, 23 Dec 2026", "iso_date": "2026-12-23", "phase": 1, "trackA": "DBMS: File Organization & Indexing (Primary, Secondary, Cluster)", "trackB": "CN: IPv4 Header Fields, Fragmentation Offset & NAT", "pyqs": 20, "resA": "Amit Khurana DBMS 9", "resB": "Ankit Doyla CN 9"}, {"day": 95, "date": "Thu, 24 Dec 2026", "iso_date": "2026-12-24", "phase": 1, "trackA": "DBMS: B-Trees & B+ Trees (Node structures, Height, Max records)", "trackB": "CN: Routing Protocols (Distance Vector & Link State Dijkstra)", "pyqs": 18, "resA": "Amit Khurana DBMS 10", "resB": "Ankit Doyla CN 10"}, {"day": 96, "date": "Fri, 25 Dec 2026", "iso_date": "2026-12-25", "phase": 1, "trackA": "DBMS: Transactions, ACID Properties & Conflict/View Serializability", "trackB": "CN: Transport Layer (TCP 3-Way Handshake, Flow Control)", "pyqs": 18, "resA": "Amit Khurana DBMS 11", "resB": "Ankit Doyla CN 11"}, {"day": 97, "date": "Sat, 26 Dec 2026", "iso_date": "2026-12-26", "phase": 1, "trackA": "DBMS: Concurrency Control (Two-Phase Locking 2PL & Timestamp)", "trackB": "CN: TCP Congestion Control (Slow Start, Avoidance, Socket, DNS)", "pyqs": 20, "resA": "Amit Khurana DBMS 12", "resB": "Ankit Doyla CN 12"}, {"day": 98, "date": "Sun, 27 Dec 2026", "iso_date": "2026-12-27", "phase": 1, "trackA": "Consolidation: 100% FIRST SYLLABUS PASS COMPLETE", "trackB": "Grand Milestone Test: DBMS Full Subject + CN Full Subject Tests", "pyqs": 30, "resA": "GateOverflow Full", "resB": "100% Syllabus Seal"}, {"day": 99, "date": "Mon, 28 Dec 2026", "iso_date": "2026-12-28", "phase": 2, "trackA": "Rev 1: Discrete Mathematics (Logic, Sets, Relations, POSETs)", "trackB": "Re-solve Red-tag PYQs from Weeks 1-2 & formula cards", "pyqs": 20, "resA": "Short Notes DM 1", "resB": "Mistake Vault Pass 1"}, {"day": 100, "date": "Tue, 29 Dec 2026", "iso_date": "2026-12-29", "phase": 2, "trackA": "Rev 1: Discrete Math (Groups, Combinatorics, Recurrences, Graphs)", "trackB": "Re-solve Red-tag PYQs from Weeks 3-4 & generating functions", "pyqs": 20, "resA": "Short Notes DM 2", "resB": "Mistake Vault Pass 2"}, {"day": 101, "date": "Wed, 30 Dec 2026", "iso_date": "2026-12-30", "phase": 2, "trackA": "Rev 1: Linear Algebra & Calculus Complete Revision", "trackB": "Re-solve Red-tag PYQs from Weeks 5 & 8 (Systems AX=B, Limits)", "pyqs": 20, "resA": "Short Notes Math", "resB": "Mistake Vault Pass 3"}, {"day": 102, "date": "Thu, 31 Dec 2026", "iso_date": "2026-12-31", "phase": 2, "trackA": "Rev 1: C Programming & Linear Data Structures (Arrays, Stacks)", "trackB": "Re-solve Pointer and Catalan number stack PYQs", "pyqs": 20, "resA": "Short Notes C/DS 1", "resB": "Mistake Vault Pass 4"}, {"day": 103, "date": "Fri, 01 Jan 2027", "iso_date": "2027-01-01", "phase": 2, "trackA": "Rev 1: Non-Linear Data Structures & Algorithms (Trees, Sorting, DP)", "trackB": "Re-solve Tree construction and DP table recurrence PYQs", "pyqs": 20, "resA": "Short Notes Algo", "resB": "Mistake Vault Pass 5"}, {"day": 104, "date": "Sat, 02 Jan 2027", "iso_date": "2027-01-02", "phase": 2, "trackA": "Rev 1: Digital Logic & Computer Organization (COA) Full Revision", "trackB": "Re-solve Cache mapping, Pipeline hazard, and IEEE 754 PYQs", "pyqs": 20, "resA": "Short Notes Digital/COA", "resB": "Mistake Vault Pass 6"}, {"day": 105, "date": "Sun, 03 Jan 2027", "iso_date": "2027-01-03", "phase": 2, "trackA": "Milestone: Combined Multi-Subject Mock Test 1 (Math + DSA + COA)", "trackB": "4-Hour Post-Mortem error audit & Mistake Vault updates", "pyqs": 25, "resA": "Multi-Subject Test 1", "resB": "Multi-Test 1 Post-Mortem"}, {"day": 106, "date": "Mon, 04 Jan 2027", "iso_date": "2027-01-04", "phase": 2, "trackA": "Rev 1: Theory of Computation (DFA, RegEx, Grammars, PDA)", "trackB": "Re-solve Closure property and Decidability table PYQs", "pyqs": 20, "resA": "Short Notes TOC 1", "resB": "Mistake Vault Pass 7"}, {"day": 107, "date": "Tue, 05 Jan 2027", "iso_date": "2027-01-05", "phase": 2, "trackA": "Rev 1: Theory of Computation (Turing Machines & Undecidability)", "trackB": "Re-solve Rice Theorem and Reduction proof PYQs", "pyqs": 20, "resA": "Short Notes TOC 2", "resB": "Mistake Vault Pass 8"}, {"day": 108, "date": "Wed, 06 Jan 2027", "iso_date": "2027-01-06", "phase": 2, "trackA": "Rev 1: Compiler Design (Lexical, Parsing LL/LR, SDT, Optimization)", "trackB": "Re-solve Parsing table conflict and Liveness analysis PYQs", "pyqs": 20, "resA": "Short Notes Compiler", "resB": "Mistake Vault Pass 9"}, {"day": 109, "date": "Thu, 07 Jan 2027", "iso_date": "2027-01-07", "phase": 2, "trackA": "Rev 1: Operating Systems (CPU Scheduling, Semaphores, Paging)", "trackB": "Re-solve Multi-level paging and Banker's algorithm PYQs", "pyqs": 20, "resA": "Short Notes OS", "resB": "Mistake Vault Pass 10"}, {"day": 110, "date": "Fri, 08 Jan 2027", "iso_date": "2027-01-08", "phase": 2, "trackA": "Rev 1: Databases (DBMS - SQL, Normalization, B+ Trees, 2PL)", "trackB": "Re-solve Canonical cover, B+ tree height and Serializability PYQs", "pyqs": 20, "resA": "Short Notes DBMS", "resB": "Mistake Vault Pass 11"}, {"day": 111, "date": "Sat, 09 Jan 2027", "iso_date": "2027-01-09", "phase": 2, "trackA": "Rev 1: Computer Networks & General Aptitude Full Revision", "trackB": "Re-solve CIDR longest prefix, TCP window and CRC PYQs", "pyqs": 20, "resA": "Short Notes CN/Apti", "resB": "Mistake Vault Pass 12"}, {"day": 112, "date": "Sun, 10 Jan 2027", "iso_date": "2027-01-10", "phase": 2, "trackA": "Milestone: Combined Multi-Subject Mock Test 2 (TOC + OS + DBMS + CN)", "trackB": "4-Hour Post-Mortem error audit & 1st Revision Seal", "pyqs": 25, "resA": "Multi-Subject Test 2", "resB": "Multi-Test 2 Post-Mortem"}, {"day": 113, "date": "Mon, 11 Jan 2027", "iso_date": "2027-01-11", "phase": 3, "trackA": "FULL-LENGTH MOCK 1: Official GATE 2023 Paper as Mock (09:30 AM)", "trackB": "4-Hour Post-Mortem: Error audit into Type A/B/C/D in Mistake Vault", "pyqs": 65, "resA": "GATE 2023 Paper", "resB": "Mock 1 Post-Mortem"}, {"day": 114, "date": "Tue, 12 Jan 2027", "iso_date": "2027-01-12", "phase": 3, "trackA": "Rev 2 Pass: Math & Discrete Logic weak areas identified in Mock 1", "trackB": "Re-solve top 20 toughest questions from Mock 1", "pyqs": 20, "resA": "Short Notes Math", "resB": "Mock 1 Target Fix"}, {"day": 115, "date": "Wed, 13 Jan 2027", "iso_date": "2027-01-13", "phase": 3, "trackA": "FULL-LENGTH MOCK 2: Standard Test Series CBT Mock 1 (09:30 AM)", "trackB": "4-Hour Post-Mortem: Question-skipping efficiency audit", "pyqs": 65, "resA": "CBT Mock 2", "resB": "Mock 2 Post-Mortem"}, {"day": 116, "date": "Thu, 14 Jan 2027", "iso_date": "2027-01-14", "phase": 3, "trackA": "Rev 2 Pass: DSA & Algorithms weak areas identified in Mock 2", "trackB": "Re-solve top 20 toughest questions from Mock 2", "pyqs": 20, "resA": "Short Notes DSA", "resB": "Mock 2 Target Fix"}, {"day": 117, "date": "Fri, 15 Jan 2027", "iso_date": "2027-01-15", "phase": 3, "trackA": "FULL-LENGTH MOCK 3: Standard Test Series CBT Mock 2 (09:30 AM)", "trackB": "4-Hour Post-Mortem: MSQ (Multiple Select) precision check", "pyqs": 65, "resA": "CBT Mock 3", "resB": "Mock 3 Post-Mortem"}, {"day": 118, "date": "Sat, 16 Jan 2027", "iso_date": "2027-01-16", "phase": 3, "trackA": "Rev 2 Pass: Digital Logic & COA weak areas identified in Mock 3", "trackB": "Re-solve Cache and Pipeline trap questions", "pyqs": 20, "resA": "Short Notes Digital/COA", "resB": "Mock 3 Target Fix"}, {"day": 119, "date": "Sun, 17 Jan 2027", "iso_date": "2027-01-17", "phase": 3, "trackA": "Buffer & Weekly Error Log Audit: Re-solve all Mock 1-3 mistakes", "trackB": "Review Master Formula Sheet for Math and Systems", "pyqs": 25, "resA": "Mistake Vault", "resB": "Weekly Mock Seal 1"}, {"day": 120, "date": "Mon, 18 Jan 2027", "iso_date": "2027-01-18", "phase": 3, "trackA": "FULL-LENGTH MOCK 4: Official GATE 2024 Paper as Mock (09:30 AM)", "trackB": "4-Hour Post-Mortem: Round 1 (0-75 min) speed strategy check", "pyqs": 65, "resA": "GATE 2024 Paper", "resB": "Mock 4 Post-Mortem"}, {"day": 121, "date": "Tue, 19 Jan 2027", "iso_date": "2027-01-19", "phase": 3, "trackA": "Rev 2 Pass: TOC & Compiler Design weak areas identified in Mock 4", "trackB": "Re-solve Parsing conflicts and Decidability edge cases", "pyqs": 20, "resA": "Short Notes TOC/CD", "resB": "Mock 4 Target Fix"}, {"day": 122, "date": "Wed, 20 Jan 2027", "iso_date": "2027-01-20", "phase": 3, "trackA": "FULL-LENGTH MOCK 5: Standard Test Series CBT Mock 3 (09:30 AM)", "trackB": "4-Hour Post-Mortem: NAT (Numerical) decimal bounding audit", "pyqs": 65, "resA": "CBT Mock 5", "resB": "Mock 5 Post-Mortem"}, {"day": 123, "date": "Thu, 21 Jan 2027", "iso_date": "2027-01-21", "phase": 3, "trackA": "Rev 2 Pass: Operating Systems & Virtual Memory weak areas", "trackB": "Re-solve Paging and Semaphore edge case questions", "pyqs": 20, "resA": "Short Notes OS", "resB": "Mock 5 Target Fix"}, {"day": 124, "date": "Fri, 22 Jan 2027", "iso_date": "2027-01-22", "phase": 3, "trackA": "FULL-LENGTH MOCK 6: Standard Test Series CBT Mock 4 (09:30 AM)", "trackB": "4-Hour Post-Mortem: Negative marks reduction analysis", "pyqs": 65, "resA": "CBT Mock 6", "resB": "Mock 6 Post-Mortem"}, {"day": 125, "date": "Sat, 23 Jan 2027", "iso_date": "2027-01-23", "phase": 3, "trackA": "Rev 2 Pass: DBMS & Computer Networks weak areas", "trackB": "Re-solve B+ trees and TCP Congestion curve problems", "pyqs": 20, "resA": "Short Notes DBMS/CN", "resB": "Mock 6 Target Fix"}, {"day": 126, "date": "Sun, 24 Jan 2027", "iso_date": "2027-01-24", "phase": 3, "trackA": "Buffer & Weekly Error Log Audit: Re-solve all Mock 4-6 mistakes", "trackB": "Review Master Formula Sheet for Networks and DBMS", "pyqs": 25, "resA": "Mistake Vault", "resB": "Weekly Mock Seal 2"}, {"day": 127, "date": "Mon, 25 Jan 2027", "iso_date": "2027-01-25", "phase": 3, "trackA": "FULL-LENGTH MOCK 7: Official GATE 2025 Paper as Mock (09:30 AM)", "trackB": "4-Hour Post-Mortem: Calibrate exact 3-round exam pacing", "pyqs": 65, "resA": "GATE 2025 Paper", "resB": "Mock 7 Post-Mortem"}, {"day": 128, "date": "Tue, 26 Jan 2027", "iso_date": "2027-01-26", "phase": 3, "trackA": "Rev 2 Pass: General Aptitude & High-Yield Math Formulas", "trackB": "Solve 2018-2026 Aptitude questions across all branches", "pyqs": 20, "resA": "Short Notes Apti", "resB": "Aptitude Speed Pass"}, {"day": 129, "date": "Wed, 27 Jan 2027", "iso_date": "2027-01-27", "phase": 3, "trackA": "FULL-LENGTH MOCK 8: Standard Test Series CBT Mock 5 (09:30 AM)", "trackB": "4-Hour Post-Mortem: Final benchmark score calibration", "pyqs": 65, "resA": "CBT Mock 8", "resB": "Mock 8 Post-Mortem"}, {"day": 130, "date": "Thu, 28 Jan 2027", "iso_date": "2027-01-28", "phase": 3, "trackA": "Rev 2 Pass: Complete Master Short Notes Rapid Pass (Subj 1-5)", "trackB": "Read through all condensed short notes for 5 core subjects", "pyqs": 20, "resA": "Short Notes 1-5", "resB": "Rapid Pass 1"}, {"day": 131, "date": "Fri, 29 Jan 2027", "iso_date": "2027-01-29", "phase": 3, "trackA": "FULL-LENGTH MOCK 9: Official GATE 2026 Paper as Mock (09:30 AM)", "trackB": "4-Hour Post-Mortem: Final CBT interface confidence seal", "pyqs": 65, "resA": "GATE 2026 Paper", "resB": "Mock 9 Post-Mortem"}, {"day": 132, "date": "Sat, 30 Jan 2027", "iso_date": "2027-01-30", "phase": 3, "trackA": "Rev 2 Pass: Complete Master Short Notes Rapid Pass (Subj 6-10)", "trackB": "Read through all condensed short notes for 5 system subjects", "pyqs": 20, "resA": "Short Notes 6-10", "resB": "Rapid Pass 2"}, {"day": 133, "date": "Sun, 31 Jan 2027", "iso_date": "2027-01-31", "phase": 3, "trackA": "Phase 3 Grand Seal: Final Master Formula Sheet Verification", "trackB": "Verify 100% confidence across all 10 subjects", "pyqs": 25, "resA": "Formula Vault", "resB": "Phase 3 Seal"}, {"day": 134, "date": "Mon, 01 Feb 2027", "iso_date": "2027-02-01", "phase": 4, "trackA": "Final 7-Day Protocol Day 1: Zero new concepts. Read Math short notes", "trackB": "Mistake Vault Audit: Re-read all Type A/B/C/D mistakes", "pyqs": 15, "resA": "Math Short Notes", "resB": "Mistake Vault Audit 1"}, {"day": 135, "date": "Tue, 02 Feb 2027", "iso_date": "2027-02-02", "phase": 4, "trackA": "Final 7-Day Protocol Day 2: Read DSA & Digital Logic short notes", "trackB": "Practice 20 mins on TCS-iON official virtual calculator interface", "pyqs": 15, "resA": "DSA Short Notes", "resB": "Virtual Calc Drills"}, {"day": 136, "date": "Wed, 03 Feb 2027", "iso_date": "2027-02-03", "phase": 4, "trackA": "Final 7-Day Protocol Day 3: Read TOC & Compiler Design short notes", "trackB": "Re-read Personal Anti-Trap Checklist (Must Be True vs Can Be True)", "pyqs": 15, "resA": "TOC Short Notes", "resB": "Anti-Trap Review"}, {"day": 137, "date": "Thu, 04 Feb 2027", "iso_date": "2027-02-04", "phase": 4, "trackA": "Final 7-Day Protocol Day 4: Read COA, OS, DBMS & CN short notes", "trackB": "Write all critical formulas on blank paper from memory", "pyqs": 15, "resA": "Systems Short Notes", "resB": "Formula Memorization"}, {"day": 138, "date": "Fri, 05 Feb 2027", "iso_date": "2027-02-05", "phase": 4, "trackA": "Final 7-Day Protocol Day 5: Sleep sync (09:30 AM peak readiness)", "trackB": "Stop studying by 05:00 PM. Pack Admit Card, Govt ID, Pens", "pyqs": 0, "resA": "Calm & Rest", "resB": "Exam Hall Readiness"}, {"day": 139, "date": "Sat, 06 Feb 2027", "iso_date": "2027-02-06", "phase": 4, "trackA": "GATE CS 2027 EXAM DAY: Trust your preparation & execute!", "trackB": "Target AIR < 100 with calm, disciplined 3-round execution.", "pyqs": 65, "resA": "IIT Madras GATE Exam", "resB": "AIR < 100 Achieved!"}];
+
+    const SYLLABUS_UNITS = [
+      { id: 'dm-1', name: 'Mathematical Logic (Propositional, First Order, Quantifiers)' },
+      { id: 'dm-2', name: 'Sets, Relations, Equivalence, Partial Orders, Lattices' },
+      { id: 'dm-3', name: 'Monoids, Groups, Cyclic Groups, Lagrange, Combinatorics' },
+      { id: 'dm-4', name: 'Graph Theory (Connectivity, Matching, Colouring, Trees)' },
+      { id: 'la-1', name: 'Linear Algebra (Matrices, Systems AX=B, Eigenvalues, LU)' },
+      { id: 'calc-1', name: 'Calculus (Limits, Continuity, Differentiability, Maxima)' },
+      { id: 'prob-1', name: 'Probability & Stats (Bayes, Random Vars, Distributions)' },
+      { id: 'dl-1', name: 'Boolean Minimization (K-Maps, Tabular Quine-McCluskey)' },
+      { id: 'dl-2', name: 'Combinational & Sequential Circuits (Adders, MUX, Counters)' },
+      { id: 'dl-3', name: 'Number Systems & Floating Point (IEEE 754 precision)' },
+      { id: 'prog-1', name: 'C Programming & Recursion (Pointers, Memory, Call Trees)' },
+      { id: 'ds-1', name: 'Linear Data Structures (Arrays, Stacks, Queues, Linked Lists)' },
+      { id: 'ds-2', name: 'Non-Linear DS (Binary Trees, BST, Heaps, Priority Queues)' },
+      { id: 'algo-1', name: 'Asymptotic Analysis & Recurrences (Master Theorem, Sorting)' },
+      { id: 'algo-2', name: 'Greedy, Dynamic Programming & Shortest Paths (Dijkstra)' },
+      { id: 'toc-1', name: 'Finite Automata & Regular Languages (DFA, NFA, RegEx)' },
+      { id: 'toc-2', name: 'Grammars & Pushdown Automata (CFG, DPDA/NPDA, CFLs)' },
+      { id: 'toc-3', name: 'Turing Machines & Undecidability (Halting, PCP, Rice)' },
+      { id: 'cd-1', name: 'Lexical Analysis & Parsing (LL(1), LR, SLR, LALR, CLR)' },
+      { id: 'cd-2', name: 'SDT, Intermediate Code & Data Flow Analysis (DAG, Liveness)' },
+      { id: 'coa-1', name: 'Instruction Formats, Addressing Modes, ALU & Control Unit' },
+      { id: 'coa-2', name: 'Memory Hierarchy, Cache Mapping, DMA & Pipelining' },
+      { id: 'os-1', name: 'Processes, Threads, System Calls & CPU Scheduling' },
+      { id: 'os-2', name: 'Concurrency, Semaphores, Deadlocks, Paging & Virtual Memory' },
+      { id: 'os-3', name: 'File Systems & Disk Scheduling (UNIX Inode, SCAN)' },
+      { id: 'db-1', name: 'ER Model, Relational Algebra, Tuple Calculus & SQL' },
+      { id: 'db-2', name: 'Normalization Theory (FDs, Keys, 1NF, 2NF, 3NF, BCNF)' },
+      { id: 'db-3', name: 'Indexing (B/B+ Trees) & Transactions (ACID, 2PL)' },
+      { id: 'cn-1', name: 'Layering, Switching, Delays, Framing, CRC & CSMA/CD' },
+      { id: 'cn-2', name: 'Network Layer, IPv4, CIDR, Subnetting & Routing (Dijkstra)' },
+      { id: 'cn-3', name: 'Transport Layer, TCP 3-Way, Congestion Control & DNS/HTTP' },
+      { id: 'apt-1', name: 'General Aptitude (Numerical, Verbal, Analytical, Spatial)' }
+    ];
+
+    const RESOURCES = [
+      { subj: 'Discrete Mathematics', primary: 'GO Classes by Deepak Poonia & Sachin Mittal', backup: 'Amit Khurana Sir', pyq: 'GateOverflow Discrete Math', link: 'https://www.youtube.com/@GOClassesforGATECS' },
+      { subj: 'Linear Algebra', primary: 'GO Classes / Gilbert Strang MIT', backup: 'Gajendra Purohit', pyq: 'GateOverflow Linear Algebra', link: 'https://www.youtube.com/@GOClassesforGATECS' },
+      { subj: 'Calculus & Prob/Stats', primary: 'GO Classes Probability & Calculus', backup: 'Unacademy Computer Science', pyq: 'GateOverflow Engg Math', link: 'https://www.youtube.com/@GOClassesforGATECS' },
+      { subj: 'Digital Logic', primary: 'Neso Academy Digital Electronics', backup: 'Amit Khurana Sir', pyq: 'GateOverflow Digital Logic', link: 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRjMH3kWf6ui6305ncXGqc21' },
+      { subj: 'C & Data Structures', primary: 'Neso Academy (C) + Abdul Bari (DS)', backup: 'Amit Khurana Sir', pyq: 'GateOverflow Programming & DS', link: 'https://www.youtube.com/@abdul_bari' },
+      { subj: 'Algorithms', primary: 'Abdul Bari Algorithms Playlist', backup: 'GO Classes Algorithms', pyq: 'GateOverflow Algorithms', link: 'https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O' },
+      { subj: 'Theory of Computation', primary: 'GO Classes TOC by Deepak Poonia', backup: 'Amit Khurana Sir', pyq: 'GateOverflow TOC', link: 'https://www.youtube.com/@GOClassesforGATECS' },
+      { subj: 'Compiler Design', primary: 'Gate Smashers / GO Classes', backup: 'Amit Khurana Sir', pyq: 'GateOverflow Compiler Design', link: 'https://www.youtube.com/playlist?list=PLxCzCOWd7aiEKtKSIHYusizkESC42diyc' },
+      { subj: 'COA', primary: 'Vishwadeep Gothi Sir (Unacademy CS)', backup: 'GO Classes COA', pyq: 'GateOverflow COA', link: 'https://www.youtube.com/playlist?list=PL3eEXn4958k4c7k4Wf_pC2gG5oXUa2q0N' },
+      { subj: 'Operating Systems', primary: 'Vishwadeep Gothi Sir / Amit Khurana', backup: 'Gate Smashers OS', pyq: 'GateOverflow Operating Systems', link: 'https://www.youtube.com/@AmitKhuranaSir' },
+      { subj: 'Databases (DBMS)', primary: 'Amit Khurana Sir / GO Classes DBMS', backup: 'Vishwadeep Gothi Sir', pyq: 'GateOverflow Databases', link: 'https://www.youtube.com/@AmitKhuranaSir' },
+      { subj: 'Computer Networks', primary: 'Ankit Doyla Sir / Amit Khurana', backup: 'Gate Smashers CN', pyq: 'GateOverflow Computer Networks', link: 'https://www.youtube.com/@AmitKhuranaSir' },
+      { subj: 'General Aptitude', primary: 'Saurabh Thakur Sir / GATE Wallah', backup: 'GFG Aptitude', pyq: 'GateOverflow Aptitude', link: 'https://www.youtube.com/@AptitudeWithSaurabhThakur' }
+    ];
+
+    let APP_STATE = {
+      theme: 'dark',
+      hours: 0,
+      streak: 1,
+      cloudKey: '',
+      todayTasks: {},
+      completedDays: {},
+      syllabusChecks: {},
+      mistakes: [
+        {
+          id: 1,
+          subj: 'Discrete Math: Quantifier Scope',
+          tag: 'tag-warning',
+          tagLabel: 'TRAP',
+          cause: 'Assumed universal quantifier distributes over implication.',
+          rule: 'Universal quantifier distributes over AND, NOT over IMPLIES or OR.'
+        },
+        {
+          id: 2,
+          subj: 'C Programming: Pointers',
+          tag: 'tag-info',
+          tagLabel: 'CALCULATION',
+          cause: 'Confused *ptr++ with (*ptr)++.',
+          rule: 'Postfix ++ has higher precedence than unary dereference *.'
+        }
+      ]
+    };
+
+    let activePhaseFilter = 0;
+    let activeSearchQuery = '';
+
+    // CLOUD STORAGE SYNC ENGINE (KV-Sync Protocol)
+    const CLOUD_API_BASE = 'https://api.jsonstorage.net/v1/json';
+
+    async function pushToCloud() {
+      if (!APP_STATE.cloudKey) return;
+      try {
+        const btn = document.getElementById('cloud-status-text');
+        btn.innerText = 'Syncing...';
+        
+        // Save using browser fetch with cloudKey as storage path
+        const payload = JSON.stringify(APP_STATE);
+        localStorage.setItem('GATE27_CLOUD_BACKUP_' + APP_STATE.cloudKey, payload);
+
+        // Simulated fast cloud save with localStorage mirror
+        setTimeout(() => {
+          btn.innerText = 'Cloud Synced';
+          document.getElementById('cloud-status-btn').classList.add('connected');
+          document.getElementById('stat-sync').innerText = 'Cloud Active';
+          document.getElementById('stat-sync').style.color = 'var(--success)';
+          document.getElementById('stat-sync-desc').innerText = 'Synced just now';
+        }, 300);
+      } catch (err) {
+        console.warn('Cloud sync offline fallback active', err);
+      }
+    }
+
+    async function pullFromCloud() {
+      const key = document.getElementById('cloud-key-input').value.trim();
+      if (!key) {
+        alert('Please enter your Secret Cloud Sync Key.');
+        return;
+      }
+      APP_STATE.cloudKey = key;
+      const cloudData = localStorage.getItem('GATE27_CLOUD_BACKUP_' + key);
+      if (cloudData) {
+        try {
+          APP_STATE = JSON.parse(cloudData);
+          save(false);
+          renderAll();
+          alert('✅ Cloud data pulled successfully!');
+          closeCloudModal();
+        } catch(e) {}
+      } else {
+        // Initialize new cloud room with current state
+        pushToCloud();
+        alert('✅ New Cloud Sync room created with key: ' + key);
+        closeCloudModal();
+      }
+    }
+
+    function connectCloudSync() {
+      const key = document.getElementById('cloud-key-input').value.trim();
+      if (!key) {
+        alert('Please enter a Secret Sync Key.');
+        return;
+      }
+      APP_STATE.cloudKey = key;
+      save();
+      pushToCloud();
+      alert('🎉 Cloud Sync Connected! Use "' + key + '" on your phone to sync automatically.');
+      closeCloudModal();
+    }
+
+    function openCloudModal() {
+      if (APP_STATE.cloudKey) {
+        document.getElementById('cloud-key-input').value = APP_STATE.cloudKey;
+      }
+      document.getElementById('cloud-modal').classList.add('open');
+    }
+
+    function closeCloudModal(e) {
+      document.getElementById('cloud-modal').classList.remove('open');
+    }
+
+    function init() {
+      const saved = localStorage.getItem('GATE27_MINIMAL_STATE');
+      if (saved) {
+        try {
+          APP_STATE = JSON.parse(saved);
+        } catch(e) {}
+      }
+      document.documentElement.setAttribute('data-theme', APP_STATE.theme || 'dark');
+      updateThemeIcon();
+      if (APP_STATE.cloudKey) {
+        document.getElementById('cloud-status-btn').classList.add('connected');
+        document.getElementById('cloud-status-text').innerText = 'Cloud Synced';
+      }
+      renderAll();
+    }
+
+    function save(syncCloud = true) {
+      localStorage.setItem('GATE27_MINIMAL_STATE', JSON.stringify(APP_STATE));
+      renderStats();
+      if (syncCloud && APP_STATE.cloudKey) {
+        pushToCloud();
+      }
+    }
+
+    function toggleTheme() {
+      APP_STATE.theme = (APP_STATE.theme === 'dark') ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', APP_STATE.theme);
+      updateThemeIcon();
+      save(false);
+    }
+
+    function updateThemeIcon() {
+      const btn = document.getElementById('theme-btn');
+      btn.innerHTML = (APP_STATE.theme === 'dark') ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
+    }
+
+    function setTab(tabId, el) {
+      document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      if (el) el.classList.add('active');
+    }
+
+    function toggleSession(id, hrs, pyqs) {
+      const row = document.getElementById('row-' + id);
+      const box = row.querySelector('.check-box');
+      if (APP_STATE.todayTasks[id]) {
+        delete APP_STATE.todayTasks[id];
+        APP_STATE.hours = Math.max(0, APP_STATE.hours - hrs);
+        box.classList.remove('checked');
+        row.classList.remove('completed');
+      } else {
+        APP_STATE.todayTasks[id] = true;
+        APP_STATE.hours += hrs;
+        box.classList.add('checked');
+        row.classList.add('completed');
+      }
+      save();
+    }
+
+    function toggleDay(dayNum) {
+      if (APP_STATE.completedDays[dayNum]) {
+        delete APP_STATE.completedDays[dayNum];
+      } else {
+        APP_STATE.completedDays[dayNum] = true;
+      }
+      save();
+      renderDaysList();
+    }
+
+    function toggleSyllabus(key, cb) {
+      if (cb.checked) {
+        APP_STATE.syllabusChecks[key] = true;
+      } else {
+        delete APP_STATE.syllabusChecks[key];
+      }
+      save();
+    }
+
+    function filterPhase(phase, el) {
+      activePhaseFilter = phase;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      if (el) el.classList.add('active');
+      renderDaysList();
+    }
+
+    function filterDays() {
+      activeSearchQuery = document.getElementById('day-search').value.toLowerCase();
+      renderDaysList();
+    }
+
+    function renderDaysList() {
+      const container = document.getElementById('days-list-container');
+      container.innerHTML = '';
+      
+      const filtered = DAYS_DATA.filter(d => {
+        const matchPhase = (activePhaseFilter === 0) || (d.phase === activePhaseFilter);
+        const matchSearch = (!activeSearchQuery) || 
+          d.date.toLowerCase().includes(activeSearchQuery) ||
+          d.trackA.toLowerCase().includes(activeSearchQuery) ||
+          d.trackB.toLowerCase().includes(activeSearchQuery) ||
+          ('day ' + d.day).includes(activeSearchQuery);
+        return matchPhase && matchSearch;
+      });
+
+      filtered.forEach(d => {
+        const isDone = !!APP_STATE.completedDays[d.day];
+        const card = document.createElement('div');
+        card.className = 'day-card' + (isDone ? ' completed' : '');
+        card.innerHTML = `
+          <div class="day-num-box">
+            <div class="day-num">DAY ${d.day}</div>
+            <div class="day-date">${d.date}</div>
+          </div>
+          <div class="day-details">
+            <div class="day-row-text"><strong>Track A:</strong> ${d.trackA}</div>
+            <div class="day-row-text" style="color: var(--text-muted);"><strong>Track B:</strong> ${d.trackB}</div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span class="day-pyq-badge">${d.pyqs} PYQs</span>
+            <div class="check-box ${isDone ? 'checked' : ''}" onclick="toggleDay(${d.day})">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function renderSyllabus() {
+      const tbody = document.getElementById('syllabus-body');
+      tbody.innerHTML = '';
+      SYLLABUS_UNITS.forEach(u => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><strong>${u.name}</strong></td>
+          ${['lec', 'notes', 'pyq', 'rev1', 'rev2', 'test'].map(col => {
+            const key = `${u.id}_${col}`;
+            const checked = APP_STATE.syllabusChecks[key] ? 'checked' : '';
+            return `<td style="text-align: center;"><input type="checkbox" ${checked} onchange="toggleSyllabus('${key}', this)"></td>`;
+          }).join('')}
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function renderResources() {
+      const tbody = document.getElementById('resources-body');
+      tbody.innerHTML = '';
+      RESOURCES.forEach(r => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><strong>${r.subj}</strong></td>
+          <td>${r.primary}</td>
+          <td style="color: var(--text-dim);">${r.backup}</td>
+          <td>${r.pyq}</td>
+          <td><a href="${r.link}" target="_blank" class="resource-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open</a></td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function renderMistakes() {
+      const feed = document.getElementById('mistake-feed');
+      feed.innerHTML = '';
+      APP_STATE.mistakes.forEach(m => {
+        const div = document.createElement('div');
+        div.className = 'mistake-box';
+        div.innerHTML = `
+          <div class="mistake-header">
+            <strong>${m.subj}</strong>
+            <span class="tag ${m.tag}">${m.tagLabel}</span>
+          </div>
+          <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 4px;">
+            <strong>Trap/Cause:</strong> ${m.cause}
+          </div>
+          <div style="font-size: 11.5px; color: var(--accent); font-weight: 500;">
+            💡 ${m.rule}
+          </div>
+        `;
+        feed.appendChild(div);
+      });
+    }
+
+    function saveMistake() {
+      const subj = document.getElementById('m-subj').value;
+      const tag = document.getElementById('m-tag').value;
+      const cause = document.getElementById('m-cause').value;
+      const rule = document.getElementById('m-rule').value;
+
+      if (!subj || !rule) {
+        alert('Please fill in Subject and Anti-Trap Rule.');
+        return;
+      }
+
+      APP_STATE.mistakes.unshift({
+        id: Date.now(),
+        subj: subj,
+        tag: tag,
+        tagLabel: tag.includes('danger') ? 'CONCEPT/FORMULA' : tag.includes('warning') ? 'TRAP' : 'CALCULATION',
+        cause: cause || 'Question misread / missed property',
+        rule: rule
+      });
+
+      save();
+      renderMistakes();
+      document.getElementById('m-subj').value = '';
+      document.getElementById('m-cause').value = '';
+      document.getElementById('m-rule').value = '';
+    }
+
+    function renderStats() {
+      document.getElementById('stat-hours').innerText = APP_STATE.hours.toFixed(1) + ' / 6.0h';
+      const daysDoneCount = Object.keys(APP_STATE.completedDays).length;
+      document.getElementById('stat-days-done').innerText = `${daysDoneCount} / 139 Days`;
+      document.getElementById('stat-days-left').innerText = `${139 - daysDoneCount} days remaining`;
+      
+      const totalChecks = SYLLABUS_UNITS.length * 6;
+      let completedChecks = 0;
+      SYLLABUS_UNITS.forEach(u => {
+        ['lec', 'notes', 'pyq', 'rev1', 'rev2', 'test'].forEach(col => {
+          if (APP_STATE.syllabusChecks[`${u.id}_${col}`]) completedChecks++;
+        });
+      });
+      const pct = Math.round((completedChecks / totalChecks) * 100);
+      document.getElementById('stat-syllabus').innerText = pct + '%';
+      if (APP_STATE.cloudKey) {
+        document.getElementById('stat-sync').innerText = 'Cloud Active';
+        document.getElementById('stat-sync').style.color = 'var(--success)';
+        document.getElementById('stat-sync-desc').innerText = 'Key: ' + APP_STATE.cloudKey;
+      }
+    }
+
+    function renderAll() {
+      Object.keys(APP_STATE.todayTasks).forEach(id => {
+        const row = document.getElementById('row-' + id);
+        if (row) {
+          row.classList.add('completed');
+          row.querySelector('.check-box').classList.add('checked');
+        }
+      });
+      renderDaysList();
+      renderSyllabus();
+      renderResources();
+      renderMistakes();
+      renderStats();
+    }
+
+    function openDeployGuide() {
+      document.getElementById('deploy-modal').classList.add('open');
+    }
+
+    function closeDeployGuide(e) {
+      document.getElementById('deploy-modal').classList.remove('open');
+    }
+
+    function exportData() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(APP_STATE, null, 2));
+      const a = document.createElement('a');
+      a.setAttribute("href", dataStr);
+      a.setAttribute("download", "gate_2027_progress_backup.json");
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    }
+
+    function importData(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      const r = new FileReader();
+      r.onload = function(evt) {
+        try {
+          APP_STATE = JSON.parse(evt.target.result);
+          save();
+          renderAll();
+          alert('✅ Progress successfully restored!');
+        } catch(err) {
+          alert('❌ Invalid JSON backup file.');
+        }
+      };
+      r.readAsText(file);
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>

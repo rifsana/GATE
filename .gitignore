@@ -1,0 +1,9 @@
+# Build and temporary scripts
+generate_pdf.py
+generate_days.py
+compile_html.py
+build_clean_ui.py
+days_data.json
+run_server.bat
+*.pyc
+__pycache__/
