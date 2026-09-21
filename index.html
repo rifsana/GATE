@@ -92,29 +92,47 @@
       font-size: 15px;
     }
 
-    /* Top Navigation Bar */
+    /* ─── Top Navigation: 2-row responsive layout ─────────────────── */
     .top-nav {
-      height: 60px;
       background: var(--bg-surface);
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
       z-index: 100;
+      backdrop-filter: blur(16px);
+    }
+
+    /* Row 1: Brand + Actions */
+    .nav-row-top {
+      height: 56px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 0 28px;
-      gap: 16px;
-      backdrop-filter: blur(16px);
+      gap: 12px;
     }
+
+    /* Row 2: Tab strip */
+    .nav-row-tabs {
+      border-top: 1px solid var(--border);
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      height: 44px;
+    }
+    .nav-row-tabs::-webkit-scrollbar { display: none; }
 
     .brand-wrap {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       font-size: 15px;
       font-weight: 700;
       letter-spacing: -0.3px;
+      flex-shrink: 0;
     }
 
     .brand-pill {
@@ -124,23 +142,22 @@
       border-radius: var(--radius-sm);
       background: var(--accent-muted);
       color: var(--accent);
-      border: 1px solid var(--accent);
+      border: 1px solid rgba(56,189,248,0.3);
       font-family: var(--font-mono);
     }
 
-    .nav-tabs-wrapper {
-      display: flex;
-      align-items: center;
-      gap: 2px;
-      overflow-x: auto;
-      scrollbar-width: none;
-      flex: 1;
+    /* Hide pill on very small screens */
+    @media (max-width: 400px) {
+      .brand-pill { display: none; }
     }
-    .nav-tabs-wrapper::-webkit-scrollbar { display: none; }
+
+    .nav-tabs-wrapper {
+      display: contents; /* children flow directly into .nav-row-tabs */
+    }
 
     .tab-btn {
-      padding: 7px 14px;
-      border-radius: var(--radius-sm);
+      padding: 0 14px;
+      height: 44px;
       border: none;
       background: transparent;
       color: var(--text-3);
@@ -150,20 +167,21 @@
       white-space: nowrap;
       display: flex;
       align-items: center;
-      gap: 7px;
+      gap: 6px;
       transition: color 0.15s ease, background 0.15s ease;
-      letter-spacing: 0.1px;
+      border-bottom: 2px solid transparent;
+      flex-shrink: 0;
+      font-family: var(--font-sans);
     }
 
     .tab-btn:hover {
       color: var(--text-1);
-      background: var(--bg-surface-elevated);
     }
 
     .tab-btn.active {
       color: var(--text-1);
-      background: var(--bg-surface-elevated);
       font-weight: 600;
+      border-bottom-color: var(--accent);
     }
 
     .nav-actions {
@@ -185,8 +203,9 @@
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 7px;
+      gap: 6px;
       transition: all 0.15s ease;
+      white-space: nowrap;
     }
 
     .tool-btn:hover {
@@ -202,6 +221,154 @@
       font-weight: 600;
     }
 
+    /* Responsive adjustments */
+    @media (max-width: 680px) {
+      .nav-row-top { padding: 0 16px; height: 52px; }
+      .nav-row-tabs { padding: 0 12px; }
+      .tool-btn span { display: none; } /* hide text labels, show icons only */
+    }
+
+    /* ─── Cloud Sync Modal ────────────────────────────────────────── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.open {
+      display: flex;
+    }
+    .modal-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      width: 100%;
+      max-width: 520px;
+      position: relative;
+    }
+    .modal-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      letter-spacing: -0.3px;
+    }
+    .modal-subtitle {
+      font-size: 13.5px;
+      color: var(--text-2);
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+    .modal-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--text-3);
+      margin-bottom: 6px;
+      margin-top: 16px;
+      display: block;
+    }
+    .modal-label:first-of-type { margin-top: 0; }
+    .modal-input {
+      width: 100%;
+      height: 40px;
+      padding: 0 14px;
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text-1);
+      font-size: 13.5px;
+      outline: none;
+      transition: border-color 0.15s;
+      font-family: var(--font-mono);
+    }
+    .modal-input:focus { border-color: var(--accent); }
+    .modal-status {
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--text-2);
+      min-height: 20px;
+    }
+    .modal-status.ok { color: var(--success); }
+    .modal-status.err { color: var(--danger); }
+    .modal-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .modal-btn {
+      height: 40px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      background: var(--bg-surface-elevated);
+      color: var(--text-1);
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.15s ease;
+    }
+    .modal-btn:hover {
+      border-color: var(--border-strong);
+    }
+    .modal-btn.primary {
+      background: var(--accent);
+      color: #000;
+      border-color: var(--accent);
+    }
+    .modal-btn.primary:hover {
+      opacity: 0.9;
+    }
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-3);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      transition: all 0.15s;
+    }
+    .modal-close:hover { color: var(--text-1); border-color: var(--border-strong); }
+    .modal-hint {
+      font-size: 12px;
+      color: var(--text-3);
+      line-height: 1.6;
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    .modal-hint a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .modal-hint a:hover { text-decoration: underline; }
+    .sync-status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--text-3);
+      display: inline-block;
+      flex-shrink: 0;
+    }
+    .sync-status-dot.ok { background: var(--success); }
+
     /* Main Container with generous breathing space */
     .app-main {
       max-width: 1060px;
@@ -209,6 +376,10 @@
       margin: 0 auto;
       padding: 40px 28px 80px;
       flex: 1;
+    }
+
+    @media (max-width: 680px) {
+      .app-main { padding: 28px 16px 60px; }
     }
 
     /* Header Banner */
@@ -241,14 +412,10 @@
 
     @media (max-width: 860px) {
       .kpi-grid { grid-template-columns: repeat(2, 1fr); }
-      .top-nav { padding: 0 16px; }
-      .app-main { padding: 24px 16px 60px; }
-      .brand-wrap span:not(.brand-pill) { display: none; }
     }
 
     @media (max-width: 520px) {
       .kpi-grid { grid-template-columns: 1fr; }
-      .tab-btn { padding: 7px 10px; font-size: 12.5px; }
     }
 
     .kpi-card {
@@ -818,39 +985,87 @@
 </head>
 <body>
 
-  <!-- Minimal Navigation -->
-  <header class="top-nav">
-    <div class="brand-wrap">
-      <i class="fa-solid fa-graduation-cap" style="color: var(--accent);"></i>
-      <span>GATE CS 2027</span>
-      <span class="brand-pill">IIT Madras</span>
+  <!-- Navigation: 2-row responsive -->
+  <header class="top-nav" id="top-nav">
+    <!-- Row 1: Brand + Actions -->
+    <div class="nav-row-top">
+      <div class="brand-wrap">
+        <i class="fa-solid fa-graduation-cap" style="color: var(--accent);"></i>
+        <span>GATE CS 2027</span>
+        <span class="brand-pill">IIT Madras</span>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Cloud Sync -->
+        <button class="tool-btn" onclick="openCloudSyncModal()" id="btn-cloud" title="Cloud Sync">
+          <span class="sync-status-dot" id="sync-dot"></span>
+          <span>Sync</span>
+        </button>
+
+        <!-- Theme toggle -->
+        <button class="tool-btn" onclick="toggleAppTheme()" title="Toggle Theme" id="btn-theme-toggle">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Download backup -->
+        <button class="tool-btn" onclick="exportDataFile()" title="Export Backup">
+          <i class="fa-solid fa-download"></i>
+        </button>
+
+        <!-- Upload backup -->
+        <button class="tool-btn" onclick="document.getElementById('importFilePicker').click()" title="Import Backup">
+          <i class="fa-solid fa-upload"></i>
+        </button>
+        <input type="file" id="importFilePicker" style="display:none" onchange="importDataFile(event)" accept=".json">
+      </div>
     </div>
 
-    <!-- Navigation Tabs -->
-    <nav class="nav-tabs-wrapper">
+    <!-- Row 2: Scrollable Tab Strip -->
+    <div class="nav-row-tabs">
       <button class="tab-btn active" onclick="switchMainTab('tab-today', this)">Today</button>
-      <button class="tab-btn" onclick="switchMainTab('tab-syllabus', this)">Syllabus Matrix</button>
-      <button class="tab-btn" onclick="switchMainTab('tab-resources', this)">Resource Vault</button>
+      <button class="tab-btn" onclick="switchMainTab('tab-syllabus', this)">Syllabus</button>
+      <button class="tab-btn" onclick="switchMainTab('tab-resources', this)">Resources</button>
       <button class="tab-btn" onclick="switchMainTab('tab-roadmap', this)">139-Day Roadmap</button>
       <button class="tab-btn" onclick="switchMainTab('tab-mistakes', this)">Mistake Vault</button>
-    </nav>
-
-    <!-- Top Action Tools -->
-    <div class="nav-actions">
-      <button class="tool-btn" onclick="toggleAppTheme()" title="Toggle Theme" id="btn-theme-toggle">
-        <i class="fa-solid fa-moon"></i>
-      </button>
-
-      <button class="tool-btn" onclick="exportDataFile()" title="Download Backup JSON">
-        <i class="fa-solid fa-download"></i>
-      </button>
-
-      <button class="tool-btn" onclick="document.getElementById('importFilePicker').click()" title="Upload Backup JSON">
-        <i class="fa-solid fa-upload"></i>
-      </button>
-      <input type="file" id="importFilePicker" style="display:none" onchange="importDataFile(event)" accept=".json">
     </div>
   </header>
+
+  <!-- Cloud Sync Modal -->
+  <div class="modal-overlay" id="cloud-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeCloudSyncModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-title"><i class="fa-solid fa-cloud" style="color: var(--accent); margin-right: 8px;"></i>Cloud Sync</div>
+      <div class="modal-subtitle">Sync your GATE 2027 progress across all devices using a free <strong>JSONBin.io</strong> account. Your data is private and locked to your secret API key.</div>
+
+      <label class="modal-label">JSONBin API Key (X-Master-Key)</label>
+      <input class="modal-input" id="sync-api-key" type="password" placeholder="$2a$10$..." autocomplete="off">
+
+      <label class="modal-label">Bin ID</label>
+      <input class="modal-input" id="sync-bin-id" type="text" placeholder="64f3a1b21234567890abcdef" autocomplete="off">
+
+      <div class="modal-status" id="sync-status"></div>
+
+      <div class="modal-actions">
+        <button class="modal-btn primary" onclick="cloudPush()">
+          <i class="fa-solid fa-cloud-arrow-up"></i> Push to Cloud
+        </button>
+        <button class="modal-btn" onclick="cloudPull()">
+          <i class="fa-solid fa-cloud-arrow-down"></i> Pull from Cloud
+        </button>
+        <button class="modal-btn" onclick="createNewBin()" style="grid-column: span 2;">
+          <i class="fa-solid fa-plus"></i> Create New Bin (first time setup)
+        </button>
+      </div>
+
+      <div class="modal-hint">
+        <strong>Quick setup (free, 2 min):</strong><br>
+        1. Go to <a href="https://jsonbin.io" target="_blank">jsonbin.io</a> → Sign up free.<br>
+        2. Dashboard → API Keys → Copy your <strong>Secret Key</strong>.<br>
+        3. Click <em>"Create New Bin"</em> above — it will create a private bin and save the Bin ID.<br>
+        4. Done! Click <strong>Push to Cloud</strong> anytime to sync from any device.
+      </div>
+    </div>
+  </div>
 
   <!-- Main Container -->
   <main class="app-main">
@@ -1492,6 +1707,131 @@
       };
       r.readAsText(file);
     }
+
+    /* ─── Cloud Sync (JSONBin.io) ──────────────────────────────────── */
+    const SYNC_KEY_STORE = 'gate_sync_config';
+
+    function openCloudSyncModal() {
+      const cfg = JSON.parse(localStorage.getItem(SYNC_KEY_STORE) || '{}');
+      if (cfg.apiKey) document.getElementById('sync-api-key').value = cfg.apiKey;
+      if (cfg.binId) document.getElementById('sync-bin-id').value = cfg.binId;
+      document.getElementById('sync-status').textContent = '';
+      document.getElementById('sync-status').className = 'modal-status';
+      document.getElementById('cloud-modal').classList.add('open');
+    }
+
+    function closeCloudSyncModal() {
+      document.getElementById('cloud-modal').classList.remove('open');
+    }
+
+    function getSyncConfig() {
+      const apiKey = document.getElementById('sync-api-key').value.trim();
+      const binId = document.getElementById('sync-bin-id').value.trim();
+      return { apiKey, binId };
+    }
+
+    function setSyncStatus(msg, type) {
+      const el = document.getElementById('sync-status');
+      el.textContent = msg;
+      el.className = 'modal-status ' + (type || '');
+    }
+
+    function updateSyncDot(ok) {
+      const dot = document.getElementById('sync-dot');
+      dot.className = 'sync-status-dot' + (ok ? ' ok' : '');
+    }
+
+    async function cloudPush() {
+      const { apiKey, binId } = getSyncConfig();
+      if (!apiKey || !binId) {
+        setSyncStatus('⚠ Please enter your API Key and Bin ID.', 'err');
+        return;
+      }
+      setSyncStatus('Pushing to cloud…');
+      try {
+        const res = await fetch(`https://api.jsonbin.io/v3/b/${binId}`, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Master-Key': apiKey
+          },
+          body: JSON.stringify(STATE)
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        localStorage.setItem(SYNC_KEY_STORE, JSON.stringify({ apiKey, binId }));
+        updateSyncDot(true);
+        setSyncStatus('✅ Synced to cloud — ' + new Date().toLocaleTimeString(), 'ok');
+      } catch (e) {
+        setSyncStatus('❌ Push failed: ' + e.message, 'err');
+        updateSyncDot(false);
+      }
+    }
+
+    async function cloudPull() {
+      const { apiKey, binId } = getSyncConfig();
+      if (!apiKey || !binId) {
+        setSyncStatus('⚠ Please enter your API Key and Bin ID.', 'err');
+        return;
+      }
+      setSyncStatus('Pulling from cloud…');
+      try {
+        const res = await fetch(`https://api.jsonbin.io/v3/b/${binId}/latest`, {
+          headers: { 'X-Master-Key': apiKey }
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const json = await res.json();
+        STATE = json.record;
+        saveState();
+        renderAll();
+        localStorage.setItem(SYNC_KEY_STORE, JSON.stringify({ apiKey, binId }));
+        updateSyncDot(true);
+        setSyncStatus('✅ Progress pulled and loaded — ' + new Date().toLocaleTimeString(), 'ok');
+      } catch (e) {
+        setSyncStatus('❌ Pull failed: ' + e.message, 'err');
+        updateSyncDot(false);
+      }
+    }
+
+    async function createNewBin() {
+      const { apiKey } = getSyncConfig();
+      if (!apiKey) {
+        setSyncStatus('⚠ Please enter your API Key first.', 'err');
+        return;
+      }
+      setSyncStatus('Creating new private bin…');
+      try {
+        const res = await fetch('https://api.jsonbin.io/v3/b', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Master-Key': apiKey,
+            'X-Bin-Name': 'GATE-2027-Progress',
+            'X-Bin-Private': 'true'
+          },
+          body: JSON.stringify(STATE)
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const json = await res.json();
+        const newBinId = json.metadata.id;
+        document.getElementById('sync-bin-id').value = newBinId;
+        localStorage.setItem(SYNC_KEY_STORE, JSON.stringify({ apiKey, binId: newBinId }));
+        updateSyncDot(true);
+        setSyncStatus('✅ New bin created! Bin ID saved. You can now Push/Pull.', 'ok');
+      } catch (e) {
+        setSyncStatus('❌ Failed to create bin: ' + e.message, 'err');
+      }
+    }
+
+    // Close modal on overlay click
+    document.getElementById('cloud-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeCloudSyncModal();
+    });
+
+    // Restore sync config on load
+    (function() {
+      const cfg = JSON.parse(localStorage.getItem(SYNC_KEY_STORE) || '{}');
+      if (cfg.binId) updateSyncDot(true);
+    })();
 
     document.addEventListener('DOMContentLoaded', init);
   </script>
