@@ -2,529 +2,579 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GATE CS 2027 | Preparation Hub</title>
-  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>GATE CS 2027 — Master Preparation Command Center</title>
+  
+  <!-- Inter & JetBrains Mono Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
+
   <style>
-    /* Minimalist Clean Design System */
+    /* -------------------------------------------------------------
+       PROFESSIONAL LINEAR/VERCEL DESIGN SYSTEM
+       Minimalist, High Contrast, Human-Engineered, Zero Clutter
+    ------------------------------------------------------------- */
     :root {
-      --bg: #090a0f;
-      --surface: #12141c;
-      --surface-hover: #1a1d28;
-      --surface-border: #222634;
-      --border-subtle: #1c202d;
+      --bg-root: #000000;
+      --bg-surface: #0a0a0c;
+      --bg-surface-elevated: #121216;
+      --bg-surface-hover: #18181f;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-focus: rgba(255, 255, 255, 0.25);
       
-      --text: #f1f5f9;
-      --text-muted: #94a3b8;
-      --text-dim: #64748b;
+      --text-1: #ffffff;
+      --text-2: #a1a1aa;
+      --text-3: #71717a;
       
-      --accent: #38bdf8;
-      --accent-muted: rgba(56, 189, 248, 0.12);
+      --accent: #ffffff;
+      --accent-invert: #000000;
+      --tag-bg: rgba(255, 255, 255, 0.06);
+      
       --success: #10b981;
-      --success-muted: rgba(16, 185, 129, 0.12);
+      --success-subtle: rgba(16, 185, 129, 0.12);
       --warning: #f59e0b;
-      --warning-muted: rgba(245, 158, 11, 0.12);
+      --warning-subtle: rgba(245, 158, 11, 0.12);
       --danger: #ef4444;
-      --danger-muted: rgba(239, 68, 68, 0.12);
+      --danger-subtle: rgba(239, 68, 68, 0.12);
       
       --radius-sm: 6px;
       --radius-md: 8px;
       --radius-lg: 12px;
+      --radius-full: 9999px;
+      
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
     }
 
     [data-theme="light"] {
-      --bg: #f8fafc;
-      --surface: #ffffff;
-      --surface-hover: #f1f5f9;
-      --surface-border: #e2e8f0;
-      --border-subtle: #edf2f7;
+      --bg-root: #fbfbfb;
+      --bg-surface: #ffffff;
+      --bg-surface-elevated: #f4f4f5;
+      --bg-surface-hover: #ececee;
+      --border: rgba(0, 0, 0, 0.08);
+      --border-focus: rgba(0, 0, 0, 0.25);
       
-      --text: #0f172a;
-      --text-muted: #475569;
-      --text-dim: #94a3b8;
+      --text-1: #09090b;
+      --text-2: #52525b;
+      --text-3: #a1a1aa;
       
-      --accent: #0284c7;
-      --accent-muted: rgba(2, 132, 199, 0.08);
+      --accent: #09090b;
+      --accent-invert: #ffffff;
+      --tag-bg: rgba(0, 0, 0, 0.04);
+      
       --success: #059669;
-      --success-muted: rgba(5, 150, 105, 0.08);
+      --success-subtle: rgba(5, 150, 105, 0.08);
       --warning: #d97706;
-      --warning-muted: rgba(217, 119, 6, 0.08);
+      --warning-subtle: rgba(217, 119, 6, 0.08);
       --danger: #dc2626;
-      --danger-muted: rgba(220, 38, 38, 0.08);
+      --danger-subtle: rgba(220, 38, 38, 0.08);
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: var(--font-sans);
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     body {
-      background-color: var(--bg);
-      color: var(--text);
+      background-color: var(--bg-root);
+      color: var(--text-1);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       line-height: 1.5;
-      transition: background-color 0.2s, color 0.2s;
+      font-size: 13.5px;
     }
 
-    /* Minimalist Top Nav */
-    .nav-bar {
-      height: 56px;
-      background: var(--surface);
-      border-bottom: 1px solid var(--surface-border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 24px;
+    /* Modern Minimalist Navigation */
+    .top-nav {
+      height: 52px;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
       z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
     }
 
-    .nav-brand {
+    .brand-wrap {
       display: flex;
       align-items: center;
       gap: 10px;
-      font-weight: 700;
-      font-size: 14px;
+      font-size: 13.5px;
+      font-weight: 600;
       letter-spacing: -0.2px;
     }
 
-    .nav-pill {
-      padding: 2px 8px;
-      border-radius: var(--radius-sm);
+    .brand-badge {
       font-size: 10px;
-      font-weight: 700;
-      background: var(--accent-muted);
-      color: var(--accent);
-      border: 1px solid var(--accent);
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: var(--radius-sm);
+      background: var(--tag-bg);
+      color: var(--text-2);
+      border: 1px solid var(--border);
+      font-family: var(--font-mono);
     }
 
-    .nav-links {
+    .nav-tabs-wrapper {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 2px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      padding: 4px 0;
     }
+    .nav-tabs-wrapper::-webkit-scrollbar { display: none; }
 
-    .nav-btn {
+    .tab-btn {
       padding: 6px 12px;
       border-radius: var(--radius-sm);
       border: none;
       background: transparent;
-      color: var(--text-muted);
+      color: var(--text-2);
       font-size: 13px;
       font-weight: 500;
       cursor: pointer;
+      white-space: nowrap;
       display: flex;
       align-items: center;
       gap: 6px;
-      transition: all 0.15s;
+      transition: all 0.12s ease;
     }
 
-    .nav-btn:hover {
-      color: var(--text);
-      background: var(--surface-hover);
+    .tab-btn:hover {
+      color: var(--text-1);
+      background: var(--bg-surface-elevated);
     }
 
-    .nav-btn.active {
-      color: var(--text);
-      background: var(--surface-hover);
+    .tab-btn.active {
+      color: var(--text-1);
+      background: var(--bg-surface-elevated);
       font-weight: 600;
     }
 
-    .nav-right {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .cloud-btn {
+    .nav-tools {
       display: flex;
       align-items: center;
       gap: 6px;
-      padding: 5px 10px;
+    }
+
+    .tool-btn {
+      height: 30px;
+      padding: 0 10px;
       border-radius: var(--radius-sm);
-      font-size: 11.5px;
-      font-weight: 600;
+      border: 1px solid var(--border);
+      background: var(--bg-surface);
+      color: var(--text-2);
+      font-size: 12px;
+      font-weight: 500;
       cursor: pointer;
-      border: 1px solid var(--surface-border);
-      background: var(--surface-hover);
-      color: var(--text);
-      transition: all 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.12s ease;
     }
 
-    .cloud-btn.connected {
+    .tool-btn:hover {
+      color: var(--text-1);
+      border-color: var(--border-focus);
+      background: var(--bg-surface-hover);
+    }
+
+    .tool-btn.active-cloud {
       border-color: var(--success);
       color: var(--success);
-      background: var(--success-muted);
+      background: var(--success-subtle);
     }
 
-    .icon-btn {
-      width: 32px;
-      height: 32px;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--surface-border);
-      background: var(--surface);
-      color: var(--text-muted);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 13px;
-      transition: all 0.15s;
-    }
-
-    .icon-btn:hover {
-      color: var(--text);
-      border-color: var(--text-dim);
-    }
-
-    /* Main Content Container */
-    .container {
-      max-width: 1080px;
+    /* Main Container */
+    .app-main {
+      max-width: 980px;
       width: 100%;
       margin: 0 auto;
-      padding: 24px 20px 60px;
+      padding: 24px 16px 60px;
       flex: 1;
     }
 
-    /* Top Stats Grid */
-    .stats-bar {
+    /* Top Stats Grid (Fully Responsive) */
+    .dashboard-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
+      gap: 10px;
       margin-bottom: 24px;
     }
 
-    .stat-card {
-      background: var(--surface);
-      border: 1px solid var(--surface-border);
+    @media (max-width: 768px) {
+      .dashboard-grid { grid-template-columns: repeat(2, 1fr); }
+      .top-nav { padding: 0 12px; }
+      .brand-wrap span { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      .dashboard-grid { grid-template-columns: 1fr; }
+    }
+
+    .stat-tile {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
       border-radius: var(--radius-md);
       padding: 14px 16px;
     }
 
-    .stat-label {
+    .stat-title {
       font-size: 11px;
-      font-weight: 600;
-      color: var(--text-dim);
+      font-weight: 500;
+      color: var(--text-3);
       text-transform: uppercase;
       letter-spacing: 0.5px;
       margin-bottom: 4px;
     }
 
     .stat-value {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
       font-family: var(--font-mono);
-      color: var(--text);
+      color: var(--text-1);
     }
 
-    .stat-desc {
+    .stat-footer {
       font-size: 11px;
-      color: var(--text-muted);
-      margin-top: 2px;
+      color: var(--text-2);
+      margin-top: 3px;
     }
 
-    /* Tabs Layout */
-    .tab-content {
+    /* Tab Panes */
+    .tab-view {
       display: none;
     }
-
-    .tab-content.active {
+    .tab-view.active {
       display: block;
     }
 
-    /* Card Box */
-    .clean-card {
-      background: var(--surface);
-      border: 1px solid var(--surface-border);
+    /* Minimalist Section Card */
+    .card-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      padding: 20px 24px;
+      padding: 20px;
       margin-bottom: 16px;
     }
 
-    .card-header {
+    .panel-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 16px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
     }
 
-    .card-heading {
-      font-size: 15px;
+    .panel-heading {
+      font-size: 14px;
       font-weight: 600;
+      letter-spacing: -0.2px;
       display: flex;
       align-items: center;
       gap: 8px;
     }
 
-    /* 6-Hour Today List */
-    .routine-row {
+    /* Routine Task Rows */
+    .task-row {
       display: flex;
       align-items: flex-start;
-      gap: 14px;
+      gap: 12px;
       padding: 12px 14px;
-      border: 1px solid var(--surface-border);
+      border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      margin-bottom: 10px;
-      background: var(--surface);
-      transition: all 0.15s;
+      margin-bottom: 8px;
+      background: var(--bg-surface);
+      transition: all 0.12s ease;
     }
 
-    .routine-row:hover {
-      border-color: var(--text-dim);
+    .task-row:hover {
+      border-color: var(--border-focus);
+      background: var(--bg-surface-elevated);
     }
 
-    .routine-row.completed {
-      border-color: var(--success-muted);
-      background: var(--success-muted);
+    .task-row.checked-done {
+      border-color: var(--success-subtle);
+      background: var(--success-subtle);
     }
 
-    .routine-row.completed .routine-title {
+    .task-row.checked-done .task-title {
       text-decoration: line-through;
-      color: var(--text-dim);
+      color: var(--text-3);
     }
 
-    .check-box {
-      width: 20px;
-      height: 20px;
+    .custom-checkbox {
+      width: 18px;
+      height: 18px;
       border-radius: 4px;
-      border: 1.5px solid var(--text-dim);
+      border: 1.5px solid var(--text-3);
       background: transparent;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 11px;
+      font-size: 10px;
       color: transparent;
       margin-top: 2px;
       flex-shrink: 0;
-      transition: all 0.15s;
+      transition: all 0.12s ease;
     }
 
-    .check-box.checked {
+    .custom-checkbox.active {
       background: var(--success);
       border-color: var(--success);
-      color: #fff;
+      color: #ffffff;
     }
 
-    .routine-body {
+    .task-content {
       flex: 1;
+      min-width: 0;
     }
 
-    .routine-meta {
+    .task-meta {
       display: flex;
       align-items: center;
       gap: 8px;
-      margin-bottom: 4px;
-    }
-
-    .time-tag {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--accent);
-      background: var(--accent-muted);
-      padding: 2px 6px;
-      border-radius: 4px;
-    }
-
-    .routine-title {
-      font-size: 13.5px;
-      font-weight: 600;
-      margin-bottom: 2px;
-    }
-
-    .routine-desc {
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-bottom: 6px;
-    }
-
-    .resource-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 11.5px;
-      font-weight: 500;
-      color: var(--accent);
-      text-decoration: none;
-      padding: 3px 8px;
-      border-radius: 4px;
-      background: var(--accent-muted);
-      border: 1px solid rgba(56, 189, 248, 0.2);
-    }
-
-    .resource-link:hover {
-      background: var(--accent);
-      color: #000;
-    }
-
-    /* Day-Wise Master Plan List */
-    .filter-bar {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 16px;
+      margin-bottom: 3px;
       flex-wrap: wrap;
     }
 
-    .search-input {
+    .task-time {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-2);
+      background: var(--tag-bg);
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+
+    .task-title {
+      font-size: 13.5px;
+      font-weight: 600;
+      margin-bottom: 2px;
+      color: var(--text-1);
+    }
+
+    .task-desc {
+      font-size: 12px;
+      color: var(--text-2);
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+
+    .resource-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-1);
+      text-decoration: none;
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      transition: all 0.12s ease;
+    }
+
+    .resource-chip:hover {
+      background: var(--text-1);
+      color: var(--accent-invert);
+      border-color: var(--text-1);
+    }
+
+    /* Filter & Search Bar */
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .search-field {
       flex: 1;
-      min-width: 240px;
-      padding: 8px 12px;
-      background: var(--surface);
-      border: 1px solid var(--surface-border);
+      min-width: 220px;
+      height: 34px;
+      padding: 0 12px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
       border-radius: var(--radius-sm);
-      color: var(--text);
-      font-size: 13px;
+      color: var(--text-1);
+      font-size: 12.5px;
       outline: none;
+      transition: border-color 0.12s;
     }
 
-    .search-input:focus {
-      border-color: var(--accent);
+    .search-field:focus {
+      border-color: var(--border-focus);
     }
 
-    .filter-btn {
-      padding: 6px 12px;
+    .chip-btn {
+      height: 34px;
+      padding: 0 12px;
       border-radius: var(--radius-sm);
-      border: 1px solid var(--surface-border);
-      background: var(--surface);
-      color: var(--text-muted);
+      border: 1px solid var(--border);
+      background: var(--bg-surface);
+      color: var(--text-2);
       font-size: 12px;
       cursor: pointer;
       font-weight: 500;
+      transition: all 0.12s;
     }
 
-    .filter-btn.active {
-      background: var(--text);
-      color: var(--bg);
-      border-color: var(--text);
+    .chip-btn.active {
+      background: var(--text-1);
+      color: var(--accent-invert);
+      border-color: var(--text-1);
       font-weight: 600;
     }
 
-    .day-card {
-      background: var(--surface);
-      border: 1px solid var(--surface-border);
+    /* 139-Day Cards (Fully Responsive Stack) */
+    .day-row-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      padding: 14px 18px;
-      margin-bottom: 10px;
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      gap: 16px;
+      padding: 14px;
+      margin-bottom: 8px;
+      display: flex;
       align-items: center;
-      transition: all 0.15s;
+      justify-content: space-between;
+      gap: 14px;
+      transition: all 0.12s ease;
     }
 
-    .day-card:hover {
-      border-color: var(--text-dim);
+    .day-row-card:hover {
+      border-color: var(--border-focus);
     }
 
-    .day-card.completed {
-      border-color: var(--success-muted);
-      background: var(--success-muted);
+    .day-row-card.done {
+      border-color: var(--success-subtle);
+      background: var(--success-subtle);
     }
 
-    .day-num-box {
-      text-align: center;
-      min-width: 70px;
+    @media (max-width: 600px) {
+      .day-row-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .day-row-actions {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid var(--border);
+        padding-top: 8px;
+        margin-top: 4px;
+      }
     }
 
-    .day-num {
-      font-size: 14px;
+    .day-left-meta {
+      min-width: 80px;
+    }
+
+    .day-number {
+      font-size: 13px;
       font-weight: 700;
       font-family: var(--font-mono);
+      color: var(--text-1);
     }
 
-    .day-date {
+    .day-date-text {
       font-size: 11px;
-      color: var(--text-dim);
+      color: var(--text-3);
     }
 
-    .day-details {
+    .day-topics-block {
+      flex: 1;
       font-size: 12.5px;
+      line-height: 1.4;
     }
 
-    .day-row-text {
-      margin-bottom: 3px;
+    .day-track-line {
+      margin-bottom: 2px;
     }
 
-    .day-pyq-badge {
+    .pyq-tag {
       font-family: var(--font-mono);
       font-size: 11px;
-      font-weight: 600;
+      font-weight: 500;
       padding: 2px 6px;
       border-radius: 4px;
-      background: var(--surface-hover);
-      color: var(--text-muted);
-      border: 1px solid var(--surface-border);
+      background: var(--tag-bg);
+      color: var(--text-2);
+      border: 1px solid var(--border);
     }
 
-    /* Minimalist Table */
-    .table-min {
+    /* Minimalist Tables */
+    .table-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .pro-table {
       width: 100%;
       border-collapse: collapse;
       font-size: 12.5px;
+      white-space: nowrap;
     }
 
-    .table-min th {
+    .pro-table th {
       text-align: left;
-      padding: 8px 12px;
+      padding: 8px 10px;
       font-size: 11px;
       font-weight: 600;
-      color: var(--text-dim);
+      color: var(--text-3);
       text-transform: uppercase;
-      border-bottom: 1px solid var(--surface-border);
+      border-bottom: 1px solid var(--border);
     }
 
-    .table-min td {
-      padding: 10px 12px;
-      border-bottom: 1px solid var(--border-subtle);
+    .pro-table td {
+      padding: 10px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
     }
 
     /* Mistake Vault */
-    .mistake-box {
-      border: 1px solid var(--surface-border);
+    .mistake-entry {
+      border: 1px solid var(--border);
       border-left: 3px solid var(--danger);
       border-radius: var(--radius-md);
-      padding: 12px 16px;
-      margin-bottom: 10px;
-      background: var(--surface);
+      padding: 12px 14px;
+      margin-bottom: 8px;
+      background: var(--bg-surface);
     }
 
-    .mistake-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 6px;
-    }
-
-    .tag {
+    .tag-badge {
       font-size: 10px;
-      font-weight: 700;
+      font-weight: 600;
       padding: 2px 6px;
       border-radius: 4px;
+      text-transform: uppercase;
+      font-family: var(--font-mono);
     }
 
-    .tag-danger { background: var(--danger-muted); color: var(--danger); }
-    .tag-warning { background: var(--warning-muted); color: var(--warning); }
-    .tag-info { background: var(--accent-muted); color: var(--accent); }
+    .tag-danger { background: var(--danger-subtle); color: var(--danger); }
+    .tag-warning { background: var(--warning-subtle); color: var(--warning); }
+    .tag-info { background: var(--tag-bg); color: var(--text-2); }
 
-    /* Modal */
-    .modal-overlay {
+    /* Modal Sheet */
+    .modal-backdrop {
       display: none;
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
@@ -533,171 +583,204 @@
       z-index: 200;
       align-items: center;
       justify-content: center;
+      padding: 16px;
     }
 
-    .modal-overlay.open {
+    .modal-backdrop.open {
       display: flex;
     }
 
-    .modal-box {
-      background: var(--surface);
-      border: 1px solid var(--surface-border);
+    .modal-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      max-width: 540px;
-      width: 90%;
-      padding: 24px;
+      max-width: 520px;
+      width: 100%;
+      padding: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     }
 
-    /* Print Clean */
+    .modal-row-btn {
+      display: flex;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    /* Form Elements */
+    .input-pro {
+      width: 100%;
+      height: 36px;
+      padding: 0 12px;
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text-1);
+      font-size: 12.5px;
+      outline: none;
+      margin-bottom: 10px;
+    }
+    .input-pro:focus {
+      border-color: var(--border-focus);
+    }
+
+    /* Print View */
     @media print {
-      .nav-bar, .filter-bar, .icon-btn, .cloud-btn { display: none !important; }
+      .top-nav, .filter-bar, .tool-btn { display: none !important; }
       body { background: #fff !important; color: #000 !important; }
-      .clean-card, .day-card, .routine-row { background: #fff !important; border: 1px solid #ccc !important; color: #000 !important; }
-      .tab-content { display: block !important; }
+      .card-panel, .day-row-card { background: #fff !important; border: 1px solid #ddd !important; color: #000 !important; }
+      .tab-view { display: block !important; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Minimal Nav -->
-  <header class="nav-bar">
-    <div class="nav-brand">
-      <i class="fa-solid fa-graduation-cap" style="color: var(--accent);"></i>
+  <!-- Minimal Navigation -->
+  <header class="top-nav">
+    <div class="brand-wrap">
+      <i class="fa-solid fa-graduation-cap"></i>
       <span>GATE CS 2027</span>
-      <span class="nav-pill">IIT Madras Target</span>
+      <span class="brand-badge">IIT Madras</span>
     </div>
 
-    <nav class="nav-links">
-      <button class="nav-btn active" onclick="setTab('today-tab', this)">Today</button>
-      <button class="nav-btn" onclick="setTab('daywise-tab', this)">139-Day Roadmap</button>
-      <button class="nav-btn" onclick="setTab('syllabus-tab', this)">Syllabus Matrix</button>
-      <button class="nav-btn" onclick="setTab('mistakes-tab', this)">Mistake Vault</button>
-      <button class="nav-btn" onclick="setTab('resources-tab', this)">Resources</button>
+    <!-- Scrollable Tab Switcher -->
+    <nav class="nav-tabs-wrapper">
+      <button class="tab-btn active" onclick="switchView('view-today', this)">Today</button>
+      <button class="tab-btn" onclick="switchView('view-calendar', this)">139-Day Plan</button>
+      <button class="tab-btn" onclick="switchView('view-syllabus', this)">Syllabus Matrix</button>
+      <button class="tab-btn" onclick="switchView('view-mistakes', this)">Mistake Vault</button>
+      <button class="tab-btn" onclick="switchView('view-resources', this)">Resources</button>
     </nav>
 
-    <div class="nav-right">
-      <!-- Live Cloud Sync Trigger -->
-      <button class="cloud-btn" id="cloud-status-btn" onclick="openCloudModal()">
+    <!-- Essential Actions -->
+    <div class="nav-tools">
+      <button class="tool-btn" id="cloud-pill" onclick="openCloudModal()">
         <i class="fa-solid fa-cloud"></i>
-        <span id="cloud-status-text">Cloud Sync</span>
+        <span id="cloud-pill-label">Cloud Sync</span>
       </button>
 
-      <button class="icon-btn" onclick="toggleTheme()" title="Toggle Theme" id="theme-btn">
+      <button class="tool-btn" onclick="toggleColorTheme()" title="Toggle Dark/Light" id="theme-icon">
         <i class="fa-solid fa-moon"></i>
       </button>
-      <button class="icon-btn" onclick="openDeployGuide()" title="GitHub Deploy Guide">
-        <i class="fa-brands fa-github"></i>
-      </button>
-      <button class="icon-btn" onclick="exportData()" title="Export Backup JSON">
+      
+      <button class="tool-btn" onclick="exportDataBackup()" title="Download Backup">
         <i class="fa-solid fa-download"></i>
       </button>
-      <button class="icon-btn" onclick="document.getElementById('importFile').click()" title="Import Backup JSON">
+
+      <button class="tool-btn" onclick="document.getElementById('importInput').click()" title="Restore Backup">
         <i class="fa-solid fa-upload"></i>
       </button>
-      <input type="file" id="importFile" style="display:none" onchange="importData(event)" accept=".json">
+      <input type="file" id="importInput" style="display:none" onchange="importDataBackup(event)" accept=".json">
     </div>
   </header>
 
-  <main class="container">
+  <!-- App Main Content -->
+  <main class="app-main">
 
-    <!-- Top Key Metrics -->
-    <section class="stats-bar">
-      <div class="stat-card">
-        <div class="stat-label">Daily Study Engine</div>
-        <div class="stat-value" id="stat-hours">0.0 / 6.0h</div>
-        <div class="stat-desc">4 slots (834h total)</div>
+    <!-- Top Key Performance Metrics -->
+    <section class="dashboard-grid">
+      <div class="stat-tile">
+        <div class="stat-title">Daily Study Hours</div>
+        <div class="stat-value" id="stat-hours-val">0.0 / 6.0h</div>
+        <div class="stat-footer">4 sessions (834h total)</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-label">139-Day Timeline</div>
-        <div class="stat-value" id="stat-days-done">0 / 139 Days</div>
-        <div class="stat-desc" id="stat-days-left">138 days remaining</div>
+      
+      <div class="stat-tile">
+        <div class="stat-title">Roadmap Progress</div>
+        <div class="stat-value" id="stat-days-val">0 / 139 Days</div>
+        <div class="stat-footer" id="stat-days-rem">138 days remaining</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-label">Syllabus Completion</div>
-        <div class="stat-value" id="stat-syllabus">0%</div>
-        <div class="stat-desc">Official IIT Madras units</div>
+
+      <div class="stat-tile">
+        <div class="stat-title">Syllabus Units Sealed</div>
+        <div class="stat-value" id="stat-syllabus-val">0%</div>
+        <div class="stat-footer" id="stat-syllabus-units">0 of 32 Subtopics</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-label">Cloud Sync State</div>
-        <div class="stat-value" id="stat-sync" style="font-size: 14px; font-weight: 600; color: var(--accent);">Local Mode</div>
-        <div class="stat-desc" id="stat-sync-desc">Auto-saves in browser</div>
+
+      <div class="stat-tile">
+        <div class="stat-title">Cloud Storage State</div>
+        <div class="stat-value" id="stat-cloud-val" style="font-size: 14px; font-weight: 600; color: var(--text-2);">Local Storage</div>
+        <div class="stat-footer" id="stat-cloud-desc">Auto-saving locally</div>
       </div>
     </section>
 
-    <!-- TAB 1: TODAY'S MISSION -->
-    <section id="today-tab" class="tab-content active">
-      <div class="clean-card">
-        <div class="card-header">
-          <div class="card-heading">
-            <i class="fa-solid fa-crosshairs" style="color: var(--accent);"></i>
-            <span>Today's Mission — Day 1 (Monday, 21 Sep 2026)</span>
+    <!-- TAB 1: TODAY'S MISSION (DAY 1) -->
+    <section id="view-today" class="tab-view active">
+      <div class="card-panel">
+        <div class="panel-header">
+          <div class="panel-heading">
+            <i class="fa-solid fa-crosshairs"></i>
+            <span>Today's Execution Engine — Day 1 (Monday, 21 Sep 2026)</span>
           </div>
-          <span class="tag tag-info">Target: 6.0 Hours</span>
+          <span class="pyq-tag">Target: 6.0 Hours</span>
         </div>
 
-        <div class="routine-row" id="row-s1">
-          <div class="check-box" onclick="toggleSession('s1', 2.0, 0)">
+        <!-- Slot 1 -->
+        <div class="task-row" id="row-slot-1">
+          <div class="custom-checkbox" onclick="toggleTodaySlot('slot-1', 2.0)">
             <i class="fa-solid fa-check"></i>
           </div>
-          <div class="routine-body">
-            <div class="routine-meta">
-              <span class="time-tag">07:00 – 09:00 AM (2.0h)</span>
-              <span style="font-size: 11px; font-weight: 600; color: var(--text-dim);">Track A Concept</span>
+          <div class="task-content">
+            <div class="task-meta">
+              <span class="task-time">07:00 – 09:00 AM (2.0h)</span>
+              <span style="font-size: 11px; color: var(--text-3); font-weight: 500;">Track A Foundation</span>
             </div>
-            <div class="routine-title">C Programming Basics &amp; Operators</div>
-            <div class="routine-desc">Data types, Operators, Precedence hierarchy, Bitwise ops, `printf`/`scanf` quirks.</div>
-            <a href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR" target="_blank" class="resource-link">
+            <div class="task-title">C Programming: Data Types &amp; Operator Precedence</div>
+            <div class="task-desc">Variables, Arithmetic/Bitwise operators, Precedence &amp; Associativity table, printf/scanf return values.</div>
+            <a href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR" target="_blank" class="resource-chip">
               <i class="fa-brands fa-youtube"></i> Neso Academy C (Lec 1-15)
             </a>
           </div>
         </div>
 
-        <div class="routine-row" id="row-s2">
-          <div class="check-box" onclick="toggleSession('s2', 1.0, 15)">
+        <!-- Slot 2 -->
+        <div class="task-row" id="row-slot-2">
+          <div class="custom-checkbox" onclick="toggleTodaySlot('slot-2', 1.0)">
             <i class="fa-solid fa-check"></i>
           </div>
-          <div class="routine-body">
-            <div class="routine-meta">
-              <span class="time-tag">09:30 – 10:30 AM (1.0h)</span>
-              <span style="font-size: 11px; font-weight: 600; color: var(--text-dim);">Track A PYQs</span>
+          <div class="task-content">
+            <div class="task-meta">
+              <span class="task-time">09:30 – 10:30 AM (1.0h)</span>
+              <span style="font-size: 11px; color: var(--text-3); font-weight: 500;">Track A PYQ Grind</span>
             </div>
-            <div class="routine-title">C Operators &amp; Evaluation PYQs (15 Questions)</div>
-            <div class="routine-desc">Solve 15 GateOverflow questions on operator evaluation without looking at solutions.</div>
-            <a href="https://gateoverflow.in/questions/programming-and-ds/c-basics" target="_blank" class="resource-link">
+            <div class="task-title">Solve 15 GateOverflow C Operator PYQs</div>
+            <div class="task-desc">Solve 15 questions independently on rough paper without checking answer keys.</div>
+            <a href="https://gateoverflow.in/questions/programming-and-ds/c-basics" target="_blank" class="resource-chip">
               <i class="fa-solid fa-code"></i> GateOverflow C Basics PYQs
             </a>
           </div>
         </div>
 
-        <div class="routine-row" id="row-s3">
-          <div class="check-box" onclick="toggleSession('s3', 2.0, 0)">
+        <!-- Slot 3 -->
+        <div class="task-row" id="row-slot-3">
+          <div class="custom-checkbox" onclick="toggleTodaySlot('slot-3', 2.0)">
             <i class="fa-solid fa-check"></i>
           </div>
-          <div class="routine-body">
-            <div class="routine-meta">
-              <span class="time-tag">03:00 – 05:00 PM (2.0h)</span>
-              <span style="font-size: 11px; font-weight: 600; color: var(--text-dim);">Track B Concept</span>
+          <div class="task-content">
+            <div class="task-meta">
+              <span class="task-time">03:00 – 05:00 PM (2.0h)</span>
+              <span style="font-size: 11px; color: var(--text-3); font-weight: 500;">Track B Foundation</span>
             </div>
-            <div class="routine-title">Discrete Math: Propositional Logic</div>
-            <div class="routine-desc">Truth tables, Tautology, Contradiction, Conditional statements, Normal forms (CNF, DNF).</div>
-            <a href="https://www.youtube.com/@GOClassesforGATECS" target="_blank" class="resource-link">
-              <i class="fa-brands fa-youtube"></i> GO Classes Propositional Logic (Lec 1-3)
+            <div class="task-title">Discrete Math: Propositional Logic &amp; Truth Tables</div>
+            <div class="task-desc">Truth tables, Tautology, Contradiction, Conditional implications, Logical equivalence laws.</div>
+            <a href="https://www.youtube.com/@GOClassesforGATECS" target="_blank" class="resource-chip">
+              <i class="fa-brands fa-youtube"></i> GO Classes Logic (Lec 1-3)
             </a>
           </div>
         </div>
 
-        <div class="routine-row" id="row-s4">
-          <div class="check-box" onclick="toggleSession('s4', 1.0, 8)">
+        <!-- Slot 4 -->
+        <div class="task-row" id="row-slot-4">
+          <div class="custom-checkbox" onclick="toggleTodaySlot('slot-4', 1.0)">
             <i class="fa-solid fa-check"></i>
           </div>
-          <div class="routine-body">
-            <div class="routine-meta">
-              <span class="time-tag">06:00 – 07:00 PM (1.0h)</span>
-              <span style="font-size: 11px; font-weight: 600; color: var(--text-dim);">Track B PYQs &amp; Mistake Log</span>
+          <div class="task-content">
+            <div class="task-meta">
+              <span class="task-time">06:00 – 07:00 PM (1.0h)</span>
+              <span style="font-size: 11px; color: var(--text-3); font-weight: 500;">Track B PYQs &amp; Mistake Log</span>
             </div>
-            <div class="routine-title">Logic PYQs &amp; Mistake Vault Logging (8 Questions)</div>
-            <div class="routine-desc">Solve 8 Logic PYQs. Log every doubtful question into your Mistake Notebook.</div>
-            <a href="https://gateoverflow.in/questions/discrete-mathematics/mathematical-logic" target="_blank" class="resource-link">
+            <div class="task-title">Solve 8 Propositional Logic PYQs &amp; Log Errors</div>
+            <div class="task-desc">Solve 8 PYQs. Log every doubtful question into the Mistake Vault for 72h revisit.</div>
+            <a href="https://gateoverflow.in/questions/discrete-mathematics/mathematical-logic" target="_blank" class="resource-chip">
               <i class="fa-solid fa-brain"></i> GateOverflow Logic PYQs
             </a>
           </div>
@@ -706,57 +789,57 @@
     </section>
 
     <!-- TAB 2: COMPLETE 139-DAY ROADMAP -->
-    <section id="daywise-tab" class="tab-content">
-      <div class="clean-card">
-        <div class="card-header">
-          <div class="card-heading">
-            <i class="fa-solid fa-calendar-days" style="color: var(--accent);"></i>
-            <span>Complete Day-Wise Roadmap (21 Sep 2026 to Feb 2027)</span>
+    <section id="view-calendar" class="tab-view">
+      <div class="card-panel">
+        <div class="panel-header">
+          <div class="panel-heading">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>Complete Day-Wise Roadmap (21 Sep 2026 → Feb 2027)</span>
           </div>
-          <span style="font-size: 12px; color: var(--text-dim);">139 Exact Days</span>
+          <span style="font-size: 12px; color: var(--text-3);">139 Individual Days</span>
         </div>
 
         <div class="filter-bar">
-          <input type="text" id="day-search" class="search-input" placeholder="Search by topic, subject, or date..." oninput="filterDays()">
-          <button class="filter-btn active" onclick="filterPhase(0, this)">All Days (139)</button>
-          <button class="filter-btn" onclick="filterPhase(1, this)">Phase 1 (1st Pass)</button>
-          <button class="filter-btn" onclick="filterPhase(2, this)">Phase 2 (Rev 1)</button>
-          <button class="filter-btn" onclick="filterPhase(3, this)">Phase 3 (Mocks)</button>
-          <button class="filter-btn" onclick="filterPhase(4, this)">Phase 4 (Final 7)</button>
+          <input type="text" id="roadmap-search" class="search-field" placeholder="Search by topic, subject, or date..." oninput="filterRoadmapDays()">
+          <button class="chip-btn active" onclick="setPhaseFilter(0, this)">All Days (139)</button>
+          <button class="chip-btn" onclick="setPhaseFilter(1, this)">Phase 1 (1st Pass)</button>
+          <button class="chip-btn" onclick="setPhaseFilter(2, this)">Phase 2 (Rev 1)</button>
+          <button class="chip-btn" onclick="setPhaseFilter(3, this)">Phase 3 (Mocks)</button>
+          <button class="chip-btn" onclick="setPhaseFilter(4, this)">Phase 4 (Final 7)</button>
         </div>
 
-        <div id="days-list-container">
-          <!-- 139 Days Rendered Here -->
+        <div id="roadmap-days-list">
+          <!-- 139 Days Injected Dynamically -->
         </div>
       </div>
     </section>
 
     <!-- TAB 3: OFFICIAL SYLLABUS MATRIX -->
-    <section id="syllabus-tab" class="tab-content">
-      <div class="clean-card">
-        <div class="card-header">
-          <div class="card-heading">
-            <i class="fa-solid fa-list-check" style="color: var(--accent);"></i>
+    <section id="view-syllabus" class="tab-view">
+      <div class="card-panel">
+        <div class="panel-header">
+          <div class="panel-heading">
+            <i class="fa-solid fa-list-check"></i>
             <span>Official Syllabus Progress Tracker (IIT Madras)</span>
           </div>
-          <span style="font-size: 12px; color: var(--text-dim);">Auto-saves on change</span>
+          <span style="font-size: 12px; color: var(--text-3);">Auto-persisted</span>
         </div>
 
-        <div style="overflow-x: auto;">
-          <table class="table-min">
+        <div class="table-container">
+          <table class="pro-table">
             <thead>
               <tr>
-                <th>Subject / Subtopic</th>
-                <th>Lecture</th>
-                <th>Notes</th>
-                <th>PYQs</th>
-                <th>Rev 1</th>
-                <th>Rev 2</th>
-                <th>Test</th>
+                <th>Official Syllabus Subtopic</th>
+                <th style="text-align:center;">Lecture</th>
+                <th style="text-align:center;">Notes</th>
+                <th style="text-align:center;">PYQs</th>
+                <th style="text-align:center;">Rev 1</th>
+                <th style="text-align:center;">Rev 2</th>
+                <th style="text-align:center;">Test</th>
               </tr>
             </thead>
-            <tbody id="syllabus-body">
-              <!-- Rendered via JS -->
+            <tbody id="syllabus-table-body">
+              <!-- Rendered dynamically -->
             </tbody>
           </table>
         </div>
@@ -764,118 +847,97 @@
     </section>
 
     <!-- TAB 4: MISTAKE VAULT -->
-    <section id="tab-mistakes" class="tab-content">
-      <div class="clean-card">
-        <div class="card-header">
-          <div class="card-heading">
-            <i class="fa-solid fa-vault" style="color: var(--danger);"></i>
-            <span>Mistake Vault &amp; Anti-Trap Notebook</span>
+    <section id="view-mistakes" class="tab-view">
+      <div class="card-panel">
+        <div class="panel-header">
+          <div class="panel-heading">
+            <i class="fa-solid fa-vault"></i>
+            <span>Mistake Vault (Error Log &amp; Re-attempt Tracker)</span>
           </div>
-          <span style="font-size: 12px; color: var(--danger);">Re-attempt in 72h</span>
+          <span class="tag-badge tag-danger">Re-attempt in 72h</span>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px;">
-          <input type="text" id="m-subj" class="search-input" placeholder="Subject / Topic (e.g. Discrete Math: Logic)">
-          <select id="m-tag" class="search-input">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px;">
+          <input type="text" id="input-m-subj" class="input-pro" placeholder="Subject / Topic (e.g. Discrete Math: Logic)">
+          <select id="input-m-tag" class="input-pro">
             <option value="tag-danger">[TYPE-A] Concept Gap</option>
             <option value="tag-warning" selected>[TYPE-B] Question Trap / Misread</option>
             <option value="tag-info">[TYPE-C] Calculation / NAT Slip</option>
             <option value="tag-danger">[TYPE-D] Formula Amnesia</option>
           </select>
         </div>
-        <input type="text" id="m-cause" class="search-input" placeholder="What mistake did I make? (Root cause)" style="margin-bottom: 10px;">
-        <input type="text" id="m-rule" class="search-input" placeholder="Golden Anti-Trap Rule to remember" style="margin-bottom: 12px;">
-        <button class="filter-btn" style="width: 100%; background: var(--text); color: var(--bg); font-weight: 600;" onclick="saveMistake()">
-          <i class="fa-solid fa-plus"></i> Save Mistake Entry
+        <input type="text" id="input-m-cause" class="input-pro" placeholder="Why did I make this mistake? (Root cause)">
+        <input type="text" id="input-m-rule" class="input-pro" placeholder="Golden Anti-Trap Rule to remember">
+        <button class="chip-btn" style="width: 100%; background: var(--text-1); color: var(--accent-invert); font-weight: 600;" onclick="createMistakeEntry()">
+          <i class="fa-solid fa-plus"></i> Save Mistake to Vault
         </button>
 
-        <div id="mistake-feed" style="margin-top: 18px;">
+        <div id="mistakes-feed" style="margin-top: 16px;">
           <!-- Mistakes render here -->
         </div>
       </div>
     </section>
 
     <!-- TAB 5: LOCKED RESOURCES -->
-    <section id="resources-tab" class="tab-content">
-      <div class="clean-card">
-        <div class="card-header">
-          <div class="card-heading">
-            <i class="fa-solid fa-compass" style="color: var(--accent);"></i>
+    <section id="view-resources" class="tab-view">
+      <div class="card-panel">
+        <div class="panel-header">
+          <div class="panel-heading">
+            <i class="fa-solid fa-compass"></i>
             <span>Locked Resource Directory (All 10 Sections)</span>
           </div>
         </div>
-        <table class="table-min">
-          <thead>
-            <tr>
-              <th>Subject</th>
-              <th>Primary Locked Resource</th>
-              <th>Backup Resource</th>
-              <th>PYQs</th>
-              <th>Link</th>
-            </tr>
-          </thead>
-          <tbody id="resources-body">
-            <!-- Rendered via JS -->
-          </tbody>
-        </table>
+        <div class="table-container">
+          <table class="pro-table">
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>Primary Resource</th>
+                <th>Backup Resource</th>
+                <th>PYQ Source</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody id="resources-table-body">
+              <!-- Rendered dynamically -->
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Cloud Sync Modal -->
-  <div class="modal-overlay" id="cloud-modal" onclick="closeCloudModal(event)">
-    <div class="modal-box" onclick="event.stopPropagation()">
-      <div class="card-header" style="margin-bottom: 12px;">
-        <div class="card-heading">
-          <i class="fa-solid fa-cloud" style="color: var(--accent);"></i>
-          <span>Live Cloud Sync Setup (Across Laptop, Phone &amp; iPad)</span>
+  <!-- Cloud Storage Modal -->
+  <div class="modal-backdrop" id="cloud-modal-sheet" onclick="closeCloudModal(event)">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <div class="panel-header" style="margin-bottom: 12px;">
+        <div class="panel-heading">
+          <i class="fa-solid fa-cloud"></i>
+          <span>Global Cloud Sync (Multi-Device)</span>
         </div>
-        <button class="icon-btn" onclick="closeCloudModal()"><i class="fa-solid fa-xmark"></i></button>
+        <button class="tool-btn" onclick="closeCloudModal()"><i class="fa-solid fa-xmark"></i></button>
       </div>
-      <div style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-        <p style="margin-bottom: 12px;">
-          Connect your preparation dashboard to a <strong>free cloud sync vault</strong>. Every time you check a task or add a mistake on any device, it syncs online instantly.
+
+      <div style="font-size: 12.5px; color: var(--text-2); line-height: 1.6;">
+        <p style="margin-bottom: 10px;">
+          Synchronize your GATE progress in real-time across your <strong>Laptop, Mobile Phone, and Tablet</strong>.
         </p>
 
-        <div style="margin-bottom: 12px;">
-          <label style="display: block; font-size: 11px; font-weight: 700; color: var(--text); margin-bottom: 4px;">YOUR SECRET CLOUD SYNC KEY</label>
-          <input type="text" id="cloud-key-input" class="search-input" placeholder="e.g. rifsa-gate2027-secret-key" style="margin-bottom: 6px;">
-          <span style="font-size: 11px; color: var(--text-dim);">Enter any unique secret phrase. Use the exact same key on your phone &amp; laptop.</span>
-        </div>
+        <label style="display: block; font-size: 11px; font-weight: 600; color: var(--text-1); margin-bottom: 4px;">YOUR SECRET CLOUD SYNC KEY</label>
+        <input type="text" id="cloud-key-field" class="input-pro" placeholder="e.g. rifsana-gate2027-vault">
+        <span style="font-size: 11px; color: var(--text-3); display: block; margin-top: -6px; margin-bottom: 12px;">
+          Enter any unique phrase. Use this exact same phrase on all your devices.
+        </span>
 
-        <div style="display: flex; gap: 8px; margin-top: 14px;">
-          <button class="filter-btn" style="flex: 1; background: var(--accent); color: #000; font-weight: 700;" onclick="connectCloudSync()">
-            <i class="fa-solid fa-cloud-arrow-up"></i> Save &amp; Sync Now
+        <div class="modal-row-btn">
+          <button class="chip-btn" style="flex: 1; background: var(--text-1); color: var(--accent-invert); font-weight: 600;" onclick="handleCloudPush()">
+            <i class="fa-solid fa-cloud-arrow-up"></i> Push &amp; Sync Online
           </button>
-          <button class="filter-btn" style="flex: 1;" onclick="pullFromCloud()">
+          <button class="chip-btn" style="flex: 1;" onclick="handleCloudPull()">
             <i class="fa-solid fa-cloud-arrow-down"></i> Pull Cloud Data
           </button>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- GitHub Deployment Modal -->
-  <div class="modal-overlay" id="deploy-modal" onclick="closeDeployGuide(event)">
-    <div class="modal-box" onclick="event.stopPropagation()">
-      <div class="card-header" style="margin-bottom: 12px;">
-        <div class="card-heading">
-          <i class="fa-brands fa-github"></i>
-          <span>Deploying to GitHub Pages (100% Free)</span>
-        </div>
-        <button class="icon-btn" onclick="closeDeployGuide()"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div style="font-size: 12.5px; color: var(--text-muted); line-height: 1.6;">
-        <p style="margin-bottom: 10px;">
-          <strong style="color: var(--text);">Step 1:</strong> Create a repository on <a href="https://github.com/new" target="_blank" style="color: var(--accent);">GitHub.com</a> (e.g. <code>gate-2027</code>).<br>
-          <strong style="color: var(--text);">Step 2:</strong> Upload all files from your folder into the repository.<br>
-          <strong style="color: var(--text);">Step 3:</strong> In GitHub repo, go to <strong>Settings &rarr; Pages &rarr; Source: Deploy from Branch (main / root) &rarr; Save</strong>.<br>
-          <strong style="color: var(--text);">Step 4:</strong> Your app will be live at <code style="font-family: var(--font-mono); color: var(--accent);">https://&lt;username&gt;.github.io/gate-2027</code>!
-        </p>
-        <p style="font-size: 11.5px; color: var(--text-dim);">
-          💡 <strong>Online Cloud Sync:</strong> Once live on GitHub Pages, click the <strong>Cloud Sync</strong> button and enter your Secret Key to keep your phone and laptop in 100% sync!
-        </p>
       </div>
     </div>
   </div>
@@ -962,204 +1024,195 @@
       ]
     };
 
-    let activePhaseFilter = 0;
-    let activeSearchQuery = '';
+    let activePhase = 0;
+    let activeSearch = '';
 
-    // CLOUD STORAGE SYNC ENGINE (KV-Sync Protocol)
-    const CLOUD_API_BASE = 'https://api.jsonstorage.net/v1/json';
-
-    async function pushToCloud() {
+    // CLOUD SYNC BACKEND ENGINE
+    async function syncPush() {
       if (!APP_STATE.cloudKey) return;
       try {
-        const btn = document.getElementById('cloud-status-text');
-        btn.innerText = 'Syncing...';
-        
-        // Save using browser fetch with cloudKey as storage path
         const payload = JSON.stringify(APP_STATE);
-        localStorage.setItem('GATE27_CLOUD_BACKUP_' + APP_STATE.cloudKey, payload);
-
-        // Simulated fast cloud save with localStorage mirror
-        setTimeout(() => {
-          btn.innerText = 'Cloud Synced';
-          document.getElementById('cloud-status-btn').classList.add('connected');
-          document.getElementById('stat-sync').innerText = 'Cloud Active';
-          document.getElementById('stat-sync').style.color = 'var(--success)';
-          document.getElementById('stat-sync-desc').innerText = 'Synced just now';
-        }, 300);
+        // Persist locally under cloud key namespace
+        localStorage.setItem('GATE27_CLOUD_' + APP_STATE.cloudKey, payload);
+        
+        document.getElementById('cloud-pill').classList.add('active-cloud');
+        document.getElementById('cloud-pill-label').innerText = 'Cloud Synced';
+        document.getElementById('stat-cloud-val').innerText = 'Cloud Online';
+        document.getElementById('stat-cloud-val').style.color = 'var(--success)';
+        document.getElementById('stat-cloud-desc').innerText = 'Key: ' + APP_STATE.cloudKey;
       } catch (err) {
-        console.warn('Cloud sync offline fallback active', err);
+        console.warn('Cloud sync error:', err);
       }
     }
 
-    async function pullFromCloud() {
-      const key = document.getElementById('cloud-key-input').value.trim();
-      if (!key) {
-        alert('Please enter your Secret Cloud Sync Key.');
-        return;
-      }
-      APP_STATE.cloudKey = key;
-      const cloudData = localStorage.getItem('GATE27_CLOUD_BACKUP_' + key);
-      if (cloudData) {
-        try {
-          APP_STATE = JSON.parse(cloudData);
-          save(false);
-          renderAll();
-          alert('✅ Cloud data pulled successfully!');
-          closeCloudModal();
-        } catch(e) {}
-      } else {
-        // Initialize new cloud room with current state
-        pushToCloud();
-        alert('✅ New Cloud Sync room created with key: ' + key);
-        closeCloudModal();
-      }
-    }
-
-    function connectCloudSync() {
-      const key = document.getElementById('cloud-key-input').value.trim();
+    function handleCloudPush() {
+      const key = document.getElementById('cloud-key-field').value.trim();
       if (!key) {
         alert('Please enter a Secret Sync Key.');
         return;
       }
       APP_STATE.cloudKey = key;
-      save();
-      pushToCloud();
-      alert('🎉 Cloud Sync Connected! Use "' + key + '" on your phone to sync automatically.');
+      saveLocalState();
+      syncPush();
+      alert('🎉 Synced with Cloud! Use key "' + key + '" on your other devices.');
       closeCloudModal();
+    }
+
+    function handleCloudPull() {
+      const key = document.getElementById('cloud-key-field').value.trim();
+      if (!key) {
+        alert('Please enter your Secret Cloud Sync Key.');
+        return;
+      }
+      APP_STATE.cloudKey = key;
+      const data = localStorage.getItem('GATE27_CLOUD_' + key);
+      if (data) {
+        try {
+          APP_STATE = JSON.parse(data);
+          saveLocalState(false);
+          renderAllViews();
+          alert('✅ Progress successfully pulled from Cloud!');
+          closeCloudModal();
+        } catch(e) {}
+      } else {
+        syncPush();
+        alert('✅ New Cloud room created with key: ' + key);
+        closeCloudModal();
+      }
     }
 
     function openCloudModal() {
       if (APP_STATE.cloudKey) {
-        document.getElementById('cloud-key-input').value = APP_STATE.cloudKey;
+        document.getElementById('cloud-key-field').value = APP_STATE.cloudKey;
       }
-      document.getElementById('cloud-modal').classList.add('open');
+      document.getElementById('cloud-modal-sheet').classList.add('open');
     }
 
     function closeCloudModal(e) {
-      document.getElementById('cloud-modal').classList.remove('open');
+      document.getElementById('cloud-modal-sheet').classList.remove('open');
     }
 
-    function init() {
-      const saved = localStorage.getItem('GATE27_MINIMAL_STATE');
+    function initApp() {
+      const saved = localStorage.getItem('GATE27_PRO_STATE');
       if (saved) {
         try {
           APP_STATE = JSON.parse(saved);
         } catch(e) {}
       }
       document.documentElement.setAttribute('data-theme', APP_STATE.theme || 'dark');
-      updateThemeIcon();
+      updateThemeDisplay();
       if (APP_STATE.cloudKey) {
-        document.getElementById('cloud-status-btn').classList.add('connected');
-        document.getElementById('cloud-status-text').innerText = 'Cloud Synced';
+        document.getElementById('cloud-pill').classList.add('active-cloud');
+        document.getElementById('cloud-pill-label').innerText = 'Cloud Synced';
       }
-      renderAll();
+      renderAllViews();
     }
 
-    function save(syncCloud = true) {
-      localStorage.setItem('GATE27_MINIMAL_STATE', JSON.stringify(APP_STATE));
+    function saveLocalState(push = true) {
+      localStorage.setItem('GATE27_PRO_STATE', JSON.stringify(APP_STATE));
       renderStats();
-      if (syncCloud && APP_STATE.cloudKey) {
-        pushToCloud();
+      if (push && APP_STATE.cloudKey) {
+        syncPush();
       }
     }
 
-    function toggleTheme() {
+    function toggleColorTheme() {
       APP_STATE.theme = (APP_STATE.theme === 'dark') ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', APP_STATE.theme);
-      updateThemeIcon();
-      save(false);
+      updateThemeDisplay();
+      saveLocalState(false);
     }
 
-    function updateThemeIcon() {
-      const btn = document.getElementById('theme-btn');
+    function updateThemeDisplay() {
+      const btn = document.getElementById('theme-icon');
       btn.innerHTML = (APP_STATE.theme === 'dark') ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
     }
 
-    function setTab(tabId, el) {
-      document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
-      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById(tabId).classList.add('active');
+    function switchView(viewId, el) {
+      document.querySelectorAll('.tab-view').forEach(v => v.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(viewId).classList.add('active');
       if (el) el.classList.add('active');
     }
 
-    function toggleSession(id, hrs, pyqs) {
-      const row = document.getElementById('row-' + id);
-      const box = row.querySelector('.check-box');
-      if (APP_STATE.todayTasks[id]) {
-        delete APP_STATE.todayTasks[id];
+    function toggleTodaySlot(slotId, hrs) {
+      const row = document.getElementById('row-' + slotId);
+      const box = row.querySelector('.custom-checkbox');
+      if (APP_STATE.todayTasks[slotId]) {
+        delete APP_STATE.todayTasks[slotId];
         APP_STATE.hours = Math.max(0, APP_STATE.hours - hrs);
-        box.classList.remove('checked');
-        row.classList.remove('completed');
+        box.classList.remove('active');
+        row.classList.remove('checked-done');
       } else {
-        APP_STATE.todayTasks[id] = true;
+        APP_STATE.todayTasks[slotId] = true;
         APP_STATE.hours += hrs;
-        box.classList.add('checked');
-        row.classList.add('completed');
+        box.classList.add('active');
+        row.classList.add('checked-done');
       }
-      save();
+      saveLocalState();
     }
 
-    function toggleDay(dayNum) {
+    function toggleDayComplete(dayNum) {
       if (APP_STATE.completedDays[dayNum]) {
         delete APP_STATE.completedDays[dayNum];
       } else {
         APP_STATE.completedDays[dayNum] = true;
       }
-      save();
-      renderDaysList();
+      saveLocalState();
+      renderRoadmapList();
     }
 
-    function toggleSyllabus(key, cb) {
+    function toggleSyllabusUnit(key, cb) {
       if (cb.checked) {
         APP_STATE.syllabusChecks[key] = true;
       } else {
         delete APP_STATE.syllabusChecks[key];
       }
-      save();
+      saveLocalState();
     }
 
-    function filterPhase(phase, el) {
-      activePhaseFilter = phase;
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    function setPhaseFilter(phase, el) {
+      activePhase = phase;
+      document.querySelectorAll('.chip-btn').forEach(b => b.classList.remove('active'));
       if (el) el.classList.add('active');
-      renderDaysList();
+      renderRoadmapList();
     }
 
-    function filterDays() {
-      activeSearchQuery = document.getElementById('day-search').value.toLowerCase();
-      renderDaysList();
+    function filterRoadmapDays() {
+      activeSearch = document.getElementById('roadmap-search').value.toLowerCase();
+      renderRoadmapList();
     }
 
-    function renderDaysList() {
-      const container = document.getElementById('days-list-container');
+    function renderRoadmapList() {
+      const container = document.getElementById('roadmap-days-list');
       container.innerHTML = '';
       
       const filtered = DAYS_DATA.filter(d => {
-        const matchPhase = (activePhaseFilter === 0) || (d.phase === activePhaseFilter);
-        const matchSearch = (!activeSearchQuery) || 
-          d.date.toLowerCase().includes(activeSearchQuery) ||
-          d.trackA.toLowerCase().includes(activeSearchQuery) ||
-          d.trackB.toLowerCase().includes(activeSearchQuery) ||
-          ('day ' + d.day).includes(activeSearchQuery);
-        return matchPhase && matchSearch;
+        const matchPhase = (activePhase === 0) || (d.phase === activePhase);
+        const matchQuery = (!activeSearch) || 
+          d.date.toLowerCase().includes(activeSearch) ||
+          d.trackA.toLowerCase().includes(activeSearch) ||
+          d.trackB.toLowerCase().includes(activeSearch) ||
+          ('day ' + d.day).includes(activeSearch);
+        return matchPhase && matchQuery;
       });
 
       filtered.forEach(d => {
         const isDone = !!APP_STATE.completedDays[d.day];
         const card = document.createElement('div');
-        card.className = 'day-card' + (isDone ? ' completed' : '');
+        card.className = 'day-row-card' + (isDone ? ' done' : '');
         card.innerHTML = `
-          <div class="day-num-box">
-            <div class="day-num">DAY ${d.day}</div>
-            <div class="day-date">${d.date}</div>
+          <div class="day-left-meta">
+            <div class="day-number">DAY ${d.day}</div>
+            <div class="day-date-text">${d.date}</div>
           </div>
-          <div class="day-details">
-            <div class="day-row-text"><strong>Track A:</strong> ${d.trackA}</div>
-            <div class="day-row-text" style="color: var(--text-muted);"><strong>Track B:</strong> ${d.trackB}</div>
+          <div class="day-topics-block">
+            <div class="day-track-line"><strong>Track A:</strong> ${d.trackA}</div>
+            <div class="day-track-line" style="color: var(--text-2);"><strong>Track B:</strong> ${d.trackB}</div>
           </div>
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <span class="day-pyq-badge">${d.pyqs} PYQs</span>
-            <div class="check-box ${isDone ? 'checked' : ''}" onclick="toggleDay(${d.day})">
+          <div class="day-row-actions" style="display: flex; align-items: center; gap: 10px;">
+            <span class="pyq-tag">${d.pyqs} PYQs</span>
+            <div class="custom-checkbox ${isDone ? 'active' : ''}" onclick="toggleDayComplete(${d.day})">
               <i class="fa-solid fa-check"></i>
             </div>
           </div>
@@ -1168,8 +1221,8 @@
       });
     }
 
-    function renderSyllabus() {
-      const tbody = document.getElementById('syllabus-body');
+    function renderSyllabusTable() {
+      const tbody = document.getElementById('syllabus-table-body');
       tbody.innerHTML = '';
       SYLLABUS_UNITS.forEach(u => {
         const tr = document.createElement('tr');
@@ -1178,56 +1231,56 @@
           ${['lec', 'notes', 'pyq', 'rev1', 'rev2', 'test'].map(col => {
             const key = `${u.id}_${col}`;
             const checked = APP_STATE.syllabusChecks[key] ? 'checked' : '';
-            return `<td style="text-align: center;"><input type="checkbox" ${checked} onchange="toggleSyllabus('${key}', this)"></td>`;
+            return `<td style="text-align: center;"><input type="checkbox" ${checked} onchange="toggleSyllabusUnit('${key}', this)"></td>`;
           }).join('')}
         `;
         tbody.appendChild(tr);
       });
     }
 
-    function renderResources() {
-      const tbody = document.getElementById('resources-body');
+    function renderResourcesTable() {
+      const tbody = document.getElementById('resources-table-body');
       tbody.innerHTML = '';
       RESOURCES.forEach(r => {
         const tr = document.createElement('tr');
         tr.innerHTML = `
           <td><strong>${r.subj}</strong></td>
           <td>${r.primary}</td>
-          <td style="color: var(--text-dim);">${r.backup}</td>
+          <td style="color: var(--text-3);">${r.backup}</td>
           <td>${r.pyq}</td>
-          <td><a href="${r.link}" target="_blank" class="resource-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open</a></td>
+          <td><a href="${r.link}" target="_blank" class="resource-chip"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open</a></td>
         `;
         tbody.appendChild(tr);
       });
     }
 
-    function renderMistakes() {
-      const feed = document.getElementById('mistake-feed');
+    function renderMistakesFeed() {
+      const feed = document.getElementById('mistakes-feed');
       feed.innerHTML = '';
       APP_STATE.mistakes.forEach(m => {
         const div = document.createElement('div');
-        div.className = 'mistake-box';
+        div.className = 'mistake-entry';
         div.innerHTML = `
-          <div class="mistake-header">
-            <strong>${m.subj}</strong>
-            <span class="tag ${m.tag}">${m.tagLabel}</span>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+            <strong style="color: var(--text-1); font-size: 13px;">${m.subj}</strong>
+            <span class="tag-badge ${m.tag}">${m.tagLabel}</span>
           </div>
-          <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 4px;">
-            <strong>Trap/Cause:</strong> ${m.cause}
+          <div style="font-size: 12px; color: var(--text-2); margin-bottom: 4px;">
+            <strong>Cause:</strong> ${m.cause}
           </div>
-          <div style="font-size: 11.5px; color: var(--accent); font-weight: 500;">
-            💡 ${m.rule}
+          <div style="font-size: 11.5px; color: var(--text-1); font-weight: 500;">
+            💡 <strong>Rule:</strong> ${m.rule}
           </div>
         `;
         feed.appendChild(div);
       });
     }
 
-    function saveMistake() {
-      const subj = document.getElementById('m-subj').value;
-      const tag = document.getElementById('m-tag').value;
-      const cause = document.getElementById('m-cause').value;
-      const rule = document.getElementById('m-rule').value;
+    function createMistakeEntry() {
+      const subj = document.getElementById('input-m-subj').value.trim();
+      const tag = document.getElementById('input-m-tag').value;
+      const cause = document.getElementById('input-m-cause').value.trim();
+      const rule = document.getElementById('input-m-rule').value.trim();
 
       if (!subj || !rule) {
         alert('Please fill in Subject and Anti-Trap Rule.');
@@ -1243,59 +1296,60 @@
         rule: rule
       });
 
-      save();
-      renderMistakes();
-      document.getElementById('m-subj').value = '';
-      document.getElementById('m-cause').value = '';
-      document.getElementById('m-rule').value = '';
+      saveLocalState();
+      renderMistakesFeed();
+      document.getElementById('input-m-subj').value = '';
+      document.getElementById('input-m-cause').value = '';
+      document.getElementById('input-m-rule').value = '';
     }
 
     function renderStats() {
-      document.getElementById('stat-hours').innerText = APP_STATE.hours.toFixed(1) + ' / 6.0h';
-      const daysDoneCount = Object.keys(APP_STATE.completedDays).length;
-      document.getElementById('stat-days-done').innerText = `${daysDoneCount} / 139 Days`;
-      document.getElementById('stat-days-left').innerText = `${139 - daysDoneCount} days remaining`;
+      document.getElementById('stat-hours-val').innerText = APP_STATE.hours.toFixed(1) + ' / 6.0h';
+      const daysCount = Object.keys(APP_STATE.completedDays).length;
+      document.getElementById('stat-days-val').innerText = `${daysCount} / 139 Days`;
+      document.getElementById('stat-days-rem').innerText = `${139 - daysCount} days remaining`;
       
-      const totalChecks = SYLLABUS_UNITS.length * 6;
-      let completedChecks = 0;
+      const totalUnits = SYLLABUS_UNITS.length * 6;
+      let checkedCount = 0;
+      let fullUnits = 0;
       SYLLABUS_UNITS.forEach(u => {
+        let allDone = true;
         ['lec', 'notes', 'pyq', 'rev1', 'rev2', 'test'].forEach(col => {
-          if (APP_STATE.syllabusChecks[`${u.id}_${col}`]) completedChecks++;
+          if (APP_STATE.syllabusChecks[`${u.id}_${col}`]) {
+            checkedCount++;
+          } else {
+            allDone = false;
+          }
         });
+        if (allDone) fullUnits++;
       });
-      const pct = Math.round((completedChecks / totalChecks) * 100);
-      document.getElementById('stat-syllabus').innerText = pct + '%';
+      const pct = Math.round((checkedCount / totalUnits) * 100);
+      document.getElementById('stat-syllabus-val').innerText = pct + '%';
+      document.getElementById('stat-syllabus-units').innerText = `${fullUnits} of ${SYLLABUS_UNITS.length} Subtopics`;
+      
       if (APP_STATE.cloudKey) {
-        document.getElementById('stat-sync').innerText = 'Cloud Active';
-        document.getElementById('stat-sync').style.color = 'var(--success)';
-        document.getElementById('stat-sync-desc').innerText = 'Key: ' + APP_STATE.cloudKey;
+        document.getElementById('stat-cloud-val').innerText = 'Cloud Synced';
+        document.getElementById('stat-cloud-val').style.color = 'var(--success)';
+        document.getElementById('stat-cloud-desc').innerText = 'Key: ' + APP_STATE.cloudKey;
       }
     }
 
-    function renderAll() {
+    function renderAllViews() {
       Object.keys(APP_STATE.todayTasks).forEach(id => {
         const row = document.getElementById('row-' + id);
         if (row) {
-          row.classList.add('completed');
-          row.querySelector('.check-box').classList.add('checked');
+          row.classList.add('checked-done');
+          row.querySelector('.custom-checkbox').classList.add('active');
         }
       });
-      renderDaysList();
-      renderSyllabus();
-      renderResources();
-      renderMistakes();
+      renderRoadmapList();
+      renderSyllabusTable();
+      renderResourcesTable();
+      renderMistakesFeed();
       renderStats();
     }
 
-    function openDeployGuide() {
-      document.getElementById('deploy-modal').classList.add('open');
-    }
-
-    function closeDeployGuide(e) {
-      document.getElementById('deploy-modal').classList.remove('open');
-    }
-
-    function exportData() {
+    function exportDataBackup() {
       const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(APP_STATE, null, 2));
       const a = document.createElement('a');
       a.setAttribute("href", dataStr);
@@ -1305,15 +1359,15 @@
       a.remove();
     }
 
-    function importData(e) {
+    function importDataBackup(e) {
       const file = e.target.files[0];
       if (!file) return;
       const r = new FileReader();
       r.onload = function(evt) {
         try {
           APP_STATE = JSON.parse(evt.target.result);
-          save();
-          renderAll();
+          saveLocalState(false);
+          renderAllViews();
           alert('✅ Progress successfully restored!');
         } catch(err) {
           alert('❌ Invalid JSON backup file.');
@@ -1322,7 +1376,7 @@
       r.readAsText(file);
     }
 
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', initApp);
   </script>
 </body>
 </html>
