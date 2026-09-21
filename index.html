@@ -1476,6 +1476,12 @@ ightarrow q$), and the 10 core logical equivalence laws.
       btn.innerHTML = (STATE.theme === 'dark') ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
     }
 
+    function switchTab(name) {
+      const targetId = name.startsWith('tab-') ? name : 'tab-' + name;
+      const btn = document.getElementById('tab-btn-' + name.replace('tab-', ''));
+      switchMainTab(targetId, btn);
+    }
+
     function switchMainTab(tabId, el) {
       document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
