@@ -534,6 +534,10 @@
       transition: all 0.15s ease;
     }
 
+    .round-checkbox i {
+      pointer-events: none;
+    }
+
     .round-checkbox.active {
       background: var(--success);
       border-color: var(--success);
@@ -1315,7 +1319,7 @@ ightarrow q$), and the 10 core logical equivalence laws.
     const SYLLABUS_SUBJECTS = [{"id": "dm", "number": "01", "name": "Engineering Mathematics & Discrete Mathematics", "weightage": "13 \u2013 15 Marks", "topics": [{"id": "dm_logic", "name": "Mathematical Logic", "desc": "Propositional logic, Truth tables, Tautology, Equivalences, First-order logic, Quantifiers, Rules of inference"}, {"id": "dm_sets", "name": "Sets, Relations & Lattices", "desc": "Equivalence relations & classes, Partial orders, Hasse diagrams, Distributive & Complemented lattices, Boolean algebra"}, {"id": "dm_groups", "name": "Functions & Abstract Algebra", "desc": "Injective, Surjective, Bijective functions, Inverse, Monoids, Semigroups, Groups, Subgroups, Cyclic groups, Lagrange theorem"}, {"id": "dm_comb", "name": "Combinatorics & Recurrences", "desc": "Pigeonhole principle, Permutations & Combinations, Binomial theorem, Recurrence relations, Generating functions"}, {"id": "dm_graphs", "name": "Graph Theory", "desc": "Connectivity, Paths, Cycles, Euler & Hamiltonian graphs, Trees, Graph matching, Graph colouring (chromatic number)"}, {"id": "la_matrices", "name": "Linear Algebra", "desc": "Matrices, Determinants, Systems of linear equations AX=B, Rank, Eigenvalues & Eigenvectors, Cayley-Hamilton, LU Decomposition"}, {"id": "calc_diff", "name": "Calculus", "desc": "Limits, Continuity, Differentiability, Maxima and minima, Mean value theorems (Rolle, Lagrange, Cauchy), Integration"}, {"id": "prob_stats", "name": "Probability and Statistics", "desc": "Conditional probability, Bayes theorem, Discrete & Continuous random variables, Uniform, Normal, Exponential, Poisson, Binomial distributions, Mean, Std Dev"}]}, {"id": "dl", "number": "02", "name": "Digital Logic", "weightage": "5 \u2013 7 Marks", "topics": [{"id": "dl_bool", "name": "Boolean Algebra & Minimization", "desc": "Boolean laws, Canonical SOP/POS, K-maps (2, 3, 4, 5 variables, Don't cares), Tabular Quine-McCluskey method"}, {"id": "dl_comb", "name": "Combinational Circuits", "desc": "Half/Full adders, Subtractors, Ripple carry adder, Lookahead carry, Multiplexers, Demultiplexers, Decoders, Encoders"}, {"id": "dl_seq", "name": "Sequential Circuits", "desc": "Latches, Flip-Flops (SR, JK, D, T, Master-Slave), Setup & Hold time, Shift registers, Synchronous & Asynchronous counters, State tables"}, {"id": "dl_num", "name": "Number Representations & Arithmetic", "desc": "1's & 2's complement arithmetic, Overflow detection, Fixed & IEEE 754 Floating Point (Single & Double precision)"}]}, {"id": "coa", "number": "03", "name": "Computer Organization & Architecture (COA)", "weightage": "8 \u2013 10 Marks", "topics": [{"id": "coa_isa", "name": "Machine Instructions & Addressing Modes", "desc": "Instruction cycle, 0/1/2/3 address formats, Opcode expansion, Addressing modes (Immediate, Direct, Indirect, Indexed, PC-relative), RISC vs CISC"}, {"id": "coa_alu_cu", "name": "ALU & Control Unit Design", "desc": "ALU design, Booth's multiplication, Hardwired vs Microprogrammed control units, Horizontal & Vertical microinstructions"}, {"id": "coa_cache", "name": "Memory Hierarchy & Cache Memory", "desc": "Memory performance, Cache mapping (Direct, Fully associative, Set-associative), Hit/Miss latency, Write policies, Multi-level cache, EMAT"}, {"id": "coa_io", "name": "I/O Interface & DMA", "desc": "Programmed I/O, Interrupt-driven I/O, Daisy chaining priority, Direct Memory Access (DMA burst vs cycle stealing)"}, {"id": "coa_pipe", "name": "Instruction Pipelining & Hazards", "desc": "Pipeline stages, Speedup, CPI, Throughput, Hazards (Structural, Data: RAW/WAR/WAW, Control/Branch penalty), Operand forwarding"}]}, {"id": "pds", "number": "04", "name": "Programming and Data Structures", "weightage": "10 \u2013 12 Marks", "topics": [{"id": "pds_c", "name": "Programming in C & Recursion", "desc": "Data types, Operators, Precedence, Control flow, Functions, Parameter passing, Scope/Lifetime, Pointers & pointer arithmetic, Structures, Recursion call trees"}, {"id": "pds_linear", "name": "Linear Data Structures", "desc": "1D/2D Arrays (Row-major & Col-major mapping), Stacks (Infix to Postfix, Evaluation), Queues (Circular queue conditions), Linked Lists (Singly, Doubly, Circular, Cycle detection)"}, {"id": "pds_trees", "name": "Non-Linear Data Structures (Trees & BST)", "desc": "Binary Trees, Traversals (Pre, In, Post, Level order), Tree reconstruction, Binary Search Trees (Properties, Search, Insert, Delete)"}, {"id": "pds_heaps", "name": "Binary Heaps & Graph Representations", "desc": "Min/Max Heap, Array representation, Heapify algorithm in O(n), Heap sort, Priority queues, Graph representations (Matrix & List)"}]}, {"id": "algo", "number": "05", "name": "Algorithms", "weightage": "8 \u2013 10 Marks", "topics": [{"id": "algo_asymp", "name": "Asymptotic Analysis & Recurrences", "desc": "Big-O, Omega, Theta, Small-o, Small-omega, Order of growth, Master Theorem (all cases), Substitution, Recursion tree"}, {"id": "algo_sort", "name": "Searching, Sorting & Hashing", "desc": "Linear & Binary Search, Sorting: Merge, Quick, Heap, Counting Sort (Complexities & Stability), Hashing (Chaining, Linear/Quad probing, Double hashing)"}, {"id": "algo_greedy_dc", "name": "Greedy & Divide-and-Conquer", "desc": "Divide & Conquer paradigm, Greedy: Fractional Knapsack, Huffman Coding, Activity Selection, Job Sequencing"}, {"id": "algo_dp", "name": "Dynamic Programming", "desc": "Principle of Optimality, Memoization vs Tabulation, 0/1 Knapsack, Longest Common Subsequence (LCS), Matrix Chain Multiplication (MCM), Subset Sum"}, {"id": "algo_graphs", "name": "Graph Algorithms & Shortest Paths", "desc": "BFS, DFS & Applications (Cycle detection, Topological sort), Minimum Spanning Trees (Prim, Kruskal with DSU), Single-Source Shortest Paths (Dijkstra, Bellman-Ford, Floyd-Warshall)"}]}, {"id": "toc", "number": "06", "name": "Theory of Computation (TOC)", "weightage": "8 \u2013 10 Marks", "topics": [{"id": "toc_fa", "name": "Finite Automata & Regular Expressions", "desc": "DFA design, State minimization, NFA, epsilon-NFA, NFA to DFA conversion, Regular Expressions, Regular grammars, Arden theorem"}, {"id": "toc_reg_prop", "name": "Regular Languages & Pumping Lemma", "desc": "Pumping Lemma for Regular Languages, Closure properties (Union, Intersection, Homomorphism, Reverse), Decision properties"}, {"id": "toc_cfg_pda", "name": "Grammars & Pushdown Automata", "desc": "Context-Free Grammars (CFG), Derivation trees, Ambiguity removal, Pushdown Automata (DPDA vs NPDA), Context-Free Languages (CFL vs DCFL), Pumping Lemma for CFLs, Closure & Decision properties"}, {"id": "toc_turing", "name": "Turing Machines & Undecidability", "desc": "Turing machine standard model, Chomsky Hierarchy, Recursive (REC) vs Recursively Enumerable (RE) languages, Halting Problem, PCP, Rice Theorem, Reductions"}]}, {"id": "cd", "number": "07", "name": "Compiler Design", "weightage": "4 \u2013 6 Marks", "topics": [{"id": "cd_lex_parse", "name": "Lexical Analysis & Parsing", "desc": "Tokenization, Transition diagrams, Grammar transformations (Left recursion & factoring), Top-down parsing (LL(1), First & Follow), Bottom-up parsing (LR(0), SLR(1), LALR(1), CLR(1), Parsing conflicts)"}, {"id": "cd_sdt", "name": "Syntax-Directed Translation (SDT)", "desc": "Syntax-Directed Definitions (SDD), Synthesized vs Inherited attributes, S-attributed and L-attributed definitions, Evaluation orders"}, {"id": "cd_icg_opt", "name": "Intermediate Code & Optimization", "desc": "Three-Address Code (Quadruples, Triples), DAG representation, Runtime environments (Activation records, Stack allocation), Basic blocks & Flow graphs, Local optimization, Loop optimization"}, {"id": "cd_dfa", "name": "Data Flow Analyses", "desc": "Constant propagation, Liveness analysis, Common sub-expression elimination, Dead code elimination"}]}, {"id": "os", "number": "08", "name": "Operating Systems", "weightage": "9 \u2013 11 Marks", "topics": [{"id": "os_process", "name": "Processes, Threads & System Calls", "desc": "Process states, PCB, Context switching, Threads (User vs Kernel), System calls (fork, exec, wait, exit), Inter-process communication (Shared memory, Pipes, Message passing)"}, {"id": "os_sched", "name": "CPU & I/O Scheduling", "desc": "Preemptive vs Non-preemptive scheduling (FCFS, SJF, SRTF, Round Robin, Priority, Multilevel Queue, Turnaround & Waiting time Gantt charts)"}, {"id": "os_sync", "name": "Concurrency & Synchronization", "desc": "Critical Section Problem, Peterson's Algorithm, Test-and-Set, Semaphores (Counting, Binary), Classical Problems (Producer-Consumer, Reader-Writer, Dining Philosophers), Monitors"}, {"id": "os_deadlock", "name": "Deadlocks", "desc": "4 Necessary conditions, Resource Allocation Graph, Deadlock Prevention, Deadlock Avoidance (Banker's Algorithm), Detection and Recovery"}, {"id": "os_memory", "name": "Memory Management & Virtual Memory", "desc": "Paging (Page table, TLB, Multi-level paging, Inverted page table, EMAT), Segmentation, Demand paging, Page replacement algorithms (FIFO, LRU, Optimal, Belady anomaly, Thrashing)"}, {"id": "os_file_disk", "name": "File Systems & Disk Scheduling", "desc": "File allocation (Contiguous, Linked, Indexed, UNIX Inode structure), Free space management, Disk scheduling algorithms (FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK)"}]}, {"id": "db", "number": "09", "name": "Databases (DBMS)", "weightage": "7 \u2013 9 Marks", "topics": [{"id": "db_er_rel", "name": "ER Model & Relational Algebra", "desc": "Entity sets, Weak entities, Cardinality/Participation constraints, Schema conversion, Relational Algebra (Select, Project, Joins, Division), Tuple Relational Calculus (TRC)"}, {"id": "db_sql", "name": "SQL (Structured Query Language)", "desc": "DDL, DML, DCL, Aggregate functions, Nested subqueries, Correlated subqueries, Group By, Having, Joins, Integrity constraints (Primary & Foreign keys)"}, {"id": "db_norm", "name": "Normalization Theory", "desc": "Functional dependencies, Attribute closure, Minimal/Canonical cover, Candidate keys, Normal forms (1NF, 2NF, 3NF, BCNF), Lossless join decomposition, Dependency preservation"}, {"id": "db_index", "name": "File Organization & Indexing", "desc": "Primary, Secondary, Clustering index, Multi-level indexing, B-Trees and B+ Trees (Node structure, Minimum/Maximum keys, Height, Records supported, Node splitting)"}, {"id": "db_trans", "name": "Transactions & Concurrency Control", "desc": "ACID properties, Transaction states, Schedules (Serial, Conflict & View serializability, Precedence graph), Recoverability (Cascading aborts, Strict), Two-Phase Locking (2PL: Basic, Strict, Rigorous), Timestamp ordering"}]}, {"id": "cn", "number": "10", "name": "Computer Networks", "weightage": "8 \u2013 10 Marks", "topics": [{"id": "cn_layer_switch", "name": "Layering & Switching Principles", "desc": "OSI 7-layer vs TCP/IP 5-layer model, Circuit switching, Packet switching (Datagram vs Virtual Circuit), Delays (Transmission, Propagation, Queuing, Processing, Bandwidth-Delay Product)"}, {"id": "cn_dll", "name": "Data Link Layer & MAC Protocols", "desc": "Framing, Error detection (Parity, Checksum, CRC Polynomial division), Flow control (Stop-and-Wait, Go-Back-N, Selective Repeat window calculations & efficiency), MAC: Pure/Slotted ALOHA, CSMA/CD, Minimum frame size, Backoff algorithm, Ethernet IEEE 802.3"}, {"id": "cn_net", "name": "Network Layer & Routing Protocols", "desc": "IPv4 Addressing, Subnetting, VLSM, Supernetting, CIDR notation, IPv4 Header fields, Fragmentation offset calculation, NAT, Distance Vector Routing (Count to Infinity), Link State Routing (Dijkstra)"}, {"id": "cn_trans_app", "name": "Transport & Application Layer", "desc": "Port numbers, TCP vs UDP, TCP 3-Way Handshake, TCP Flow Control, TCP Congestion Control (Slow start, Congestion avoidance, Fast retransmit/recovery), Socket API, DNS hierarchical resolution, HTTP (Persistent vs Non-persistent RTT)"}]}, {"id": "apt", "number": "11", "name": "General Aptitude (Mandatory Section)", "weightage": "15 Marks (Fixed)", "topics": [{"id": "apt_quant", "name": "Quantitative Aptitude", "desc": "Percentages, Profit & Loss, Ratio & Proportions, Speed Time & Distance, Work & Time, Permutations, Combinations & Probability"}, {"id": "apt_logic", "name": "Analytical & Spatial Aptitude", "desc": "Deductive reasoning, Blood relations, Direction sense, Seating arrangements, Paper folding, Rotation of shapes, Pattern recognition"}, {"id": "apt_verbal", "name": "Verbal Aptitude", "desc": "English grammar, Sentence completion, Vocabulary, Reading comprehension, Critical reasoning"}]}];
     const RESOURCE_VAULT = [{"category": "Official IIT Madras Documents", "items": [{"title": "Official GATE 2027 CS Syllabus (IIT Madras PDF)", "type": "OFFICIAL PDF", "link": "https://gate.iitm.ac.in", "desc": "Authoritative syllabus document detailing all 10 technical sections and General Aptitude."}, {"title": "GATE Overflow 35-Year Question Bank Archive", "type": "FREE ARCHIVE", "link": "https://gateoverflow.in/", "desc": "Comprehensive repository of all GATE CS questions from 1991 to 2026 with community solutions."}, {"title": "Official TCS-iON Virtual Calculator Simulator", "type": "EXAM TOOL", "link": "https://gate.iitm.ac.in", "desc": "Official web calculator simulator to build speed and avoid rounding mistakes before exam day."}]}, {"category": "Standard Reference Books (Selected Chapters)", "items": [{"title": "Discrete Mathematics & Its Applications", "author": "Kenneth H. Rosen (7th/8th Ed)", "type": "BOOK", "desc": "Read Chapters 1, 2 (Logic & Sets), 6 (Counting), 8 (Recurrences), 9 (Relations), 10 (Graphs)."}, {"title": "Introduction to Algorithms (CLRS)", "author": "Cormen, Leiserson, Rivest, Stein", "type": "BOOK", "desc": "Read Chapters 1-4 (Asymptotics & Recurrences), 6-9 (Sorting), 15-16 (DP & Greedy), 22-24 (Graphs)."}, {"title": "Operating System Concepts", "author": "Silberschatz, Galvin, Gagne (9th/10th Ed)", "type": "BOOK", "desc": "Read Chapters 3-5 (Processes & CPU Sched), 6-7 (Synchronization & Deadlocks), 8-9 (Memory & Paging)."}, {"title": "Database System Concepts", "author": "Silberschatz, Korth, Sudarshan (6th/7th Ed)", "type": "BOOK", "desc": "Read Chapters 2-3 (Relational Model & SQL), 7-8 (FDs & Normalization), 11 (Indexing & B+ Trees), 14 (Transactions)."}, {"title": "Computer Organization & Embedded Systems", "author": "Carl Hamacher, Zvonko Vranesic", "type": "BOOK", "desc": "Read Chapters 2 (Instructions & Addressing), 5 (Memory & Cache Hierarchy), 6 (Pipelining)."}, {"title": "Data Communications & Networking", "author": "Behrouz A. Forouzan (5th Ed)", "type": "BOOK", "desc": "Read Chapters 3, 10-12 (Data Link & MAC), 18-22 (IPv4 & Routing), 23-24 (TCP & Congestion), 25-27 (DNS & HTTP)."}, {"title": "An Introduction to Formal Languages & Automata", "author": "Peter Linz (6th Ed)", "type": "BOOK", "desc": "Read Chapters 2-4 (Finite Automata & RegEx), 6-8 (CFG & Pushdown Automata), 9-12 (Turing & Undecidability)."}, {"title": "Compilers: Principles, Techniques, & Tools (Dragon Book)", "author": "Aho, Lam, Sethi, Ullman", "type": "BOOK", "desc": "Read Chapters 3-4 (Lexical & LR Parsing), 5 (SDT), 8-9 (Code Optimization & Data Flow Analysis)."}]}, {"category": "Free Verified Video Lecture Courses", "items": [{"title": "GO Classes for GATE CS", "instructor": "Deepak Poonia & Sachin Mittal", "type": "FREE YOUTUBE", "link": "https://www.youtube.com/@GOClassesforGATECS", "desc": "Gold standard rigor for Discrete Mathematics, Linear Algebra, Probability, and Theory of Computation."}, {"title": "Abdul Bari Algorithms & Data Structures", "instructor": "Abdul Bari", "type": "FREE YOUTUBE", "link": "https://www.youtube.com/@abdul_bari", "desc": "Intuitive visual derivations for Recursion, Trees, Asymptotics, Greedy, Dynamic Programming, and Graph algorithms."}, {"title": "Neso Academy Digital Electronics & C Programming", "instructor": "Neso Academy", "type": "FREE YOUTUBE", "link": "https://www.youtube.com/playlist?list=PLBlnK6fEyqRjMH3kWf6ui6305ncXGqc21", "desc": "Step-by-step foundational lectures on C Pointers, Functions, Logic Gates, K-Maps, Flip-Flops, and Counters."}, {"title": "Complete COA & Operating Systems", "instructor": "Vishwadeep Gothi Sir", "type": "FREE YOUTUBE", "link": "https://www.youtube.com/playlist?list=PL3eEXn4958k4c7k4Wf_pC2gG5oXUa2q0N", "desc": "High-yield mathematical treatment for Cache Mapping, Pipeline hazards, CPU Scheduling, and Virtual Memory."}, {"title": "Complete DBMS & Compiler Design", "instructor": "Amit Khurana Sir", "type": "FREE YOUTUBE", "link": "https://www.youtube.com/@AmitKhuranaSir", "desc": "Comprehensive step-by-step course covering Normalization, SQL queries, B+ Trees, Transactions, and Parsing tables."}, {"title": "General Aptitude Master Series", "instructor": "Saurabh Thakur Sir", "type": "FREE YOUTUBE", "link": "https://www.youtube.com/@AptitudeWithSaurabhThakur", "desc": "Complete preparation for the 15-mark General Aptitude section (Quant, Spatial, Verbal, Analytical)."}]}];
 
-    let STATE = {
+    const DEFAULT_STATE = {
       theme: 'dark',
       hours: 0,
       streak: 1,
@@ -1342,15 +1346,35 @@ ightarrow q$), and the 10 core logical equivalence laws.
       ]
     };
 
+    function sanitizeState(s) {
+      if (!s || typeof s !== 'object') {
+        return JSON.parse(JSON.stringify(DEFAULT_STATE));
+      }
+      return {
+        theme: (s.theme === 'light' || s.theme === 'dark') ? s.theme : 'dark',
+        hours: (typeof s.hours === 'number' && !isNaN(s.hours)) ? s.hours : 0,
+        streak: (typeof s.streak === 'number' && !isNaN(s.streak)) ? s.streak : 1,
+        todayMission: (s.todayMission && typeof s.todayMission === 'object' && !Array.isArray(s.todayMission)) ? s.todayMission : {},
+        completedDays: (s.completedDays && typeof s.completedDays === 'object' && !Array.isArray(s.completedDays)) ? s.completedDays : {},
+        syllabusChecks: (s.syllabusChecks && typeof s.syllabusChecks === 'object' && !Array.isArray(s.syllabusChecks)) ? s.syllabusChecks : {},
+        mistakes: Array.isArray(s.mistakes) ? s.mistakes : DEFAULT_STATE.mistakes
+      };
+    }
+
+    let STATE = sanitizeState(null);
+
     let activePhase = 0;
     let activeQuery = '';
 
     function init() {
-      const saved = localStorage.getItem('GATE27_FINAL_STATE');
-      if (saved) {
-        try {
-          STATE = JSON.parse(saved);
-        } catch (e) {}
+      try {
+        const saved = localStorage.getItem('GATE27_FINAL_STATE');
+        if (saved) {
+          STATE = sanitizeState(JSON.parse(saved));
+        }
+      } catch (e) {
+        console.warn('Could not parse saved state, using defaults', e);
+        STATE = sanitizeState(null);
       }
       document.documentElement.setAttribute('data-theme', STATE.theme || 'dark');
       updateThemeIcon();
@@ -1382,23 +1406,26 @@ ightarrow q$), and the 10 core logical equivalence laws.
     }
 
     function toggleTodayMission(id, hrs) {
+      if (!STATE.todayMission) STATE.todayMission = {};
       const box = document.getElementById('box-' + id);
+      if (!box) return;
       const cb = box.querySelector('.round-checkbox');
       if (STATE.todayMission[id]) {
         delete STATE.todayMission[id];
-        STATE.hours = Math.max(0, STATE.hours - hrs);
-        cb.classList.remove('active');
+        STATE.hours = Math.max(0, (STATE.hours || 0) - hrs);
+        if (cb) cb.classList.remove('active');
         box.classList.remove('done');
       } else {
         STATE.todayMission[id] = true;
-        STATE.hours += hrs;
-        cb.classList.add('active');
+        STATE.hours = (STATE.hours || 0) + hrs;
+        if (cb) cb.classList.add('active');
         box.classList.add('done');
       }
       saveState();
     }
 
     function toggleDayCard(dayNum) {
+      if (!STATE.completedDays) STATE.completedDays = {};
       if (STATE.completedDays[dayNum]) {
         delete STATE.completedDays[dayNum];
       } else {
@@ -1409,6 +1436,7 @@ ightarrow q$), and the 10 core logical equivalence laws.
     }
 
     function toggleSyllabusCheck(key, el) {
+      if (!STATE.syllabusChecks) STATE.syllabusChecks = {};
       if (STATE.syllabusChecks[key]) {
         delete STATE.syllabusChecks[key];
         el.classList.remove('checked');
@@ -1637,49 +1665,73 @@ ightarrow q$), and the 10 core logical equivalence laws.
     }
 
     function renderKPIs() {
-      document.getElementById('val-hours').innerText = STATE.hours.toFixed(1) + ' / 6.0h';
+      if (!STATE.completedDays) STATE.completedDays = {};
+      if (!STATE.syllabusChecks) STATE.syllabusChecks = {};
+      
+      const elHours = document.getElementById('val-hours');
+      if (elHours) elHours.innerText = (STATE.hours || 0).toFixed(1) + ' / 6.0h';
+      
       const daysCount = Object.keys(STATE.completedDays).length;
-      document.getElementById('val-days-done').innerText = `${daysCount} / 139 Days`;
-      document.getElementById('val-days-rem').innerText = `${139 - daysCount} days remaining`;
+      const elDaysDone = document.getElementById('val-days-done');
+      if (elDaysDone) elDaysDone.innerText = `${daysCount} / 139 Days`;
+      const elDaysRem = document.getElementById('val-days-rem');
+      if (elDaysRem) elDaysRem.innerText = `${139 - daysCount} days remaining`;
 
       let totalCheckpoints = 0;
       let totalChecked = 0;
       let fullyDoneTopics = 0;
 
-      SYLLABUS_SUBJECTS.forEach(s => {
-        s.topics.forEach(t => {
-          totalCheckpoints += 3;
-          let topicDone = true;
-          ['theory', 'practice', 'pyqs'].forEach(type => {
-            if (STATE.syllabusChecks[`${t.id}_${type}`]) {
-              totalChecked++;
-            } else {
-              topicDone = false;
-            }
+      if (Array.isArray(SYLLABUS_SUBJECTS)) {
+        SYLLABUS_SUBJECTS.forEach(s => {
+          if (!s.topics) return;
+          s.topics.forEach(t => {
+            totalCheckpoints += 3;
+            let topicDone = true;
+            ['theory', 'practice', 'pyqs'].forEach(type => {
+              if (STATE.syllabusChecks[`${t.id}_${type}`]) {
+                totalChecked++;
+              } else {
+                topicDone = false;
+              }
+            });
+            if (topicDone) fullyDoneTopics++;
           });
-          if (topicDone) fullyDoneTopics++;
         });
-      });
+      }
 
-      const pct = Math.round((totalChecked / totalCheckpoints) * 100);
-      document.getElementById('val-syllabus-pct').innerText = pct + '%';
-      document.getElementById('val-syllabus-sub').innerText = `${fullyDoneTopics} of 44 Subtopics Sealed`;
-      document.getElementById('val-streak').innerText = `Day ${STATE.streak} 🔥`;
+      const pct = totalCheckpoints > 0 ? Math.round((totalChecked / totalCheckpoints) * 100) : 0;
+      const elPct = document.getElementById('val-syllabus-pct');
+      if (elPct) elPct.innerText = pct + '%';
+      const elSub = document.getElementById('val-syllabus-sub');
+      if (elSub) elSub.innerText = `${fullyDoneTopics} of 44 Subtopics Sealed`;
+      const elStreak = document.getElementById('val-streak');
+      if (elStreak) elStreak.innerText = `Day ${STATE.streak || 1} 🔥`;
     }
 
     function renderAll() {
-      Object.keys(STATE.todayMission).forEach(id => {
+      if (!STATE.todayMission) STATE.todayMission = {};
+      if (!STATE.completedDays) STATE.completedDays = {};
+      if (!STATE.syllabusChecks) STATE.syllabusChecks = {};
+      if (!STATE.mistakes) STATE.mistakes = [];
+
+      ['s1', 's2', 's3', 's4'].forEach(id => {
         const box = document.getElementById('box-' + id);
         if (box) {
-          box.classList.add('done');
-          box.querySelector('.round-checkbox').classList.add('active');
+          const cb = box.querySelector('.round-checkbox');
+          if (STATE.todayMission[id]) {
+            box.classList.add('done');
+            if (cb) cb.classList.add('active');
+          } else {
+            box.classList.remove('done');
+            if (cb) cb.classList.remove('active');
+          }
         }
       });
-      renderSyllabusAccordion();
-      renderResourceVault();
-      renderRoadmap();
-      renderMistakes();
-      renderKPIs();
+      try { renderSyllabusAccordion(); } catch(e) { console.error('Error rendering syllabus:', e); }
+      try { renderResourceVault(); } catch(e) { console.error('Error rendering resources:', e); }
+      try { renderRoadmap(); } catch(e) { console.error('Error rendering roadmap:', e); }
+      try { renderMistakes(); } catch(e) { console.error('Error rendering mistakes:', e); }
+      try { renderKPIs(); } catch(e) { console.error('Error rendering KPIs:', e); }
     }
 
     function exportDataFile() {
@@ -1698,7 +1750,7 @@ ightarrow q$), and the 10 core logical equivalence laws.
       const r = new FileReader();
       r.onload = function(evt) {
         try {
-          STATE = JSON.parse(evt.target.result);
+          STATE = sanitizeState(JSON.parse(evt.target.result));
           saveState();
           renderAll();
           alert('✅ Progress successfully restored!');
@@ -1781,7 +1833,7 @@ ightarrow q$), and the 10 core logical equivalence laws.
         });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const json = await res.json();
-        STATE = json.record;
+        STATE = sanitizeState(json.record);
         saveState();
         renderAll();
         localStorage.setItem(SYNC_KEY_STORE, JSON.stringify({ apiKey, binId }));
