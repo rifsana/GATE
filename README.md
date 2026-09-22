@@ -1,6 +1,6 @@
 # 🎓 GATE CS 2027 Preparation Hub & Command Center
 **Authoritative Preparation Dashboard for GATE 2027 (Organizing Institute: IIT Madras)**  
-**Start Date: 21 September 2026 | Timeline: ~139 Days (20 Weeks) | Target: AIR < 100**
+**Start Date: 22 September 2026 | Timeline: ~139 Days (20 Weeks) | Target: AIR < 100**
 
 ---
 
@@ -12,7 +12,7 @@ Access the live interactive preparation portal on GitHub Pages:
 
 ## ⚡ Core Features
 
-- 📅 **Complete 139-Day Roadmap**: Day-by-day and week-by-week calendar from 21 September 2026 to February 2027 exam.
+- 📅 **Complete 139-Day Roadmap**: Day-by-day and week-by-week calendar from 22 September 2026 to February 2027 exam.
 - ⏱️ **6-Hour Daily High-Yield Engine**: 4 structured focus blocks optimized for zero-base preparation.
 - 📊 **Official Syllabus Matrix**: 100% of IIT Madras GATE CS syllabus with interactive check-off tracking.
 - ☁️ **Live Cloud Sync**: Seamless cross-device synchronization (Laptop $\leftrightarrow$ Mobile $\leftrightarrow$ Tablet) with a single secret key.

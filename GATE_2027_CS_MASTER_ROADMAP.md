@@ -1,6 +1,6 @@
-# 🚀 GATE CS 2027 — THE DEFINITIVE MASTER ROADMAP
-**Official Organizing Institute: IIT Madras | Exam: February 2027**  
-**Start Date: 21 September 2026 | Timeline: ~139 Days (20 Weeks) | Zero-Knowledge to AIR < 100**
+# 🚀 GATE CS 2027: THE 140-DAY MASTER ROADMAP
+**Organizing Institute: IIT Madras | Syllabus: 100% Official GATE 2027 CS**  
+**Start Date: 22 September 2026 | Timeline: ~139 Days (20 Weeks) | Zero-Knowledge to AIR < 100**
 
 ---
 
@@ -382,7 +382,7 @@ Never take a mock test without spending at least 3 to 4 hours on the post-mortem
 
 ## 10. 🔥 STARTING TODAY — DAY 1 ACTION PLAN
 
-**Today is Monday, 21 September 2026. Your journey to GATE 2027 starts right now.**
+**Today is Tuesday, 22 September 2026. Your journey to GATE 2027 starts right now.**
 
 ### 🎯 Day 1 Exact Schedule & Tasks
 
