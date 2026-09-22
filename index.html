@@ -1552,6 +1552,35 @@
       box-shadow: 0 4px 25px rgba(0,0,0,0.5);
       background: #ffffff;
     }
+
+    /* Precision Question & Solution Cropped Snippets */
+    .pyq-question-snippet-box {
+      background: #ffffff;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      text-align: left;
+      overflow-x: auto;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    }
+
+    .pyq-crop-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 2px;
+      display: block;
+    }
+
+    .pyq-sol-crop-box {
+      background: #ffffff;
+      border-radius: 4px;
+      padding: 14px 16px;
+      overflow-x: auto;
+      text-align: left;
+      margin-top: 8px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    }
   </style>
 </head>
 <body>
@@ -2284,6 +2313,30 @@
     let CURRENT_MODAL_PAGE = 1;
     let CURRENT_MODAL_INFO = {};
 
+    
+    function switchSolTab3(id, mode) {
+      const cropBtn = document.getElementById('tab-crop-' + id);
+      const pageBtn = document.getElementById('tab-page-' + id);
+      const textBtn = document.getElementById('tab-text-' + id);
+      const cropView = document.getElementById('sol-view-crop-' + id);
+      const pageView = document.getElementById('sol-view-page-' + id);
+      const textView = document.getElementById('sol-view-text-' + id);
+
+      [cropBtn, pageBtn, textBtn].forEach(b => b && b.classList.remove('active'));
+      [cropView, pageView, textView].forEach(v => v && (v.style.display = 'none'));
+
+      if (mode === 'crop') {
+        if (cropBtn) cropBtn.classList.add('active');
+        if (cropView) cropView.style.display = 'block';
+      } else if (mode === 'page') {
+        if (pageBtn) pageBtn.classList.add('active');
+        if (pageView) pageView.style.display = 'block';
+      } else {
+        if (textBtn) textBtn.classList.add('active');
+        if (textView) textView.style.display = 'block';
+      }
+    }
+
     function switchSolTab(id, tab) {
       const bookBtn = document.getElementById('tab-book-' + id);
       const textBtn = document.getElementById('tab-text-' + id);
@@ -2484,7 +2537,12 @@
 
             ${dayPyqs.length > 0 ? `
               <div class="pyq-cards-list">
-                ${dayPyqs.map((q, idx) => `
+                ${dayPyqs.map((q, idx) => {
+                  const qSnippet = q.q_snippet || `snippets/q_${q.id}.webp`;
+                  const solSnippet = q.sol_snippet || `snippets/sol_${q.id}.webp`;
+                  const bookNum = q.book_qnum || q.num;
+                  
+                  return `
                   <div class="pyq-question-card" id="pyq-card-${q.id}">
                     <div class="pyq-card-top">
                       <div class="pyq-tags-row">
@@ -2492,25 +2550,31 @@
                         <span class="res-type-tag">${q.type}</span>
                         <span class="badge-time">${q.exam}</span>
                         <span class="pyq-sub-tag">${q.subject} • ${q.chapter}</span>
-                        <span class="pyq-page-pill" title="Original printed book page">
+                        <span class="pyq-page-pill" title="Exact printed book page">
                           <i class="fa-solid fa-book"></i> Book p. ${q.q_book_page} (PDF p. ${q.q_page})
                         </span>
                         <span class="pyq-page-pill" title="Original question number in book">
-                          <i class="fa-solid fa-hashtag"></i> Book #${q.book_qnum || q.num}
+                          <i class="fa-solid fa-hashtag"></i> Book #${bookNum}
                         </span>
                       </div>
                       
                       <div style="display: flex; align-items: center; gap: 6px;">
-                        <button class="action-link-btn" onclick="openBookModal(${q.q_page}, '${q.subject}', '${q.chapter}', ${q.book_qnum || q.num}, '${q.q_book_page}')" title="Open original printed book question page">
-                          <i class="fa-solid fa-file-lines"></i> View Book Page
+                        <button class="action-link-btn" onclick="openBookModal(${q.q_page}, '${q.subject}', '${q.chapter}', ${bookNum}, '${q.q_book_page}')" title="Open full book page">
+                          <i class="fa-solid fa-file-lines"></i> Full Page
                         </button>
-                        <button class="action-link-btn" onclick="flagPyqToMistakes('${q.subject}', '${q.chapter} Q${q.num}', '${q.exam}')" title="Send trap to Mistake Vault" style="padding: 3px 8px; font-size: 11px;">
+                        <button class="action-link-btn" onclick="flagPyqToMistakes('${q.subject}', '${q.chapter} Q${bookNum}', '${q.exam}')" title="Send trap to Mistake Vault" style="padding: 3px 8px; font-size: 11px;">
                           <i class="fa-solid fa-triangle-exclamation"></i> Flag Trap
                         </button>
                       </div>
                     </div>
 
-                    <div class="pyq-body-text">${formatQuestionBody(q.body)}</div>
+                    <!-- Exact Cropped Question Snippet from Book -->
+                    <div class="pyq-question-snippet-box">
+                      <img src="${qSnippet}" alt="Question #${bookNum} from Book" class="pyq-crop-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                      <div class="pyq-body-text" style="display: none; background: transparent; padding: 0; margin: 0; border: none; color: #0f172a;">
+                        ${formatQuestionBody(q.body)}
+                      </div>
+                    </div>
 
                     <!-- Dropdown Toggle Button -->
                     <button class="pyq-solution-toggle" onclick="togglePyqSolution('${q.id}')" id="btn-sol-${q.id}">
@@ -2518,53 +2582,70 @@
                       <span>View Solution &amp; Answer Key</span>
                     </button>
 
-                    <!-- Dropdown Drawer with Dual Exact Book Page & Clean Text Tabs -->
+                    <!-- Dropdown Drawer with Exact Cropped Solution Snippet -->
                     <div class="pyq-solution-drawer" id="sol-drawer-${q.id}">
                       <div class="pyq-answer-banner" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
                         <div style="display: flex; align-items: center; gap: 8px;">
-                          <i class="fa-solid fa-circle-check" style="color: var(--success); font-size: 15px;"></i>
-                          <span>Official Answer Key: <strong>(${q.answerKey})</strong></span>
+                          <i class="fa-solid fa-circle-check" style="color: var(--success); font-size: 16px;"></i>
+                          <span>Official Answer Key: <strong style="font-size: 15px; color: var(--accent);">(${q.answerKey})</strong></span>
                         </div>
                         <div style="display: flex; align-items: center; gap: 8px;">
                           <span class="pyq-page-pill" title="Solution location in book">
-                            <i class="fa-solid fa-lightbulb"></i> Sol p. ${q.sol_book_page} (PDF p. ${q.sol_page})
+                            <i class="fa-solid fa-lightbulb"></i> Sol: Book p. ${q.sol_book_page} (PDF p. ${q.sol_page})
                           </span>
-                          <button class="action-link-btn" onclick="openBookModal(${q.sol_page}, '${q.subject}', '${q.chapter}', ${q.book_qnum || q.num}, '${q.sol_book_page}')" style="padding: 3px 8px; font-size: 11px;">
-                            <i class="fa-solid fa-expand"></i> Fullscreen
+                          <button class="action-link-btn" onclick="openBookModal(${q.sol_page}, '${q.subject}', '${q.chapter}', ${bookNum}, '${q.sol_book_page}')" style="padding: 3px 8px; font-size: 11px;">
+                            <i class="fa-solid fa-expand"></i> Full Page
                           </button>
                         </div>
                       </div>
 
-                      <!-- Tabs: Exact Book Solution vs Text Derivation -->
+                      <!-- Tabs: Exact Cropped Solution vs Full Book Page vs Text -->
                       <div class="pyq-sol-tabs-bar">
-                        <button class="pyq-tab-btn active" id="tab-book-${q.id}" onclick="switchSolTab('${q.id}', 'book')">
-                          <i class="fa-solid fa-image"></i> Exact Book Solution (Original Page)
+                        <button class="pyq-tab-btn active" id="tab-crop-${q.id}" onclick="switchSolTab3('${q.id}', 'crop')">
+                          <i class="fa-solid fa-crop-simple"></i> Exact Solution (Question #${bookNum} Only)
                         </button>
-                        <button class="pyq-tab-btn" id="tab-text-${q.id}" onclick="switchSolTab('${q.id}', 'text')">
+                        <button class="pyq-tab-btn" id="tab-page-${q.id}" onclick="switchSolTab3('${q.id}', 'page')">
+                          <i class="fa-solid fa-book-open"></i> Full Book Page (p. ${q.sol_book_page})
+                        </button>
+                        <button class="pyq-tab-btn" id="tab-text-${q.id}" onclick="switchSolTab3('${q.id}', 'text')">
                           <i class="fa-solid fa-align-left"></i> Text Derivation
                         </button>
                       </div>
 
-                      <!-- 1. Exact Book Page Snippet Display -->
-                      <div id="sol-view-book-${q.id}" class="pyq-sol-book-container">
+                      <!-- View 1: Exact Cropped Solution Snippet (ONLY THIS QUESTION) -->
+                      <div id="sol-view-crop-${q.id}" class="pyq-sol-book-container">
                         <div class="book-img-header-hint">
-                          <span><i class="fa-solid fa-circle-info"></i> GATE Wallah Book — Page ${q.sol_book_page} (PDF p. ${q.sol_page}) • Solution for #${q.book_qnum || q.num}. Scroll below:</span>
+                          <span><i class="fa-solid fa-check-double" style="color: var(--success);"></i> Snapped solution for <strong>Question #${bookNum}</strong> only (from Book Page ${q.sol_book_page}):</span>
+                          <a href="${solSnippet}" target="_blank" class="action-link-btn" style="font-size: 11px; padding: 2px 8px;">
+                            <i class="fa-solid fa-up-right-from-square"></i> Open Image
+                          </a>
+                        </div>
+                        <div class="pyq-sol-crop-box">
+                          <img src="${solSnippet}" alt="Exact Solution for Question #${bookNum}" class="pyq-crop-img" loading="lazy" onerror="this.onerror=null; this.src='book_pages/p_${q.sol_page}.webp';" />
+                        </div>
+                      </div>
+
+                      <!-- View 2: Full Book Page -->
+                      <div id="sol-view-page-${q.id}" class="pyq-sol-book-container" style="display: none;">
+                        <div class="book-img-header-hint">
+                          <span><i class="fa-solid fa-book"></i> Full Book Page ${q.sol_book_page} (PDF p. ${q.sol_page}). Scroll to find Question #${bookNum}:</span>
                           <a href="book_pages/p_${q.sol_page}.webp" target="_blank" class="action-link-btn" style="font-size: 11px; padding: 2px 8px;">
                             <i class="fa-solid fa-up-right-from-square"></i> Open High-Res
                           </a>
                         </div>
                         <div class="book-page-wrapper">
-                          <img src="book_pages/p_${q.sol_page}.webp" alt="Book Solution Page ${q.sol_book_page}" loading="lazy" class="book-page-embed" />
+                          <img src="book_pages/p_${q.sol_page}.webp" alt="Full Book Page ${q.sol_book_page}" loading="lazy" class="book-page-embed" />
                         </div>
                       </div>
 
-                      <!-- 2. Clean Text Derivation -->
+                      <!-- View 3: Clean Text Derivation -->
                       <div id="sol-view-text-${q.id}" class="pyq-solution-text" style="display: none;">
                         ${formatSolutionText(q.solution)}
                       </div>
                     </div>
                   </div>
-                `).join('')}
+                  `;
+                }).join('')}
               </div>
             ` : `
               <div style="padding: 24px; text-align: center; background: rgba(255, 255, 255, 0.02); border-radius: var(--radius-md); border: 1px dashed var(--border);">

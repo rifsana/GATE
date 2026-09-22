@@ -14,7 +14,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.2",
     "answerKey": "b",
     "solution": "2. (a)",
-    "id": "pyq_1_1"
+    "id": "pyq_1_1",
+    "q_snippet": "snippets/q_pyq_1_1.webp",
+    "sol_snippet": "snippets/sol_pyq_1_1.webp"
   },
   {
     "num": 2,
@@ -31,7 +33,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.2",
     "answerKey": "a",
     "solution": "Symbol: * + -\nASCII: 42\n43 45\n\n∴ ASCII code of P is 80\n\nASCII code of x is 120\n\nchar c = (a & b) + '*'\n\n( ) is having more priority\n\na - 0 1 0 1 0 0 0 0 - 80 & b - 0 1 1 1 1 0 0 0 - 120 a & b 0 1 0 1 0 0 0 0 = 80\n\nchar c = (a & b) + '*';\n\n80 + '*'\n\n80 + 42\n\nOn option elimination we get option (a) as correct option.\nchar = (a/b) - '-';\n\nData Types and Operators\n\na 0 1 0 1 0 0 0 0 OR b 0 1 1 1 1 0 0 0\n0 1 1 1 1 0 0 0 = 120\n\n120 - 45 = 75\n\nchar e = (a ∧ b) + '+';\n\n0 1 0 1 0 0 0 0\n\n0 1 1 1 1 0 0 0\n\n0 0 1 01 0 0 0 ⇒ 40\n\n40 + 43 = 83\n\n∴ z K S is printed Hence, (a) is correct option.",
-    "id": "pyq_1_2"
+    "id": "pyq_1_2",
+    "q_snippet": "snippets/q_pyq_1_2.webp",
+    "sol_snippet": "snippets/sol_pyq_1_2.webp"
   },
   {
     "num": 3,
@@ -48,7 +52,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.3",
     "answerKey": "0 to 0",
     "solution": "Taking the snippet of code from program.\n\ni m m +1 will make m as 11 n\n+ + m;\nii n m This will assign 11 to n = = → =\n\nn1 m; Assign 11 to n1 n1 m+ + m = m +1; increment the m by 11 = = →\n\nn-- → n will decrease by 1 i.e. n becomes 10\n\nn1→ n1 will decrease by 1 (10)\n\nn - = n1 ⇒ n = n -n1 (this will make n as 0,0 is printed)\n\n∴ 0 is printed",
-    "id": "pyq_1_3"
+    "id": "pyq_1_3",
+    "q_snippet": "snippets/q_pyq_1_3.webp",
+    "sol_snippet": "snippets/sol_pyq_1_3.webp"
   },
   {
     "num": 1,
@@ -65,7 +71,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.8",
     "answerKey": "5 to 5",
     "solution": "2. (c)",
-    "id": "pyq_2_4"
+    "id": "pyq_2_4",
+    "q_snippet": "snippets/q_pyq_2_4.webp",
+    "sol_snippet": "snippets/sol_pyq_2_4.webp"
   },
   {
     "num": 2,
@@ -82,7 +90,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.8",
     "answerKey": "c",
     "solution": "Let us first understand the concept before solving.\n\nAssume x = 12, y = 5\n\nLet's assume that we want to divide 12(x) by 5(y)\n\nPerforming above operation by using repeated subtraction method then we subtract 5 two times from 12(x).\n\nr = x = 12, y =5\n\nInitially r =12(everything is remaining as we did not subtract 5 from 12 any number of times).\n\nq = 0, because it denotes that how many times 5 has been subtracted from 12.\n\nNow,\n(1) r = 12, y = 5 can we subtract 5 from r? yes,\nbecause r is greater than y.\n\nr = 12 - 5 = 7\n\nq = 0 + 1 = 1(1 signifies that we have subtracted 5 one time from 12)\n(2) r =7, y = 5 can we subtract 5 from r? yes,\nbecause r is greater than y.\n\nr = 7 - 5 = 2\n\nq = 1 + 1 = 2(2 signifies that we have subtracted 5 two time from 12)\n(3) r = 2, y = 5 can we subtract 5 from r? no, because\nr is less than y so we need to stop further operation.\n\nr = 2, q = 2\n\nControl Flow Statements\n\nNow, solving question by option elimination method. Initially q==0 and r = = x\n\nBefore execution of fragment the value of q is zero and value of r is x. which matches with option c.",
-    "id": "pyq_2_5"
+    "id": "pyq_2_5",
+    "q_snippet": "snippets/q_pyq_2_5.webp",
+    "sol_snippet": "snippets/sol_pyq_2_5.webp"
   },
   {
     "num": 3,
@@ -99,7 +109,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.9",
     "answerKey": "d",
     "solution": "Let us take 1st case\n\nn = 1 ⇒ a = 0, b = 0\n\nThis is the maximum element (1), hence loop will not run, if there is single element then loop will not run.\n\nOption (a)\n\na!=n\n\n0!=1(true)\n\nabove condition is true for only one element too. Instead, it has to be returned by return statement.\n\nHence it is false option.\n\nOption (b)\n\nLet us take 2nd case\n\n1st iteration:\n\np[ a] < p[b] → true\n\na = a + 1\n\n(Moving a to right side)\n\nLet us take case 3\n\n1st iteration:\n\np[a] < p[b] ⇒ False\n\nb = b -1 ⇒ b = 0\n\nCase: 4\n\n(i) p[0] < p [4] ⇒ false\n\nb = b -1 ⇒ 3\n\nWhy?\n\nAny Smaller element cannot be maximum if an element at ath index is bigger than element at bth index then p[b] cannot be maximum ⇒ so we are moving to the left (skipping this element p[b]).\n\n(ii) p[a] < p [b] ⇒ true\n\n10 < 30\n\n10 cannot be maximum\n\nSkip it by moving.\n\nHow ⇒ by a = a + 1\n\n(iii) p[a] < p [b] ⇒ true\n\n20 < 30\n\nSkip 20 by a = a + 1\n\np[a] < p [b]\n\nFalse\n\n50 < 30 ⇒ false\n\n50 can be maximum, But 30 cannot be maximum.\n\nb = b =1\n\nb = 2\n\nProgramming and Data Structures\n\n*we are left with one element, this must be a maximum element. Now we need not iterate further.\n\n*we need to stop whenever a=b. therefore loop condition will be b!=a or a!=b . i.e. option d is correct answer.",
-    "id": "pyq_2_6"
+    "id": "pyq_2_6",
+    "q_snippet": "snippets/q_pyq_2_6.webp",
+    "sol_snippet": "snippets/sol_pyq_2_6.webp"
   },
   {
     "num": 4,
@@ -116,7 +128,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.10",
     "answerKey": "d",
     "solution": "T1 : S1\n\nT1, T2, T4(covers all)\n\nT2 : S3\n\nT2, T3, T4(covers all)\n\nT3 : S1\n\nT4 : S2, S4\n\nHence option (d) is correct answer.",
-    "id": "pyq_2_7"
+    "id": "pyq_2_7",
+    "q_snippet": "snippets/q_pyq_2_7.webp",
+    "sol_snippet": "snippets/sol_pyq_2_7.webp"
   },
   {
     "num": 5,
@@ -133,7 +147,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.10",
     "answerKey": "b",
     "solution": "Rewriting the code for better understanding\n\nbegin q: = 0// q is representing Quotient\n\nr: = x // r is representing Remainder\n\nwhile r > y do\n\nbegin\n\nr: = r - y\n\nq: = q + 1\n\nend\n\nend\n\nThe abvoe code is representing, How to divide x by y using repeated subtraction.\n\nLet x = 13, y = 5 and intially q = 0\n\nr = 23 (everyting is remaining)\n\n(i) Can we subtract y(5) from r ?\n\nYes, r = 13 - 5 = 18\n\nq = q + 1 = 0 +1 =1\n\nr = 8; q = 1 (one time 5 is subtrated from 13)\n\n(ii) r = 8, q = 1 y = 5\n\ncan we subtract 5 from r ?\n\nyes, r = 8 - 5 = 3\n\nq = q + 1 = 1 + 1 = 2\n\nr = 3; q = 2 (2 times 5 is subtracted from 13)\n\n(iii) r = 3, q = 2\n\ncan we subtract 5 from r ?\n\nNo, because x y\n\nwhich is\n\nPost condition\n\nAfter code execution\n\nr = 3, q = 2, x = 13 y = 5\n\nq y r we can write, 13 =\n\n2 5 3 ¯ ¯¯ ×\n+\n\nqy + r x = where, r < y\n\n∴ on option verification, option (b) is correct.",
-    "id": "pyq_2_8"
+    "id": "pyq_2_8",
+    "q_snippet": "snippets/q_pyq_2_8.webp",
+    "sol_snippet": "snippets/sol_pyq_2_8.webp"
   },
   {
     "num": 6,
@@ -150,7 +166,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.10",
     "answerKey": "1.72 to 1.74",
     "solution": "abs (x2 - 3) < 0.01\n\nabsolute value is like an value of mod x\n\n0 > = 0 x x x x x −\n\n=\n\n(x2 -3) < 0.01 and - (x2 - 3) < 0.01\n\nx2 < 3.01 and x2 > 2.99\n\nx < 1.735 and x > 1.729\n\nx > 1.729 and x < 1.735\n\nx =\n\nControl Flow Statements",
-    "id": "pyq_2_9"
+    "id": "pyq_2_9",
+    "q_snippet": "snippets/q_pyq_2_9.webp",
+    "sol_snippet": "snippets/sol_pyq_2_9.webp"
   },
   {
     "num": 7,
@@ -167,7 +185,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.11",
     "answerKey": "d",
     "solution": "(1) option A and option B can be eliminated, because\nthey are not printing anything (No putchar()).\n\n(2) In option (c), there is No getchar() to read input\nHence c is wrong.\n\n(3) ∴ correct option is option (d).",
-    "id": "pyq_2_10"
+    "id": "pyq_2_10",
+    "q_snippet": "snippets/q_pyq_2_10.webp"
   },
   {
     "num": 8,
@@ -184,7 +203,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.11",
     "answerKey": "10 to 10",
     "solution": "firstly, solving\n\nj=2*3/4+2.0/5+8/5\n\nwe know that, *, / having same priority\n\nSo, before loop started\n\n1 j 2*3/ 4 2.0 / 5 8 / 5 =\n+\n+\n\n2 j 6 / 4 2.0 / 5 8/ 5 =\n+\n+\n\n3 j 1 2.0 / 5 8/ 5 = +\n+\n\n2.0 is of double type\n\n5 ⇒ 5.0 (double, promoted implicitly)\n\nResults is also of type double type i.e. 0.4\n\nj = 1 + 0.4 + 4 8 / 5\n\nj = 5 double\nint\n1 1\n+\n+\n\nj = 1.4 +1\n\nj = 2.4\n\nj is of int type.\n\nj = 2, 2 is assigned to j\n\nNow,\n\nk = --j;\n\n--j is performed\n\n⇒ j becomes 1\n\nk - = j;\n\nk = 0 -1 = -1\n\nSo, before the loop started, k\n-1 and j\n1 = =\n\nNow evaluating loop\n\nfor (i = 0; i<5; i + +)\n\nswitch (i + k) {\n\ncase 1:\n\ncase 2: printf (\"\\n%d\", i +k);\n\ncase 3: printf (\"\\n%d\", i +k);\n\ndefault: printf (\"\\n%d\", i +k);\n\nNumber of times printf executed = 1 + 1 + 3 + 3 + 2\n\n= 10 times",
-    "id": "pyq_2_11"
+    "id": "pyq_2_11",
+    "q_snippet": "snippets/q_pyq_2_11.webp",
+    "sol_snippet": "snippets/sol_pyq_2_11.webp"
   },
   {
     "num": 9,
@@ -201,7 +222,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.11",
     "answerKey": "b",
     "solution": "Initially variable count and i are initialized to zero.\n\nfor(j=-3;j<=3;j++) statement states that, for loop will\nrun from -3 to +3(-3,-2-1,0,1,2,and 3).\n\nEvaluating if condition inside for loop\n\nj = -3\n\nProgramming and Data Structures\n\nif((j>=0)&&(i++))\n\n-3>=0&&(i++) →false\n\nHere we are using concept of Short Circuiting\n\nShort Circuiting: when the first operand of logical AND operator is 0 then 2nd operand will not be evaluated, if the 1st operand is 1 then 2nd operand will be evaluated.\n\nwill never be evaluated 0 & & i + +\n\nThat's why\n\nif(0)\n\ncount = count + j will not be executed\n\nnow, j= -2\n\nif((j>=0)&&(i++))\n\nFalse will not be evaluated 0 false\n-2\n0 && i =\n+ +\n\n0 && (i++)\n\ncount = count + j will not be executed because,\nif(0)(if condition fails) as same as above reason.\n\nj = -1\n\nif((j>=0)&&(i++))\n\n(-1>=0 && (i++))\n\nwill not be evaluated 0 false 0 && i ⇓\n+ +\n\nagain count = count +j will not be executed because,\nif(0)(if condition fails) as same as above reason above\nmentioned.\n\nj = 0\n\ntrue\nif\nand becomes 1 0 0 & & i =\n+ +\n\nPost Increment 1 & &\n\ni\n\n+ +\n\nPost increment: Post increment operator is used when it is required to increment the value of the variable after evaluating the expression.\n\nInitially variable i has value 0.\n\n0 false after evaluation of this 1&&0 statement value of i becomes 1 →\n\nHence once again statement count= count + j will not be executed.\n\nj = 1\n\nif(1>=0 && i++)\n\n( )1 True after evaluation of this 1&&1 statement value of i becomes 2. →\n\nHence if condition becomes true, so count = count +j will be executed\n\ncount = count + j\n\n= 0 + 1\n\ncount = 1\n\nj = 2\n\nif(j>=0 &&(i++))\n\n2>=0 && 2\n\n1 && 2\n\n(1) True\nvalue of i will become 3\n\nAgain, if condition becomes true and statement inside\nif condition will be executed\n\ncount = count + j = 1 + 2\n\ncount = 3\n\nj = 3\n\nif (j>=0 && (i++))\n\n3>=0 && 3\n\nControl Flow Statements\n\n( )1 True 1&&1 Value of i will become 4 →\n\nAgain, if condition becomes true and statement inside\nif condition will be executed.\n\ncount = count + j\n\n3 + 3\n\ncount = 6\n\nj = 4\n\ncondition in for loop gets failed and control of execution comes outside for loop\n\ncount=count+i\n\n6 + 4(as value of count is 6 and i is 4)\n\nHence, count = 10 and lastly 10 is printed by printf statement in the end. Hence option b is correct.",
-    "id": "pyq_2_12"
+    "id": "pyq_2_12",
+    "q_snippet": "snippets/q_pyq_2_12.webp",
+    "sol_snippet": "snippets/sol_pyq_2_12.webp"
   },
   {
     "num": 10,
@@ -218,7 +241,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.13",
     "answerKey": "b",
     "solution": "for (i = n; i > 1, i = 1/2)\n\nj + 1;\n\nInitially j = 0\n\nLet us reduce the input size\n\nn = 26 i i>1 26 26 > 1 → True → j ++, j = 1 25 25 > 1 → True → j ++, j = 2 24 24 > 1 → True → j ++, j = 3 23 23 > 1 → True → j ++, j = 4 22 22 > 1 → True → j ++, j = 5 21 21 > 1 → True → j ++, j = 6 i i>1 20 20 > 1 → Flase\n\nfor n = 26, the first loop\n\nwill make j as 6\n\nfor n = 240, the loop will make j as 40\n\nBefore second loop\n\nj= 40, sum = 0\n\nAfter second loop\n\nSum is 5\n\nfor ( ; j > 1; j = j/2)\n\nsum ++;\n\nj j > 1\n\n40 40 > 1 → True → sum ++ j = j/2 20 20 > 1 → True → sum ++ j = j /2 10 10 > 1 → True → sum ++ j = j/2 5 5 > 1 → True → sum ++ j = j/2 2 2 > 1 → True → sum ++ j = j/2 1 1 > 1 → True → loop ends\n\nAfter second loop sum is 5.",
-    "id": "pyq_2_13"
+    "id": "pyq_2_13",
+    "q_snippet": "snippets/q_pyq_2_13.webp",
+    "sol_snippet": "snippets/sol_pyq_2_13.webp"
   },
   {
     "num": 11,
@@ -235,7 +260,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.13",
     "answerKey": "23 to 23",
     "solution": "(i) v & 1: is checking if the rightmost bit of v is 1.\n\n(If it is 1, then count value is increment by 1).\n\n(ii) v>> =1: Ensuring that every bit is checked.\n\nBecause count is a static variable, total(v) is increasing the value of count by the number of\n\nProgramming and Data Structures set bits in v and also returns the incremented value.\n\nLet us assume that total (5) is called.\n\nBefore total(5)\n\n5 ⇒ 00000101 (only 2 set bits)\n\ncount\n\ncount is increased by 2 and returns the same value.\n\nAgain, if total (4) is called\n\nBefore call\n\n4 → 00000100\n\ncount is increased by 1 and same value is returned\n\nNow, understanding below code\n\nfor (; i > 0 ; i--){\n\nx = x + total (1)\n\nThis loop will execute for i = 5, 4, 3, 2, 1 and\n\nx = x + total (i) , x is initially 0\n\n(i)\n\ni = 5\n\nx = x + total (5)\n\n5 ⇒ 00000101 (2 set bits)\n\ntotal (5) ⇒ increases the value of count by 2.\n\ncount becomes 2 & same value is returned.\n\nx = x + total\n\n0 + 2\n\nx becomes 2\n\n(ii)\n\ni = 4\n\nx = x + total (4)\n\nBinary of 4 contains only one set bit, so it will increase value of count by 1 and same is returned\n\nx = x + total (4)\n\n2 + 3\n\nx = 5\n\n(iii) i = 3\n\nx = x + total (3)\n\nBinary of 3 contains 2 one's (00000011) that's why count is increased by 2 i.e. count becomes 5 and is reutned.\n\nx = x + total (3)\n\nx = 5 + 5\n\nx = 10\n\n(iv) i = 2\n\nBinary of two contains only one set value so count is increased by 1, count becomes 6 and same is returned.\n\nx = x + total (2)\n\n10 + 6\n\nControl Flow Statements\n\nx = 16\n\n(v) i = 1\n\nBinary of 1 contains only one set value so count is increased by1, count becomes 7 and same is returned,\n\nx = x+ total (1)\n\n16 + 7\n\nx = 23\n\nFinally loop terminates and value of x gets printed i.e. 23 is printed.",
-    "id": "pyq_2_14"
+    "id": "pyq_2_14",
+    "q_snippet": "snippets/q_pyq_2_14.webp",
+    "sol_snippet": "snippets/sol_pyq_2_14.webp"
   },
   {
     "num": 12,
@@ -252,7 +279,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.15",
     "answerKey": "c",
     "solution": "if (b % 2 = = 0)\n\n{ a = a*a; b= b/2; }// when b is even\n\nelse\n\nres = res *a;// executes when b is odd\n\nb = b -1;}\n\nLet X = 3, Y = 5\n\nThis code will compute = 35\n\nInitially, res = 1, a = 3, b = 5\n\n1st iteration\n\nAs b is odd,\n\nres = 1*3 = 3\n\nb = 5 - 1 = 4\n\nAfter 1st iteration\n\na = 3, b = 4, res = 3, X = 3, Y = 5\n\nLet us check all option after\n\n1st iteration (before 2nd iteration)\n\n(a) XY = ab\n\n35 = 34(false)\n\n(b) (res*a)Y = (res*X)b\n\n(3*3)5 = (3*3)4(false)\n\n(c) XY = res*ab\n\n35 = 3*34(true)\n(d) XY = (res*a)b\n\n35 = (3*3)4(false)\n\nHence option C is correct option (this is option elimination method).",
-    "id": "pyq_2_15"
+    "id": "pyq_2_15",
+    "q_snippet": "snippets/q_pyq_2_15.webp",
+    "sol_snippet": "snippets/sol_pyq_2_15.webp"
   },
   {
     "num": 13,
@@ -269,7 +298,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.15",
     "answerKey": "c",
     "solution": "= 1 + 1 + 1 + ….………..+1 (How many times ?)\n\nk = j + 1 ………..k = n = last - first + 1 = n- (j + 1) + 1\n\n= n - j -1 + 1 = n -j\n\nProgramming and Data Structures\n\n1 n - j n k j = + = ↔\n\n1 1 n - j n n i j = =\n\n↔↔\n\n(n -i) + (n - (i +1)) + (n - (i + 2)) +… (n - (n - 1) + (n - n)\n\n= (n - i) + (n - (i + 1)) + (n - (i + 2)) +….+ 1 + 0\n\n= 0 + 1 + 2 +…. (n - i)\n\n= 1 + 2 + …… (n - i)\n\n= ( )( n - i n - i +1 2\n\n= )( 1 n - i n - i +1 2 n i=↔\n\n= 2 2 1 2\n-1\n\n2 n i n i in n =\n+\n+\n+\n\n↔\n\n= 2 2 1 1 1 1 1 1 1 1 1\n\n-\n.\n\n-\n\n2 2 2 2 n n n n n i i i i i n i i n n i = = = = =\n+\n+\n↔ ↔ ↔ ↔ ↔\n\n= )( 3 2\n1 2\n1 . 1 1 2 12 2 2 2 n n n n n n n n n n\n+\n+\n+\n+\n+\n−\n+\n−\n\n= 3 2 n )( 3\n1 2\n1 - 12 2 n n n n\n+\n+\n+\n2 2 n − 2 2 n\n+\n2 4 4 n n − −\n\n= ( )(\n1 2\n1 1 12 4 n n n n n\n+\n+\n+\n−\n\n= ( )[\n1 2\n1 3\n12 n n n\n+\n+ −\n\n= ( )( 1 2 2 12 n n n\n+\n−\n\n= )( 2 1 1 12 n n n ↔\n+\n−\n\n= ( )( )( 1 1 6 n n n −\n+\n\nTherefor option (c) is correct answer.",
-    "id": "pyq_2_16"
+    "id": "pyq_2_16",
+    "q_snippet": "snippets/q_pyq_2_16.webp",
+    "sol_snippet": "snippets/sol_pyq_2_16.webp"
   },
   {
     "num": 1,
@@ -286,7 +317,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.23",
     "answerKey": "26 to 26",
     "solution": "2.\n(b)",
-    "id": "pyq_3_17"
+    "id": "pyq_3_17",
+    "q_snippet": "snippets/q_pyq_3_17.webp",
+    "sol_snippet": "snippets/sol_pyq_3_17.webp"
   },
   {
     "num": 2,
@@ -303,7 +336,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.23",
     "answerKey": "b",
     "solution": "r(): it will return the current value of num and returns num=num-1(post decrement).\n\nPost-decrement: A post-decrement operator is used to decrement the value of a variable after executing the expression in which the operator is used.\n\n(1) r() will return 7 and then num is decreased by 1\nthat is num =7, value 7 is printed and then decremented.\n\n(2) r() will return 6(which is non zero) that's why\ncondition will become true and code inside the loop will be executed, but before reaching printf statement num is decresed by 1 ie…. num becomes 5.\n\n(3) printf(\"%d\"r());\n\nr() inside printf will return 5 and same is printed and after printing num becomes 4.\n\n(4) r() is called and 4 is returned and then decreses\nthe num value by 1, hence num becomes 3.\n\nProgramming and Data Structures\n\n(5) r() will return 3 which is non zero(true) so printf\nwill be executed, before printf num value becomes 2 because of post decrement.\n\n(6) printf(\"%d\",r()), r() returns 2 and same value is\nprinted. And then num becomes 1.\n\n(7) r(), will return 1 and decrements the value to\nzero.\n\n(8) r(), Here zero is returned and condition of for\nloop becomes false hence loop gets terminated.\n\nTherefore, output printed is 52 which is option b.",
-    "id": "pyq_3_18"
+    "id": "pyq_3_18",
+    "q_snippet": "snippets/q_pyq_3_18.webp",
+    "sol_snippet": "snippets/sol_pyq_3_18.webp"
   },
   {
     "num": 3,
@@ -320,7 +355,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.24",
     "answerKey": "10230 to 10230",
     "solution": "* If y =1, then the function will terminate without printing anything.\n\nCount (x, 1) will not print anything\n\nelse statement will be executed when if condition fails.\n\nCount (1024, 1024)\n\n¯ (1) print\n\nCount (512, 1024)\n\n¯ (2) print\n\nCount (256, 1024)\n\n¯ (3) print\n\nCount (128, 1024)\n\n¯ (4) print\n\nCount (64, 1024)\n\n¯ (5) print\n\nCount (32, 1024)\n\n¯ (6) print\n\nCount (16, 1024)\n\n¯ (7) print\n\nCount (8, 1024)\n\n¯ (8) print\n\nCount (4, 1024)\n\n¯ (9) print\n\nCount (2, 1024)\n\n¯ (10) print\n\nCount (1, 1024) Note:- for each such y, 10 times printf will take place\n\nCount (1024, 1024)\n\n¯After 10 times printf\n\nCount (1, 1024)\n\nBecause x = 1 else part will be executed\n\nCount (1024, y) y ≠ 1\n\n¯10 times print\n\nCount (1, y)\n\n⇒ x = 1 else part will be executed\n\n1. Count (1024, 1024)\n\n¯ after 10 time printing\n\nCount (1, 1024)\n\ny = y - 1 ⇒ y = 1023\n\n2. Count (1024, 1023) will execute\n\nCount (1024, 1023)\n\n¯ 10 time\n\nCount (1, 1023)\n\nAgain, else part will execute\n\ny = 1022\n\ncount (1024, 1022) will execute\n\ncount (1024, 1024) → 10 times\n\ncount (1024, 1023) → 10 times\n\ncount (1024, 1022) → 10 times\n\n.\n\n.\n\n.\n\nCount (1024, 2) → 10 times\n\ni.e. count (1024, y)where y = 2, 3, …1024\n\ni.e. for 1023 value of y count (1024, y) will print 10 times\n\nTotal number of printf = 10 × 1023 = 10230\n\nFunctions and Storage Classes",
-    "id": "pyq_3_19"
+    "id": "pyq_3_19",
+    "q_snippet": "snippets/q_pyq_3_19.webp",
+    "sol_snippet": "snippets/sol_pyq_3_19.webp"
   },
   {
     "num": 4,
@@ -337,7 +374,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.25",
     "answerKey": "–5 to –5",
     "solution": "f2() function is swapping.\n\n⇒ As f2 is called by passing address of b and address\n\nof c.\n\nf2 () ⇒ will swap the contents of b, c.\n\na 4 b 56 c 65\n\nprintf will point the value of c - a - b\n\n5 - 4 - 6\n\n= 5 - 10\n\n= - 5",
-    "id": "pyq_3_20"
+    "id": "pyq_3_20",
+    "q_snippet": "snippets/q_pyq_3_20.webp"
   },
   {
     "num": 5,
@@ -354,7 +392,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.25",
     "answerKey": "d",
     "solution": "int f(int j){\n\nstatic int i=50;\n\nint k;\n\nif(i= =j){\n\n1.printf(\"something\");\n\n2.k=f(i);\n\n3.return 0;\n\nelse\n\nreturn 0\n\nf(50) will call f(50) and keeps on calling which will lead to stack overflow.\n\nfor j = 50, function will never reach return statement.\n\nOption (a): is wrong because for j=50, stack overflow occurs and function never reaches return statement.\n\nOption (c): when j=50, function will never reach\nreturn statement.\n\nOption(b): for j!=50, function will not print anything that's why (b) is also wrong.\n\nOption(d): as explained through diagram which shows that function will exhaust the runtime stack or run into an infinite loop when j=50, therefore (d) is correct answer.",
-    "id": "pyq_3_21"
+    "id": "pyq_3_21",
+    "q_snippet": "snippets/q_pyq_3_21.webp",
+    "sol_snippet": "snippets/sol_pyq_3_21.webp"
   },
   {
     "num": 6,
@@ -371,7 +411,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.25",
     "answerKey": "7 to 7",
     "solution": "After execution of funcp 2 times, printf function prints the output (7) and gets deleted from activation record.\n\nSimilarly, control is returned to the main function, main function also gets deleted from activation record and control is returned to operating system.\n\nHence 7 is printed.\n\nProgramming and Data Structures",
-    "id": "pyq_3_22"
+    "id": "pyq_3_22",
+    "q_snippet": "snippets/q_pyq_3_22.webp",
+    "sol_snippet": "snippets/sol_pyq_3_22.webp"
   },
   {
     "num": 7,
@@ -388,7 +430,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.26",
     "answerKey": "a",
     "solution": "Comparing the above tree with the given trees in options. Above tree matches with the tree given in option A, hence a is correct answer.",
-    "id": "pyq_3_23"
+    "id": "pyq_3_23",
+    "q_snippet": "snippets/q_pyq_3_23.webp"
   },
   {
     "num": 8,
@@ -405,7 +448,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.26",
     "answerKey": "15 to 15",
     "solution": "9. (60 to 60)\n\nLets first understand the fragments of code.\n\n1) if((x ≤ 0)&&(y ≤ 0))\n\nThe above case states that when both x and y are less than 0 (or) equal to zero then return 3rd argument(q).\n\n2) if(x ≤ 0)\n\nThe above case states that x < 0 and y > 0 then decrement 2nd argument using 3rd argument.\n\n3) if(y < 0)\n\nThe above case states that x >0, y < 0 then decrement first argument using 3rd argument.\n\n4) return foo (x, y - q, q) + foo (x - q, y, a)\n\nThe above case states that, when both x, y > 0 then from first function call, decrease 2nd argument using 3rd argument and from 2nd function call, decrease first argument using 3rd argument.\n\nFunctions and Storage Classes",
-    "id": "pyq_3_24"
+    "id": "pyq_3_24",
+    "q_snippet": "snippets/q_pyq_3_24.webp",
+    "sol_snippet": "snippets/sol_pyq_3_24.webp"
   },
   {
     "num": 9,
@@ -422,7 +467,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.26",
     "answerKey": "60 to 60",
     "solution": "10.\n(d)",
-    "id": "pyq_3_25"
+    "id": "pyq_3_25",
+    "q_snippet": "snippets/q_pyq_3_25.webp",
+    "sol_snippet": "snippets/sol_pyq_3_25.webp"
   },
   {
     "num": 10,
@@ -439,7 +486,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.27",
     "answerKey": "d",
     "solution": "Let us try for n = 10\n\n• Every printf is waiting, statement written after recursive call executes in opposite order of call. • Nothing will be printed because convert(0) keeps on calling convert(0) and it will never terminate.",
-    "id": "pyq_3_26"
+    "id": "pyq_3_26",
+    "q_snippet": "snippets/q_pyq_3_26.webp"
   },
   {
     "num": 11,
@@ -456,7 +504,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.27",
     "answerKey": "4 to 4",
     "solution": "In this program we need not focus on the return value, we must focus on the counter variable. We need to just look for the number of times calc function is being called.\n\nNo further call\n\n∴ value of counter variable is printed is 4",
-    "id": "pyq_3_27"
+    "id": "pyq_3_27",
+    "q_snippet": "snippets/q_pyq_3_27.webp",
+    "sol_snippet": "snippets/sol_pyq_3_27.webp"
   },
   {
     "num": 12,
@@ -473,7 +523,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.27",
     "answerKey": "a",
     "solution": ") [\n\nn = n f\n+1\nfu\n;\nn1(\n++n\nn) un1\n\nprintf (\"% d\", n) → will print incremented value of n\n\nWe need to trace this tree from top to bottom & left to right\n\nWe need to trace this tree from top to bottom & left to right.\n\nHence, 53423122233445 is printed, therefore option\n(a) is correct\n\nProgramming and Data Structures",
-    "id": "pyq_3_28"
+    "id": "pyq_3_28",
+    "q_snippet": "snippets/q_pyq_3_28.webp",
+    "sol_snippet": "snippets/sol_pyq_3_28.webp"
   },
   {
     "num": 13,
@@ -490,7 +542,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.28",
     "answerKey": "c",
     "solution": "Understanding foo function\n\nx=x+foo(val--) ;\n\nval--performs post decrement.foo(val) will be called and then val=val-1 is performed later(after function call)\n\nfoo(3) will call foo(3) which will again call foo(3) and gets called every time.\n\nInfinite recursive call keeps on increasing stack size, but stack size is limited. Hence at some point of time stack overflow occurs ie…. abnormal termination takes place.\n\nUnderstanding bar function:\n\nint bar(int val){\n\nint x=0;\n\nwhile(val>0){\n\nx=x+bar(val-1);}\n\nreturn val;\n\n• We are still inside loop and val > 0 is true, bar (1) will again call bar(0) and again bar(0) will return 0, • This process will continue .. loop count wont be getting terminated. • But, stack size is not being exceeded at any moment of time. • Leading to infinite loop Hence, correct option is\n(c).",
-    "id": "pyq_3_29"
+    "id": "pyq_3_29",
+    "q_snippet": "snippets/q_pyq_3_29.webp"
   },
   {
     "num": 14,
@@ -507,7 +560,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.28",
     "answerKey": "a",
     "solution": "On tracing the tree from top to bottom and left to right we get\n\n3,1,2,2,1,3,4,4,4\n\n∴ Option a is correct answer.\n\nFunctions and Storage Classes",
-    "id": "pyq_3_30"
+    "id": "pyq_3_30",
+    "q_snippet": "snippets/q_pyq_3_30.webp",
+    "sol_snippet": "snippets/sol_pyq_3_30.webp"
   },
   {
     "num": 15,
@@ -524,7 +579,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.29",
     "answerKey": "d",
     "solution": "Answer is option (d)",
-    "id": "pyq_3_31"
+    "id": "pyq_3_31",
+    "q_snippet": "snippets/q_pyq_3_31.webp"
   },
   {
     "num": 16,
@@ -541,7 +597,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.29",
     "answerKey": "b",
     "solution": "void get (int n) {\n\nif (n < 1) return;\n\nget (n - 1); ⇒ Recursion call with 1 less argument\n\nget (n - 3); ⇒ Recursion call with 3 less argument\n\nprintf(\"%d\", n);\n\nNeed not to focus on printf statement",
-    "id": "pyq_3_32"
+    "id": "pyq_3_32",
+    "q_snippet": "snippets/q_pyq_3_32.webp",
+    "sol_snippet": "snippets/sol_pyq_3_32.webp"
   },
   {
     "num": 17,
@@ -558,7 +616,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.29",
     "answerKey": "d",
     "solution": "&&! =\n\nPriority of && is less than !=\n\nif ((*a)) && (*a! = ' '))\n\nif will become false, Either\n\n(1) *a = 0 (ASCI to or \\0)\n\n(2) *a become ' '\n\nNow,\n\nRecursion 'A'→'B'→'C'→'D'→ Recursion ends and then it starts printing.\n\nPrinting is done because putchar (*a); is written after recursive call.\n\nHence, DCBA is printed, i.e. option D is correct.",
-    "id": "pyq_3_33"
+    "id": "pyq_3_33",
+    "q_snippet": "snippets/q_pyq_3_33.webp",
+    "sol_snippet": "snippets/sol_pyq_3_33.webp"
   },
   {
     "num": 18,
@@ -575,7 +635,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.29",
     "answerKey": "51 to 51",
     "solution": "x is a local variable so in every call x 1 →\n\nfun(1) =1\n\nfun(2) ⇒ = 1\n\nx = x + fun(1)*fun (2 -1)\n\nProgramming and Data Structures\n\n= 1 + fun (1) * fun(1) = 1 + 1 × 1 = 2\n\nfun(3) ⇒ k = 1, 2\n\nk = 1\n\nx = x + fun(1) * fun (2) + fun(2) *fun(1)\n\n= 1 + 1 × 2 + 2 × 1 = 1 + 2 + 2 = 5\n\nfun (4) k = 1, 2, 3 n =4\n\nx = x + fun(1) × fun(3) + fun(2) × fun(2) + fun(3) × fun(1)\n\n= 1 + 1 × 5 + 2 ×2 + 5 × 1 = 15 k = 1, 2, 3, 4 n = 5\n\nfun(5)\n\n= 1 + fun(1) × fun(4) + fun(2) × fun(3) + fun(3) × fun(2) + fun(4) × fun(1)\n\n= 1 + 1 × 15 + 2 × 5 + 5 × 2 + 15 × 1\n\n= 1 + 15 + 10 + 10 + 15\n\n= 51",
-    "id": "pyq_3_34"
+    "id": "pyq_3_34",
+    "q_snippet": "snippets/q_pyq_3_34.webp",
+    "sol_snippet": "snippets/sol_pyq_3_34.webp"
   },
   {
     "num": 19,
@@ -592,7 +654,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.30",
     "answerKey": "9 to 9",
     "solution": "num>>1 (divided by 2) → num = 0\n\nHence, 9 is the correct answer.",
-    "id": "pyq_3_35"
+    "id": "pyq_3_35",
+    "q_snippet": "snippets/q_pyq_3_35.webp",
+    "sol_snippet": "snippets/sol_pyq_3_35.webp"
   },
   {
     "num": 20,
@@ -609,7 +673,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.30",
     "answerKey": "c",
     "solution": "Part-A\n\na = 0, b = 0, c = 0\n\n• 4, 2 is printed and it is deleted from activation record. • Again prtfun () is called • 6,2 is printed and it is deleted from activation Record, now control is retunred to main and 2,0 is printed.\n\n4 2\n6 2 is pointed, Hence (c) is correct option\n2 0\n|\n|",
-    "id": "pyq_3_36"
+    "id": "pyq_3_36",
+    "q_snippet": "snippets/q_pyq_3_36.webp"
   },
   {
     "num": 21,
@@ -626,7 +691,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.30",
     "answerKey": "d",
     "solution": "Part -B\n\na = 0,\n\nb = 0\n\nc = 0\n\nFunctions and Storage Classes\n\nNote that register vairable is as same as local vairable except the storage area\n\n• After printing 4, 2 printf function and printf( ) gets deleted from activation record and control is returned to main, again prtfun is called. • Again 4, 2 is printed and both the functions get deleted from activation record and control is returned to main and 2,0 is printed.\n\n4 2\n4 2 is pointed Hence, option d is correct answer\n2 0\n}||\n∴\n|||",
-    "id": "pyq_3_37"
+    "id": "pyq_3_37",
+    "q_snippet": "snippets/q_pyq_3_37.webp",
+    "sol_snippet": "snippets/sol_pyq_3_37.webp"
   },
   {
     "num": 22,
@@ -643,7 +710,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.31",
     "answerKey": "b",
     "solution": "Hence (b) is correct option",
-    "id": "pyq_3_38"
+    "id": "pyq_3_38",
+    "q_snippet": "snippets/q_pyq_3_38.webp",
+    "sol_snippet": "snippets/sol_pyq_3_38.webp"
   },
   {
     "num": 23,
@@ -660,7 +729,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.31",
     "answerKey": "b",
     "solution": "Correct answer is 8 i.e. option (b).",
-    "id": "pyq_3_39"
+    "id": "pyq_3_39",
+    "q_snippet": "snippets/q_pyq_3_39.webp",
+    "sol_snippet": "snippets/sol_pyq_3_39.webp"
   },
   {
     "num": 24,
@@ -677,7 +748,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.31",
     "answerKey": "55 to 55",
     "solution": "Let us try to understand the working of function fun1\n\nLet fun1(3) is called first\n\ni is an static variable\n\nBefore fun1(3) the value of i was 0 and after fun1(3) the value of i becomes 3.\n\nLet us assume fun1() is called again i.e. for the 2nd time.\n\nProgramming and Data Structures\n\n• Before fun1(2) value of static variable i was 3 and after fun1(2) value returned is 5. Which is the value of i variable • fun 1(n) is increasing the value of static int i variable and returning the incremented value.\n\nNow let us understand fun2(5).\n\n∴ 55 is printed",
-    "id": "pyq_3_40"
+    "id": "pyq_3_40",
+    "q_snippet": "snippets/q_pyq_3_40.webp",
+    "sol_snippet": "snippets/sol_pyq_3_40.webp"
   },
   {
     "num": 25,
@@ -694,7 +767,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.32",
     "answerKey": "230 to 230",
     "solution": "xmain = xmain + f1( ) + f2() + f3() + f2();\n\nf1() is called:\n\n26 is retuned by f1()\n\nxmain = xmain + f1( ) + f2() + f3() + f2();\n\n= 1 + 26\n\nf2() is called:\n\nThere is local static variable which resides in memory throughout the program.\n\n51 is returned but x being static, still remains in memory.\n\nxmain = xmain + f1( ) + f2() + f3() + f2();\n\n= 1 + 26 + 51\n\nf3() is called:\n\nxglobal * = 10\n\nxglobal = 10 * 10\n\nxglobal = 100\n\n100 is returned\n\nxmain = xmain + f1( ) + f2() + f3() + f2();\n\n= 1 + 26 + 51 + 100\n\nf2 () is called again\n\nVariable x is already residing in memory already.\n\nxmain = xmain + f1( ) + f2() + f3() + f2();\n\n= 1 + 26 + 51 + 100 + 52= 230\n\n∴ 230 is printed",
-    "id": "pyq_3_41"
+    "id": "pyq_3_41",
+    "q_snippet": "snippets/q_pyq_3_41.webp"
   },
   {
     "num": 1,
@@ -711,7 +785,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.40",
     "answerKey": "d",
     "solution": "2.\n(a)",
-    "id": "pyq_4_42"
+    "id": "pyq_4_42",
+    "q_snippet": "snippets/q_pyq_4_42.webp",
+    "sol_snippet": "snippets/sol_pyq_4_42.webp"
   },
   {
     "num": 2,
@@ -728,7 +804,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.40",
     "answerKey": "a",
     "solution": "Given\n\nint a [3] [3] [3] =\n, ,\n\ni = 0, j = 0, k = 0,1,2\n\n[][][] [][][] [][][] i j k Printing a 0 0 0 1 a 0 0 1 2 a 0 0 2 3\n\nPointers and Strings\n\ni = 1, j = 0, k = 0,1,2\n\n[][][] [][][] [][][] i j k Printing a 0 0 0 10 a 0 0 1 11 a 0 0 2 12\n\ni = 2, j = 0, k = 0, 1, 2\n\n[][] [] [][] [] [][] [] i j k Printing a 0 0 0 19 a 0 0 1 20 a 0 0 2 21\n\nOn verifying properly with options, option (a) is correct.",
-    "id": "pyq_4_43"
+    "id": "pyq_4_43",
+    "q_snippet": "snippets/q_pyq_4_43.webp",
+    "sol_snippet": "snippets/sol_pyq_4_43.webp"
   },
   {
     "num": 3,
@@ -745,7 +823,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.41",
     "answerKey": "1023 to 1023",
     "solution": "Given that Z is an array which has index 0 to 9 and each index has value 1. 1 1 1 1 1 1 1 1 1 1 0 1 2 3 4 5 6 7 8 9\n\nSimple Function (Z, 10, 2) → calling function\n\nname of array\n\nArray Z and array Y are same, because array is always call by reference.\n\nAs calling function is having Z, 10, 2 in parameters. n and x will take the values 10 and 2 respectively.\n\nx = 2, n = 10\n\nAs initial value of Y[0] is 1, therefore initially value of variable total is 1.\n\nRewriting expression total = x × total + Y[i] for better understanding to\n\ntotali = x × toali-1 + Y[i], initially x = 2, each Y[i] = 1 and total0 = 1\n\ni 1 = total1 = x × total0 + Y[1]\n\ntotal1 = 2 × 1 = (2 + 1)\n\ni 2 = total2 = x × total1 + Y[i]\n\ntotal2 = 2 × (2 + 1) + 1 = 22 + 21 + 1\n\ni 3 = total3 = 2 × total2 + Y[i]\n\n= 2 × (22 + 21 + 1) + 1\n\nTotal3 = 23 + 22 + 21 + 1\n\n.\n\n.\n\n.\n\nSimilarly,\n\ni 9 = total9 = 29 + 28 + 27 + …..21 + 1\n\nAbove series is in GP with 10 terms\n\nWe know that\n\nn a(r 1) Sum of first n terms of a GP r -1 − =\n\nWhere,\n\na = first term\n\nr = common ratio\n\nn = number of terms\n\nWriting 29 + 28 + 27 + 26 + …… 21 + 1 in reverse order we get,\n\n1 + 21 + 22 + 23 + …. 29 A → 65 Q → 81 a → 97 B → 66 R → 82 b → 98 C → 67 S → 83 c → 99 D → 68 T → 84 d → 100 E → 69 U → 85 . F → 70 V → 86 . G → 71 W → 87 . H → 72 X → 88 . I → 73 Y → 89 . J → 74 Z → 90 . M → 77\n\n. N → 78\n\nx→ 120 O → 79\n\ny→ 121 P → 80\n\nz→ 122\n\nProgramming and Data Structures\n\na = 1, n = 10, common ratio (r) = 2\n\nSubstituting in above formula\n\n10 10 1(2 1) S\n2 1\n− = −\n\n= 1023 is the answer, which is the value of total9.",
-    "id": "pyq_4_44"
+    "id": "pyq_4_44",
+    "q_snippet": "snippets/q_pyq_4_44.webp",
+    "sol_snippet": "snippets/sol_pyq_4_44.webp"
   },
   {
     "num": 4,
@@ -762,7 +842,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.42",
     "answerKey": "c",
     "solution": "Given array int arr[4][5], it is read as arr is an array of 4 1-Dimensional array and each 1-Dimension array contains 5 elements\n\nNote: array name represents the address of its first element.\n\nExample: arr[1] = &arr[1][0] arr[1] + 9 = &arr[1][0] + 9\n\n(9 crepresenting to move 9 locations in forward direction from address of arr[1][0](&arr[1][0]))\n\narr[1] + 9 = &arr[2][4]\n\n*(arr[1] + 9) = arr[2][4]\n\nTherefore arr[2][4] = 10 * 2 + 4 = 24.\n\n*(arr[1] + 9) = arr[2][4] = 24",
-    "id": "pyq_4_45"
+    "id": "pyq_4_45",
+    "q_snippet": "snippets/q_pyq_4_45.webp",
+    "sol_snippet": "snippets/sol_pyq_4_45.webp"
   },
   {
     "num": 5,
@@ -779,7 +861,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.42",
     "answerKey": "19 to 19",
     "solution": ": array name (a is collection of 4 elements a[0],a[1], a[2],a[3])\n\nArray name represent address of its first elemetns.\n\na = &a[0]\n\n*a = *&a[0]\n\n*a = a[0]\\\n\nWhat is a [0]?\n\na[0] is an array of 5 elements i.e a[0][0], a[0][1], a[0][ 2] & a[0][3],a[0][4]\n\na[0] ⇒ address of its first element\n\na[0] = &a[0][0]\n\n*a = a[0]\n\n*a = a[0] = &a[0][0]\n\n*a = &a[0][0]\n\n**a = a[0][0]\n\na[0][0] 1 =\n\n*(a + **a + 2) = *(a + 1 + 2) = * (a + 3) = a[3]\n\n*(a + **a + 2) = a[3]\n\n*(a+ **a+2) + 3 = a[3]+3\n\n*(*a+ **a + 2) + 3) = a[3][3] = 19",
-    "id": "pyq_4_46"
+    "id": "pyq_4_46",
+    "q_snippet": "snippets/q_pyq_4_46.webp",
+    "sol_snippet": "snippets/sol_pyq_4_46.webp"
   },
   {
     "num": 6,
@@ -796,7 +880,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.42",
     "answerKey": "81 to 81",
     "solution": "Pointers and Strings\n\nNote:- that arr[i] in tob is same as arr[i] in pp and also array contains garbage value initially. Understanding tob function:\n\nb 4 = 2\n\n[]\nif b%2\nexeutes when b is odd arr i\n1;\n=\n\n[] else exeutes when b is even arr i\n0;\n=\n\nb b = exeutes every time 2\n\n(1) i = 0, b > 0 ⇒ 4 > 0 ⇒ true(b is even)\n\narr[i] = 0\n\narr[0] = 0\n\nb = b/2 = 4/2 = 2\n\n(2) i =1 b > 0 ⇒ 2 > 0 ⇒ true(b is even)\n\narr[i] = 0\n\narr[1] = 0\n\nb = b/2 = 2/2 = 1\n\n(3) i = 2, b > 0 ⇒ 1 > 0 ⇒ true (b is odd)\n\narr[i] = 1\n\narr[2] = 1\n\nb = b/2 = ½ = 0\n\n(4) i = 3, b > 0 ⇒ 0 > 0 ⇒ false\n\nHere loop terminates.\n\nUnderstanding pp function:\n\nex: = 3 9 81\n\ntot = 1 81\n\nlen = 3\n\nfor(i = 0;i < len;i++)\n\nif(arr[i]==1)\n\ntot=tot*ex;\n\nex=ex*ex;\n\nabove code is executed from i=0 to 2(len =3)\n\n(i) i=0\n\narr[i]= =1\n\n0= =1(false)\n\nex=ex*ex\n\nex=3*3\n\nex=9\n\n(ii) i=1\n\narr[i]==1\n\n0==1(false)\n\nex=ex*ex\n\nex=9*9=>81\n\nex=81\n\n(iii) i=2\n\narr[i]==1\n\n1==1(true)\n\ntot=tot*ex\n\ntot=1*81\n\ntot=81\n\nex=ex*ex\n\nex=81*81\n\n81 is returned.",
-    "id": "pyq_4_47"
+    "id": "pyq_4_47",
+    "q_snippet": "snippets/q_pyq_4_47.webp",
+    "sol_snippet": "snippets/sol_pyq_4_47.webp"
   },
   {
     "num": 7,
@@ -813,7 +899,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.43",
     "answerKey": "6 to 6",
     "solution": "arr is name of the given array, we know that array name represents the address of first element.\n\narr=&arr[0]\n\narr+4=&arr[0]+4(moving 4 locations ahead from &arr[0])\n\narr+4 = &arr[4]\n\n[] ip=&arr 4\n\nip[1] = *(ip+1) = *(&arr[4]+1)\n\nProgramming and Data Structures\n\nip[1] = *(&arr[5])\n\nip[1] = arr[5]\n\nip[1] = 6\n\nHence 6 is the correct answer",
-    "id": "pyq_4_48"
+    "id": "pyq_4_48",
+    "q_snippet": "snippets/q_pyq_4_48.webp",
+    "sol_snippet": "snippets/sol_pyq_4_48.webp"
   },
   {
     "num": 8,
@@ -830,7 +918,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.44",
     "answerKey": "10 to 10",
     "solution": "Constructing the array according to the given data.\n\nInitially, value of sum = 0\n\nb = a + 4\n\nb = &a[0] + 4\n\nb = &a[4]\n\n*b = a[4]\n\nb-0 = &a[4]\n\nb-1 = &a[3]\n\nb-2 = &a[2]\n\nb-3 = &a[1]\n\nb-4 = &a[0]\n\nNote: Scope of for loop remains till the first semicolon (;).\n\ni = 0 sum = sum + (*b - 0) - *(b - 0)\n\nsum=0 + (10 - 0) - 10 = 0\n\ni = 1 sum=0 + (10 - 1) - 8 = 1\n\ni = 2 sum=1 + (10 - 2) - 6 = 3\n\ni = 3 sum=3 + (10 - 3) - 4 = 6\n\ni = 4 sum=6 + (10 - 4) - 2 = 10\n\nFinally, value which is stored in sum variable is printed,\n\nTherefore 10 is printed.",
-    "id": "pyq_4_49"
+    "id": "pyq_4_49",
+    "q_snippet": "snippets/q_pyq_4_49.webp",
+    "sol_snippet": "snippets/sol_pyq_4_49.webp"
   },
   {
     "num": 9,
@@ -847,7 +937,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.44",
     "answerKey": "a",
     "solution": "'a' + 2⇒ 'c'\n\nIntitally q is pointing to address of whole structure variable p.\n\n(char*)q : Here typecasting is being done,q is holding address of a character i.e q is pointing to addresses of '1' (First member)\n\n(char*) q : Address of char '1'\n\n(char*) q + 1 : Address of next character i.e. '0'\n\n*(char*) q+1: '0'\n\n(char*) q+2 : Address of 'c'\n\n*(char*)q+2: 'c'\n\nprintf(\"%c\",*((char*)q+1), *((char*)q+2)); will print 0,c without any quotes. Hence option A is correct.",
-    "id": "pyq_4_50"
+    "id": "pyq_4_50",
+    "q_snippet": "snippets/q_pyq_4_50.webp"
   },
   {
     "num": 10,
@@ -864,7 +955,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.44",
     "answerKey": "d",
     "solution": "A (false): Compiler error as the return of malloc is not type casted appropriately.\n\nFalse because no typecasting is required. In C++, it is required but not in C language.\n\nB(false): Compiler error because the comparison should be made as x==NULL and not as shown.\n\nFalse, as we know that NULL==x or x==NULL are same, hence option B is also false.\n\nC(false): Compiles successfully but execution may result in dangling pointer.\n\nPointers and Strings\n\nvoid main(){\n\nint *x = malloc(sizeof(int));\n\nif(NULL==x)\n\nreturn; //if no memory is available then return.\n\nassignval (1024, 0) is called\n\nxlocal = 1024\n\nval= 0\n\nxlocal =0\n\nvalue at memory location pointed by xlocal = 0\n\nvalue at memory location 1024 = 0\n\nreturn x, returns 1024 to x in main.\n\nif(x){\n\nx=(int*)malloc(sizeof(int))\n\nif(NULL==x)\n\nreturn;\n\nx=assignval(x,10);\n\nprintf(\"%d\",*x);\n\nfree(x);\n\nNote that code written in solution are just used to represent.\n\nwe are again allocating memory without freeing old memory, x is now pointing to memory location 2036 and we cannot access to memory location 1024 which is lost (also known as memory leak problem), and also there is no pointing of memory location which is deleted, hence there is no dangling pointer problem.\n\nTherefore, above code suffers from memory leak problem, hence option D is correct answer.",
-    "id": "pyq_4_51"
+    "id": "pyq_4_51",
+    "q_snippet": "snippets/q_pyq_4_51.webp",
+    "sol_snippet": "snippets/sol_pyq_4_51.webp"
   },
   {
     "num": 11,
@@ -881,7 +974,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.45",
     "answerKey": "3 to 3",
     "solution": "Firstly, understanding the first loop in the given program.\n\nInitial value of done variable and content of the array shown below.\n\nwhile (done = = 0) {\n\ndone =1;\n\nfor(i=0;i<=4;i++){\n\nif(array[i]<array[i+1]{\n\nswap(&array[i], &array[i+1]);\n\ndone= 0;\n\n(i) done = = 0 (true)\n\ncode inside while loop will execute\n\nExecuting for loop\n\n(1) i = 0\n\nwe are comparing element of ith index and i+1th index\n\narray[0]<array[1] →3<5 true, swapping will take place.\n\nswap(&array[0],&array[1])\n\nAgain, done variable value becomes 0\n\nProgramming and Data Structures\n\n(2) i = 1\n\narray [1]< array [2] →3<1 false, no swapping will take place.\n\n(3) i = 2\n\narray [2]< array [3] →1<4 true, swapping will take place.\n\ndone = 0 (No effect because done is already 0)\n\n(4) i = 3\n\narray [3]< array [4]→1<6 true, swapping will take place.\n\ndone =0(no effect)\n\n(5) i = 4\n\narray[4]<array[5] true, swapping will take place\n\nNow understanding 2nd loop of the given program.\n\ndone = 0 5 3 4 6 2 1 0 1 2 3 4 5\n\nfor(i= 5;i> =1;i--){\n\nif(array[i] >array [i- 1]){\n\nswap(&array [i], &array [i -1]);\n\ndone =0;\n\narray [5] > array [4] ⇒ 1 > 2 false, now swap\n\narray [4] > array [3] ⇒ 2 > 6 false, no swap\n\narray [3] > array [2] ⇒ 6 > 4 (true), swap\n\ndone = 0 (No effect)\n\narray [2] > array [1] ⇒ 6 > 3 (true), swap\n\ndone = 0 (No effect)\n\narray [1] > array [0] ⇒6 > 5→ true, swap will take place.\n\ndone = 0 (No effect)\n\n(5) i\n1 =\n\nBoth the loop ends\n\nWhile(done==0)\n\ndone = 1;\n1st loop\n\n2nd loop Another iteration of while loop takes place Value of done becomes 1.\n\n1st loop will execute for i = 0, 1, 2, 3, 4\n\narray [0] < array [1] ⇒ false, no swap array [1] < array [2] ⇒ false, no swap.\n\narray [2] < array [3] ⇒ true, swap 6 5 4 3\n\n2 1 0 1 2 3\n\n4 5\n\ndone = 0 is made\n\nArray is sorted in decreasing order now i.e. arra y [1] > array [i +1], As this is true that means array [i] < array [i +1] is false for all i, 1st loop is terminated. 6 5 4 3 2 1\n\ndone = 0\n\n2nd loop : because array is sorted in decreasing order.\n\nPointers and Strings\n\n⇒ array [i] < array [i -1]\n\ni.e. array [i] > array [i -1] is false for all i.\n\nHence 2nd loop terminates\n\nwhile (done = = 0)\n\n0 = = 0 (true)\n\nAnother iteration of while loop is executed.\n\n1st loop, no change because array is already sorted.\n\n2nd loop, no change in array because of same above reason.\n\nWhile (done = = 0)\n\n1 = = 0(False) while loop terminates.\n\nFinally, array [3] is printed, therefore 3 is printed as output",
-    "id": "pyq_4_52"
+    "id": "pyq_4_52",
+    "q_snippet": "snippets/q_pyq_4_52.webp",
+    "sol_snippet": "snippets/sol_pyq_4_52.webp"
   },
   {
     "num": 12,
@@ -898,7 +993,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.47",
     "answerKey": "2 to 2",
     "solution": "int main ()\n\nchar *c = \"GATECSIT2017\";\n\nchar *p = c;\n\nprintf ('%d', (int) strlen(c +2 [p] - 6 [p] -1));\n\nreturn 0;\n\np + 2 = moving 2 locations in forward direction from address of 'G'.\n\nc is holding base address (address of G)\n\np + 2 = Address of 'T'\n\n* p + 2 = 'T'\n\np[2] = 2[p] = * p 2 * 2 p 'T'\n+\n=\n+\n=\n\np + 6 = Address of 'I'\n\n* (p + 6) = 'I'\n\np[6] = 6[p] = * p 6 * 6 p 'I'\n+\n=\n+\n=\n\nExample:\n\nc + 'B' - 'A': What are value for 'B', 'A' Here ASCII values are used.\n\nc + 66 - 65\n\n= c + 1; address of 'A'\n\nc + 10 ⇒ address of char '1'.\n\nc + 10 ⇒ represents string \"17\"\n\nstrlen (c + 10) = 2\n\nNote: strlen returns unsigned integer\n\nTherefore 2 is returned.\n\nProgramming and Data Structures",
-    "id": "pyq_4_53"
+    "id": "pyq_4_53",
+    "q_snippet": "snippets/q_pyq_4_53.webp",
+    "sol_snippet": "snippets/sol_pyq_4_53.webp"
   },
   {
     "num": 13,
@@ -915,7 +1012,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.48",
     "answerKey": "c",
     "solution": "void printxy (int x int y)\n\nint *ptr;\n\nx =0;→ will make x as 0\n\nptr =&x; → assign 1026 to ptr\n\ny = *ptr;→ y = value at (memory location 1026)\n\ny = 0\n\n*prt = 1;→ value at memory location 1026 = 1)\n\nprintf (\"%d%d\" x,y);\n\nprintxy (1 1)\n\nx y\n\nlastly value of x and y is printed as 1, 0; Hence option\n(c) is correct answer.",
-    "id": "pyq_4_54"
+    "id": "pyq_4_54",
+    "q_snippet": "snippets/q_pyq_4_54.webp"
   },
   {
     "num": 14,
@@ -932,7 +1030,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.48",
     "answerKey": "a",
     "solution": "(P) static char var: Stored in data segment\n\nP - ii\n\n(Q) m = malloc (10);\n\nm = NULL;\n\nNo way to access memory location i.e.\n\nLost memory\n\nQ → IV\n\n(R) char *ptr [10]\n\nptr is an array of 10 pointers to chaaracter i.e. 10 pointer can hold 10 address.\n\nR → (i)\n\n(S) register int var 1\n\nRegister variable is only a requests /recommendation\n\nS → (iii)\n\nP→ (ii), Q→ (iv), R → (i), S →(iii)\n\nHence, option A is correct.",
-    "id": "pyq_4_55"
+    "id": "pyq_4_55",
+    "q_snippet": "snippets/q_pyq_4_55.webp",
+    "sol_snippet": "snippets/sol_pyq_4_55.webp"
   },
   {
     "num": 15,
@@ -949,7 +1049,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.48",
     "answerKey": "3 to 3",
     "solution": "p + 1 = moving 1 location in forward direction from address holding pointer variable p.\n\np + 1 = memory location 104\n\n⇒*(p + 1) = Then it would be value at memory location 104\n\n*(p + 1) = 5\n\np[1] = 5\n\nNOTE: If p is pointing to address of integer, then\n\np[0]: is value at the address\n\np[1]: is value at next address\n\nNOTE: array name always points to the address of first index of an array.\n\nf(a,5) → f(100,5)\n\nPointers and Strings\n\nmax(f(p+1),n-1,p[0]-p[1]) will be executed whenever n>1\n\nf(116,1) ⇒ n<=1 is true, returns 0.\n\nHence 3 is returned.",
-    "id": "pyq_4_56"
+    "id": "pyq_4_56",
+    "q_snippet": "snippets/q_pyq_4_56.webp",
+    "sol_snippet": "snippets/sol_pyq_4_56.webp"
   },
   {
     "num": 16,
@@ -966,7 +1068,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.49",
     "answerKey": "30 to 30",
     "solution": "f(&i, j) → f (1024, 10)\n\n(Address, value)\n\n*p = *p + m\n\n(value at memory 1024 + 15)\n\n*p = 5 + 15 = 20\n\nHence, 20 + 10 = 30 is printed",
-    "id": "pyq_4_57"
+    "id": "pyq_4_57",
+    "q_snippet": "snippets/q_pyq_4_57.webp",
+    "sol_snippet": "snippets/sol_pyq_4_57.webp"
   },
   {
     "num": 17,
@@ -983,7 +1087,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.49",
     "answerKey": "c",
     "solution": "a = 3 (declaring new variable)\n\na = 1(declaring new variable)\n\na=3(Global scope, because it is not inside any function)\n\na=1(local scope, because declared inside m())\n\nAs it is mentioned in question that it is using dynamic scoping and pass by reference, rewriting the code for better understanding.\n\nint a=3;\n\nvoid n(int(*x)){\n\n*x=*x*a;\n\nprint(*x);\n\nvoid m(int *y){\n\nint a=1;\n\na=*y-a;\n\nn(&a);\n\nprint(a);\n\nvoid main(){\n\nm(&a);//there is no local a so, a is global variable\n\nProgramming and Data Structures\n\na = y -a (update local a)\n\na = value at (1024) -1\n\na = 3 - 1 = 2\n\nat n(&a), n(2036) is called\n\n*x=*x*a;\n\n= value at(2036)*a(here, previous call will be resolved)\n\ni.e…..a of m()\n\n=2 * 2 = 4 i.e….value at (2036) = 4\n\nLastly 4 is printed (value of x)\n\nAs function n gets deleted from activation record, updating has no meaning, m() will also print 4 and gets deleted from activation record and lastly main also gets deleted from activation record.\n\nTherefore, C is correct option.",
-    "id": "pyq_4_58"
+    "id": "pyq_4_58",
+    "q_snippet": "snippets/q_pyq_4_58.webp",
+    "sol_snippet": "snippets/sol_pyq_4_58.webp"
   },
   {
     "num": 18,
@@ -1000,7 +1106,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.50",
     "answerKey": "2016 to 2016",
     "solution": "Let mystery (&a, &b) is called\n\nmystery ptra ptrb 1024, 2096\n\nNote:-No dereferencing is taking palce\n\nAs soon as execution of this function ends, there is nothing available in activation record, no change in actual argument ie…. mystery function is not making any changes in actual argument. Hence actual value of a is printed ie…2016",
-    "id": "pyq_4_59"
+    "id": "pyq_4_59",
+    "q_snippet": "snippets/q_pyq_4_59.webp",
+    "sol_snippet": "snippets/sol_pyq_4_59.webp"
   },
   {
     "num": 19,
@@ -1017,7 +1125,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.50",
     "answerKey": "d",
     "solution": "Function is expecting 1st argument as int type and 2nd argument as short type.\n\nOption (A):\n\nf(s, *s)\n\n1st agreement is short type but function is expecting this argument to be type of int, but because of implicit conversion, short is converted into int. so 1st argument will not cause any error 2nd argument is pointer but function is expecting it to be short type which will generate an error.\n\n∴ (A) is wrong\n\nPointers and Strings Option B\n\ni = f(i,s)\n\nReturn type is not void, hence option (b) is also wrong. Option C:\n\nf(i, *S)\n\n1st argument is int but 2nd argument is pointer i.e. There exists system error. So option c is also wrong. (s is not holding any address.) Option D:\n\nf(i, *p)\n\nBoth types are matching\n\nFirst argument is int and p is pointer to short type, Hence, (f) is correct.\n\ns is not (a) pointer.",
-    "id": "pyq_4_60"
+    "id": "pyq_4_60",
+    "q_snippet": "snippets/q_pyq_4_60.webp",
+    "sol_snippet": "snippets/sol_pyq_4_60.webp"
   },
   {
     "num": 20,
@@ -1034,7 +1144,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.51",
     "answerKey": "140 to 140",
     "solution": "static int * p[] is read as p is an array of pointer to integer each element of p[ ] holds an address of integer type variable.\n\n(array name) a = &a[0]\n\na +1 = moving one location in forward direction from &a[0] = &a [1]\n\nNOTE: Array name represents address of its first element.\n\na + 2 = & a [2]\n\na + 3 = & a [3]\n\na + 4 = & a [4]\n\nint ** ptr = p;\n\nHere p is array name, which represents address of its first elements.\n\nptr++=ptr will point to next address or location ie….104\n\n(i) &p[1] - &p[0]\n\n= Actual difference 4 = 104 - 100 4 =1\n\n(ii) ** ptr\n\n**(& p [1])\n\n= ** &p[1] =*p[1] =*&a[3] = a[3] = 40\n\nHence, 140 is printed.",
-    "id": "pyq_4_61"
+    "id": "pyq_4_61",
+    "q_snippet": "snippets/q_pyq_4_61.webp",
+    "sol_snippet": "snippets/sol_pyq_4_61.webp"
   },
   {
     "num": 21,
@@ -1051,7 +1163,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.51",
     "answerKey": "c",
     "solution": "p = s1 + 2\n\n⇒ Address + 2 (moving 2 locations in forward direction)\n\np = 102 (address of '3')\n\n* p = '0' (Assign character '0' (zero) at address 102)\n\nHence, 1204 is printed, option c is correct.\n\nProgramming and Data Structures",
-    "id": "pyq_4_62"
+    "id": "pyq_4_62",
+    "q_snippet": "snippets/q_pyq_4_62.webp",
+    "sol_snippet": "snippets/sol_pyq_4_62.webp"
   },
   {
     "num": 22,
@@ -1068,7 +1182,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.52",
     "answerKey": "d",
     "solution": "scanf(\"%d\", pi)\n\nscanf takes address as input, whatever the input given will be stored at memory location 1024.\n\nLet the input is 3\n\nThe printed value is 5 more than the input entered therefore option (d) is correct answer.",
-    "id": "pyq_4_63"
+    "id": "pyq_4_63",
+    "q_snippet": "snippets/q_pyq_4_63.webp"
   },
   {
     "num": 23,
@@ -1085,7 +1200,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.52",
     "answerKey": "c",
     "solution": "Hence 15 is printed and option (c) is correct answer",
-    "id": "pyq_4_64"
+    "id": "pyq_4_64",
+    "q_snippet": "snippets/q_pyq_4_64.webp",
+    "sol_snippet": "snippets/sol_pyq_4_64.webp"
   },
   {
     "num": 24,
@@ -1102,7 +1219,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.52",
     "answerKey": "d",
     "solution": "Both p and q are pointing to j (2096)\n\n* p = 2 that means insert value at address 2096\n\n0, 2 is printed hence, correct option is(d).",
-    "id": "pyq_4_65"
+    "id": "pyq_4_65",
+    "q_snippet": "snippets/q_pyq_4_65.webp",
+    "sol_snippet": "snippets/sol_pyq_4_65.webp"
   },
   {
     "num": 25,
@@ -1119,7 +1238,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.52",
     "answerKey": "c",
     "solution": "Firstly, let us understand how binary search works.\n\nCase: 1\n\nLet us suppose we are searching for x =90\n\nMid = Begin + end 2 = 0 + 9 4 2 =\n\nA mid\n\nNo 40 90 x = = ¯ ¯\n\nx is greater than elements at Mid position.\n\n(1) x cannot be present from any location between\nBegin and mid new list must be from Mid +1 to end index.\n\nPointers and Strings Begin = Mid + 1 Begin = 5 Again, Mid = ( 5 9 7 2\n+\n=\n\nCheck A [Mid] = = x A [7] = = 90 (No) A [Mid] < x Update ⇒ Begin = Mid + 1 = 8 Mid = 8 9 8 2\n+\n=\n\nCheck A [Mid] = x\n\nyes break and return.\n\nCase: 2\n\nBegin = 0, End = 9, x = 120\n\n(i) Mid = 0 9 4 2\n+\n=\n\nA [Mid] = = x No\n\n(ii) Begin = Mid + 1 = 5\n\nMid = 5 9 7 2\n+\n=\n\nA [7] = = x No\n\nA [Mid] < x\n\n(iii) Begin = Mid + 1 = 8\n\nMid = 8 9 8 2\n+\n=\n\nA [Mid] = = x No\n\nA [Mid] < x\n\n(iv) Begin = Mid + 1 = 9\n\nMid = 9 9 9 2\n+\n=\n\nA [Mid] = = x No\n\nA [Mid] < x\n\nBegin = Mid + 1 = 10\n\nBegin becomes greater than End, unsuccessful search, element is not present.\n\nRepeat till Begin < End && A [Mid]! = x\n\nCase: 3\n\nx = = 40\n\n(i) Begin = 0, End = 9\n\nMid = 0 9 4 2\n+\n=\n\nA [Mid] = = x No\n\nx < A [Mid]\n\n⇒ x cannot be present from Mid to End position.\n\nNew list must be from Begin to Mid -1\n\nEnd = Mid -1\n\n(i) We need to calculate mid and check every time\nif element is equal then search result is found.\n\n(ii) If element is small then Mid search should be performed on left side.\n\n(iii) If x is bigger than Mid then search should be performed on right side of list.\n\nNow, focusing on the actual code.\n\n(i) k = i j 2\n+ is performing mid operation\n\n(ii) If (Y[k] < x) i = k; else j = k;\n• In above code, if element to be searched is larger than Mid, then there should be i = k +1 (Begin = Mid +1) but above it is being assigned without incrementing. • And if element is smaller then j = k - 1 (End = Mid-1) must have been performed but above it is being assigned without decrementing in else part.\n\nThe above given code will not work if\n\n(i) x (Element to be searched) is greater than the maximum element (last element)\n\n(ii) Or we are searching for the last element itself.\nCase: 4\n\n(i) Let us assume we are searching x = 100\n\nj = 9\n\nk = 0 9 2\n+\n= 4\n\nProgramming and Data Structures\n\nY [4] < x (True)\n\ni = k ⇒ i = 4 (i and k are printing same index)\n\n(ii) k = 4 9 6 2\n+\n=\n\nY [6] < x (True)\n\ni = k ⇒ i = 6\n\n(iii) k = 6 9 7 2\n+\n=\n\nY [7] < x (True)\n\ni = k ⇒ i = 7\n\n(iv) k = 7 9 8 2\n+\n=\n\nY [8] < x (True)\n\ni = k ⇒ i = 8\n\n(v) k = 8 9 8 2\n+\n=\n\ny [8] < x (True)\n\ni = k ⇒ i = 8\n\ni remains same (no update)\n\nProgram goes in to infinite loop, i will never become equal to j or greater then j.\n\n∴ As above example is illustrated in (case 4), therefore correct option is option c, because program goes int. infinite loop.",
-    "id": "pyq_4_66"
+    "id": "pyq_4_66",
+    "q_snippet": "snippets/q_pyq_4_66.webp",
+    "sol_snippet": "snippets/sol_pyq_4_66.webp"
   },
   {
     "num": 26,
@@ -1136,7 +1257,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.54",
     "answerKey": "a",
     "solution": "• i = k has to be replaced by i = k + 1 if elements is larger than Mid (k is Mid). • j =k has to be replaced by j = k - 1 if elements is smaller than Mid.\n\nHence, option A is correct answer.",
-    "id": "pyq_4_67"
+    "id": "pyq_4_67",
+    "q_snippet": "snippets/q_pyq_4_67.webp",
+    "sol_snippet": "snippets/sol_pyq_4_67.webp"
   },
   {
     "num": 27,
@@ -1153,7 +1276,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.54",
     "answerKey": "a",
     "solution": "fun1 () is called, fun1 (100, 200)\n\ntemp = s1\n\ns1 = s2\n\ns2 = temp\n\nNo change in str1 and str2, so HiBye.. is printed from the first printf statement.\n\nNow fun2 () is called, fun2(206, 496)\n\ntemp = *s1 (value of at memory location 206)\n\ntemp = 100\n\n* s1 = *s2 (value at memory location 496)\n\n* s1 = 200\n\n* s2 = temp\n\n* s2 = 100 • contents of str1 and str2 are swapped • Now str1 is pointing to 'Bye' and str2 is pointing to \"Hi\"\n\nPointers and Strings\n\nTherefore 2nd printf prints ByeHi.\n\nHence (a) is correct answer.",
-    "id": "pyq_4_68"
+    "id": "pyq_4_68",
+    "q_snippet": "snippets/q_pyq_4_68.webp",
+    "sol_snippet": "snippets/sol_pyq_4_68.webp"
   },
   {
     "num": 28,
@@ -1170,7 +1295,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.55",
     "answerKey": "3 to 3",
     "solution": "char*x = \"abc\";→ Read only area\n\nprintlength (x, y); → printlength(100,200)\n\nstrlen(s) - strlen(t)\n\n3 - 5 = -2\n\nUnsigned int - unsigned int\n\nWill also be an unsigned int\n\n⇒ - 2 is treated as max integer value - 2\n\n= large +ve value\n\nHence 3 is printed.",
-    "id": "pyq_4_69"
+    "id": "pyq_4_69",
+    "q_snippet": "snippets/q_pyq_4_69.webp",
+    "sol_snippet": "snippets/sol_pyq_4_69.webp"
   },
   {
     "num": 29,
@@ -1187,7 +1314,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.55",
     "answerKey": "c",
     "solution": "char c [ ] = \"GATE 2011\";\n\nchar *p= c;\n\nprintf (\"%s\", p + p [3] - p[1])\n\np+ 1 ⇒ Address of 'A'\n\n* (p +1) ⇒ 'A'\n\n[] p 1 'A' =\n\np + 3 ⇒ Address of 'E'\n\n* (p +3) ⇒ 'E'\n\n[] p 3 'E' =\n\n2011 is printed till \\0, therefore option c is correct.",
-    "id": "pyq_4_70"
+    "id": "pyq_4_70",
+    "q_snippet": "snippets/q_pyq_4_70.webp",
+    "sol_snippet": "snippets/sol_pyq_4_70.webp"
   },
   {
     "num": 1,
@@ -1204,7 +1333,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.60",
     "answerKey": "0 to 0",
     "solution": "2. (a)",
-    "id": "pyq_5_71"
+    "id": "pyq_5_71",
+    "q_snippet": "snippets/q_pyq_5_71.webp",
+    "sol_snippet": "snippets/sol_pyq_5_71.webp"
   },
   {
     "num": 2,
@@ -1221,7 +1352,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.60",
     "answerKey": "a",
     "solution": "1 2\n1 3\n4 A = n =2\n2 7\n9\n\nfor (i = 1; i < 2; i ++)\n\nfor (j = 1; j ≤ 2; j++)\n\ntemp = A [i] [j] + C;\n\nA [i] [j] = A [j] [i];\n\nA [j][i] = temp - C;\n\n(i) if i = 1 for j = 1\n\ntemp = A [1] [1] + 100 = 103\n\nA [1] [1] = A [1] [1]\n\nA [1] [1] = 103 - 100 = 3\n\nNo effect on A11\n\nfor j = 2\n\ntemp = A [1] [2] + 100 = 104\n\nA [1] [2] = 7\n\nA [2] [1] = 104 - 100 = 4\n\nNew matrix: A12 swapped with A21.\n\nArrays and Linked List\n\n(ii) i = 2\n\nfor j = 1\n\nTemp = A [2] [1] + 100 = 104\n\nA [2] [1] = A [1] [2] = 7\n\nA [1] [2] = 104 - 100 = 4\n\nTemp = 9 + 100 = 109\n\nMatrix = 3 4 7 9\n\nAgain, A21 swapped with A12.\n\nfor j = 2\n\ntemp = 9 + 100 = 109\n\nA [2] [2] = A [2] [2]\n\nA [2] [2] = 109 - 100 = 9\n\nNo effect.\n\nFinally, we get the same matrix • Aij is swapped with its mirror image Aji (Lower triangular gular/upper triangular) • And when the code executes for the mirror image again both elements are swapped\n\n⇒ Same matrix",
-    "id": "pyq_6_72"
+    "id": "pyq_6_72",
+    "q_snippet": "snippets/q_pyq_6_72.webp",
+    "sol_snippet": "snippets/sol_pyq_6_72.webp"
   },
   {
     "num": 3,
@@ -1238,7 +1371,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.61",
     "answerKey": "a",
     "solution": "for (i = 0; i < size; i++)\n\n// find the sum of all elements of the array E and storing the results in Y.\n\nfor (i = 0; i < size; i++)\n\nfor (j = i; j < size; j++)\n• i = 0\n\nthen, j = 0 to size\n\nif i\n1 then j 1 to size = =\n\nfor i = 0\nfor i = 1\n\nK = 0 to 0 k = 1 to1\n\n= 0 to 1\n\n= 1 to 2\n\n= 0 to 2\n\n= 1 to 3\n\n= 0 to 3\n\n= 1 to size\n\n= 0 to size\n\nFinding the sum of each subarray from i.e. starting from 0 to n-1 position.\n\nCheck whether the sum of elements of subarray is greater then, the maximum sum of any sub - array found till now⇒if its is then update current maximum.",
-    "id": "pyq_5_73"
+    "id": "pyq_5_73",
+    "q_snippet": "snippets/q_pyq_5_73.webp",
+    "sol_snippet": "snippets/sol_pyq_5_73.webp"
   },
   {
     "num": 4,
@@ -1255,7 +1390,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.61",
     "answerKey": "c",
     "solution": "Code - 1\n\nfor (i = 0; i < n ; 1+ +)\n\nY [i]+ = X [0][i]\n\nX [i] [i] = + I + j\n\nX [0] [i]\n\nfor (i =0; I < n, i + +)\n\nY [i]+ = i\n\nCode - 2\n\nfor (i = 0; i < n; i+j)\n\nY [i]+ = X [i] [0]\n\nX [i] [j] = i + j\n\nX [i] [0] = i\n\nFor (i = 0; i < n; i ++)\n\nY [i] + = i;\n\nResult is same in both segment\n\nFor (i= 0; i < n ; 1+j)\n\nY [i] + = X [0][i];\n\nSuppose, n = 3;\n\ni = 0 X [0] [0]\n\nProgramming and Data Structures\n\ni = 1 X [0] [1]\n\ni = 2 X [0] [2]\n\ni = 3 X [0] [3]\n\nIn C, by default row major order is followed\n\n⇒ elements are stored contiguously.\n\nIn Code - 2\n\ni = 0 X [0] [0]\n\ni = 1 X [0] [0]\n\ni = 2 X [2] [0]\n\ni = 3 X [3] [0]\n\nIn C, Row major order is followed\n\n⇒ elements are not stored contiguously.\n\nRow major order:\n\n00 01 02 03 10 11 12 13 20 21 22 23 30 31 32 33 0 1 2 3 0 X X X X 1 X X X X 2 X X X X 3 X X X X\n\nStored data row wise and access the data row wise.",
-    "id": "pyq_6_74"
+    "id": "pyq_6_74",
+    "q_snippet": "snippets/q_pyq_6_74.webp",
+    "sol_snippet": "snippets/sol_pyq_6_74.webp"
   },
   {
     "num": 5,
@@ -1272,7 +1409,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.62",
     "answerKey": "d",
     "solution": "SLLdel:\n\nAssume that we want to delete last node.\n\nAfter Deletion we need to NULL in the second last node next field.\n\nAfter deletion:\n\nOne way traversal is possible given ptr and head, how can we reach second last node ⇒ Traverse from start (head) till second last node ⇒ Traverse n - 1 nodes. SLLDel Time complexity = O(n)\n\nDLLdel: • we can go to previous node as well as next node. No need to traverse from head to node to be deleted. • In doubly linked list ptr → prev : Point to second last node\n\nDelete operation:\n\nptr → Prev → next = NULL\n\nfree (ptr) It will take constant time i.e. O(1).",
-    "id": "pyq_5_75"
+    "id": "pyq_5_75",
+    "q_snippet": "snippets/q_pyq_5_75.webp",
+    "sol_snippet": "snippets/sol_pyq_5_75.webp"
   },
   {
     "num": 6,
@@ -1289,7 +1428,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.62",
     "answerKey": "a",
     "solution": "Suppose,\n\nProgram:\n\nStruct node * prev, * current, * next\n\nprev = Null;\n\ncurrent = head;\n\nWhile (current! = NULL)\n\nnext = current → next;\n\ncurrent → next = prev;\n\nPrev = current;\n\ncurrent = next;\n\nArrays and Linked List\n\nhead = prev;\n\nTC = θ(n)\n\nSpace = θ(1)",
-    "id": "pyq_6_76"
+    "id": "pyq_6_76",
+    "q_snippet": "snippets/q_pyq_6_76.webp",
+    "sol_snippet": "snippets/sol_pyq_6_76.webp"
   },
   {
     "num": 7,
@@ -1306,7 +1447,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.63",
     "answerKey": "d",
     "solution": "Index = 0\n\nboxE = head = (struct node*) malloc (size of (struct node))\n\nhead → value = index\n\nIndex = 1\n\n(i) box N = (struct Node*) malloc (size of (struct node))\n\n(ii) box E → next = box N;\n\n(iii) box N → value = index;\n\n(iv) box E = box N\n\nIndex = 2\n\n(i) box N = (struct Node*) malloc (size of (struct node))\n\n(ii) box E → next = box N;\n\n(iii) box N → value = index;\n\n(iv) box E = box N\n\nSame will happen for index = 3\n\n(Last node next field contains garbage value)\n\nNow 2nd loop starts\n\nIndex = 0\n\n1st printf: value of index 0 is 0\n\nhead = head → next ⇒ head points to 2nd node.\n\n2nd printf: value at Index 1 is 1\n\nIndex = 1\n\n1st printf: value of index 1 is 1\n\nhead = head → next ⇒ head points to 3rd node.\n\n2nd printf: value at Index 2 is 2.\n\nIndex = 2\n\n1st printf: value of index 2 is 2\n\nHead = head → next ⇒ head points to last node.\n\n2nd printf: value at Index 3 is 3.\n\nIndex = 3\n\n1st printf: value of index 3 is 3\n\nHead = head → next (Garbage value)\n\nProgramming and Data Structures\n\nHead is pointing to some Garbage value or uniutilized memory.\n\n2nd printf : while dereferencing head → value code may get a runtime error.",
-    "id": "pyq_5_77"
+    "id": "pyq_5_77",
+    "q_snippet": "snippets/q_pyq_5_77.webp",
+    "sol_snippet": "snippets/sol_pyq_5_77.webp"
   },
   {
     "num": 8,
@@ -1323,7 +1466,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.64",
     "answerKey": "b",
     "solution": "Valid NULL-terminated linked list means the linked-list with last node as NULL. It can be empty or it can be non-empty\n\nFor example:\n\nCase:-1: When both m and n are non empty\nlinked list.\n\nm:\n\nn:\n\nFinding last node when we came out of loop, P is pointing to last node.\n\nAfter while loop:\n\nAppended m at the end of n.\n\nCase 2: Both m and n are null\n\nn = NULL\n\nm = NULL (i) If both m and n are null, then P = NULL\n\nNull → Next ! = NULL\n\nThis will create an error because we are trying to dereference a null pointer. So, option (b) is the correct answer.",
-    "id": "pyq_6_78"
+    "id": "pyq_6_78",
+    "q_snippet": "snippets/q_pyq_6_78.webp",
+    "sol_snippet": "snippets/sol_pyq_6_78.webp"
   },
   {
     "num": 9,
@@ -1340,7 +1485,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.64",
     "answerKey": "c",
     "solution": "Consdier the sorted list\n\nIf we want to insert 50 in this list\n\nWe need to traverse till end i.e, number of comparison = number of elements\n\ni.e., to insert an element in a sorted linked list with n element n comparisons are needed, in worst case\n\nFor 1st element = 0 comparison\n\nFor 2nd element = 1 comparison\n\n.\n\n.\n\n.\n\nFor nth element = (n - 1) comparison\n\nArrays and Linked List\n\nTotal comparisons needed to insert n elements\n\n= 0 + 1 + 2 + ….(n - 1)\n\n= ( n -1 n 2 = O(n2)\n\nOption (c) is correct.",
-    "id": "pyq_5_79"
+    "id": "pyq_5_79",
+    "q_snippet": "snippets/q_pyq_5_79.webp",
+    "sol_snippet": "snippets/sol_pyq_5_79.webp"
   },
   {
     "num": 10,
@@ -1357,7 +1504,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.65",
     "answerKey": "d",
     "solution": "typedef struct node{\n\nint value;\n\nstruct node * next;\n\n}Node; // Template for node\n\nNode * move_ to _ front (Node * head){\n\nNode * p, *q;\n\nif ((head = = NULL)|| (head→next = =NULL))\n\nreturn head; // Either 0 or 1 node; last node is the\nfirst node\n\nq = NULL;\n\np = head;\n\nwhile (p →next ! = NULL){\nq = p;\np = p → next;\n\n____________________________\n\nreturn head;\n\nIst iteration:\n\nII iteration:\n\nProgramming and Data Structures\n\nOption (a) q = NULL ; p → next = head ; head =\np;\n\nThis is incorrect, this is not singly linked list. So, option (a) is wrong.\n\nOption (b) q → next = NULL; head = p; p → next\n= head;\n\nOption (b) is wrong.\n\nOption (c) head = p; p → next = q; q → next =\nNULL;\n\nNo way to reach first node\n\nOption (c) is wrong.\n\nOption (d) q → next = NULL; p → next = head;\nhead = p;\n\nArrays and Linked List\n\nTherefore, option (d) is the correct answer.",
-    "id": "pyq_6_80"
+    "id": "pyq_6_80",
+    "q_snippet": "snippets/q_pyq_6_80.webp",
+    "sol_snippet": "snippets/sol_pyq_6_80.webp"
   },
   {
     "num": 11,
@@ -1374,7 +1523,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.67",
     "answerKey": "b",
     "solution": "Given,\n\nif(!list||!list→next) return; // 0 or 1 node\n\nSwap data of node pointed by p,q\n\nQ is valid address\n\n⇒ code inside loop ⇒ execute swap\n\np = q → next\n\nQ = p? P→ next: 0 After one iteration: q is valid address (non-zero/true) code inside loop will execute (i) Swap\n\nAfter two iterations:\n\nif(!list||!list→next) return;// 0 or 1 node\n\nq is valid address code inside loop swap.\n\nif(!list||!list→next) return;// 0 or 1 node\n\nq = p ? p→ next: 0\n\nq = p → next ⇒ NULL\n\nwhile (q) Null ⇒ False\n\nLoop terminates\n\n2, 1, 4, 3, 6, 5, 7\n\nTherefore, option (b) is the correct answer.",
-    "id": "pyq_5_81"
+    "id": "pyq_5_81",
+    "q_snippet": "snippets/q_pyq_5_81.webp",
+    "sol_snippet": "snippets/sol_pyq_5_81.webp"
   },
   {
     "num": 1,
@@ -1391,7 +1542,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.71",
     "answerKey": "8",
     "solution": "Step 1: Step 2:\n\nStep 3 to 8:\n\nStep 9 & 10:",
-    "id": "pyq_8_82"
+    "id": "pyq_8_82",
+    "q_snippet": "snippets/q_pyq_8_82.webp",
+    "sol_snippet": "snippets/sol_pyq_8_82.webp"
   },
   {
     "num": 2,
@@ -1408,7 +1561,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.71",
     "answerKey": "15",
     "solution": "stkFunc:\n\nImplementation of stack with 3 choice/\n\nCase 1:\n\nSet the size of the stack\n\nCase 0:\n\nPush ( ) Whether stack is full or not if the stack is not full, ⇒ Push an element ⇒ Increment stk top Default: If stack is not empty then, Pop the top element &\nreturn it and decrease the top pointer.\nStack size = 10 push 5 and 10 on to stack.\n\nstkFunc (1, 10);→ POP and return top most element 10 stkFunc (0, 5); → POP and return 5\n\nFinal output = 10 + 5 = 15.\n\nProgramming and Data Structures",
-    "id": "pyq_9_83"
+    "id": "pyq_9_83",
+    "q_snippet": "snippets/q_pyq_9_83.webp",
+    "sol_snippet": "snippets/sol_pyq_9_83.webp"
   },
   {
     "num": 3,
@@ -1425,7 +1580,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.72",
     "answerKey": "c",
     "solution": "Two methods:\n\n(i) without using stack\n\n(ii) using stack\n\n10, 5, + 60, 6, 1, *, 8, -\n\n(i) Without Stack:\n\nScan from left to right & whenever an operator is encountered just put in between previous 2 operand and find result. • 10, 5, +\n\n10 + 5 = 15\n\n15, 60, 6, 1, *, 8, - (i) 15, 60, 6, /, *, 8 - put division in between 60 and 6 (ii) 15, 10, *, 8, - put * between 15 and 10 (iii) 15 * 10, 8, -\n\n150, 8 - (iv) 150, 8, - put - in between 150 and 8\n\n150 - 8 = 142\n\nUsing stack: • Scan ⇒ left to right (i) Operand ⇒ Push it (ii) Operator\n(a) Pop top 2 elements from stack let first popped\nelement is A & second popped elements is B.\n(b) Evaluate B ⊕ A (where ⊕ is the operator found)\n(c) Push the result of previous step onto stack.\n\nKeep repeating the above, once the input is over at the end, stack top element is the answer.\n\n10, 5, +, 60, 6, /, *, 8, -\n\nPush 10:\n\nPush 5:\n\n+ Operator is coming, pop the top two elements and\ncalculating the result.\n\nResult = 10 + 5 = 15\n\nAnd push the result into stack.\n\nPush 60:\n\nPush 6:\n\n/ Operator is coming, pop the top two elements and calculating the result.\n\nResult = 60 / 6 = 10. And push the result into stack.\n\nPush 10 (result):\n\n* Operator is coming, pop the top two elements and calculating the result.\n\nResult = 15 × 10 = 150\n\nAnd push the result into stack.\n\nPush 150 (result):\n\nPush 8:\n\nStacks and Queues\n\n- Operator is coming, pop the top two elements and\ncalculating the result.\n\nResult = 150 - 8 = 142",
-    "id": "pyq_8_84"
+    "id": "pyq_8_84",
+    "q_snippet": "snippets/q_pyq_8_84.webp"
   },
   {
     "num": 4,
@@ -1442,7 +1598,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.73",
     "answerKey": "c",
     "solution": "(i) Push (S, 10)\n\n(ii) Push (S, 20)\n\n(iii) Push (S, 30)\n\nGiven: Stack with 3 operation (Push/Pop/Reverse) Queue: First in first out\n\n(i) Let Enqueue is implemented using Push\n\nEnqueue (20) ⇒ Push (20)\n\nEnqueue (30) ⇒ Push (30)\n\nEnqueue (40) ⇒ Push (40)\n\nOrder: 10,20,30,40 So, as per Queue Policy, 0 is to be deleted first ⇒ but we cannot delete any other element except top element from stack. We need 10 at the top of stack:- REVERSE\n\nOrder: 10,20,30,40\n\nProgramming and Data Structures Another implement can be just reversed way",
-    "id": "pyq_9_85"
+    "id": "pyq_9_85",
+    "q_snippet": "snippets/q_pyq_9_85.webp",
+    "sol_snippet": "snippets/sol_pyq_9_85.webp"
   },
   {
     "num": 5,
@@ -1459,7 +1617,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.74",
     "answerKey": "0",
     "solution": "(i) Assume: size of Q2 > 4\n\n(ii) No addition storage\n\nEnqueue (Q2, Dequeue (Q1)); No additional storage\n\nEnque(Q2 Deque (Q1))\n\nEnque(Q2 Deque (Q2))",
-    "id": "pyq_8_86"
+    "id": "pyq_8_86",
+    "q_snippet": "snippets/q_pyq_8_86.webp",
+    "sol_snippet": "snippets/sol_pyq_8_86.webp"
   },
   {
     "num": 6,
@@ -1476,7 +1636,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.74",
     "answerKey": "86",
     "solution": "Stack operation:\n\n(1) Push (54):\n\n(2) Push (52):\n\n(3) POP ( ):\n\nStacks and Queues\n\n(4) Push (55):\n\n(5) Push (62):\n\n(6) s = POP ( ):\n\ns = 62\n\nQueue Operation:\n\nq = dequeue:\n\nq = 24\n\ns + q = 62 + 24 = 86",
-    "id": "pyq_9_87"
+    "id": "pyq_9_87",
+    "q_snippet": "snippets/q_pyq_9_87.webp",
+    "sol_snippet": "snippets/sol_pyq_9_87.webp"
   },
   {
     "num": 7,
@@ -1493,7 +1655,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.75",
     "answerKey": "b",
     "solution": "struct node temp = malloc (size of (struct node))\n\nEnqueue:\n\n(a) struct node temp = malloc (size of (struct node))\n(b) fill the data\n(c) temp → link = head\n(d) head = temp\nfixed number of instructions ⇒ θ(1)\n\nDequeue:\n(1) After deletion of last node second last node will\nbecome the last node & that's why we must assign NULL in the link field of 2nd last node. How to delete last node? We need to reach second last node or to delete a node you need to travel from 1st node to last node. Because we have singly limited list ⇒ Traversal till last node is depends on the number of nodes. Time Complexity = n Θ\n\nProgramming and Data Structures",
-    "id": "pyq_8_88"
+    "id": "pyq_8_88",
+    "q_snippet": "snippets/q_pyq_8_88.webp"
   },
   {
     "num": 8,
@@ -1510,7 +1673,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.76",
     "answerKey": "b",
     "solution": "Enqueue → O (1)\n\nDequeue → O (1)\n\nRear → next points to front\n\nEnqueue:\n\n(i) temp → next = front or temp → next = Rear →\nnext;\n\n(ii) Rear → next = temp;\n\n(iii) Rear = temp;\n\nDequeue:\n\nDelete node 10. (i) Rear → next (always point to front)\n\nRear → next = front → next\n\n(ii) temp = front (iii) front = Rear → next\n\n(iv) free (temp)\n\nHence, option (b) is correct.",
-    "id": "pyq_9_89"
+    "id": "pyq_9_89",
+    "q_snippet": "snippets/q_pyq_9_89.webp"
   },
   {
     "num": 9,
@@ -1527,7 +1691,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.76",
     "answerKey": "a",
     "solution": "Enqueue: • If the array is full no need to do anything. • Else Insert the new element at the end (Rear end) & also increment rear value.\n\nDequeue:\n\nIf the array is empty then stop else delete element from front end & also update the value of front.\n\nBoth can be perform in O(1) time.",
-    "id": "pyq_8_90"
+    "id": "pyq_8_90",
+    "q_snippet": "snippets/q_pyq_8_90.webp"
   },
   {
     "num": 10,
@@ -1544,7 +1709,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.76",
     "answerKey": "a",
     "solution": "(1) Enqueue: Insert an element\n\n(2) Dequeue: Delete an element\n\n3 Operations:\n\n(1) Dequeue\n\n(2) Enqueue\n\n(3) Multi Dequeue\n\nBecause the queue is initially empty\n\n⇒ Number of dequeue Number of Enqueue total number of operation = θ(n)",
-    "id": "pyq_9_91"
+    "id": "pyq_9_91",
+    "q_snippet": "snippets/q_pyq_9_91.webp",
+    "sol_snippet": "snippets/sol_pyq_9_91.webp"
   },
   {
     "num": 11,
@@ -1561,7 +1728,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.76",
     "answerKey": "a",
     "solution": "Condition for Empty: Rear = Front = 0\n\n(b) According to option b, Empty: (FRONT + 1)\n\nmod n = = REAR\n\nn = 5 size\n\n(Front +1) mode 5 = = 0\n\n(0+1) mode 5 = = 0\n\n1 = = 0\n\nStacks and Queues\n\nFalse, That's why option b is wrong.\n\nCondition for FULL: (REAR +1) mod n == Front\n\nTherefore, option (a) is the correct answer.",
-    "id": "pyq_8_92"
+    "id": "pyq_8_92",
+    "q_snippet": "snippets/q_pyq_8_92.webp",
+    "sol_snippet": "snippets/sol_pyq_8_92.webp"
   },
   {
     "num": 12,
@@ -1578,7 +1747,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.77",
     "answerKey": "256",
     "solution": "Let reduce the number of element from 16 to 3 to solve the questions in easy way.\n\nWe can say (i) Q: 1,2,3 → 3 iterations Now let's take\n\nWe can say for\n\nQ: 1, 3, 2 → 5 iterations\n\nNow let's take\n\nIn these 2-operation 3 pushed to stack and then popped and go back to queue.\n\nProgramming and Data Structures\n\nIn these 2-iteration 2 pushed and then popped and go back to queue.\n\nAlready know it will take 5 more iteration.\n\nTotal iteration = 4 + 5 = 9 ⇒ (3×3)\n\nSo, for 16 element it will take\n\n16 × 16 = 256 operation.",
-    "id": "pyq_9_93"
+    "id": "pyq_9_93",
+    "q_snippet": "snippets/q_pyq_9_93.webp",
+    "sol_snippet": "snippets/sol_pyq_9_93.webp"
   },
   {
     "num": 1,
@@ -1595,7 +1766,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.85",
     "answerKey": "b",
     "solution": "2.\n(b)",
-    "id": "pyq_15_94"
+    "id": "pyq_15_94",
+    "q_snippet": "snippets/q_pyq_15_94.webp",
+    "sol_snippet": "snippets/sol_pyq_15_94.webp"
   },
   {
     "num": 2,
@@ -1612,7 +1785,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.87",
     "answerKey": "b",
     "solution": "Max heap : every node satisfy\n\nx >( c1, c2 )\n\nNode value > its child value\n\n14 must be parent.\n\nIt is satisfying all the property of Max- Heap.\n\nLike that we will check option c and d.",
-    "id": "pyq_16_95"
+    "id": "pyq_16_95",
+    "q_snippet": "snippets/q_pyq_16_95.webp"
   },
   {
     "num": 3,
@@ -1629,7 +1803,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.91",
     "answerKey": "c",
     "solution": "(a)\nParent must be greater.\n\n13 is greater than 12 (Parent)\n\nNot a max-heap\n\n(b)\n\nNot a max heap because 16 must be parent of 14 and",
-    "id": "pyq_17_96"
+    "id": "pyq_17_96",
+    "q_snippet": "snippets/q_pyq_17_96.webp",
+    "sol_snippet": "snippets/sol_pyq_17_96.webp"
   },
   {
     "num": 4,
@@ -1646,7 +1822,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.87",
     "answerKey": "a",
     "solution": "I. First statement is true as in a max-heap, the\nsamllest element can not be a node having some child.\n\nx > c1, c2\n\nSo, the smallest can be either c1 and c2\n\nII. 2nd largest elements is a max-heap most be at\nlevel 1. So, this statement is also correct.\n\nIII. Third statement is true as we can use build-\nheap method to construct the heap in θ(N) time.\n\nIV. is false because it will take O(n logn) time\n\nSo, (a) is correct.\n\nProgramming and Data Structures",
-    "id": "pyq_18_97"
+    "id": "pyq_18_97",
+    "q_snippet": "snippets/q_pyq_18_97.webp",
+    "sol_snippet": "snippets/sol_pyq_18_97.webp"
   },
   {
     "num": 5,
@@ -1663,7 +1841,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.88",
     "answerKey": "c",
     "solution": "In a min-heap, every node satisfy the property that node-value is samller than child- value.\n\nx < c1, c2\n\ni,e the largest among node and children can not be node i.e only child can be larger.\n\nSo, a node with some child can not be largest i.e largest element must not have any child.\n\n⇒ Only leaf nodes can have largest element\n\nAlmost n 2\n\nnumber of leaf nodes are present in a heap to find largest among these n O O n 2 )=\n\nleaves possible\n\nNumber of compareisons for n elemnts =O(n) = Θ(n)",
-    "id": "pyq_15_98"
+    "id": "pyq_15_98",
+    "q_snippet": "snippets/q_pyq_15_98.webp",
+    "sol_snippet": "snippets/sol_pyq_15_98.webp"
   },
   {
     "num": 6,
@@ -1680,7 +1860,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.88",
     "answerKey": "d",
     "solution": "The given question is saying about build-heap algorithm.\n\nGiven,\n\n89, 19, 50, 17, 12, 15, 2, 5, 7, 11, 6, 9, 100\n\nCorresponding heap:\n\nSwap\n\nWe need to work internal nodes\n\n1,2,3,4,5,6\n(1)\nwith index 6\n\nTrees\n\nBuild- Heap\n\nWith index 3\n\nIndex 2 ⇒ heap prop. Already satisfied\n\nTotal 3 swaps required. So, option (d) is the correct answer.",
-    "id": "pyq_16_99"
+    "id": "pyq_16_99",
+    "q_snippet": "snippets/q_pyq_16_99.webp",
+    "sol_snippet": "snippets/sol_pyq_16_99.webp"
   },
   {
     "num": 7,
@@ -1697,7 +1879,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.89",
     "answerKey": "8 to 8",
     "solution": "N< c1, c2 . In min-heap, every node is smaller than its child.\n\n2nd smaller cannot go beyond level 1.\n\nkth smallest cannot be beyond (k-1) level\n\nWhy ⇒ there are only (k -1) smaller elements than kth smallest and path from root to kth smallest must go through these (k-1) elements.\n\nEnsure: Enough nodes\n\nLevel 0 → 2º = 1\n\nLevel 1 → 21 = 2\n\nupto level 1 = 21+1 -1 = 3\n\nupto level 2 ⇒22+1 - = 7\n\n: :\n\nupto level 7 ⇒ 27+1-1 = 28-1 = 255\n\nupto level 8th ⇒ 28+1 = 511\n\nWe are having more than 511.\n\n⇒ Deepest level for 9 is 8\n\nSo, 8 is the correct answer.",
-    "id": "pyq_17_100"
+    "id": "pyq_17_100",
+    "q_snippet": "snippets/q_pyq_17_100.webp",
+    "sol_snippet": "snippets/sol_pyq_17_100.webp"
   },
   {
     "num": 8,
@@ -1714,7 +1898,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.89",
     "answerKey": "b",
     "solution": "Delete (i) → delete ith element\n\nO(1) time\n\nBut we need to maintain heap property after deletion\n\nTo delete ith element ⇒ replace it with last element i.e. A[i]↔ A [n]\n\nThe, n = n -1\n\nApply Heapify algorithm to re- fix the heap\n\nIt takess ⇒ O (logn) time in worst case\n\nBut here it is given that d is the depth\n\nSo, heapify will take O(d).\n\nTherefore, option (b) is the correct answer.\n\nProgramming and Data Structures",
-    "id": "pyq_18_101"
+    "id": "pyq_18_101",
+    "q_snippet": "snippets/q_pyq_18_101.webp",
+    "sol_snippet": "snippets/sol_pyq_18_101.webp"
   },
   {
     "num": 9,
@@ -1731,7 +1917,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.90",
     "answerKey": "b",
     "solution": "Given code is Implementation of binary search whenever we found the target element i.e. x both if conditions become true.\n\nCode for first if:\n\nj =k - 1 ⇒ update j to k - 1\n\nCode of second if:\n\ni = k + 1\n\nj k 1 i k 1 =\n−}\n\n=\n+\n\n⇒ i > j\n\n⇒ Condition inside while loop become false and we come out of loop.\n\nSo, given code is an implementation of binary search.",
-    "id": "pyq_15_102"
+    "id": "pyq_15_102",
+    "q_snippet": "snippets/q_pyq_15_102.webp"
   },
   {
     "num": 10,
@@ -1748,7 +1935,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.91",
     "answerKey": "c",
     "solution": "(d)",
-    "id": "pyq_16_103"
+    "id": "pyq_16_103",
+    "q_snippet": "snippets/q_pyq_16_103.webp"
   },
   {
     "num": 11,
@@ -1765,7 +1953,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.90",
     "answerKey": "a",
     "solution": "Initial:\n\nTrees\n\nLevel order traversal of max heap\n\n= 10, 8, 7, 3, 2, 1, 5",
-    "id": "pyq_17_104"
+    "id": "pyq_17_104",
+    "q_snippet": "snippets/q_pyq_17_104.webp",
+    "sol_snippet": "snippets/sol_pyq_17_104.webp"
   },
   {
     "num": 12,
@@ -1782,7 +1972,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.91",
     "answerKey": "b",
     "solution": "Max- heap\n\nSatisfy max heap property only option (b)",
-    "id": "pyq_18_105"
+    "id": "pyq_18_105",
+    "q_snippet": "snippets/q_pyq_18_105.webp",
+    "sol_snippet": "snippets/sol_pyq_18_105.webp"
   },
   {
     "num": 13,
@@ -1799,7 +1991,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.85",
     "answerKey": "c",
     "solution": "14.\n(d)",
-    "id": "pyq_15_106"
+    "id": "pyq_15_106",
+    "q_snippet": "snippets/q_pyq_15_106.webp",
+    "sol_snippet": "snippets/sol_pyq_15_106.webp"
   },
   {
     "num": 14,
@@ -1816,7 +2010,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.91",
     "answerKey": "d",
     "solution": "Programming and Data Structures 1 2 3 4 5 6 7 25 14 16 13 10 8 12\n\nn = 7\n\nA = [1] ↔ A [n] swap root element with last element.\n\nn = n -1\n\nheapify on A [1]\n\nanother delete (i) swap 12, 16\n\n(ii) n = n-1\n\n(iii) Heapify",
-    "id": "pyq_16_107"
+    "id": "pyq_16_107",
+    "q_snippet": "snippets/q_pyq_16_107.webp",
+    "sol_snippet": "snippets/sol_pyq_16_107.webp"
   },
   {
     "num": 15,
@@ -1833,7 +2029,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.92",
     "answerKey": "b",
     "solution": "1 insert ⇒O (logn) (i) Inset n element without anything (ii) Apply build heap algorithm on 2n element\n\nTime Complexity = O(2n) = O(n)",
-    "id": "pyq_17_108"
+    "id": "pyq_17_108",
+    "q_snippet": "snippets/q_pyq_17_108.webp",
+    "sol_snippet": "snippets/sol_pyq_17_108.webp"
   },
   {
     "num": 16,
@@ -1850,7 +2048,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.92",
     "answerKey": "c",
     "solution": "P is a root node\n\nOutput = 3, 8, 16, 13, 24, 50\n\nOutput matched with option (c)",
-    "id": "pyq_18_109"
+    "id": "pyq_18_109",
+    "q_snippet": "snippets/q_pyq_18_109.webp"
   },
   {
     "num": 17,
@@ -1867,7 +2066,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.92",
     "answerKey": "c",
     "solution": "S1 : Ture\n\nTo perform func/procedure calls.\n\nA functioni/procedure (parent)\n\nmust call child functions\n\nMain A( )\n\nA( );\n\nB( );\n\nA( )\n\nC( );\n\nTrees\n\nD( );\n\nC( )\n\n-\n\n-\n\nD( )\n\n-\n\n-\n\nS2: True because in order that parent func return its\nvaule, its child must provide (return) value to it.\n\nMain ()\n\nInt s;\n\nS = A( ) + B( )\n\nPf (\"%d, S\")\n\nInt A( )\n\nReturn (C) + D( );\n\nInt B( )\n\nRetrun 1;\n\nint\n\nC( );\n\nreturn 2\n\nint D( )\n\nreturn 3;\n\nProcedure return call:\n\nProcedure return call = C ( ), D( ), A( ), B( ), S\n\nIt is nothing but post order.",
-    "id": "pyq_15_110"
+    "id": "pyq_15_110",
+    "q_snippet": "snippets/q_pyq_15_110.webp",
+    "sol_snippet": "snippets/sol_pyq_15_110.webp"
   },
   {
     "num": 18,
@@ -1884,7 +2085,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.93",
     "answerKey": "b",
     "solution": "The in-order traversal of a BST is increasing order of keys.\n\nWe know, first element of preorder traversal is the root node of entire tree.\n\nMark this node in Inorder traversal\n\nNow we will insert 10 (next node in preorder) in the BST.\n\n⇒ to find the position of 10 ⇒ just check position of 10 in Inorder traversal w.r.t. the marked node.\n\n{10 is the left of 15}\n\nSimilarly, finding position for each other element\n\nNow we can find the post-order traversal\n\nProgramming and Data Structures\n\nPost-order traversal: 11,12, 10, 16, 19, 18, 20, 15. Therefore, option B is the correct answer.",
-    "id": "pyq_16_111"
+    "id": "pyq_16_111",
+    "q_snippet": "snippets/q_pyq_16_111.webp",
+    "sol_snippet": "snippets/sol_pyq_16_111.webp"
   },
   {
     "num": 19,
@@ -1901,7 +2104,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.94",
     "answerKey": "4 to 4",
     "solution": "Height = 4 of the tree.",
-    "id": "pyq_17_112"
+    "id": "pyq_17_112",
+    "q_snippet": "snippets/q_pyq_17_112.webp",
+    "sol_snippet": "snippets/sol_pyq_17_112.webp"
   },
   {
     "num": 20,
@@ -1918,7 +2123,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.94",
     "answerKey": "b",
     "solution": "The Inorder traversal of a BST is increasing order of keys.\n\nInorder: Left subtree- Root Node- Right subtree\n\nPre-order: Root Node- Left subtree - Right subtree\n\nPost-order traversal of this tree: 2, 7, 6, 10, 9, 8, 15, 17, 20 19, 12. So, option (b) is the correct answer.",
-    "id": "pyq_18_113"
+    "id": "pyq_18_113",
+    "q_snippet": "snippets/q_pyq_18_113.webp",
+    "sol_snippet": "snippets/sol_pyq_18_113.webp"
   },
   {
     "num": 21,
@@ -1935,7 +2142,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.94",
     "answerKey": "a",
     "solution": "In-order traversal of a BST is increasing order of keys. 1. Increasing order of keys (🗸) 2. Not increasing order of key cannot be in-order traversal of a BST (×) 3. Not increasing order of keys (×) 4. Increasing order of keys (🗸) Only 1 and 4 are Inorder traversals, therefore, option a is correct answer.\n\nTrees",
-    "id": "pyq_15_114"
+    "id": "pyq_15_114",
+    "q_snippet": "snippets/q_pyq_15_114.webp",
+    "sol_snippet": "snippets/sol_pyq_15_114.webp"
   },
   {
     "num": 22,
@@ -1952,7 +2161,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.95",
     "answerKey": "d",
     "solution": "BST: The in-order traversal is increasing order of keys.\n\nInsert nodes in the tree from left to right in pre- order.\n\nBecause pre-order gives first node as a root nods\n\nTree:\n\nPost order = 15, 10, 23, 25, 20, 35, 42, 39, 30",
-    "id": "pyq_16_115"
+    "id": "pyq_16_115",
+    "q_snippet": "snippets/q_pyq_16_115.webp"
   },
   {
     "num": 23,
@@ -1969,7 +2179,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.95",
     "answerKey": "d",
     "solution": "I. MBCAFHPYK\nPreorder: Root, LT, RT\n\nII. KAMCBYPFH\nPostorder: LT, RT, Root\n\nIII. MABCKYFPH\n\nLet I be preorder\n\nRoot ⇒ M\n\nOut of II and III one must be the postorder & therefore M must be the lost node in any then but it is not.\n\nHence, I is not preorder\n\nLet II be preorder\n\n⇒ K is root node I has k in last\n\n⇒ I is postorder\n\n& remaining trarversal i.e. III is Inorder.",
-    "id": "pyq_17_116"
+    "id": "pyq_17_116",
+    "q_snippet": "snippets/q_pyq_17_116.webp",
+    "sol_snippet": "snippets/sol_pyq_17_116.webp"
   },
   {
     "num": 24,
@@ -1986,7 +2198,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.95",
     "answerKey": "509 to 509",
     "solution": "BST: keys are stored in some orderd way\n\nThe in-order traversal is increasing order of keys. 1. Consider an BST\n\nIn - order : 7 10 20\n\n2.Take another BST\n\nIn - Order = 3 7 8 11 11 12\n\nFor a binary tree of height h, if all levels are full,then number of nodes = 2h+1 - 1 If a height is 3 of CBT then number of nodes must be 24 - 1 = 15\n\nHeight = 3 Level = 4 Number of nodes = 15 If in CBT having L level then number of nodes = 2L - 1\n\nIf N = 1000, all the levels are not full.\n\nProgramming and Data Structures\n\nTill Height 8 or level 9 Number of nodes = 29 - 1 Number of nodes = 511\n\nFor last level to be full number of nodes = 29 = 512\n\nNumber of nodes remaining = 1000 - 511 = 489\n\nIn second last level (256 Nodes) 244 nodes having 2 child and 1 node having only 1 child and remaining are countion in leaf node.\n\n3 largest element index value must be 509.",
-    "id": "pyq_18_117"
+    "id": "pyq_18_117",
+    "q_snippet": "snippets/q_pyq_18_117.webp"
   },
   {
     "num": 25,
@@ -2003,7 +2216,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.96",
     "answerKey": "d",
     "solution": "We want any element other than maximum or we can say any element which is not maximum would be our element.\n\nSo, we need to pick any 2 elements starting from root node, then return the smaller from these 2 element.\n\n⇒ Complexity would be Θ(1)",
-    "id": "pyq_15_118"
+    "id": "pyq_15_118",
+    "q_snippet": "snippets/q_pyq_15_118.webp",
+    "sol_snippet": "snippets/sol_pyq_15_118.webp"
   },
   {
     "num": 26,
@@ -2020,7 +2235,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.96",
     "answerKey": "b",
     "solution": "Let n = 5\n\nMaximum Height can be achieve when minimum nodes are present at every level.\n\ni.e. only 1 node at each level.\n\nMin. height of a binary tree with 5 nodes\n\nheight = 3\n\nMinimum height =3\n\nMaximum height = 14\n\nTherefore, option B is the correct answer.\n\nLet n = 5 n = 15 put max. number of nodes at every level\n\nTrees",
-    "id": "pyq_16_119"
+    "id": "pyq_16_119",
+    "q_snippet": "snippets/q_pyq_16_119.webp",
+    "sol_snippet": "snippets/sol_pyq_16_119.webp"
   },
   {
     "num": 27,
@@ -2037,7 +2254,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.97",
     "answerKey": "64 to 64",
     "solution": "We cannot have any node with 2 child nodes.\n\nAt every level ⇒ 1 node can be there (either to left or to right)\n\nFrom 1st level till 2nd last level⇒ 2 choices are there\n\nLast level ⇒ only one choice\n\nFor six levels: 2×2×2×2×2×2×1 = 64",
-    "id": "pyq_17_120"
+    "id": "pyq_17_120",
+    "q_snippet": "snippets/q_pyq_17_120.webp"
   },
   {
     "num": 28,
@@ -2054,7 +2272,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.97",
     "answerKey": "b",
     "solution": "71, 65, 84, 69, 67, 83\n(1) Insert\n\n(2) Insert 65 65<\n\n(3) Insert 84\n\n(4) Inset 69\n\n(5) Insert 67\n\n(6) Insert 83\n\n⇒Lowest level element= 67. So, option (b) is the correct answer.",
-    "id": "pyq_18_121"
+    "id": "pyq_18_121",
+    "q_snippet": "snippets/q_pyq_18_121.webp",
+    "sol_snippet": "snippets/sol_pyq_18_121.webp"
   },
   {
     "num": 29,
@@ -2071,7 +2291,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.97",
     "answerKey": "19 to 19",
     "solution": "Number of nodes with two child = Number of nodes with no child (leaf node) -1\n\nSo, 19 is the correct answer\n\nProgramming and Data Structures",
-    "id": "pyq_15_122"
+    "id": "pyq_15_122",
+    "q_snippet": "snippets/q_pyq_15_122.webp",
+    "sol_snippet": "snippets/sol_pyq_15_122.webp"
   },
   {
     "num": 30,
@@ -2088,7 +2310,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.98",
     "answerKey": "b",
     "solution": "Given, 40, 30, 20, 10, 15, 16, 17, 8, 4\n\nCorresponding heap:\n\nSo, 40, 35, 20, 10, 30, 16, 17, 8, 4, 15. Option b is the correct answer.",
-    "id": "pyq_16_123"
+    "id": "pyq_16_123",
+    "q_snippet": "snippets/q_pyq_16_123.webp"
   },
   {
     "num": 31,
@@ -2105,7 +2328,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.98",
     "answerKey": "a",
     "solution": "So, option a is the correct answer.",
-    "id": "pyq_17_124"
+    "id": "pyq_17_124",
+    "q_snippet": "snippets/q_pyq_17_124.webp",
+    "sol_snippet": "snippets/sol_pyq_17_124.webp"
   },
   {
     "num": 32,
@@ -2122,7 +2347,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.98",
     "answerKey": "1 to 1",
     "solution": "we need to use bottom up approach\n\nCount = 0; // global\n\nint f (struct node * Root)\n\nif (Root = = NULL)\n\nreturn 0 ;\n\nint l = f (Root → left);\n40 20 30 16 17 10 15 8 4 Insert 35\n\nTrees\n\nint r = f (Root → Right);\n\nif (l + r +1 = = 4)\n\ncount + +;\n\nreturn l + r + 1;\n\nTime = O(n)\n\nGiven time = ( a b O n log n\n\na = 1\n\nb = 0\n\na b O n log n = a + 10 × b = 1 + 10 × 0 = 1",
-    "id": "pyq_18_125"
+    "id": "pyq_18_125",
+    "q_snippet": "snippets/q_pyq_18_125.webp",
+    "sol_snippet": "snippets/sol_pyq_18_125.webp"
   },
   {
     "num": 33,
@@ -2139,7 +2366,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.99",
     "answerKey": "a",
     "solution": "Height (h) = 3\n\n• If LT = empty and RT = empty\n\nIf RT = = NULL\n\nh = 1 + h (LT)\n\nIf LT = = NULL\n\nh = 1 + h(RT) • RT, LT ⇒ non - empty\n\n1 + max (h (LT), h (RT))\n\nB1:\n\nh = 1 + h(RT)\n\nB1: 1 + height (n → Right)\n\nB2:\n\nB2 = 1 + max (h1, h2)",
-    "id": "pyq_15_126"
+    "id": "pyq_15_126",
+    "q_snippet": "snippets/q_pyq_15_126.webp",
+    "sol_snippet": "snippets/sol_pyq_15_126.webp"
   },
   {
     "num": 34,
@@ -2156,7 +2385,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.99",
     "answerKey": "b",
     "solution": "• Given a binary tree structure with n nodes and also given n distinct elements. • Let n = 5\n\n10, 13, 18, 19, 35\n\nBecause it is BST,\n\nProgramming and Data Structures\n\nkeys are ordered in some way.\n\nSmallest element must be to the left of root node (1 choice)\n\nb < a < (c, d, e)\n\n⇒ 10 b =\n\n13, 18, 19, 35 are remaining\n\na < all keys in right subtree\n\namong remaining keys, the smallest is the root node\n\n13 a =\n\nRemaining: 18, 19, 35\n\nd < c < e only1 choice 18 19 35\n\nHence, option (b) is correct.",
-    "id": "pyq_16_127"
+    "id": "pyq_16_127",
+    "q_snippet": "snippets/q_pyq_16_127.webp",
+    "sol_snippet": "snippets/sol_pyq_16_127.webp"
   },
   {
     "num": 35,
@@ -2173,7 +2404,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.100",
     "answerKey": "b",
     "solution": "BST: The in-order traversal is increasing order of keys.\n\nIn-order: 1, 2, 3, 4, ……..n\n\nPost-order -----------------------Root (i) from Post-order → lost node is the root node O(1) time.\n\nFinding this root node in in-order traversal (sorted array)\n\nBS→ O(logn)\n\nIn-order: 1, 2, 3, 4………n\n\nPost order: Root\n(1)\nFrom Post-order →last node is the root node O(1)\n\nFinding this root node in inorder traversal (if sorted array then, BS→ O(logn))\n\nIf k element in left subtree then in right subtree element must be n - k - 1.\n\n(n-k -1)\n\nT(n) = O(logn) + T(k) + T(n - k - 1)\n\nRecursively follow.\n\nT(n) = T(k) + T (n-k-1) + O (logn)\n\nT(n) = O(n logn)\n\nBut\n\nIn-order [ ] 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10\n\nlet 1,2,3,....n root\n\nwe can find any element in O(1) time\n\nLeft (1…. 5) 6 (7….10)\n\nT(n) = O(1) + T(k) + T(n - k -1)\n\nHence, option (b) is correct.\n\nTrees",
-    "id": "pyq_17_128"
+    "id": "pyq_17_128",
+    "q_snippet": "snippets/q_pyq_17_128.webp",
+    "sol_snippet": "snippets/sol_pyq_17_128.webp"
   },
   {
     "num": 36,
@@ -2190,7 +2423,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.101",
     "answerKey": "a",
     "solution": "3 1 - 2 n n = Already know\n\nIn 1 such removal ⇒ 1 edge remove\n\nRepeat this process until all nodes of degree 2 removed\n\n⇒ n2 times we need to repeat\n\n⇒ n2 ×1 edge will be removed in over all process\n\nNumber of edges initially = n - 1 = n1 + n2 + n3 - 1\n\nAfter complete process edges, remaining = (n1+ n2+ n3 -1) - 1×n2\n\n= n1+ n3 -1 = n1+ n1 -2-1 = 2* n1-3",
-    "id": "pyq_18_129"
+    "id": "pyq_18_129",
+    "q_snippet": "snippets/q_pyq_18_129.webp"
   },
   {
     "num": 37,
@@ -2207,7 +2441,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.101",
     "answerKey": "b",
     "solution": "Basics:\n\nn1 = 4 n2 = 2 n3 = 2 4 + 1 - 1 = 4 (False) n3 most be 2\n(b) 4 - 2 =2 (True)\n(c) [5/2] = [2.5] = Either 2 or 3\n(d) 0\n\nn1= 3, n2= 1, n3= 1,\n(a) 1\n(b) (3 +1) /2 = 2 cannot be our answer.\n\nMethod 2:\n\nTotal number of nodes n = n1 + n2 + n3\n\nSum of degree of all the nodes = 2|E|\n\n= 2 (n-1)\n\n= 2 (n1 + n2 + n3 -1)\n\n= n1 × 1 + n2 × 2 + n3 × 3\n\nn1 + 2n2 + 3n3 = 2n1 + 2n2 + 2n3 -2\n\nn3 = 2n1 - n1 - 2\n\nn3 = n1 - 2\n\nSo, option (b) is correct.\n\na c b d e f g d e b a c f g d e b c f g ⇒ ⇒ 1 edge added degree 2 node deleted or 2 edge removed\n\nProgramming and Data Structures 38.\n(d) I.\n\nII.\n\nAll keys must be smaller than 381.\n\nIII. 142, 248, 520, 386, 345, 270, 307\n\nIV. 550, 149, 507, 395, 463, 402, 270\n\n463 cannot be in left subtree of 395.",
-    "id": "pyq_15_130"
+    "id": "pyq_15_130",
+    "q_snippet": "snippets/q_pyq_15_130.webp",
+    "sol_snippet": "snippets/sol_pyq_15_130.webp"
   },
   {
     "num": 38,
@@ -2224,7 +2460,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.102",
     "answerKey": "d",
     "solution": "Official GATE Answer: (d)",
-    "id": "pyq_16_131"
+    "id": "pyq_16_131",
+    "q_snippet": "snippets/q_pyq_16_131.webp"
   },
   {
     "num": 39,
@@ -2241,7 +2478,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.102",
     "answerKey": "c",
     "solution": "AVL tree is height balanced tree and the height of an AVL tree with n element is O(log2n)\n\n1st insertion time = O(logn)\n\n2nd insertion time = O(log(n + 1))\n\nAs AVL tree contain (n + 1) elements after 1st insertion\n\n3rd insertion = O(log(n + 2))\n\n.\n\n.\n\nn2 insert = O(log (n + n2 - 1))\n\nTrees\n\nTotal T.C = O(logn) + O(log (n + 1) + O(log (n + 2)) +……+ O(log(n + n2 - 1))\n\n= Olog (n * (n + 1)) * (n + 2) * … * (n + n2 - 1)\n\n2 n O logn\n\nO(n2 log n)\n(c) is correct",
-    "id": "pyq_17_132"
+    "id": "pyq_17_132",
+    "q_snippet": "snippets/q_pyq_17_132.webp",
+    "sol_snippet": "snippets/sol_pyq_17_132.webp"
   },
   {
     "num": 40,
@@ -2258,7 +2497,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.103",
     "answerKey": "b",
     "solution": "n(h) = 1+ n (h-1) + n(h -2) minimum nodes with height h.\n\nn (0) =1\n\nn (1) = 2\n\nn (2) = 1+ n(1) +n(0) = 1+2 +1 = 4\n\nn(3) = 1 + n(2) + n(1)\n\n= 1 + 4 + 2 = 7\n\nn(3)=7",
-    "id": "pyq_18_133"
+    "id": "pyq_18_133",
+    "q_snippet": "snippets/q_pyq_18_133.webp",
+    "sol_snippet": "snippets/sol_pyq_18_133.webp"
   },
   {
     "num": 41,
@@ -2275,7 +2516,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.103",
     "answerKey": "a",
     "solution": "AVL tree is height balance tree (also a search tree)\n\nHeight of AVL tree = O(log2n)\n\nsearching time = O(log2n)\n\nBinary search tree:\n\nSearching time = O(n)\n\nThe height of complete binary tree = O(log2n) but it is not a search tree. Element order arranged randomly (not in some ordered way)\n\nSearching time = O(n)",
-    "id": "pyq_15_134"
+    "id": "pyq_15_134",
+    "q_snippet": "snippets/q_pyq_15_134.webp"
   },
   {
     "num": 1,
@@ -2292,7 +2534,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.107",
     "answerKey": "b",
     "solution": "Either h1 or h2 for any key k every slot is equal likely.\n\nEach bucket /slot is equal likely occupied.\n\nFor every slot the probability that key will be occupied = 1 m\n\nExpected number of keys in the slots = 1 n n m m × =",
-    "id": "pyq_19_135"
+    "id": "pyq_19_135",
+    "q_snippet": "snippets/q_pyq_19_135.webp",
+    "sol_snippet": "snippets/sol_pyq_19_135.webp"
   },
   {
     "num": 2,
@@ -2309,7 +2553,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.107",
     "answerKey": "c",
     "solution": "Given\n\n00 = empty\n\n01 = 3 keys\n\n10 = 2 keys.\n\n11 = 1key\n\n(a) 5 = 0101 01 = keys (5, 9, 15)\n\n9 = 1001 00 = 1key fail it must be empty.\n\n4 = 0100 10 = 1 key (must be 2 key)\n\n13 = 1101 11 = 1 key\n\n10 = 1010\n\n7 = 0111\n\n(b) 9 = 1001\n01 = 3 keys\n\n5 = 0101 10 = 2 keys\n\n10 = 1010 11 = 1 key\n\n6 = 0110\n\n7 = 0111\n\n1 = 0001\n\nAccording to 3rd bit in 01, 1 entries in right and 2 in left but given hash table having 2 in right and 1 in left.\n\n(c) 10 = 1010\n01 = 3 keys\n\n9 = 1001 10 = 2 keys\n\n6 = 0110 11 = 1 key\n\n7 = 0111\n\n5 = 0101\n\n13 = 1101\n\nAccording to 3rd bit in 01 entry 2 key in right and 1 in left.\n\nIf is matched with given hash table.",
-    "id": "pyq_20_136"
+    "id": "pyq_20_136",
+    "q_snippet": "snippets/q_pyq_20_136.webp",
+    "sol_snippet": "snippets/sol_pyq_20_136.webp"
   },
   {
     "num": 3,
@@ -2326,7 +2572,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.107",
     "answerKey": "13 to 13",
     "solution": "m = 23\n\nh1(k) = k mod 23 = Primary hashing\n\nh2(k) = 1 + (k mod 19) = Secondary hashing\n\nH(k, i) = (h1 (k) + i.h2 (k)) mod m\n\ni = Collision number\n\nk = 90\n\nh1 (k) = 90 mod 23 = 21\n\nProgramming and Data Structures\n\nh2 (k) = 1 + (90 mod 19)\n\n= 1 + 14 = 15\n\nH(k, i) = (h1 (k) + i.h2 (k)) mod m\n\nH(90 ,i) = (h1 (90) + i.h2 (90) mod 23\n\n= (21 + 15) mode 23\n\n= 13\n\n13 is the right answer",
-    "id": "pyq_19_137"
+    "id": "pyq_19_137",
+    "q_snippet": "snippets/q_pyq_19_137.webp",
+    "sol_snippet": "snippets/sol_pyq_19_137.webp"
   },
   {
     "num": 4,
@@ -2343,7 +2591,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.108",
     "answerKey": "80 to 80",
     "solution": "Formula: Number of keys (n) α Table size (m) =\n\nNumber of keys = 2000\n\nTable size (m) = 25\n\n2000 α = 25 ⇒ α 80 =",
-    "id": "pyq_20_138"
+    "id": "pyq_20_138",
+    "q_snippet": "snippets/q_pyq_20_138.webp",
+    "sol_snippet": "snippets/sol_pyq_20_138.webp"
   },
   {
     "num": 5,
@@ -2360,7 +2610,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.108",
     "answerKey": "b",
     "solution": "Number of buckets = 10\n\nm = 10 [0 to 9]\n(a) 12 = 1 mod 10 = 1\n22 = 4 mod 10 = 4 33 = 9 mod 10 = 9 42 = 16 mod 10 = 6 52 = 25 mod 10 = 5 62 = 36 mod 10 = 6 72 = 49 mod 10 = 9 82 = 64 mod 10 = 4 92 = 81 mod 10 = 1 102 = 100 mod 10 = 0\n\nBucket that is filled = 1,4,9,6,5,0\n\nSome buckets remain empty. So, option (a) is wrong as well as option (c) also wrong.\n(b) 13 = 1 mod 10 = 1\n23 = 8 mod 10 = 8 33 = 27 mod 10 = 7 43 = 64 mod 10 = 4 53 = 125 mod 10 = 5 63 = 216 mod 10 = 6 73 = 343 mod 10 = 3 83 = 512 mod 10 = 2 93 = 729 mod 10 = 9 103 = 1000 mod 10 = 0\n\nAll buckets will be filled uniformly.\n\n(d) In option (d) all odd number of buckets will be\nempty",
-    "id": "pyq_19_139"
+    "id": "pyq_19_139",
+    "q_snippet": "snippets/q_pyq_19_139.webp",
+    "sol_snippet": "snippets/sol_pyq_19_139.webp"
   },
   {
     "num": 6,
@@ -2377,7 +2629,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.108",
     "answerKey": "c",
     "solution": "Division method:- • h(k) = k mod m\n\nm = 2P\n\nm = 24\n\nh(100) = 100 mod24 = 100 mod 16 = 4\n\nh (128 + 4)\n\n= h (132) = 132 mod 16 = 4\n\n132 = 1011100\n\nLast 4 bits is deciding the slot.\n\nA is not correct • h(k) = Lm (kA ∙kA)\n\nm = 100\n\nA = 1 3\n\nh(10) =\n\nm KA. KA\n\nh(11) = 66\n\nh(12) = 99\n\nB is wrong we will get only 3 values of h(k)\n\nOptimal choice of a depends of keys themseleve\n\n5 -1 A 2 =\n\nHashing • Malicious adversary can always choose keys. So, that all the keys are mapped to same slot ⇒ O(n).\n\nWorst case retrieval time Set of uniform hash function Minimum collision Randomly hash function are picked.",
-    "id": "pyq_20_140"
+    "id": "pyq_20_140",
+    "q_snippet": "snippets/q_pyq_20_140.webp",
+    "sol_snippet": "snippets/sol_pyq_20_140.webp"
   },
   {
     "num": 7,
@@ -2394,7 +2648,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.109",
     "answerKey": "a",
     "solution": "Number of slots = 100\n\nm = 100 • First 3 slots must be empty. • Number of insertions = 3 Probability = 97 97 97 100 100 100 × ×\n\n= 97 97 97 100 100 100 × × × ×\n\nMatched with option (a)",
-    "id": "pyq_19_141"
+    "id": "pyq_19_141",
+    "q_snippet": "snippets/q_pyq_19_141.webp",
+    "sol_snippet": "snippets/sol_pyq_19_141.webp"
   },
   {
     "num": 8,
@@ -2411,7 +2667,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.109",
     "answerKey": "a",
     "solution": "Number of slots = 9 [0 to 8]\n\nm = 9\n\nh (k) = k mod 9\n\nh (5) = 5 mod 9 = 5\n\nh (28) = 28 mod 9 = 1\n\nh (19) = 19 mod 9 = 1\n\nh (15) = 15 mod 9 = 6\n\nh (20) = 20 mod 9 = 2\n\nh (33) = 33 mod 9 = 6\n\nh (12) = 12 mod 9 = 3\n\nh (17) = 17 mod 9 = 8\n\nh (10) = 5 mod 9 = 1\n\nMaximum keys in a slot = 3\n\nMinimum keys in a slot = 0\n\nAverage keys in a slot = 9 1 9 =\n\n(3,0 and 1) is a right answer.",
-    "id": "pyq_20_142"
+    "id": "pyq_20_142",
+    "q_snippet": "snippets/q_pyq_20_142.webp",
+    "sol_snippet": "snippets/sol_pyq_20_142.webp"
   },
   {
     "num": 9,
@@ -2428,7 +2686,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.109",
     "answerKey": "c",
     "solution": "Solve with the option\n\n(a)\n\nNot matched with given Hash Table.\n\nProgramming and Data Structures\n\n(b)\n\n(c)\n\nMatched with given Hash Table",
-    "id": "pyq_19_143"
+    "id": "pyq_19_143",
+    "q_snippet": "snippets/q_pyq_19_143.webp",
+    "sol_snippet": "snippets/sol_pyq_19_143.webp"
   },
   {
     "num": 10,
@@ -2445,7 +2705,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.110",
     "answerKey": "c",
     "solution": "• No collision for keys 46, 34, 42 and 23 to enter 52 in hash table total 6 possibilities. After insert 52 in table, to enter key 23 there are 5 possibilities. Total number of possibilities = 6 × 5 = 30",
-    "id": "pyq_20_144"
+    "id": "pyq_20_144",
+    "q_snippet": "snippets/q_pyq_20_144.webp",
+    "sol_snippet": "snippets/sol_pyq_20_144.webp"
   },
   {
     "num": 11,
@@ -2462,7 +2724,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.110",
     "answerKey": "c",
     "solution": "12. (c)\n\nLast record position = 7\n\nCorrect answer = (d)",
-    "id": "pyq_19_145"
+    "id": "pyq_19_145",
+    "q_snippet": "snippets/q_pyq_19_145.webp"
   },
   {
     "num": 12,
@@ -2479,7 +2742,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "5.110",
     "answerKey": "d",
     "solution": "Official GATE Answer: (d)",
-    "id": "pyq_20_146"
+    "id": "pyq_20_146",
+    "q_snippet": "snippets/q_pyq_20_146.webp",
+    "sol_snippet": "snippets/sol_pyq_20_146.webp"
   },
   {
     "num": 1,
@@ -2496,7 +2761,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.5",
     "answerKey": "b",
     "solution": "S1∶ (¬p ∧ (p ∨ q)) → q\n\nT F True\n\np p q q p = F q = F\n\nT F F F F →⇒\n\n¬ ∨ ∧ →\n\n¯ ¯ ∧ ∨ →\n\nS2: q→ (\np p q ¬∧∨\n\nT F q ¬p p = T q = T T T p q ∨ → ∧ ∨",
-    "id": "pyq_1_147"
+    "id": "pyq_1_147",
+    "q_snippet": "snippets/q_pyq_1_147.webp",
+    "sol_snippet": "snippets/sol_pyq_1_147.webp"
   },
   {
     "num": 2,
@@ -2513,7 +2780,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.5",
     "answerKey": "b, d",
     "solution": "Option d: Correct\n\nA → B = ¬ A ∨ B\n\n(P ∧ Q) → R\n\n¬ (p ∧ q) ∨ R\n\n¬ p ∨ ¬q ∨ R\n\n(P ∧ Q) → (Q → R)\n\n¬ (p ∧ q) ∨ (q → R)\n\n(¬p ∨ ¬q) ∨ (¬q ∨ R)\n\n¬p ∨ ¬q ∨ ¬q ∨ R\n\n¬p ∨ ¬q ∨ R\n\nOption b: Correct\n\nT T T T F\n\n((P ∧ Q) → R) → ((P ∧ Q) → (Q → R))\n\n(T ∧ T) → F P = T\n\nF___→_______ Q = T\n\nT\n\nR = F",
-    "id": "pyq_2_148"
+    "id": "pyq_2_148",
+    "q_snippet": "snippets/q_pyq_2_148.webp",
+    "sol_snippet": "snippets/sol_pyq_2_148.webp"
   },
   {
     "num": 3,
@@ -2530,7 +2799,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.7",
     "answerKey": "a",
     "solution": "P R R p q ¬∧ ∧[¬ →¬∧",
-    "id": "pyq_3_149"
+    "id": "pyq_3_149",
+    "q_snippet": "snippets/q_pyq_3_149.webp",
+    "sol_snippet": "snippets/sol_pyq_3_149.webp"
   },
   {
     "num": 4,
@@ -2547,7 +2818,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.7",
     "answerKey": "",
     "solution": "P Q P Q P Q ∧ ∨ ∧¬ ]∨¬∧\n\nP Q Q ∧ ∧¬\n\nP T P ∧\n\nP P Q ∨¬∧\n\n) ( P P P Q ∨¬ ∧ ∨\n\nT P Q P Q ∧ ∨ ≡ ∨",
-    "id": "pyq_4_150"
+    "id": "pyq_4_150",
+    "q_snippet": "snippets/q_pyq_4_150.webp",
+    "sol_snippet": "snippets/sol_pyq_4_150.webp"
   },
   {
     "num": 5,
@@ -2564,7 +2837,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.6",
     "answerKey": "a",
     "solution": "AΔB = BΔA\n\n) ( P q R P q R ≠ ≠ ≡ ≠ ≠",
-    "id": "pyq_5_151"
+    "id": "pyq_5_151",
+    "q_snippet": "snippets/q_pyq_5_151.webp",
+    "sol_snippet": "snippets/sol_pyq_5_151.webp"
   },
   {
     "num": 6,
@@ -2581,7 +2856,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.6",
     "answerKey": "b",
     "solution": "(P#Q)#R = P # (Q # R)\n\n(P +Q )#R = P # (Q +R )\n\n¯\n\n¯\n\n(P +Q )+R = P + (Q +R )\n\n((PQ )) +R = P + ((QR))\n\nPQ + R = P + QR",
-    "id": "pyq_1_152"
+    "id": "pyq_1_152",
+    "q_snippet": "snippets/q_pyq_1_152.webp",
+    "sol_snippet": "snippets/sol_pyq_1_152.webp"
   },
   {
     "num": 7,
@@ -2598,7 +2875,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.6",
     "answerKey": "b",
     "solution": "(a)\nT F T F a b b c a c ¯ ¯ )→\n\n→ ∧ →\n\n→\n\nF F → →\n\n(c)\nF T F a b c c a F F F\n\nF F T ¯ ¯ → ∧ ∧ ∨ ∨ →\n\n(d)\nT a →( F b a F T → ¯ ¯\n\nT a c (F F) T ↔ → ¯ ↔ F b a c\n\nT F F T F F ¬→ ∧ ¯ ¯ ¯ → ∧ →\n\nb = T b F ¬ ≡",
-    "id": "pyq_2_153"
+    "id": "pyq_2_153",
+    "q_snippet": "snippets/q_pyq_2_153.webp",
+    "sol_snippet": "snippets/sol_pyq_2_153.webp"
   },
   {
     "num": 8,
@@ -2615,7 +2894,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.6",
     "answerKey": "d",
     "solution": "p q q p ¬→¬≡ →\n\nq p ≡¬∨\n\nPropositional Logic",
-    "id": "pyq_3_154"
+    "id": "pyq_3_154",
+    "q_snippet": "snippets/q_pyq_3_154.webp",
+    "sol_snippet": "snippets/sol_pyq_3_154.webp"
   },
   {
     "num": 9,
@@ -2632,7 +2913,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.7",
     "answerKey": "c",
     "solution": ") ( P q q P → ∧¬∨\n\n) ( P q P q q P ↔ ≡ → ∧ →\n\nP q q P A. ¬∨ ∧¬∨\n\nP q q P B. ¬∨ ∧ →\n\n) ( P q P q q P ↔ ≡ → ∧ →\n\nP q q P A ¬∨ ∧¬∨\n\n= A q P ∧¬∨\n\n) ( A q A P ≡ ∧¬ ∨ ∧\n\n) ( q A P A ≡¬∧ ∨ ∧\n\nq P q P P q ¬∧¬∨ ∨ ∧¬∨\n\n) ( ) ( ) ( q P q q p P P q ≡¬∧¬ ∨¬∧ ∨ ∧¬ ∨ ∧\n\nq P F F P q ≡ ¬∧¬ ∨ ∨ ∨ ∧\n\n) ( q P P q ≡¬∧¬ ∨ ∧",
-    "id": "pyq_4_155"
+    "id": "pyq_4_155",
+    "q_snippet": "snippets/q_pyq_4_155.webp"
   },
   {
     "num": 10,
@@ -2649,7 +2931,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.7",
     "answerKey": "b",
     "solution": "(a) P = F\nP = F Q = F ¬Q ¬P T T =T\n\n(b) P ¬Q\n\nF T ≡F\n\n(c) ¬P Q\nT F ≡ T\n\n(d) ¬P ¬Q\n\nT T ≡T",
-    "id": "pyq_5_156"
+    "id": "pyq_5_156",
+    "q_snippet": "snippets/q_pyq_5_156.webp",
+    "sol_snippet": "snippets/sol_pyq_5_156.webp"
   },
   {
     "num": 11,
@@ -2666,7 +2950,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.7",
     "answerKey": "b",
     "solution": "1 ≡ 2≡3 1. P Q ∨¬\n\n2. P Q ¬¬∧\n\nP Q ∨¬\n\n3. ( ) ( ) ( P Q P Q P Q ∧ ∨ ∧¬ ∨¬∧¬\n\nP Q P P Q ∧ ∨[ ∨¬ ∧¬]\n\nP Q [T Q] ∧ ∨ ∧¬\n\nQ [P Q] ¬ ∨ ∧\n\nQ P [ Q Q] Q P ¬ ∨ ∧¬ ∨ ≡¬ ∨",
-    "id": "pyq_1_157"
+    "id": "pyq_1_157",
+    "q_snippet": "snippets/q_pyq_1_157.webp",
+    "sol_snippet": "snippets/sol_pyq_1_157.webp"
   },
   {
     "num": 12,
@@ -2683,7 +2969,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.7",
     "answerKey": "d",
     "solution": "T F p q R → →\n\nR = F\n\nR P q → →\n\nF q →→\n\nT q →",
-    "id": "pyq_2_158"
+    "id": "pyq_2_158",
+    "q_snippet": "snippets/q_pyq_2_158.webp",
+    "sol_snippet": "snippets/sol_pyq_2_158.webp"
   },
   {
     "num": 13,
@@ -2700,7 +2988,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.7",
     "answerKey": "4 to 4",
     "solution": "P P Q True [∧ → ]→\n\nQ→ False\n\nDiscrete Mathematics\n\nP P Q Q P Q. [∧ → → ∨\n\nP Q P Q →\n|\n|∴\n\nT F F P P Q Q P ∧ → →¬ ∨\n\nF___∧_______ Q = T\n\nF P = F",
-    "id": "pyq_3_159"
+    "id": "pyq_3_159",
+    "q_snippet": "snippets/q_pyq_3_159.webp",
+    "sol_snippet": "snippets/sol_pyq_3_159.webp"
   },
   {
     "num": 14,
@@ -2717,7 +3007,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.8",
     "answerKey": "c",
     "solution": "C E E C →¬ ≡ →¬\n\nK E →\n\nK C →¬",
-    "id": "pyq_4_160"
+    "id": "pyq_4_160",
+    "q_snippet": "snippets/q_pyq_4_160.webp",
+    "sol_snippet": "snippets/sol_pyq_4_160.webp"
   },
   {
     "num": 15,
@@ -2734,7 +3026,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.8",
     "answerKey": "d",
     "solution": "A Good → B Cheap ¬\n\nCheap Good B A →¬ →¬\n\nL: P implies Q (T)\n\nM: Q implies P (T)\n\nN: P is equivalent to Q (T)\n\nA B →¬ ≡ B A →¬\n\nA B ≡\n\nA B B A → ∧ →",
-    "id": "pyq_5_161"
+    "id": "pyq_5_161",
+    "q_snippet": "snippets/q_pyq_5_161.webp",
+    "sol_snippet": "snippets/sol_pyq_5_161.webp"
   },
   {
     "num": 16,
@@ -2751,7 +3045,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.8",
     "answerKey": "b",
     "solution": "R P P R P P Modus pones R R →¬≡ →¬ ∴¬ ∴¬\n\nR P P R R R Not valid P P →¬≡ →¬ ¬ ¬ ∴",
-    "id": "pyq_1_162"
+    "id": "pyq_1_162",
+    "q_snippet": "snippets/q_pyq_1_162.webp",
+    "sol_snippet": "snippets/sol_pyq_1_162.webp"
   },
   {
     "num": 17,
@@ -2768,7 +3064,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.8",
     "answerKey": "b, c",
     "solution": "L : ∀x[ P(x)→ ∃y Q(x,y)]\n\n\"For every x if P(x) is true then there exists some y such that Q(x,y) will be true.\n\nOption :\n\n(i) ∃x(P(x) ∧∀y Q(x,y))\n\n\"For some x. P(x) is true and for all y\n\nQ(x.y) is true which is not implies L\"\n\n(ii) ∀x∀yQ(x,y)\n\n\"For every x and every yQ(x,y) is true which implies L\"\n\n(iii) ∃y ∀x[P(x)→ Q(x,y)]\n\n\"These exists some y such that for every x\nif P(x) is true then Q(x,y) is also true which\nimplies L\"\n\n(iv) ∃xP(x)∧ ∃yQ(x,y)\n\n\"There exists some x for which P(x) is true and also for some y Q(x,y) is true which cannot implies L\"",
-    "id": "pyq_2_163"
+    "id": "pyq_2_163",
+    "q_snippet": "snippets/q_pyq_2_163.webp",
+    "sol_snippet": "snippets/sol_pyq_2_163.webp"
   },
   {
     "num": 18,
@@ -2785,7 +3083,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.8",
     "answerKey": "d",
     "solution": "Not (all rainy days are cold)\n\nd Rainy Cold ¬∀ →\n\nd Rainy d cold d ¬∀[¬ ∨\n\nPropositional Logic\n\nd Rainy d cold d ∃[ ∧¬",
-    "id": "pyq_3_164"
+    "id": "pyq_3_164",
+    "q_snippet": "snippets/q_pyq_3_164.webp",
+    "sol_snippet": "snippets/sol_pyq_3_164.webp"
   },
   {
     "num": 19,
@@ -2802,7 +3102,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.9",
     "answerKey": "d",
     "solution": "x Glitter x Gold x ¬∀[ →\n\nx Glitter x Gold x ¬∀[¬ ∨\n\nx Glitter x Gold x ∃[ ∧¬",
-    "id": "pyq_4_165"
+    "id": "pyq_4_165",
+    "q_snippet": "snippets/q_pyq_4_165.webp",
+    "sol_snippet": "snippets/sol_pyq_4_165.webp"
   },
   {
     "num": 20,
@@ -2819,7 +3121,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.9",
     "answerKey": "d",
     "solution": "All my friends are not perfect\n\nx F x P x ∀[ →¬\n\nx F x P x ∀[¬ ∨¬\n\n( )( ) x F x P x ¬¬ ∀[¬ ∨¬\n\nx F x P x ¬∃[ ∧\n\nA B A B → ≡¬ ∨\n\nA A ¬¬ ≡",
-    "id": "pyq_5_166"
+    "id": "pyq_5_166",
+    "q_snippet": "snippets/q_pyq_5_166.webp",
+    "sol_snippet": "snippets/sol_pyq_5_166.webp"
   },
   {
     "num": 21,
@@ -2836,7 +3140,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.9",
     "answerKey": "c",
     "solution": "(a) ∃x[P(x) ∧ w]\n\nP(1) w ∧\n\n∨\n\nP(2) w ∧\n\n(P(1) ∧ w) ∨ (P(2) ∧ w)\n\n(P(1) ∨ P(2)) ∧ w\n\n∃x[P(x) ∧ w]\n\nP(1) w P(2) ∨ ∧ 0\n\n(b) ∃x[P(x) → w] ≡ ∀xP(x) → w\n\n∃x[¬P(x) ∨ w] P1 P2 w\n\n∧ →\n\n(¬P(1) ∨ w) ≡ (¬P(1) ∧ P(2) ∨ w)\n\n∨\n\n(¬P(2) ∨ w) ≡ (¬P1 ∨ ¬P2 ∨ w)\n\n(¬P(1) ∨ w) ∨ (¬P(2) ∨ w)\n\n(¬P(1) ∨ ¬P(2)) ∨ w\n\n(c) ∀x[P(x) → w] ≡ ∀xP(x) → w ≡ ¬[∀xP(x) ] → w\n\n∀x[¬P(x) ∨ w] ≡\n\n(¬P(1) ∨ w)\n\n¬[P(1) ∧ P(2)] ∨ w)\n\n∧\n\n(¬P(2) ∨ w)\n\n(¬P1 ∨ ¬P2 ∨ w)\n\n(¬P(1) ∨ w) ∧ (¬P(2) ∨ w)\n\n(¬P(1) ∧ ¬P(2)) ∨ w",
-    "id": "pyq_1_167"
+    "id": "pyq_1_167",
+    "q_snippet": "snippets/q_pyq_1_167.webp",
+    "sol_snippet": "snippets/sol_pyq_1_167.webp"
   },
   {
     "num": 22,
@@ -2853,7 +3159,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.9",
     "answerKey": "b",
     "solution": "IV.\n, x y R x y ¬∃[∀¬\n\nR x, y x y ¬∃¬∃\n\n( )( ) x yR x, y yR x, y x ¬¬∀∃ ≤∀∃\n\nx y y x\n\ny x x y\n\nx y y x\n\ny y x x ∀∀ ≡∀∀ ¯ ¯ ∃∀ ∃∀ ¯ ¯ ∀∃ ∀∃ ¯ ¯ ∃∃ ≡∃∃\n\nx y x y 10 x 1 y 1 y x y 10 x ∃∃\n+\n= = = ∀∃\n+\n=\n\nx y\n\nDiscrete Mathematics\n\n1 → 9\n\n2 → 8\n\n3 → 7",
-    "id": "pyq_2_168"
+    "id": "pyq_2_168",
+    "q_snippet": "snippets/q_pyq_2_168.webp",
+    "sol_snippet": "snippets/sol_pyq_2_168.webp"
   },
   {
     "num": 23,
@@ -2870,7 +3178,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.10",
     "answerKey": "d",
     "solution": "(c)\nD: 1, 2 P q x x x ∃[ ∧\n\nQ x x x x →∃ ∧∃\n\nT T P 1 Q 2 P 1 Q 1\n\nT T P 2 Q 2 P 2 Q 2\n\n∧\n|\n|\n∨ ∨ ∨\n|\n∧\n\n∧\n|\n|\n|\n\nT T T T ∧\n\nP(2) = T, Q (2) = T\n\nx P x Q x xP x xQ x ∀[ ∧ ]≡∀ ∧∀\n\nx P x Q x xP x xQ x ∀[ ∨ ] ∀ ∨∀\n\nx P x Q x xP x xQ x ∃[ ∨ ]≡∃ ∨∃\n\nx P x Q x xP x xQ x ∃[ ∧ ]→∃ ∨∃\n\nx P x Q x xP x xQ x ∀[ → ]→∀ →∀\n\nx P x Q x xP x xQ x ∀[ ↔ ]→∀ ↔∀",
-    "id": "pyq_3_169"
+    "id": "pyq_3_169",
+    "q_snippet": "snippets/q_pyq_3_169.webp",
+    "sol_snippet": "snippets/sol_pyq_3_169.webp"
   },
   {
     "num": 24,
@@ -2887,7 +3197,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.10",
     "answerKey": "a, d",
     "solution": "x y α z β ¬∃[∀ ∧∀\n\nx y α z β ∀[¬∀ ∀¬∀\n\nx y α z β ∀[∀ →¬∀\n\n∀x [ ∀y(α) → ∃z (¬β)]\n\nx β y α z ∀[¬∀ ∨¬∀\n\nx z β y α ∀[∀ →¬∀\n\nx z β y α ∀[∀ →∃ ¬",
-    "id": "pyq_4_170"
+    "id": "pyq_4_170",
+    "q_snippet": "snippets/q_pyq_4_170.webp",
+    "sol_snippet": "snippets/sol_pyq_4_170.webp"
   },
   {
     "num": 25,
@@ -2904,7 +3216,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.10",
     "answerKey": "b",
     "solution": "I.\nx P x P x ¬∀ ∃ ¬\n\nII.\nx P x x P x ¬∃ ∀¬\n\nx P x x P x xP x ¬∃ ¬ ∀¬¬ ∀",
-    "id": "pyq_5_171"
+    "id": "pyq_5_171",
+    "q_snippet": "snippets/q_pyq_5_171.webp",
+    "sol_snippet": "snippets/sol_pyq_5_171.webp"
   },
   {
     "num": 26,
@@ -2921,7 +3235,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.10",
     "answerKey": "d",
     "solution": "A→B ≡ A B ¬ ∨\n\nx y,β u, u, α γ ∀ →∃ →∀ ∃\n\nx y, β u, u,γ α ¬∀¬ ∨∃ ¬∨∀∃\n\nxα y,β u, u γ ∃ ∧∀ ∧∃∀¬",
-    "id": "pyq_1_172"
+    "id": "pyq_1_172",
+    "q_snippet": "snippets/q_pyq_1_172.webp",
+    "sol_snippet": "snippets/sol_pyq_1_172.webp"
   },
   {
     "num": 1,
@@ -2938,7 +3254,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.15",
     "answerKey": "b, c, d",
     "solution": "Because each class of x that follows an equivalence relation is uniquely mapped to one element of x in a function, Option A is false.\n\nf. Every function has a clear definition.\n\nIf no two elements of x are mapped to any element of y, the function is said to be one-one.[X], [Y] are distinct equivalence, and as a result, they adhere to the one-to-one property.\n\nA function is onto if it has a relationship between each element of domain E and an element of co- domain B.\n\nF is a bijective function if it is one-one and onto.\n\nTherefore opions (b), (c), and (d) are correct choices.",
-    "id": "pyq_8_173"
+    "id": "pyq_8_173",
+    "q_snippet": "snippets/q_pyq_8_173.webp",
+    "sol_snippet": "snippets/sol_pyq_8_173.webp"
   },
   {
     "num": 2,
@@ -2955,7 +3273,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.15",
     "answerKey": "5040",
     "solution": "The powerset of U is denoted by 2U .\n\nV= { φ,1,2,3 (1,2),(1,3),(2,3),(1,2,3)}\n\nA, B∈2U\n\nA, B is an edge in G if and only if (i) A≠ B (ii) Either A ⊆ B or B ⊆ A\n\nAs φ connects to all the node in the graph Cardinality of B( φ) = 7! = 5040\n\nDiscrete Mathematics",
-    "id": "pyq_9_174"
+    "id": "pyq_9_174",
+    "q_snippet": "snippets/q_pyq_9_174.webp",
+    "sol_snippet": "snippets/sol_pyq_9_174.webp"
   },
   {
     "num": 3,
@@ -2972,7 +3292,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.16",
     "answerKey": "b, c",
     "solution": "a/ b/ c n×n\n\n2 3 3\n\n.....n ¯¯¯\n\n2 n3",
-    "id": "pyq_10_175"
+    "id": "pyq_10_175",
+    "q_snippet": "snippets/q_pyq_10_175.webp"
   },
   {
     "num": 4,
@@ -2989,7 +3310,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.16",
     "answerKey": "59049 to 59049",
     "solution": "S = {1,2,….10}\n\n(A, B) A ⊆ B A⊆ B\n\n{1} ⊆ {1, 2}\n\n{1} ⊆{1, 2}\n\nφ ⊆ {1, 2}\n\nφ ⊆ {1, 2}\n\n{2} ⊆ {1, 2}",
-    "id": "pyq_11_176"
+    "id": "pyq_11_176",
+    "q_snippet": "snippets/q_pyq_11_176.webp",
+    "sol_snippet": "snippets/sol_pyq_11_176.webp"
   },
   {
     "num": 5,
@@ -3006,7 +3329,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.16",
     "answerKey": "0.125 to 0.125",
     "solution": "A = {1,2,3} = n\n\nA × B = n2\n\nTotal number of relation = 2 n 2 = 29\n\nNondiagonal = n2 - n\n\nReflexive = 2 n -n 2\n\nn = 3\n\nProbity = 2 2 n n 2 1 2 −= 2 2 3 3 3 2 2 − = 6 9 3 2 1 1 2 2 8 = = =",
-    "id": "pyq_12_177"
+    "id": "pyq_12_177",
+    "q_snippet": "snippets/q_pyq_12_177.webp",
+    "sol_snippet": "snippets/sol_pyq_12_177.webp"
   },
   {
     "num": 6,
@@ -3023,7 +3348,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.16",
     "answerKey": "b",
     "solution": "23 31 31 11 ab R cd cd R xy ab R xy a c\n\nc n f c n f\n\nFalse b d f c n f c n f 2 3\n\n3\n1 2\n1\n\nb 1 τ τ ∧ ≤ ∧ ≤ ≤ ∨ ∧ ∨ ∨ ≤ ∧ ≤ ≤ ≤ ∧ ≤ ≤ ∨ ∧ ∨ ∨ ≤\n1 1 3\n1 ≤ ≤",
-    "id": "pyq_8_178"
+    "id": "pyq_8_178",
+    "q_snippet": "snippets/q_pyq_8_178.webp"
   },
   {
     "num": 7,
@@ -3040,7 +3366,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.16",
     "answerKey": "2 to 2",
     "solution": "n =4\n\nf(1) = a n = 5\n\nf(5) =b f(5) = f(5+5) =fc(10) = f(10/2) =f(5) =b\n\nn =6\n\nn = 4\n\nf(7) =f(7+5) =f(12) f(12)=f(12/12) = f(16) =f(6/2) =f(3)\n\nn = 3 n = 2 f(3) = f(3 + 5) f(2) =f(2/2)=f(1)\n\nf(18)\n\nf(8/2) = f(4) = f(4/2) = f(2) = f(2/2) = f(1) = a = =",
-    "id": "pyq_9_179"
+    "id": "pyq_9_179",
+    "q_snippet": "snippets/q_pyq_9_179.webp",
+    "sol_snippet": "snippets/sol_pyq_9_179.webp"
   },
   {
     "num": 8,
@@ -3057,7 +3385,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.16",
     "answerKey": "c",
     "solution": "Relexive:\n\na R a\n\n1 2 3 4 p , q R p , q\n\n1 - 4 = 2-3\n\np - q = q - p\n\np - q ≠ (p - q)\n\nSets, Relations and Functions",
-    "id": "pyq_10_180"
+    "id": "pyq_10_180",
+    "q_snippet": "snippets/q_pyq_10_180.webp",
+    "sol_snippet": "snippets/sol_pyq_10_180.webp"
   },
   {
     "num": 9,
@@ -3074,7 +3404,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.17",
     "answerKey": "0.95 to 0.95",
     "solution": "F: x→y\n\n|x| =2 |y| = 20\n\nTotal number of function = (R.S)LS\n\n= 202\n\n1:1 Functions = RS PLS = 20P2 = 20.19\n\n= 20.19 19 = 0.95 20 =\n\nA S total Total ∩ =",
-    "id": "pyq_11_181"
+    "id": "pyq_11_181",
+    "q_snippet": "snippets/q_pyq_11_181.webp",
+    "sol_snippet": "snippets/sol_pyq_11_181.webp"
   },
   {
     "num": 10,
@@ -3091,7 +3423,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.17",
     "answerKey": "36 to 36",
     "solution": "F: x→y\n\n|x| = 4\n|y | =3\n\n|x| = m\n|y| =m\n\nj n m c 0 1 i n n - i i= − × ↔\n\n0 1 2 3 4 4 4 4 3 3 0\n- 3\n3 1\n3 3 2 3 3 3 c c c c − −\n+\n− − −\n\n= 34 - 3×24 + 3 ×14 - 0 = 81 - 3×16 + 3\n\n= 84 - 48 = 36",
-    "id": "pyq_12_182"
+    "id": "pyq_12_182",
+    "q_snippet": "snippets/q_pyq_12_182.webp",
+    "sol_snippet": "snippets/sol_pyq_12_182.webp"
   },
   {
     "num": 11,
@@ -3108,7 +3442,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.17",
     "answerKey": "2048 to 2048",
     "solution": "A : {0…..10}\n\n|A| = 11\n\nP (A) =2A = 211 = 2048",
-    "id": "pyq_8_183"
+    "id": "pyq_8_183",
+    "q_snippet": "snippets/q_pyq_8_183.webp",
+    "sol_snippet": "snippets/sol_pyq_8_183.webp"
   },
   {
     "num": 12,
@@ -3125,7 +3461,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.17",
     "answerKey": "b",
     "solution": "(1) Not reflexive\n(2) (3,6) ∈R→(6, 3) ∈R\n(3) (2,6) ∧ (6, 9) → (2, 9)\n\n¯ ¯\n\n2 3\nacd(2, 9) = 1",
-    "id": "pyq_9_184"
+    "id": "pyq_9_184",
+    "q_snippet": "snippets/q_pyq_9_184.webp",
+    "sol_snippet": "snippets/sol_pyq_9_184.webp"
   },
   {
     "num": 13,
@@ -3142,7 +3480,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.17",
     "answerKey": "c",
     "solution": "A = {5} ,{6} {7}\n\ne2 e3 e4 e1 A 2 , 5 , 6 , 7 = φ\n\n5 5, 6 e\n\ne5∈2A\n\nA 5, 6 2\n}∈",
-    "id": "pyq_10_185"
+    "id": "pyq_10_185",
+    "q_snippet": "snippets/q_pyq_10_185.webp",
+    "sol_snippet": "snippets/sol_pyq_10_185.webp"
   },
   {
     "num": 14,
@@ -3159,7 +3499,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.17",
     "answerKey": "a",
     "solution": "I(x) = 1- x h(x) = x x 1 −\n\ng(h 1 x × h(g x 1 1 x x x − = − − −\n\ng(h(x) h(g(x)\n\n1 x x\n1 1\nx × − −\n\n= 1- x x 1 − = 1-x 1-x 1 − h x 1 x\n1 1\nx g x x = × = − −\n\nDiscrete Mathematics",
-    "id": "pyq_11_186"
+    "id": "pyq_11_186",
+    "q_snippet": "snippets/q_pyq_11_186.webp",
+    "sol_snippet": "snippets/sol_pyq_11_186.webp"
   },
   {
     "num": 15,
@@ -3176,7 +3518,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.18",
     "answerKey": "16",
     "solution": "4 4 S: 0, 1 0, 1 S: 2 2 → →\n\nTotal function = (R.S.)L.S\n\n= 4 2 16 2 2 =\n\nN : S → {0, 1}\n\nN : 216 → 2\n\nTotal function = (R.S.)L.S\n\n= ( ) 16 2 2\n\n16 2 16 2 2 2 2 2 2 2 2 109 109 N 109 109 109 16 =",
-    "id": "pyq_12_187"
+    "id": "pyq_12_187",
+    "q_snippet": "snippets/q_pyq_12_187.webp"
   },
   {
     "num": 16,
@@ -3193,7 +3536,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.18",
     "answerKey": "c",
     "solution": "F: A→B\n\nAnto = Total function - Total non-onto\n\n= 2n - 2",
-    "id": "pyq_8_188"
+    "id": "pyq_8_188",
+    "q_snippet": "snippets/q_pyq_8_188.webp",
+    "sol_snippet": "snippets/sol_pyq_8_188.webp"
   },
   {
     "num": 17,
@@ -3210,7 +3555,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.18",
     "answerKey": "c",
     "solution": "n = 3\n\nnondiagonal = n2 -n\n\nQ: n = 5\n\n2 - 2n n = 2 5 -5 2\n\n= 25-5 2\n\n= 20 2",
-    "id": "pyq_9_189"
+    "id": "pyq_9_189",
+    "q_snippet": "snippets/q_pyq_9_189.webp",
+    "sol_snippet": "snippets/sol_pyq_9_189.webp"
   },
   {
     "num": 18,
@@ -3227,7 +3574,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.18",
     "answerKey": "d",
     "solution": ")( )( )(\n\nx,y x,z z,x z,y\n\na b a,b R b,a R ∀∀ ∈ → ∈\n\nAnti: a b a,b R b,a R a = b ∀∀ ∈ ∧ ∈ →\n\n2 x R z,x R x = z False ∈ ∧ ∈ →",
-    "id": "pyq_10_190"
+    "id": "pyq_10_190",
+    "q_snippet": "snippets/q_pyq_10_190.webp",
+    "sol_snippet": "snippets/sol_pyq_10_190.webp"
   },
   {
     "num": 19,
@@ -3244,7 +3593,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.18",
     "answerKey": "d",
     "solution": "P Q R P Q R Q R ∩ ∩ ∪ ∩ ∩ ∪ ∪\n\nP P Q R Q R ∪ ∪ ∩ ∪¬ ∩\n\nQ R ∪∩ ∩\n\nQ R Q R ∩ ∪ ∩ = ∪\n\nA .A ∪ ≡∪",
-    "id": "pyq_11_191"
+    "id": "pyq_11_191",
+    "q_snippet": "snippets/q_pyq_11_191.webp",
+    "sol_snippet": "snippets/sol_pyq_11_191.webp"
   },
   {
     "num": 20,
@@ -3261,7 +3612,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.18",
     "answerKey": "0 to 0",
     "solution": "Sets, Relations and Functions",
-    "id": "pyq_12_192"
+    "id": "pyq_12_192",
+    "q_snippet": "snippets/q_pyq_12_192.webp",
+    "sol_snippet": "snippets/sol_pyq_12_192.webp"
   },
   {
     "num": 21,
@@ -3278,7 +3631,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.19",
     "answerKey": "a",
     "solution": "22. (a, d) Let x be a set and 2x is a power set of x AΔB = (A --B)∪ (B --A) for A,B ∈ 2x H = (2x, Δ) Check H for each property. (i) H satisfies the closure property under Δ (ii) H satisfies the associative property under a such that Δ\n\nAΔ (BΔC) = (AΔB) ΔC (iii) H satisfies the identity property such that ' φ', is the identity element. AΔe = φ (iv) H satisfies inverse property such that inverse of A = A AΔφ = φ = (A - φ) u ( φ - A)\n\n= A∪ φ\n\n= A\n\nSo, H is group and inverse of A is A.",
-    "id": "pyq_8_193"
+    "id": "pyq_8_193",
+    "q_snippet": "snippets/q_pyq_8_193.webp",
+    "sol_snippet": "snippets/sol_pyq_8_193.webp"
   },
   {
     "num": 22,
@@ -3295,7 +3650,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.19",
     "answerKey": "a, b",
     "solution": "Official GATE Answer: (a, b)",
-    "id": "pyq_9_194"
+    "id": "pyq_9_194",
+    "q_snippet": "snippets/q_pyq_9_194.webp",
+    "sol_snippet": "snippets/sol_pyq_9_194.webp"
   },
   {
     "num": 23,
@@ -3312,7 +3669,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.19",
     "answerKey": "a,b,c",
     "solution": "x2 =1\n\nx↔x =1\n\nx-1.x.x = x-1 x = x-1\n\n(xy)2 = x2 y2\n\nxy↔xy = xy yy\n\nx-1↔ y↔x↔ y.y-1 ↔xy↔ y-1\n\nyx = xy",
-    "id": "pyq_10_195"
+    "id": "pyq_10_195",
+    "q_snippet": "snippets/q_pyq_10_195.webp",
+    "sol_snippet": "snippets/sol_pyq_10_195.webp"
   },
   {
     "num": 24,
@@ -3329,7 +3688,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.19",
     "answerKey": "b",
     "solution": "Prime 1 H < 6\n\n2 , 3 ¯\n\n¯",
-    "id": "pyq_11_196"
+    "id": "pyq_11_196",
+    "q_snippet": "snippets/q_pyq_11_196.webp",
+    "sol_snippet": "snippets/sol_pyq_11_196.webp"
   },
   {
     "num": 25,
@@ -3346,7 +3707,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.19",
     "answerKey": "7 to 7",
     "solution": "H ⊆ G G H\n\n35 1, 5, 7, 35 ¯\n\nDiscrete Mathematics",
-    "id": "pyq_12_197"
+    "id": "pyq_12_197",
+    "q_snippet": "snippets/q_pyq_12_197.webp",
+    "sol_snippet": "snippets/sol_pyq_12_197.webp"
   },
   {
     "num": 26,
@@ -3363,7 +3726,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.20",
     "answerKey": "42 to 42",
     "solution": "G ≠ H\n\nH ⊆ G → G H 84.\n\n1,......42, 84 ¯",
-    "id": "pyq_8_198"
+    "id": "pyq_8_198",
+    "q_snippet": "snippets/q_pyq_8_198.webp"
   },
   {
     "num": 27,
@@ -3380,7 +3744,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.20",
     "answerKey": "5 to 5",
     "solution": "|G| = 15",
-    "id": "pyq_9_199"
+    "id": "pyq_9_199",
+    "q_snippet": "snippets/q_pyq_9_199.webp",
+    "sol_snippet": "snippets/sol_pyq_9_199.webp"
   },
   {
     "num": 28,
@@ -3397,7 +3763,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.20",
     "answerKey": "a",
     "solution": "Assaciabve : a × (b × c) = (a × b) ×c\n\nx ⊕ (y ⊕2) = (x ⊕ y) ⊕2\n\nx ⊕ (y2 + z2) =\n\nx2 + (y2 + z2) = (x2 +y2) ⊕ z.\n\n= ( 2 2 2 2 x y z\n+\n+\n\nCommutable: a # b b × a\n\nx ⊕ y y ⊕ x\n\nx2 + y2 y2 + x2",
-    "id": "pyq_10_200"
+    "id": "pyq_10_200",
+    "q_snippet": "snippets/q_pyq_10_200.webp",
+    "sol_snippet": "snippets/sol_pyq_10_200.webp"
   },
   {
     "num": 29,
@@ -3414,7 +3782,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.20",
     "answerKey": "a",
     "solution": "S= {! w↔ w2} = (1↔w) ↔w2\n\n1↔w3 = w↔w2\n\n1↔1 = w3\n\n1\n\n= 1",
-    "id": "pyq_11_201"
+    "id": "pyq_11_201",
+    "q_snippet": "snippets/q_pyq_11_201.webp"
   },
   {
     "num": 30,
@@ -3431,7 +3800,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.20",
     "answerKey": "c",
     "solution": "b = b c1 = c\n\nb ×b ≡ a c2 = c × c = b\n\nb ×b2 = b × a ≡ b c = c2 × c\n\n= b×c ≡ d\n\nc4 = c×4\n\n≡ a\n\nc5 = c4×c\n\n= a×c ≡ c\n\n<c> = {c,b,d,a}\n\nc ×d = a",
-    "id": "pyq_12_202"
+    "id": "pyq_12_202",
+    "q_snippet": "snippets/q_pyq_12_202.webp",
+    "sol_snippet": "snippets/sol_pyq_12_202.webp"
   },
   {
     "num": 1,
@@ -3448,7 +3819,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.25",
     "answerKey": "16 to 16",
     "solution": "e = 25\n\nMinimum degree = 3\n\nδ (G) = 3\n\nδ (G) < 2 G n 1 e n ≤Δ ≤ −\n\nn =16\n\n2 G e n δ ≤\n\n3 n ≤\n\n3 n ≤\n\nn ≤ 16.6.. ¯\n\n(……16,16) ≤ 16.66",
-    "id": "pyq_17_203"
+    "id": "pyq_17_203",
+    "q_snippet": "snippets/q_pyq_17_203.webp",
+    "sol_snippet": "snippets/sol_pyq_17_203.webp"
   },
   {
     "num": 2,
@@ -3465,7 +3838,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.25",
     "answerKey": "18 to 18",
     "solution": "Tree\n\nn =10\n\ne (Tree) = n -1\n\nn = 10-1 = 9\n\nd vi 2e = ↔\n\n= 2.9 = 18",
-    "id": "pyq_18_204"
+    "id": "pyq_18_204",
+    "q_snippet": "snippets/q_pyq_18_204.webp",
+    "sol_snippet": "snippets/sol_pyq_18_204.webp"
   },
   {
     "num": 3,
@@ -3482,7 +3857,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.25",
     "answerKey": "c",
     "solution": "Not graphical\n\n3 3 3 1 0 0\n2 2 0 0 0\n\nDiscrete mathematics",
-    "id": "pyq_19_205"
+    "id": "pyq_19_205",
+    "q_snippet": "snippets/q_pyq_19_205.webp",
+    "sol_snippet": "snippets/sol_pyq_19_205.webp"
   },
   {
     "num": 4,
@@ -3499,7 +3876,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.26",
     "answerKey": "d",
     "solution": "Graphical\n\n7 6 5 4 4 3 2 1\n5 4 3 3 2 1 0\n3 2 2 1 0 0\n1 1 0 0 0\n\n6 6 6 6 3 3 2 2\n5 5 5 2 2 1 2\n5 5 5 2 2 2\n4 4 1 1 1 1\n3 0 0 0 1\n\n31000 (not graphical)\n\n7 6 6 4 4 3 2 2\n5 5 3 3 2 1 1\n4 2 2 1 0 1\n4 2 2 1 1 0\n1 1 0 0 0\n\nGraphical",
-    "id": "pyq_20_206"
+    "id": "pyq_20_206",
+    "q_snippet": "snippets/q_pyq_20_206.webp"
   },
   {
     "num": 5,
@@ -3516,7 +3894,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.26",
     "answerKey": "c",
     "solution": "S T\n\nn -1 n -1 ¯ ¯",
-    "id": "pyq_22_207"
+    "id": "pyq_22_207",
+    "q_snippet": "snippets/q_pyq_22_207.webp",
+    "sol_snippet": "snippets/sol_pyq_22_207.webp"
   },
   {
     "num": 6,
@@ -3533,7 +3913,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.26",
     "answerKey": "c",
     "solution": "3 1 1 1 8 2 2 2 C × × ×\n\n1 7 8 × =",
-    "id": "pyq_23_208"
+    "id": "pyq_23_208",
+    "q_snippet": "snippets/q_pyq_23_208.webp"
   },
   {
     "num": 7,
@@ -3550,7 +3931,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.26",
     "answerKey": "995 to 995",
     "solution": "n = 100\n\ne = 100\n\n= 500 + 5× (n -1)\n\n= 500 + 5 ×99\n\n= 995",
-    "id": "pyq_17_209"
+    "id": "pyq_17_209",
+    "q_snippet": "snippets/q_pyq_17_209.webp",
+    "sol_snippet": "snippets/sol_pyq_17_209.webp"
   },
   {
     "num": 8,
@@ -3567,7 +3950,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.26",
     "answerKey": "199 to 199",
     "solution": "Σd(iv) = 22\n\n2 + P + 3 (n - P -1) = 2e = 2(n -1)\n\nGraph Theory\n\n2 + 200 + 3(n - 200-1) = 2 (n -1) = 2n -2\n\n2 + 200 + 3n - 600-3 = 2n -2\n\n3n - 2n = 600 - 200 - 2+ 3 - 2\n\nn = 400 - = 399\n\n= 399 - 200\n\n= 199",
-    "id": "pyq_18_210"
+    "id": "pyq_18_210",
+    "q_snippet": "snippets/q_pyq_18_210.webp",
+    "sol_snippet": "snippets/sol_pyq_18_210.webp"
   },
   {
     "num": 9,
@@ -3584,7 +3969,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.27",
     "answerKey": "d",
     "solution": "0 1\n\n4 4 n n or − −\n\na b z n − ∈\n\na ≡ b(modn)\n\nn≡ (mode4) or n ≡ 1(mode)",
-    "id": "pyq_19_211"
+    "id": "pyq_19_211",
+    "q_snippet": "snippets/q_pyq_19_211.webp",
+    "sol_snippet": "snippets/sol_pyq_19_211.webp"
   },
   {
     "num": 10,
@@ -3601,7 +3988,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.27",
     "answerKey": "6 to 6",
     "solution": "3 × 2 = 6 ways.",
-    "id": "pyq_20_212"
+    "id": "pyq_20_212",
+    "q_snippet": "snippets/q_pyq_20_212.webp",
+    "sol_snippet": "snippets/sol_pyq_20_212.webp"
   },
   {
     "num": 11,
@@ -3618,7 +4007,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.27",
     "answerKey": "5 to 5",
     "solution": "n n 1 e G e G 2 −\n+\n=\n\nn n 1 e G e G 2 −\n+\n=\n\nn n 1 e 4 − =\n\nn 4 e = 3 4 = =\n\nn 4 e = 5 4 = =\n\nn 6 e = X 4 n 7 e = X 4 n 8 e = = 14 4 = = =",
-    "id": "pyq_22_213"
+    "id": "pyq_22_213",
+    "q_snippet": "snippets/q_pyq_22_213.webp"
   },
   {
     "num": 12,
@@ -3635,7 +4025,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.27",
     "answerKey": "36 to 36",
     "solution": "n = 12\n\nK6, 6 e = 6 × 6 = 36\n\nDiscrete mathematics",
-    "id": "pyq_23_214"
+    "id": "pyq_23_214",
+    "q_snippet": "snippets/q_pyq_23_214.webp",
+    "sol_snippet": "snippets/sol_pyq_23_214.webp"
   },
   {
     "num": 13,
@@ -3652,7 +4044,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.28",
     "answerKey": "c",
     "solution": "14. (506 to 506)\n\nΣd(vi) = 2e\n\n4 × 3 + 40 × 5 + 100 × 8 = 2e\n\n12 + 200 + 800 = 2e\n\n6 + 100 + 400 = e\n\ne = 506",
-    "id": "pyq_17_215"
+    "id": "pyq_17_215",
+    "q_snippet": "snippets/q_pyq_17_215.webp"
   },
   {
     "num": 14,
@@ -3669,7 +4062,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.28",
     "answerKey": "506 to 506",
     "solution": "Official GATE Answer: (506 to 506)",
-    "id": "pyq_18_216"
+    "id": "pyq_18_216",
+    "q_snippet": "snippets/q_pyq_18_216.webp",
+    "sol_snippet": "snippets/sol_pyq_18_216.webp"
   },
   {
     "num": 15,
@@ -3686,7 +4081,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.28",
     "answerKey": "45",
     "solution": "3×2 × 1 = 3!\n\n3 6 15ways C =\n\n-1 !\n15× 2 n = 6 15× 2 = 15 ×3 = 45",
-    "id": "pyq_19_217"
+    "id": "pyq_19_217",
+    "q_snippet": "snippets/q_pyq_19_217.webp",
+    "sol_snippet": "snippets/sol_pyq_19_217.webp"
   },
   {
     "num": 16,
@@ -3703,7 +4100,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.28",
     "answerKey": "36 to 36",
     "solution": "n = 10\n\n)( n k n k+1 e 2 − − =\n\nk = 2\n\n9 8\n36 2 × =\n\nk = 2 k = 5 k = 4\n|\n|",
-    "id": "pyq_20_218"
+    "id": "pyq_20_218",
+    "q_snippet": "snippets/q_pyq_20_218.webp"
   },
   {
     "num": 17,
@@ -3720,7 +4118,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.28",
     "answerKey": "d",
     "solution": "a b c a A b c\n\n=\n\n2 A\n\n=\n\n3 A\n\n=\n\nA-C-B-A A-B-C-A",
-    "id": "pyq_22_219"
+    "id": "pyq_22_219",
+    "q_snippet": "snippets/q_pyq_22_219.webp",
+    "sol_snippet": "snippets/sol_pyq_22_219.webp"
   },
   {
     "num": 18,
@@ -3737,7 +4137,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.28",
     "answerKey": "a",
     "solution": "2 1 2 3 0 1 0 1 0 0 1 1 A\n2 1\n0 1 0 1 0 A = 1 0 1 0 3 2 0 1 0 0 0 1 ][]\n\n=\n+\n\nGraph Theory\n\n2 A 2 2 1\n\n¯\n\n=\n\n(n =5)\n\n⇒ 2 (n-1)\n\n= 2(4) = 8\n\n1 2\n3 4\n1\n2 0\n0 0 0 3 4\n\n||\n\n|\n\n|\n\n1 2\n3 4 5\n1 0 2 0\n\n3 1 4 1 0 5",
-    "id": "pyq_23_220"
+    "id": "pyq_23_220",
+    "q_snippet": "snippets/q_pyq_23_220.webp",
+    "sol_snippet": "snippets/sol_pyq_23_220.webp"
   },
   {
     "num": 19,
@@ -3754,7 +4156,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.29",
     "answerKey": "24 to 24",
     "solution": "St",
-    "id": "pyq_17_221"
+    "id": "pyq_17_221",
+    "q_snippet": "snippets/q_pyq_17_221.webp",
+    "sol_snippet": "snippets/sol_pyq_17_221.webp"
   },
   {
     "num": 20,
@@ -3771,7 +4175,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.29",
     "answerKey": "109 to 109",
     "solution": "99 + 10.1 = 109\n\ny = 99\n\nz = 1\n\nn = 3\n\nTotal vertices = 3! = 6\n\n1 2 3 1 3 2 2 1\n2 104\n2 3 1 3 1 2 3 2 1\n|\n|\n|\n|\n|\n|\n|\n|\n\n|\n|\n|\n|\n|\n|\n|\n|\n\nDegree Fetch event = 99\n\n1,2,............100",
-    "id": "pyq_18_222"
+    "id": "pyq_18_222",
+    "q_snippet": "snippets/q_pyq_18_222.webp"
   },
   {
     "num": 21,
@@ -3788,7 +4193,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.29",
     "answerKey": "c",
     "solution": "Total vertices = n k = 4\n\nE = e1 + e2 + e3 + e4\n\n= n1 - 1 + n2-1 + n3-1 + n4 -1\n\nDiscrete mathematics\n\n= (n1 + n2 + n3 + n4) - 4\n\n= n - 4\n\n= n - k",
-    "id": "pyq_19_223"
+    "id": "pyq_19_223",
+    "q_snippet": "snippets/q_pyq_19_223.webp",
+    "sol_snippet": "snippets/sol_pyq_19_223.webp"
   },
   {
     "num": 22,
@@ -3805,7 +4212,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.30",
     "answerKey": "b",
     "solution": "23. (a, b, c)\n\nX(G) = 3\n\nB(G) = 4",
-    "id": "pyq_20_224"
+    "id": "pyq_20_224",
+    "q_snippet": "snippets/q_pyq_20_224.webp",
+    "sol_snippet": "snippets/sol_pyq_20_224.webp"
   },
   {
     "num": 23,
@@ -3822,7 +4231,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.30",
     "answerKey": "a, b, c",
     "solution": "24.\n(3)",
-    "id": "pyq_22_225"
+    "id": "pyq_22_225",
+    "q_snippet": "snippets/q_pyq_22_225.webp",
+    "sol_snippet": "snippets/sol_pyq_22_225.webp"
   },
   {
     "num": 24,
@@ -3839,7 +4250,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.30",
     "answerKey": "3",
     "solution": "Mis {1, 3, 5, 7, 9}\n\nMis {2, 4, 6, 8}\n\nMIS = {2, 5, 8}",
-    "id": "pyq_23_226"
+    "id": "pyq_23_226",
+    "q_snippet": "snippets/q_pyq_23_226.webp"
   },
   {
     "num": 25,
@@ -3856,7 +4268,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.30",
     "answerKey": "7 to 7",
     "solution": "26. (3 to 3)\n\nX(G) = 3\n\nGraph Theory",
-    "id": "pyq_17_227"
+    "id": "pyq_17_227",
+    "q_snippet": "snippets/q_pyq_17_227.webp",
+    "sol_snippet": "snippets/sol_pyq_17_227.webp"
   },
   {
     "num": 26,
@@ -3873,7 +4287,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.30",
     "answerKey": "3 to 3",
     "solution": "Official GATE Answer: (3 to 3)",
-    "id": "pyq_18_228"
+    "id": "pyq_18_228",
+    "q_snippet": "snippets/q_pyq_18_228.webp",
+    "sol_snippet": "snippets/sol_pyq_18_228.webp"
   },
   {
     "num": 27,
@@ -3890,7 +4306,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.31",
     "answerKey": "a",
     "solution": "B. PG\n\nX (BPG) = 2",
-    "id": "pyq_19_229"
+    "id": "pyq_19_229",
+    "q_snippet": "snippets/q_pyq_19_229.webp"
   },
   {
     "num": 28,
@@ -3907,7 +4324,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.31",
     "answerKey": "a, b",
     "solution": "(i) This procedure results in a proper vertex coloring of G. (ii) The number of colors used in at most Δ (G) + 1.",
-    "id": "pyq_20_230"
+    "id": "pyq_20_230",
+    "q_snippet": "snippets/q_pyq_20_230.webp",
+    "sol_snippet": "snippets/sol_pyq_20_230.webp"
   },
   {
     "num": 29,
@@ -3924,7 +4343,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.31",
     "answerKey": "11 to 11",
     "solution": "n = 8\n\nn - e + f =2\n\nf = 5\n\n8 - e +5 = 2\n\n13 - e = 2\n\n13 - 2 = e\n\n11 = e",
-    "id": "pyq_22_231"
+    "id": "pyq_22_231",
+    "q_snippet": "snippets/q_pyq_22_231.webp",
+    "sol_snippet": "snippets/sol_pyq_22_231.webp"
   },
   {
     "num": 30,
@@ -3941,7 +4362,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.31",
     "answerKey": "24 to 24",
     "solution": "n = 10\n\ne = 3n - 6\n\n= 3.10 -6\n\n= 30 -6\n\n= 24",
-    "id": "pyq_23_232"
+    "id": "pyq_23_232",
+    "q_snippet": "snippets/q_pyq_23_232.webp"
   },
   {
     "num": 31,
@@ -3958,7 +4380,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.31",
     "answerKey": "a",
     "solution": "2 δ G G n -1 e n ≤ ≤Δ ≤\n\n2 δ G 2 n f 2 3 n e π ≤ ¯\n+\n− ≤\n\n3n < 2nd + 2f - 4\n\nn - e + f = 2\n\nn + f - 2 = e\n\n3n - 3n + 4 < f\n\nn + 4 < 2f\n\nn 2 f 2 + ≤\n\nDiscrete mathematics",
-    "id": "pyq_17_233"
+    "id": "pyq_17_233",
+    "q_snippet": "snippets/q_pyq_17_233.webp",
+    "sol_snippet": "snippets/sol_pyq_17_233.webp"
   },
   {
     "num": 32,
@@ -3975,7 +4399,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.32",
     "answerKey": "d",
     "solution": "n = 10 e = 15\n\nn- e + f = 2\n\n10 - 15 + f = 2\n\n- 5 + f\n= 2\n\nf = 7\n\nbounded = Total -1\n\n= 7 - 1\n\n= 6",
-    "id": "pyq_18_234"
+    "id": "pyq_18_234",
+    "q_snippet": "snippets/q_pyq_18_234.webp"
   },
   {
     "num": 1,
@@ -3992,7 +4417,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.35",
     "answerKey": "d",
     "solution": "2. (12 to 12)",
-    "id": "pyq_15_235"
+    "id": "pyq_15_235",
+    "q_snippet": "snippets/q_pyq_15_235.webp",
+    "sol_snippet": "snippets/sol_pyq_15_235.webp"
   },
   {
     "num": 2,
@@ -4009,7 +4436,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.35",
     "answerKey": "12 to 12",
     "solution": "1 2 3 4 5\n1 3\n\nL I L A C L L\n\n1 2 3 4 5\n\n4\n\n_ L _ L _\n\n_ _ _ L L\n\n_ L _ _ L\n\n2\n4 5 → 3C2 ways = 3 ways.\n\n↓ ↓ ↓\n\n→ 2 ways\n\n= 3 × 2 × 2\n\n→ 2!\n\n= 12 ways .",
-    "id": "pyq_16_236"
+    "id": "pyq_16_236",
+    "q_snippet": "snippets/q_pyq_16_236.webp",
+    "sol_snippet": "snippets/sol_pyq_16_236.webp"
   },
   {
     "num": 3,
@@ -4026,7 +4455,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.35",
     "answerKey": "15 to 15",
     "solution": "{1, 2, 3}\n\n1 1 1 1\n1 1 1 2\n1 1 1 3\n|\n|\n\n1 2\n2 3\n2 2\n2 2\n1 2\n2 2 2\n2\n3 3\n1 2\n3 3\n2 3\n3 3\n|\n|\n\n→ 3 3 3 3\n\n10 + 4 + 1 = 15\n\nDiscrete mathematics\n\n1 1\n1 2\n1 1\n2 3\n1 1\n3 3\n|\n|\n→ 1 3 3 3 2 2 2 3",
-    "id": "pyq_15_237"
+    "id": "pyq_15_237",
+    "q_snippet": "snippets/q_pyq_15_237.webp",
+    "sol_snippet": "snippets/sol_pyq_15_237.webp"
   },
   {
     "num": 4,
@@ -4043,7 +4474,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.36",
     "answerKey": "3.8 to 3.9",
     "solution": "1 1 1 1 1 1 1 1 3 5 3 5 4 3 4 3 9 9 9 9 9 9 9 9 ×\n+ ×\n+\n+ ×\n+\n×\n+ ×\n+\n×\n+ ×\n\n= 3 5 5 3 5 4 3 4 3 35 9 9\n+\n+\n+\n+\n+\n+\n+\n+\n= =",
-    "id": "pyq_16_238"
+    "id": "pyq_16_238",
+    "q_snippet": "snippets/q_pyq_16_238.webp",
+    "sol_snippet": "snippets/sol_pyq_16_238.webp"
   },
   {
     "num": 5,
@@ -4060,7 +4493,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.36",
     "answerKey": "88.9 to 89.1",
     "solution": "an 1\n\n2 3\n\n{1}\n{2}\n{1, 2}\n\na1 = 1\n{1, 1} {2, 1}\n\na2 = 2 {1, 1, 1}\n\na3 =3\n\na4 = 5\n\n1, 2, 3, 5, 8, 13, 21, 34, 55, 89, a10",
-    "id": "pyq_15_239"
+    "id": "pyq_15_239",
+    "q_snippet": "snippets/q_pyq_15_239.webp",
+    "sol_snippet": "snippets/sol_pyq_15_239.webp"
   },
   {
     "num": 6,
@@ -4077,7 +4512,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.36",
     "answerKey": "a",
     "solution": "b n -1 ! R n -1 ! n -1 ! b! R! n -1\n+\n+\n× × ×",
-    "id": "pyq_16_240"
+    "id": "pyq_16_240",
+    "q_snippet": "snippets/q_pyq_16_240.webp",
+    "sol_snippet": "snippets/sol_pyq_16_240.webp"
   },
   {
     "num": 7,
@@ -4094,7 +4531,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.36",
     "answerKey": "36 to 36",
     "solution": "N = a b c 1 2 3 P .P .P .....\n\n= (a + 1) × (b + 1) × (c + 1)\n\n2100 = 3 × 700 = 3 × 7 × 100\n\n= 3 × 7 × 2 × 50\n\n2100 = 22 × 31 × 52 × 71\n\n= (2 + 1) × (1 + 1) × (2 + 1) × (1 + 1)\n\n= 3 × 2 × 3 × 2 = 6 × 6 = 36",
-    "id": "pyq_15_241"
+    "id": "pyq_15_241",
+    "q_snippet": "snippets/q_pyq_15_241.webp",
+    "sol_snippet": "snippets/sol_pyq_15_241.webp"
   },
   {
     "num": 8,
@@ -4111,7 +4550,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.36",
     "answerKey": "0.99 to 0.99",
     "solution": "n = 1 x = 2 x = 3\n\n1 1 1 1 ....\n+\n+\n+\n\n1 1- 2 1 2 )+\n\n1\n- 3\n1 3 )+\n\n1\n- 4\n1 ..... 99\n+\n\n1\n- 100\n\n= 1 100 -1 99 1- 100 100 100 = = = 0.99",
-    "id": "pyq_16_242"
+    "id": "pyq_16_242",
+    "q_snippet": "snippets/q_pyq_16_242.webp",
+    "sol_snippet": "snippets/sol_pyq_16_242.webp"
   },
   {
     "num": 9,
@@ -4128,7 +4569,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.36",
     "answerKey": "8 to 8",
     "solution": "n = a b c 1 2 3 P P P × ×\n\n(a + 1) × (b + 1) × (c + 1)\n\n2014 = 2 × 19 × 53\n\n= 21 × 191 × 531\n\n(1 + 1) × (1 + 1) × (1 + 1)= 2.2.2 = 23 = 8",
-    "id": "pyq_15_243"
+    "id": "pyq_15_243",
+    "q_snippet": "snippets/q_pyq_15_243.webp",
+    "sol_snippet": "snippets/sol_pyq_15_243.webp"
   },
   {
     "num": 10,
@@ -4145,7 +4588,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.36",
     "answerKey": "a",
     "solution": "P = 1 + 3 + 5 + 7 ….(2k - 1)\n\n= (2 -1) + (4 - 1) + (6 - 1) ….(2k -1)\n\n= (2 + 4 + 6 + 8) + (-1, -1, -1, -1….-k)\n\n= Q - K\n\nCombinatorics",
-    "id": "pyq_16_244"
+    "id": "pyq_16_244",
+    "q_snippet": "snippets/q_pyq_16_244.webp",
+    "sol_snippet": "snippets/sol_pyq_16_244.webp"
   },
   {
     "num": 11,
@@ -4162,7 +4607,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.37",
     "answerKey": "d",
     "solution": "an = 2n = 3\n\n= 0 0 . (2 3). n n n n an x n x ∞ ∞ = = =\n+\n↔ ↔\n\n= 0 0 2 . 3. n n n n n x x ∞ ∞ = =\n+\n↔ ↔\n\n= 2(1.x + 2x2 + 3x3 ….) + 3(1 + x + x2 = x3 …)\n\n0 . n n G x an x ∞ = =↔\n\n= 2 3 1 2 (1 2 3 4 ...)\n3 1\nx x x x x\n+\n+\n+\n+\n\n−\n\n= 2 1 3 2 1 (1- ) x x x\n+ −\n\n= 2 2 3 (1 1 (1 (1 x x x x x −\n+\n− − −\n\n=\n\n2 2 2 3(1 2 3 3 (1 (1 x x x x x x\n+\n−\n+ −\n= − − = 2 3 (1 x x − −",
-    "id": "pyq_15_245"
+    "id": "pyq_15_245",
+    "q_snippet": "snippets/q_pyq_15_245.webp"
   },
   {
     "num": 12,
@@ -4179,7 +4625,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.37",
     "answerKey": "15 to 15",
     "solution": "2 1 . 1) 1 1! 2! (1 )n n x n n x x\n+\n= +\n+\n− 3 1)( 2) ... 3! n n n x\n+\n+\n+\n\n2 3 1\n3 2\n3 4\n3 4 5\n3 1 2 1! 2! 3! (1 n z ↔ ↔ ↔↔ = = +\n+\n+\n− …\n\n= 2 3 1 3 6 10 .... z z z\n+\n+\n+\n\n2 3 3 1\n1 3\n6 10 . 1 z z z z = +\n+\n+\n−\n\n)[ 2 3 3 1 1\n1 3\n6 10 ... 1 z z z z z z\n+\n=\n+\n+\n+\n+\n−\n\n= 1 + 3z + 6z2 + 10z3 … z + 3z2 + 6z3 + 10z4…\n\n2 3 3 1 1 4 9 16 .... (1 z z z z z\n+\n= + =\n+\n+\n−\n\n0 2 3 0 1 2 3 1 .... a z a z a z a z\n+\n+\n+\n+\n\n0 2 1 3 1 9 4 16 a a a a = = = =\n\n0 3 0 3 ! 16 a a a a = = − = 16 - 1 = 15",
-    "id": "pyq_16_246"
+    "id": "pyq_16_246",
+    "q_snippet": "snippets/q_pyq_16_246.webp",
+    "sol_snippet": "snippets/sol_pyq_16_246.webp"
   },
   {
     "num": 13,
@@ -4196,7 +4644,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.37",
     "answerKey": "a",
     "solution": "Ln = Ln-1 + Ln-2, for n > 3\n\nL1 =1 and L2 = 3\n\nPutting L = 1 and 2 in option one, we get\n\n1 1 1 1 5 1 5 L 2 2\n+\n− =\n+\n\n1 1 2 2 =\n+\n= 1\n\n2 2 2 1 5 1 5 L 2 2\n+\n− =\n+\n\n= (a + b)2 + (a - b)2\n\n= 2(a2 + b2)\n\n1 5 2 4 4 =\n+\n\n6 2 3 4 = × =\n\nTherefore option (a) is correct.",
-    "id": "pyq_15_247"
+    "id": "pyq_15_247",
+    "q_snippet": "snippets/q_pyq_15_247.webp",
+    "sol_snippet": "snippets/sol_pyq_15_247.webp"
   },
   {
     "num": 14,
@@ -4213,7 +4663,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.37",
     "answerKey": "197.9 to 198.1",
     "solution": "an = 6n2 +2n + an-1.\n\n= 6n2 = 2n + 6(n - 1)2 + 2(n - 1) + an-2.\n\n= 6n2 + 2n + 6(n - 1)2 + 2(n - 1) + 6(n - 2)2\n\n+ 2(n - 2) …..\n\n= 6 (n2 + (n - 1)2 + (n - 2)2 + … + 2[n + (n - 1) + (n - 2)…1]\n\n= 1)(2 1) 1) 6 2 6 2 n n n n n\n+\n+\n+\n+\n\n= n(n + 1) (2n +1) + n(n + 1)\n\n= n(n + 1) [2n + 1 +1] = n(n + 1) (2n + 2)\n\n= 2n(n + 1) (n + 1) = 2n(n + 1)2\n\nDiscrete mathematics\n\nan = 2n(n + 1)2, n = 99\n\na99 = 2 × 99 (99 + 1)2\n\n= 198 (102)2 = 198 × 104.",
-    "id": "pyq_16_248"
+    "id": "pyq_16_248",
+    "q_snippet": "snippets/q_pyq_16_248.webp",
+    "sol_snippet": "snippets/sol_pyq_16_248.webp"
   },
   {
     "num": 15,
@@ -4230,7 +4682,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.38",
     "answerKey": "10 to 10",
     "solution": "3 2 5 5 10 C C = = (x3 + x4 + x5 +x6+…)3\n\n3 3x [1 + x + x 2 + x3 +…]3\n\n3 3 9 9 1 1 1 x x x x − )= −\n\n−\n\n= x9 3 3 .... 3 .. C x − −\n\n= ( ) ( ) 3 3 3 3 9 12 .... 1 5 5 C C x x x x −× =\n\n1 1 x −= 1 + x + x 2 + x3 + x4+….\n\n3 3 3\n-3\n1 3\n3 1\nC C = −\n+ −\n5 5 3 2 10 C C = = =",
-    "id": "pyq_15_249"
+    "id": "pyq_15_249",
+    "q_snippet": "snippets/q_pyq_15_249.webp",
+    "sol_snippet": "snippets/sol_pyq_15_249.webp"
   },
   {
     "num": 16,
@@ -4247,7 +4701,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.38",
     "answerKey": "b",
     "solution": "a1 2 bit 3 bit 0 00 000 1 01 001 a1 = 2 10 010\n\n11 011\n\na2 = 3 100\n\n101\n\n110\n\n111\n\na3 = 5\n\nan = an-1 + an-2",
-    "id": "pyq_16_250"
+    "id": "pyq_16_250",
+    "q_snippet": "snippets/q_pyq_16_250.webp",
+    "sol_snippet": "snippets/sol_pyq_16_250.webp"
   },
   {
     "num": 17,
@@ -4264,7 +4720,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "10.38",
     "answerKey": "a",
     "solution": "Do not 11\n\n1 bit 2 bit 3bit 0 00 000 1 01 001 a1 = 2 10 010\n\n11 011\n\na2 = 2 100\n\n101\n\n110\n\n111\n\na3 = 6\n\na2 = 2\n\na1 = 2\n\na3 = 6\n\na1 = a2 = 3 a3 = 6\n\nan = an-1 + an-2\n\ncontain 11\n\n2n - an= 2n-1 - an-1 + 2n-2 - an-2\n\n(2n - 2n-1-2n-2) + an-1 + an-2 = an\n\n2n-2(22-21-1) + an-1 + an-2 = an\n\n2n-2 + an-1 + an-2 = an\n\nρρρ",
-    "id": "pyq_15_251"
+    "id": "pyq_15_251",
+    "q_snippet": "snippets/q_pyq_15_251.webp"
   },
   {
     "num": 1,
@@ -4281,7 +4738,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.5",
     "answerKey": "a, c",
     "solution": "Given f is 'n' and g is \"n2\" we can conclude that f(n) = O(g) that is f(n) can be smaller than or equal to O(g).",
-    "id": "pyq_22_252"
+    "id": "pyq_22_252",
+    "q_snippet": "snippets/q_pyq_22_252.webp",
+    "sol_snippet": "snippets/sol_pyq_22_252.webp"
   },
   {
     "num": 2,
@@ -4298,7 +4757,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.5",
     "answerKey": "a, d",
     "solution": "f1(n) = n n n n n ... 2 4 8 2k\n+\n+\n+\n+\n\n= 0 1 n 2 k i i = ↔\n\n= k 1 n 1 2\n\n−\n\n= n - k n 2 = n - 1 = O(n)\n\n1 2 f n O n ;f n O n = =",
-    "id": "pyq_23_253"
+    "id": "pyq_23_253",
+    "q_snippet": "snippets/q_pyq_23_253.webp",
+    "sol_snippet": "snippets/sol_pyq_23_253.webp"
   },
   {
     "num": 3,
@@ -4315,7 +4776,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.5",
     "answerKey": "a",
     "solution": "f(n2) = θ((f(n)2)\n\nf(n) = n\n\nf(n2) = n2\n\n(f(n))2 = n2\n\nf(n) = 2n, (f(n))2 = (2n)2 = 22n\n\nf(n2) = ( 2 2 n 2n f n 2 ;2 =\n\nn2; 2n.log2\n\nn2 > 2n.",
-    "id": "pyq_24_254"
+    "id": "pyq_24_254",
+    "q_snippet": "snippets/q_pyq_24_254.webp",
+    "sol_snippet": "snippets/sol_pyq_24_254.webp"
   },
   {
     "num": 4,
@@ -4332,7 +4795,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.5",
     "answerKey": "a",
     "solution": "n. log < n3/2 < nlogn < 2n\n\n3 2 4 1 f f f < f\n\nAlgorithms",
-    "id": "pyq_22_255"
+    "id": "pyq_22_255",
+    "q_snippet": "snippets/q_pyq_22_255.webp",
+    "sol_snippet": "snippets/sol_pyq_22_255.webp"
   },
   {
     "num": 5,
@@ -4349,7 +4814,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.6",
     "answerKey": "d",
     "solution": "n logn n 10 ; n ; n\n\n2 10\nn.log ;(logn) ;\nn.logn\n\nf2 < f3 < f1",
-    "id": "pyq_23_256"
+    "id": "pyq_23_256",
+    "q_snippet": "snippets/q_pyq_23_256.webp"
   },
   {
     "num": 6,
@@ -4366,7 +4832,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.6",
     "answerKey": "b",
     "solution": "n grows faster than log and slower than linear whereas n grows linearly and 100 n decreases with n.",
-    "id": "pyq_24_257"
+    "id": "pyq_24_257",
+    "q_snippet": "snippets/q_pyq_24_257.webp",
+    "sol_snippet": "snippets/sol_pyq_24_257.webp"
   },
   {
     "num": 7,
@@ -4383,7 +4851,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.6",
     "answerKey": "d",
     "solution": "f(n) = n; g(n) = n1+ sin n\n\nsin value ranges from -1 to +1 (using trichotomy property)",
-    "id": "pyq_22_258"
+    "id": "pyq_22_258",
+    "q_snippet": "snippets/q_pyq_22_258.webp",
+    "sol_snippet": "snippets/sol_pyq_22_258.webp"
   },
   {
     "num": 8,
@@ -4400,7 +4870,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.6",
     "answerKey": "c",
     "solution": "2 3 i n(n 1) 2\n+\n\n=\n\n↔\n\n= O(n4)\n\n= Ω(n4)\n\n= Θ(n4)",
-    "id": "pyq_23_259"
+    "id": "pyq_23_259",
+    "q_snippet": "snippets/q_pyq_23_259.webp",
+    "sol_snippet": "snippets/sol_pyq_23_259.webp"
   },
   {
     "num": 9,
@@ -4417,7 +4889,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.6",
     "answerKey": "a",
     "solution": "1. Find:\nlogn;\n\n2. Insert: N\n\n3. Delete: logn\n\n4. Decrement key: logn Data Structur e FIND INSERT DELETE DEC\n- KEY\nTotal time Unsorted Array N. logn N logn logn N. log n Min- Heap N. logn N.log N (log n)3/2 (log n)3/2 N.log N Sorted Array (log n)3/2 N2 N. log n N. log n N2 Sorted D.L.L N. log n N2 log n N. log n N2",
-    "id": "pyq_24_260"
+    "id": "pyq_24_260",
+    "q_snippet": "snippets/q_pyq_24_260.webp"
   },
   {
     "num": 10,
@@ -4434,7 +4907,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.6",
     "answerKey": "c",
     "solution": "B(n) ≤ A(n) ≤ W(n)\n\n∴ A(n) = O(W(n))",
-    "id": "pyq_22_261"
+    "id": "pyq_22_261",
+    "q_snippet": "snippets/q_pyq_22_261.webp",
+    "sol_snippet": "snippets/sol_pyq_22_261.webp"
   },
   {
     "num": 11,
@@ -4451,7 +4926,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.6",
     "answerKey": "d",
     "solution": "n n logn 2 2 2 2 n n n.log 2 nlogn (logn) n nlogn (logn)\n\nTherefore: h f g\n\nAsymptotic Analysis",
-    "id": "pyq_23_262"
+    "id": "pyq_23_262",
+    "q_snippet": "snippets/q_pyq_23_262.webp",
+    "sol_snippet": "snippets/sol_pyq_23_262.webp"
   },
   {
     "num": 12,
@@ -4468,7 +4945,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.7",
     "answerKey": "a",
     "solution": "For the given scenario we can observe that: • n1/3 < n7/4 and n1/3 < nlog9n • 1.0000001n < en and 1.0000001n < n7/4 • nlog9n < 1.0000001n • n7/4 is asymptotically larger than nlog9n. (If we take n common from both the functions then n3/4 is larger than log9n). • Thus, n1/3 < nlog9n < n7/4 < 1.0000001n < en.",
-    "id": "pyq_24_263"
+    "id": "pyq_24_263",
+    "q_snippet": "snippets/q_pyq_24_263.webp"
   },
   {
     "num": 13,
@@ -4485,7 +4963,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.7",
     "answerKey": "d",
     "solution": "Total comparision's: (1 + 2 + 3 + … + n - 1)\n\n: n(n 1) 2 −\n\n: O(n2)\n\n: Ω(n2)\n\n: Θ (n2)",
-    "id": "pyq_22_264"
+    "id": "pyq_22_264",
+    "q_snippet": "snippets/q_pyq_22_264.webp",
+    "sol_snippet": "snippets/sol_pyq_22_264.webp"
   },
   {
     "num": 14,
@@ -4502,7 +4982,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.7",
     "answerKey": "c",
     "solution": "i = 1, n, +1\n\nj =1, n, +i\n\ni = 1, i = 2, i = 3\n\nn n j 1, n, j = , j 2 3 = =\n\nn n n n 2 3 n\n+\n+\n+\n+\n\nn 1 1 n =\n\n↔x x\n\nT(n) = n.logn = Θ(n.logn)",
-    "id": "pyq_23_265"
+    "id": "pyq_23_265",
+    "q_snippet": "snippets/q_pyq_23_265.webp",
+    "sol_snippet": "snippets/sol_pyq_23_265.webp"
   },
   {
     "num": 15,
@@ -4519,7 +5001,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.7",
     "answerKey": "2.2 to 2.4",
     "solution": "T(n) = 5.T(n/2) + C\n\nFirst check C is it 2 log 5 O n , −∈ yes\n\n2 log 5 T(n)is n n ∴ Θ = Θ",
-    "id": "pyq_24_266"
+    "id": "pyq_24_266",
+    "q_snippet": "snippets/q_pyq_24_266.webp"
   },
   {
     "num": 16,
@@ -4536,7 +5019,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.7",
     "answerKey": "d",
     "solution": "[log logn + log logn + … +]n\n\nreturn(q) = n.log logn\n\nfor (i = 1; i < n; ++i): n\n\nfor (j = n; j > 1; j = j /2): log n\n\nfor (k =1; k < p; k = k*2): log p(log log n)",
-    "id": "pyq_22_267"
+    "id": "pyq_22_267",
+    "q_snippet": "snippets/q_pyq_22_267.webp",
+    "sol_snippet": "snippets/sol_pyq_22_267.webp"
   },
   {
     "num": 17,
@@ -4553,7 +5038,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.7",
     "answerKey": "b",
     "solution": "•\nfor (i = n/2; i < = n; i++) : n\n2 •\nfor(j = 2; j < = n; j = j*2)\nk = k + n/2; : n 2 log n\n\nOverall Complexity: n n .logn 2 2\n\n.",
-    "id": "pyq_23_268"
+    "id": "pyq_23_268",
+    "q_snippet": "snippets/q_pyq_23_268.webp",
+    "sol_snippet": "snippets/sol_pyq_23_268.webp"
   },
   {
     "num": 18,
@@ -4570,7 +5057,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.7",
     "answerKey": "c",
     "solution": "10.n.log10n < 0.0001n2\n\nk 4 2 .k<10 .10 − k\n\nk 5 10 k 10\n\n⇒ k = 6 ⇒ 6 5 10 6 10 10\n\n∴ k = 6\n\nAlgorithms",
-    "id": "pyq_24_269"
+    "id": "pyq_24_269",
+    "q_snippet": "snippets/q_pyq_24_269.webp",
+    "sol_snippet": "snippets/sol_pyq_24_269.webp"
   },
   {
     "num": 19,
@@ -4587,7 +5076,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.8",
     "answerKey": "a",
     "solution": "T(n) = T(n/3) + cn\n\na = 1; b = 3; f(n) = cn\n\nMaster method:\n\nI.\ncn is O(n0 - ∈), dissatified\n\nII. cn is Θ(n0·logkn), dissatified\n\nIII. cn is it Ω(n0 + ∈) fn ∈ = 1\na. f(n/b) ≤ δ.f(n) satisfied\n\n1 ⋅ cn 3  ≤ δ.cn; 𝛿  = 1 3 < 1\n\n∴ T(n) is Θ(f(n))\n\nΘ(n)",
-    "id": "pyq_22_270"
+    "id": "pyq_22_270",
+    "q_snippet": "snippets/q_pyq_22_270.webp"
   },
   {
     "num": 20,
@@ -4604,7 +5094,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.8",
     "answerKey": "c",
     "solution": "T(n) = T(n/2) + T(2n/5) + 7n, n > 1\n\nT(n/2) = T(n/4) + T(2n/10) + 7n/2\n\nT(2n/5) = T(2n/10) + T(4n/25) + 7.2n/5\n\nRecursive Tree\n\nTotal time = an + b = O(n) = Ω(n) = θ(n).",
-    "id": "pyq_23_271"
+    "id": "pyq_23_271",
+    "q_snippet": "snippets/q_pyq_23_271.webp",
+    "sol_snippet": "snippets/sol_pyq_23_271.webp"
   },
   {
     "num": 21,
@@ -4621,7 +5113,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.8",
     "answerKey": "b",
     "solution": "T(n) = T(n1/a) + 1; T(b) = 1\n\nT(n) = T(n1/a) + 1\n\n…(1)\n\n2 1/a 1/a T n T n 1 =\n+\n\n…(2)\n\n2 1/a T(n) T n 2 =\n+\n\n…(3)\n\n3 1/a T n 3 =\n+\n\n…(4)\n\nK 1/a T n K =\n+\n\n…(5)\n\n= T(b) + loga (logbn)\n\n= 1 + loga . logbn\n\nK 1/a n b =\n\n2 2 K 1 .log n log b a =\n\nK K 2 b 2 log n a a log n log b = ⇒ =\n\n∴ K = loga logbn\n\nT(n) = θ(loga . logbn)",
-    "id": "pyq_24_272"
+    "id": "pyq_24_272",
+    "q_snippet": "snippets/q_pyq_24_272.webp"
   },
   {
     "num": 22,
@@ -4638,7 +5131,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.8",
     "answerKey": "b",
     "solution": "T(n) 2.T n 1 =\n+\n\nT(n) = 2.T(n1/2) + 1\n\n…(1)\n\nT(n1/2) = 2.T(n1/4) + 1\n\n…(2)\n\nT(n) = 2[2.T(n1/4) + 1] +1\n\n= 4.T(n1/4) + 3\n\n…(3)\n\n2 2 1/2 2 2 .T n 2 - 1 =\n+\n\n…(3)\n\nK /2 K K 1 2 .T n 2\n- 1\n=\n+\n\n…(4)\n\nK 1/2 n 2 =\n\n2 K 1 .logn log 2 2 =\n\n2K = log n\n\nT(n) = logn.T(2) + log n - 1\n\nT(n) = 2.logn + log n - 1\n\nAsymptotic Analysis\n\nT(n) = Θ(log n)",
-    "id": "pyq_22_273"
+    "id": "pyq_22_273",
+    "q_snippet": "snippets/q_pyq_22_273.webp",
+    "sol_snippet": "snippets/sol_pyq_22_273.webp"
   },
   {
     "num": 23,
@@ -4655,7 +5150,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.9",
     "answerKey": "a",
     "solution": "a = 2; b = 2; f(n) = log n\n\nlog n is it O(n1 - ∈) , yes, here ∈ = 0.5\n\n∴ T(n) is Θ(n)",
-    "id": "pyq_23_274"
+    "id": "pyq_23_274",
+    "q_snippet": "snippets/q_pyq_23_274.webp",
+    "sol_snippet": "snippets/sol_pyq_23_274.webp"
   },
   {
     "num": 24,
@@ -4672,7 +5169,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.9",
     "answerKey": "a",
     "solution": "n = 22k; k ≥ 0\n\nT(n) = n 2 T n 2\n\n↔\n+\n\n; T(1) = 1\n\n1 1 2 2 n T n 2 T n 2 = ↔\n+\n\n….(1)\n\n12 12 n n n T 2 T 2 4 2\n\n= ↔\n+\n\n…..(2)\n\n12 12 n n n T 2 T 4 8 4\n\n= ↔\n+\n\n12 1 1 1 2 2 2 12 n n T n 2 2 T n 4 2\n\n= ↔\n+\n+\n\n= 1 1 n 2 .T 2 n 2 n 4 )+\n+\n\n…..(3)\n\n= 12 12 n n\n2 2\nT 2 n 8 2\n\n↔\n+\n+\n\n= 32 n 2 T 3 n 8 ↔\n+\n\n…..(4)\n\n2 n T n 2 .T 4 n 16\n\n=\n+\n\n…..(5)\n\n= 2 n 2 T 2.2 n 2\n\n↔\n+\n\n= k 2.k n 2 T 2.k n 2\n\n↔\n+\n\n……(6)\n\n2k n 1 2 =\n\n⇒ n = 22k\n\n2k = logn\n\n⇒ k = logn 2\n\n= ( 12 2 log n 2 .T(1) 2\n+\nlogn . 2 . n\n\nn 1 n logn ↔+ ↔\n\nT n n 1 logn =\n+",
-    "id": "pyq_24_275"
+    "id": "pyq_24_275",
+    "q_snippet": "snippets/q_pyq_24_275.webp",
+    "sol_snippet": "snippets/sol_pyq_24_275.webp"
   },
   {
     "num": 1,
@@ -4689,7 +5188,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.14",
     "answerKey": "a",
     "solution": "n T n 2T 2, n > 2 2 =1, n = 2 =\n+\n\n3n T n\n- 2\n2 =",
-    "id": "pyq_25_276"
+    "id": "pyq_25_276",
+    "q_snippet": "snippets/q_pyq_25_276.webp",
+    "sol_snippet": "snippets/sol_pyq_25_276.webp"
   },
   {
     "num": 2,
@@ -4706,7 +5207,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.14",
     "answerKey": "b",
     "solution": "According to standard case of master's theorem option (b) is correct.\n\nMaster Theorem\n\nLet a ≥ 1 and b > 1 be constants, let f(n) be a function, and let T(n) be defined on the non- negative integers by the recurrence T(n) = aT(n/b) + f(n),\n\nwhere we interpret n/b to mean either n/b or n/b. Then T(n) has the following asymptotic bounds:\n\n1. If b log a f(n) n −∈ =\nfor some constant ε > 0,\nthen b log a T(n) = n Θ .\n\n2. If b log a f(n) = n , Θ then b log a logn T(n) n . = Θ\n\n3. If b log a + c f(n) = n Ω\nfor some constant ε > 0,\nand if f(n/b) ≤ cf(n) for some constant c < 1 and all sufficiently large n, then T(n) = Θ(f(n)).",
-    "id": "pyq_26_277"
+    "id": "pyq_26_277",
+    "q_snippet": "snippets/q_pyq_26_277.webp",
+    "sol_snippet": "snippets/sol_pyq_26_277.webp"
   },
   {
     "num": 3,
@@ -4723,7 +5226,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.14",
     "answerKey": "b",
     "solution": "• To compute the median of an array (n) = O(n) • To compute All medians of n - array(n)\n\n= n × O(n)\n\n= O(n2) • To compute median of all n-medians = O(n)\n\n2 2 Total time =O n O n O n\n+\n=",
-    "id": "pyq_27_278"
+    "id": "pyq_27_278",
+    "q_snippet": "snippets/q_pyq_27_278.webp",
+    "sol_snippet": "snippets/sol_pyq_27_278.webp"
   },
   {
     "num": 4,
@@ -4740,7 +5245,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.14",
     "answerKey": "c",
     "solution": "Divide and Conquer\n\nAlgorithm:\n\nMajority element (A, n, x) → O(logn)\n\n1. i = first occurrence of x in A.\n\nfrom left, using modified binary search\n\n2. if [] n A i A i 2 =\n+\n\nthem\n\nprint(A[i] is majority);\n\nelse\n\nprint (No);",
-    "id": "pyq_25_279"
+    "id": "pyq_25_279",
+    "q_snippet": "snippets/q_pyq_25_279.webp",
+    "sol_snippet": "snippets/sol_pyq_25_279.webp"
   },
   {
     "num": 5,
@@ -4757,7 +5264,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.15",
     "answerKey": "29 to 29",
     "solution": "[Maximum sum sub-array]\n\n[By Kadane's algorithm]\n\nS(2, 11) = (6 + 3 - 1 - 2 + 13 + 4 - 9 - 1 + 4 + 12) = 29",
-    "id": "pyq_26_280"
+    "id": "pyq_26_280",
+    "q_snippet": "snippets/q_pyq_26_280.webp",
+    "sol_snippet": "snippets/sol_pyq_26_280.webp"
   },
   {
     "num": 6,
@@ -4774,7 +5283,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.15",
     "answerKey": "d",
     "solution": "1 2 3 4 5 6 A: 10 5 8 12 3 9\n\nConsider first three elements: 10, 5, 8 from the array, the element that is neither maximum nor minimum is 8. The time required to find it requires only three comparisons that is constant time complexity.",
-    "id": "pyq_27_281"
+    "id": "pyq_27_281",
+    "q_snippet": "snippets/q_pyq_27_281.webp",
+    "sol_snippet": "snippets/sol_pyq_27_281.webp"
   },
   {
     "num": 7,
@@ -4791,7 +5302,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.15",
     "answerKey": "148 to 148",
     "solution": "Maximum - Minimum(Using Divide and Conquer strategy) : 3n - 2 2\n\nn T n 2T 2,n 2 2 =\n+\n\n= 1, n = 2\n\n= 0, n = 1\n\n3 100 - 2\n2 ×\n\n: 3 × 50 - 2 = 150 - 2 = 148",
-    "id": "pyq_25_282"
+    "id": "pyq_25_282",
+    "q_snippet": "snippets/q_pyq_25_282.webp",
+    "sol_snippet": "snippets/sol_pyq_25_282.webp"
   },
   {
     "num": 8,
@@ -4808,7 +5321,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.15",
     "answerKey": "b",
     "solution": "[a0, a1 …..an-1] ⇒ x = a0 + 1 2 n-1 n-1 a a a ...... 2 4 2\n+\n+\n+\n\n[a1, a2 …..an-1] ⇒ y = a1 + 3 2 n-1 n-1 a a a ...... 2 4 2\n+\n+\n+\n\n0 y X max y, a 2 =\n+\n\n1 2 n-1 0 n-1 a a a a .... 2 4 2\n+\n+\n+\n+\n\n1 2 0 a a a .... 2 4\n+\n+\n+\n0 4 a 2\n+",
-    "id": "pyq_26_283"
+    "id": "pyq_26_283",
+    "q_snippet": "snippets/q_pyq_26_283.webp",
+    "sol_snippet": "snippets/sol_pyq_26_283.webp"
   },
   {
     "num": 9,
@@ -4825,7 +5340,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.15",
     "answerKey": "0.08 to 0.08",
     "solution": "In the worst case the pivot can get fixed up at\neither the first or last position;\n\n∴ 1 1 2 Probability 25 25 25 =\n+\n= =",
-    "id": "pyq_27_284"
+    "id": "pyq_27_284",
+    "q_snippet": "snippets/q_pyq_27_284.webp",
+    "sol_snippet": "snippets/sol_pyq_27_284.webp"
   },
   {
     "num": 10,
@@ -4842,7 +5359,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.15",
     "answerKey": "b",
     "solution": "Algorithms\n\nFor worst case scenario, the pivot should get fixed either at the first or at the last position.\n\nT n T n -1 O n C =\n+\n+",
-    "id": "pyq_25_285"
+    "id": "pyq_25_285",
+    "q_snippet": "snippets/q_pyq_25_285.webp",
+    "sol_snippet": "snippets/sol_pyq_25_285.webp"
   },
   {
     "num": 11,
@@ -4859,7 +5378,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.16",
     "answerKey": "a",
     "solution": "The pivot can get fixed up at the first or last place in the list at all levels leading to the worst case behaviour = O(n2).",
-    "id": "pyq_26_286"
+    "id": "pyq_26_286",
+    "q_snippet": "snippets/q_pyq_26_286.webp",
+    "sol_snippet": "snippets/sol_pyq_26_286.webp"
   },
   {
     "num": 12,
@@ -4876,7 +5397,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.16",
     "answerKey": "c",
     "solution": "1 So 1 r\n\nt\n\ne\n\nd l\n\ni\n2 3 4 5\nst t ¯ t1 is O(n2)\n\n2 Uns 4 or 5 t\n\ned 1 i 3 l 2 st t ¯ t2 is O(n log n)\n\nO(n2) > O(n log n)",
-    "id": "pyq_27_287"
+    "id": "pyq_27_287",
+    "q_snippet": "snippets/q_pyq_27_287.webp",
+    "sol_snippet": "snippets/sol_pyq_27_287.webp"
   },
   {
     "num": 13,
@@ -4893,7 +5416,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.16",
     "answerKey": "b",
     "solution": "n 3n T n T T O n 4 4 =\n+\n+\n\nn 3n T n O n O n T T 4 4 =\n+\n+\n+\n\nBy recursion tree method = Θ(nlogn)",
-    "id": "pyq_25_288"
+    "id": "pyq_25_288",
+    "q_snippet": "snippets/q_pyq_25_288.webp",
+    "sol_snippet": "snippets/sol_pyq_25_288.webp"
   },
   {
     "num": 14,
@@ -4910,7 +5435,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.16",
     "answerKey": "b",
     "solution": "In the given scenario the list is divided into two sublists with n/5 and 4n/5 elements and n is common so the answer is T(n) ≤ T (n/5) + T (4n/5)\n+ n.",
-    "id": "pyq_26_289"
+    "id": "pyq_26_289",
+    "q_snippet": "snippets/q_pyq_26_289.webp",
+    "sol_snippet": "snippets/sol_pyq_26_289.webp"
   },
   {
     "num": 15,
@@ -4927,7 +5454,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.16",
     "answerKey": "b",
     "solution": "30 sec → 64 elements\n\n6 minutes → n = ?\n\nTime for merge sort = n∙logn\n\n= 64∙log64\n\n64.6 units\n\n30 sec - 64.6 units\n\n? - 1 unit\n\n30 1 unit s 64 6 = ×\n\n30 1 unit s 64 6 = ×\n\n(n) ? - 360 s\n\n12360 64 6 unit ___'n'elements 30 × ×\n\n2 12 6 64____n log n ×× ↔\n\n4608 = n∙logn\n\nn 512 512 9 4608 = = ×=\n\n∴ n = 512\n\nDivide and Conquer",
-    "id": "pyq_27_290"
+    "id": "pyq_27_290",
+    "q_snippet": "snippets/q_pyq_27_290.webp",
+    "sol_snippet": "snippets/sol_pyq_27_290.webp"
   },
   {
     "num": 16,
@@ -4944,7 +5473,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.17",
     "answerKey": "b",
     "solution": "Merg sort (n) = n log n\n\n(n log n) n = n2 log n\n\na b x y p q r t l m c d y z k q",
-    "id": "pyq_25_291"
+    "id": "pyq_25_291",
+    "q_snippet": "snippets/q_pyq_25_291.webp"
   },
   {
     "num": 17,
@@ -4961,7 +5491,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.17",
     "answerKey": "d",
     "solution": "Quicksort using the last element as pivot = n2\n\nSelection Sort = n2\n\nMergesort = n log n\n\nInsertion sort = n",
-    "id": "pyq_26_292"
+    "id": "pyq_26_292",
+    "q_snippet": "snippets/q_pyq_26_292.webp",
+    "sol_snippet": "snippets/sol_pyq_26_292.webp"
   },
   {
     "num": 18,
@@ -4978,7 +5510,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.17",
     "answerKey": "d",
     "solution": "• For insertion sort, we need to run two loops both of order n, so worst case time complexity is Θ(n2). • Merge sort takes Θ(n log n) in all cases. • Quick sort takes Θ(n2) in worst case if the array is sorted or almost sorted.",
-    "id": "pyq_27_293"
+    "id": "pyq_27_293",
+    "q_snippet": "snippets/q_pyq_27_293.webp",
+    "sol_snippet": "snippets/sol_pyq_27_293.webp"
   },
   {
     "num": 19,
@@ -4995,7 +5529,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.17",
     "answerKey": "d",
     "solution": "• If the input is already sorted then running quick sort will give worst case time complexity of Θ(n2). • Bubble sort runs in constant time complexity. • Merge sort runs in Θ(n log n). • Insertion sort will run in Θ(n) time only.",
-    "id": "pyq_25_294"
+    "id": "pyq_25_294",
+    "q_snippet": "snippets/q_pyq_25_294.webp",
+    "sol_snippet": "snippets/sol_pyq_25_294.webp"
   },
   {
     "num": 20,
@@ -5012,7 +5548,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.17",
     "answerKey": "b",
     "solution": "In selection sort the maximum number of swaps can be of order of n that is selecting the smallest element among all other elements and placing it to the correct position.",
-    "id": "pyq_26_295"
+    "id": "pyq_26_295",
+    "q_snippet": "snippets/q_pyq_26_295.webp"
   },
   {
     "num": 21,
@@ -5029,7 +5566,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.17",
     "answerKey": "a",
     "solution": "Considering the worst case, there will be one swap in each loop except the last one, that is n-1 swaps\nfor 1 to n. Hence the number of swaps in the worst\ncase is Θ(n).",
-    "id": "pyq_27_296"
+    "id": "pyq_27_296",
+    "q_snippet": "snippets/q_pyq_27_296.webp",
+    "sol_snippet": "snippets/sol_pyq_27_296.webp"
   },
   {
     "num": 22,
@@ -5046,7 +5585,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.17",
     "answerKey": "b",
     "solution": "Heap with 'n' element\n\nHeapify method / Build heap\n\nTime: 2n n Θ = Θ\n\nAlgorithms",
-    "id": "pyq_25_297"
+    "id": "pyq_25_297",
+    "q_snippet": "snippets/q_pyq_25_297.webp",
+    "sol_snippet": "snippets/sol_pyq_25_297.webp"
   },
   {
     "num": 23,
@@ -5063,7 +5604,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.18",
     "answerKey": "c",
     "solution": "• Maximum element in a heap lies at the leaf- level.\n• Maximum of n/2 elements;\nn O n 2 )= Θ",
-    "id": "pyq_26_298"
+    "id": "pyq_26_298",
+    "q_snippet": "snippets/q_pyq_26_298.webp"
   },
   {
     "num": 24,
@@ -5080,7 +5622,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.18",
     "answerKey": "511 to 511",
     "solution": "Maximum will lie at the leaf.\n\nNumber of nodes at leaf = 1023 512 2\n\n= =\n\nNumber of comparisons needed = 512 - 1 = 511",
-    "id": "pyq_27_299"
+    "id": "pyq_27_299",
+    "q_snippet": "snippets/q_pyq_27_299.webp",
+    "sol_snippet": "snippets/sol_pyq_27_299.webp"
   },
   {
     "num": 25,
@@ -5097,7 +5641,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.18",
     "answerKey": "80 to 80",
     "solution": "• Left subtree heap: 6C3 • Left and Right Nodes\n\nCan be arranged in 2! way ⇒ Total so far: (6C3 * 2!) Total number of possibilities = (6C3) * (2!) * (2!) 6 = 5 4 3 2 × × × 2 2 × × = 20 * 2 * 2 = 80.",
-    "id": "pyq_25_300"
+    "id": "pyq_25_300",
+    "q_snippet": "snippets/q_pyq_25_300.webp",
+    "sol_snippet": "snippets/sol_pyq_25_300.webp"
   },
   {
     "num": 26,
@@ -5114,7 +5660,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.18",
     "answerKey": "8 to 8",
     "solution": "The maximum depth at which integer 9 can appear is 8 for the given condition.",
-    "id": "pyq_26_301"
+    "id": "pyq_26_301",
+    "q_snippet": "snippets/q_pyq_26_301.webp"
   },
   {
     "num": 27,
@@ -5131,7 +5678,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.18",
     "answerKey": "d",
     "solution": "The minimum number of interchanges needed to convert it into a max heap = 1 + 1 + 1 = 3.\n\nDivide and Conquer",
-    "id": "pyq_27_302"
+    "id": "pyq_27_302",
+    "q_snippet": "snippets/q_pyq_27_302.webp",
+    "sol_snippet": "snippets/sol_pyq_27_302.webp"
   },
   {
     "num": 28,
@@ -5148,7 +5697,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.19",
     "answerKey": "b",
     "solution": "A: 40 30 20 10 15 16 17 8 4\n\n1 2 3 4 5 6 7 8 9\n\nA: 40, 35, 20, 10, 30, 16, 17, 8, 4, 15",
-    "id": "pyq_25_303"
+    "id": "pyq_25_303",
+    "q_snippet": "snippets/q_pyq_25_303.webp"
   },
   {
     "num": 29,
@@ -5165,7 +5715,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.19",
     "answerKey": "c",
     "solution": "Time of heap sort: O(n log n)\n\nO logn loglogn O lognloglogn ×\n\nTime of heap sort = n.log n\n\nTime = log n logn log log log n loglogn\n\n×\n\n= log n loglogn - logloglogn log n ×\n\n= log n logn - logloglogn logn log logn × = Θ",
-    "id": "pyq_26_304"
+    "id": "pyq_26_304",
+    "q_snippet": "snippets/q_pyq_26_304.webp"
   },
   {
     "num": 30,
@@ -5182,7 +5733,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.19",
     "answerKey": "b",
     "solution": "The max heap property is only satisfied by option\n(b), as in option (a) the heap is not a complete binary\ntree or an almost complete binary tree.\n\nIn option (c) max heap property is not satisfied as node value 8 is the leaf node and a child of a value that is smaller than itself, that is 5.\n\nIn option (d) max heap property is violated as node value 10 is in leaf node and a child of a value that is smaller than itself.\n\nHowever, in option (b) the max heap property is satisfied.",
-    "id": "pyq_27_305"
+    "id": "pyq_27_305",
+    "q_snippet": "snippets/q_pyq_27_305.webp",
+    "sol_snippet": "snippets/sol_pyq_27_305.webp"
   },
   {
     "num": 1,
@@ -5199,7 +5752,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.23",
     "answerKey": "358 to 358",
     "solution": "2. (a)",
-    "id": "pyq_29_306"
+    "id": "pyq_29_306",
+    "q_snippet": "snippets/q_pyq_29_306.webp",
+    "sol_snippet": "snippets/sol_pyq_29_306.webp"
   },
   {
     "num": 2,
@@ -5216,7 +5771,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.23",
     "answerKey": "a",
     "solution": "a → 1\n\nb → 2\n\nc → 2\n\nd → 2\n\ne → 3\n\n<abbccddeee> : 3 + (3 + 3) + (2 + 2) + (2 + 2) + (2 + 2 + 2)\n\na = 100 (3)\n\nb = 101 (3)\n\nc = 00 (2)\n\nd = 01 (2)\n\ne = 11 (2)\n\n<abbccddeee> : 10010110100000101111111.\n\nAlgorithms",
-    "id": "pyq_30_307"
+    "id": "pyq_30_307",
+    "q_snippet": "snippets/q_pyq_30_307.webp",
+    "sol_snippet": "snippets/sol_pyq_30_307.webp"
   },
   {
     "num": 3,
@@ -5233,7 +5790,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.24",
     "answerKey": "225 to 225",
     "solution": "<P, Q, R, S, T> = <0.22, 0.34, 0.17, 0.19, 0.08\n\nP → 01 (2 bits)\n\nQ → 11 (2 bits)\n\nR → 101 (3 bits)\n\nS → 00 (2 bits)\n\nT → 100 (3 bits)\n\nn i 1 Average number of bits di.qi\nchar\n= =↔\n\n= 2 * 0.22 + 2 * 0.34 + 3 * 0.17 + 2 * 0.19 + 3 * 0.08\n\n= 0.44 + 0.68 + 0.51 + 0.38 + 0.24 = 2.25\n\nNumber of bits for 100 char's = 100 × 2.25 = 225.",
-    "id": "pyq_29_308"
+    "id": "pyq_29_308",
+    "q_snippet": "snippets/q_pyq_29_308.webp"
   },
   {
     "num": 4,
@@ -5250,7 +5808,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.24",
     "answerKey": "69 to 69",
     "solution": "Sum = 36 + 10 + 16 + 7 = 69.",
-    "id": "pyq_30_309"
+    "id": "pyq_30_309",
+    "q_snippet": "snippets/q_pyq_30_309.webp",
+    "sol_snippet": "snippets/sol_pyq_30_309.webp"
   },
   {
     "num": 5,
@@ -5267,7 +5827,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.24",
     "answerKey": "d",
     "solution": "In kruskals the edges are added in the non- increasing order. Only option (d) applies the algorithm correctly.",
-    "id": "pyq_29_310"
+    "id": "pyq_29_310",
+    "q_snippet": "snippets/q_pyq_29_310.webp"
   },
   {
     "num": 6,
@@ -5284,7 +5845,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.24",
     "answerKey": "a",
     "solution": "For the above graph statement, I follow but for the same graph statement II fails. The shortest path between node 2 and node 3 is of weight 3 but it is not unique. There are two paths: • Node 2 to Node 3 via Node 1. • Node 2 to Node 3.",
-    "id": "pyq_30_311"
+    "id": "pyq_30_311",
+    "q_snippet": "snippets/q_pyq_30_311.webp",
+    "sol_snippet": "snippets/sol_pyq_30_311.webp"
   },
   {
     "num": 7,
@@ -5301,7 +5864,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.24",
     "answerKey": "99 to 99",
     "solution": "1 1 1 1 1 1 2 3 4 99 100 V V V V ....V V ⎯⎯→ ⎯⎯→ ⎯⎯→ ⎯⎯→ ⎯⎯→\n\nNumber of edges needed = 99 × 1 = 99.",
-    "id": "pyq_29_312"
+    "id": "pyq_29_312",
+    "q_snippet": "snippets/q_pyq_29_312.webp",
+    "sol_snippet": "snippets/sol_pyq_29_312.webp"
   },
   {
     "num": 8,
@@ -5318,7 +5883,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.24",
     "answerKey": "4 to 4",
     "solution": "If x = 5, we can have 2 possible options\n\nThe number of spanning trees = 2C1 * 2C1\n\n= 2 * 2 = 4.\n\nGreedy Techniques",
-    "id": "pyq_30_313"
+    "id": "pyq_30_313",
+    "q_snippet": "snippets/q_pyq_30_313.webp",
+    "sol_snippet": "snippets/sol_pyq_30_313.webp"
   },
   {
     "num": 9,
@@ -5335,7 +5902,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.25",
     "answerKey": "a",
     "solution": "To the above graph we are adding a constant value 100. The M.S.T of the graph before adding the constant and after is shown below:\n\nAfter adding a constant 100 the shortest path from node 2 to node 3 = 107.\n\nAfter adding a constant 100 the path from node 2 to node 3 = 110.\n\nThis proves that even after adding a constant value to the edge weights the minimum spanning tree of the graph does not change.",
-    "id": "pyq_29_314"
+    "id": "pyq_29_314",
+    "q_snippet": "snippets/q_pyq_29_314.webp"
   },
   {
     "num": 10,
@@ -5352,7 +5920,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.25",
     "answerKey": "7 to 7",
     "solution": "The maximum possible weight that a minimum weight spanning tree of G can have is 7.",
-    "id": "pyq_30_315"
+    "id": "pyq_30_315",
+    "q_snippet": "snippets/q_pyq_30_315.webp",
+    "sol_snippet": "snippets/sol_pyq_30_315.webp"
   },
   {
     "num": 11,
@@ -5369,7 +5939,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.25",
     "answerKey": "b",
     "solution": "Given that V = a, b, c, d and E = ab, bc, cd, da, ac, let G = (V, E) be a graph.\n\n• Assign the following weights to the edges: ab = 1, bc = 2, cd = 4, da = 5, ac = 3. The MST abcd with cost 7 (= ab + bc + cd) does not include ac, which is obviously the cycle's lightest edge.\n\n• Assign the following weights to the edges: ab = 6, bc = 7, cd = 4, da = 5, and ac = 3. The MST bacd with cost 13 (= ba + ac + cd) includes ac since it is the cycle cdac's lightest edge.\n\nAlgorithms Therefore, the lightest edge may or may not be included in the MSTs of G.\n\n• Let e be the heaviest edge. Consider the least spanning tree that includes e. A cycle will be produced if we increase the spanning tree's edge count by one. Suppose we add edge e' to the spanning tree which generated cycle C. We can reduce the cost of the minimum spanning tree if we choose an edge other than e from C for removal which implies that e must not be in minimum spanning tree and we get a contradiction.",
-    "id": "pyq_29_316"
+    "id": "pyq_29_316",
+    "q_snippet": "snippets/q_pyq_29_316.webp",
+    "sol_snippet": "snippets/sol_pyq_29_316.webp"
   },
   {
     "num": 12,
@@ -5386,7 +5958,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.26",
     "answerKey": "d",
     "solution": "A Tree having 'n' vertices will always have (n - 1) edges.\n\n|V| = |E | + 1\n\nG T\n\nE : O (E ) : O(v)\n\nA tree having n vertices will always have n - 1 edges.",
-    "id": "pyq_30_317"
+    "id": "pyq_30_317",
+    "q_snippet": "snippets/q_pyq_30_317.webp",
+    "sol_snippet": "snippets/sol_pyq_30_317.webp"
   },
   {
     "num": 13,
@@ -5403,7 +5977,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.26",
     "answerKey": "d",
     "solution": "Destination-d-values Vertex selected a b c d e f g h\n{a}\n-\n1 ∞ ∞ ∞ ∞ ∞ ∞\n{a, b}\n-\n1 3 ∞ -2 ∞ ∞ ∞\n{a, b, e}\n-\n1 3 ∞ -2 0 ∞ ∞\n{a, b, e, f}\n-\n1 3 ∞ -2 0 3 ∞\n{a, b, e, f, g}\n-\n1 3 ∞ -2 0 3 5\n{a, b, e, f, g, c}\n-\n1\n3 6 -2 0 3 5\n{a, b, e, f, g, c, h}\n-\n1\n3 6 -2 0 3 5\n\nThus, the above graph computes the correct shorest path distance two all the vertices.",
-    "id": "pyq_29_318"
+    "id": "pyq_29_318",
+    "q_snippet": "snippets/q_pyq_29_318.webp",
+    "sol_snippet": "snippets/sol_pyq_29_318.webp"
   },
   {
     "num": 1,
@@ -5420,7 +5996,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.31",
     "answerKey": "d",
     "solution": "S A C E T → → → →",
-    "id": "pyq_36_319"
+    "id": "pyq_36_319",
+    "q_snippet": "snippets/q_pyq_36_319.webp",
+    "sol_snippet": "snippets/sol_pyq_36_319.webp"
   },
   {
     "num": 2,
@@ -5437,7 +6015,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.31",
     "answerKey": "a",
     "solution": "W(1, 3) + W(3, 2) + f(1) - f(3) + f(3) - f(2)\n\nW(1, 2) = 1 + 3 = 4\n\nW (1, 2) = Transformation of W(u, v) = W(1, 2) + f(1) - f(2).",
-    "id": "pyq_37_320"
+    "id": "pyq_37_320",
+    "q_snippet": "snippets/q_pyq_37_320.webp",
+    "sol_snippet": "snippets/sol_pyq_37_320.webp"
   },
   {
     "num": 3,
@@ -5454,7 +6034,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.31",
     "answerKey": "12 to 12",
     "solution": "Shortest path between 3 and 4 has to be minimum\n{x, 12}.\n\nAlgorithms\n\nThere can exist multiple shortest paths with same cost.\n\n<1, 2> = 2\n\n<1, 3> = {8, 5 + x} x = 2 = 3\n\n<1, 4> = 5\n\n0 2 8 5 2 0 5 8 W 8 5 0 x 5 8 x 0\n\n=\n\nAt least one shortest path must include edge cost\n'x';\n\nLet (4, r) = (3, 4)\n\n1. 3 - 4 = x\n\n2. 3 - 2 - 4 = 13 (Incorrect)\n\n3. 3 - 1 - 4 = 13 (Incorrect)\n\n4. 3 - 2 - 1 - 4 = 12\n\nx = 12",
-    "id": "pyq_38_321"
+    "id": "pyq_38_321",
+    "q_snippet": "snippets/q_pyq_38_321.webp",
+    "sol_snippet": "snippets/sol_pyq_38_321.webp"
   },
   {
     "num": 4,
@@ -5471,7 +6053,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.32",
     "answerKey": "b",
     "solution": "n = 4 n = 3 n = 4 n = 5 'n'\n\n3 + 4 :3 + 4 + 6 :3 + 2 (2 + 3) :3 + 4 + 6 + 8 :3 + 2 (2 + 3\n+ 4)\n:3 + 2 (2 + 3\n+ 4 +….+ n -\n1)\n\n: n -1 3 + 2 n\n-1\n3 2 2\n\n=\n+\n\n2 n - n - 2 2\n\nThe weight of minimum spanning tree is n2 - n + 1.",
-    "id": "pyq_36_322"
+    "id": "pyq_36_322",
+    "q_snippet": "snippets/q_pyq_36_322.webp",
+    "sol_snippet": "snippets/sol_pyq_36_322.webp"
   },
   {
     "num": 5,
@@ -5488,7 +6072,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.32",
     "answerKey": "c",
     "solution": "∴ The length of the path = (3 + 4 + 6 + 8 + 10)\n\nFrom V5 to V6 in MST = 31.",
-    "id": "pyq_37_323"
+    "id": "pyq_37_323",
+    "q_snippet": "snippets/q_pyq_37_323.webp"
   },
   {
     "num": 6,
@@ -5505,7 +6090,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.32",
     "answerKey": "a, b",
     "solution": "Graph Based Algorithm",
-    "id": "pyq_38_324"
+    "id": "pyq_38_324",
+    "q_snippet": "snippets/q_pyq_38_324.webp",
+    "sol_snippet": "snippets/sol_pyq_38_324.webp"
   },
   {
     "num": 7,
@@ -5522,7 +6109,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.33",
     "answerKey": "d",
     "solution": "W = 0 1 2\n3 4\n0 0\n1 8 1 4\n1 1\n0 12 4 9\n\n2 8\n12 0 7 3\n3 1\n4 7 0 2\n4 4\n9 3\n2 0\n\n1 2 3 4 1 0 12 4 9 2 12 0 7 3 3 4 7 0 2 4 9 3 2 0\n\nMinimum cost spanning tree =10",
-    "id": "pyq_36_325"
+    "id": "pyq_36_325",
+    "q_snippet": "snippets/q_pyq_36_325.webp"
   },
   {
     "num": 8,
@@ -5539,7 +6127,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.33",
     "answerKey": "b",
     "solution": "Vertex set 0 1 2 3 4\n{1}\n1\n-\n12 4 9\n{1, 0}\n1\n-\n9 2 5\n{1, 0, 3}\n1\n-\n9 2 4\n{1, 0, 3, 4}\n1\n-\n8 2 4\n\nDijkstra's algorithm\n\n1 - 0 - 3 - 2 = 1 + 1 + 7 = 9\n\n1 - 0 - 4 - 2 1 4 3 8 = +\n+\n=\n\nMinimum possible weight of a path P from vertex 1 to vertex 2 is 8.",
-    "id": "pyq_37_326"
+    "id": "pyq_37_326",
+    "q_snippet": "snippets/q_pyq_37_326.webp",
+    "sol_snippet": "snippets/sol_pyq_37_326.webp"
   },
   {
     "num": 9,
@@ -5556,7 +6146,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.33",
     "answerKey": "5040 to 5040",
     "solution": "x, y, z y, z, x z, x, y 3! x, z, y y, x, z z, y, x φ\n|||\nφ\n||\nφ\n||\nφ\n||\nφ\n|||\nφ\n|\n\nU = {1, 2, 3,}; 24 = V = {φ, {1}, {2}, {1, 2},\n{1, 3}, {2, 3}, {1, 2, 3}}\n\nB(φ) = 71\n\n= 7 * 6 * 5 * 4 * 3 * 2 * 1\n\n= 42 * 20 * 6 = 42 * 120\n\n= 5040\n\n{1, }\n3\n{1,2,3}\n{ }\n3\n{1}\n{ }\n2\n{ , }\n2 3\nφ\n{1, }\n2\n\nAlgorithms",
-    "id": "pyq_38_327"
+    "id": "pyq_38_327",
+    "q_snippet": "snippets/q_pyq_38_327.webp",
+    "sol_snippet": "snippets/sol_pyq_38_327.webp"
   },
   {
     "num": 10,
@@ -5573,7 +6165,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.34",
     "answerKey": "b",
     "solution": "If the Root has only one child it can never disconnect a tree on its removal. Therefore, option\n(b) is correct.",
-    "id": "pyq_36_328"
+    "id": "pyq_36_328",
+    "q_snippet": "snippets/q_pyq_36_328.webp"
   },
   {
     "num": 11,
@@ -5590,7 +6183,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.34",
     "answerKey": "1 to 1",
     "solution": "Breadth First Search = 1,2,3, 4,5, 6,7\n\nDepth First Search = 1, 2, 4, 5, 3, 6, 7\n\nA = {1, 2, 3}\n\nB = {1, 2, 4}\n\nA - B ={3}\nA - B 1 =\n\nThe value of |A - B | will be 1 after performing the said operation on a complete binary tree.",
-    "id": "pyq_37_329"
+    "id": "pyq_37_329",
+    "q_snippet": "snippets/q_pyq_37_329.webp",
+    "sol_snippet": "snippets/sol_pyq_37_329.webp"
   },
   {
     "num": 12,
@@ -5607,7 +6202,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.34",
     "answerKey": "a",
     "solution": "• No edge of G is a cross edge with respect to TD. (A cross edge in G is between two nodes neither of which is an ancestor of the other in TD). TRUE • For every edge (u, υ) of G, if u is at depth i and υ is at depth j in TB, then |i -j| = 1. FALSE",
-    "id": "pyq_38_330"
+    "id": "pyq_38_330",
+    "q_snippet": "snippets/q_pyq_38_330.webp",
+    "sol_snippet": "snippets/sol_pyq_38_330.webp"
   },
   {
     "num": 13,
@@ -5624,7 +6221,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.34",
     "answerKey": "d",
     "solution": "Using breadth first search algorithm the order of visiting nodes will be: POQNMR.\n\ny k l d x u b c K u y d l x b c\n\nGraph Based Algorithm",
-    "id": "pyq_36_331"
+    "id": "pyq_36_331",
+    "q_snippet": "snippets/q_pyq_36_331.webp",
+    "sol_snippet": "snippets/sol_pyq_36_331.webp"
   },
   {
     "num": 14,
@@ -5641,7 +6240,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.35",
     "answerKey": "6 to 6",
     "solution": "a_, _,_,_f\n\n( )( ) 4! 2! 2! =\n4 3 2\n6 2 2 ×× = = ×\n\nDifferent number of topological sorting for the given graph will be 6.",
-    "id": "pyq_37_332"
+    "id": "pyq_37_332",
+    "q_snippet": "snippets/q_pyq_37_332.webp"
   },
   {
     "num": 15,
@@ -5658,7 +6258,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.35",
     "answerKey": "31 to 31",
     "solution": ": 21+1 -1 = 3 : 22 -1 = 3. The maximum possible value of n for h=1 is 3. The maximum possible value of n for h=2 is 7.\n\n: 2h + 1 -3\n\n: 23 - 1\n\n= 7\n\nh = 1\n\nFor h = 4\n\nh 4 ≡\n\nTotal Nodes = 2h+1 - 1 = 25 -1 = 31\n\nThe maximum number of nodes will be 31.",
-    "id": "pyq_38_333"
+    "id": "pyq_38_333",
+    "q_snippet": "snippets/q_pyq_38_333.webp",
+    "sol_snippet": "snippets/sol_pyq_38_333.webp"
   },
   {
     "num": 16,
@@ -5675,7 +6277,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.35",
     "answerKey": "d",
     "solution": "2 cannot be the value of d(u) - d(v).",
-    "id": "pyq_36_334"
+    "id": "pyq_36_334",
+    "q_snippet": "snippets/q_pyq_36_334.webp",
+    "sol_snippet": "snippets/sol_pyq_36_334.webp"
   },
   {
     "num": 17,
@@ -5692,7 +6296,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.35",
     "answerKey": "19 to 19",
     "solution": "There exists total 21 nodes and only 2 nodes require back track therefore the maximum recursion depth is 21 - 2 = 19.\n\ns u v x s u v x 1 3 3 4 G T1 s u x v s u r v 1 2 3 4 G T2\n\nAlgorithms",
-    "id": "pyq_37_335"
+    "id": "pyq_37_335",
+    "q_snippet": "snippets/q_pyq_37_335.webp",
+    "sol_snippet": "snippets/sol_pyq_37_335.webp"
   },
   {
     "num": 18,
@@ -5709,7 +6315,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.36",
     "answerKey": "c",
     "solution": "2\n\nA= n×n n\n\nΘ\n\nFor an adjacency matrix the DFS algorithm will take Θ(n2).",
-    "id": "pyq_38_336"
+    "id": "pyq_38_336",
+    "q_snippet": "snippets/q_pyq_38_336.webp"
   },
   {
     "num": 19,
@@ -5726,7 +6333,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.36",
     "answerKey": "b",
     "solution": "Shortest paths (unit distance) from 'w' to all other vertices in the graph\n\nBFS spanning tree",
-    "id": "pyq_36_337"
+    "id": "pyq_36_337",
+    "q_snippet": "snippets/q_pyq_36_337.webp",
+    "sol_snippet": "snippets/sol_pyq_36_337.webp"
   },
   {
     "num": 20,
@@ -5743,7 +6352,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.36",
     "answerKey": "c",
     "solution": "The topological orderings PSRQ and SPRQ are identical.\n\nSelect P or S as the starting vertices for DFS.\n\nAs soon as the vertex has finished, add it to the head of a linked list.\n\nThe needed topological ordering is the linked list.",
-    "id": "pyq_37_338"
+    "id": "pyq_37_338",
+    "q_snippet": "snippets/q_pyq_37_338.webp",
+    "sol_snippet": "snippets/sol_pyq_37_338.webp"
   },
   {
     "num": 21,
@@ -5760,7 +6371,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.36",
     "answerKey": "b",
     "solution": "The possible outputs are: a b e f c g d\n\nThe possible outputs are: a d g e b c f",
-    "id": "pyq_38_339"
+    "id": "pyq_38_339",
+    "q_snippet": "snippets/q_pyq_38_339.webp",
+    "sol_snippet": "snippets/sol_pyq_38_339.webp"
   },
   {
     "num": 22,
@@ -5777,7 +6390,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.36",
     "answerKey": "c",
     "solution": "The possible order of visiting the node is QMNPRO.",
-    "id": "pyq_36_340"
+    "id": "pyq_36_340",
+    "q_snippet": "snippets/q_pyq_36_340.webp",
+    "sol_snippet": "snippets/sol_pyq_36_340.webp"
   },
   {
     "num": 1,
@@ -5794,7 +6409,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.41",
     "answerKey": "34 to 34",
     "solution": "1. \"qpqr\"\n\n2. \"qprr\"\n\n3. \"pqrr\"\n\nLength = 4 = x\n\nNumber of LCS = 3 = y\n\nx + 10y = 4 + 10 × 3 = 34.",
-    "id": "pyq_31_341"
+    "id": "pyq_31_341",
+    "q_snippet": "snippets/q_pyq_31_341.webp",
+    "sol_snippet": "snippets/sol_pyq_31_341.webp"
   },
   {
     "num": 2,
@@ -5811,7 +6428,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.41",
     "answerKey": "c",
     "solution": "2 2 3\nfor complete\nBellman ford = (n.e) (n.n ) graph e = (n )\n\n(n ) Θ = Θ Θ = Θ",
-    "id": "pyq_32_342"
+    "id": "pyq_32_342",
+    "q_snippet": "snippets/q_pyq_32_342.webp",
+    "sol_snippet": "snippets/sol_pyq_32_342.webp"
   },
   {
     "num": 3,
@@ -5828,7 +6447,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.41",
     "answerKey": "d",
     "solution": "T n 2.T n-1 C = 2.T n-1 1 =\n+\n+\n\nAlgorithm for tower of hanoi problem: TOH (n,L,M,R)\n\nif (n = 0) return\n\nelse\n\nTOH (n-1, L, R, M);\n\nMove (1, L, R)\n\nTOH (n-1, M, L, R);\n\nAlgorithms",
-    "id": "pyq_33_343"
+    "id": "pyq_33_343",
+    "q_snippet": "snippets/q_pyq_33_343.webp",
+    "sol_snippet": "snippets/sol_pyq_33_343.webp"
   },
   {
     "num": 4,
@@ -5845,7 +6466,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.42",
     "answerKey": "a, c",
     "solution": "P[1] = 1; P[2] = 5; P[3] = 8; P[4] = 9; P[5] = 10;\nP[6] = 17; P[7] = 18;\nNo. of pieces Combination Selling Price\n\n1 1(7) 18 Max (R7) 2 2(6, 1) 18 3 3(2, 2, 3) 18 4 4(2, 2, 2,1) 16\n\n5 5(2, 2, 1, 1, 1) 13\n\n6 6(2, 1, 1, 1, 1, 1) 10\n\n7 7(1, 1, 1, 1, 1, 1, 1) 7",
-    "id": "pyq_31_344"
+    "id": "pyq_31_344",
+    "q_snippet": "snippets/q_pyq_31_344.webp"
   },
   {
     "num": 5,
@@ -5862,7 +6484,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.42",
     "answerKey": "a",
     "solution": "The algorithm storts the optimal solutions to subproblems at every point, and then uses it to derive the optimal solution for a bigger problem and which is dynamic programming approach. The program runs in linear time complexity.",
-    "id": "pyq_32_345"
+    "id": "pyq_32_345",
+    "q_snippet": "snippets/q_pyq_32_345.webp",
+    "sol_snippet": "snippets/sol_pyq_32_345.webp"
   },
   {
     "num": 6,
@@ -5879,7 +6503,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.42",
     "answerKey": "b",
     "solution": "The Bellman-Ford algorithm may not always find the negative weighted cycle. However, it finds any negative weighted cycle that is reachable from the given source.",
-    "id": "pyq_33_346"
+    "id": "pyq_33_346",
+    "q_snippet": "snippets/q_pyq_33_346.webp",
+    "sol_snippet": "snippets/sol_pyq_33_346.webp"
   },
   {
     "num": 7,
@@ -5896,7 +6522,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.42",
     "answerKey": "c",
     "solution": "When the currently compared elements doesn't match, we have two possibilities for the LCS, one including Y[j] but not X[i] and including X[i] but not Y[j].",
-    "id": "pyq_31_347"
+    "id": "pyq_31_347",
+    "q_snippet": "snippets/q_pyq_31_347.webp"
   },
   {
     "num": 8,
@@ -5913,7 +6540,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.42",
     "answerKey": "b",
     "solution": "The previously discovered LCS is saved using dynamic programming. Therefore, all smaller ones\nfor any index should have been computed earlier.",
-    "id": "pyq_32_348"
+    "id": "pyq_32_348",
+    "q_snippet": "snippets/q_pyq_32_348.webp",
+    "sol_snippet": "snippets/sol_pyq_32_348.webp"
   },
   {
     "num": 9,
@@ -5930,7 +6559,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.42",
     "answerKey": "b",
     "solution": "if(n = = 0||n = = 1) return n;\nelse\nreturn (2* f1(n - 1) + 3* f1 (n -\n2));\nT(n) = c, n = 0, 1 = T(n-1) + T(n- 2)\n+ a, n>1\n= T(n) = O(2n)\n\nint i;\nint X[N], Y[N], Z[N];\nX[0] = Y[0] Z [0] = 0;\nX[1] = 1; Y[1] = 2; Z[1] = 3;\nfor (i = 1; i ≤n; i ++)\nX[i] = Y[i - 1] + Z [i - 2];\nY[i] = 2* X[i];\nZ[i] = 3*X[i];\nT(n) = O(n)\n\nThe running time of f1(n) is O(2n) and f2(n) is O(n).\n\nDynamic Programming",
-    "id": "pyq_33_349"
+    "id": "pyq_33_349",
+    "q_snippet": "snippets/q_pyq_33_349.webp",
+    "sol_snippet": "snippets/sol_pyq_33_349.webp"
   },
   {
     "num": 10,
@@ -5947,7 +6578,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.43",
     "answerKey": "c",
     "solution": "X[0 …. n, …..]\n\nX[1 …. n, …..]\n\nData set: n = 5; S: 2, 8, 4, 11, 9 ; W = 6\n\nX[n, W] = Entry stating whether subset exists/Not\n\nX [i, j] = True/False, whether there exist a subset from first 'i' elements that sum to 'j'.",
-    "id": "pyq_31_350"
+    "id": "pyq_31_350",
+    "q_snippet": "snippets/q_pyq_31_350.webp"
   },
   {
     "num": 11,
@@ -5964,7 +6596,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.43",
     "answerKey": "b",
     "solution": "The right answer is B X[i, j] = X[i − 1, j] ∨ X[i − 1, j − ai].\n\nIt is NP-complete (the subset-sum problem).\n\nFor instance, the technique checks to see if the sum of the elements in the set S' is zero such that S' ≠ S given the set S = {-7, -3, -2, 5, 7}.\n\nFor instance, say if S' = {-3, -2, 5}.\n\nx is a two-dimensional boolean array with n rows and W + 1 columns in the proposed dynamic method, where W is a positive weight or sum.\n\nx[i, j]1 ≤ i ≤ n, 0 ≤ j ≤ W\n\nThe element in the subset of S is determined by the ith row, and the associated weight is determined by the jth column.\n\nWhen 2 ≤ i ≤ n and a ≤ j ≤ W\n\nLet S' be a subset with weight W and a1, a2,...., ai.\n\nThis means that X[i, j] = X[i - 1, j] ∨ X[i - 1, j - ai].",
-    "id": "pyq_32_351"
+    "id": "pyq_32_351",
+    "q_snippet": "snippets/q_pyq_32_351.webp",
+    "sol_snippet": "snippets/sol_pyq_32_351.webp"
   },
   {
     "num": 12,
@@ -5981,7 +6615,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.43",
     "answerKey": "b",
     "solution": "Subset of Sum is a NP Complete problem.\n\n⇒ Subset sum problem ∈ NP\n\n⇒ Subset sum problem is NP-hard problem.",
-    "id": "pyq_33_352"
+    "id": "pyq_33_352",
+    "q_snippet": "snippets/q_pyq_33_352.webp"
   },
   {
     "num": 13,
@@ -5998,7 +6633,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.43",
     "answerKey": "c",
     "solution": "Algorithm Design paradigms (P) Kruskal (ii) Greedy (Q) Quicksort (i) Divide and conquer (R) Floyd-Warshall (iii) Dynamic programming",
-    "id": "pyq_31_353"
+    "id": "pyq_31_353",
+    "q_snippet": "snippets/q_pyq_31_353.webp",
+    "sol_snippet": "snippets/sol_pyq_31_353.webp"
   },
   {
     "num": 14,
@@ -6015,7 +6652,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.43",
     "answerKey": "c",
     "solution": "The Floyd-Warshall's algorithm is based on dynamic programming. It is used to find all the pair shortest path for every pair (i, j), there exists two possibilities for every pair: • If k is not an intermediate vertex in the shortest path from (i) to (j) then the value of dist[i][j] remains same. • If k is an intermediate vertex in the shortest path from (i) to (j), then the value is updated as dist[i][j] + dist[k].\n\nAlgorithms",
-    "id": "pyq_32_354"
+    "id": "pyq_32_354",
+    "q_snippet": "snippets/q_pyq_32_354.webp",
+    "sol_snippet": "snippets/sol_pyq_32_354.webp"
   },
   {
     "num": 15,
@@ -6032,7 +6671,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.44",
     "answerKey": "16 to 16",
     "solution": "M = 11\n\nUsing optimal algorithm, Vopt = 60 Item No. Weight Value V/W\n\n1 10 60 6 ⊆ 2 7 28 4 ⊆ 3 4 20 5 Π 4 2 24 12 Π\n\nGreedy approach:\n\nWeight 2 + 4\n\n⸫ Value = 44\n\nVGreedy = 44\n\nVopt - VGreedy = 60 - 44 = 16.",
-    "id": "pyq_33_355"
+    "id": "pyq_33_355",
+    "q_snippet": "snippets/q_pyq_33_355.webp"
   },
   {
     "num": 16,
@@ -6049,7 +6689,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.44",
     "answerKey": "c",
     "solution": ")( 1 2 3 4 5 F F F F F\n\nIf we perform parenthesization such that F3F4 forms a pair then it will reduce the total number of scalar multiplications.",
-    "id": "pyq_31_356"
+    "id": "pyq_31_356",
+    "q_snippet": "snippets/q_pyq_31_356.webp",
+    "sol_snippet": "snippets/sol_pyq_31_356.webp"
   },
   {
     "num": 17,
@@ -6066,7 +6708,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.44",
     "answerKey": "1500 to 1500",
     "solution": "5 * 20 * 5 + 0 + 20 * 10 * 5 = 1500.",
-    "id": "pyq_32_357"
+    "id": "pyq_32_357",
+    "q_snippet": "snippets/q_pyq_32_357.webp"
   },
   {
     "num": 1,
@@ -6083,7 +6726,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.49",
     "answerKey": "a, b, c",
     "solution": "• Since G has Exactly One MST, as all the edge weights are unique so the statement in option (a) is correct. • As already the given graph G has distinct as weights, the third and fourth smallest edge weights will always be a part of MST. • This is a popular and basic property of Minimum Spanning Tree, known as \"Cut Property.\" The cut property is the basis for the algorithms that we consider for the MST problem. \"Cut Property\" and \"Cycle Property\" are basic theorems.",
-    "id": "pyq_34_358"
+    "id": "pyq_34_358",
+    "q_snippet": "snippets/q_pyq_34_358.webp",
+    "sol_snippet": "snippets/sol_pyq_34_358.webp"
   },
   {
     "num": 2,
@@ -6100,7 +6745,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.49",
     "answerKey": "24 to 24",
     "solution": "n = 4\n\nn = 3\n\nTotal of 6 spannig tree\n\nn = 3; r = 3; 2 ST's\n\nn = 4; r = 4; 3! = 6 ST's\n\nn = 5; r = 5; 4! = 24 ST's\n\nAlgorithms",
-    "id": "pyq_35_359"
+    "id": "pyq_35_359",
+    "q_snippet": "snippets/q_pyq_35_359.webp",
+    "sol_snippet": "snippets/sol_pyq_35_359.webp"
   },
   {
     "num": 3,
@@ -6117,7 +6764,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.50",
     "answerKey": "a",
     "solution": "The Kruskals algorithm can be used to discover the Minimum Spanning Tree on a graph G.\n\nWhile doing that, we sort the edges according to their weight and begin choosing the smallest edge.\n\nProblem with S1: The Kruskals method may not always choose a particular weighted edge if there are numerous copies of it.\n\nS2 is True, the Kruskals method will always choose a distinct set of edges, resulting in a distinct minimal spanning tree, if the sorted order of the edges contains only distinct values.",
-    "id": "pyq_34_360"
+    "id": "pyq_34_360",
+    "q_snippet": "snippets/q_pyq_34_360.webp"
   },
   {
     "num": 4,
@@ -6134,7 +6782,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.50",
     "answerKey": "a, b",
     "solution": "There are 3 back edges from node 3 to 2, node 9 to S, and node 12 to 11.",
-    "id": "pyq_35_361"
+    "id": "pyq_35_361",
+    "q_snippet": "snippets/q_pyq_35_361.webp",
+    "sol_snippet": "snippets/sol_pyq_35_361.webp"
   },
   {
     "num": 5,
@@ -6151,7 +6801,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.50",
     "answerKey": "929 to 929",
     "solution": "Let q(s) denote the quality score of v, then:\n\nq(s) = 1; q(d) = 9; q(b) = 9;\n\nq(a) = 9; q(f) = 9; q(c) = 81;\n\nq(c) = 1; q(g) = 81; q(t) = 729;\n\n9 i 1 q i 929 = = ↔",
-    "id": "pyq_34_362"
+    "id": "pyq_34_362",
+    "q_snippet": "snippets/q_pyq_34_362.webp"
   },
   {
     "num": 6,
@@ -6168,7 +6819,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.50",
     "answerKey": "3 to 3",
     "solution": "The number of minimum-weight spanning trees of the graph is 3C1 = 3.",
-    "id": "pyq_35_363"
+    "id": "pyq_35_363",
+    "q_snippet": "snippets/q_pyq_35_363.webp",
+    "sol_snippet": "snippets/sol_pyq_35_363.webp"
   },
   {
     "num": 7,
@@ -6185,7 +6838,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.50",
     "answerKey": "c",
     "solution": "List-I List -II A: Prim's algrithm for minimum spanning tree 2. Greedy Method B: Floyd-Warshall algorithm\nfor all pairs shortest paths\n3. Dynamic programming C: Mergesort 4. Divide and conquer D: Hamiltonian circuit 1. Backtraking\n\nMiscellaneous Topics",
-    "id": "pyq_34_364"
+    "id": "pyq_34_364",
+    "q_snippet": "snippets/q_pyq_34_364.webp",
+    "sol_snippet": "snippets/sol_pyq_34_364.webp"
   },
   {
     "num": 8,
@@ -6202,7 +6857,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.51",
     "answerKey": "c",
     "solution": "List-I List-II A Dijkstra's Shortest path 3. Greedy Design B Floyd-Warshall algorithm to compute all pairs shortest path. 2. Dynamic programming C Binary search on a sorted array 1. Divide and Conquer D Backtracking search on a graph 4. Depth-first search",
-    "id": "pyq_35_365"
+    "id": "pyq_35_365",
+    "q_snippet": "snippets/q_pyq_35_365.webp"
   },
   {
     "num": 9,
@@ -6219,7 +6875,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.51",
     "answerKey": "b",
     "solution": "Using BFS, you can get all twin pts\n\n1, 2\n\n1, 3\n\n2, 1\n\n2, 3\n\nsize of Adjlist = O(n+ m)",
-    "id": "pyq_34_366"
+    "id": "pyq_34_366",
+    "q_snippet": "snippets/q_pyq_34_366.webp",
+    "sol_snippet": "snippets/sol_pyq_34_366.webp"
   },
   {
     "num": 10,
@@ -6236,7 +6894,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.51",
     "answerKey": "c",
     "solution": "The connected components of an undirected graph can be found by applying DFS in Θ(n + m).",
-    "id": "pyq_35_367"
+    "id": "pyq_35_367",
+    "q_snippet": "snippets/q_pyq_35_367.webp"
   },
   {
     "num": 11,
@@ -6253,7 +6912,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.51",
     "answerKey": "b",
     "solution": "To, insert one element into an AVL - tree(n) = log n\n\nTotal time = θ(n2.logn) to insert n2 elements.",
-    "id": "pyq_34_368"
+    "id": "pyq_34_368",
+    "q_snippet": "snippets/q_pyq_34_368.webp",
+    "sol_snippet": "snippets/sol_pyq_34_368.webp"
   },
   {
     "num": 12,
@@ -6270,7 +6931,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.51",
     "answerKey": "c",
     "solution": "• Time of find 'a' and 'b' in binary search tree = O(logn) • Time of sum up elements between a, b in binary search tree, using O(k) inorder sorting.\n\nTotal time = O logn k\n+",
-    "id": "pyq_35_369"
+    "id": "pyq_35_369",
+    "q_snippet": "snippets/q_pyq_35_369.webp",
+    "sol_snippet": "snippets/sol_pyq_35_369.webp"
   },
   {
     "num": 13,
@@ -6287,7 +6950,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.51",
     "answerKey": "a",
     "solution": "For both insertion and deletion the worst case time complexity in a binary search tree is Θ(logn).\n\nAlgorithms",
-    "id": "pyq_34_370"
+    "id": "pyq_34_370",
+    "q_snippet": "snippets/q_pyq_34_370.webp",
+    "sol_snippet": "snippets/sol_pyq_34_370.webp"
   },
   {
     "num": 14,
@@ -6304,7 +6969,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.52",
     "answerKey": "995 to 995",
     "solution": "Final output = [500 + 99 * 5] = 500 + 495 = 995.",
-    "id": "pyq_35_371"
+    "id": "pyq_35_371",
+    "q_snippet": "snippets/q_pyq_35_371.webp"
   },
   {
     "num": 15,
@@ -6321,7 +6987,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.52",
     "answerKey": "a",
     "solution": "Height of a heap with 'n' elements is logn.",
-    "id": "pyq_34_372"
+    "id": "pyq_34_372",
+    "q_snippet": "snippets/q_pyq_34_372.webp",
+    "sol_snippet": "snippets/sol_pyq_34_372.webp"
   },
   {
     "num": 16,
@@ -6338,7 +7006,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.52",
     "answerKey": "110 to 110",
     "solution": "1. To locate 'L\" and 'H' in Binary Search Tree, time taken = O(log n)\n\n2. Time to sum up all numbers between L and H, using\n\nIn order sorting will be O(m)\n\nTotal time: O(log n + m)\n\na = 0; b = 1\n\nc = 1; d = 0\n\n(10 + 100 + 0) = 110",
-    "id": "pyq_35_373"
+    "id": "pyq_35_373",
+    "q_snippet": "snippets/q_pyq_35_373.webp",
+    "sol_snippet": "snippets/sol_pyq_35_373.webp"
   },
   {
     "num": 17,
@@ -6355,7 +7025,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.52",
     "answerKey": "b",
     "solution": "Time to insert an element into a binary search tree (n) = logn.",
-    "id": "pyq_34_374"
+    "id": "pyq_34_374",
+    "q_snippet": "snippets/q_pyq_34_374.webp"
   },
   {
     "num": 18,
@@ -6372,7 +7043,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.52",
     "answerKey": "c",
     "solution": "Time = log(n.2n) = log n + log 2n\n\nT(n) = (log n + n) = O(n) = Ω(n) = Θ(n).",
-    "id": "pyq_35_375"
+    "id": "pyq_35_375",
+    "q_snippet": "snippets/q_pyq_35_375.webp",
+    "sol_snippet": "snippets/sol_pyq_35_375.webp"
   },
   {
     "num": 19,
@@ -6389,7 +7062,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.52",
     "answerKey": "c",
     "solution": "Tower of Hanoi with n disks takes Θ (2n)\n\nBinary search given n sorted numbers takes Θ (log n)\n\nHeap sort given n numbers at the worst case takes Θ (n.log n)\n\nAddition to two n × n matrices takes Θ (n2)",
-    "id": "pyq_34_376"
+    "id": "pyq_34_376",
+    "q_snippet": "snippets/q_pyq_34_376.webp",
+    "sol_snippet": "snippets/sol_pyq_34_376.webp"
   },
   {
     "num": 20,
@@ -6406,7 +7081,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "6.52",
     "answerKey": "c",
     "solution": "Time of radix sort: O(d(n +b))\n\nd: Number of bits in the representation of highest number.\n\nn: number of elements\n\nb: base (radix)\n\nd = lognk = k.logn = k.logn.n + k.logn.b\n\n= Θ(n.logn).",
-    "id": "pyq_35_377"
+    "id": "pyq_35_377",
+    "q_snippet": "snippets/q_pyq_35_377.webp",
+    "sol_snippet": "snippets/sol_pyq_35_377.webp"
   },
   {
     "num": 1,
@@ -6423,7 +7100,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.3",
     "answerKey": "3",
     "solution": "0.5 0.25 0.125 0.0625\n\n(0.1 1 0 1)2 = ( )10\n\n= 1 × 2-1 + 1× 2-2 + 1× 2-3 + 1× 2-4\n\n= (0.5 + 0.25 +0+ 0.625)\n\n= (0.8125)10 (0.8125)10= (0.8xy5)10\n\nx = 1 4 = 2, x + 4 = 1 + 2 = 3",
-    "id": "pyq_36_378"
+    "id": "pyq_36_378",
+    "q_snippet": "snippets/q_pyq_36_378.webp",
+    "sol_snippet": "snippets/sol_pyq_36_378.webp"
   },
   {
     "num": 2,
@@ -6440,7 +7119,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.3",
     "answerKey": "a",
     "solution": "Given X = BCA9 in Hexadecimal format\n\nwe know in Binary system B = 1011, C = 1100,\n\nA = 1010, 9 = 1001\n\n(B C A 9)16 → ( ? )2 →( ? )8\n\nTherefore, convert hexadecimal number system first in binary then octal system.\n\n(BCA 9)16 = (136251)8\n\nHence correct option is (a).",
-    "id": "pyq_48_379"
+    "id": "pyq_48_379",
+    "q_snippet": "snippets/q_pyq_48_379.webp",
+    "sol_snippet": "snippets/sol_pyq_48_379.webp"
   },
   {
     "num": 3,
@@ -6457,7 +7138,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.3",
     "answerKey": "8",
     "solution": "Given the base of quadratic equation is b.\n\n(1)b x2 - (13)b x + (36)b = (0)b\n\nx2 - (b + 3)x + 3b + 6 = 0\n\nLet x = 5\n\n25 - (b + 3)5 + 3b + 6 = 0\n\n25 - 5b - 15 + 3b + 6 = 0\n\n16 - 2b = 0\n\nb = 8\n\nLet x = 6\n\n36 - (b + 3)6 + 3b + 6 = 0\n\n36 - 6b - 18 + 3b + 6 = 0\n\n24 - 3b = 0\n\nb = 8\n\nHence correct answer is (8).",
-    "id": "pyq_36_380"
+    "id": "pyq_36_380",
+    "q_snippet": "snippets/q_pyq_36_380.webp",
+    "sol_snippet": "snippets/sol_pyq_36_380.webp"
   },
   {
     "num": 4,
@@ -6474,7 +7157,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.3",
     "answerKey": "5",
     "solution": "(43)x = (y3)8 (43)x = (y3)8\n\n4x + 3 = 8y + 3 x > 4 y < 8\n\nDigital Logic\n\n4x = 8y\n\nx = 2y\n\ny < 8\n\nx > 4\n\nX Y Condition 2 1 (×) 4 2 (🗸) 6 3 (🗸) 8 4 (🗸) 10 5 (🗸) 12 6 (🗸) 14 7 (🗸)\n\nTotal 5 possible solution",
-    "id": "pyq_48_381"
+    "id": "pyq_48_381",
+    "q_snippet": "snippets/q_pyq_48_381.webp",
+    "sol_snippet": "snippets/sol_pyq_48_381.webp"
   },
   {
     "num": 5,
@@ -6491,7 +7176,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.4",
     "answerKey": "5",
     "solution": "Let x be the base of the given number\n\n312 20 x x x =\n\nThe above number in Decimal will be given as\n\n2 1 0 1 0 3 × x +1 × x + 2 × x 2 × x + 0 × x = 1× x1 + 3 × x0 + 1 × x-1\n\n2 3x x 2 2x\n+\n+\n= 1 x 3 x\n+\n+\n\n2 2 3x x 2 x 3x 1\n\n2x x\n+\n+\n+\n+\n⇒ =\n\n2 2 3x x 2 2x 6x 2 ⇒\n+\n+\n=\n+\n+\n\n2 x - 5x 0 ⇒ =\n\nx - 5 x 0 ⇒ =\n\nx = 0 x = 5\n\nTherefore, x = 5\n\nHence, the base of the given number will be 5.",
-    "id": "pyq_36_382"
+    "id": "pyq_36_382",
+    "q_snippet": "snippets/q_pyq_36_382.webp",
+    "sol_snippet": "snippets/sol_pyq_36_382.webp"
   },
   {
     "num": 6,
@@ -6508,7 +7195,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.4",
     "answerKey": "3",
     "solution": "Given equation\n\n(123)5 = (x 8)y\n\nBy Converting the above equation into decimal form\n\n(1×52 + 2×51+ 3×50) = xy + 8\n\n38 = xy + 8\n\nxy = 30\n\nand (x < y) (y > 8)\n\nThe possible solutions are\n\nx = 1 y = 30 (✔)\n\nx = 2 y = 15 (✔)\n\nx = 3 y = 10 (✔)\n\nx = 5 y = 6 (X)\n\nFrom the above solution only 3 satisfies the given condition.",
-    "id": "pyq_48_383"
+    "id": "pyq_48_383",
+    "q_snippet": "snippets/q_pyq_48_383.webp",
+    "sol_snippet": "snippets/sol_pyq_48_383.webp"
   },
   {
     "num": 7,
@@ -6525,7 +7214,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.4",
     "answerKey": "b",
     "solution": "First write the given number in binary representation\n\nWrite each digit 3 bits\n\n(1217)8 = (001010001111)2\n\nNumber System and binary Codes\n\nNow, to represent the above number in hexadecimal form, make the group of 4 bits.\n\n(0010 1000 1111)2 = (028F)16\n\nHence, correct answer is option (b).",
-    "id": "pyq_36_384"
+    "id": "pyq_36_384",
+    "q_snippet": "snippets/q_pyq_36_384.webp",
+    "sol_snippet": "snippets/sol_pyq_36_384.webp"
   },
   {
     "num": 8,
@@ -6542,7 +7233,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.5",
     "answerKey": "d",
     "solution": "The given equation is\n\n121 11 r r =\n\nLet r be any base\n\n2 1 0 1 2 1 r r r ×\n+ ×\n+ ×\n= 1 0 1 1 r r ×\n+ ×\n\n2 2 1 r r\n+\n+ = r +1\n\n2 1 r + = r +1\n\n± (r + 1) = r + 1\n\nTake negative sign\n\n- (r + 1) = r + 1\n\n2r + 2 = 0\n\nr = -1 (radix cannot be negative)\n\nTake positive sign\n\nr + 1 = r + 1\n\nfor all value which is greater than 2.\n\nHence, correct answer is option (d).",
-    "id": "pyq_48_385"
+    "id": "pyq_48_385",
+    "q_snippet": "snippets/q_pyq_48_385.webp",
+    "sol_snippet": "snippets/sol_pyq_48_385.webp"
   },
   {
     "num": 9,
@@ -6559,7 +7252,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.5",
     "answerKey": "c",
     "solution": "To find 2's complement of -28 first we convert +28 in binary system and then take 2's complement\n\n(28)10 =(0000 0000 0001 1100)2\n\nNow taking 2's complement of (0000 0000 0001 1100)2=1111 1111 111 0100\n\nHence\n\n-28 → 1111 1111 1110 0100\n\nTherofre correct answer is option (C)",
-    "id": "pyq_36_386"
+    "id": "pyq_36_386",
+    "q_snippet": "snippets/q_pyq_36_386.webp",
+    "sol_snippet": "snippets/sol_pyq_36_386.webp"
   },
   {
     "num": 10,
@@ -6576,7 +7271,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.5",
     "answerKey": "0.502",
     "solution": "Decimal Unsigned representation 1 0001 2 0010 3 0011 4 0100 5 0101 6 0110 4 0111 7 0111 8 1000 9 1001 10 1010 11 1011 12 1100 13 1101\n\nFrom above table 7 number with MSB 'O'\n\n6 number with MSB '1'\n\nTwo number are selected indepednely with same MSB\n\nProbability (P)=P (MSB = 0) + P(MSB = 1)\n\nProbability (P)= 7 7 6 6 13 13 13 13 ×\n+\n×\n\nProbability (P)= 49 36 169 169\n+\n= 0.5029",
-    "id": "pyq_48_387"
+    "id": "pyq_48_387",
+    "q_snippet": "snippets/q_pyq_48_387.webp",
+    "sol_snippet": "snippets/sol_pyq_48_387.webp"
   },
   {
     "num": 11,
@@ -6593,7 +7290,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.5",
     "answerKey": "c",
     "solution": "Overflow occurs when two same sign number are add/sub And result we get in different sign\n\nExample\n\n3 bit sign number\n\nDigital Logic\n\n(+3) + (1.2) = +5\n\n011 010 101\n+\n→ in signed it is -1\n\nExtension of bit required to avoid overflow\n\nZ = X - Y\n\n↓ ↓\n\nn-bit n-bit\n\nTo avoid overflow z should be (n + 1) bits",
-    "id": "pyq_36_388"
+    "id": "pyq_36_388",
+    "q_snippet": "snippets/q_pyq_36_388.webp",
+    "sol_snippet": "snippets/sol_pyq_36_388.webp"
   },
   {
     "num": 12,
@@ -6610,7 +7309,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.6",
     "answerKey": "c",
     "solution": "Given b7 b6 b5 b4 b3 ⋅ b2 b1 b0\n\nbefore . 5 bit that means we can represent at max 3110\n\nafter . 3 bit that means total 8 comibanations are\n\nBinary Decimal 000 001 010 011 100 101 110 111\n\nFrom above analysis we can't represent (0.100)10 and (0.001)10\n\nFrom above analysis only (iii) and (iv) cannot be exactly same represented.",
-    "id": "pyq_48_389"
+    "id": "pyq_48_389",
+    "q_snippet": "snippets/q_pyq_48_389.webp",
+    "sol_snippet": "snippets/sol_pyq_48_389.webp"
   },
   {
     "num": 13,
@@ -6627,7 +7328,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.6",
     "answerKey": "c",
     "solution": "Overflow:\n\nWhen two same sign number are added and result we will get in different sign.\n\nTo avoid overflow bit extension required",
-    "id": "pyq_36_390"
+    "id": "pyq_36_390",
+    "q_snippet": "snippets/q_pyq_36_390.webp",
+    "sol_snippet": "snippets/sol_pyq_36_390.webp"
   },
   {
     "num": 14,
@@ -6644,7 +7347,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.6",
     "answerKey": "–1",
     "solution": "Given:\n\nA = 1 in decimal form\n\nbinary form of A = 0000 0001\n\nFor longest latency, we must have Cin = 1 at every stage of ripple carry adder.\n\nMaximum delay will be given when we, take B = -1 in decimal and (1111 1111) in binary\n\nB = 1 1 1 1 1 1 1 1 ⇒ -1\n\nA = 0 0 0 0 0 0 0 1 → +1\n\nCarry out = 1 0 0 0 0 0 0 0 0",
-    "id": "pyq_48_391"
+    "id": "pyq_48_391",
+    "q_snippet": "snippets/q_pyq_48_391.webp",
+    "sol_snippet": "snippets/sol_pyq_48_391.webp"
   },
   {
     "num": 15,
@@ -6661,7 +7366,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.6",
     "answerKey": "1",
     "solution": "If x is in 2's then range of x will be\n\n-2n-1 to 2n-1 -1\n\nHere x is 16 bits number, n = 16\n\n-216-1 to 216-1 -1\n\nx = 65536\n\nIf y is in sign magnitude representation, then range of y will be\n\n- (2n-1-1) to + (2n-1 -1)\nn = 16\n\n- (216-1-1) to + (216-1 -1)\n\ny = 65535\n\nHence, x - y = 1\n\nNumber System and binary Codes",
-    "id": "pyq_36_392"
+    "id": "pyq_36_392",
+    "q_snippet": "snippets/q_pyq_36_392.webp",
+    "sol_snippet": "snippets/sol_pyq_36_392.webp"
   },
   {
     "num": 16,
@@ -6678,7 +7385,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.7",
     "answerKey": "–11",
     "solution": "Given 16-bit number is 1111 1111 1111 0101 Here MSB bit is 1 that means the given number is negative signed number\n\n2's complement of given number is 0000 0000 0000 1011, which is equivalent to + 11 but MSB here is 1 hence number is negative i.e - 11 and correct answer is -11.",
-    "id": "pyq_48_393"
+    "id": "pyq_48_393",
+    "q_snippet": "snippets/q_pyq_48_393.webp"
   },
   {
     "num": 17,
@@ -6695,7 +7403,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.7",
     "answerKey": "b",
     "solution": "For 2's Complement form\n\nThe range will be given by\n\n- (2n-1) to + (2n-1 -1)\n\nFor n = 8 (Given 8 bit number)\n\nThe minimum will be\n\n⇒ - (28-1)\n\n⇒ - (27)\n\n⇒ -128\n\nThe maximum number will be given as\n\n(2n-1) = 127\n\nHence, correct answer is option (b).",
-    "id": "pyq_36_394"
+    "id": "pyq_36_394",
+    "q_snippet": "snippets/q_pyq_36_394.webp",
+    "sol_snippet": "snippets/sol_pyq_36_394.webp"
   },
   {
     "num": 18,
@@ -6712,7 +7422,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.7",
     "answerKey": "a",
     "solution": "Method 1:\n\nThe given number is\n\nP = (F87B)16\n\nP = 1111100001111011 = (-1925)\n\n2's complement of the above number will be given as\n\n= 0000011110000101\n\nIts decimal representation will be\n\n⇒ 1 × 210 + 1 × 29 + 1×28 + 1 × 2 7 + 4 + 2\n\n⇒ 1024 + 512 + 256 + 128 + 4+1 = 1925\n\nNow,\n\n8 × P = 8 × (-1925) = -15400\n\nIts binary representation will be 0011110000101000\n\nNow, 2's complement of the above number will be given as\n\n1100001111011000\n\n8P →(C3D8)16\n\nHence, correct answer is option (a)\n\nMethod 2:\n\nP = (F87B)16\n\n= 1111100001111011\n\nBy multiplying 21 , number will be shifted to left by one position, and by multiplying 23 , number will be shifted by 3 position to the left.\n\n⇒ 11 00 00 1111011000\n\n8P ⇒ (C3D8)16\n\nHence, correct answer is option (a)",
-    "id": "pyq_48_395"
+    "id": "pyq_48_395",
+    "q_snippet": "snippets/q_pyq_48_395.webp"
   },
   {
     "num": 1,
@@ -6729,7 +7440,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "d",
     "solution": "2.\n(c)",
-    "id": "pyq_37_396"
+    "id": "pyq_37_396",
+    "q_snippet": "snippets/q_pyq_37_396.webp",
+    "sol_snippet": "snippets/sol_pyq_37_396.webp"
   },
   {
     "num": 2,
@@ -6746,7 +7459,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "c",
     "solution": "(a) wx + w (x +y) + x(x +y) = x +wy\n\nwx + wx +wy + x + xy\n\nx [w +w + 1+ y] + wy\n\n= x + wy\n\nTherefore, option a is correct\n\n(b)\nwx y z wx = w + x + yz\n+\n+\n\nwx y+z wx\n+\n+\n\nw + x + y w z x\n+\n\nw + x 1 w yz = w x + yz\n+\n+\n+\n\nTherefore, option b is correct\n\n(c)\nwx y xz wx y xy\n+\n+\n=\n\nw x y + w x x z + w x y\n\nwxy + wx\n\ny\n\nDigital Logic\n\nxy w w\n+\n\nxy\n\nHence correct answer is option (c)\n\n(d) (w + y) (wxy + wyz) = wxy +wyz\n\nwxy +wyz + wxy + wyz\n\nwxy + wyz\n\nTherefore, option d is correct.",
-    "id": "pyq_38_397"
+    "id": "pyq_38_397",
+    "q_snippet": "snippets/q_pyq_38_397.webp",
+    "sol_snippet": "snippets/sol_pyq_38_397.webp"
   },
   {
     "num": 3,
@@ -6763,7 +7478,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.8",
     "answerKey": "b",
     "solution": "We can see that the given truth table is the output of X ᠆ OR gate and we know that X-OR logic follows both commutative and associative operation.\n\nA ⊕B = B ⊕A → follow commutative law\n\n(A ⊕B) ⊕C = A ⊕ (B ⊕C) Follow associative law.\n\nHence, correct answer is option (a).",
-    "id": "pyq_39_398"
+    "id": "pyq_39_398",
+    "q_snippet": "snippets/q_pyq_39_398.webp",
+    "sol_snippet": "snippets/sol_pyq_39_398.webp"
   },
   {
     "num": 4,
@@ -6780,7 +7497,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.8",
     "answerKey": "a",
     "solution": "The given Boolean expression is\n\n= D AB AC + ACD +ACD\n+\n+\n\n= D AB AC + CD A+A\n+\n+\n\n= D AB AC + CD\n+\n+\n\n= D CD AB + AC\n+\n+\n\n= ( )( C+D D+D AB AC\n+\n+\n\n⇒ ( ) ( C+D AB AC\n+\n+\n\n⇒ C D AB AC\n+\n↔ ↔\n\n⇒ CD A + B A + C ][ ↔\n\n⇒ CD A A + AC AB + BC ↔\n+\n\n⇒ CD AC+AB + BC\n\n= AC CD + ABCD + BCCD ↔\n\n⇒ ABCD\n\nHence, correct answer is option (a).",
-    "id": "pyq_37_399"
+    "id": "pyq_37_399",
+    "q_snippet": "snippets/q_pyq_37_399.webp",
+    "sol_snippet": "snippets/sol_pyq_37_399.webp"
   },
   {
     "num": 5,
@@ -6797,7 +7516,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.8",
     "answerKey": "a",
     "solution": "Standard mininmal from\n\nF = P + QR\n\n)( ) ( F = P Q + Q R + Q P + P QR\n+\n\n= PQR PQR+PQR PQR+PQR+PQR+PQR\n+\n+\n\n= ↔m(0,1,2,3,7)\n\n= M (4,5,6)",
-    "id": "pyq_38_400"
+    "id": "pyq_38_400",
+    "q_snippet": "snippets/q_pyq_38_400.webp",
+    "sol_snippet": "snippets/sol_pyq_38_400.webp"
   },
   {
     "num": 6,
@@ -6814,7 +7535,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.8",
     "answerKey": "a",
     "solution": "The equation of the given truth table will be given as\n\nF x,y = xy xy = x y y x\n+\n+\n=\n\nHence, correct answer is option (a)",
-    "id": "pyq_39_401"
+    "id": "pyq_39_401",
+    "q_snippet": "snippets/q_pyq_39_401.webp",
+    "sol_snippet": "snippets/sol_pyq_39_401.webp"
   },
   {
     "num": 7,
@@ -6831,7 +7554,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.8",
     "answerKey": "d",
     "solution": "Let us see the 4-bit number multiplication.\n\nBoolean Algebra, Logic Gates and K-Maps\n\nInput = 24 × 24 output = 8\n\nThe amount of ROM needed to implement a 4 bit multiplier is\n\nROM = 24 × 24 × 8\n\n= 28 ×23\n\n= 211\n\n= 2 × 210\n\n= 2k bits\n\nHence, correct answer is option (d).",
-    "id": "pyq_37_402"
+    "id": "pyq_37_402",
+    "q_snippet": "snippets/q_pyq_37_402.webp",
+    "sol_snippet": "snippets/sol_pyq_37_402.webp"
   },
   {
     "num": 8,
@@ -6848,7 +7573,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.9",
     "answerKey": "b",
     "solution": "The given expression is\n\n(𝑃+ 𝑄̅ + 𝑅̅) ∙(𝑃+ 𝑄̅ + 𝑅) ∙(𝑃+ 𝑄+ 𝑅̅)\n\nLet P + Q x =\n\n⇒( ) ( ) ( x R x R P Q + R\n+\n↔\n+\n+\n\n(By distribution Theorem x + R̅ . R = (x + R̅) (x + R) )\n\n⇒ x. (P + Q + R̅)\n\n⇒( ) ( P Q P Q R\n+\n↔\n+\n+\n\nP PQ + PR + PQ Q Q QR ⇒\n+\n+\n↔\n+\n\nP 1 Q +R Q Q R =\n+\n+\n+\n\n= P + Q̅ R̅\n\nHence, correct answer is option (b).",
-    "id": "pyq_38_403"
+    "id": "pyq_38_403",
+    "q_snippet": "snippets/q_pyq_38_403.webp",
+    "sol_snippet": "snippets/sol_pyq_38_403.webp"
   },
   {
     "num": 9,
@@ -6865,7 +7592,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.9",
     "answerKey": "a",
     "solution": "The given expression is\n\nF P,Q,R PQ + QR PR =\n+\n\nThe Standard canonical form of the above expression will be given as: ) ( F P,Q,R PQ R R P P QR P Q Q R =\n+\n+\n+\n+\n+\n\nPQR PQR + PQR PQR PQR PQR =\n+\n+\n+\n+\n\n6 7 2 6 4 6 m m m m m m =\n+\n+\n+\n+\n+\n\n2 4 6 7 m m m m =\n+\n+\n+\n\nHence, correct answer is option (a).",
-    "id": "pyq_39_404"
+    "id": "pyq_39_404",
+    "q_snippet": "snippets/q_pyq_39_404.webp",
+    "sol_snippet": "snippets/sol_pyq_39_404.webp"
   },
   {
     "num": 10,
@@ -6882,7 +7611,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.9",
     "answerKey": "a",
     "solution": "The given expression is\n\n(P + Q ) (P.Q + P.R) (P .R + Q )\n\n⇒( ) ( PQ PR PQ PQ PR Q\n+\n+\n+\n↔\n+\nR\n\n⇒( ) ( PQ PR PR Q\n+\n↔\n+\n\n= ( ) ( P Q\n+\n↔\n+\nQ R PR\n\n= ( )(\n+\n+\nQ R PPR PQ\n\n)( =\n+\nQ R PQ\n\n=\n+\nPQ PQR\n\n1 =\n+\nPQ R\n\n= PQ\n\nHence, correct answer is option (a).",
-    "id": "pyq_37_405"
+    "id": "pyq_37_405",
+    "q_snippet": "snippets/q_pyq_37_405.webp",
+    "sol_snippet": "snippets/sol_pyq_37_405.webp"
   },
   {
     "num": 11,
@@ -6899,7 +7630,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.9",
     "answerKey": "c",
     "solution": "We will put X1 = 1, X2 = 1, X3 = 1, X4 = 1\n\n1 ⊕ 1 ⊕ 1 ⊕ 1 = 0\n\nBy taking the above values ,we will see all the options one-by-one.\n\n→ X 1. X 2. X 3. X 4 = 1.1.1.1 = 0 (wrong)\n\n→ X 1 X 3+ X 2 = 1.1 + 1 = 0 (wrong)\n\n→ X ⊕ 3 X = 2 X ⊕ 4 X = 0 ⊕ 0 = 0 ⊕ 0 = 0 (correct)\n\n→ X 1+ X 2+ X 3+X4 = 0 (wrong)\n\nDigital Logic Alternate Method:\n\nIf A ⊕ B = 0\n\nThen A ⊕ 0 = B … (i)\n\nGiven, x 1 ⊕ x 2 ⊕ x 3 ⊕ x 4 = 0\n\nA = x1 ⊕ x2, B = x3 ⊕ x4\n\nSubstitute values of A, B in equation (i)\n\nx1 ⊕ x2 ⊕ 0 = x3 ⊕ x4\n\nx1 ⊕ x2 = x3 ⊕ x4\n\nWe know that\n\n⊕ = ⊕ A B A B\n\n1 2 3 4 x x x x = ⊕ ⊕\n\n1 2 3 4 x x x x = ⊕ ⊕\n\nHence, correct answer is option (c)",
-    "id": "pyq_38_406"
+    "id": "pyq_38_406",
+    "q_snippet": "snippets/q_pyq_38_406.webp",
+    "sol_snippet": "snippets/sol_pyq_38_406.webp"
   },
   {
     "num": 12,
@@ -6916,7 +7649,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.10",
     "answerKey": "a",
     "solution": "Given x # 0 = x, x #1 = 𝑥̅, x # x = 0 , x # 𝑥̅ = 1 We can see from the given condition that the logic operator # resembles the logic of EX-OR gate.\n\nTherefore, x # y = xy +xy\n\nHence correct answer is option (a)",
-    "id": "pyq_39_407"
+    "id": "pyq_39_407",
+    "q_snippet": "snippets/q_pyq_39_407.webp",
+    "sol_snippet": "snippets/sol_pyq_39_407.webp"
   },
   {
     "num": 13,
@@ -6933,7 +7668,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.10",
     "answerKey": "c",
     "solution": "z = a + b̅ c\n\nstandard canonical form\n\nz = a(b̅ + b) (c̅ + c) + (a̅ + a) b̅ c\n\nz= ab̅c̅ + ab̅c + abc̅ + abc + a̅b̅c+ ab̅ c\n\nz=Σm (1,4, 5, 6, 7 )\n\nHence correct answer is option (c).",
-    "id": "pyq_37_408"
+    "id": "pyq_37_408",
+    "q_snippet": "snippets/q_pyq_37_408.webp",
+    "sol_snippet": "snippets/sol_pyq_37_408.webp"
   },
   {
     "num": 14,
@@ -6950,7 +7687,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.10",
     "answerKey": "a",
     "solution": "Option (a)\n\n(x + y) ⊕ z = x ⊕ (y + z)\n\n(x + y) ⊕ z= (x + y) z̅ + (𝑥+ 𝑦̅̅̅̅̅̅̅) z\n\n(x + y) ⊕ z= xz̅ + y z̅ + x̅ y̅ z\n\nx ⊕ (y+z)=x(𝑦+ 𝑧̅̅̅̅̅̅̅) +x̅ (y + z)\n\nx ⊕ (y+z)=x y̅ z̅ + x̅ y + x̅ z\n\n(x + y) ⊕ z ≠ x⊕(y + z)\n\nOption (b)\n\n(x ⊕ y) ⊕ z = x ⊕ (y ⊕ z)\n\nX-OR gate follows associative law\n\nOption (c)\n\nx ⊕ y = x + y, if x.y = 0\n\nx ⊕ y = x̅y + xy̅\n\n= (x + y) (x̅ + y̅)\n\n= (x + y) = 1 = x+y\n\n𝑥𝑦̅̅̅ = 1\n\nx̅ + y̅ = 1\n\nOption (d)\n\nx ⊕ y = (xy + x̅ y̅)\n\nx ⊕ y = 𝑥⊙y̅̅̅̅̅̅̅̅\n\nx ⊕ y =xy + x̅ y̅ ̅̅̅̅̅̅̅̅̅̅̅̅\n\nHence option (a) is correct answer.",
-    "id": "pyq_38_409"
+    "id": "pyq_38_409",
+    "q_snippet": "snippets/q_pyq_38_409.webp",
+    "sol_snippet": "snippets/sol_pyq_38_409.webp"
   },
   {
     "num": 15,
@@ -6967,7 +7706,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "3",
     "solution": "16. (b)",
-    "id": "pyq_39_410"
+    "id": "pyq_39_410",
+    "q_snippet": "snippets/q_pyq_39_410.webp",
+    "sol_snippet": "snippets/sol_pyq_39_410.webp"
   },
   {
     "num": 16,
@@ -6984,7 +7725,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "b",
     "solution": "Official GATE Answer: (b)",
-    "id": "pyq_37_411"
+    "id": "pyq_37_411",
+    "q_snippet": "snippets/q_pyq_37_411.webp"
   },
   {
     "num": 17,
@@ -7001,7 +7743,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "d",
     "solution": "18.\n(d)",
-    "id": "pyq_38_412"
+    "id": "pyq_38_412",
+    "q_snippet": "snippets/q_pyq_38_412.webp",
+    "sol_snippet": "snippets/sol_pyq_38_412.webp"
   },
   {
     "num": 18,
@@ -7018,7 +7762,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "d",
     "solution": "Official GATE Answer: (d)",
-    "id": "pyq_39_413"
+    "id": "pyq_39_413",
+    "q_snippet": "snippets/q_pyq_39_413.webp"
   },
   {
     "num": 19,
@@ -7035,7 +7780,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "d",
     "solution": "20. (d)",
-    "id": "pyq_37_414"
+    "id": "pyq_37_414",
+    "q_snippet": "snippets/q_pyq_37_414.webp",
+    "sol_snippet": "snippets/sol_pyq_37_414.webp"
   },
   {
     "num": 20,
@@ -7052,7 +7799,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "d",
     "solution": "Official GATE Answer: (d)",
-    "id": "pyq_38_415"
+    "id": "pyq_38_415",
+    "q_snippet": "snippets/q_pyq_38_415.webp"
   },
   {
     "num": 21,
@@ -7069,7 +7817,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "a",
     "solution": "22.\n(b)",
-    "id": "pyq_39_416"
+    "id": "pyq_39_416",
+    "q_snippet": "snippets/q_pyq_39_416.webp",
+    "sol_snippet": "snippets/sol_pyq_39_416.webp"
   },
   {
     "num": 22,
@@ -7086,7 +7836,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "b",
     "solution": "Official GATE Answer: (b)",
-    "id": "pyq_37_417"
+    "id": "pyq_37_417",
+    "q_snippet": "snippets/q_pyq_37_417.webp"
   },
   {
     "num": 23,
@@ -7103,7 +7854,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "a",
     "solution": "24. (c)",
-    "id": "pyq_38_418"
+    "id": "pyq_38_418",
+    "q_snippet": "snippets/q_pyq_38_418.webp",
+    "sol_snippet": "snippets/sol_pyq_38_418.webp"
   },
   {
     "num": 24,
@@ -7120,7 +7873,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "c",
     "solution": "Official GATE Answer: (c)",
-    "id": "pyq_39_419"
+    "id": "pyq_39_419",
+    "q_snippet": "snippets/q_pyq_39_419.webp"
   },
   {
     "num": 25,
@@ -7137,7 +7891,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "3",
     "solution": "26.\n(3)",
-    "id": "pyq_37_420"
+    "id": "pyq_37_420",
+    "q_snippet": "snippets/q_pyq_37_420.webp",
+    "sol_snippet": "snippets/sol_pyq_37_420.webp"
   },
   {
     "num": 26,
@@ -7154,7 +7910,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "3",
     "solution": "Official GATE Answer: (3)",
-    "id": "pyq_38_421"
+    "id": "pyq_38_421",
+    "q_snippet": "snippets/q_pyq_38_421.webp"
   },
   {
     "num": 27,
@@ -7171,7 +7928,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "1",
     "solution": "28. (a)",
-    "id": "pyq_39_422"
+    "id": "pyq_39_422",
+    "q_snippet": "snippets/q_pyq_39_422.webp",
+    "sol_snippet": "snippets/sol_pyq_39_422.webp"
   },
   {
     "num": 28,
@@ -7188,7 +7947,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "a",
     "solution": "Official GATE Answer: (a)",
-    "id": "pyq_37_423"
+    "id": "pyq_37_423",
+    "q_snippet": "snippets/q_pyq_37_423.webp"
   },
   {
     "num": 29,
@@ -7205,7 +7965,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "a",
     "solution": "30.\n(b)",
-    "id": "pyq_38_424"
+    "id": "pyq_38_424",
+    "q_snippet": "snippets/q_pyq_38_424.webp",
+    "sol_snippet": "snippets/sol_pyq_38_424.webp"
   },
   {
     "num": 30,
@@ -7222,7 +7984,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "b",
     "solution": "Official GATE Answer: (b)",
-    "id": "pyq_39_425"
+    "id": "pyq_39_425",
+    "q_snippet": "snippets/q_pyq_39_425.webp"
   },
   {
     "num": 31,
@@ -7239,7 +8002,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "b",
     "solution": "32. (a)",
-    "id": "pyq_37_426"
+    "id": "pyq_37_426",
+    "q_snippet": "snippets/q_pyq_37_426.webp",
+    "sol_snippet": "snippets/sol_pyq_37_426.webp"
   },
   {
     "num": 32,
@@ -7256,7 +8021,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "a",
     "solution": "Official GATE Answer: (a)",
-    "id": "pyq_38_427"
+    "id": "pyq_38_427",
+    "q_snippet": "snippets/q_pyq_38_427.webp"
   },
   {
     "num": 33,
@@ -7273,7 +8039,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.13",
     "answerKey": "a",
     "solution": "1.\n(d)\n\nFor n = 1, Total number of functions = 4\n\nTotal number of self-dual functions = 2\n\nFor n = 2, Total number of functions = 16\n\nTotal number self-dual functions = 4\n\nNow, if we have 'n' variable with us\n\nThen total number of function = n 2 2\n\nAmong then number of self-dual functions = n-1 2 2\n\nSelf -Dual:\n\nF = FD\n\nF = AB\n\nFD = A+B\n\nDual A A ⎯⎯⎯ →\n\nDual A A ⎯⎯⎯ →\n\nEx-\n\nF = AB + BC + AC\n\nFD = (A + B) ↔(B + C) (A + C)\n\nFD= AB + BC + AC\n\nHence, correct answer is option (d)",
-    "id": "pyq_39_428"
+    "id": "pyq_39_428",
+    "q_snippet": "snippets/q_pyq_39_428.webp",
+    "sol_snippet": "snippets/sol_pyq_39_428.webp"
   },
   {
     "num": 1,
@@ -7290,7 +8058,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.18",
     "answerKey": "See Solution",
     "solution": "Detailed step-by-step derivation in book archive.",
-    "id": "pyq_40_429"
+    "id": "pyq_40_429",
+    "q_snippet": "snippets/q_pyq_40_429.webp"
   },
   {
     "num": 2,
@@ -7307,7 +8076,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.18",
     "answerKey": "See Solution",
     "solution": "Detailed step-by-step derivation in book archive.",
-    "id": "pyq_41_430"
+    "id": "pyq_41_430",
+    "q_snippet": "snippets/q_pyq_41_430.webp"
   },
   {
     "num": 3,
@@ -7324,7 +8094,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.18",
     "answerKey": "See Solution",
     "solution": "Detailed step-by-step derivation in book archive.",
-    "id": "pyq_42_431"
+    "id": "pyq_42_431",
+    "q_snippet": "snippets/q_pyq_42_431.webp"
   },
   {
     "num": 4,
@@ -7341,7 +8112,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.18",
     "answerKey": "See Solution",
     "solution": "Detailed step-by-step derivation in book archive.",
-    "id": "pyq_40_432"
+    "id": "pyq_40_432",
+    "q_snippet": "snippets/q_pyq_40_432.webp",
+    "sol_snippet": "snippets/sol_pyq_40_432.webp"
   },
   {
     "num": 5,
@@ -7358,7 +8131,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.18",
     "answerKey": "See Solution",
     "solution": "Detailed step-by-step derivation in book archive.",
-    "id": "pyq_41_433"
+    "id": "pyq_41_433",
+    "q_snippet": "snippets/q_pyq_41_433.webp",
+    "sol_snippet": "snippets/sol_pyq_41_433.webp"
   },
   {
     "num": 6,
@@ -7375,7 +8150,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.18",
     "answerKey": "See Solution",
     "solution": "Detailed step-by-step derivation in book archive.",
-    "id": "pyq_42_434"
+    "id": "pyq_42_434",
+    "q_snippet": "snippets/q_pyq_42_434.webp"
   },
   {
     "num": 7,
@@ -7392,7 +8168,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.18",
     "answerKey": "See Solution",
     "solution": "Detailed step-by-step derivation in book archive.",
-    "id": "pyq_40_435"
+    "id": "pyq_40_435",
+    "q_snippet": "snippets/q_pyq_40_435.webp",
+    "sol_snippet": "snippets/sol_pyq_40_435.webp"
   },
   {
     "num": 8,
@@ -7409,7 +8187,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.18",
     "answerKey": "See Solution",
     "solution": "Detailed step-by-step derivation in book archive.",
-    "id": "pyq_41_436"
+    "id": "pyq_41_436",
+    "q_snippet": "snippets/q_pyq_41_436.webp",
+    "sol_snippet": "snippets/sol_pyq_41_436.webp"
   },
   {
     "num": 9,
@@ -7426,7 +8206,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.30",
     "answerKey": "a",
     "solution": "The truth table of the above sequential circuit is given as follows.\n\nCLK Q1 Q0 0 0 0 1 1 1 2 1 0 3 0 1 4 0 0\n\nFrom the above truth table, we can see that it is an output of an Asynchronous down counter.\n\nHence, correct answer is option (a).",
-    "id": "pyq_43_437"
+    "id": "pyq_43_437",
+    "q_snippet": "snippets/q_pyq_43_437.webp"
   },
   {
     "num": 10,
@@ -7443,7 +8224,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.30",
     "answerKey": "a",
     "solution": "The characteristics table of given sequential circuit Clock 3 T = Q 1 D = Q 2 T = Q Q1 Q2 Q3 0\n-\n-\n-\n0 1 1 1 0 0 1 0 0 0 2 1 0 0 1 0 0 3 1 1 0 0 1 0 4 1 0 1 1 0 1 T Q T Q 1 Clock Q0 Q1 Asynchronous down counter\n+\ndown →\n\nSequential Circuits 5 0 1 0 1 1 1 6 0 1 1 1 1 0 7 1 1 1 0 1 1\n\nFrom above table states involved 011, 000, 100, 010, 101, 111, 110. The only state 001 can never be achieved.\n\nHence correct answer is option (a).",
-    "id": "pyq_44_438"
+    "id": "pyq_44_438",
+    "q_snippet": "snippets/q_pyq_44_438.webp",
+    "sol_snippet": "snippets/sol_pyq_44_438.webp"
   },
   {
     "num": 11,
@@ -7460,7 +8243,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.31",
     "answerKey": "a",
     "solution": "According to question , the initial state of counter is PQR = 000\n\nFrom the truth table the next three states are\n\n011→101→000\n\n12.. (3)\n\nDesign the up counter of 3bit ignore the LSB.\n\nSo, numebr of FF's are = 3",
-    "id": "pyq_45_439"
+    "id": "pyq_45_439",
+    "q_snippet": "snippets/q_pyq_45_439.webp",
+    "sol_snippet": "snippets/sol_pyq_45_439.webp"
   },
   {
     "num": 1,
@@ -7477,7 +8262,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.28",
     "answerKey": "b",
     "solution": "Qn+1 = Q S + DS\n\nQn+1 = Q.0+D.1 Qn+1 = D\n\nQn+1 is generated after delay\n\nNow in a flip flop we always consider edge but in the circuit, it is level sensitive, therefore the circuit is equivalent to a D-latch.",
-    "id": "pyq_46_440"
+    "id": "pyq_46_440",
+    "q_snippet": "snippets/q_pyq_46_440.webp",
+    "sol_snippet": "snippets/sol_pyq_46_440.webp"
   },
   {
     "num": 2,
@@ -7494,7 +8281,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.28",
     "answerKey": "b",
     "solution": "Given present state of both flip flop before apply clock pulse is High (i.e. 1)\n\nClock Q1 Q0 0 1 1 1 0 1 2 1 0 3 1 1 4 0 1 5 1 0 6 1 1\n\nfrom above table the output state after 3rd and 4th clock pulse are 11 (Q1Q0) & 01 (Q1Q0) respectively hence correct option is (b).",
-    "id": "pyq_47_441"
+    "id": "pyq_47_441",
+    "q_snippet": "snippets/q_pyq_47_441.webp",
+    "sol_snippet": "snippets/sol_pyq_47_441.webp"
   },
   {
     "num": 3,
@@ -7511,7 +8300,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.28",
     "answerKey": "a",
     "solution": "According to the question, the given sequential circuit will look like as follows.\n\n0 = S P S S 1 = S Q\n\nSequential Circuits CLK Qn of JK Flip Flop 0 0 1 1 2 1 3 0 4 1 5 1\n\nFrom the above truth table the Output of JK Flip Flop will be\n\n0 → 1→1→0→1→1\n\n= 011011...\n\nHence, correct answer is option (a).",
-    "id": "pyq_43_442"
+    "id": "pyq_43_442",
+    "q_snippet": "snippets/q_pyq_43_442.webp",
+    "sol_snippet": "snippets/sol_pyq_43_442.webp"
   },
   {
     "num": 4,
@@ -7528,7 +8319,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.29",
     "answerKey": "c",
     "solution": "The truth table of the given flip-flop will be JK-flip flop CLK Q2 Q1 Q0 0 0 0 0 1 1 0 0 2 1 1 0 3 1 1 1\n\nFrom the above truth table, the state sequence for next 3 clock cycles are 100, 110 and 111.\n\nHence, correct answer is option (c).",
-    "id": "pyq_44_443"
+    "id": "pyq_44_443",
+    "q_snippet": "snippets/q_pyq_44_443.webp",
+    "sol_snippet": "snippets/sol_pyq_44_443.webp"
   },
   {
     "num": 5,
@@ -7545,7 +8338,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.29",
     "answerKey": "a",
     "solution": "The number of Flip Flops needed to design Mod-M counter,\n\nM ≤ 2n\n\n…(i)\n\nwhere n = number of flip flops\n\nto solve (i) by taking log on both sides we get,\n\nn ≥ log2 M\n\nn ≥ log2 258 [Θ M = 258]\n\nn ≥ 8.01122\n\n9 n\n\nHence, correct answer is option (a).",
-    "id": "pyq_45_444"
+    "id": "pyq_45_444",
+    "q_snippet": "snippets/q_pyq_45_444.webp",
+    "sol_snippet": "snippets/sol_pyq_45_444.webp"
   },
   {
     "num": 6,
@@ -7562,7 +8357,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.29",
     "answerKey": "c",
     "solution": "As per the given conditions, the truth table will be given as CLOCK P Q R 0 0 0 0 1 0 1 0 2 0 1 1 3 1 0 0 4 0 0 0\n\nWe can see that the above truth table is the output of a mod- 4 counter.\n\nHence total number of distinct states = 4\n\nHence, correct answer is option (b)",
-    "id": "pyq_46_445"
+    "id": "pyq_46_445",
+    "q_snippet": "snippets/q_pyq_46_445.webp",
+    "sol_snippet": "snippets/sol_pyq_46_445.webp"
   },
   {
     "num": 7,
@@ -7579,7 +8376,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.29",
     "answerKey": "d",
     "solution": "In the circuit PQR = 010\n\nBefore applying the clock, input of the Flip-flop =011\n\nSo, in the D-FF whatever the inputs applied that will come at the output along with clock.\n\nSo, output of counter = 011\n\nHence, correct answer is option (d).\n\nDigital Logic",
-    "id": "pyq_47_446"
+    "id": "pyq_47_446",
+    "q_snippet": "snippets/q_pyq_47_446.webp",
+    "sol_snippet": "snippets/sol_pyq_47_446.webp"
   },
   {
     "num": 8,
@@ -7596,7 +8395,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.30",
     "answerKey": "d",
     "solution": "We know that truth table of JK flip-flop is given by Qn Qn+1 J K 0 1 0 X 0 1 1 X 1 0 X 1 1 1 X 0\n\nNow the truth table of given circuit is given by x y Qn Qn+1 J K 0 0 0 0 0 × 0 0 1 1 × 0 0 1 0 1 1 × 0 1 1 0 × 1 1 0 0 1 1 × 1 0 1 0 × 1 1 1 0 0 0 × 1 1 1 1 × 0\n\nSolving J & K using k-map, we get\n\nJ xy xy x y =\n+\n= ⊕\n\nK xy y x y x =\n+\n= ⊕\n\nHence, correct answer is option (d).",
-    "id": "pyq_43_447"
+    "id": "pyq_43_447",
+    "q_snippet": "snippets/q_pyq_43_447.webp"
   },
   {
     "num": 9,
@@ -7613,7 +8413,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.30",
     "answerKey": "a",
     "solution": "The truth table of the above sequential circuit is given as follows.\n\nCLK Q1 Q0 0 0 0 1 1 1 2 1 0 3 0 1 4 0 0\n\nFrom the above truth table, we can see that it is an output of an Asynchronous down counter.\n\nHence, correct answer is option (a).",
-    "id": "pyq_44_448"
+    "id": "pyq_44_448",
+    "q_snippet": "snippets/q_pyq_44_448.webp"
   },
   {
     "num": 10,
@@ -7630,7 +8431,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.30",
     "answerKey": "a",
     "solution": "The characteristics table of given sequential circuit Clock 3 T = Q 1 D = Q 2 T = Q Q1 Q2 Q3 0\n-\n-\n-\n0 1 1 1 0 0 1 0 0 0 2 1 0 0 1 0 0 3 1 1 0 0 1 0 4 1 0 1 1 0 1 T Q T Q 1 Clock Q0 Q1 Asynchronous down counter\n+\ndown →\n\nSequential Circuits 5 0 1 0 1 1 1 6 0 1 1 1 1 0 7 1 1 1 0 1 1\n\nFrom above table states involved 011, 000, 100, 010, 101, 111, 110. The only state 001 can never be achieved.\n\nHence correct answer is option (a).",
-    "id": "pyq_45_449"
+    "id": "pyq_45_449",
+    "q_snippet": "snippets/q_pyq_45_449.webp",
+    "sol_snippet": "snippets/sol_pyq_45_449.webp"
   },
   {
     "num": 11,
@@ -7647,7 +8450,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.31",
     "answerKey": "a",
     "solution": "According to question , the initial state of counter is PQR = 000\n\nFrom the truth table the next three states are\n\n011→101→000\n\n12.. (3)\n\nDesign the up counter of 3bit ignore the LSB.\n\nSo, numebr of FF's are = 3",
-    "id": "pyq_46_450"
+    "id": "pyq_46_450",
+    "q_snippet": "snippets/q_pyq_46_450.webp",
+    "sol_snippet": "snippets/sol_pyq_46_450.webp"
   },
   {
     "num": 12,
@@ -7664,7 +8469,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.28",
     "answerKey": "3",
     "solution": "Official GATE Answer: (3)",
-    "id": "pyq_47_451"
+    "id": "pyq_47_451",
+    "q_snippet": "snippets/q_pyq_47_451.webp"
   },
   {
     "num": 13,
@@ -7681,7 +8487,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.31",
     "answerKey": "2",
     "solution": "The characteristics table of given Flip-Flop Input D1 D2 1 Q+ 2 Q (Out)\n+\n\n0 0 0 0 0 1 0 0 1 0 0 0 1 0 0 1 0 1 1 0 0 1 0 0 1 1 1 0 1 1 0 1 1 0 1 1 1 1 1 1\n\nFrom above chracteristics table state transistion\n\ndiagram of the given positive edge-triggered D flip\n\nflop is\n\nFrom above state transistion diagram after 2 state it come back to some value.",
-    "id": "pyq_43_452"
+    "id": "pyq_43_452",
+    "q_snippet": "snippets/q_pyq_43_452.webp",
+    "sol_snippet": "snippets/sol_pyq_43_452.webp"
   },
   {
     "num": 14,
@@ -7698,7 +8506,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.31",
     "answerKey": "b",
     "solution": "Q1 Q0 Q+ Q0+ T1 T0 0 0 0 1 0 1 0 1 1 0 1 1 1 0 1 1 0 1 1 1 1 1 0 0\n\nFor T0\n\nDigital Logic\n\n1 0 0 T = Q + Q\n\nFor T1\n\n1 1 0 T Q Q =\n\nHence correct answer is option (b).",
-    "id": "pyq_44_453"
+    "id": "pyq_44_453",
+    "q_snippet": "snippets/q_pyq_44_453.webp",
+    "sol_snippet": "snippets/sol_pyq_44_453.webp"
   },
   {
     "num": 15,
@@ -7715,7 +8525,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.32",
     "answerKey": "d",
     "solution": "0 0 0 0→ 0\n\n1 0 0 0→ 8\n\n1 1 0 0→ 12\n\n1 1 1 0→ 14\n\n1 1 1 1→ 15\n\n0 1 1 1→ 7\n\n0 0 1 1→ 3\n\n0 0 0 1→ 1",
-    "id": "pyq_45_454"
+    "id": "pyq_45_454",
+    "q_snippet": "snippets/q_pyq_45_454.webp",
+    "sol_snippet": "snippets/sol_pyq_45_454.webp"
   },
   {
     "num": 16,
@@ -7732,7 +8544,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.32",
     "answerKey": "c",
     "solution": "Let 2 × 4 Decoder as shown below, be at the output\n\nNow, according to question 2-bit binary counter is connected in the input of the above Decoder. The output of the combination will be given as A B y0 y1 y2 y3 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 0 1 0 1 1 0 0 0 1\n\nRing counter of 2n bits i.e. k-bit ring counter.\n\nHence, correct answer is option (c)\n\nSequential Circuits",
-    "id": "pyq_46_455"
+    "id": "pyq_46_455",
+    "q_snippet": "snippets/q_pyq_46_455.webp",
+    "sol_snippet": "snippets/sol_pyq_46_455.webp"
   },
   {
     "num": 17,
@@ -7749,7 +8563,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.33",
     "answerKey": "c",
     "solution": "Number of required chips for memory capacity\n\n= 256 ×210 × 8\n\nNumber of available chips for RAM capacity\n\n= 32 ×210 × 1\n\nNow,\n\nNumber of chips needed to build 256K-bytes will be\n\nNumber of chips = Required Avaliable = 10 10 256 2 8 64 32 × 2 × × =\n\nHence, correct answer is option (c).",
-    "id": "pyq_47_456"
+    "id": "pyq_47_456",
+    "q_snippet": "snippets/q_pyq_47_456.webp"
   },
   {
     "num": 18,
@@ -7766,7 +8581,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "9.33",
     "answerKey": "d",
     "solution": "ROM = Input output 4 4 2 2 2 × ×\n\n= 28× 23\n\n= 211\n\n= 2× 210\n\n= 2k bits",
-    "id": "pyq_43_457"
+    "id": "pyq_43_457",
+    "q_snippet": "snippets/q_pyq_43_457.webp"
   },
   {
     "num": 1,
@@ -7783,7 +8599,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.6",
     "answerKey": "d",
     "solution": "DFA for ending with 011:\n\nHence, option (d) is correct.",
-    "id": "pyq_43_458"
+    "id": "pyq_43_458",
+    "q_snippet": "snippets/q_pyq_43_458.webp",
+    "sol_snippet": "snippets/sol_pyq_43_458.webp"
   },
   {
     "num": 2,
@@ -7800,7 +8618,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.6",
     "answerKey": "c",
     "solution": "L = Σ*- L\n\n= {0, 1}* - L\n\nIf L is a DFA with K states than in L DFA also having K states because number of states in L and L are same.",
-    "id": "pyq_44_459"
+    "id": "pyq_44_459",
+    "q_snippet": "snippets/q_pyq_44_459.webp",
+    "sol_snippet": "snippets/sol_pyq_44_459.webp"
   },
   {
     "num": 3,
@@ -7817,7 +8637,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.6",
     "answerKey": "256 to 256",
     "solution": "Every symbol is having two choices\n\n0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1\n2 2 2 2 2 2 2 2\n\nTotal strings with length 8 = 28\n\nTotal strings with length 8 = 256",
-    "id": "pyq_45_460"
+    "id": "pyq_45_460",
+    "q_snippet": "snippets/q_pyq_45_460.webp",
+    "sol_snippet": "snippets/sol_pyq_45_460.webp"
   },
   {
     "num": 4,
@@ -7834,7 +8656,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.6",
     "answerKey": "d",
     "solution": "1. L(A) = Regular\n\nComplement of L(A) = Regular Regular =\n\nEvery Regular language is CFL\n\n2. L(A) = 11*0(0 + 1)* + 0(0 + 1)*\n\n= (11*0 + 0) (0 + 1)*\n\n= (1+ 0 + 0) ( 0 + 1)*\n\n= (1+ + ∈) 0 (0 + 1)*\n\n= 1*0 (0 + 1)*\n\nFinite Automata and Transducer\n\n3. Minimal DFA for [1*0 (0 + 1)*]:\n\nNumber of states in minimal DFA = 2\n\n4. Given DFA accepts all strings containing 0 as substring.",
-    "id": "pyq_46_461"
+    "id": "pyq_46_461",
+    "q_snippet": "snippets/q_pyq_46_461.webp",
+    "sol_snippet": "snippets/sol_pyq_46_461.webp"
   },
   {
     "num": 5,
@@ -7851,7 +8675,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.7",
     "answerKey": "d",
     "solution": "From state 00 to read input 0 ⇒ q(dead state)\n\nFrom state 00 to read input 1 ⇒ 01\n\nFrom state 01 to read input 1 ⇒ 11\n\nHence, option (d) is correct.",
-    "id": "pyq_43_462"
+    "id": "pyq_43_462",
+    "q_snippet": "snippets/q_pyq_43_462.webp",
+    "sol_snippet": "snippets/sol_pyq_43_462.webp"
   },
   {
     "num": 6,
@@ -7868,7 +8694,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.7",
     "answerKey": "a",
     "solution": "Partition algorithm:\n\n(i) {p, q, r}\n{s, t}\n\nNon-final Final\n\n(ii) {p, q}, {r}, {s, t}\n\n(iii) {p}, {q}, {r}, {s, t}\n\nNumber of states = 4.\n\nHere s and t are equivalent.",
-    "id": "pyq_44_463"
+    "id": "pyq_44_463",
+    "q_snippet": "snippets/q_pyq_44_463.webp",
+    "sol_snippet": "snippets/sol_pyq_44_463.webp"
   },
   {
     "num": 7,
@@ -7885,7 +8713,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.7",
     "answerKey": "c",
     "solution": "Minimal accepted string = 00\n\nIt will accept all the strings end with 00.",
-    "id": "pyq_45_464"
+    "id": "pyq_45_464",
+    "q_snippet": "snippets/q_pyq_45_464.webp",
+    "sol_snippet": "snippets/sol_pyq_45_464.webp"
   },
   {
     "num": 8,
@@ -7902,7 +8732,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.7",
     "answerKey": "c",
     "solution": "∈-NFA:\n\nTransition with (q2, aba):\n\nb b p q r a,b s a,b a a\n\nTheory of Computation\n\n2 1 2 0 ˆ q ,aba\n{q ,q ,q }\nδ =\n\nHence, option (c) is correct.",
-    "id": "pyq_46_465"
+    "id": "pyq_46_465",
+    "q_snippet": "snippets/q_pyq_46_465.webp",
+    "sol_snippet": "snippets/sol_pyq_46_465.webp"
   },
   {
     "num": 9,
@@ -7919,7 +8751,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.8",
     "answerKey": "a",
     "solution": "Reachable states for the input string 0011:\n\n0 0 1 2 ˆ q ,0011\n{q , q , q }\nδ =\n\nHence, option (a) is correct.",
-    "id": "pyq_43_466"
+    "id": "pyq_43_466",
+    "q_snippet": "snippets/q_pyq_43_466.webp",
+    "sol_snippet": "snippets/sol_pyq_43_466.webp"
   },
   {
     "num": 10,
@@ -7936,7 +8770,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.8",
     "answerKey": "b",
     "solution": "⇒ L = a+\n\n* L L = ↔−\n\n= a* - a+\n\n= {ε}",
-    "id": "pyq_44_467"
+    "id": "pyq_44_467",
+    "q_snippet": "snippets/q_pyq_44_467.webp",
+    "sol_snippet": "snippets/sol_pyq_44_467.webp"
   },
   {
     "num": 11,
@@ -7953,7 +8789,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.8",
     "answerKey": "Marks to All",
     "solution": "Z × Y: → Z1Y1 Z2Y1 Z2Y2 Z1Y2 Z2Y2 Z2Y1 Z2Y1 Z1Y1 Z1Y2 Z2Y2 Z1Y2 Z1Y1\n\na b → P S R Q R S S P Q R Q P\n\nWe don't have correct option",
-    "id": "pyq_45_468"
+    "id": "pyq_45_468",
+    "q_snippet": "snippets/q_pyq_45_468.webp"
   },
   {
     "num": 12,
@@ -7970,7 +8807,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.8",
     "answerKey": "a, c",
     "solution": "L1 (M1) is DFA and it accepts (0 + 1)* 11 (0 + 1)*\n\nL2 (M2) is NFA and it accepts (0 + 1)* 11 (0 + 1)*\n\nBoth L1 and L2 are equal and 𝐿1 ∩ 𝐿2 𝐶= 𝜙is also correct.",
-    "id": "pyq_46_469"
+    "id": "pyq_46_469",
+    "q_snippet": "snippets/q_pyq_46_469.webp",
+    "sol_snippet": "snippets/sol_pyq_46_469.webp"
   },
   {
     "num": 13,
@@ -7987,7 +8826,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.8",
     "answerKey": "a",
     "solution": "Complement of given machine:\n\nIt will accept set of all strings that do not end with ab.\n\nFinite Automata and Transducer",
-    "id": "pyq_43_470"
+    "id": "pyq_43_470",
+    "q_snippet": "snippets/q_pyq_43_470.webp",
+    "sol_snippet": "snippets/sol_pyq_43_470.webp"
   },
   {
     "num": 14,
@@ -8004,7 +8845,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.9",
     "answerKey": "4 to 4",
     "solution": "DFA for L:\n\nDFA for L\n\nNumber of states will be same in both L and L .\n\nNumber of states = 4",
-    "id": "pyq_44_471"
+    "id": "pyq_44_471",
+    "q_snippet": "snippets/q_pyq_44_471.webp"
   },
   {
     "num": 15,
@@ -8021,7 +8863,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.9",
     "answerKey": "6 to 6",
     "solution": "Divisible by 2 strings = ∈, aa, aaaa, aaaaaa, …..\n\nDivisible by 3 strings = ∈, aaa, aaaaaa, aaaaaaaaa, …..\n\nDivisible by 2 but not 3 strings = a2, a4, a8, a10, a12, …..\n\nDFA design for number of a's divisible by 2 but not 3:\n\nNumber of states = 6",
-    "id": "pyq_45_472"
+    "id": "pyq_45_472",
+    "q_snippet": "snippets/q_pyq_45_472.webp",
+    "sol_snippet": "snippets/sol_pyq_45_472.webp"
   },
   {
     "num": 16,
@@ -8038,7 +8882,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.9",
     "answerKey": "120 to 120",
     "solution": "If ↔ is set of all bijections from {1, 2} to {1, 2}\n\nNumber of bijective functions = 2! = 2\n\nHere, Language L = {∈, f1, f1f2, f2f2 ….}\n\nNumber of states =2\n\nIf set has 2 elements, then 2! bijective functions and hence 2! States.\n\nEach bijective function requires one state to represent as result of some composition.\n\nIf set has 5 elements, then number of bijective functions = 5! and number of states = 5!\n\nNumber of states = 5 × 4 × 3 × 2 × 1 = 120",
-    "id": "pyq_46_473"
+    "id": "pyq_46_473",
+    "q_snippet": "snippets/q_pyq_46_473.webp"
   },
   {
     "num": 17,
@@ -8055,7 +8900,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.9",
     "answerKey": "d",
     "solution": "If NFA (N) having 'n' states and DFA having 'k' states.\n\nThen, relation between k and n is using subset construction algorithm is:\n\nk 2n ≤",
-    "id": "pyq_43_474"
+    "id": "pyq_43_474",
+    "q_snippet": "snippets/q_pyq_43_474.webp",
+    "sol_snippet": "snippets/sol_pyq_43_474.webp"
   },
   {
     "num": 18,
@@ -8072,7 +8919,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.9",
     "answerKey": "8 to 8",
     "solution": "L = {w1aw2 | w1, w2 ∈ {a, b}*, |w1| = 2, |w2| > 3}\n\n= (a + b)2 a (a + b)3 (a + b)*\n\nDFA for L:\n\nTheory of Computation\n\nNumber of states in DFA for L = 8.",
-    "id": "pyq_44_475"
+    "id": "pyq_44_475",
+    "q_snippet": "snippets/q_pyq_44_475.webp",
+    "sol_snippet": "snippets/sol_pyq_44_475.webp"
   },
   {
     "num": 19,
@@ -8089,7 +8938,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.10",
     "answerKey": "1 to 1",
     "solution": "M accepts all strings ending in a.\n\nL(M) = (a + b)* a\n\nN accepts all strings ending in b.\n\nL (N) = (a + b)* b\n\nL(M) ∩ L(N) = φ\n\nTo represent empty language, only one state present in minimal DFA.\n\nDFA:\n\nTo design DFA for φ minimum 1 state is needed.",
-    "id": "pyq_45_476"
+    "id": "pyq_45_476",
+    "q_snippet": "snippets/q_pyq_45_476.webp",
+    "sol_snippet": "snippets/sol_pyq_45_476.webp"
   },
   {
     "num": 20,
@@ -8106,7 +8957,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.10",
     "answerKey": "b",
     "solution": "L = {ank | k > 0, and n is a positive integer constant}. •\nIf n = 1 ⇒ L = {ak | k > 0}\n\nL = a+\n\nFA:\n\n2 states are needed. •\nIf n = 2 ⇒ L = {a2k | k > 0}\n\nL = (aa)+\n\n3 states are needed. •\nIf n = 3 ⇒ L = {a3k | k > 0}\n\nL = (aaa)+\n\n4 states are needed.\n\nFor L = {ank | k > 0, n is constant}, n + 1 states are needed.",
-    "id": "pyq_46_477"
+    "id": "pyq_46_477",
+    "q_snippet": "snippets/q_pyq_46_477.webp",
+    "sol_snippet": "snippets/sol_pyq_46_477.webp"
   },
   {
     "num": 21,
@@ -8123,7 +8976,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.10",
     "answerKey": "c",
     "solution": "w = abb(n = 3) ⇒ L = {ε, a, b ab, bb, abb}\n\nDFA for abb:\n\nAccept w = abb\n\nDFA for L:\n\nFor 3 length 4 states are needed. So, for n length n + 1 states are needed.",
-    "id": "pyq_43_478"
+    "id": "pyq_43_478",
+    "q_snippet": "snippets/q_pyq_43_478.webp",
+    "sol_snippet": "snippets/sol_pyq_43_478.webp"
   },
   {
     "num": 22,
@@ -8140,7 +8995,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.10",
     "answerKey": "a",
     "solution": "NFA(N) ⇒ n states\n\nMin DFA(M) ⇒ m States\n\nRelation between m & n:\n\nDFA having ≤ 2n states\n\nn m 2 ≤\n\nFinite Automata and Transducer",
-    "id": "pyq_44_479"
+    "id": "pyq_44_479",
+    "q_snippet": "snippets/q_pyq_44_479.webp",
+    "sol_snippet": "snippets/sol_pyq_44_479.webp"
   },
   {
     "num": 23,
@@ -8157,7 +9014,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.11",
     "answerKey": "b",
     "solution": "Input = 001011110\n\nOutput = 000001110\n\nMealy Machine:\n\nTransition Table: s b\n\n0 1 0\n\n0, 0 t, y 1, 0 t, y 1\n\n0, 0 t, y 1, 1 t, y\n\nt = b\n\ny = sb\n\nHence, option (b) is correct.",
-    "id": "pyq_45_480"
+    "id": "pyq_45_480",
+    "q_snippet": "snippets/q_pyq_45_480.webp"
   },
   {
     "num": 24,
@@ -8174,7 +9032,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.11",
     "answerKey": "a",
     "solution": "A = 0, B = 1 and output = 1\n\nInput = 101\n\nFrom state 00, by reading 3 length minimum input it takes to 01.",
-    "id": "pyq_46_481"
+    "id": "pyq_46_481",
+    "q_snippet": "snippets/q_pyq_46_481.webp"
   },
   {
     "num": 1,
@@ -8191,7 +9050,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.21",
     "answerKey": "b",
     "solution": "2. (d)",
-    "id": "pyq_47_482"
+    "id": "pyq_47_482",
+    "q_snippet": "snippets/q_pyq_47_482.webp",
+    "sol_snippet": "snippets/sol_pyq_47_482.webp"
   },
   {
     "num": 2,
@@ -8208,7 +9069,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.21",
     "answerKey": "d",
     "solution": "L ={a2 + 3k } ∪ {b10 + 12k}\n\n= aa (aaa)* + b10. (b12)*\n\nNumber of states = 16\n\nSo, pumping length must be greater than 16.\n\nHence, option (d) is correct.",
-    "id": "pyq_48_483"
+    "id": "pyq_48_483",
+    "q_snippet": "snippets/q_pyq_48_483.webp",
+    "sol_snippet": "snippets/sol_pyq_48_483.webp"
   },
   {
     "num": 3,
@@ -8225,7 +9088,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.21",
     "answerKey": "2 to 2",
     "solution": "L = ∈ + 0 (00)* for given FA.\n\nL0 = {∈}\n\nL1 = L0. L = ∈.(∈ + 0(00)*) = L\n\nL2 = L1. L = L.L = [∈ + 0(00)*] [∈ + 0(00)*] = 0*\n\nL3 = L2. L = 0*. (∈ + 0 (00)*) = 0*\n\nSo, O(L) = 2",
-    "id": "pyq_50_484"
+    "id": "pyq_50_484",
+    "q_snippet": "snippets/q_pyq_50_484.webp",
+    "sol_snippet": "snippets/sol_pyq_50_484.webp"
   },
   {
     "num": 4,
@@ -8242,7 +9107,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.21",
     "answerKey": "c",
     "solution": "• S1 → aS1b | ∈ L1 = {an bn | n ≥ 0} is CFL • S2 → abS2 | ∈ L2 = (ab)* is Regular\n\nHence, L1 is CFL and L2 is Regular.\n\nSo, option (c) is correct.\n\nTheory of Computation",
-    "id": "pyq_47_485"
+    "id": "pyq_47_485",
+    "q_snippet": "snippets/q_pyq_47_485.webp",
+    "sol_snippet": "snippets/sol_pyq_47_485.webp"
   },
   {
     "num": 5,
@@ -8259,7 +9126,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.22",
     "answerKey": "d",
     "solution": "S → aS | bS | ∈\n\nL = (a + b)*\n\n= {a, b}*\n\nHence, option (d) is correct.",
-    "id": "pyq_48_486"
+    "id": "pyq_48_486",
+    "q_snippet": "snippets/q_pyq_48_486.webp"
   },
   {
     "num": 6,
@@ -8276,7 +9144,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.22",
     "answerKey": "c",
     "solution": "X2 → 0X1 | ∈\n\nX2 = 0X1 + ∈\n\nX1 → 0X1 | 1X2\n\nX1 = 0X1 | 10X1 | 1\n\nX1 = (0 + 10)*1\n\nX0 = 1X1\n\nX0 = 1(0 + 10)*1\n\nHence, option (c) is correct.",
-    "id": "pyq_50_487"
+    "id": "pyq_50_487",
+    "q_snippet": "snippets/q_pyq_50_487.webp",
+    "sol_snippet": "snippets/sol_pyq_50_487.webp"
   },
   {
     "num": 7,
@@ -8293,7 +9163,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.22",
     "answerKey": "b",
     "solution": "(a) If L is Regular then L.LR is Regular.\n\n(b) May/may not be Regular over Σ = {a, b}.\n\nIf L = a* then wwR = (aa)* is regular\n\nIf L = (a+b)* then wwR is not regular\n\n(c) Prefix(Regular) is always Regular\n\n(d) Suffix(Regular) is always Regular\n\nHence, option (b) is correct.",
-    "id": "pyq_47_488"
+    "id": "pyq_47_488",
+    "q_snippet": "snippets/q_pyq_47_488.webp",
+    "sol_snippet": "snippets/sol_pyq_47_488.webp"
   },
   {
     "num": 8,
@@ -8310,7 +9182,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.22",
     "answerKey": "a",
     "solution": "L1: {wxwR |w, x ∈ {a, b}+}\n\nL1 = axa + bxb\n\n= a (a + b)+ a + b(a + b)+ b = Regular\n\nL2: {an bm | n ≠ m}= Not Regular\n\nL3: a*b*c* = Regular\n\nHence, L1 and L3 are Regular.",
-    "id": "pyq_48_489"
+    "id": "pyq_48_489",
+    "q_snippet": "snippets/q_pyq_48_489.webp",
+    "sol_snippet": "snippets/sol_pyq_48_489.webp"
   },
   {
     "num": 9,
@@ -8327,7 +9201,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.22",
     "answerKey": "a",
     "solution": "1 110 011 L :n and n\n\nWe can construct DFA for L1 with the help of cycle to count number of occurrences of both patterns 110 and 011. While counting one pattern, other pattern will be either equal or one more or less compared to other pattern. This can be remembered with the few states.\n\n2 000 111 L :n and n\n\nWe can not make DFA for L2. While counting 000, there is no way to remember the count using DFA.\n\nHence, option (a) is correct.",
-    "id": "pyq_50_490"
+    "id": "pyq_50_490",
+    "q_snippet": "snippets/q_pyq_50_490.webp",
+    "sol_snippet": "snippets/sol_pyq_50_490.webp"
   },
   {
     "num": 10,
@@ -8344,7 +9220,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.22",
     "answerKey": "a",
     "solution": "1 2 n n 1 2 1 2 L .L = a b n , n 0 ≥\n\n= a*b* Regular language\n\nRegular Language and Grammar",
-    "id": "pyq_47_491"
+    "id": "pyq_47_491",
+    "q_snippet": "snippets/q_pyq_47_491.webp",
+    "sol_snippet": "snippets/sol_pyq_47_491.webp"
   },
   {
     "num": 11,
@@ -8361,7 +9239,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.23",
     "answerKey": "a",
     "solution": "I.\n{anb2m | n ≥ 0, m ≥ 0} ⇒ a*(bb)*\n\nII. {anbm | n = 2m} ⇒ CFL\n\nIII. {anbm | n ≠ m} ⇒ CFL\n\nIV. {xcy | x, y ∈ {a, b}*}⇒ (a + b)* c (a + b)*\n\nHence, option (a) is correct.",
-    "id": "pyq_48_492"
+    "id": "pyq_48_492",
+    "q_snippet": "snippets/q_pyq_48_492.webp"
   },
   {
     "num": 12,
@@ -8378,7 +9257,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.23",
     "answerKey": "d",
     "solution": "I. If L1 ∪ L2 is Regular then, L1 and L2 may/may\nnot be regular.\n\nan bn (DCFL) ∪ a* b*(Regular) = Regular\n\nan bn (DCFL) ∪ (a + b)* (Regular) = Regular\n\nII. {ε}∪{ab} ∪ {a2 b2} ∪… = {anbn} is not\nregular\n\nInfinite union is not closed under regular language.\n\nHence, option (d) is correct.",
-    "id": "pyq_50_493"
+    "id": "pyq_50_493",
+    "q_snippet": "snippets/q_pyq_50_493.webp",
+    "sol_snippet": "snippets/sol_pyq_50_493.webp"
   },
   {
     "num": 13,
@@ -8395,7 +9276,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.23",
     "answerKey": "b",
     "solution": "I. FALSE\n\nConsider the following NFA. Here all states are accepting states, but language accepted by NFA is not ↔*.\n\nII.\nTRUE\n\nA ∩ B is Regular, when A is empty language.\n\nφ ∩ Any = φ (Regular)",
-    "id": "pyq_47_494"
+    "id": "pyq_47_494",
+    "q_snippet": "snippets/q_pyq_47_494.webp",
+    "sol_snippet": "snippets/sol_pyq_47_494.webp"
   },
   {
     "num": 14,
@@ -8412,7 +9295,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.17",
     "answerKey": "3 to 3",
     "solution": "Minimal string for regular expression = 10\n\nDFA Design for (0 + 1)*(10):\n\nNumber of states = 3\n\nTheory of Computation",
-    "id": "pyq_48_495"
+    "id": "pyq_48_495",
+    "q_snippet": "snippets/q_pyq_48_495.webp",
+    "sol_snippet": "snippets/sol_pyq_48_495.webp"
   },
   {
     "num": 15,
@@ -8429,7 +9314,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.18",
     "answerKey": "3 to 3",
     "solution": "a* b* (ba)* a*\n\nIt will produce all 0 length, 1 length and 2 length string. But it will produce all 3 length string.\n\n∈ Possible\n\na Possible\n\nb Possible\n\naa Possible\n\nab Possible\n\nba Possible\n\nbb Possible\n\nbab Not Possible\n\nThe shortest string, which is NOT present in the language = bab (3 length).",
-    "id": "pyq_50_496"
+    "id": "pyq_50_496",
+    "q_snippet": "snippets/q_pyq_50_496.webp"
   },
   {
     "num": 16,
@@ -8446,7 +9332,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.18",
     "answerKey": "b",
     "solution": "I. 0*1(1 + 00*1)*\n\n0*1 ((∈ + 00*)1)*\n\n0*1 (0*1)*\n\n(0*1)+\n\nII. 0* 1* 1 + 11* 0* 1 it will not generate 0101\nstring.\n\nIII. (0 + 1)* 1 is same as (0*1)+\n\nHence, I and III regular expressions are correct with respective DFA.",
-    "id": "pyq_47_497"
+    "id": "pyq_47_497",
+    "q_snippet": "snippets/q_pyq_47_497.webp",
+    "sol_snippet": "snippets/sol_pyq_47_497.webp"
   },
   {
     "num": 17,
@@ -8463,7 +9351,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.18",
     "answerKey": "c",
     "solution": "P\n\nRegular expression = ε + 0(01*1 + 00)*01*\n\nQ\n\nRegular expression = ε + 0(10*1 + 00)*0\n\nR\n\nRegular expression = ε + 0(10*1 + 10)*1\n\nS\n\nRegular expression = ε + 0(10*1 + 10)*10*\n\nHence, opiton (c) is correct.",
-    "id": "pyq_48_498"
+    "id": "pyq_48_498",
+    "q_snippet": "snippets/q_pyq_48_498.webp"
   },
   {
     "num": 1,
@@ -8480,7 +9369,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.30",
     "answerKey": "a",
     "solution": "2. (50 to 50)",
-    "id": "pyq_51_499"
+    "id": "pyq_51_499",
+    "q_snippet": "snippets/q_pyq_51_499.webp",
+    "sol_snippet": "snippets/sol_pyq_51_499.webp"
   },
   {
     "num": 2,
@@ -8497,7 +9388,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.30",
     "answerKey": "50 to 50",
     "solution": "Language by PDA = {am bn | m > n}\n• Sum of a's and b's must be 100 • Possible strings are: a100 b0, a99 b1, a92 b2, …., a51 b49. • Total number of 100 length strings\n\n= 100 - 51 + 1 = 50",
-    "id": "pyq_52_500"
+    "id": "pyq_52_500",
+    "q_snippet": "snippets/q_pyq_52_500.webp",
+    "sol_snippet": "snippets/sol_pyq_52_500.webp"
   },
   {
     "num": 3,
@@ -8514,7 +9407,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.30",
     "answerKey": "d",
     "solution": "State A: For every input a push X (A is final state).\n\nState B: For every input b pop X.\n\nL = {anbn | n ≥ 0} ∪ {an | n ≥ 0}\n\nContext Free Language and Context Free Grammar",
-    "id": "pyq_53_501"
+    "id": "pyq_53_501",
+    "q_snippet": "snippets/q_pyq_53_501.webp",
+    "sol_snippet": "snippets/sol_pyq_53_501.webp"
   },
   {
     "num": 4,
@@ -8531,7 +9426,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.31",
     "answerKey": "b",
     "solution": "q0:\n\n0, z → 0z;\nPush 0 for input 0\n\n1, z → 1z;\nPush 1 for input 1\n\n0/1/ε, z → z;\nno operation\n\nq1:\n\n1, 0z → z;\npop 0 for input 1\n\n0, 1z → z;\npop 1 for input 0 • String = 101100\n\n1 0 1 1 0 0 1 0 0 1 0\n\nLast 5 bits = 10010\n\nHence, option (b) is correct.",
-    "id": "pyq_54_502"
+    "id": "pyq_54_502",
+    "q_snippet": "snippets/q_pyq_54_502.webp"
   },
   {
     "num": 5,
@@ -8548,7 +9444,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.31",
     "answerKey": "d",
     "solution": "(a) abab\n\n(b) aaab\n\n(c) abbaa",
-    "id": "pyq_51_503"
+    "id": "pyq_51_503",
+    "q_snippet": "snippets/q_pyq_51_503.webp",
+    "sol_snippet": "snippets/sol_pyq_51_503.webp"
   },
   {
     "num": 6,
@@ -8565,7 +9463,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.31",
     "answerKey": "b",
     "solution": "Y = an bn\n\nX = a+\n\nS = a+ an bn | n ≥ 0\n\nHence, L = {am bn | m, n ≥ 0 and m >n}\n\n= {am bn | m > n ≥ 0}",
-    "id": "pyq_52_504"
+    "id": "pyq_52_504",
+    "q_snippet": "snippets/q_pyq_52_504.webp",
+    "sol_snippet": "snippets/sol_pyq_52_504.webp"
   },
   {
     "num": 7,
@@ -8582,7 +9482,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.31",
     "answerKey": "b",
     "solution": "T → bT | b\n\nT = b+\n\nS → abScT | abcT\n\nS = abS cb+ | abcb+\n\n= {abn abcb+ (cb+)n | n > 0 }\n\nTheory of Computation\n\nMinimal string = abcb+\n\nL = {(ab)n (cb+)n | n > 0}\n\n1 2 m m n ab cb cb ..... n times =\n\n3 1 2 n m m m m n 1 2 n 1 ab cb cb cb .... cb\n| n,m ,m .....m ≥\n=",
-    "id": "pyq_53_505"
+    "id": "pyq_53_505",
+    "q_snippet": "snippets/q_pyq_53_505.webp",
+    "sol_snippet": "snippets/sol_pyq_53_505.webp"
   },
   {
     "num": 8,
@@ -8599,7 +9501,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.32",
     "answerKey": "b",
     "solution": "G1: S → aSb | T\n\nT → c T | ∈ = c*\n\nL(G1) = {anc* bn | n ≥ 0}\n\nG2: S → bSa | T\n\nT → c T | ∈ = c*\n\nL(G2) = {bnc* an | n ≥ 0}\n\nL(G1) ∩ L(G2) = {c*}\n\nIt is a regualr but infinite(Not finite).\n\nHence, option (b) is correct.",
-    "id": "pyq_54_506"
+    "id": "pyq_54_506",
+    "q_snippet": "snippets/q_pyq_54_506.webp",
+    "sol_snippet": "snippets/sol_pyq_54_506.webp"
   },
   {
     "num": 9,
@@ -8616,7 +9520,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.32",
     "answerKey": "b",
     "solution": "(a) S → AB\n\nA → Aa | b\n\nB → c\n\nA → A there is a left recursion A to A.\n\n(b) S → Ab | Bb | c\n\nA → Bd | ∈\n\nB → e\n\nThere is not left recursion.\n\n(c) S → Aa | B\n\nA → Bb |Sc | ∈\n\nB → d\n\nS → A → S indirectly there is a left recursion S to S.\n\n(d) S → Aa | Bb | c\n\nA → Bd | ∈\n\nB → Ae | ∈\n\nA → B → A indirectly there is a left recursion A to A.",
-    "id": "pyq_51_507"
+    "id": "pyq_51_507",
+    "q_snippet": "snippets/q_pyq_51_507.webp",
+    "sol_snippet": "snippets/sol_pyq_51_507.webp"
   },
   {
     "num": 10,
@@ -8633,7 +9539,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.32",
     "answerKey": "d",
     "solution": "• G1: S → aS | B\n\nB → b | bB\n\nB = b+\n\nS = a*b+\n\nL1 = {am bn│m ≥ 0 and n > 0}\n• G2: S → aA | bB\n\nA → aA | B | ε\n\nB → bB | ε\n\nB = b*\n\nA = a*b*\n\nS = aa*b* | bb*\n\nL2 = a+ b* ∪ b+\n\nL2 = {am bn |m > 0 or n > 0}\n\nHence, option (d) is correct.",
-    "id": "pyq_52_508"
+    "id": "pyq_52_508",
+    "q_snippet": "snippets/q_pyq_52_508.webp",
+    "sol_snippet": "snippets/sol_pyq_52_508.webp"
   },
   {
     "num": 11,
@@ -8650,7 +9558,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.32",
     "answerKey": "b",
     "solution": "• S → aSa | bSb | a | b\n\nThis grammar will generate all odd length palindrome strings.\n\nContext Free Language and Context Free Grammar",
-    "id": "pyq_53_509"
+    "id": "pyq_53_509",
+    "q_snippet": "snippets/q_pyq_53_509.webp",
+    "sol_snippet": "snippets/sol_pyq_53_509.webp"
   },
   {
     "num": 12,
@@ -8667,7 +9577,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.33",
     "answerKey": "d",
     "solution": "S → aS | A\n\nA → aAb | b A a | ε\n\n(a) aabbaba → Not Possible.\n\n(b) aabaaba → Not Possible.\n\n(c) abababb → Not Possible.\n\n(d) aabbaab → Possible.\n\nHence, option (d) is correct.",
-    "id": "pyq_54_510"
+    "id": "pyq_54_510",
+    "q_snippet": "snippets/q_pyq_54_510.webp"
   },
   {
     "num": 13,
@@ -8684,7 +9595,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.33",
     "answerKey": "a",
     "solution": "S → aS | A\n\nA → aAb | bAa | ε\n\nS → aS → aA → aaAb → aabAab → aabbAaab → aabbaab\n\nTotal number of steps = 6 and 1 Parse Tree.",
-    "id": "pyq_51_511"
+    "id": "pyq_51_511",
+    "q_snippet": "snippets/q_pyq_51_511.webp",
+    "sol_snippet": "snippets/sol_pyq_51_511.webp"
   },
   {
     "num": 14,
@@ -8701,7 +9614,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.33",
     "answerKey": "b",
     "solution": "B → 0B00 | 1\n\nB = 0n102n\n\nA → 0A | A0 |1\n\nA = 0*10*\n\nS → AA | B\n\nS = {0*10*0*10*} ∪ {0n102n}\n\n= {0*10*10*} ∪ {0n102n}\n•\n0*10*10* = {0i10j10k│i, j, k ≥ 0}\n•\n0n102n = {0n102n | n ≥ 0}",
-    "id": "pyq_52_512"
+    "id": "pyq_52_512",
+    "q_snippet": "snippets/q_pyq_52_512.webp",
+    "sol_snippet": "snippets/sol_pyq_52_512.webp"
   },
   {
     "num": 15,
@@ -8718,7 +9633,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.33",
     "answerKey": "c",
     "solution": "1. Every left - recursive grammar can be converted to a right - recursive grammar and vice-versa. TRUE\n\n2. All ∈ - productions can be removed from any context - free grammar by suitable transformations. FALSE\n\n3. The language generated by a context-free grammar all of whose productions are of the form X → w or wY (where, w is a string of terminals and Y is a non-terminal), is always regular. TRUE\n\n4. The derivation trees of strings generated by a context-free grammar in Chomsky Normal Form are always binary trees. TRUE",
-    "id": "pyq_53_513"
+    "id": "pyq_53_513",
+    "q_snippet": "snippets/q_pyq_53_513.webp",
+    "sol_snippet": "snippets/sol_pyq_53_513.webp"
   },
   {
     "num": 16,
@@ -8735,7 +9652,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.33",
     "answerKey": "a, b, c",
     "solution": "•\nL1= {an wan | w∈{a, b}* }\n\nAssume n = 0\n\nL1 = ∈.w.∈\n\n= w = {a, b}*\n\n= (a + b)* Regular •\nL2 = {wxwR | w, x∈{a, b}*, |w|, |x| > 0}\n\nTheory of Computation OR\n\n= {wxwR | w, x∈{a, b}+}\n\nIt is well known regular language.\n\nEvery regular language is also CFL.\n\nHence, option (a, b, c) are correct.",
-    "id": "pyq_54_514"
+    "id": "pyq_54_514",
+    "q_snippet": "snippets/q_pyq_54_514.webp",
+    "sol_snippet": "snippets/sol_pyq_54_514.webp"
   },
   {
     "num": 17,
@@ -8752,7 +9671,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.34",
     "answerKey": "b, c, d",
     "solution": "L1 = {ww | w ∈ {a, b}*} ⇒ CSL\n\nL2 = {an bn cm | m, n ∈ 0} ⇒ an bn c* ⇒ DCFL\n\nL3 = {am bn cn | m, n ∈ 0}⇒ a* bn cn ⇒ DCFL • Every DCFL language is CFL also • DCFL ∩ DFCL an bn c*∩ a* bn cn = an bn cn = CSL\n\n1 L ww = = CFL",
-    "id": "pyq_51_515"
+    "id": "pyq_51_515",
+    "q_snippet": "snippets/q_pyq_51_515.webp",
+    "sol_snippet": "snippets/sol_pyq_51_515.webp"
   },
   {
     "num": 18,
@@ -8769,7 +9690,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.34",
     "answerKey": "b, c, d",
     "solution": "(a)\nNot CFL\n\n(b)\nCFL\n\n(c) ∈.x.∈ = x = (0 +1)* = Regular\n\nRegular means CFL also\n\n(d)\nCFL\n\nHence, option (b, c, d) are correct.",
-    "id": "pyq_52_516"
+    "id": "pyq_52_516",
+    "q_snippet": "snippets/q_pyq_52_516.webp",
+    "sol_snippet": "snippets/sol_pyq_52_516.webp"
   },
   {
     "num": 19,
@@ -8786,7 +9709,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.34",
     "answerKey": "c",
     "solution": "I.\nL is deterministic context-free (True)\n\nII. L is context-free but deterministic context-free\n\n(False)\n\nRegular ∪ DCFL = DCFL\n\nDPDA:\n\nIII. L is not LL(k) for any k. (True)",
-    "id": "pyq_53_517"
+    "id": "pyq_53_517",
+    "q_snippet": "snippets/q_pyq_53_517.webp"
   },
   {
     "num": 20,
@@ -8803,7 +9727,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.34",
     "answerKey": "a",
     "solution": "L1 = wxwy\n\nPut minimum string in x = 0 or 1 • L1 = w0y0 + w1y1\n0 1\n0 0 1\n0\n0 1\n1 0 1\n1\n+\n+\n+\n+\n+\n+\n+\n+\n+\nis Regular • L2 = CFL language",
-    "id": "pyq_54_518"
+    "id": "pyq_54_518",
+    "q_snippet": "snippets/q_pyq_54_518.webp",
+    "sol_snippet": "snippets/sol_pyq_54_518.webp"
   },
   {
     "num": 21,
@@ -8820,7 +9746,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.34",
     "answerKey": "c",
     "solution": "(a) {wwR | w∈{a, b}*}. CFL\n\n(b) {wan bn wR│w ∈ {a, b}*, n ≥ 0}. CFL\n\n(c) {wan wR bn | w ∈ {a, b}*, n ≥ 0} . Not CFL\n\n(d) {an bi│i ∈ {n, 3n, 5n}, n ≥ 0}. CFL\n\nContext Free Language and Context Free Grammar",
-    "id": "pyq_51_519"
+    "id": "pyq_51_519",
+    "q_snippet": "snippets/q_pyq_51_519.webp",
+    "sol_snippet": "snippets/sol_pyq_51_519.webp"
   },
   {
     "num": 22,
@@ -8837,7 +9765,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.35",
     "answerKey": "b",
     "solution": "I. {am bn cp dq |m + p = n + q} is CFL\n\nII. L = am bn cb dq is CFL.\n\nIII. {am bn cp dq |m = n = p and p ≠ q}. PDA not\nexist. So,it is not CFL.\n\nIV. {am bn cp dq |mn = p + q, where m, n, p, q ≥ 0}.\nIt is also not CFL.\n\nHence, option (b) is correct.",
-    "id": "pyq_52_520"
+    "id": "pyq_52_520",
+    "q_snippet": "snippets/q_pyq_52_520.webp"
   },
   {
     "num": 23,
@@ -8854,7 +9783,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.35",
     "answerKey": "b",
     "solution": "•\nL1 = {an bm cn + m | m, n ≥ 1}\n\n= {an bm cm cn | m, n ≥ 1}\n\nL1 is CFL. •\nL2 = {an bn c2n | n ≥ 1}\n\n= CSL but Not CFL.\n\nHence, option (b) is correct.",
-    "id": "pyq_53_521"
+    "id": "pyq_53_521",
+    "q_snippet": "snippets/q_pyq_53_521.webp",
+    "sol_snippet": "snippets/sol_pyq_53_521.webp"
   },
   {
     "num": 24,
@@ -8871,7 +9802,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.35",
     "answerKey": "b",
     "solution": "L1 = {am bn an bm | m, n ≥ 1}= CFL\n\nL2 = {am bn am bn│m, n ≥ 1} = Not CFL\n\nL3 = {am bn |m = 2n + 1} = CFL",
-    "id": "pyq_54_522"
+    "id": "pyq_54_522",
+    "q_snippet": "snippets/q_pyq_54_522.webp",
+    "sol_snippet": "snippets/sol_pyq_54_522.webp"
   },
   {
     "num": 25,
@@ -8888,7 +9821,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.35",
     "answerKey": "c",
     "solution": "(a) The language L ={an bn | n ≥ 0} is regular.\nFalse\n\n(b) The language L = {an | n is prime } is regular.\nFalse\n\n(c) The language L = {w |w has 3k + 1 b' s for\nsome k ∈ N with ↔ = {a, b}} is regular. True\n\n(d) The language L = {w w | w ∈↔* with\n↔ = {0, 1}} is regular. False",
-    "id": "pyq_51_523"
+    "id": "pyq_51_523",
+    "q_snippet": "snippets/q_pyq_51_523.webp",
+    "sol_snippet": "snippets/sol_pyq_51_523.webp"
   },
   {
     "num": 26,
@@ -8905,7 +9840,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.35",
     "answerKey": "c",
     "solution": "Σ = {0, 1, c}\n\nL1 = {0n1n | n ≥ 0} ⇒ DCFL\n\nL2 = {wcwr│w ∈ {0, 1}* } ⇒ DCFL\n\nL3 = {wwr | w∈{0, 1}*}⇒ CFL but not DCFL",
-    "id": "pyq_52_524"
+    "id": "pyq_52_524",
+    "q_snippet": "snippets/q_pyq_52_524.webp",
+    "sol_snippet": "snippets/sol_pyq_52_524.webp"
   },
   {
     "num": 27,
@@ -8922,7 +9859,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.35",
     "answerKey": "d",
     "solution": "L1={0i1j│i ≠ j} = DCFL\n\nL2 = {0i 1j│i = j} = DCFL\n\nL3 = {0i 1j│i = 2j + 1}= DCFL\n\nL4 = {0i1j |i ≠ 2j}= DCFL\n\nAll are DCFLs and every DCFL is CFL.",
-    "id": "pyq_53_525"
+    "id": "pyq_53_525",
+    "q_snippet": "snippets/q_pyq_53_525.webp",
+    "sol_snippet": "snippets/sol_pyq_53_525.webp"
   },
   {
     "num": 28,
@@ -8939,7 +9878,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.35",
     "answerKey": "b",
     "solution": "L1={ai bj ck |i = j, k ≥ 1} ⇒ an bn c+ = DCFL\n\nL2 = {ai bj |j = 2i, i ≥ 0}⇒ ak b2k = DCFL\n\nEvery DCFL is CFL. • L1 ∩ L2 = φ • L1 ∪ L2 = CFL • L2 is a DCFL. So, DPDA possible.\n\nHence, option (b) is correct.\n\nTheory of Computation",
-    "id": "pyq_54_526"
+    "id": "pyq_54_526",
+    "q_snippet": "snippets/q_pyq_54_526.webp",
+    "sol_snippet": "snippets/sol_pyq_54_526.webp"
   },
   {
     "num": 29,
@@ -8956,7 +9897,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.36",
     "answerKey": "d",
     "solution": "L1 =\n\nm n\n0 1 | 0\nm n 10000 ≤ ≤ ≤ Finite\nL2 = {reads the same forward and backward}\nSet of all palindrome (CFL) L3 = {contains an even number of 0's and an even number of 1's} Regular\n\nL2 is not a regular.\n\nHence, option (d) is correct.",
-    "id": "pyq_51_527"
+    "id": "pyq_51_527",
+    "q_snippet": "snippets/q_pyq_51_527.webp"
   },
   {
     "num": 30,
@@ -8973,7 +9915,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.36",
     "answerKey": "b, c, d",
     "solution": "L1 = Regular, L2 = CFL\n\n(a) Regular\nCFL ∩ = may/may not be CFL.\n\n(b) Regular\nCFL = Regular CFL = CFL ∪ ∩\n\n(c) Regular ∪ (CFL ∩ CFL ) = Regular ∪ ↔* = ↔*\n\n(d) (\nRegular CFL (Regular CFL) ∪ ∪ ∩\n\n= CFL ∪ CFL = CFL • Every Regular is CFL Hence, option (b, c, d) are correct.",
-    "id": "pyq_52_528"
+    "id": "pyq_52_528",
+    "q_snippet": "snippets/q_pyq_52_528.webp",
+    "sol_snippet": "snippets/sol_pyq_52_528.webp"
   },
   {
     "num": 31,
@@ -8990,7 +9934,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.36",
     "answerKey": "c",
     "solution": "L1 ⇒ Regular\n\nL2 ⇒ CFL\n\n(i) L1 ∩ L2 ⇒ Reg ∩ CFL ⇒ CFL\n\n(ii) L1 . L2 ⇒ Reg CFL ⇒ CFL\n\n(iii) L1 - L2 ⇒ Reg - CFL ⇒ Reg ∩ CFL ⇒ CSL\n\n(iv) L1 ∪ L2 ⇒ Reg ∪ CFL ⇒ CFL",
-    "id": "pyq_53_529"
+    "id": "pyq_53_529",
+    "q_snippet": "snippets/q_pyq_53_529.webp",
+    "sol_snippet": "snippets/sol_pyq_53_529.webp"
   },
   {
     "num": 32,
@@ -9007,7 +9953,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.36",
     "answerKey": "b",
     "solution": "L1 = CFL, L2 = CFL and R = Regular language\n\nI.\nCFL1 ∪ CFL2 ⇒ CFL\n\nII. CFL\nCSL ⇒\n\nIII. CFL - Regular = CFL ∩ Regular\n\n= CFL ∩ Regular = CFL\n\nIV. CFL1 ∩ CFL2 ⇒ CSL\n• CFL is not closed under compliment and intersection.",
-    "id": "pyq_54_530"
+    "id": "pyq_54_530",
+    "q_snippet": "snippets/q_pyq_54_530.webp"
   },
   {
     "num": 33,
@@ -9024,7 +9971,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.36",
     "answerKey": "a",
     "solution": "L1 = {an bn cm | m, n ≥ 0} = CFL\n\nL2 ={am bn cn | m, n ≥ 0} = CFL\n\nI.\nL1 ∪ L2 ⇒ CFL ∪ CFL = CFL\n\nII. L1 ∩ L2 = {an bn c* ∩ a* bn cn}\n\n= {an bn cn | n ≥ 0} ⇒ CSL",
-    "id": "pyq_51_531"
+    "id": "pyq_51_531",
+    "q_snippet": "snippets/q_pyq_51_531.webp",
+    "sol_snippet": "snippets/sol_pyq_51_531.webp"
   },
   {
     "num": 34,
@@ -9041,7 +9990,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.36",
     "answerKey": "c",
     "solution": "A. Regular ∩ CFL ⇒ CFL\n\nB. Regular - CFL\n\nRegular ∩ CFL ⇒ need not be regular\n\nC. Σ* - Regular ⇒ Regular\n\nD. Σ* - CFL ⇒ need not be regular\n\nHence, option (c) is correct.\n\nContext Free Language and Context Free Grammar",
-    "id": "pyq_52_532"
+    "id": "pyq_52_532",
+    "q_snippet": "snippets/q_pyq_52_532.webp",
+    "sol_snippet": "snippets/sol_pyq_52_532.webp"
   },
   {
     "num": 35,
@@ -9058,7 +10009,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.37",
     "answerKey": "d",
     "solution": "• For Regular language minimal DFA is unique. • Every NFA can be converted to an equivalent PDA. • CFL CSL =\n\nEvery CSL is recursive. • Every nondeterministic PDA can be converted to an equivalent deterministic PDA.",
-    "id": "pyq_53_533"
+    "id": "pyq_53_533",
+    "q_snippet": "snippets/q_pyq_53_533.webp"
   },
   {
     "num": 1,
@@ -9075,7 +10027,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.48",
     "answerKey": "a, b, c",
     "solution": "2. (c)",
-    "id": "pyq_57_534"
+    "id": "pyq_57_534",
+    "q_snippet": "snippets/q_pyq_57_534.webp",
+    "sol_snippet": "snippets/sol_pyq_57_534.webp"
   },
   {
     "num": 2,
@@ -9092,7 +10046,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.48",
     "answerKey": "c",
     "solution": "Both Statements S1 and S2 are correct.",
-    "id": "pyq_58_535"
+    "id": "pyq_58_535",
+    "q_snippet": "snippets/q_pyq_58_535.webp",
+    "sol_snippet": "snippets/sol_pyq_58_535.webp"
   },
   {
     "num": 3,
@@ -9109,7 +10065,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.48",
     "answerKey": "a",
     "solution": "L1 = {〈M〉|M takes more than 2021 steps on all inputs} Decidable.\n\nVerify every string in length 0 to 2021.\n\nL2 = {〈M〉|M takes more than 2021 steps on some input}Decidable.\n\nVerify each string upto 2021 length. If any of these strings takes more than 2021 steps, it is valid M.",
-    "id": "pyq_59_536"
+    "id": "pyq_59_536",
+    "q_snippet": "snippets/q_pyq_59_536.webp",
+    "sol_snippet": "snippets/sol_pyq_59_536.webp"
   },
   {
     "num": 4,
@@ -9126,7 +10084,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.48",
     "answerKey": "a",
     "solution": "L1 = {〈M〉|L(M) = ϕ}\n\nEmptiness problem for Turing machine is Undecidable.\n\nL2 = {〈M, w, q〉|M on input w reaches state q in\nexactly 100 steps}\n\nFor given M, given w, run exactly 100 steps to check whether q is reachable or not Decidable.\n\nL3 = {〈M〉|L(M) is not recursive)} ⇒ Undecidable.\n\nL4 = {〈M〉|L(M)contains at least 21 members)}\n\n|L(M)| ≥ 21 non trivial property is Undecidable.",
-    "id": "pyq_60_537"
+    "id": "pyq_60_537",
+    "q_snippet": "snippets/q_pyq_60_537.webp",
+    "sol_snippet": "snippets/sol_pyq_60_537.webp"
   },
   {
     "num": 5,
@@ -9143,7 +10103,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.48",
     "answerKey": "d",
     "solution": "I. Membership problem for an unrestricted\ngrammar is Undecidable.\n\nII. Given a Turing Machine M, whether L(M) is\nregular. Non-trivial problem\nfor\nTuring machine is Undecidable.\n\nUndecidability and Reducibility\n\nIII. Given two grammars G1 and G2, whether\nL(G1) = L(G2). Grammar is not given assume unrestricted grammar for an unrestricted grammar equivalence problem is Undecidable.\n\nIV. Given an NFA N, whether there is a\ndeterministic PDA P such that N and P accept the same language. Decidable",
-    "id": "pyq_57_538"
+    "id": "pyq_57_538",
+    "q_snippet": "snippets/q_pyq_57_538.webp",
+    "sol_snippet": "snippets/sol_pyq_57_538.webp"
   },
   {
     "num": 6,
@@ -9160,7 +10122,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.49",
     "answerKey": "d",
     "solution": "I.\nGiven a regular expression R and a string w, is w ∈ L(R)?\n\nMembership problem for Regular is Decidable.\n\nII.\nGiven a context-free grammar G, is L(G) = ϕ? Emptines?\n\nMembership, finiteness and emptiness problems for CFL are Decidable.\n\nIII. Given a context-free grammar G is L(G) = Σ*\nfor some alphabet Σ?\n\nTotality problem CFL is Undecidable.\n\nIV.\nGiven a Turing machine M and a string w, is w ∈ L(M)?\n\nMembership problem for Turing machine is Undecidable.",
-    "id": "pyq_58_539"
+    "id": "pyq_58_539",
+    "q_snippet": "snippets/q_pyq_58_539.webp",
+    "sol_snippet": "snippets/sol_pyq_58_539.webp"
   },
   {
     "num": 7,
@@ -9177,7 +10141,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.49",
     "answerKey": "c",
     "solution": "I. Dis-jointness problem for FA is Decidable.\n\nII. Membership problem for CFG is Decidable.\n\nIII. Equivalence problem for CFG is Undecidable.\n\nIV. Emptiness problem for TM is Undecidable.\n\nHence, option (c) is correct.",
-    "id": "pyq_59_540"
+    "id": "pyq_59_540",
+    "q_snippet": "snippets/q_pyq_59_540.webp",
+    "sol_snippet": "snippets/sol_pyq_59_540.webp"
   },
   {
     "num": 8,
@@ -9194,7 +10160,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.49",
     "answerKey": "c",
     "solution": "• L1 = { M | M takes at least 2016 steps on some input}. Decidable • L2 = { M | M takes at least 2016 steps on all inputs}. Decidable • L3 = { M | M accepts ε}. Membership problem for Turing machine is Undecidable.",
-    "id": "pyq_60_541"
+    "id": "pyq_60_541",
+    "q_snippet": "snippets/q_pyq_60_541.webp"
   },
   {
     "num": 9,
@@ -9211,7 +10178,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.49",
     "answerKey": "d",
     "solution": "• Decidable complement is always Decidable. • Every NP problem is always Decidable.",
-    "id": "pyq_57_542"
+    "id": "pyq_57_542",
+    "q_snippet": "snippets/q_pyq_57_542.webp",
+    "sol_snippet": "snippets/sol_pyq_57_542.webp"
   },
   {
     "num": 10,
@@ -9228,7 +10197,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.49",
     "answerKey": "a",
     "solution": "• Checking ambiguity for grammar is always Undecidable. • Membership problem for CFL is Decidable (using CYK algorithm). • Emptiness problem for CFL is Decidable. • Finiteness problem for CFL is Decidable.",
-    "id": "pyq_58_543"
+    "id": "pyq_58_543",
+    "q_snippet": "snippets/q_pyq_58_543.webp",
+    "sol_snippet": "snippets/sol_pyq_58_543.webp"
   },
   {
     "num": 11,
@@ -9245,7 +10216,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.49",
     "answerKey": "b",
     "solution": "• L is undecidable but partially decidable (RE). Hence, option (b) is correct.\n\nTheory of Computation",
-    "id": "pyq_59_544"
+    "id": "pyq_59_544",
+    "q_snippet": "snippets/q_pyq_59_544.webp",
+    "sol_snippet": "snippets/sol_pyq_59_544.webp"
   },
   {
     "num": 12,
@@ -9262,7 +10235,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.50",
     "answerKey": "d",
     "solution": "• Emptiness problem for CFL is Decidable. • Totality problem for CFL is Undecidable. • Regularity problem for TM is Undecidable. • Equivalence problem for Regular is Decidable.",
-    "id": "pyq_60_545"
+    "id": "pyq_60_545",
+    "q_snippet": "snippets/q_pyq_60_545.webp"
   },
   {
     "num": 13,
@@ -9279,7 +10253,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.50",
     "answerKey": "c",
     "solution": "• NTM is equivalent to DTM • RELs are not closed under complement. • Recursive languages are closed under both intersection and complement. • RELs are closed under both union and intersection. Hence, option (c) is correct.",
-    "id": "pyq_57_546"
+    "id": "pyq_57_546",
+    "q_snippet": "snippets/q_pyq_57_546.webp",
+    "sol_snippet": "snippets/sol_pyq_57_546.webp"
   },
   {
     "num": 14,
@@ -9296,7 +10272,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.50",
     "answerKey": "d",
     "solution": "1. These kind of problems are non-trivial. So, it is Undecidable.\n\n2. If L is a context-free language, then, is L also context-free. It is Undecidable.\n\n3. If L is a regular language, then, is L also regular. Regular is closed under complement. So, it is Decidable.\n\n4. If L is a recursive language, then, is L also recursive. It is Decidable.",
-    "id": "pyq_58_547"
+    "id": "pyq_58_547",
+    "q_snippet": "snippets/q_pyq_58_547.webp",
+    "sol_snippet": "snippets/sol_pyq_58_547.webp"
   },
   {
     "num": 15,
@@ -9313,7 +10291,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.50",
     "answerKey": "b",
     "solution": "1. Whether the intersection of two regular languages is infinite. Infiniteness problem for Regular is Decidable. 2. Whether a given context-free language is regular. Undecidable\n\n3. Whether two push-down automata accept the same language.\n\nEquivalence problem for PDA(CFL) is Undecidable.\n\n4. Whether a given grammar is context-free. Algorithm exists to identify the context-free grammar. So this problem is Decidable.",
-    "id": "pyq_59_548"
+    "id": "pyq_59_548",
+    "q_snippet": "snippets/q_pyq_59_548.webp",
+    "sol_snippet": "snippets/sol_pyq_59_548.webp"
   },
   {
     "num": 16,
@@ -9330,7 +10310,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.50",
     "answerKey": "c",
     "solution": "X: Recursive\n\nY: RE but not Recursive • Y W ≤\n\n= RE but not Recursive W ≤\n\n= NOT RE ≤ W So, W can not be RE • Z X ≤\n\n= Z Recursive ≤\n\n= Z ≤ Recursive So, Z must be Recursive",
-    "id": "pyq_60_549"
+    "id": "pyq_60_549",
+    "q_snippet": "snippets/q_pyq_60_549.webp",
+    "sol_snippet": "snippets/sol_pyq_60_549.webp"
   },
   {
     "num": 17,
@@ -9347,7 +10329,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.50",
     "answerKey": "d",
     "solution": "Given A ≤ m B • If A ≤ m recursive then, A will be recursive. • If Undecidable ≤ m B then, B must be Undecidable. • If A ≤ m RE then, A will be RE. • If A ≤ m NOT RE then, A may/may not be NOT RE. Hence, option (d) is false statement in given data.",
-    "id": "pyq_57_550"
+    "id": "pyq_57_550",
+    "q_snippet": "snippets/q_pyq_57_550.webp",
+    "sol_snippet": "snippets/sol_pyq_57_550.webp"
   },
   {
     "num": 18,
@@ -9364,7 +10348,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.44",
     "answerKey": "c",
     "solution": "•\nL1 = {am bm can bn | m, n ≥ 0}\n= CFL •\nL2 = {aibjck | i, j, k ≥ 0}\n=a*b*c* = Regular • L = L1 ∩ L2\n\n= am bm c = DCFL\n\nHence, option (c)is correct",
-    "id": "pyq_58_551"
+    "id": "pyq_58_551",
+    "q_snippet": "snippets/q_pyq_58_551.webp",
+    "sol_snippet": "snippets/sol_pyq_58_551.webp"
   },
   {
     "num": 19,
@@ -9381,7 +10367,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.44",
     "answerKey": "d",
     "solution": "Subset is not closed under any language.\n\nHence, option (d) is correct.",
-    "id": "pyq_59_552"
+    "id": "pyq_59_552",
+    "q_snippet": "snippets/q_pyq_59_552.webp",
+    "sol_snippet": "snippets/sol_pyq_59_552.webp"
   },
   {
     "num": 20,
@@ -9398,7 +10386,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "8.44",
     "answerKey": "d",
     "solution": "L and L are recursively enumerable if and only if L is recursive.\n\nHence, option (d) is correct.",
-    "id": "pyq_60_553"
+    "id": "pyq_60_553",
+    "q_snippet": "snippets/q_pyq_60_553.webp",
+    "sol_snippet": "snippets/sol_pyq_60_553.webp"
   },
   {
     "num": 1,
@@ -9415,7 +10405,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.5",
     "answerKey": "c",
     "solution": "In a compiler keywords, identifiers, constans, punctuations, and operators are recognized during the lexical analysis.\n\nDuring the syntax analysis compiler does the verification of the syntax with the help of a parser.\n\nDuring, the code generation compiler produes the assembly code.\n\nDataflow analysis can perform liveness analysis, available expression analysis, etc.\n\nSo, option c is the correct answer.",
-    "id": "pyq_57_554"
+    "id": "pyq_57_554",
+    "q_snippet": "snippets/q_pyq_57_554.webp",
+    "sol_snippet": "snippets/sol_pyq_57_554.webp"
   },
   {
     "num": 2,
@@ -9432,7 +10424,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.5",
     "answerKey": "b",
     "solution": "Symbol table is used for managing information about variables and their attributes. Symbol table maintains all attributes information of each identifier recognized during the lexical analysis.\n\nHence, option c is the correct answer.",
-    "id": "pyq_58_555"
+    "id": "pyq_58_555",
+    "q_snippet": "snippets/q_pyq_58_555.webp",
+    "sol_snippet": "snippets/sol_pyq_58_555.webp"
   },
   {
     "num": 3,
@@ -9449,7 +10443,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.5",
     "answerKey": "a",
     "solution": "Finite Automata(regular expression) is sufficient to represent all the tokens and identifiers used during lexical analysis.",
-    "id": "pyq_57_556"
+    "id": "pyq_57_556",
+    "q_snippet": "snippets/q_pyq_57_556.webp",
+    "sol_snippet": "snippets/sol_pyq_57_556.webp"
   },
   {
     "num": 4,
@@ -9466,7 +10462,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.5",
     "answerKey": "d",
     "solution": "Given,\n\nHere, x? means 0 or 1 occurrence of the symbol x.\n\nWe can represent x? as ∈ + x using regular expression.\n\nGiven string: b b a a c a b c\n\nT1 can generate upto: bba\n\nT2 can generate upto bb\n\nT3 can generate upto bbaac\n\nSo, we can see T3 can generate longest prefix of given string.\n\nAgain, check remaining portion of input for next longest prefix generator.\n\nString left: a b c\n\nT1 cannot generate abc, it can generate abca but we require only abc\n\nT2 cannot generate abc, it can generate ab, but not abc\n\nT3 can generate abc.\n\nSo, T3T3 is the correct sequence of tokens for the complete input. Hence. option d is correct answer.",
-    "id": "pyq_58_557"
+    "id": "pyq_58_557",
+    "q_snippet": "snippets/q_pyq_58_557.webp",
+    "sol_snippet": "snippets/sol_pyq_58_557.webp"
   },
   {
     "num": 1,
@@ -9483,7 +10481,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.11",
     "answerKey": "c",
     "solution": "2.\n(b)",
-    "id": "pyq_59_558"
+    "id": "pyq_59_558",
+    "q_snippet": "snippets/q_pyq_59_558.webp",
+    "sol_snippet": "snippets/sol_pyq_59_558.webp"
   },
   {
     "num": 2,
@@ -9500,7 +10500,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.11",
     "answerKey": "b",
     "solution": "To find out correct combinations for the numbered cells in the parsing table, we need to first find out FIRST and FOLLOW of S, T, and R.\n\nFIRST(S) = {d, c, f}\n\nFOLLOW(S) = {c, f, $}\n\nFIRST(T) = {a, b, e}\n\nFOLLOW(T) = {$, c, f}\n\nFIRST(R) = {c, ε }\n\nFOLLOW(R) = {f}\n\nSo,\n\n1. S → Rf [This production can produce c]\n\n2. S → Rf [This production can produce f]\n\n3. T → ε\n\n4. T → ε\n\nSo, option A is the correct answer",
-    "id": "pyq_60_559"
+    "id": "pyq_60_559",
+    "q_snippet": "snippets/q_pyq_60_559.webp",
+    "sol_snippet": "snippets/sol_pyq_60_559.webp"
   },
   {
     "num": 3,
@@ -9517,7 +10519,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.11",
     "answerKey": "31 to 31",
     "solution": "Sol- Follow(B) = {d, a}\n\nIndex for d is 3 Index for a is 1\n\nCompiler Design\n\nSo, 31 is the correct answer.",
-    "id": "pyq_61_560"
+    "id": "pyq_61_560",
+    "q_snippet": "snippets/q_pyq_61_560.webp",
+    "sol_snippet": "snippets/sol_pyq_61_560.webp"
   },
   {
     "num": 4,
@@ -9534,7 +10538,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.12",
     "answerKey": "c",
     "solution": "Follow of Q: It depends on First of RS\n\nFollow(Q) = {w, y}\n\nOption c is the correct answer.",
-    "id": "pyq_59_561"
+    "id": "pyq_59_561",
+    "q_snippet": "snippets/q_pyq_59_561.webp",
+    "sol_snippet": "snippets/sol_pyq_59_561.webp"
   },
   {
     "num": 5,
@@ -9551,7 +10557,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.12",
     "answerKey": "a",
     "solution": "First (S) = {a, b, e}\n\nFollow(S) = {$, a, b}\n\nFirst(A) = {a, b, ε}\n\nFirst (B) = {a, b, ε}\n\nFollow (A) = {a, b}\n\nFollow (B) = {$, a, b}\n\nSo, option A is the correct answer.",
-    "id": "pyq_60_562"
+    "id": "pyq_60_562",
+    "q_snippet": "snippets/q_pyq_60_562.webp",
+    "sol_snippet": "snippets/sol_pyq_60_562.webp"
   },
   {
     "num": 6,
@@ -9568,7 +10576,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.12",
     "answerKey": "c",
     "solution": "Given,\n\nS → aAbB | bAaB | ε\n\nA → S\n\nB → S\n\na b $ S E1 E2 S → ε A A → S A → S Error B B → S B → S E3\n\nFirst (S) = {a, b, ε }\n\nFollow(S) = {$, a, b}\n\nE1 : {S → a AbB, S → ε }\n\nE2 : {S → bAaB, S → ε }\n\nE3: {B → S}\n\nTherefore, option C is the correct answer.",
-    "id": "pyq_61_563"
+    "id": "pyq_61_563",
+    "q_snippet": "snippets/q_pyq_61_563.webp",
+    "sol_snippet": "snippets/sol_pyq_61_563.webp"
   },
   {
     "num": 7,
@@ -9585,7 +10595,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.12",
     "answerKey": "d",
     "solution": "(a) FALSE. The LALR(1) parser for a grammar G\nmay have reduce - reduce conflict if the LR(1) parser for G does not have reduce - reduce conflict.\n\n(b) FALSE. Symbol table can be accessed in all\nphases of compiler.\n\n(c) FALSE. Data flow analysis is required to\nimporve the code but not necessary for run- time memory mangement.\n\n(d) TRUE. Every LR(1) CFG going to generate\nDCFL.\n\nHence, option d is the correct answer.",
-    "id": "pyq_59_564"
+    "id": "pyq_59_564",
+    "q_snippet": "snippets/q_pyq_59_564.webp",
+    "sol_snippet": "snippets/sol_pyq_59_564.webp"
   },
   {
     "num": 8,
@@ -9602,7 +10614,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.12",
     "answerKey": "5 to 5",
     "solution": "So, there are total 5 items in the goto(closure(I0), +).\n\nSyntax Analysis",
-    "id": "pyq_60_565"
+    "id": "pyq_60_565",
+    "q_snippet": "snippets/q_pyq_60_565.webp",
+    "sol_snippet": "snippets/sol_pyq_60_565.webp"
   },
   {
     "num": 9,
@@ -9619,7 +10633,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.13",
     "answerKey": "c",
     "solution": "S1: Every SLR (1) grammar is unambiguous but\nthere are certain unambiguous grammars that are not SLR(1). TRUE. For example, LALR(1), CLR(1) are certain unambiguous grammars which are not SLR(1).\n\nS2: For any context-free grammar, there is a parser\nthat takes at most O(n3) time to parse a string of length n. TRUE. For example, CYK algorithm takes O(n3) time to parse a string of length n.\n\nSo, option c is the correct answer.",
-    "id": "pyq_61_566"
+    "id": "pyq_61_566",
+    "q_snippet": "snippets/q_pyq_61_566.webp"
   },
   {
     "num": 10,
@@ -9636,7 +10651,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.13",
     "answerKey": "8 to 8",
     "solution": "There are 8 items in the set GOTO(GOTO(I0,<),<).",
-    "id": "pyq_59_567"
+    "id": "pyq_59_567",
+    "q_snippet": "snippets/q_pyq_59_567.webp",
+    "sol_snippet": "snippets/sol_pyq_59_567.webp"
   },
   {
     "num": 11,
@@ -9653,7 +10670,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.13",
     "answerKey": "7 to 7",
     "solution": "Bottom-up parser follows reverse of RMD (Right most derivation).\n\nAnd, Number of reduction steps in reverse of RMD = Number of substitutions in RMD\n\nRMD for given grammar.\n\nSo, total 7 number of reduction steps taken by bottom-up parser while verifying the string aaadbbb.",
-    "id": "pyq_60_568"
+    "id": "pyq_60_568",
+    "q_snippet": "snippets/q_pyq_60_568.webp"
   },
   {
     "num": 12,
@@ -9670,7 +10688,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.13",
     "answerKey": "d",
     "solution": "LR parser also known as bottom-up parser and bottom-up parser uses rightmost derivation in reverse.\n\nHence, option d is the correct answer.",
-    "id": "pyq_61_569"
+    "id": "pyq_61_569",
+    "q_snippet": "snippets/q_pyq_61_569.webp",
+    "sol_snippet": "snippets/sol_pyq_61_569.webp"
   },
   {
     "num": 13,
@@ -9687,7 +10707,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.13",
     "answerKey": "a",
     "solution": "SLR is less powerful than LALR and LALR is less powerful than CLR.\n\nSLR < LALR < CLR.\n\nCompiler Design\n\nI. Canonical LR is more powerful than SLR.\nTRUE\n\nII. SLR is more powerful than LALR. FALSE\n\nIII. SLR is more powerful than Canonical LR.\nFALSE\n\nStatement I is only correct, option a is the right answer.",
-    "id": "pyq_59_570"
+    "id": "pyq_59_570",
+    "q_snippet": "snippets/q_pyq_59_570.webp",
+    "sol_snippet": "snippets/sol_pyq_59_570.webp"
   },
   {
     "num": 14,
@@ -9704,7 +10726,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.14",
     "answerKey": "d",
     "solution": "If we want to drive the string \"c\", it can be done in two ways S → F→c or S → H → c\n\nSo, we can say the given grammar is ambiguous. With the ambiguous grammar, parser cannot parse the string. So, in case of LL(1) or LR(1) parser is going to have a problem, that's why both the statements are incorrect. Hence, option D is the right answer.",
-    "id": "pyq_60_571"
+    "id": "pyq_60_571",
+    "q_snippet": "snippets/q_pyq_60_571.webp",
+    "sol_snippet": "snippets/sol_pyq_60_571.webp"
   },
   {
     "num": 15,
@@ -9721,7 +10745,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.14",
     "answerKey": "c",
     "solution": "Easy to implement, Most powerful.\n\nSLR is easy to implement and CLR is most powerful. So SLR, CLR, is the correct answer.",
-    "id": "pyq_61_572"
+    "id": "pyq_61_572",
+    "q_snippet": "snippets/q_pyq_61_572.webp",
+    "sol_snippet": "snippets/sol_pyq_61_572.webp"
   },
   {
     "num": 16,
@@ -9738,7 +10764,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.14",
     "answerKey": "c",
     "solution": "(a) INCORRECT. Viable prefixes can be present\nanywhere in the stack.\n\n(b) INCORRECT. Viable prefixes can be present\nanywhere in the stack.\n\n(c) CORRECT. The stack contains only a set of\nviable prefixes.\n\n(d) INCORRECT. The stack contains viable\nprefixes.",
-    "id": "pyq_59_573"
+    "id": "pyq_59_573",
+    "q_snippet": "snippets/q_pyq_59_573.webp",
+    "sol_snippet": "snippets/sol_pyq_59_573.webp"
   },
   {
     "num": 17,
@@ -9755,7 +10783,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.14",
     "answerKey": "d",
     "solution": "This state does not have any conflict; therefore, option D is the correct answer.",
-    "id": "pyq_60_574"
+    "id": "pyq_60_574",
+    "q_snippet": "snippets/q_pyq_60_574.webp"
   },
   {
     "num": 18,
@@ -9772,7 +10801,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.14",
     "answerKey": "d",
     "solution": "There is no conflicts in the given sets and there are no reduced items.\n\nSo,\n\n1. \"Cannot be merged since look aheads are different\" is FALSE. Because they can be merged when lookaheads are different.\n\n2. \"Can be merged but will result in S-R conflict\" is FALSE. Because no conflict present.\n\n3. \"Can be merged but will result in R-R conflict\" is FALSE. Because no conflict when merged.\n\nX → C.X, C/d/$\n\nX → .CX, C/d/$\n\nX → .d, C/d/$\n\n4. \"Cannot be merged since goto on c will lead to two different sets\" FALSE. While merging we do not look at goto.\n\nSo, option D is the correct answer.",
-    "id": "pyq_61_575"
+    "id": "pyq_61_575",
+    "q_snippet": "snippets/q_pyq_61_575.webp",
+    "sol_snippet": "snippets/sol_pyq_61_575.webp"
   },
   {
     "num": 19,
@@ -9789,7 +10820,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.14",
     "answerKey": "b",
     "solution": "Syntax Analysis\n\nn = 2 ⇒ 1 reduced move\n\nn = 2 ⇒ 2 reduced moves\n\nn = 4 ⇒ 3 reduced moves w = ab w = abc w = abcd S ↓ ab S ↓ S → a × ax ↓ X → bc ↓ abc S ↓ AB ↓ Acd ↓ abcd\n\nFor n length string we need n-1 moves. So, option B is the correct answer.",
-    "id": "pyq_59_576"
+    "id": "pyq_59_576",
+    "q_snippet": "snippets/q_pyq_59_576.webp",
+    "sol_snippet": "snippets/sol_pyq_59_576.webp"
   },
   {
     "num": 20,
@@ -9806,7 +10839,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.15",
     "answerKey": "c",
     "solution": "Given,\n\nS → aSa | bS | c\n\nFirst check for LL(1) because Every LL(1) is LR(1)\n\nThe given grammar is LL(1). So, option C is the correct answer.",
-    "id": "pyq_60_577"
+    "id": "pyq_60_577",
+    "q_snippet": "snippets/q_pyq_60_577.webp",
+    "sol_snippet": "snippets/sol_pyq_60_577.webp"
   },
   {
     "num": 21,
@@ -9823,7 +10858,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.15",
     "answerKey": "b",
     "solution": "LALR parser uses the LR(1) items of CLR parser. LALR will contain SR conflicts if and only if LR parser has SR conflicts.\n\nLALR can have RR conflicts even though LR parser do not have RR conflicts.\n\nSo, option B is correct answer",
-    "id": "pyq_61_578"
+    "id": "pyq_61_578",
+    "q_snippet": "snippets/q_pyq_61_578.webp",
+    "sol_snippet": "snippets/sol_pyq_61_578.webp"
   },
   {
     "num": 22,
@@ -9840,7 +10877,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.15",
     "answerKey": "d",
     "solution": "In a production whole RHS part is known as handle. It can be defined as the production p that will be used for reduction in the next step along with a position in the sentential form where the right-hand side of the production may be found.",
-    "id": "pyq_59_579"
+    "id": "pyq_59_579",
+    "q_snippet": "snippets/q_pyq_59_579.webp"
   },
   {
     "num": 23,
@@ -9857,7 +10895,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.15",
     "answerKey": "5 to 5",
     "solution": "There are total 5 items in in the set GOTO (I 0, ).",
-    "id": "pyq_60_580"
+    "id": "pyq_60_580",
+    "q_snippet": "snippets/q_pyq_60_580.webp",
+    "sol_snippet": "snippets/sol_pyq_60_580.webp"
   },
   {
     "num": 24,
@@ -9874,7 +10914,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.15",
     "answerKey": "b",
     "solution": "Operator < Operator Operator > Operator Right associate Left associate\n\n+ is right associative\n\n* is left associative\n\nSo, option B is correct.\n\nCompiler Design",
-    "id": "pyq_61_581"
+    "id": "pyq_61_581",
+    "q_snippet": "snippets/q_pyq_61_581.webp",
+    "sol_snippet": "snippets/sol_pyq_61_581.webp"
   },
   {
     "num": 25,
@@ -9891,7 +10933,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.16",
     "answerKey": "9 to 9",
     "solution": "Given,\n\n+ has highest prcedence and left associative.\n\n- has medium precedence and right associative.\n\n* has lowest precedence and left associative.\n\nExpression = 2 - 5 + 1 - 7 * 3\n\n= 2- [5+1] - 7 * 3 = 2 - 6 - 7 * 3 = [2- [6 - 7]]*3 = [2-(-1)] * 3 = 3 * 3 = 9\n\nSo, 9 is the correct answer.",
-    "id": "pyq_59_582"
+    "id": "pyq_59_582",
+    "q_snippet": "snippets/q_pyq_59_582.webp"
   },
   {
     "num": 1,
@@ -9908,7 +10951,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.20",
     "answerKey": "b",
     "solution": "\"The actions can be used to correctly type-check any syntactically correct program\" is FALSE. Here we are not discussing the whole program, because program has lots of syntax.\n\n\"The actions can be used to type-check syntactically correct integer variable declarations and integer expressions\" TRUE. With integer variable we can correctly represent the expressions. We can clearly see ID gets integer type whether keyword int or bool is used in the declaration of variable.\n\nTherefore, option B is correct.",
-    "id": "pyq_62_583"
+    "id": "pyq_62_583",
+    "q_snippet": "snippets/q_pyq_62_583.webp",
+    "sol_snippet": "snippets/sol_pyq_62_583.webp"
   },
   {
     "num": 2,
@@ -9925,7 +10970,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.20",
     "answerKey": "a",
     "solution": "Given two Grammars G1 and G2 can generate all array declarations. We can see approach to derive any declaration using parse tree. Example: int a[10]\n[3];\n\nUsing G1:\n\nUsing G2:\n\nSo, both G1 and G2 can generate the array declaration. So, option A is the correct answer.",
-    "id": "pyq_62_584"
+    "id": "pyq_62_584",
+    "q_snippet": "snippets/q_pyq_62_584.webp",
+    "sol_snippet": "snippets/sol_pyq_62_584.webp"
   },
   {
     "num": 3,
@@ -9942,7 +10989,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.20",
     "answerKey": "2.375 to 2.375",
     "solution": "The parse tree for the given SDT is\n\nSyntax Directed Translation\n\nThe end of the production is 2.375.",
-    "id": "pyq_62_585"
+    "id": "pyq_62_585",
+    "q_snippet": "snippets/q_pyq_62_585.webp",
+    "sol_snippet": "snippets/sol_pyq_62_585.webp"
   },
   {
     "num": 4,
@@ -9959,7 +11008,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.21",
     "answerKey": "80 to 80",
     "solution": "Parse tree for the given expression:",
-    "id": "pyq_62_586"
+    "id": "pyq_62_586",
+    "q_snippet": "snippets/q_pyq_62_586.webp",
+    "sol_snippet": "snippets/sol_pyq_62_586.webp"
   },
   {
     "num": 5,
@@ -9976,7 +11027,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.21",
     "answerKey": "b",
     "solution": "Given,\n\nA → PQ\n\nA → XY\n\nRule 1 is ⇒ L. attributed\n\nRule 2 is ⇒ Not L-attributed.\n\nSo, option b is correct.",
-    "id": "pyq_62_587"
+    "id": "pyq_62_587",
+    "q_snippet": "snippets/q_pyq_62_587.webp",
+    "sol_snippet": "snippets/sol_pyq_62_587.webp"
   },
   {
     "num": 6,
@@ -9993,7 +11046,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.21",
     "answerKey": "a",
     "solution": "If a production is of type S → XY, this means Y can inherit values from S or X, and similarly X can inherit value from S, and S can depend on both X and Y.\n\nIn the given productions,\n\nT → int, Here T gets integer type using child.\n\nD → TL, Here L gets type from T.\n\nL → L1, id, Here L1 can inherit the type from L. This means X3 must be L1 and X4 must be L.\n\nSo, option A is the correct answer.",
-    "id": "pyq_62_588"
+    "id": "pyq_62_588",
+    "q_snippet": "snippets/q_pyq_62_588.webp",
+    "sol_snippet": "snippets/sol_pyq_62_588.webp"
   },
   {
     "num": 7,
@@ -10010,7 +11065,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.21",
     "answerKey": "a",
     "solution": "$ has highest precedence. $ must be evaluated before other operators in the above tree.\n\n$ is left associative. If we see b$c$d, first left $ will be evaluated.\n\n# is right associative. We can see right # will be evaluated first when both times # happens in the expression.\n\nSo, option a is correct.",
-    "id": "pyq_62_589"
+    "id": "pyq_62_589",
+    "q_snippet": "snippets/q_pyq_62_589.webp",
+    "sol_snippet": "snippets/sol_pyq_62_589.webp"
   },
   {
     "num": 8,
@@ -10027,7 +11084,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.21",
     "answerKey": "c",
     "solution": "Input : aab\n\nOutput: 231\n\nCompiler Design\n\nFirst will print: 2\n\nSecond will print: 3\n\nThird will print: 1\n\nOutput: 231\n\nSo, option C is the correct answer.",
-    "id": "pyq_62_590"
+    "id": "pyq_62_590",
+    "q_snippet": "snippets/q_pyq_62_590.webp",
+    "sol_snippet": "snippets/sol_pyq_62_590.webp"
   },
   {
     "num": 9,
@@ -10044,7 +11103,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.22",
     "answerKey": "9 to 9",
     "solution": "Given,\n\n2 - 5 + 1 - 7 * 3\n\n⇒ 2 - (5 + 1) - 7 * 3 // + has higher precedence\n\n⇒ (2 - (6 - 7)) * 3 // - has higher precedence and it is right associative.\n\n⇒ 3 * 3 = 9",
-    "id": "pyq_62_591"
+    "id": "pyq_62_591",
+    "q_snippet": "snippets/q_pyq_62_591.webp",
+    "sol_snippet": "snippets/sol_pyq_62_591.webp"
   },
   {
     "num": 10,
@@ -10061,7 +11122,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.22",
     "answerKey": "c",
     "solution": "One of the purposes of using intermediate code in compilers is to increase the chances of reusing the machine-independent code optimizer in other compilers.",
-    "id": "pyq_62_592"
+    "id": "pyq_62_592",
+    "q_snippet": "snippets/q_pyq_62_592.webp",
+    "sol_snippet": "snippets/sol_pyq_62_592.webp"
   },
   {
     "num": 11,
@@ -10078,7 +11141,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.22",
     "answerKey": "6 to 6",
     "solution": "Putting the 0 and 1 accordingly to get maximum possible value.\n\nHere, both left and right subtree can give value 3 and the resulting value will be 3+3 = 6",
-    "id": "pyq_62_593"
+    "id": "pyq_62_593",
+    "q_snippet": "snippets/q_pyq_62_593.webp",
+    "sol_snippet": "snippets/sol_pyq_62_593.webp"
   },
   {
     "num": 12,
@@ -10095,7 +11160,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.22",
     "answerKey": "b",
     "solution": "Given, 1. Precedence of operator ↓ being lower than that of the operator ↑ 2. Operator ↑ is right associative while operator ↓ is left associative. 3. Expression: ( 7 ↓ 3 ↑ 4 ↑ 3 ↓ 2)\n\nSo,\n\n(( 7 ↓ (3 ↑ 4 ↑ 3)) ↓ 2)\n\nTherefore, the tree corresponding to the above expression is\n\nTherefore, option B is the correct answer.",
-    "id": "pyq_62_594"
+    "id": "pyq_62_594",
+    "q_snippet": "snippets/q_pyq_62_594.webp",
+    "sol_snippet": "snippets/sol_pyq_62_594.webp"
   },
   {
     "num": 1,
@@ -10112,7 +11179,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.25",
     "answerKey": "d",
     "solution": "In the context of compilers, symbol table is not an intermediate representation of the source program. Symbol table is a table used to store attributes information and it is used in all the phases of compilers. Three address code, AST, Control Flow Graph, and DAG are intermediate representations.",
-    "id": "pyq_64_595"
+    "id": "pyq_64_595",
+    "q_snippet": "snippets/q_pyq_64_595.webp",
+    "sol_snippet": "snippets/sol_pyq_64_595.webp"
   },
   {
     "num": 2,
@@ -10129,7 +11198,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.25",
     "answerKey": "2 to 2",
     "solution": "X is minimum number of registers without any register spill.\n\nSo,\n\nR1 ← b\n\nR2 ← c\n\nR1 ← R1 + R2\n\nR1 ← R1 /3\n\nR2 ← d\n\nR1 ← R1 + R2\n\nR2 ← a\n\nR2 ← R2 - 1\n\nR1 ← R2 × R1\n\nMemory operands a, b, c, and d are used only with load/store instructions. In all arithmetic instructions, we have used only register or immediate operand(constant). Registers R1 and R2 are enough to covert given expression into assembly code without any additional registers. So, Minimum number of registers required is 2.",
-    "id": "pyq_64_596"
+    "id": "pyq_64_596",
+    "q_snippet": "snippets/q_pyq_64_596.webp",
+    "sol_snippet": "snippets/sol_pyq_64_596.webp"
   },
   {
     "num": 3,
@@ -10146,7 +11217,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.25",
     "answerKey": "b",
     "solution": "The corresponding single static assignment is\n\np3 = a - b\n\nq4 = p3∗c\n\np4 = u∗v\n\nq5 = p4 + q4\n\nAll of a, b, c, u, v, p3, p4, q4, and q5 have single static assignment.",
-    "id": "pyq_64_597"
+    "id": "pyq_64_597",
+    "q_snippet": "snippets/q_pyq_64_597.webp",
+    "sol_snippet": "snippets/sol_pyq_64_597.webp"
   },
   {
     "num": 4,
@@ -10163,7 +11236,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.25",
     "answerKey": "10 to 10",
     "solution": "y = x ∗ y\n\n= (y + w) ∗ (t - z)\n\n= ([x ∗ v] + w) ∗ (t - z)\n\ny = ([u - t] ∗ v + w) ∗ (t - z)\n\nu1 = u - t\n\nu2 = u1 - v\n\nu3 = u2 - w\n\nt1 = t - z\n\nu4 = u3 - t1\n\nTotal variables, u, v, t, w, z, u1, u2, u3, u4, t1.\n\nCompiler Design\n\nSo, total 10 variables are required for static single assignment form.",
-    "id": "pyq_64_598"
+    "id": "pyq_64_598",
+    "q_snippet": "snippets/q_pyq_64_598.webp",
+    "sol_snippet": "snippets/sol_pyq_64_598.webp"
   },
   {
     "num": 5,
@@ -10180,7 +11255,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.26",
     "answerKey": "a",
     "solution": "t5 = X[t4]\n\n= X [t3 + t2]\n\n= X [t1 + t0 + k × 4]\n\n= X[j × 32 + i × 1024 + k × 4]\n\nt5 = X [i × 1024 + j × 32 + k × 4] Note: & X[i][j][[k] = & X[0][0][0] + (i×qr + j×r + k) × size of elements\n\nt5 = X [i × 256 + j × 8 + k] × 4 = X [i × 32 × 8\n+ j × 8 + k] × 4\n\nComparing it with options, we can say X is declared as \"int X[32][32][8]\"\". Therefore, option A is the correct answer.",
-    "id": "pyq_64_599"
+    "id": "pyq_64_599",
+    "q_snippet": "snippets/q_pyq_64_599.webp",
+    "sol_snippet": "snippets/sol_pyq_64_599.webp"
   },
   {
     "num": 6,
@@ -10197,7 +11274,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.26",
     "answerKey": "8 to 8",
     "solution": "For the given expression: q+r/3+s−t∗5+u∗v/w, the corresponding three address code is:\n\nNow, this optimized three address code have 7 variables (r, t, u, v, w, q, s).\n\nTo produce the SSA form, we will get one new temporary variable in each instruction.\n\nSSA code will have 15 total variables (r, t, u, v, w, q, s, r1, t1, u1, u2, q1, q2, q3, q4). So, we have 7 variables already defined outside expression and 8 temporary variables used in the expression.",
-    "id": "pyq_64_600"
+    "id": "pyq_64_600",
+    "q_snippet": "snippets/q_pyq_64_600.webp"
   },
   {
     "num": 1,
@@ -10214,7 +11292,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.31",
     "answerKey": "a",
     "solution": "2. (d)",
-    "id": "pyq_65_601"
+    "id": "pyq_65_601",
+    "q_snippet": "snippets/q_pyq_65_601.webp",
+    "sol_snippet": "snippets/sol_pyq_65_601.webp"
   },
   {
     "num": 2,
@@ -10231,7 +11311,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.31",
     "answerKey": "d",
     "solution": "Computing common sub expressions outside the loop:\n\nt1 = x + 3; // Here 1 addition happens\n\nt2 = y → f1; // 1 dereference\n\nt3 = y → f2; // 1 dereference\n\nz = t1 + t2 + t3; // 2 additions required to perform this instruction\n\nfor (i = 0; i < 200; i = i + 2) // 100 additions will\nhappen, i=i+2 executed 100 times\n\nif (z > i)\n\np = p + t1;\n\nq = q + t2;\n\nelse\n\np = p + t3;\n\nq = q + t1;\n\n} // 2 additions will\nhappen for each iteration of loop whether \"if block\" or \"else block\" is executed.\n\n100 *2 +100 + 3 = 303 additions 2 dereference operations In the above code, total 303 additions and 2 dereference operations performed.\n\nSo, option D is the correct answer",
-    "id": "pyq_66_602"
+    "id": "pyq_66_602",
+    "q_snippet": "snippets/q_pyq_66_602.webp",
+    "sol_snippet": "snippets/sol_pyq_66_602.webp"
   },
   {
     "num": 3,
@@ -10248,7 +11330,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.31",
     "answerKey": "b",
     "solution": "I.\n\"There exist parsing algorithms for some programming languages whose complexities are less than θ(n3)\" is TRUE. For example, CYK algorithm.\nII.\n\"A programming language which allows recursion can be implemented with static\n\nCompiler Design storage allocation\" is FALSE. A programming language which allows recursion can be implemented with stack storage allocation.\nIII. \"No L-attributed definition can be evaluated in\nthe framework of bottom-up parsing\" is FALSE. Every S-attributed definition is also L-attributed definition and hence they can be evaluated in the framework of bottom-up parsing.\nIV. \"Code improving transformations can be\nperformed at both source language and intermediate code level\" is TRUE.\n\nSo, statement I and IV are true, and hence option b is the correct amswer.",
-    "id": "pyq_65_603"
+    "id": "pyq_65_603",
+    "q_snippet": "snippets/q_pyq_65_603.webp",
+    "sol_snippet": "snippets/sol_pyq_65_603.webp"
   },
   {
     "num": 4,
@@ -10265,7 +11349,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.32",
     "answerKey": "c",
     "solution": "In the given CFG:\n\nWe have p, q, r, s, v, and u variables in the above CFG\n\nVariable live at Basic Block 2: {r, u}\n\nVariable live at Basic Block 3: {r, s, u}\n\nVariable live at both Basisc Blocks 2 and 3: {r, u}\n\nSo, option C is correct.",
-    "id": "pyq_66_604"
+    "id": "pyq_66_604",
+    "q_snippet": "snippets/q_pyq_66_604.webp",
+    "sol_snippet": "snippets/sol_pyq_66_604.webp"
   },
   {
     "num": 5,
@@ -10282,7 +11368,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.32",
     "answerKey": "a",
     "solution": "a = e +b\n\n= (d - b) + b\n\n= ([b + c] - b) + b = ([b + (a + d) ] - b) + b\n\n= ([b + (b + c] + d) - b) + b\n\na = b + ([b + c] + d)\n\nCorresponding DAG representation:\n\nThere are total 6 nodes and 6 edges. So, option a is correct answer.",
-    "id": "pyq_65_605"
+    "id": "pyq_65_605",
+    "q_snippet": "snippets/q_pyq_65_605.webp"
   },
   {
     "num": 7,
@@ -10299,7 +11386,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.33",
     "answerKey": "7 to 7",
     "solution": "Given, P(X) = X5 + 4X3 + 6X + 5\n\n= X5 + 4X3 + 6X + 5\n\n= X [X4 + 4X2 + 6] + 5\n\nSo, there are total 4 multiplication and 3 additions, so total 7 arithmetic operation are required.",
-    "id": "pyq_66_606"
+    "id": "pyq_66_606",
+    "q_snippet": "snippets/q_pyq_66_606.webp"
   },
   {
     "num": 8,
@@ -10316,7 +11404,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.33",
     "answerKey": "b",
     "solution": "Sol. Spill to memory means how many extra registers/memory/variables are required.\n\nCode motion can be performed as follows:\n\nc = a + b; //a and b in register and b replaced by the result c after the instruction\n\nx = c * c; //x replaces c in register and c is spilled (moved to memory)\n\nif (x > a) { //x and a in memory\n\ny = a * a;\n\nd = c * a; //spilled c taken from memory and replaces x in register.\n\ne = c + a;\n\nelse {\n\nd = c * a; //spilled c taken from memory and replaces x in register. d replaces a in register\n\nd = d * d; //c and d are in register\n\ne = c + a; //a is taken from memory and e replaces c in the register (a taken from memory is not a spill, it is a fill)\n\ne = e * e;\n\nSo, minimum 1 spill is required in the compiled code.",
-    "id": "pyq_65_607"
+    "id": "pyq_65_607",
+    "q_snippet": "snippets/q_pyq_65_607.webp",
+    "sol_snippet": "snippets/sol_pyq_65_607.webp"
   },
   {
     "num": 9,
@@ -10333,7 +11423,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.33",
     "answerKey": "b",
     "solution": "It is said not to apply any code optimisation other than register allocation.\n\nAllocation with 3 registers:\n\nc = a + b; //a, c in register\n\nd = c * a; //a, c, d in register\n\ne = c + a; //a, c, e in register, d spilled.\n\nAllocation with 4 registers:\n\nc = a + b; //a, c in register\n\nd = c * a; //a, c, d in register\n\ne = c + a; //a, c, d, e in register\n\nx = c * c; //a, x, d, e in register\n\nif (x > a) {\n\ny = a * a;\n\nelse {\n\nd = d * d;\n\ne = e * e;\n\nWith 4 registers, no spilling is there, so option B is the correct answer.",
-    "id": "pyq_66_608"
+    "id": "pyq_66_608",
+    "q_snippet": "snippets/q_pyq_66_608.webp"
   },
   {
     "num": 10,
@@ -10350,7 +11441,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.33",
     "answerKey": "d",
     "solution": "From the above diagram we can see, three registers are required R1, R2, and R3. Therefore, option d is the correct answer.\n\nCompiler Design",
-    "id": "pyq_65_609"
+    "id": "pyq_65_609",
+    "q_snippet": "snippets/q_pyq_65_609.webp",
+    "sol_snippet": "snippets/sol_pyq_65_609.webp"
   },
   {
     "num": 11,
@@ -10367,7 +11460,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.34",
     "answerKey": "a",
     "solution": "Some code optimizations are carried out on the intermediate code because they enhance the portability of the compiler to the target processors.",
-    "id": "pyq_66_610"
+    "id": "pyq_66_610",
+    "q_snippet": "snippets/q_pyq_66_610.webp"
   },
   {
     "num": 12,
@@ -10384,7 +11478,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.34",
     "answerKey": "d",
     "solution": "Live variables at the end of each basic block are:\n\nB1: { a, i , j }\n\nB2: {a, j}\n\nB3: {a, j}\n\nB4: {a, i, j}\n\nSo, option D is the correct answer.",
-    "id": "pyq_65_611"
+    "id": "pyq_65_611",
+    "q_snippet": "snippets/q_pyq_65_611.webp",
+    "sol_snippet": "snippets/sol_pyq_65_611.webp"
   },
   {
     "num": 13,
@@ -10401,7 +11497,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.34",
     "answerKey": "6 to 6",
     "solution": "g = e +1;\n⇒ (a+ 1) + (d + 1) ⇒ ((b + c) + 1) + ((b + c) + 1)\n\nThe corresponding DAG is as follows:\n\nTotal 6 nodes and 6 edges are present in the given DAG.",
-    "id": "pyq_66_612"
+    "id": "pyq_66_612",
+    "q_snippet": "snippets/q_pyq_66_612.webp",
+    "sol_snippet": "snippets/sol_pyq_66_612.webp"
   },
   {
     "num": 14,
@@ -10418,7 +11516,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.34",
     "answerKey": "1024 to 1024",
     "solution": "if e1 then e2\n\nelse e3\n\n2 × 2 × ….. 10 times = 210 = 1024 paths",
-    "id": "pyq_65_613"
+    "id": "pyq_65_613",
+    "q_snippet": "snippets/q_pyq_65_613.webp",
+    "sol_snippet": "snippets/sol_pyq_65_613.webp"
   },
   {
     "num": 15,
@@ -10435,7 +11535,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.34",
     "answerKey": "b",
     "solution": "The corresponding control flow graph is as follows:\n\nTotal, 6 nodes and 7 edges. So, option b is correct.\n\ni m = - 1 = j n = 10 a B1 Entry I =\n, }\nN 1 m n OUT = , 1 , a i j\nGEN = { , }\n1 m n\nKILL = { , , }\n1 i j a i i = + 1 = - 1 j j B2 I = , N 2 a i, j\nGEN = { , }\n2 i j\nKILL = { , }\n2 i j OUT 2 =\n, }\na j i a = + 1 B4 I =\n, }\nN 4 a j OUT , 4 = , a i j\nGEN = { }\n4 a\nKILL = { }\n4 i Exit a = 20 B3 I\n= }\nN 3 j\nOUT = { , }\n3 a j\nGEN = { }\n3 φ\nKILL = { }\n3 a\n\nCode Optimization",
-    "id": "pyq_66_614"
+    "id": "pyq_66_614",
+    "q_snippet": "snippets/q_pyq_66_614.webp",
+    "sol_snippet": "snippets/sol_pyq_66_614.webp"
   },
   {
     "num": 16,
@@ -10452,7 +11554,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.35",
     "answerKey": "c",
     "solution": "(a) \"In both AST and CFG, let node N2 be the\nsuccessor of node N1. In the input program, the code corresponding to N2 is present after the code corresponding to N1\" is FALSE. If loop is present than control can move from any statement to any statement.\n(b) \"For any input program, neither AST nor CFG\nwill contain a cycle\" is FALSE. CFG will have a cycle.\n(c) \"The maximum number of successors of a\nnode in an AST and a CFG depends on the input program\" is TRUE.\n(d) \"Each node in AST and CFG corresponds to at\nmost one statement in the input program\" is FALSE. Only option (c) is correct.",
-    "id": "pyq_65_615"
+    "id": "pyq_65_615",
+    "q_snippet": "snippets/q_pyq_65_615.webp"
   },
   {
     "num": 17,
@@ -10469,7 +11572,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.35",
     "answerKey": "b",
     "solution": "Regular expression is used in lexical analysis phase.\n\nPushdown automata is used in syntax analysis phase.\n\nDataflow analysis is a part of code optimisation.\n\nRegister allocation is used in code generation while generating assembly code.\n\nSo, option (b) is the correct answer.",
-    "id": "pyq_66_616"
+    "id": "pyq_66_616",
+    "q_snippet": "snippets/q_pyq_66_616.webp"
   },
   {
     "num": 1,
@@ -10486,7 +11590,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.38",
     "answerKey": "d",
     "solution": "I. Symbol table is used by all the phases of\ncompiler, but here it is saying that only accessed during lexical and syntax analysis. So, this staatement is incorrect.\nII. Compilers do not need heap storage they need\nstack storage to support the recursion. During recursion lots of activation records are form for the same function, and we need stack to maintain this. So, this statement is incorrect.\nIII. Errors violating the condition 'any variable\nmust be declared before its use' are detected during semantic analysis not during syntax analysis. So, this statement is also false. Therfore, option (d) is True.",
-    "id": "pyq_67_617"
+    "id": "pyq_67_617",
+    "q_snippet": "snippets/q_pyq_67_617.webp",
+    "sol_snippet": "snippets/sol_pyq_67_617.webp"
   },
   {
     "num": 2,
@@ -10503,7 +11609,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.38",
     "answerKey": "b",
     "solution": "(a) Context-free grammar can be used to specify\nboth lexical and syntax rules. TRUE\n\n(b) Type checking is done before parsing. FALSE.\nIt is done after parsing.\n\n(c) High-level\nlanguage programs can be translated to different Intermediate Representations. TRUE.\n\n(d) Arguments to a function can be passed using\nthe program stack. TRUE. Program stack is used during runtime.",
-    "id": "pyq_68_618"
+    "id": "pyq_68_618",
+    "q_snippet": "snippets/q_pyq_68_618.webp",
+    "sol_snippet": "snippets/sol_pyq_68_618.webp"
   },
   {
     "num": 3,
@@ -10520,7 +11628,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.38",
     "answerKey": "c",
     "solution": "Lexical analysis uses DFA minimization, to implement or do design lexical analyser, we need minimized DFA.\n\nProduction tree helps us in constructing the parse tree. During parsing we need production tree support.\n\nRegister allocation uses graph coloring, when registers are allocated graph coloring is used in order to optimise the use of registers.\n\nExpression can be evaluated with the help of post- order traversals.\n\nSo, option (c) is the correct answer.\n\nRuntime Environment",
-    "id": "pyq_67_619"
+    "id": "pyq_67_619",
+    "q_snippet": "snippets/q_pyq_67_619.webp",
+    "sol_snippet": "snippets/sol_pyq_67_619.webp"
   },
   {
     "num": 4,
@@ -10537,7 +11647,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.39",
     "answerKey": "a",
     "solution": "I.\nA programming language which does not permit global variables of any kind and has no nesting of procedures/functions, but permits recursion can be implemented with static storage allocation. False. It can implemented with stack allocation not with static storage allocation.\nII.\nMulti-level access link (or display) arrangement is needed to arrange activation records only if the programming language being implemented has nesting of procedures/functions .True\nIII.\nRecursion in programming languages cannot be implemented with dynamic storage allocation. False\nIV.\nNesting of procedures/functions and recursion require a dynamic heap allocation scheme and cannot be implemented with a stack-based allocation scheme for activation records. False\nV.\nProgramming languages which permit a function to return a function as its result cannot be implemented with a stack-based storage allocation scheme for activation records. True\n\nSo, option (a) is correct answer.",
-    "id": "pyq_68_620"
+    "id": "pyq_68_620",
+    "q_snippet": "snippets/q_pyq_68_620.webp"
   },
   {
     "num": 5,
@@ -10554,7 +11665,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.39",
     "answerKey": "d",
     "solution": "1. Static allocation of all data areas by a compiler makes it impossible to implement recursion. TRUE. Static allocation makes it impossible to implement recursion.\n\n2. Automatic garbage collection is essential to implement recursion. FALSE. For recursion we do not require automatic garbage collection.\n\n3. Dynamic allocation of activation records is essential to implement recursion. TRUE. Dynamic allocation are of two types heap and stack.\n\n4. Both heap and stack are essential to implement recursion. FALSE.\n\nSo, option (d) is the correct answer.",
-    "id": "pyq_67_621"
+    "id": "pyq_67_621",
+    "q_snippet": "snippets/q_pyq_67_621.webp",
+    "sol_snippet": "snippets/sol_pyq_67_621.webp"
   },
   {
     "num": 6,
@@ -10571,7 +11684,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.39",
     "answerKey": "a",
     "solution": "Dynamic memory allocation is done during runtime and not during compilation. Therefore, option a is the correct answer.",
-    "id": "pyq_68_622"
+    "id": "pyq_68_622",
+    "q_snippet": "snippets/q_pyq_68_622.webp",
+    "sol_snippet": "snippets/sol_pyq_68_622.webp"
   },
   {
     "num": 7,
@@ -10588,7 +11703,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.39",
     "answerKey": "c",
     "solution": "Heap allocation/ dynamic allocation; the language that allows dynamic data structure necessarily needs heap/ dynamic allocation in runtime enviornment.\n\nLanguages that support recursion require stack.\n\nLanguages that support global variables need static memory allocation. So, option (c) is the correct answer.\n\nCompiler Design",
-    "id": "pyq_67_623"
+    "id": "pyq_67_623",
+    "q_snippet": "snippets/q_pyq_67_623.webp",
+    "sol_snippet": "snippets/sol_pyq_67_623.webp"
   },
   {
     "num": 8,
@@ -10605,7 +11722,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "7.40",
     "answerKey": "d",
     "solution": "Program's flow can be seen as:\n\nThe correct set of activation records along with their access links can be given as:\n\nSo, option D is the correct answer.",
-    "id": "pyq_68_624"
+    "id": "pyq_68_624",
+    "q_snippet": "snippets/q_pyq_68_624.webp"
   },
   {
     "num": 1,
@@ -10622,7 +11740,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.7",
     "answerKey": "d",
     "solution": "2. (b, c, d)",
-    "id": "pyq_64_625"
+    "id": "pyq_64_625",
+    "q_snippet": "snippets/q_pyq_64_625.webp",
+    "sol_snippet": "snippets/sol_pyq_64_625.webp"
   },
   {
     "num": 2,
@@ -10639,7 +11759,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.7",
     "answerKey": "b, c, d",
     "solution": "Page table base register is used to access the virtual address space, as all threads share the same address space, so there is no need to save it. Therfore, option A is incorrect.\n\nEvery thread has its own stack pointer, program counter, and general purpose registers, so we need to save them. Therefore, Option B, C, and D are correct.",
-    "id": "pyq_65_626"
+    "id": "pyq_65_626",
+    "q_snippet": "snippets/q_pyq_65_626.webp",
+    "sol_snippet": "snippets/sol_pyq_65_626.webp"
   },
   {
     "num": 3,
@@ -10656,7 +11778,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.7",
     "answerKey": "c",
     "solution": "A process state diagram with pre-emptive scheduling is as follows:\n\nSo, from the given diagram we can say\n\nI.\nA running process can move to ready state.\n\nII. A ready process can move to running state.\n\nIV. A blocked process can move to ready state.\n\nTherefore, option C is correct.\n\nOperating System",
-    "id": "pyq_66_627"
+    "id": "pyq_66_627",
+    "q_snippet": "snippets/q_pyq_66_627.webp",
+    "sol_snippet": "snippets/sol_pyq_66_627.webp"
   },
   {
     "num": 4,
@@ -10673,7 +11797,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.8",
     "answerKey": "d",
     "solution": "The maximum number of processes present in the ready state is independent of number of CPU's the system have. Number of processes in ready state depends upon the size of ready queue. Therefore, option D is the correct answer.",
-    "id": "pyq_64_628"
+    "id": "pyq_64_628",
+    "q_snippet": "snippets/q_pyq_64_628.webp"
   },
   {
     "num": 5,
@@ -10690,7 +11815,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.8",
     "answerKey": "c",
     "solution": "Given,\n\nUser Mode → Kernel Mode = T1\n\nUser process 1 → User process 2 = T2 [Context Switching]\n\nContext switching includes mode shifting, first preempt the process, shift the mode from user to kernel, OS will save and load the PCB, again shift the mode from kernel to user.\n\nFrom this we can say context switching time is superset and mode shifting is a subset. Therefore, T2 is greater than T1.\n\nHence, option C is the correct answer.",
-    "id": "pyq_65_629"
+    "id": "pyq_65_629",
+    "q_snippet": "snippets/q_pyq_65_629.webp",
+    "sol_snippet": "snippets/sol_pyq_65_629.webp"
   },
   {
     "num": 6,
@@ -10707,7 +11834,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.8",
     "answerKey": "c",
     "solution": "If a process is completed it is not necessary that you should load a new process into memory. Therefore, statement I is false.\n\nA process P2 in blocked state can make transition E\nwhile another process P1 is in running state. TRUE.\nProcess moving from block to ready state and another process is in running state, this situation is possible and hence statement II is true.\n\nThe OS uses preemptive scheduling. TRUE. The given diagram makes a transition from running to ready state and hence this indicates that processes can be preempted while running. So, statement III is also true and statement IV is false.\n\nHence, option C is the correct answer.",
-    "id": "pyq_66_630"
+    "id": "pyq_66_630",
+    "q_snippet": "snippets/q_pyq_66_630.webp",
+    "sol_snippet": "snippets/sol_pyq_66_630.webp"
   },
   {
     "num": 7,
@@ -10724,7 +11853,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.8",
     "answerKey": "a, c, d, or c, d",
     "solution": "First-In-First-Out may suffer from starvation in some exceptional case. In FIFO if a process has arrived then it will definitely get CPU once all the processes arrived before that are serviced. But processes may starve when a process has very long burst time and wait in waiitng queue.\n\nRound robin never suffers from starvation because every process gets time to execute on CPU in circular manner.\n\nPriority Scheduling suffers from starvation as processes with lower priority may starve for processor if higher prioirty process keeps arriving.\n\nShortest Job First also suffers from starvation as processes with higher burst time may starve for processor when processes with lower burst time keeps on arriving.\n\nTherefore, option C and D are correct",
-    "id": "pyq_64_631"
+    "id": "pyq_64_631",
+    "q_snippet": "snippets/q_pyq_64_631.webp",
+    "sol_snippet": "snippets/sol_pyq_64_631.webp"
   },
   {
     "num": 8,
@@ -10741,7 +11872,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.8",
     "answerKey": "d",
     "solution": "Given, 1. Switching to ready processes after termination of currently executing process also a context\nswitch.\n2. There is no context switch from S to P. (Therefore P should be completed within 1 TQ) 3. There are exactly two context switches from Q to R (Therefore Q and R both should requires more than 1 TQ)\n\nGATE Wallah CS& IT Topic wise PYQs Process Management & CPU Scheduling 4. There is exactly one context switch from R to Q (Therefore Q require more time than R) 5. Exactly one context swich from R to S. (Therefore S should be complete with in 1 TQ otherwise another CS from R to S required.) 6. Exactly one conext switch from S to Q. S → Q = 1 R → Q = 1 Q → R = 2 S → P = No context switch From the given points, we can conclude: 1. Burst Time (P) ≤ 4 2. Burst Time (Q) > 8 3. Burst Time (S) ≤ 4\n\n→ Round Robin (Time Quantum = 4)\n\nWe have said that Burst Time (Q) > 8. Only option D does not satisfy this situation and hence it is NOT possible as CPU bursts.",
-    "id": "pyq_65_632"
+    "id": "pyq_65_632",
+    "q_snippet": "snippets/q_pyq_65_632.webp",
+    "sol_snippet": "snippets/sol_pyq_65_632.webp"
   },
   {
     "num": 9,
@@ -10758,7 +11891,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.9",
     "answerKey": "a, c, d",
     "solution": "(a) Turnaround\ntime includes waiting time. CORRECT. As, Turnaround time = waiting time\n+ burst time.\n\n(b) The goal is to only maximize CPU utilization\nand minimize throughput. INCORRECT. The goal of CPU scheduling is to increase the CPU utilization and throughput, and minimise the response time.\n\n(c) Round-robin policy can be used even when the\nCPU time required by each of the processes is not known apriori. CORRECT. Round robin policy works irrespective of burst time of the process, it gives equal amount of time quantum to each process on processor.\n\n(d) Implementing preemptive scheduling needs\nhardware support. CORRECT. To preempt a process, hardware support is required, a timer interrupt is generated whenever time quantum expires and the interrupted process is enqueued in ready queue and anohter process is scheduled to the CPU.",
-    "id": "pyq_66_633"
+    "id": "pyq_66_633",
+    "q_snippet": "snippets/q_pyq_66_633.webp",
+    "sol_snippet": "snippets/sol_pyq_66_633.webp"
   },
   {
     "num": 10,
@@ -10775,7 +11910,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.9",
     "answerKey": "12",
     "solution": "It is given that we have to find out the minimum achievable average waiting time for these three processes in a non-preemptive scheduler. This is always possible with Shortest Job First CPU scheduling algorithm. Hence, we will be using SJF to solve this problem.\n\nGantt chart using SJF: P3 P1 P2\n0 10 26 46\n\n10 26 0 AV.W.T = 3 36 = 12 3\n+\n+\n=\n\nTherefore, 12 is the correct answer.\n\nOperating System",
-    "id": "pyq_64_634"
+    "id": "pyq_64_634",
+    "q_snippet": "snippets/q_pyq_64_634.webp",
+    "sol_snippet": "snippets/sol_pyq_64_634.webp"
   },
   {
     "num": 11,
@@ -10792,7 +11929,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.10",
     "answerKey": "5.25",
     "solution": "P.NO Arrive Time Burst Time P1 0 8 P2 0 7 P3 0 2 P4 0 4\n\nGantt chart using SJF:\n\nCPU P3 P4 P2 P1\n\n0 2 6 13 21\n\nTime\n\nTAT = Completion time- arrival time\n\nTAT P1 = 21 - 0 = 21\n\nTAT P2 = 13 - 0 = 13\n\nTAT P3 = 2 - 0 = 2\n\nTAT P4 = 6 - 0 = 6\n\nAverage TAT  = 42 4  =  10.5\n\nRound Robin\n\nReady Queue-  𝑃1 ;  𝑃2 ;  𝑃3 ;  𝑃4 ;  𝑃1 ;  𝑃2 ;\n\nGantt chart using round robin: CPU P1 P2 P3 P4 P1 P2\n\n0 4 8 10 14 18 21\n\nTAT\n\nTAT P1 = 18\n\nTAT P2 = 21\n\nTAT P3 = 10\n\nTAT P4 = 14\n\nTotal = 63\n\nAverage TAT  = 63 4  =  15.75\n\nDifference = [15.75 - 10.5] = 5.25",
-    "id": "pyq_65_635"
+    "id": "pyq_65_635",
+    "q_snippet": "snippets/q_pyq_65_635.webp"
   },
   {
     "num": 12,
@@ -10809,7 +11947,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.10",
     "answerKey": "2 ms",
     "solution": "P.NO Arrive Time Burst Time P1 0 3 P2 1 1 P3 3 3 P4 4 Z\n\nAverage Waiting Time = 1 ms\n\nCASE I: If Z < 3\n\nGantt chart using SRTF:\n\nP1 P2 P1 P4 P3\n\n0 1 2 4 4 + Z 7 + Z\nAverage waiting Time = 1 0 1) 4 z\n+\n+\n+\n\n= 2 4 z +\n+1 ms\n⇒ 2 4 z +\n+1⇒ Z + 2 = 4⇒ Z + 4 - 2 = 2\n⇒ Z = 2 ms CASE II: If Z > 3 Average Waiting Time > 1 ms CPU P1 P2 P1 P3 P4\n\n0 1 2 4 7 7 + Z\n\nAverage waiting Time = 1 0 1 3 1 4\n+\n+ +\n= ms\n\n⇒ 5/4 ≠1 ⇒ 1.25≠ 1 P.No Arrival Time Burst Time Priority Completion Time Turnaround Time Waiting Time P1 0 11 2 49 49 38 P2 5 28 0 (Highest) 33 28 0 P3 12 2 3 51 39 37 P4 2 10 1 40 38 28 P5 9 16 4 (Lowest) 67 58 42\n\nGATE Wallah CS& IT Topic wise PYQs Process Management & CPU Scheduling\n\nSo, the value of Z could not be greater than 3, and hence the correct answer is 2.",
-    "id": "pyq_66_636"
+    "id": "pyq_66_636",
+    "q_snippet": "snippets/q_pyq_66_636.webp"
   },
   {
     "num": 13,
@@ -10826,7 +11965,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.11",
     "answerKey": "29",
     "solution": "P.No Arrival Time Burst Time Priority P1 0 11 2 P2 5 28 0 (Highest) P3 12 2 3 P4 2 10 1 P5 9 16 4 (Lowest)\n\nGantt chart using Pre-emptive priority scheduling algorithm: P1 P4 P2 P4 P1 P3 P5\n\n0 2 5 33 40 49 51 67\n\nAverage Waiting Time = 38 0 37 28 42 5\n+\n+\n+\n+\n\n= 145 29 5 =",
-    "id": "pyq_64_637"
+    "id": "pyq_64_637",
+    "q_snippet": "snippets/q_pyq_64_637.webp",
+    "sol_snippet": "snippets/sol_pyq_64_637.webp"
   },
   {
     "num": 14,
@@ -10843,7 +11984,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.11",
     "answerKey": "3.0",
     "solution": "P.NO Arrive Time Burst Time P1 0 7 P2 3 3 P3 5 5 P4 6 2\n\nGantt chart using SRTF scheduling algorithm: P1 P2 P4 P1 P3\n\n0 3 6 8 12 17\nP.N O Arrival Time Burst Time Complet ion time Turnarou nd time Waitin g time P1 0 7 12 12 5 P2 3 3 6 3 0 P3 5 5 17 12 7 P4 6 2 8 2 0\n\n5 0 7 0 12 AV.W.T = = 4 4\n+\n+\n+\n\nAverage Waiting Time = 3.0",
-    "id": "pyq_65_638"
+    "id": "pyq_65_638",
+    "q_snippet": "snippets/q_pyq_65_638.webp",
+    "sol_snippet": "snippets/sol_pyq_65_638.webp"
   },
   {
     "num": 15,
@@ -10860,7 +12003,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.11",
     "answerKey": "8.25",
     "solution": "Gantt chart using SRTF: P1 P2 P3 P2 P4 P1\n\n0 3 7 8 10 13 20\nProcess Arrival Time Burst Time Completion Time Turnaround Time P1 0 10 20 20 P2 3 6 10 7 P3 7 1 8 1 P4 8 3 13 5\n\n20 7 1 5 33 AV.TAT = = 4 4\n+\n+ +\n= 8.25",
-    "id": "pyq_66_639"
+    "id": "pyq_66_639",
+    "q_snippet": "snippets/q_pyq_66_639.webp",
+    "sol_snippet": "snippets/sol_pyq_66_639.webp"
   },
   {
     "num": 16,
@@ -10877,7 +12022,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.11",
     "answerKey": "a",
     "solution": "Shortest job first (SJF) minimizes the waiting time, SJF gives the minium average waiting time as comapred with other algorithms. Here it is given that arrival time of all processes is same, so SRTF acts same as SJF.\n\nOperating System\n\nTherefore, option A is correct.",
-    "id": "pyq_64_640"
+    "id": "pyq_64_640",
+    "q_snippet": "snippets/q_pyq_64_640.webp",
+    "sol_snippet": "snippets/sol_pyq_64_640.webp"
   },
   {
     "num": 17,
@@ -10894,7 +12041,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.12",
     "answerKey": "c",
     "solution": "Shortest remaining time first or Shortest job first will always generate minimum average turnaround time and average waiting time. Here also preemptive SJF or SRTF will always give minimum average waiting time as comapred to non- preemptive SJF. Therefore, option C is the correct answer.",
-    "id": "pyq_65_641"
+    "id": "pyq_65_641",
+    "q_snippet": "snippets/q_pyq_65_641.webp",
+    "sol_snippet": "snippets/sol_pyq_65_641.webp"
   },
   {
     "num": 18,
@@ -10911,7 +12060,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.12",
     "answerKey": "12",
     "solution": "Prio Period P.NO A.T B.T Insta 1/3 3 T1 1 1 1; 4; 7; 10; 13; 16… 1/7 7 T2 1 2 1; 8; 15; … 1/20 4 T3 1 4 1; 21; 41; …\n\nPre-Prio:\n\nR.O 𝑇11 ; 𝑇21 ; 𝑇31 ;  𝑇12 ;  𝑇13;   𝑇22 ;  𝑇14 ;\n\nGantt Chart:\n\nSo, at the end of 12 millisecond and at the beginning of 13 millisecond the first instance of T3 completed its execution.\n\nTherefore, 12 is the correct answer.",
-    "id": "pyq_66_642"
+    "id": "pyq_66_642",
+    "q_snippet": "snippets/q_pyq_66_642.webp",
+    "sol_snippet": "snippets/sol_pyq_66_642.webp"
   },
   {
     "num": 19,
@@ -10928,7 +12079,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.12",
     "answerKey": "5.5",
     "solution": "Gantt Chart using SRTF:\n\nP1 P2 P3 P4 P1\n\n0 2 6 12 17 27\nProcess Arrival Time Burst Time Completi on Time Turnaro und Time Waiting Time P1 0 12 27 27 15 P2 2 4 6 4 0 P3 3 6 12 9 3 P4 8 5 17 9 4\n\n15 0 3 4 22 AV.W.T = 4 4\n+\n+\n+\n= =\n\nSo, 5.5 ms is the average waiting time.",
-    "id": "pyq_64_643"
+    "id": "pyq_64_643",
+    "q_snippet": "snippets/q_pyq_64_643.webp"
   },
   {
     "num": 20,
@@ -10945,7 +12097,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.12",
     "answerKey": "1000",
     "solution": "Given,\n\nTime Quantum= 50 P.No Arrival Time Burst Time IOBT A 0 100 500 B 5 350 500 C 10 200 500\n\nGantt Chart:\n\nC has completed its IO at time 1000 ms.\n\nGATE Wallah CS& IT Topic wise PYQs Process Management & CPU Scheduling",
-    "id": "pyq_65_644"
+    "id": "pyq_65_644",
+    "q_snippet": "snippets/q_pyq_65_644.webp",
+    "sol_snippet": "snippets/sol_pyq_65_644.webp"
   },
   {
     "num": 21,
@@ -10962,7 +12116,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.13",
     "answerKey": "7.2",
     "solution": "Gantt Chart using SRTF: A B A C E D\n\n0 3 5 8 12 15 21\n\n8 2 7 14 5 AV.TAT = 5 36 AV.TAT = 5\n+\n+\n+\n+\n=",
-    "id": "pyq_66_645"
+    "id": "pyq_66_645",
+    "q_snippet": "snippets/q_pyq_66_645.webp"
   },
   {
     "num": 22,
@@ -10979,7 +12134,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.13",
     "answerKey": "b",
     "solution": "This algorithm will behave as preemptive FCFS and is equivalent to the round-robin algorithm. Therefore, option B is the correct answer.",
-    "id": "pyq_64_646"
+    "id": "pyq_64_646",
+    "q_snippet": "snippets/q_pyq_64_646.webp",
+    "sol_snippet": "snippets/sol_pyq_64_646.webp"
   },
   {
     "num": 23,
@@ -10996,7 +12153,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.13",
     "answerKey": "c",
     "solution": "In FCFS all the process's gets executed as per their time of arrival, so using FCFS processes will be completed as P1, P2, P3\n\nNow, checking the completion sequence using round-robin scheduling: P.No Arrival Time Burst Time 1 0 5 2 1 7 3 3 4\n\nRound robin Time Qunatum = 2\n\nReady Queue- 𝑃1 ; 𝑃2 ; 𝑃1 ;  𝑃3 ;  𝑃2;   𝑃1 ;  𝑃3 ; 𝑃2\n\nGantt Chart: P1 P2 P1 P3 P2 P1 P3 P2\n\n0 2 4 6 8 10 11 13 16\n\nHere, Process are completed as P1, P3, P2.\n\nSo, option C is the correct answer.",
-    "id": "pyq_65_647"
+    "id": "pyq_65_647",
+    "q_snippet": "snippets/q_pyq_65_647.webp",
+    "sol_snippet": "snippets/sol_pyq_65_647.webp"
   },
   {
     "num": 24,
@@ -11013,7 +12172,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.13",
     "answerKey": "a",
     "solution": "Gantt Chart Preemptive SJF: CPU P0 P1 P0 P2\n\n0 1 5 13 22\nP. No Arri val Tim e Bu rst Ti me Comple tion Time Turnar ound Time Wait ing Time P0 0 9 13 13 4 P1 1 4 5 4 0 P2 2 9 22 20 11\n\n4 0 11 15 AV.W.T = = 5 3 3\n+\n+\n=\n\nHence, option A is the correct answer.",
-    "id": "pyq_66_648"
+    "id": "pyq_66_648",
+    "q_snippet": "snippets/q_pyq_66_648.webp",
+    "sol_snippet": "snippets/sol_pyq_66_648.webp"
   },
   {
     "num": 25,
@@ -11030,7 +12191,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.13",
     "answerKey": "d",
     "solution": "I. Shortest remaining time first scheduling may\ncause starvation. TRUE. Processes with longer burst time may starve if processes with shorter burst time keeps on arriving. Process Name Arrival Time Burst Time Completion Time Turnarou nd Time A 0 6 8 8 B 3 2 5 2 C 5 4 12 7 D 7 6 21 14 E 10 3 15 5\n\nOperating System\n\nII. Preemptive scheduling may cause starvation.\nTRUE. Preemptive scheduling may cause starvation for example SRTF is preemptive scheudling and it can cause starvation. So this statement is also correct.\n\nIII. Round robin is better than FCFS in terms of\nresponse time. TRUE. Round robin has defined time quantum for each process, therefore it has better response time than FCFS.\n\nHence, all statements are true and option D is correct.",
-    "id": "pyq_64_649"
+    "id": "pyq_64_649",
+    "q_snippet": "snippets/q_pyq_64_649.webp",
+    "sol_snippet": "snippets/sol_pyq_64_649.webp"
   },
   {
     "num": 26,
@@ -11047,7 +12210,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.14",
     "answerKey": "c",
     "solution": "If the time-slice used in the round-robin scheduling policy is more than the maximum time required to execute any process, then the policy will degenerate to first come first serve.",
-    "id": "pyq_65_650"
+    "id": "pyq_65_650",
+    "q_snippet": "snippets/q_pyq_65_650.webp",
+    "sol_snippet": "snippets/sol_pyq_65_650.webp"
   },
   {
     "num": 27,
@@ -11064,7 +12229,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.14",
     "answerKey": "c, d",
     "solution": "A computer system has to make a transition from user mode to kernel mode, whenver a page fault occurs, the page fault handler will run in kernel mode.\n\nSystem call alaways makes a transition from user to kernel mode.\n\nTherfore, option C and D are correct.",
-    "id": "pyq_66_651"
+    "id": "pyq_66_651",
+    "q_snippet": "snippets/q_pyq_66_651.webp",
+    "sol_snippet": "snippets/sol_pyq_66_651.webp"
   },
   {
     "num": 28,
@@ -11081,7 +12248,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.14",
     "answerKey": "a, c",
     "solution": "(a) exit will always invoke a system call.\n\n(b) malloc will not invoke a system call always, it\nmay or may not invoke a system call.\n\n(c) sleep will always invoke a system call.\n\n(d) strlen will never invoke a system call.",
-    "id": "pyq_64_652"
+    "id": "pyq_64_652",
+    "q_snippet": "snippets/q_pyq_64_652.webp"
   },
   {
     "num": 29,
@@ -11098,7 +12266,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.14",
     "answerKey": "31",
     "solution": "We know that, n-forks creates (2n -1) child processes\n\nn = 10; (n % 2 = 0) ⇒ 5 times\n\n∴ No of child processes = 25 - 1 = 31",
-    "id": "pyq_65_653"
+    "id": "pyq_65_653",
+    "q_snippet": "snippets/q_pyq_65_653.webp",
+    "sol_snippet": "snippets/sol_pyq_65_653.webp"
   },
   {
     "num": 30,
@@ -11115,7 +12285,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.14",
     "answerKey": "c",
     "solution": "For, n-fork system call ⇒ Total child processes = 2n\n- 1\n\nHere, n = 3\n\nSo, 23 - 1 = 7\n\nSo, option C is the correct answer.",
-    "id": "pyq_66_654"
+    "id": "pyq_66_654",
+    "q_snippet": "snippets/q_pyq_66_654.webp",
+    "sol_snippet": "snippets/sol_pyq_66_654.webp"
   },
   {
     "num": 31,
@@ -11132,7 +12304,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.14",
     "answerKey": "b",
     "solution": "For, n fork( ) system calls, total number of child processes created is 2n - 1.\n\nGATE Wallah CS& IT Topic wise PYQs Process Management & CPU Scheduling",
-    "id": "pyq_64_655"
+    "id": "pyq_64_655",
+    "q_snippet": "snippets/q_pyq_64_655.webp",
+    "sol_snippet": "snippets/sol_pyq_64_655.webp"
   },
   {
     "num": 32,
@@ -11149,7 +12323,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.15",
     "answerKey": "b",
     "solution": "Thread is the light weight process and each thread comprises its own stack, program counter, register. Only the address space of the thread is shared among threads of a single process. So, option B is the correct answer.",
-    "id": "pyq_65_656"
+    "id": "pyq_65_656",
+    "q_snippet": "snippets/q_pyq_65_656.webp"
   },
   {
     "num": 33,
@@ -11166,7 +12341,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.15",
     "answerKey": "d",
     "solution": "A thread of a process shares with other threads are: Data section, Code section, Address space, permissions, etc. So, option D is the correct answer. Threads of a process shares both heap and global variables.",
-    "id": "pyq_66_657"
+    "id": "pyq_66_657",
+    "q_snippet": "snippets/q_pyq_66_657.webp",
+    "sol_snippet": "snippets/sol_pyq_66_657.webp"
   },
   {
     "num": 34,
@@ -11183,7 +12360,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.15",
     "answerKey": "d",
     "solution": "User level threads are scheduled by the thread library not by kernel. Kernel even don't know about the existence of user level threads. So, A is correct.\n\nWhen a user level thread is blocked, all other thread of its process are blocked. Option B is also correct.\n\nContext switching between user level threads is faster than kernel level thread because user level threads have to store nothing, whereas kernel level thread save and restore registers, program counter, etc. Therefore, option C is also correct.\n\nKernel level threads cannot share the code segment. Threads can share the code segment, threads have seprate address space but they can share same code segment.\n\nSo, option D is incorrect.",
-    "id": "pyq_64_658"
+    "id": "pyq_64_658",
+    "q_snippet": "snippets/q_pyq_64_658.webp",
+    "sol_snippet": "snippets/sol_pyq_64_658.webp"
   },
   {
     "num": 35,
@@ -11200,7 +12379,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.15",
     "answerKey": "c",
     "solution": "On per-thread basis, the OS maintains only CPU register. INCORRECT. As it also maintains thread state, thread ID, thread priority, etc. are also maintained.\n\nThe OS maintains a seprate stack for each thread, so option B is also INCORRECT.\n\nOn per-thread basis, the OS does not maintain virtual memory state. CORRECT. Virtual memory state is actually address space, and it is not unique\nfor each thread, address space is shared among\nmultiple threads.\n\nOn per-thread basis, the OS maintains only scheduling and accounting information. INCORRECT. As thread mainatains other data also like thread priority, thread state, etc.",
-    "id": "pyq_65_659"
+    "id": "pyq_65_659",
+    "q_snippet": "snippets/q_pyq_65_659.webp",
+    "sol_snippet": "snippets/sol_pyq_65_659.webp"
   },
   {
     "num": 1,
@@ -11217,7 +12398,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.23",
     "answerKey": "a",
     "solution": "The given algorithm is an updated version of Bakery Algorithm, this algorithm is basically for multi process solution.\n\nThe condition while (t[j]!=0 && t[j] <= t[i]);\nensures that no two processes can be in critical section at the same time.\n\nThe given algorithm satisfies mutual exclusion but does not satisfies bounded waiting, progress, and deadlock. So, at most one process can be in the critical section at any time.",
-    "id": "pyq_67_660"
+    "id": "pyq_67_660",
+    "q_snippet": "snippets/q_pyq_67_660.webp",
+    "sol_snippet": "snippets/sol_pyq_67_660.webp"
   },
   {
     "num": 2,
@@ -11234,7 +12417,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.23",
     "answerKey": "c",
     "solution": "The given code is of strict alternation. Both processes are strictly changing the value of turn to 1 and 0. Strict alternation guarantees mutual exclusion but fails to guarantee process.\n\nTherefore, This solution violates progress requirement. Hence, option (c) is correct.",
-    "id": "pyq_68_661"
+    "id": "pyq_68_661",
+    "q_snippet": "snippets/q_pyq_68_661.webp",
+    "sol_snippet": "snippets/sol_pyq_68_661.webp"
   },
   {
     "num": 3,
@@ -11251,7 +12436,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.23",
     "answerKey": "a",
     "solution": "Suppose Process Y starts execution made varQ= true; and pre-empted. Process X starts execution\nmade varP = true;\n\nNow both varP and varQ are true and both process X and Y can enter into CS simultaneously. Hence, no mutual exclusion.\n\nHere deadlock is not possible, for deadlock the processes must stuck, here no process is stucked both are executing hence no deadlock.\n\nTherefore, the proposed solution prevents deadlock but fails to guarantee mutual exclusion.",
-    "id": "pyq_69_662"
+    "id": "pyq_69_662",
+    "q_snippet": "snippets/q_pyq_69_662.webp",
+    "sol_snippet": "snippets/sol_pyq_69_662.webp"
   },
   {
     "num": 4,
@@ -11268,7 +12455,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.23",
     "answerKey": "b",
     "solution": "Fetch-And-Add(x, i), this will returns value of (x) and increment 'x' by 'i'.\n\nImplementation :\n\nint fetch-And-Add (x, i)\n\nint rv;\n\nrv = x;\n\nx = x + i;\n\nOperating System\n\nreturn(rv);\n\nwhile (F-A(L, 1)) // Entry section\n\n<cs>\n\nL = 0 // Exit section A process acquires a lock only when L is equals to 0, when L=1, then the process repeates the while loop. There is no overflow because after every time l is incremented, L is again made equals to 1.\n\nAcquiring lock is successful only when Fetch_And_Add gets executed with L = 0.",
-    "id": "pyq_67_663"
+    "id": "pyq_67_663",
+    "q_snippet": "snippets/q_pyq_67_663.webp",
+    "sol_snippet": "snippets/sol_pyq_67_663.webp"
   },
   {
     "num": 5,
@@ -11285,7 +12474,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.24",
     "answerKey": "a",
     "solution": "The given solution is deadlock free. So, statement I is true.\n\nThe given solution does not guarantee bounded waiting, this can lead to starvation. So, statement II is false.\n\nThere is no restriction on processes to enter the CS in a certain manner. Therefore, statement III is false.\n\nThe given solution guarantees mutual exclusion. So, statement IV is also incorrect.\n\nTherefore, option A is the correct answer.",
-    "id": "pyq_68_664"
+    "id": "pyq_68_664",
+    "q_snippet": "snippets/q_pyq_68_664.webp",
+    "sol_snippet": "snippets/sol_pyq_68_664.webp"
   },
   {
     "num": 6,
@@ -11302,7 +12493,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.24",
     "answerKey": "a, d",
     "solution": "Here value of x is not assigned, but in C programming all the global and static variables are initialised to 0. y is a local variable.\n\nSo, 1. Process P1: Two threads are created in main. Both threads execute foo() function and do not wait for each other and because of explicit locking mechanism [Acquire L1 and Release L1], mutual exclusion is there and no race condition will take place inside function foo().\n\ny is local variable, both threads will print its value as 1. Because of wait in the main (); print (x) will only execute when both threads are completed. So, the x value will become 2. 2. Process P2:\n\nP2 will be executed same as P1. So, it will also print value of x as 2 and value of y as 1. Therefore, option A and D are true.",
-    "id": "pyq_69_665"
+    "id": "pyq_69_665",
+    "q_snippet": "snippets/q_pyq_69_665.webp",
+    "sol_snippet": "snippets/sol_pyq_69_665.webp"
   },
   {
     "num": 7,
@@ -11319,7 +12512,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.24",
     "answerKey": "d",
     "solution": "The question is asking for the minimum value of x and the minimum value of y together for which execution of P can result in a deadlock are:\n\nSo, checking for the minimum value x = 1, y = 1.\n\nDeadlock is possible in this scenario the condition is process should perform down/wait operation twice. If down operation on lock is performed twice, then deadlock is possible.\n\nTherefore, option D is correct.",
-    "id": "pyq_67_666"
+    "id": "pyq_67_666",
+    "q_snippet": "snippets/q_pyq_67_666.webp",
+    "sol_snippet": "snippets/sol_pyq_67_666.webp"
   },
   {
     "num": 8,
@@ -11336,7 +12531,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.24",
     "answerKey": "a",
     "solution": "The given code is purely Strict alternation method. Strict alternation always gurantee mutual exclusion but do not gurantee progress. So, option A is correct.\n\nProcess Synchronization",
-    "id": "pyq_68_667"
+    "id": "pyq_68_667",
+    "q_snippet": "snippets/q_pyq_68_667.webp",
+    "sol_snippet": "snippets/sol_pyq_68_667.webp"
   },
   {
     "num": 9,
@@ -11353,7 +12550,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.25",
     "answerKey": "a, b, c",
     "solution": "When every process is in the waiting state, a system is said to be in deadlock. This is comparable to a stop-and-go traffic situation.\n\nWhen processes carry out repeated tasks without advancing the system (still producing no valuable work), the system is said to be in livelock. This is comparable to a traffic gridlock when some cars drive forward, strike a block, then reverse and move forward again.\n\nNow, deadlock and livelock are mutually exclusive;\nin a system, only one of them can occur at any given time. However, they both suggest that the system will not advance, starving the associated processes in the process.\n\nNow, regarding the query, any process can terminate another process and then obtain the necessary resource, and this can result in",
-    "id": "pyq_69_668"
+    "id": "pyq_69_668",
+    "q_snippet": "snippets/q_pyq_69_668.webp"
   },
   {
     "num": 10,
@@ -11370,7 +12568,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.25",
     "answerKey": "a, b, d",
     "solution": "The value of semaphore is initialised to 5.\n\nIf all the threads execute sequentially one by one, like first thread arrives and increases the value of counter by 1, then next thread increases it to 2 and so on. So, the final value will become 5. Therefore, option A is correct.\n\nIf the first thread arrives and performed counter++, increases the value of counter by 1, load the value in the register and gets pre-empted. Now subsequent thread arrives and completed the execution, increases the value of counter. At last, first thread will arrive (as it was pre-empted) to complete its execution it will store the value into register which is counter =1 (the value loaded onto register before pre-emption). So, option B is also correct.\n\nThe value of counter cannot be 0, because counter's value has to be updated at least one time. Therefore, it's maximum value will be 5 and minimum value will be 1. So, option C is incorrect.\n\nDeadlock can be present in the system, if first thread arrives and performed step-5(wait(S);) and gets pre- empted, second thread arrives perform step-5 (wait(S);) and gets pre-empted and all other subsequent threads does the same. Now, the semaphore value will become 0 and if thread wants to perform step-6 (wait(S);), it will get blocked, and all the subsequent threads will be blocked after performing second wait(S); operation. None of the threads are able to execute further and hence a deadlock is possible involving all the threads. So, option D is also correct.\n\nSo, option A, B, and D are correct.",
-    "id": "pyq_67_669"
+    "id": "pyq_67_669",
+    "q_snippet": "snippets/q_pyq_67_669.webp",
+    "sol_snippet": "snippets/sol_pyq_67_669.webp"
   },
   {
     "num": 11,
@@ -11387,7 +12587,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.25",
     "answerKey": "a",
     "solution": "Given,\n\nThere are two semaphores a and b initialized to 1 and 0 respectively. Count is a shared variable it is initialized to 0. 1. CODE SECTION P\n2. wait (a);\n3. count = count + 1;\n4. if (count == n) signal (b);\n5. signal (a);\n6. wait (b);\n7. signal (b);\n8. CODE SECTION Q\n\nProcess will arrive,\n\nComplete the CODE SECTION P //line 1.\n\nand then only it can perform wait (a); //line 2\n\nnow, it will increase the value of count to 1; //line 3\n\ncheck if (count==n), if yes then perform signal (b);\nelse we will not execute signal(b); //line 4\n\nIt will perform signal (a); //line 5\n\nwait (b) [b was initialized to 0, so it will be blocked]. //line 6\n\nOperating System\n\nNow, processes will continuously block till count ==n. Once count becomes equals to n,\n\nit will execute signal(b) // line 4\n\nand this unblocks one process, that unblocked process will execute signal (b) // line 7\n\nNow, subsequent processes will be unblocked and can enter CODE SECTION Q //line 8.\n\nMeans,\n\nNo processes can enter into CODE SECTION Q until N processes finishes CODE SECTION P and N processes has incremented the count variable. OR\n\nTo execute CODE SECTION Q, N processes must completed their CODE SECTION P and has incremented the count variable.\n\nSo, It ensures that no process executes CODE SECTION Q before every process has finished CODE SECTION P. Therefore, option A is correct.",
-    "id": "pyq_68_670"
+    "id": "pyq_68_670",
+    "q_snippet": "snippets/q_pyq_68_670.webp",
+    "sol_snippet": "snippets/sol_pyq_68_670.webp"
   },
   {
     "num": 12,
@@ -11404,7 +12606,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.26",
     "answerKey": "7",
     "solution": "Suppose, the initial value of S = x\n\nNow, 20P means 20 down operations(-20) and 12 V means 12 up operations (+12).\n\nIt is saying that at least one operation should remain blocked.\n\nSo, this can be written as,\n\nx - 20 + 12 = -1\n\nx - 8 = -1\n\nx = 7\n\nSo, the largest initial value of S for which at least one operation will remain blocked is 7.",
-    "id": "pyq_69_671"
+    "id": "pyq_69_671",
+    "q_snippet": "snippets/q_pyq_69_671.webp",
+    "sol_snippet": "snippets/sol_pyq_69_671.webp"
   },
   {
     "num": 13,
@@ -11421,7 +12625,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.26",
     "answerKey": "c",
     "solution": "In the given code, if the producer will produce the item, then consumer will definitely consume it. So, the option A is incorrect.\n\nIf producer is producing two or more items then consumer can consume all of them, So, option B is incorrect.\n\nIf the buffer is empty, then\n\nn = 0\n\nS = 1 0 [wait operation on semWait(S)]\n\nΘ n = 0; consumer gets blocked\n\nS = 0; producer gets blocked\n\nBoth the processes are blocked, therfore there exists a deadlock. Hence, option C is correct.\n\nIn option D, with n =1, then also there will be a deadlock, So, option D is also incorrect.",
-    "id": "pyq_67_672"
+    "id": "pyq_67_672",
+    "q_snippet": "snippets/q_pyq_67_672.webp"
   },
   {
     "num": 14,
@@ -11438,7 +12643,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.26",
     "answerKey": "c",
     "solution": "(a) With option A, deadlock happens.\n\n(b) Process 'X' may compute all values (iterations)\nand process would be able to make only one iteration and then gets blocked. So, option B is also incorrect.\n\n(c) Processes 'X and 'Y' alternates and signal each\nother so that all iterations of both 'X' and 'Y' completes successfully\n\n(d) Some of the signals issued by 'X' cannot be\ncaptured by 'Y'\n\nTherfore, process 'Y' will not be able to complete all iterations. So, option D is also incorrect.\n\nProcess Synchronization",
-    "id": "pyq_68_673"
+    "id": "pyq_68_673",
+    "q_snippet": "snippets/q_pyq_68_673.webp",
+    "sol_snippet": "snippets/sol_pyq_68_673.webp"
   },
   {
     "num": 15,
@@ -11455,7 +12662,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.27",
     "answerKey": "d",
     "solution": "The code can be written as:\n\nCSEM S = 2;\n\nPri\n\ni = W, X, Y, Z\n\nP(S);\n\n<update x>\n\nV(S);\n\nW: Completes, x =1\n\nX: Load ; increment; Preempted, x =2\n\nY: Completes\n\nZ: Completes\n\nX: Store, x = 2 is stored as the final value\n\nTherfore, 2 is the correct answer hence option D is true.",
-    "id": "pyq_69_674"
+    "id": "pyq_69_674",
+    "q_snippet": "snippets/q_pyq_69_674.webp"
   },
   {
     "num": 16,
@@ -11472,7 +12680,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.27",
     "answerKey": "b",
     "solution": "In option A:\n\nX: P(a) // a = 0 Y: P(b) // b= 0\n\nZ: P(c) //c =0\n\nX: P(a)P(b) // b= blocked Y: P(b)P(c) // c= blocked\n\nZ: P(c)P(d) P(a) // d = 0, a = blocked\n\nHere we can have deadlock.\n\nIn option B:\n\nX: P(b) // b = 0\n\nY: P(b) // b = blocked\n\nZ: P(a) // a = 0\n\nX: P(b)P(a) // a = blocked\n\nY: P(b)P(c) // already blocked by b\n\nZ: P(a)P(c) // c = 0\n\nX: P(b)P(a)P(c) // already blocked by a\n\nY: P(b)P(c)P(d) // already blocked by b\n\nZ: P(a)P(c)P(d) // d= 0 [Success]\n\nNo deadlock.\n\nIf one process is successful other processes can also complete successfully. So, option B is the correct answer.\n\nIn option C:\n\nX: P(b) // b=0\n\nY: P(c) // c= 0\n\nZ: P(a) // a = 0\n\nX: P(b)P(a)P(c) // a = blocked\n\nY: P(c)P(b)P(d) // b = blocked\n\nZ: P(a)P(c)P(d) // c = blocked.\n\nHere we can have deadlock.\n\nIn option D: X: P(a) // a = 0\n\nY: P(c) // c = 0\n\nZ: P(a) // a = blocked X: P(a) P(b)P(c) // b= 0 Y: P(c)P(b)P(d) // b = blocked Z: P(a)P(c)P(d)\n\nHere also deadlock is possible.",
-    "id": "pyq_67_675"
+    "id": "pyq_67_675",
+    "q_snippet": "snippets/q_pyq_67_675.webp",
+    "sol_snippet": "snippets/sol_pyq_67_675.webp"
   },
   {
     "num": 17,
@@ -11489,7 +12699,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.27",
     "answerKey": "a",
     "solution": "If the process run in following order • P0; P1; P2; P0; P0 → \"0\" will be printed 2 times\n\nIf the process run in following order • P0; P1; P0; P2; P0; P0 → \"0\" will be printed 3 times\n\nSo, \"0\" will be printed maximum 3 times, and minimum 2 times. Therefore, option A is correct.\n\nOperating System",
-    "id": "pyq_68_676"
+    "id": "pyq_68_676",
+    "q_snippet": "snippets/q_pyq_68_676.webp",
+    "sol_snippet": "snippets/sol_pyq_68_676.webp"
   },
   {
     "num": 18,
@@ -11506,7 +12718,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.28",
     "answerKey": "c",
     "solution": "Initial\n\nThe value of Xb compulsarily should be 1, So that any one of Pb(Xb) should be successful in the beginenning itself.\n\nYb = 0",
-    "id": "pyq_69_677"
+    "id": "pyq_69_677",
+    "q_snippet": "snippets/q_pyq_69_677.webp"
   },
   {
     "num": 19,
@@ -11523,7 +12736,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.28",
     "answerKey": "d",
     "solution": "Only after the producer has made the thing may the consumer consume it, and only after the consumer has consumed the item can the producer manufacture it again (except for the first time).\n\nLet's go over how this code functions.\n\nThe parallel execution of Producer and Consumer is mentioned.\n\nProducer:\n\nS value is 1 in st1, P(S) on S reduces it to 0, and st2 produces the x item.\n\nQ value for st3 is 0. V(Q) on Q results in 1.\n\nSince this is an endless while loop, it ought to loop endlessly. S is already 0 in the subsequent while loop iteration; further P(S) on 0 sends P to S's blocked list. Producer is thus obstructed.\n\nConsumer:\n\nP(Q) on Q causes Q to equal 0 and then eats the thing.\n\nInstead of setting S to 1 with V(S) on S, the consumer now reawakens the stalled process on Q's queue. Process P thus becomes active. Since P was blocked at statement 1, it continues from statement 2. P then creates the subsequent item. Therefore, a product is consumed by a consumer before a producer creates a new one.\n\nThe right answer is (d).\n\nOption for this query:\n\nDeadlock cannot occur because both the producer and the consumer are using distinct semaphores (there is no hold and wait). Likewise, there is no starvation since there is a change in the relationship between the producer and the consumer, which also results in bounded waiting.\n\n(C) The producer might lose some of the products it produces, but",
-    "id": "pyq_67_678"
+    "id": "pyq_67_678",
+    "q_snippet": "snippets/q_pyq_67_678.webp",
+    "sol_snippet": "snippets/sol_pyq_67_678.webp"
   },
   {
     "num": 21,
@@ -11540,7 +12755,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.29",
     "answerKey": "c",
     "solution": "We need the output to be BCABCABCA, i.e. it should start with B, means T2 should be 1 and T1, T3 should be zero. This means S1 should be 1; S2 and S3 would be 0.\n\nSo, option C is the correct answer.",
-    "id": "pyq_68_679"
+    "id": "pyq_68_679",
+    "q_snippet": "snippets/q_pyq_68_679.webp",
+    "sol_snippet": "snippets/sol_pyq_68_679.webp"
   },
   {
     "num": 22,
@@ -11557,7 +12774,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.29",
     "answerKey": "c",
     "solution": "Given,\n\nEmpty is initialized with 0.\n\nFull is initialized with N.\n\nMutex is initialized with 1.\n\nInitially the buffer is empty therefore, empty is initialized to 0. And if buffer is full then Full will be 0 as there will be no slots available.\n\nThe given code is of classical IPC problem, producer consumer problem.\n\nSo, in Producer; wait (P), if P is full, then producer will be blocked. Means P should be full. So, option B and D are eliminated and are incorrect.\n\nNow, if we are performing wait (P) // means wait on full\n\nThen, signal(Q) operation should be on empty.\n\nHence, option A is also incorrect and option C is the correct answer.",
-    "id": "pyq_69_680"
+    "id": "pyq_69_680",
+    "q_snippet": "snippets/q_pyq_69_680.webp",
+    "sol_snippet": "snippets/sol_pyq_69_680.webp"
   },
   {
     "num": 23,
@@ -11574,7 +12793,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.29",
     "answerKey": "80",
     "solution": "Given,\n\nD = 100\n\nX is minimum value\n\nY is maximum value\n\nTo calculate maximum value: P1: D = D + 20 ∴ D =120\n\nP3: D = D + 10 // executed load, executed increment and got pre-empted. [Means the value of register is 130 here but this value is not stored into register yet.]\n\nP2: D = D - 50 // value of D was 130 and now 130- 50 = 80, we will store 80 into register.\n\nNow, P3 will complete its execution and perform store operation. When P3 preempted the value of register was 130, so it will store value as 130 Therefore, Y = 130\n\nSimilarly, To calculate maximum value:\n\nP2: D = D-50 // Load the value; Decrement the value of register[100-50 = 50]; Pre-empt\n\nExecute P1;\n\nExecute P3;\nComplete execution of P2, perform store operation. The final value of register will be 50.\n\nTherefore, X = 50\n\nSo, the difference between maximum and minimum value is Y - X = 130 - 50 = 80\n\nOperating System",
-    "id": "pyq_67_681"
+    "id": "pyq_67_681",
+    "q_snippet": "snippets/q_pyq_67_681.webp",
+    "sol_snippet": "snippets/sol_pyq_67_681.webp"
   },
   {
     "num": 24,
@@ -11591,7 +12812,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.30",
     "answerKey": "3",
     "solution": "Initially B = 2\n\nP1()\n\n1. C = B -1;\n\n2. B = 2 * C;\n\nP2()\n\n3. D = 2 * B;\n4. B = D - 1;\n\nCASE I: 1. C = B -1 ⇒ 2- 1 ⇒ 1 2. B = 2 * C ⇒ 2*1 ⇒ 2 3. D = 2* B ⇒ 2* 2 ⇒ 4 4. B = D -1 ⇒ 4-1 ⇒ 3 B = 3\n\nCASE II: 3. D = 2 * B ⇒ 2 * 2 ⇒ 4 4. B = D - 1 ⇒ 4 - 1 ⇒ 3 1. C = B - 1 ⇒ 3 - 1 ⇒ 2 2. B = 2 * C ⇒ 2 * 2 ⇒ 4 B = 4\n\nCASE III: 1. C = B - 1 ⇒ 2 - 1 ⇒ 1 3. D = 2 * B ⇒ 2 * 2 ⇒ 4 4. B = D - 1 ⇒ 4 -1 ⇒ 3 2. B = 2* C ⇒ 2 * 1 ⇒ 2. B = 2\n\nCASE IV: 3. D = 2 * B ⇒ 2 * 2 ⇒ 4 1. C = B - 1 ⇒ 2 - 1 ⇒ 1 4. B = D - 1 ⇒ 4 -1 ⇒ 3 2. B = 2* C ⇒ 2 * 1 ⇒ 2. B = 2\n\nThe number of distinct values that B can possibly take after the execution is 3 [3, 4, 2].",
-    "id": "pyq_68_682"
+    "id": "pyq_68_682",
+    "q_snippet": "snippets/q_pyq_68_682.webp",
+    "sol_snippet": "snippets/sol_pyq_68_682.webp"
   },
   {
     "num": 1,
@@ -11608,7 +12831,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.34",
     "answerKey": "a",
     "solution": "pi alloc request Avail/R p1 x1 y1 0 p2 x2 y2\n\n. . .\n\n. . .\n\npp xp 0\n\nP= xp 0\n\n. . .\n\n. . .\n\npn xn yn\n\n<Pp, pq\n\n't' : (xp + xq): Avail\n\n(xp + xq) < min (yk)\n\nk ≠ (p, q)",
-    "id": "pyq_71_683"
+    "id": "pyq_71_683",
+    "q_snippet": "snippets/q_pyq_71_683.webp",
+    "sol_snippet": "snippets/sol_pyq_71_683.webp"
   },
   {
     "num": 2,
@@ -11625,7 +12850,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.34",
     "answerKey": "a",
     "solution": "Resource Allocation Matrix: Pid Max E F G Allocation E F G Need E F G Available E F G Po\n4 3 1\n1 0 1\n3 3 0\n3 0 0\nP1\n2 1 4\n1 1 2\n1 0 2\n\nP2\n1 3 3\n1 0 3\n0 3 0\n\nP3\n5 4 1\n2 0 0\n3 4 1\n\nP0 can be executed. And the available will be Pid Max E F G Allocation E F G Need E F G Available E F G Po\n4 3 1\n1 0 1\n3 3 0\n3 0 0\nP1\n2 1 4\n1 1 2\n1 0 2\n4 3 1\nP2\n1 3 3\n1 0 3\n0 3 0\n\nP3\n5 4 1\n2 0 0\n3 4 1\n\nNow, P2's can be satisfied, so P2 will be executed and Pid Max E F G Allocation E F G Need E F G Available E F G Po\n4 3 1\n1 0 1\n3 3 0\n3 0 0\nP1\n2 1 4\n1 1 2\n1 0 2\n4 3 1\nP2\n1 3 3\n1 0 3\n0 3 0\n5 3 4\nP3\n5 4 1\n2 0 0\n3 4 1\n\nNow, P1's need can be satisfied, so P1 will be executed and\n\nDeadlocks Pid Max E F G Allocation E F G Need E F G Available E F G Po\n4 3 1\n1 0 1\n3 3 0\n3 0 0\nP1\n2 1 4\n1 1 2\n1 0 2\n4 3 1\nP2\n1 3 3\n1 0 3\n0 3 0\n5 3 4\nP3\n5 4 1\n2 0 0\n3 4 1\n6 4 6\n\nNow, we can satisfy needs of P3. Therefore, Pid Max E F G Allocation E F G Need E F G Available E F G Po\n4 3 1\n1 0 1\n3 3 0\n3 0 0\nP1\n2 1 4\n1 1 2\n1 0 2\n4 3 1\nP2\n1 3 3\n1 0 3\n0 3 0\n5 3 4\nP3\n5 4 1\n2 0 0\n3 4 1\n6 4 6\n\n8 4 6\n\nSafe sequence will be: < 𝑃𝑜, P2, P1, P3 >\n\nSystem state is safe\n\nSo, option A is True.",
-    "id": "pyq_72_684"
+    "id": "pyq_72_684",
+    "q_snippet": "snippets/q_pyq_72_684.webp",
+    "sol_snippet": "snippets/sol_pyq_72_684.webp"
   },
   {
     "num": 3,
@@ -11642,7 +12869,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.35",
     "answerKey": "d",
     "solution": "The question is asking for the minimum value of x and the minimum value of y together for which execution of P can result in a deadlock are:\n\nSo, checking for the minimum value x = 1, y = 1.\n\nDeadlock is possible in this scenario the condition is process should perform down/wait operation twice. If down operation on lock is performed twice, then deadlock is possible.\n\nTherefore, option D is correct.",
-    "id": "pyq_73_685"
+    "id": "pyq_73_685",
+    "q_snippet": "snippets/q_pyq_73_685.webp",
+    "sol_snippet": "snippets/sol_pyq_73_685.webp"
   },
   {
     "num": 4,
@@ -11659,7 +12888,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.35",
     "answerKey": "b",
     "solution": "Resource Allocation Matrix: Pid Max R Allocation R Need R Avail R P1 7 3 4 2 P2 6 1 5\n\nP3 5 3 2\n\nP3's need can be satisfied and the available will become Pid Max R Allocation R Need R Avail R P1 7 3 4 2 P2 6 1 5 5 P3 5 3 2\n\nNow, P2's need can be fulfilled. Pid Max R Allocation R Need R Avail R P1 7 3 4 2 P2 6 1 5 5 P3 5 3 2 6\n\nNow, P1's need can be fulfilled. Pid Max R Allocation R Need R Avail R P1 7 3 4 2 P2 6 1 5 5 P3 5 3 2 6\n\n9\n\nR = 9\n\nSafe sequence: P3, P2, P1\n\n∴ System is safe and not deadlocked\n\nSo, option B is correct.",
-    "id": "pyq_71_686"
+    "id": "pyq_71_686",
+    "q_snippet": "snippets/q_pyq_71_686.webp"
   },
   {
     "num": 5,
@@ -11676,7 +12906,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.35",
     "answerKey": "d",
     "solution": "A deadlock will never take place if any one of the following condition is preempted. 1. Hold & Wait 2. Circular Wait\n\nOperating System 3. Mutual Exclusion 4. No-Preemption\n\nStatement I violates hold & wait.\n\nStatement II violates circular wait.\n\nStatement III violates circular wait.\n\nStatement IV also violates circualr wait by making dependency graph acyclic.\n\nTherefore, option D is correct.",
-    "id": "pyq_72_687"
+    "id": "pyq_72_687",
+    "q_snippet": "snippets/q_pyq_72_687.webp",
+    "sol_snippet": "snippets/sol_pyq_72_687.webp"
   },
   {
     "num": 6,
@@ -11693,7 +12925,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.36",
     "answerKey": "b",
     "solution": "Resource allocation table: Pid Max X Y Z Alloc X Y Z Need X Y Z Avail X Y Z P0\n8 4 3\n0 0 1\n8 4 2\n3 2 2\nP1\n6 2 0\n3 2 0\n3 0 0\n\nP2\n3 3 3\n2 1 1\n1 2 2\n\nRequest 1 needs [0, 0, 2] resources for process P1, then the system will become Pid Max X Y Z Alloc X Y Z Need X Y Z Avail X Y Z P0\n8 4 3\n0 0 3\n8 4 0\n3 2 0\nP1\n6 2 0\n3 2 0\n3 0 0\n\nP2\n3 3 3\n2 1 1\n1 2 2\n\nNow, we can satisfy need of process P1, after allotting resources to P1, Pid Max X Y Z Alloc X Y Z Need X Y Z Avail X Y Z P0\n8 4 3\n0 0 3\n8 4 0\n3 2 0\nP1\n6 2 0\n3 2 0\n3 0 0\n6 4 0\nP2\n3 3 3\n2 1 1\n1 2 2\n\nNow, with the given available resources, the need of neither P2 nor P0 can be satisfied, system is unsafe, Therefore, Req1 cannot be granted.\n\nNow, checking for Req2. Request 2 needs [2, 0, 0] Pid Max X Y Z Alloc X Y Z Need X Y Z Avail X Y Z P0\n8 4 3\n0 0 1\n8 4 2\n1 2 2\nP1\n6 2 0\n5 2 0\n1 0 0\n\nP2\n3 3 3\n2 1 1\n1 2 2\n\nP1's need can be satisfied and available will become Pid Max X Y Z Alloc X Y Z Need X Y Z Avail X Y Z P0\n8 4 3\n0 0 1\n8 4 2\n1 2 2\nP1\n6 2 0\n5 2 0\n1 0 0\n6 4 2\nP2\n3 3 3\n2 1 1\n1 2 2\n\nNow, P2's request can be granted and after completing P2 the new available will become. Pid Max X Y Z Alloc X Y Z Need X Y Z Avail X Y Z P0\n8 4 3\n0 0 1\n8 4 2\n1 2 2\nP1\n6 2 0\n5 2 0\n1 0 0\n6 4 2\nP2\n3 3 3\n2 1 1\n1 2 2\n8 5 3\n\nWith 8, 5, 3. Need of P0 can be fulfilled easily.\n\nHence Req2 can be granted.\n(a) System is unsafe\n∴ Req1 is Not granted\n(b) < P1, P2, P0>\nSystem is safe Req2 is granted\n\nDeadlocks",
-    "id": "pyq_73_688"
+    "id": "pyq_73_688",
+    "q_snippet": "snippets/q_pyq_73_688.webp",
+    "sol_snippet": "snippets/sol_pyq_73_688.webp"
   },
   {
     "num": 7,
@@ -11710,7 +12944,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.37",
     "answerKey": "a",
     "solution": "In deadlock prevention, we need to ensure one of the four conditions (hold & wait, circular wait, mutual exclusion and no-pre-emption) to avoid deadlock, but there may be a case where resulting state is safe but the resource request is rejected. So, option A is not always true.\n\nIn deadlock avoidance, if the resulting state is safe, then request is always granted and deadlock avoidance is less restrictive than deadlock prevention. So, option B, C both are true.\n\nIn deadlock avoidance, knowledge of resource requirements must be known apriori. True.\n\nTherefore, option A is correct.",
-    "id": "pyq_71_689"
+    "id": "pyq_71_689",
+    "q_snippet": "snippets/q_pyq_71_689.webp"
   },
   {
     "num": 8,
@@ -11727,7 +12962,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.37",
     "answerKey": "a, d",
     "solution": "(a)\nCircular wait is a necessary condition for the formation of deadlock. TRUE\n(b)\nIn a system where each resource has more than one instance, a cycle in its wait-for graph indicates the presence of a deadlock. FALSE. Every cycle is not a deadlock but every deadlock have a cycle.\n(c)\nIf the current allocation of resources to processes leads the system to unsafe state, then deadlock will necessarily occur. FALSE. Every unsafe state is not deadlock.\n(d)\nIn the resource-allocation graph of a system,\nif every edge is an assignment edge, then the\nsystem is not in deadlock state. TRUE. Only hold without wait doesn't cause deadlock. Therefore, option A, D are correct.",
-    "id": "pyq_72_690"
+    "id": "pyq_72_690",
+    "q_snippet": "snippets/q_pyq_72_690.webp",
+    "sol_snippet": "snippets/sol_pyq_72_690.webp"
   },
   {
     "num": 9,
@@ -11744,7 +12981,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.37",
     "answerKey": "2 to 2",
     "solution": "Given,\n\nR = 4\n\nTo avoid deadlock, so each process can have maximum of k-1 resources. Required P1 K -1 P2 K -1 P3 K -1\n\nR = 4\n\nCondition for deadlock = (3K - 3) +1\n\n⇒ 3K -2 = 4\n\n⇒ 3K = 6\n\n∴K=2\n\nSo, 2 is the correct answer.",
-    "id": "pyq_73_691"
+    "id": "pyq_73_691",
+    "q_snippet": "snippets/q_pyq_73_691.webp",
+    "sol_snippet": "snippets/sol_pyq_73_691.webp"
   },
   {
     "num": 10,
@@ -11761,7 +13000,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.37",
     "answerKey": "d",
     "solution": "Pi = 2 (R)\n\nIf we allot 2 resources to 3 processes, then total resource required = 6. Hence, no deadlock.\n\nThe number of processes, so the system should be in deadlock will be 4. Each processes requires 2 resources at most. Total resource required= 8.",
-    "id": "pyq_71_692"
+    "id": "pyq_71_692",
+    "q_snippet": "snippets/q_pyq_71_692.webp",
+    "sol_snippet": "snippets/sol_pyq_71_692.webp"
   },
   {
     "num": 11,
@@ -11778,7 +13019,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.37",
     "answerKey": "7 to 7",
     "solution": "Number of processes, N = 3\n\nMin (R)\n\nPi →3 (R)\n\nMinimum number of resource unit so the deadlock never arises is, 7, upto 6 resources each process can have 2 resources each and result into deadlock. But with 7 resources, at least one processes' need will be satisfied and hence other processes can also proceed.\n\nOperating System 1 2 3 P 2 P 2 1 7 P 2 − −\n+ =\n−",
-    "id": "pyq_72_693"
+    "id": "pyq_72_693",
+    "q_snippet": "snippets/q_pyq_72_693.webp",
+    "sol_snippet": "snippets/sol_pyq_72_693.webp"
   },
   {
     "num": 12,
@@ -11795,7 +13038,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.38",
     "answerKey": "b",
     "solution": "• Based on Resource Request logic, Even Numbered processes are Requesting Even number resource. • For Preventing/Avoiding Deadlock, odd numbered processes should request odd numbered resources. • In the else part, when 'n' is odd, then process will request even numbered resources & may form cycle, which will lead to Deadlock. ∴ Only in option (B) & (D) there is a possibility of deadlock. Option (B): M = 2k; k = 12 P0 → R0, R2 P1 → R20, R18 P2 → R2, R4 P3 → R18, R16 P4 → R4, R6 P5 → R16, R14 P6 → R6, R8 P7 → R14, R12 P8 → R8, R10 P9 → R12, R10 P10 → R10, R11 P11 → R10, R8\n\n𝑃8 →𝑅8, 𝑅10 𝑃11 →𝑅10, 𝑅8 Deadlock\n\nSimilarly, for Option (d) there is no - overlap with resources.",
-    "id": "pyq_73_694"
+    "id": "pyq_73_694",
+    "q_snippet": "snippets/q_pyq_73_694.webp",
+    "sol_snippet": "snippets/sol_pyq_73_694.webp"
   },
   {
     "num": 13,
@@ -11812,7 +13057,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.38",
     "answerKey": "a",
     "solution": "List of events at time Ti\n\nNo Deadlock",
-    "id": "pyq_71_695"
+    "id": "pyq_71_695",
+    "q_snippet": "snippets/q_pyq_71_695.webp"
   },
   {
     "num": 14,
@@ -11829,7 +13075,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.38",
     "answerKey": "b",
     "solution": "In such a policy starvation can occur as every time a process requests for a resource it has to release all the acquired resources. If the process has not utilized acquired resources properly then it has to repeat this when the process requests for another resource and improper utilization of resources can lead to starvation.",
-    "id": "pyq_72_696"
+    "id": "pyq_72_696",
+    "q_snippet": "snippets/q_pyq_72_696.webp",
+    "sol_snippet": "snippets/sol_pyq_72_696.webp"
   },
   {
     "num": 1,
@@ -11846,7 +13094,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.44",
     "answerKey": "c",
     "solution": "Best fit always search for the smallest hole that can accommodate a request. So, hole created by best fit will always be less than or equal to the hole created by any other policy.\n\nWorst fit always search for the largest hole to accommodate a request. If the first hole is the largest one, then worst fit and first fit both will accommodate request in the same hole.\n\nSo, we can clearly say option c is the correct option.",
-    "id": "pyq_74_697"
+    "id": "pyq_74_697",
+    "q_snippet": "snippets/q_pyq_74_697.webp",
+    "sol_snippet": "snippets/sol_pyq_74_697.webp"
   },
   {
     "num": 2,
@@ -11863,7 +13113,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.44",
     "answerKey": "a",
     "solution": "Here we have 6 memory partitions of sizes 200 KB, 400 KB, 600 KB, 500 KB, 300 KB, and 250 KB, and the partition allotted to four processes using best fit algorithm is as follows:\n\nSo, we can clearly see that partition 200KB and 300KB are empty and not allotted to any process. Hence, option A is correct.",
-    "id": "pyq_75_698"
+    "id": "pyq_75_698",
+    "q_snippet": "snippets/q_pyq_75_698.webp",
+    "sol_snippet": "snippets/sol_pyq_75_698.webp"
   },
   {
     "num": 3,
@@ -11880,7 +13132,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.44",
     "answerKey": "5 to 5",
     "solution": "L : number of paging.\n\nVirtual Address space = 57 bits\n\nPage Size = 4 KB\n\nPage table entry = 8 B\n\nPage number = (57-12) = 45 bits\n\nNumber of entries in P.T = 4𝐾𝐵 8𝐵= 512= 29. Means, we need 9 bits to index the page table.\n\nSo, number of levels = 9 × L = 45 45 L 5 9 = =\n\nlevel 1 level 2 level 3 level 4 level 5 offset 9 9 9 9 9 12 57 bits\n\nMemory Management",
-    "id": "pyq_76_699"
+    "id": "pyq_76_699",
+    "q_snippet": "snippets/q_pyq_76_699.webp",
+    "sol_snippet": "snippets/sol_pyq_76_699.webp"
   },
   {
     "num": 4,
@@ -11897,7 +13151,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.45",
     "answerKey": "c",
     "solution": "(a) The TLB performs an associative search in\nparallel on all its valid entries using page number of incoming virtual address. TRUE.\n\n(b) If the virtual address of a word given by CPU\nhas a TLB hit, but the subsequent search for the word results in a cache miss, then the word will always be present in the main memory. TRUE. If the content is not in the physical address space, then it will present in main memory.\n\n(c) The memory access time using a given inverted\npage table is always same for all incoming virtual addresses. FALSE. Inverted paging has issue of time, every virtual address may present at different locations. In worst case, we may have to search entire page table.\n\n(d) In a system that uses hashed page tables, if two\ndistinct virtual addresses V1 and V2 map to the same value while hashing, then the memory access time of these addresses will not be the same. TRUE. Because we have to search in linked list addresses may present in different locations.\n\nTherefore, option C is the correct answer.",
-    "id": "pyq_78_700"
+    "id": "pyq_78_700",
+    "q_snippet": "snippets/q_pyq_78_700.webp"
   },
   {
     "num": 5,
@@ -11914,7 +13169,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.45",
     "answerKey": "a, c",
     "solution": "Paging helps solve the issue of external fragmentation. Correct.\n\nPage size has no impact on internal fragmentation. Incorrect, paging has impact on internal fragmentation\n\nPaging incurs memory overheads. Correct. Page tables are stored in memory and are overhead to memory.\n\nMulti-level paging in necessary to support pages of different sizes. Incorrect.",
-    "id": "pyq_79_701"
+    "id": "pyq_79_701",
+    "q_snippet": "snippets/q_pyq_79_701.webp",
+    "sol_snippet": "snippets/sol_pyq_79_701.webp"
   },
   {
     "num": 6,
@@ -11931,7 +13188,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.45",
     "answerKey": "4108 to 4108",
     "solution": "Page Size = 4 KB\n\nPage Table Entry size = 8B\n\nP\nV.M.S = 2 GB\n\nTotal number of pages of PT'S needed.\n\n= 1 k of 1 - level paging\n\n= 2 k of 2 - level paging\n\n= 1 k of Outer Page Table\n\n= (1+2+1024) * 4 KB = 1027 4KB 4108KB ×",
-    "id": "pyq_80_702"
+    "id": "pyq_80_702",
+    "q_snippet": "snippets/q_pyq_80_702.webp"
   },
   {
     "num": 8,
@@ -11948,7 +13206,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.46",
     "answerKey": "36 to 36",
     "solution": "Given,\n\nPage Size = 8 KB\n\nPhysical Address = 32 bits Page table size = 24 MB\n\nNumber of frames, M= 232 213 = 219\n\nPage Table Entry = 24 bits = 3 B\n\nP.T.S. = N *e\n\n24 MB = N * 3B\n\nN = 24MB 3𝐵= 8M\n\nN = 8M ⇒ P = 23 bits\n\nSo, the length of the virtual address is 36 bits.",
-    "id": "pyq_74_703"
+    "id": "pyq_74_703",
+    "q_snippet": "snippets/q_pyq_74_703.webp",
+    "sol_snippet": "snippets/sol_pyq_74_703.webp"
   },
   {
     "num": 9,
@@ -11965,7 +13225,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.46",
     "answerKey": "22 to 22",
     "solution": "Given,\n\nVirtual Address = 40 bits\n\nPage Size = 8 KB\n\nTLB lines = 128\n\nSets = 32 sets\n\nTLB Tag bits =?\n\nPage offset (d) = 13 bits\n\nSet offset = 5 bit\n\nTLB = Tag bit = 40 - (13 + 5) = 40 - 18 = 22 bits\n\nSo, the minimum length of the TLB tag is 22 bits.",
-    "id": "pyq_75_704"
+    "id": "pyq_75_704",
+    "q_snippet": "snippets/q_pyq_75_704.webp",
+    "sol_snippet": "snippets/sol_pyq_75_704.webp"
   },
   {
     "num": 10,
@@ -11982,7 +13244,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.46",
     "answerKey": "4 to 4",
     "solution": "Logical Address space = 32 bits\n\nPage Size = 4 KB\n\nPage Table Entry = 4B\n\nPage Table Size = N * e\n\n32 20 12 2 N 2 2 = =\n\nP.T.S. 1M*4B 4MB = =",
-    "id": "pyq_76_705"
+    "id": "pyq_76_705",
+    "q_snippet": "snippets/q_pyq_76_705.webp",
+    "sol_snippet": "snippets/sol_pyq_76_705.webp"
   },
   {
     "num": 11,
@@ -11999,7 +13263,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.46",
     "answerKey": "112 to 112",
     "solution": "TLB access time (c)= 10 ms\n\nMain Memory access time (m) = 80 ms\n\nTLB Hit ratio (x) = 0.6\n\nEMAT = x (c + m) + (1- x) (c + 2m)\n\n= 0.6 (10 +80) + 0.4 (10+ 160)\n\n= 0.6 × 90 + 0.4 × 170\n\nEMAT 54 64 122ms =\n+\n=\n\nMemory Management",
-    "id": "pyq_78_706"
+    "id": "pyq_78_706",
+    "q_snippet": "snippets/q_pyq_78_706.webp",
+    "sol_snippet": "snippets/sol_pyq_78_706.webp"
   },
   {
     "num": 12,
@@ -12016,7 +13282,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.47",
     "answerKey": "c",
     "solution": "Page size =?\n\nGiven,\n\nOuter Page Table fit in recently one page\n\nVirtual Address = 46 bits\n\nPage Table Base Register = 4 B\n\nLet P.S. = 2x bytes\n\n3y + x = 46….(i)\n\nOPT size = (2y) * 4 B = 2 bytes\n\n∴ 2y+2 =2x ⇒ x = y + 2\n\n3y + y + 2 = 46\n\n4y = 44\n\n∴ y = 11\n\nx = 13\n\nTherefore,\n\n13 Page size 2 8KB ∴ = =",
-    "id": "pyq_79_707"
+    "id": "pyq_79_707",
+    "q_snippet": "snippets/q_pyq_79_707.webp"
   },
   {
     "num": 13,
@@ -12033,7 +13300,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.47",
     "answerKey": "b",
     "solution": "The essential content(s) in each entry of a page table is page frame number. Virtual page number os nt stored in page table, so option A and C are clearly eliminated. Access right information is stored in page table but it is not an essential content. Therefore, option B is the correct answer.",
-    "id": "pyq_80_708"
+    "id": "pyq_80_708",
+    "q_snippet": "snippets/q_pyq_80_708.webp",
+    "sol_snippet": "snippets/sol_pyq_80_708.webp"
   },
   {
     "num": 14,
@@ -12050,7 +13319,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.47",
     "answerKey": "b",
     "solution": "A multilevel page table is preferred in comparison to a single level page table for translating virtual address to physical address because it helps to reduce the size of page table needed to implement the virtual address space of a process. The main purpose of multilevel paging is to reduce the space overhead page table size overhead.",
-    "id": "pyq_74_709"
+    "id": "pyq_74_709",
+    "q_snippet": "snippets/q_pyq_74_709.webp",
+    "sol_snippet": "snippets/sol_pyq_74_709.webp"
   },
   {
     "num": 15,
@@ -12067,7 +13338,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.47",
     "answerKey": "d",
     "solution": "P.A 36 bits\n\n36 24 12 2 M 2 2 = =\n\nF = 24\n\n36 25 12 2 2 2 =",
-    "id": "pyq_75_710"
+    "id": "pyq_75_710",
+    "q_snippet": "snippets/q_pyq_75_710.webp",
+    "sol_snippet": "snippets/sol_pyq_75_710.webp"
   },
   {
     "num": 16,
@@ -12084,7 +13357,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.47",
     "answerKey": "c",
     "solution": "Given,\n\nHit ratio (x) = 90%\n\nTLB access time (c) = 10\n\nMain memory access time (m)= 50\n\nSo,\n\nEMAT = x (c + m) + (1-x) (c + 2m)\n\n= 0.9 (60) + 0.1 (10+100)\n\n= 54 + 11 = 65\n\nP1 y y y x P2 P3 d 46 bits\n\nGATE Wallah CS& IT Topic wise PYQs Operating System",
-    "id": "pyq_76_711"
+    "id": "pyq_76_711",
+    "q_snippet": "snippets/q_pyq_76_711.webp",
+    "sol_snippet": "snippets/sol_pyq_76_711.webp"
   },
   {
     "num": 17,
@@ -12101,7 +13376,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.48",
     "answerKey": "4096 to 4096",
     "solution": "Each value i causes 32 Page Faults\n\n→ matrix is stored in R.M.O\n\n→ matrix size int D[128] [128]\n\n→ Page Size = 512\n\n→ Number of frames = 30\n\n→ Page replacement technique is LRU.\n\nNumber of pages needed to store the matrix\n\n= 14 5 9 128 128 2 2 512 2 × = = = 32 pages\n\n→ each value of 'i' causes 32 Page Faults\n\n→ All value of i(128) causes a total of 128 × 32 = 212 = 4096 Page Faults",
-    "id": "pyq_78_712"
+    "id": "pyq_78_712",
+    "q_snippet": "snippets/q_pyq_78_712.webp"
   },
   {
     "num": 18,
@@ -12118,7 +13394,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.48",
     "answerKey": "0.6 to 0.6",
     "solution": "Number of Page faults= 9\n\nTotal references = 15\n\nPage fault ratio = 9 15 = 0.6",
-    "id": "pyq_79_713"
+    "id": "pyq_79_713",
+    "q_snippet": "snippets/q_pyq_79_713.webp"
   },
   {
     "num": 19,
@@ -12135,7 +13412,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.48",
     "answerKey": "154.5 to 155.5",
     "solution": "Given,\n\nMMAT = 100ns;\n\nTLBAT = 20 ns;\n\nDisk R/W = 5000ns;\n\nTLB Hit ratio = 95%;\n\nPage fault rate = 10%;\n\nDirty page 20%\n\nAverage MAT= 0.95 (20 + 100) ns + 0.05[20ns + 0.9 (100ns + 100ns) + 0.1 (100ns + 0.2 (5000 + 500)) ns + 0.8 (500) ns]\n\nAverage MAT = 154.5ns",
-    "id": "pyq_80_714"
+    "id": "pyq_80_714",
+    "q_snippet": "snippets/q_pyq_80_714.webp",
+    "sol_snippet": "snippets/sol_pyq_80_714.webp"
   },
   {
     "num": 20,
@@ -12152,7 +13431,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.48",
     "answerKey": "b",
     "solution": "Given,\n\nPage Size = 8KB = 211\n\nWord Size = 4 KB\n\nVirtual Memory Size = 264 words\n\nNumber of pages possible = 253 0, 0 0, 1 0, 1 2 7 ............ 1, 0\n1 1\n, 1, 1 2 7 ............ .......... 127, 0 127, 127 ............ P1 P2 P32 C1 C2 C128 30 P31 P32 P2 P3 P30 Frames\n\nMemory Management\n\nPage offset= 64-53 = 11 bits\n\nTLB contains 128 or 27 distinct page numbers.\n\nOne-page hit implies 211 distinct virtual address hits. So, Number of V.A →P.A=128 × 2k = 256 × 210\n\nTherefore, option B is the correct answer.",
-    "id": "pyq_74_715"
+    "id": "pyq_74_715",
+    "q_snippet": "snippets/q_pyq_74_715.webp",
+    "sol_snippet": "snippets/sol_pyq_74_715.webp"
   },
   {
     "num": 21,
@@ -12169,7 +13450,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.49",
     "answerKey": "b",
     "solution": "Main Memory Access Time = M\n\nPage Fault Service Time = D\n\nEffective Memory Access Time = X\n\nPage Fault rate = 'P' = ?\n\nEMAT = (1- P) MMAT + P * PFST\n\nX = (1- P) M + P * D\n\n= M - M.P + D.P\n\nX - M = P (D - M)\n\nX-M P = D -M ∴",
-    "id": "pyq_75_716"
+    "id": "pyq_75_716",
+    "q_snippet": "snippets/q_pyq_75_716.webp",
+    "sol_snippet": "snippets/sol_pyq_75_716.webp"
   },
   {
     "num": 22,
@@ -12186,7 +13469,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.49",
     "answerKey": "1 to 1",
     "solution": "10 frames;\n\nReference string <a1, a2, a3 … a20, a1, a2, a3, a4 ..a9, a10 a11, a12… a20 >\n\nUsing LIFO, first 20 pages will result in page faults and next 9 pages will be page hit and then next 11 pages will be page faults.\n\nUsing optimal page replacement algorithm, first 20 pages will result in page faults and next 9 pages will be page hit and then next 10-page faults followed by page hit for last page.",
-    "id": "pyq_76_717"
+    "id": "pyq_76_717",
+    "q_snippet": "snippets/q_pyq_76_717.webp",
+    "sol_snippet": "snippets/sol_pyq_76_717.webp"
   },
   {
     "num": 23,
@@ -12203,7 +13488,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.49",
     "answerKey": "b",
     "solution": "Memory access time (x) = 20ns\n\nPage fault rate (p) = 1/106\n\nPage fault service time (y) = 10ms = 10×10-3 ns\n\nEffective Memory Access Time = (1-p)*x + p*y\n\nE.M.A.T = (1 − 1 106) × 20ns + 1 106 × 10 × 10-3\n\n= 1×20ns + 10 ×10-9\n\n= 20 + 10 = 30ns\n\nSo, option B is the correct answer,\n\nGATE Wallah CS& IT Topic wise PYQs Operating System",
-    "id": "pyq_78_718"
+    "id": "pyq_78_718",
+    "q_snippet": "snippets/q_pyq_78_718.webp",
+    "sol_snippet": "snippets/sol_pyq_78_718.webp"
   },
   {
     "num": 24,
@@ -12220,7 +13507,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.50",
     "answerKey": "d",
     "solution": "Dirty bit is used in write-back policy.\n\nRead/write bit is used for page protection.\n\nReference bit is used for page replacement policies.\n\nValid bit is used for page initialization.\n\nSo, option D is the correct answer.",
-    "id": "pyq_79_719"
+    "id": "pyq_79_719",
+    "q_snippet": "snippets/q_pyq_79_719.webp"
   },
   {
     "num": 25,
@@ -12237,7 +13525,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.50",
     "answerKey": "a",
     "solution": "FIFO (First in First out) page replacement algorithm suffers from Belady's Anomaly. So, option A is correct.",
-    "id": "pyq_80_720"
+    "id": "pyq_80_720",
+    "q_snippet": "snippets/q_pyq_80_720.webp",
+    "sol_snippet": "snippets/sol_pyq_80_720.webp"
   },
   {
     "num": 26,
@@ -12254,7 +13544,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.50",
     "answerKey": "b",
     "solution": "S1: Random page replacement may suffer from\nbelady's anomaly when it starts behaving like FIFO page replacement algorithm.\n\nS2: LRU does not suffers from belady's anamoly.\nLRU is a stack algorithm and stack algorithm does not suffers from belady's anamoly.\n\nSo, option B is correct.",
-    "id": "pyq_74_721"
+    "id": "pyq_74_721",
+    "q_snippet": "snippets/q_pyq_74_721.webp",
+    "sol_snippet": "snippets/sol_pyq_74_721.webp"
   },
   {
     "num": 27,
@@ -12271,7 +13563,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.50",
     "answerKey": "d",
     "solution": "FIFO page replacement algorithm can result in increasing page fault rate even when the number of allocated frames are decreasing.",
-    "id": "pyq_75_722"
+    "id": "pyq_75_722",
+    "q_snippet": "snippets/q_pyq_75_722.webp",
+    "sol_snippet": "snippets/sol_pyq_75_722.webp"
   },
   {
     "num": 28,
@@ -12288,7 +13582,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.50",
     "answerKey": "a",
     "solution": "Reference string:\n\n3, 8, 2, 3, 9, 1, 6, 3, 8, 9, 3, 6, 2, 1, 3\n\nPage fault using FIFO and LRU page replacement algorithm:",
-    "id": "pyq_76_723"
+    "id": "pyq_76_723",
+    "q_snippet": "snippets/q_pyq_76_723.webp"
   },
   {
     "num": 29,
@@ -12305,7 +13600,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.50",
     "answerKey": "6 to 6",
     "solution": "Reference string: 4, 7, 6, 1, 7, 6, 1, 2, 7, 2\n\nPF is page fault and PH is page hit, so total 6 number of page faults.",
-    "id": "pyq_78_724"
+    "id": "pyq_78_724",
+    "q_snippet": "snippets/q_pyq_78_724.webp",
+    "sol_snippet": "snippets/sol_pyq_78_724.webp"
   },
   {
     "num": 30,
@@ -12322,7 +13619,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.50",
     "answerKey": "d",
     "solution": "In optimal page replacement policy, the page which will next occur farthest in the future will be swapped out from the memory.\n\nIt is given that, computer has 20-page frames and initially the pages are numbered from 1 to 20. And the program accesses the pages numbered 1, 2, …., 100 and repeats the sequence THRICE.\n\nThe first 20 page access (i.e. 1 to 20) will cause page fault. Now, when page 21 will arrive it will swap out page 20 as 20 is going to be used farthest in future, similarly when 22 will arrive so 21 will be swapped out and so on.\n\nMemory Management\n\nSo, the given algorithm is working as most-recently used. Hence, option D is the correct answer.\n1 2 3 4 2 1 5 3 2 4 6\n1 1 1 1 1 1 5 3 3 3 6\n\n2 2 2 2 2 2 2 2 2 2\n\n3 4 4 4 4 4 4 4 4 PF PF PF PF PH PH PF PF PH PH PF",
-    "id": "pyq_79_725"
+    "id": "pyq_79_725",
+    "q_snippet": "snippets/q_pyq_79_725.webp",
+    "sol_snippet": "snippets/sol_pyq_79_725.webp"
   },
   {
     "num": 31,
@@ -12339,7 +13638,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.51",
     "answerKey": "7 to 7",
     "solution": "Reference string: 1, 2, 3, 4, 2, 1, 5, 3, 2, 4, 6",
-    "id": "pyq_80_726"
+    "id": "pyq_80_726",
+    "q_snippet": "snippets/q_pyq_80_726.webp",
+    "sol_snippet": "snippets/sol_pyq_80_726.webp"
   },
   {
     "num": 32,
@@ -12356,7 +13657,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.51",
     "answerKey": "b",
     "solution": "The page faults using FIFO, optimal and LRU are as follows:\n\nOptimal <FIFO < LRU\n\nSo, option B is correct.",
-    "id": "pyq_74_727"
+    "id": "pyq_74_727",
+    "q_snippet": "snippets/q_pyq_74_727.webp",
+    "sol_snippet": "snippets/sol_pyq_74_727.webp"
   },
   {
     "num": 33,
@@ -12373,7 +13676,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.51",
     "answerKey": "a",
     "solution": "Given that the system has 4 page frames.\n\nInitially for page number 1 to 100 it will cause page faults, then in reverse order for page number 100, 99, 98, and 97 it will be a page hit and then again page faults for page 96 to page 1.\n\n[1, 2, …. 100,100….2, 1]\n\nSo, 2n - 4, we are accessing n pages for 2 times and only 4 page hits are there. Here, N equals to 100.\n\n200 - 4 = 196.\n\nTherefore, option A is correct.",
-    "id": "pyq_75_728"
+    "id": "pyq_75_728",
+    "q_snippet": "snippets/q_pyq_75_728.webp"
   },
   {
     "num": 34,
@@ -12390,7 +13694,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.51",
     "answerKey": "b",
     "solution": "Page Size = 16 bytes\n\nNumber of frames, M =4;\n\nVirtual Addresses:\n\n0, 4, 8, 20, 24, 36, 44, 12, 68, 72, 80, 84, 28, 32, 88, 92\n\nReference String corresponding to given virtual addresses:\n\n<0, 0, 0, 1, 1, 2, 2, 0, 4, 4, 5, 5, 1, 2, 5, 5 >\n\nLR U :\n\nNumber of P.F's : 7\n\nThe page numbers of the page present in the main memory at the end of the sequence is 1, 2, 4, 5.\n\nSo, option B is the correct answer.",
-    "id": "pyq_76_729"
+    "id": "pyq_76_729",
+    "q_snippet": "snippets/q_pyq_76_729.webp",
+    "sol_snippet": "snippets/sol_pyq_76_729.webp"
   },
   {
     "num": 1,
@@ -12407,7 +13713,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.55",
     "answerKey": "153 to 153",
     "solution": "FA : Contiguous allocation : 100 blocks (Array)\n\nFB : Linked allocation: 100 blocks\n\nWe have oved total data if 100\n\nI) FA : 50 × 2 = 100 + 1 = 101 (Total disk accesses)\n\nII.\n\nContiguous Allocation can directly traverse to the 50th element as it is already given the file control blocks is already present.\n\nNow, we need 50 operations to read the rest of the 50 elements and another 50 operations to write those 50 blocks and 1 operation is needed to write the new block.\n\nTherefore, total operations in this case = 50 + 50 + 1.\n\nLinked Allocation needs to traverse to the 50th element.\n\nNow, simply change the pointers just like the Linked list where Adding element in the middle of it.\n\nSo, here it takes 50 operations to read the first 50 elements and 2 operations to change the pointer of the 50th block and a new block. So, 52 operations in this case.\n\nFB = 50 + 1 + 1 = 52 nB\n\n∴ nA + nB = 101 + 52 = 153",
-    "id": "pyq_81_730"
+    "id": "pyq_81_730",
+    "q_snippet": "snippets/q_pyq_81_730.webp",
+    "sol_snippet": "snippets/sol_pyq_81_730.webp"
   },
   {
     "num": 2,
@@ -12424,7 +13732,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.55",
     "answerKey": "a, c",
     "solution": "Creating a new file in foo will definitely require a full scan, so that we can check that the new file is not conflicting with any other already existing file.\n\nAlso, renaming of a exisiting file will require a full scan, to ensure that the updated name is not conflicting with nay other exisiting file name.\n\nDeleting or opening an exsiitng file, do not need a full scan.",
-    "id": "pyq_82_731"
+    "id": "pyq_82_731",
+    "q_snippet": "snippets/q_pyq_82_731.webp",
+    "sol_snippet": "snippets/sol_pyq_82_731.webp"
   },
   {
     "num": 3,
@@ -12441,7 +13751,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.55",
     "answerKey": "b",
     "solution": "Request: (P, 155), (Q, 85), (R, 110), (S, 30), (T, 115)\n\nInitially head at cylinder 100, scheduling using SSTF:\n\nOperating System\n\nFrom the above diagram we can see that: Q is serviced after S but before T is wrong. Q is serviced before S and after T. So, option B is the answer.",
-    "id": "pyq_81_732"
+    "id": "pyq_81_732",
+    "q_snippet": "snippets/q_pyq_81_732.webp",
+    "sol_snippet": "snippets/sol_pyq_81_732.webp"
   },
   {
     "num": 4,
@@ -12458,7 +13770,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.56",
     "answerKey": "85 to 85",
     "solution": "Request: 72, 134, 20, 86, 116, 16\n\nInitially the head is positioned at 100, and scheduling using S.S.T.F:\n\nTotal seeks: 200 Power consumption for seek movements: 2 × 20 = 40 mw\n\nNo. of direction changes 3 Power consumption for R/W head direction changing: 3 × 15 = 45 mw\n\nTotal power consumption : 40 + 45 = 85 mw",
-    "id": "pyq_82_733"
+    "id": "pyq_82_733",
+    "q_snippet": "snippets/q_pyq_82_733.webp",
+    "sol_snippet": "snippets/sol_pyq_82_733.webp"
   },
   {
     "num": 5,
@@ -12475,7 +13789,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.56",
     "answerKey": "346 to 346",
     "solution": "Initially the head is at 63, and moving toward larger cylinder number, scheduling using C-LOOK:\n\nThe total head movement incurred: (191 - 63) + (191 - 10) + (47 - 10)\n\n= 128 + 181 + 37\n\n= 346",
-    "id": "pyq_81_734"
+    "id": "pyq_81_734",
+    "q_snippet": "snippets/q_pyq_81_734.webp",
+    "sol_snippet": "snippets/sol_pyq_81_734.webp"
   },
   {
     "num": 6,
@@ -12492,7 +13808,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.56",
     "answerKey": "c",
     "solution": "Requests: 45, 20, 90, 10, 50, 60, 80, 25, 70 Scheduling using S.S.T.F:\n\nNumber of seeks: (90 - 45) + (50 - 45) + (90 - 10) = 45 + 5 + 80 = 130\n\nScheduling using SCAN:\n\nNo of seeks: (100 - 50) + (100 - 10) = 50 + 90 = 140\n\nFile System & Disk Management Additional seeks = 140-130 = 10\n\nSo, option C is the correct asnwer.",
-    "id": "pyq_82_735"
+    "id": "pyq_82_735",
+    "q_snippet": "snippets/q_pyq_82_735.webp",
+    "sol_snippet": "snippets/sol_pyq_82_735.webp"
   },
   {
     "num": 7,
@@ -12509,7 +13827,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.57",
     "answerKey": "3 to 3",
     "solution": "Scheduling using SSTF:\n\nBefore servicing 90, we have serviced, 100, 105, 110. So, 3 is the correct answer..",
-    "id": "pyq_81_736"
+    "id": "pyq_81_736",
+    "q_snippet": "snippets/q_pyq_81_736.webp",
+    "sol_snippet": "snippets/sol_pyq_81_736.webp"
   },
   {
     "num": 8,
@@ -12526,7 +13846,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.57",
     "answerKey": "b",
     "solution": "A multilevel page table is preferred in comparison to a single level page table for translating virtual address to physical address because it helps to reduce the size of page table needed to implement the virtual address space of a process. The main purpose of multilevel paging is to reduce the space overhead page table size overhead.",
-    "id": "pyq_82_737"
+    "id": "pyq_82_737",
+    "q_snippet": "snippets/q_pyq_82_737.webp",
+    "sol_snippet": "snippets/sol_pyq_82_737.webp"
   },
   {
     "num": 9,
@@ -12543,7 +13865,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.57",
     "answerKey": "b",
     "solution": "Request: 4, 34, 10, 7, 19, 73, 2, 15, 6, 20\n\nInitially head is at 50, Scheduling using SSTF:\n\nTotal seeks: (73-2) + (50-2) = 71 + 48 = 119.\n\nTime to go frame one cylinder to ment adjust cylinder = 1ms\n\nTotal seek time = 119 × 1 ms = 119 ms\n\nSo, option B is the correct asnwer.",
-    "id": "pyq_81_738"
+    "id": "pyq_81_738",
+    "q_snippet": "snippets/q_pyq_81_738.webp",
+    "sol_snippet": "snippets/sol_pyq_81_738.webp"
   },
   {
     "num": 10,
@@ -12560,7 +13884,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.57",
     "answerKey": "4 to 4",
     "solution": "DBS = 4KB; DBA = 32 bits (4B)\n\n1K disk block addresses can be stored.\n\nMaximum file size:\n\n(12 * 4KB + 1 K * 4KB + 1 K * 1K * 4 KB)\n\n= 48KB + 4MB + 4GB = 0.004 GB + 4GB = 4.0 GB",
-    "id": "pyq_82_739"
+    "id": "pyq_82_739",
+    "q_snippet": "snippets/q_pyq_82_739.webp",
+    "sol_snippet": "snippets/sol_pyq_82_739.webp"
   },
   {
     "num": 11,
@@ -12577,7 +13903,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.57",
     "answerKey": "d",
     "solution": "Linked and indexed allocation can be used when no external fragmentation is allowed.\n\nOperating System",
-    "id": "pyq_81_740"
+    "id": "pyq_81_740",
+    "q_snippet": "snippets/q_pyq_81_740.webp",
+    "sol_snippet": "snippets/sol_pyq_81_740.webp"
   },
   {
     "num": 12,
@@ -12594,7 +13922,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.58",
     "answerKey": "99.55 to 99.65",
     "solution": "6 3 3 100 10 No. of blocks on disk = 100 10 10 × = ×\n\nFAT size = 100 × 103 × 4B\n\n= 4 × 100 × 103\n\n= 4 × 105\n\n= 0.4 × 106\n\nMaximum file size = Disk size - FAT size = 100 × 106 - 0.4 × 106\n\n= 100 MB - 0.4 MB\n\n= 99.6 MB",
-    "id": "pyq_82_741"
+    "id": "pyq_82_741",
+    "q_snippet": "snippets/q_pyq_82_741.webp"
   },
   {
     "num": 13,
@@ -12611,7 +13940,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.58",
     "answerKey": "b",
     "solution": "Disk Block Size = 128B\n\nDisk Block Address = 8B\n\nIn one block we can store:\n\n128 8  = 27 23  = 24  =  16 disk block pointer.\n\nMaximum file size = 8 × 128B + 16 × 128B\n\n+ 16 × 16 × 128B\n\n= 1KB + 2KB + 32KB = 35KB\n\nSo, option B is the correct answer.",
-    "id": "pyq_81_742"
+    "id": "pyq_81_742",
+    "q_snippet": "snippets/q_pyq_81_742.webp"
   },
   {
     "num": 14,
@@ -12628,7 +13958,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "2.58",
     "answerKey": "d",
     "solution": "The data block of a very large file in the Unix file system are allocated using an extension of indexed allocation",
-    "id": "pyq_82_743"
+    "id": "pyq_82_743",
+    "q_snippet": "snippets/q_pyq_82_743.webp",
+    "sol_snippet": "snippets/sol_pyq_82_743.webp"
   },
   {
     "num": 1,
@@ -12645,7 +13977,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.14",
     "answerKey": "c",
     "solution": "P = Ox C1800000\n\nQ = Ox 3F5C2EF4 1bit 8bit 23bit S E M\n\nBias =\n8 1\n2 1 −− bias = 127\n\nP = Ox C1800000 1 100 0001 1 000 0000 0000 0000 0000 0000 Sign 1bit E(8bit) Mantissa (23bit)\n\nS = 1(-ve)\n\nE = 10000011 = 131\n\nBE or E = 131\n\nM = 00000000\n\n(-1)S 1.M × 2e\n\n(-1)1 1.00000000 × 2131 - 127\n\nP = -(1.00000000) × 2 + 4\n\nBE = AE + bias\n\nOr\n\nE = e + bias\n\ne = E - bias\n\nE = 131\n\nBias = 127\n\nQ = 3F5C2EF4 0 011 1111 0 101 1100 0010 1110 1111 0100 Sign 1bit E(8bit) Mantissa (23bit)\n\nSign = 0 (+ve) E = 126 bias = 127\n\nE = 01111110 ⇒ E = 126 e = E - bias\n\nBE or E = 126 126 - 127\n\nM = 101 1100 0010 1110 1111 0100.\n\nBias = 127\n\nE = e + bias\n\ne = E - bias\n\n(-1)s 1.M × 2e\n\n(-1)0 1.101 1100 0010 1110 1111 0100 ×2126 - 127\n\nQ = (1.101 1100 0010 1110 1111 0100) × 2-1\n\nSign = -ve.\n\nP × Q = exponent = (+4) + (-1) = +3.\n\nMantissa\n\n= (1.0000) *(1.101 1100 0010 1110 1111 0100)\n\n- (1.101 1100 0010 1110 1111 0100) × 2 + 3\n\nSign = 1(-ve)\n\ne = +3\n\nbias = 127\n\nE = e + bias\n\n= 3 + 127\n\nE = 130\n\nE = 10000010\n\nMachine Instruction and Addressing Modes\n\n(C15C2EF4 H)\n\n2nd Approach.\n\nAlternate Approach. P = C1800000\n\nS = 1(-ve)\n\n(-1)S 1.M × 2e\n\nE = 10000011\n\n(-1)1 1.000000 × 2\n\nBE or E = 131\n\n- 1.000000 × 2+4\n\nM = 00000000\n\n- 10000.00\n\nBias = 28-1-1\n\nP = - 16\n\nBias = 127\n\nE = e + bias\n\ne = E - bias\n\nQ = 3F5C2EF4\n\nS = 0 (+ve)\n\nE = 01111100\n\nBE or E = 126\n\nM = 10111000010 … Q = 1.101 1100 × 2 - 1\n\nBias = 129\n\n= 0.1101 1100\n\nE = e + bias\n\nQ = 0.8593\n\ne = E - bias\n\n(-1)S 1.M × 2e\n\n(-1)0 1.101 1100 0010 1110 × 2126-127\n\nP * Q = - 16 × .8593\n\n= - (13.75)\n\nP * Q = - 13.75\n\n- 1101.11\n⇒ - 1.10111 × 2 + 3 3 bias 127 e = + =\n\nE or BE = e + bias ⇒ 3 + 127 = 130\n\nE = 130 M = 10111 → 10000010 S 1 -ve =\n\n(C15C2EF4)",
-    "id": "pyq_71_744"
+    "id": "pyq_71_744",
+    "q_snippet": "snippets/q_pyq_71_744.webp",
+    "sol_snippet": "snippets/sol_pyq_71_744.webp"
   },
   {
     "num": 2,
@@ -12662,7 +13996,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.14",
     "answerKey": "a",
     "solution": "- 14.25\n\n⇒ 1110.01\n\n⇒ -1110.01\n\n⇒ - 1.11001×2+3\n\nsign = 1 [-ve]\n\nMantissa [m] = 11001\n\n[AE]e = +3\n\n[BE] E e bias =\n+\n\nBE AE bias =\n+\n\nE = 3+bias = 3 +127\n\nE 130 =\n\nBE 130 =\n\nIEE E 754\n\nSingle Precision\n\nbias = 28-1 -1 = 127\n\nComputer Organization and Architecture\n\nbias 127 =\n\nS = 1\n\nE = 130 ⇒ 10000010\n\nM : 11001\n\n[C1640000H]",
-    "id": "pyq_72_745"
+    "id": "pyq_72_745",
+    "q_snippet": "snippets/q_pyq_72_745.webp",
+    "sol_snippet": "snippets/sol_pyq_72_745.webp"
   },
   {
     "num": 3,
@@ -12679,7 +14015,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.8",
     "answerKey": "d",
     "solution": "When we multiply two 4 bit number then each result is 8 bit\n\n4 bit 4 bit\n\n↓ ↓\n\nCombination 24 24\n\nTotal ROM size = 24 × 24 × 8 bit\n\n⇒ 28 × 8 bit\n\n⇒ 28 × 23 bit ⇒ 211 bit\n\n⇒ 2 × 210 bit\n\n= 2k bits",
-    "id": "pyq_71_746"
+    "id": "pyq_71_746",
+    "q_snippet": "snippets/q_pyq_71_746.webp",
+    "sol_snippet": "snippets/sol_pyq_71_746.webp"
   },
   {
     "num": 4,
@@ -12696,7 +14034,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.8",
     "answerKey": "b",
     "solution": "R1 = 1(a)\n\nR2 = 10(b)\n\nR3 = 20(c)\n\nI R1 R1 + R2 [R1[d] = a + b]\n\nII R1 R3 + R1 [R1[e] = c + d]\n\nIII R2 R3 + R1 [R2[f] = c + e]\n\nIV R2 R3 + R1 [R2[b] = c + e]\n\nV R1 R2 + R2 [R1[e] = b + f]\n\nVI R3 R1 + 5 R3[d] = 5 + e\n\nVII return R2 + R3\n\nMinimum 3 register required OR\n\na = 1, b = 10, c = 20\n\nR1 R1 + R2\nI. d = a + b\n\nR1 R3 + R1\nII. e = c + d\n\nR2 R3 + R1\nIII. f = c + e\n\nR3 R3 + R1 IV b = c + e\n\nR1 R2 + R3 V e = b + f\n\nR3 R1 + 5 VI d = 5 + e\n\nreturn R2 + R3\nVIII return d + f",
-    "id": "pyq_72_747"
+    "id": "pyq_72_747",
+    "q_snippet": "snippets/q_pyq_72_747.webp",
+    "sol_snippet": "snippets/sol_pyq_72_747.webp"
   },
   {
     "num": 5,
@@ -12713,7 +14053,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.8",
     "answerKey": "b",
     "solution": "Cin\n\nout in C C\n0 1 0 0 1 1 0 1\n+ 1 1 1 0 1 0 0 1\n0 0 1 1 0 1 1 0\n\nOverflow\n\nC in + cout = 1\n\n1 + 1 = 0\n\nCarry = 1, Sign = 0\n\nOverflow flag = 0\n\nMachine Instruction and Addressing Modes",
-    "id": "pyq_71_748"
+    "id": "pyq_71_748",
+    "q_snippet": "snippets/q_pyq_71_748.webp",
+    "sol_snippet": "snippets/sol_pyq_71_748.webp"
   },
   {
     "num": 6,
@@ -12730,7 +14072,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.9",
     "answerKey": "a",
     "solution": "1. Function, Local parameter, memory Access ¯",
-    "id": "pyq_72_749"
+    "id": "pyq_72_749",
+    "q_snippet": "snippets/q_pyq_72_749.webp"
   },
   {
     "num": 7,
@@ -12747,7 +14090,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.9",
     "answerKey": "a",
     "solution": "A15, A14, A11 is enabled (1), A13 and A12 = 0\n\nC800 to CFFF",
-    "id": "pyq_71_750"
+    "id": "pyq_71_750",
+    "q_snippet": "snippets/q_pyq_71_750.webp",
+    "sol_snippet": "snippets/sol_pyq_71_750.webp"
   },
   {
     "num": 9,
@@ -12764,7 +14109,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.9",
     "answerKey": "50 to 50",
     "solution": "Instruction Semantics Instruction Size (bytes)\n\n1000\n-1003\nMOV R1, (5000) I1 R1 MEMORY [5000] 4 R1 = 10 1004\n-1007\nMOV R2, (R3) I2 R2 MEMORY [R3] R2 m[3000] 4 R2 = 50 1008\n-1009\nADD R2, R1 I3 R2 R1 + R2, R2 10\n+ 50\n2 R2 = 10 + 50 = R2 = 60 1010\n-1013\nMOV (R3), R2 I4 MEMORY [R3] R2 m[3000] R2 4 M [3000] = 60 1014\n-1015\nINC R3 I5 R3 R3 + 1, R3 = 3000+1 2 R3 = 3000\n+ 1 ⇒ R3\n= 3001 1016\n-1017\nDEC R1 I6 R1 R1 - 1, R1 = 10-1 2 R1 = 10 - 1 ⇒ R1 = 9 1018\n-1019\nBNZ 1004 I7 Branch if not zero to the given absolute address 2 2 1020 HALT I8 Stop 1 Go to 1004 (I2)\n\nComputer Organization and Architecture\n\nM [5000] = 10\n\nR3 = 3000 3000 50 60 3001 50 59 3002 50 58 3003 50 57 3004 50 56 3005 50 55 3006 50 54 3007 50 53 3008 50 52 3009 50 51 3010 50\n\nR2 m [3001] = 2 R = 50\n\nR2 9 + 50 = 2 R = 59\n\nM [R3] R2 → m [3001] = 59\n\nR3 3001 + 1 ⇒R3 = 3002\n\nR1 9 - 1 ⇒ 1 R = 8\n\n2nd Part\n\nR2 m [3003] R2 = 50\n\nR2 R1 + R2 ⇒ 7 + 50 ⇒ 2 R = 57\n\nM [3003] = 57\n\nR3 = 3003 + 1 ⇒ 3 R = 3004\n\nSimiarly execute\n\nR1 = 7 ⇒ 1 R = 6\n\nIn the last 1 R = 0 so, m [3010] will not change [update]",
-    "id": "pyq_72_751"
+    "id": "pyq_72_751",
+    "q_snippet": "snippets/q_pyq_72_751.webp",
+    "sol_snippet": "snippets/sol_pyq_72_751.webp"
   },
   {
     "num": 10,
@@ -12781,7 +14128,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.10",
     "answerKey": "14 to 14",
     "solution": "64 register ⇒ Register AF=6 bit\n\nTotal number of operation in R type = 24 = 16 operatin\n\nAssume R type instruciton = x\n\nNumber of free opcode after allocating R type = (16 - x)\n\nTotal number of operations in I type = free opcode × 2 increment bit in opcode\n\n= (16 - x) × 26-4 ⇒ (16 - x) × 22\n\nI type (Given) = 8\n\n8 = (16 - x) × 4\n\n2 = 16 - x\n\nx = 16 - 2\n\nx =14",
-    "id": "pyq_71_752"
+    "id": "pyq_71_752",
+    "q_snippet": "snippets/q_pyq_71_752.webp",
+    "sol_snippet": "snippets/sol_pyq_71_752.webp"
   },
   {
     "num": 11,
@@ -12798,7 +14147,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.10",
     "answerKey": "32 to 32",
     "solution": "16 Integer Register (R0, R1 R2….. R15)\n\nIR = 4 bit\n\n64 floating point Register (F0, F1 ….. F63)\n\nFR = 6 bit\n\nTYPE-1: OP CODE IR IR IR\n\n4 Instruction\n\nMachine Instruction and Addressing Modes\n\nGiven:\n\nTYPE-2: OP CODE FR FR\n\n8 Instruction\n\n64 floating point Register (F0, F1, F2 ……F64)\n\nFR= 6 bit\n\nInstruction size = 16 bit (2 byte)\n\nTYPE: 3 OP CODE IR FR\n\n14 Instructions\n\nTYPE: 4 OP CODE FR\n\nN Instructions\n\nTYPE:- 1\n\nN bit can perform 2n operation\n\nTotal number of operation in type 1 = 24 = 16 operation.\n\nGiven = 4 Instruction\n\nTotal number of free after allocating type\n\n= 16 - 4 = 12\n\nTYPE -2\n\nIncrement bit in opcode Total number of operation in type 2: Free opcode ×2\n\nTotal number of operations = 12 × 24 - 4 =12×2º = 12 operation\n\nType 2 (given) = 8 Instruction (operation)\n\nTotal number of free opcode after Allocating type 2 = 12 - 8 = 4 free code\n\nTYPE -3\n\nTotal number of operations in type 3 = free opcode × 2 Increment bit in opcode\n\n⇒ 4 × 26 - 4 = 4 ×22\n\n= 16 operation/ Instruction\n\nType 3 (given) = 14 Instruction\n\nTotal number of free opcodes after allocating = 16\n- 14\n\nType 3 instruction = 2 Free opcodes\n\nTYPE -4\n\nTotal number of operations in type 4 = Free opcode × 2Increment bit in opcode.\n\n(N) ⇒ 2 × 210-6\n\n⇒ 2 × 24\n\n⇒ 32\n\nN= 32",
-    "id": "pyq_72_753"
+    "id": "pyq_72_753",
+    "q_snippet": "snippets/q_pyq_72_753.webp",
+    "sol_snippet": "snippets/sol_pyq_72_753.webp"
   },
   {
     "num": 12,
@@ -12815,7 +14166,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.11",
     "answerKey": "a",
     "solution": "When Interrupt occur, after completion of current Instruction.\n\nInterrupt will be serviced, It push the program current [PC] value into stack & control transfer to ISR.\n\nQ: Process finish the current instruction execution\n\nP: PUSH the PC value into stack\n\nT: Interrupt → PC\n\nR: Service the Interrupt\n\nS: Pop the PC value",
-    "id": "pyq_71_754"
+    "id": "pyq_71_754",
+    "q_snippet": "snippets/q_pyq_71_754.webp",
+    "sol_snippet": "snippets/sol_pyq_71_754.webp"
   },
   {
     "num": 13,
@@ -12832,7 +14185,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.11",
     "answerKey": "500 to 500",
     "solution": "64 Register, Instruction set size = 12\n\n5 Fields = Opcode, Source Reg1, S Reg2, D Reg2, 12 bit Immediate field\n\n64 Register ⇒ Reg. AF = 6bit\n\nComputer Organization and Architecture\n\nInst. Set = 12 ⇒ Op code = 4 bit\n\nInstruction size = 4 + 6 + 6 + 6 +12\n\n= 34 bits ≈ 5 Byte\n\nProgram having = 100 Inst.\n\nProgram size = 100 × 5B = 500 byte.",
-    "id": "pyq_72_755"
+    "id": "pyq_72_755",
+    "q_snippet": "snippets/q_pyq_72_755.webp",
+    "sol_snippet": "snippets/sol_pyq_72_755.webp"
   },
   {
     "num": 14,
@@ -12849,7 +14204,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.12",
     "answerKey": "16 to 16",
     "solution": "40 Distinct Instruction/operation ⇒ OP code = 2 log 40\n\n= 6 bit\n\nOP code = 6 bit\n\n24 Register ⇒ Reg.AF= 5bit\n\n32 bits Instruction\n\nImmediate field = 32 - (5 + 5 + 6)\n\n= 32 - 16\n\nImmediate field = 16bit",
-    "id": "pyq_71_756"
+    "id": "pyq_71_756",
+    "q_snippet": "snippets/q_pyq_71_756.webp",
+    "sol_snippet": "snippets/sol_pyq_71_756.webp"
   },
   {
     "num": 15,
@@ -12866,7 +14223,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.12",
     "answerKey": "a",
     "solution": "Memory operand\n\nOr\n\nRegister operand\n\nBut Accumulator is a special purpose Register",
-    "id": "pyq_72_757"
+    "id": "pyq_72_757",
+    "q_snippet": "snippets/q_pyq_72_757.webp"
   },
   {
     "num": 16,
@@ -12883,7 +14241,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.12",
     "answerKey": "d",
     "solution": "Given\n\nCurrent SP value is = (016E)16\n\nPC = 2 Byte, PSW = 2 byte\n(1) Store the current value of PC into the stack.\nHere PC is 2 byte so stack pointer to increased by 2 bytes (016E)2 + 2 = [0170]16 01 0110 1110 016E\n+ 1\n01 0110 1111 016F 01 0111 0000 016F\n+1\n\n017016\n(2) Store the value of PSW in the stack\nHere PSW is also 2 byte long. So SP increased by 2 byte\n\n(0170)16 + 2 = (0172)16\n\nSP = (0172)16\n\n(3) Load the starting address of the subroutine in\nthe PC.\n\nPC ISR\n\n)16 SP = 0172\n\nMachine Instruction and Addressing Modes",
-    "id": "pyq_71_758"
+    "id": "pyq_71_758",
+    "q_snippet": "snippets/q_pyq_71_758.webp",
+    "sol_snippet": "snippets/sol_pyq_71_758.webp"
   },
   {
     "num": 17,
@@ -12900,7 +14260,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.13",
     "answerKey": "16383 to 16383",
     "solution": "Instruction size = 1 word = 32 bit\n\n45 Operation ⇒ OP code = 6 bit\n\n64 Register ⇒ Register = 6 bit\n\nImmediate field = 32 - (6 + 6 + 6)\n\n= 32 - 18 = 14 bit\n\nn bit unsigned Range = 0 to 2n -1\n\nImmediate field Range = 0 to 214 -1 = 16,383",
-    "id": "pyq_72_759"
+    "id": "pyq_72_759",
+    "q_snippet": "snippets/q_pyq_72_759.webp"
   },
   {
     "num": 18,
@@ -12917,7 +14278,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.13",
     "answerKey": "d",
     "solution": "LOAD R1 c;\n\nLOAD R2 d;\n\nADD R1 R1 R2; R1 R1 + R2 ⇒ R1 = c + d\n\nLOAD R2 e;\n\nSUB R2, R2, R1; R2 R2 - R1⇒ R2 = e - (c + d)\n\nLOAD R1 a;\n\nLOAD R3 b;\n\nSUB R1, R1, R3; R1 R1 - R3 ; R1 = (a - b)\n\nADD R3, R1, R2; R3 = (a - b) + [e - (c + d)] OR\n\nADD R1 R1 R2; R1 R1 + R2 OR\n\nADD R2 R1 R2; R2 R1 + R2\n\nMinimum 3 Registers required",
-    "id": "pyq_71_760"
+    "id": "pyq_71_760",
+    "q_snippet": "snippets/q_pyq_71_760.webp",
+    "sol_snippet": "snippets/sol_pyq_71_760.webp"
   },
   {
     "num": 19,
@@ -12934,7 +14297,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.13",
     "answerKey": "c",
     "solution": "CPU will check the interrupt after finishing of current instant execution.\n\nIf interupts is present\n\nPush PC value",
-    "id": "pyq_72_761"
+    "id": "pyq_72_761",
+    "q_snippet": "snippets/q_pyq_72_761.webp"
   },
   {
     "num": 20,
@@ -12951,7 +14315,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.13",
     "answerKey": "d",
     "solution": "The RFE (Return from Exception) instruction must be a trap instruction, a privilege instruction and an exception cannot be allowed to occur during execution of an RFE instruction.",
-    "id": "pyq_71_762"
+    "id": "pyq_71_762",
+    "q_snippet": "snippets/q_pyq_71_762.webp",
+    "sol_snippet": "snippets/sol_pyq_71_762.webp"
   },
   {
     "num": 21,
@@ -12968,7 +14334,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.13",
     "answerKey": "d",
     "solution": "X(R1) ⇒ M [X + R1]\n\nComputer Organization and Architecture",
-    "id": "pyq_72_763"
+    "id": "pyq_72_763",
+    "q_snippet": "snippets/q_pyq_72_763.webp",
+    "sol_snippet": "snippets/sol_pyq_72_763.webp"
   },
   {
     "num": 22,
@@ -12985,7 +14353,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.14",
     "answerKey": "d",
     "solution": "LW R1, 20(R2)\n\nR1 M[20 + R2]\n\nRead 32 bit word from memory and store into 32 bit Register R.\n\nEA = M [20 +R2]\n\n20: Index",
-    "id": "pyq_71_764"
+    "id": "pyq_71_764",
+    "q_snippet": "snippets/q_pyq_71_764.webp"
   },
   {
     "num": 23,
@@ -13002,7 +14371,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.14",
     "answerKey": "c",
     "solution": "In auto-increment addressing mode, the amount of increment depends on the size of the data item accessed.",
-    "id": "pyq_72_765"
+    "id": "pyq_72_765",
+    "q_snippet": "snippets/q_pyq_72_765.webp",
+    "sol_snippet": "snippets/sol_pyq_72_765.webp"
   },
   {
     "num": 1,
@@ -13019,7 +14390,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.17",
     "answerKey": "d",
     "solution": "2. (5 to 5)",
-    "id": "pyq_73_766"
+    "id": "pyq_73_766",
+    "q_snippet": "snippets/q_pyq_73_766.webp",
+    "sol_snippet": "snippets/sol_pyq_73_766.webp"
   },
   {
     "num": 2,
@@ -13036,7 +14409,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.17",
     "answerKey": "5 to 5",
     "solution": "Multiplexer\n\n3 select line then 23 Input line (8 input line)\n\n3 2 log 2\n\nor log28\n\n[23] input line then 3 select line required\n\nM select line ⇒ 2m line\n\nIf 2m line then [log 2m] select line\n\nFor 32 input line\n\n# select line = log2(32) = 5",
-    "id": "pyq_74_767"
+    "id": "pyq_74_767",
+    "q_snippet": "snippets/q_pyq_74_767.webp",
+    "sol_snippet": "snippets/sol_pyq_74_767.webp"
   },
   {
     "num": 3,
@@ -13053,7 +14428,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.17",
     "answerKey": "c",
     "solution": "R0 ← R1 + R2\n\nFetch cyle (Mem to CPU (IR))\n\nPC → M [MAR] → MBR → IR\n\n3. PCR MARw MBRr\n\n5. MBRr, IRw ; MBR → IR\n\n2. R1R Tempw ⇒ R1 → Temp1\n\n1. R2R temp1R ALU tempw ; temp2 ← R2 + temp1\n\n4. Temp2R R0w; R0 Temp2\n\nR0 ⇐ R1 + R2 .\n\nComputer Organization and Architecture",
-    "id": "pyq_73_768"
+    "id": "pyq_73_768",
+    "q_snippet": "snippets/q_pyq_73_768.webp",
+    "sol_snippet": "snippets/sol_pyq_73_768.webp"
   },
   {
     "num": 4,
@@ -13070,7 +14447,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.18",
     "answerKey": "d",
     "solution": "Total number of instructions = 140\n\nEach intruction requires = 7 cycle\n\nTotal number of micro operations = 140 × 7\n\n= 980 μ instn |μ operations|cw\n\nControl memory =980 CW\n\nNIA|A.F|CAR = [log10 980]\n\nCAR 10 bit =\n\nHorizontal μ program\n\n125 CS = 125 bits required\n\n125 + 10 = 135\n\nCW = 135\n\nCAR = 10 bit",
-    "id": "pyq_74_769"
+    "id": "pyq_74_769",
+    "q_snippet": "snippets/q_pyq_74_769.webp",
+    "sol_snippet": "snippets/sol_pyq_74_769.webp"
   },
   {
     "num": 5,
@@ -13087,7 +14466,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.18",
     "answerKey": "d",
     "solution": "",
-    "id": "pyq_73_770"
+    "id": "pyq_73_770",
+    "q_snippet": "snippets/q_pyq_73_770.webp",
+    "sol_snippet": "snippets/sol_pyq_73_770.webp"
   },
   {
     "num": 1,
@@ -13104,7 +14485,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.24",
     "answerKey": "1.6 to 1.6",
     "solution": "2. (c)",
-    "id": "pyq_75_771"
+    "id": "pyq_75_771",
+    "q_snippet": "snippets/q_pyq_75_771.webp",
+    "sol_snippet": "snippets/sol_pyq_75_771.webp"
   },
   {
     "num": 2,
@@ -13121,7 +14504,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.24",
     "answerKey": "c",
     "solution": "Effective adress (EA) →: Actual address of the object",
-    "id": "pyq_76_772"
+    "id": "pyq_76_772",
+    "q_snippet": "snippets/q_pyq_76_772.webp",
+    "sol_snippet": "snippets/sol_pyq_76_772.webp"
   },
   {
     "num": 3,
@@ -13138,7 +14523,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.24",
     "answerKey": "2040 to 2040",
     "solution": "Number of stage (k) = 3.\n\nNumber of instruction [n] = 100.\n\nTp = max (stage delay) = max (10, 20, 14)\n\nTp = 20 nsec\n\nETpipe = [k + (n - 1)] tp\n\n= [3 + (100 -1)]20 = 102 × 20\n\nETpipe = 2040 nsec\n\nInstruction Pipelining",
-    "id": "pyq_78_773"
+    "id": "pyq_78_773",
+    "q_snippet": "snippets/q_pyq_78_773.webp",
+    "sol_snippet": "snippets/sol_pyq_78_773.webp"
   },
   {
     "num": 4,
@@ -13155,7 +14542,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.25",
     "answerKey": "2.15 to 2.18",
     "solution": "Non pipeline processor:\n\nFrequency = 2.5 GHZ\n\nCycle time = 1 frequency ⇒ 1 sec. 2.5 G\n\n⇒\n-9\n1 10\n⇒ 0.4 n sec\n\nCycle time = 0.4 nsec\n\nETNON PIPE = CPI × Cycle time = 5 × 0.4 n sec.\n\nPIPE ET 2 nsec. =\n\nNumber of Stalls / Inst.= .30 × 0.05 × 50 +.60 × 0 + .10× .50 × 2 = .75 + .1\n\nn Number of stalls/Inst = 0.85\n\nETPIPE = (1 + Number of stalls/Inst.) × cycle time pipe.\n\nCycle time pipeline = 1 sec. 2 G ⇒\n-9\n1 10 2 ×\n\n0.5 nsec\n\nETPIPE = (1 + 0.85) × 0.5 n sec. = 1.85 ×0.5\n\nPIPE ET 0.925 ns ⇒\n\nNONPIPE PIPE ET S = ET = 2 0.925 = 2.16",
-    "id": "pyq_75_774"
+    "id": "pyq_75_774",
+    "q_snippet": "snippets/q_pyq_75_774.webp"
   },
   {
     "num": 5,
@@ -13172,7 +14560,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.25",
     "answerKey": "219 to 219",
     "solution": "IF, ID, OF, PO, WB\n\nNumber of stages = 5\n\n(Number of Inst.) n = 100\n\nIF ID OF WB\n\nETPIPE = [k + (n-1)] cycle\n\nwithout stalls without forwards PIPE ET = [5 + (100 -1)] cycle\n\n= 104 cycle\n\n40 Inst. Takes 3 clocks cycle\n\n35 Inst. Takes 2 clocks cycle\n\n25 Inst. Takes 1 clocks cycle\n\nNumber of stalls = 40 × 2 + 35 ×1 + 25 × 0\n\n= 80 + 35 = 115 cycle\n\nTotal number of clock cycle take = 104 + 115\n\n= 219 cycle\n\nAlternate Approch. WB\n\nI1 PO\n\nI1 OF\n\nI1\n\nID\n\nI1\n\nIF I1\n\nIF ID OF PO WB\n\nFor 1st Inst.⇒ 4 1+1+1+1+ Po stages\n\nTotal times = 1 + 1 + 1 + 1 + (40 × 3 + 35 × 2 + 25 × 1) = 4 + 120 + 70 + 25 = 219",
-    "id": "pyq_76_775"
+    "id": "pyq_76_775",
+    "q_snippet": "snippets/q_pyq_76_775.webp"
   },
   {
     "num": 6,
@@ -13189,7 +14578,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.25",
     "answerKey": "1.49 to 1.52",
     "solution": "Naïve pipeline [NP]\n\n5 stages: IF, ID, OF, EX, WB.\n\nK = 5 5ns, 4ns, 20ns, 10ns, 30ns\n\nBuffer Delay = 2ns\n\nComputer Organization and Architecture\n\nNumber of Instruction = 20 n = 20\n\nMax (stage Delay + Buffer Delay)\n\nNP\n\ntp = max (5, 4, 20, 10, 3) + Buffer Delay = 20 + 2\n\nNP tp = 22 ns\n\nETNP = [k + n -1] tpNP\n\n⇒ [5 + (20 - 1)] × 22 ns ⇒ 24 × 22 ns\n\nNP ET = 528 nsec\n\nEfficient pipe line [EP]\n\n6 Stages IF, ID, OF1 OF2 EX WB\n\nk 6 = (5, 4, 12, 8, 10, 3) n sec.\n\nBuffer Delay = 2 nsec.\n\nEP\n\ntp = max (stage Delay + Buffer Delay)\n\n⇒ max (5, 4, 12, 8, 10, 3) + 2ns = 12 + 2\n\nEP tp 14 nsec. =\n\nn = 20\n\nEP EP EP 1 tp\n\n6 20 1 14 25 14 k n = [+ −\n\n⇒[+ − ]× = ×\n\nNP ET = 350 nsec\n\nSpeed up factor = Perfomance of EP Perfomance of NP = EP NP 1/ ET 1/ ET\n\n= EP NP ET ET = 528 350\n\nSpeed up foctor = 1.508",
-    "id": "pyq_78_776"
+    "id": "pyq_78_776",
+    "q_snippet": "snippets/q_pyq_78_776.webp",
+    "sol_snippet": "snippets/sol_pyq_78_776.webp"
   },
   {
     "num": 7,
@@ -13206,7 +14597,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.26",
     "answerKey": "c",
     "solution": "P1 = tp = max (1ns, 2ns, 2ns, 1ns ) = 2 nsec.\n\nP2 = tp = max (1ns, 1.5ns, 1.5ns, 1.5ns ) = 1.5 nsec.\n\nP3 = tp = max (0.5ns, 1ns, 1ns, 0.6ns, 1ns ) = 1 nsec.\n\nP4 = tp = max (0.5ns, 0.5ns, 1ns, 1ns, 1.1ns ) =1.1 nsec.\n\nClock Frequency 1 cycle time\n\nP3 having lowest time\n\n∴ P3 having highest clock frequency",
-    "id": "pyq_75_777"
+    "id": "pyq_75_777",
+    "q_snippet": "snippets/q_pyq_75_777.webp",
+    "sol_snippet": "snippets/sol_pyq_75_777.webp"
   },
   {
     "num": 8,
@@ -13223,7 +14616,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.26",
     "answerKey": "3.9 to 4.1",
     "solution": "τ1 = 2 3 3 2T 4 τ ≈\n\n2 2 1 3 3τ 3τ τ & 2τ 4 4 = =\n\n1 2 3 6 or 4 8 τ τ =\n\n2 3 T T = 8 3\n\n1 2 3 : : 6 : 8 : 3 τ τ τ⇒\n\nLet x is time\n\nτ1 = 6x, τ2 = 8x, τ3 = 3x\n\ntp = max (6x, 8x, 3x)\n\ntp = 8x\n\nFrequency = 1 tp = Frequency ⇒ 1 8x\n\n3GHz = 1 8x\n\n⇒ 1 24 GHZ x =\n\nNew Design\n\nNew tp 6x =\n\nFrequencyNew = new 1 tp\n\nFrequencyNew = 1 6x ⇒ 1 1 6 x ×\n\n⇒ 1 24 GHZ 6 ×\n\nFrequencyNew = 4 GHZ.\n\nInstruction Pipelining",
-    "id": "pyq_76_778"
+    "id": "pyq_76_778",
+    "q_snippet": "snippets/q_pyq_76_778.webp",
+    "sol_snippet": "snippets/sol_pyq_76_778.webp"
   },
   {
     "num": 9,
@@ -13240,7 +14635,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.27",
     "answerKey": "33 to 34",
     "solution": "OLD Design:\n\n4 Stage, (800, 500, 400, 300)\n\nOLD tp = max (800PS, 500PS, 400PS, 300 PS)\n\nOLD Desgin tp 800 PS =\n\nInstruction takes = 800PS\n\nIn 1 sec. how many # of Inst.\n\nOLD 1 tp 800 =\n\nNew Design:-\n\n5 stages Delay = (600, 350, 500, 400, 300) PS\n\nNew tp = max. (600, 350, 500, 400, 300)\n\nNew tp 600PS =\n\nInstruction takes = 600 PS\n\nIns.1 sec. how many number of instruction\n\nnew 1 trp 600 =\n\n% of throughput increase in pipeline = New - OLD OLD\n\n⇒ 1 1 600 800 1 800 − ⇒ 1 1 6 8 1 8 − ⇒ 8 6 48 1 8 − = 2 8 48 × = 2 6\n\n⇒1 3 = 33.33%",
-    "id": "pyq_78_779"
+    "id": "pyq_78_779",
+    "q_snippet": "snippets/q_pyq_78_779.webp"
   },
   {
     "num": 10,
@@ -13257,7 +14653,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.27",
     "answerKey": "3.2 to 3.2",
     "solution": "Non pipelined processer\n\nI Instruction takes 4 cycle\n\nCycle time = 1 2.5 G sec. ⇒ 1 2.5 × 10-9 sec.\n\nCycle time = 0.4 n sec.\n\nIn non-pipelined\n\nI Instruction execution time = 4 × 0.4 sec. = 1.6 n sec.\n\nPipelined Processer:\n\n5 stage\n\n1 Instn takes = 1 cycle\n\nCycle time = 1 2 sec. ⇒ 9\n1 10\nsec. 2 − ×\n\n1 Inst. ET in pipeline = 0.5 nsec.\n\nSpeed up factor = Performance of pipeline 1/ ETpipeline Performance of Non-pipeline 1/ ETnon-pipeline =\n\n= ET in non-pipeline ET in pipeline = tn tp =\n\n= Speed up factor = 3.2",
-    "id": "pyq_75_780"
+    "id": "pyq_75_780",
+    "q_snippet": "snippets/q_pyq_75_780.webp",
+    "sol_snippet": "snippets/sol_pyq_75_780.webp"
   },
   {
     "num": 11,
@@ -13274,7 +14672,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.27",
     "answerKey": "1.54 to 1.54",
     "solution": "Old Design\n\nOLD tp max(1, 2.2, 2, 1, 0.75) =\n\nOLD tp 2.2nsec. = & OLD Design 'Ex' Stage\n\nBranch Penalty = 3-1\n\nB.P = 2\n\nBranch Frequency = 20%\n\nNumber of stalls / Inst. = .20×2 = 0.4\n\nAverage Inst. ETOLD = (1+Number of stalls/Ins.) tpOLD\n\n⇒ (1 + 0.4) × 2.2\n\n⇒1.4 ×2.2\n\nOLD[p] ET 3.08 nsec. =\n\nNew Design\n\nnew 2.2 2.2 2.2 tp max 1, , , ,1,1,1,0.75 3 3 3 ns =\n\nnew tp 1 nsec. =\n\nBranch Penalty = 6 - 1 = 5\n\nComputer Organization and Architecture\n\nBranch frequency = 20%\n\nBranch required = .20 × 5 = 1\n\nnew Design new ET 1 number of stalls/ins. tp =\n+\n×\n\n⇒ (1 + 1) × 1 nsec.\n\nQ 2nsec. =\n\nP Q 2 = =1.54",
-    "id": "pyq_76_781"
+    "id": "pyq_76_781",
+    "q_snippet": "snippets/q_pyq_76_781.webp",
+    "sol_snippet": "snippets/sol_pyq_76_781.webp"
   },
   {
     "num": 12,
@@ -13291,7 +14691,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.28",
     "answerKey": "4 to 4",
     "solution": "Number of stalls/Inst. = Branch frequency × Branch Penalty\n\n= .25× 2 = 0.5\n\nSpeed up factor = NP pipe ET ET\n\n1 Preformance ET\n\n= Pipeline Depath number stage 1 + number stalls/Inst.\n\nPerfactly balanced\n\n= 6 1\n+\n= 6 1.5 = 4",
-    "id": "pyq_78_782"
+    "id": "pyq_78_782",
+    "q_snippet": "snippets/q_pyq_78_782.webp",
+    "sol_snippet": "snippets/sol_pyq_78_782.webp"
   },
   {
     "num": 13,
@@ -13308,7 +14710,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.28",
     "answerKey": "b",
     "solution": "Buffer Delay = 1 nsec.\n\ntp = max (stage Delay + Buffer Delay) = 10 + 1\n\ntp [cycle time] =11nsec.\n\nWithout stalls\n\nETPIPE = [K + (n + 1)] cycle.\n\n= [5 + 8 -1)] cycle. = 12 cycle\n\nTotal Instn = 12\n\nNumber of Instn[n] = 8\n\n(Out of 12 only 8 Instn executing)\n\nNumber of stall(extra cycles) = 4 -1 = 3\n\nNumber of (extra cycle) = 3\n\nTotal cycle = 12 + 3 cycle = 15 cycles\n\nETPIPE = 15 cycle\n\nCycle time (tp) = 11 nsec. = 15 × 11 = 165 nsec.\n\nAlternate approach : By timing Diagram\n\ntp (cycle time ) =11 nsec.\n\n5 stages\n\nTotal = 15 cycle\n\n⇒ 15 × 11 nsec.\n\n⇒ 165 nsec.",
-    "id": "pyq_75_783"
+    "id": "pyq_75_783",
+    "q_snippet": "snippets/q_pyq_75_783.webp",
+    "sol_snippet": "snippets/sol_pyq_75_783.webp"
   },
   {
     "num": 14,
@@ -13325,7 +14729,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.28",
     "answerKey": "b",
     "solution": "S1 = 5 nsec, S2 = 6 nsec, S3 = 11 nsec, S4 = 8 nsec\n\nP.R/IR or Buffer Delay = 1 nsec.\n\nSpeed up factor = ?\n\nExecution time (ET) in non-pipeline = 5 + 6 + 11 + 8\n\nETNon-pipeline = 30 nsec.\n\nExecution time in pipeline tp = max (stage Delay + Buffer Delay)\n\nMax (5 + 1, 6 + 1, 11+1, 8+1)\n\nMax (6, 7, 12, 9)\n\nETpipe = 12 nsec.\n\nSpeed up factor = non-pipe pipe ET ET ⇒ 30 12\n\nSpeed up factor = 2.5\n\nInstruction Pipelining",
-    "id": "pyq_76_784"
+    "id": "pyq_76_784",
+    "q_snippet": "snippets/q_pyq_76_784.webp",
+    "sol_snippet": "snippets/sol_pyq_76_784.webp"
   },
   {
     "num": 15,
@@ -13342,7 +14748,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.29",
     "answerKey": "b",
     "solution": "S4\n\nI1\n\nI2 I2 S3\n\nI1\n\nI2 I2 I3 I4 S2\n\nI1 I2 I2 I2 I3 I4 I4 I1 S1 I1 I1 I2 I3 I3 I4 I1 I1 I2 I3\n\n1 2 3 4 5 6 7 8 9 10\n\nS4 I3 I3 I3 I4 I4 I1 I2 I2 I3 I3 S3 I4 I1\n\nI2 I2 I3 I4 I4\n\nS2 I2 I2 I2 I3 I4 I4\n\nS1 I3 I4\n\n11 12 13 14 15 16 17 18 19 20\n\nS4 I3 I4 I4\n\nS3\n\nS2\n\nS1\n\n21 22 23 24 25\n\n23 cycles.",
-    "id": "pyq_78_785"
+    "id": "pyq_78_785",
+    "q_snippet": "snippets/q_pyq_78_785.webp"
   },
   {
     "num": 16,
@@ -13359,7 +14766,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.29",
     "answerKey": "c",
     "solution": "Non pipe line processor\n\nFrequency = 100 MHZ\n\nCycle time non-pipe = 6 1 100 10 × = 10-8 sec.\n\n=\n-8\n-9\n10 10 10 10 sec. 10 × = ×\n\nnon-pipe ET = 10 nsec.\n\nCycle time 10 nsec. ⇒\n\nPIPELINE 5 stages (k = 5)\n\nTp = 2.5, 1.5, 2, 1.5, 2 nsec.\n\nBuffer/ Latch Delay = 0.5 nsec.\n\ntp = max (stage Delay + Buffer Delay)\n\n= 2.5 + 0.5\n\nTp = 3 nsec.\n\nWhen very large Number of Instruction are executed\n\nS = tn tp = 10 nsec. 3 nsec.\n\nS = 3.33",
-    "id": "pyq_75_786"
+    "id": "pyq_75_786",
+    "q_snippet": "snippets/q_pyq_75_786.webp",
+    "sol_snippet": "snippets/sol_pyq_75_786.webp"
   },
   {
     "num": 17,
@@ -13376,7 +14785,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.29",
     "answerKey": "1.42 to 1.42",
     "solution": "X1 : 5 stage RISC pipeline, 30% branch instruction 2GHz clock frequency\n\nCycle Time = 1 sec 2G Cycle Time = 0.5ns.\n\nNumber stalls/instruction = Branch frequency × Branch penalty.\n\n= .70 × 0 + .30 × 2\n\nThe number stalls/Instruction = 0.6\n\nX1: Avg Instn ET = (1 + number of stells/instn) × Cycle time\n\n⇒ (1 + 0.6) × 0.5ns ⇒ 1.6 × 0.5 ns\n\n1 X ET 0.8ns =\n\nNew version X2 with Branch Prediction.\n\nCycle time = 0.5 nsec.\n\nComputer Organization and Architecture\n\nThe number of stalls/instructions = .70 × 0 + .30 × .20 × 2 + .30 × .80 × 0\n\nThe number of stalls/Instruction = 0.12\n\nX2: Avg instruction ET = (1 + number of stalls/instruction) × cycle time\n\n= (1 + 0.12) × 0.5 ⇒ 1.12 × 0.5\n\n2 X ET =\n\nSPEED UP = 2 X 2 1 X1 1/ ET performance of X performance of X 1/ ET ⇒\n\n1 X X2 ET ET ⇒ ⇒\n\nS = 1.42",
-    "id": "pyq_76_787"
+    "id": "pyq_76_787",
+    "q_snippet": "snippets/q_pyq_76_787.webp",
+    "sol_snippet": "snippets/sol_pyq_76_787.webp"
   },
   {
     "num": 18,
@@ -13393,7 +14804,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.30",
     "answerKey": "17160 to 17160",
     "solution": "Stage Delays = [150, 120, 150, 160, 140 ns]\n\nBuffer delay = 5ns\n\nn = 100\n\nk = 5 stage\n\nPIPE ET K+ n -1 tp =\n\ntp = max. (Stage Delay + Buffer Delay (5ns))\n\nmax. [155, 125, 155, 165, 145] ns.\n\nETPIPE = [5 + (100 -1)] × 165 nsec.\n\n⇒ 104 × 165 ×109 sec.\n\nETPIPE = 17160 ×10-9 sec.\n\nPIPE ET 17160 nsec. =",
-    "id": "pyq_78_788"
+    "id": "pyq_78_788",
+    "q_snippet": "snippets/q_pyq_78_788.webp",
+    "sol_snippet": "snippets/sol_pyq_78_788.webp"
   },
   {
     "num": 19,
@@ -13410,7 +14823,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.30",
     "answerKey": "1.87 to 1.88",
     "solution": "Number of Instn = 8\n\nOperand forwarding: No additional stalls (Extra cycle) are required to fetch the operand from the previous Instn output.\n\nOr\n\nNo extra cycle (stall) Due to Data Dependency\n\nEach instn takes total 2 cycles 4 MUL Instn takes 1extra cycle\n\nStall = 4 × 1 = 4 cycles\n\nETPIPE = [k + (n -1)] tp + stalls ⇒ [5 + (8 -1)] × 1+ 4 = 16 cycles\n\nWith operand forwards ETPIPE = 16 cycle\n\nWithout opened forwarding\n\nExtra cycle (stalls) due to data Dependency Or\n\nAdditional cycle (stall) Required to fetch the opened from the previous Instruction.\n\n'2 stalls per Instruction'\n\nTotal additional stall Due to data dependency\n\n= 7 × 2 = 14 cycle\n\nWithout operand forwarding:\n\nET pipeline = 16 + 14 = 30 cycle\n\nS = 30 16 = 1.875\n\nAlternate approach:\n\nCan do by. Time diagram S = 30 16 = 1.875\n\nInstruction Pipelining",
-    "id": "pyq_75_789"
+    "id": "pyq_75_789",
+    "q_snippet": "snippets/q_pyq_75_789.webp"
   },
   {
     "num": 20,
@@ -13427,7 +14841,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.31",
     "answerKey": "–16 to –16",
     "solution": "Each instn is 4 bytes long\n\nAssume start at location 4000\n\nInstr. No Instruction 4000 - 4003 i add R2, R3, R4 4004 - 4007 i +1 sub R5, R6, R7 4008 - 4011 i + 2 cmp R1, R9, R10 4012 - 4015 i + 3 beq R1, Offset 4016 -\n\nPC = 4016\n\nTarget address = i\n\nPC ⇒ denotes the starting address of the next Instn\n\nIn PC Relative Addressing (AM) ⇒ Target address = Current PC value + OFFSET\n\n4000 = 4016 + OFFSET\n\nOFFSET= -16",
-    "id": "pyq_76_790"
+    "id": "pyq_76_790",
+    "q_snippet": "snippets/q_pyq_76_790.webp"
   },
   {
     "num": 21,
@@ -13444,7 +14859,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.31",
     "answerKey": "b",
     "solution": "OP Ri Rj Rk\n\nRi Rj any operation Rk\n\nS1: Anti Dependency between I2 & I5 :\n\nI2 : MUL R7 R1 R3 : R7 R1 × R3\n\nI5 : MUL R7 R8 R9 : R7 R8 × R9\n\nFalse because its output Dependency.\n\nS2: Anti Dependency between I2 & I4 :\n\nI2 : MUL R7 R2 R3 : R7 R1 × R3\n\nI4 : ADD R3 R2 R4 : R3 R2 × R4\n\nTrue\n\nAnti Dependency & output Dependency\n\nSol. Register Remaining",
-    "id": "pyq_78_791"
+    "id": "pyq_78_791",
+    "q_snippet": "snippets/q_pyq_78_791.webp",
+    "sol_snippet": "snippets/sol_pyq_78_791.webp"
   },
   {
     "num": 22,
@@ -13461,7 +14878,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.31",
     "answerKey": "13 to 13",
     "solution": "IF\n\nOF\n\nPO\n\nWB WB\n\nI1\n\nPO\n\nI1 I1 I1 I2 I2 I2 I2 I2 OF\n\nI1 I2\n\nI3 IF I1 I2 I3 I4\n\n1 2 3 4 5 6 7 8 9 10\n\nWB I2 I3 I4\n\nPO I3 I4\n\nOF I4\n\nIF\n\n11 12 13 14 15 16 17 18 19\n\n13 clock cycle.\n\nAlternate approach:\n\nStall (extra cycles) I1 MUL 3 → 2 I2 DIV 5 → 4 I3 ADD 1 → 6 extra cycle stalls I4 SUB 1\n\nn = 4, k = 4\n\nET = [K + (n -1)] tp + t stalls\n\n= [4 + (4 - 1)] ×1 + 6 = 7 + 6= 13 cycle\n\nComputer Organization and Architecture",
-    "id": "pyq_75_792"
+    "id": "pyq_75_792",
+    "q_snippet": "snippets/q_pyq_75_792.webp"
   },
   {
     "num": 23,
@@ -13478,7 +14896,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.32",
     "answerKey": "c",
     "solution": "Register Renaming: Handles Hazards",
-    "id": "pyq_76_793"
+    "id": "pyq_76_793",
+    "q_snippet": "snippets/q_pyq_76_793.webp"
   },
   {
     "num": 24,
@@ -13495,7 +14914,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.32",
     "answerKey": "b",
     "solution": "WB\n\nI0\n\nPO\n\nI0 I0 I0 I1 I1 I1 I1 I1 OF\n\nI0 I1\n\nID\n\nI0 I1 I2 I3\n\nIF I0 I1 I2 I3\n\n1 2 3 4 5 6 7 8 9 10 11\n\nWB\n\nI1 I2 I3\n\nPO I1 I2 I3\n\nOF I2 I3\n\nID\n\nIF\n\n12 13 14 15 16 17 18 19 20 21\n\n15 clock cycle\n\nPO\n\nI0\n\n3\n\nI1\n\n6\n\nI2\n\n1\n\nI3\n\n1 OR\n\nAlternate apporach\n\nPO stage Extra cycle\n\nI0 MUL 3 → 2\n\nI1 DIV 6 → 5\n\n7 extra cycle (stalls)\n\nI2 ADD 1\n\nI3 SUB 1\n\nn = 4, number of stage = 5\n\nET = [k + (n -1)]+P + (extra cycle +stalls due to hazards)\n\n⇒ [5 + (4 -1)] ×1 + 7 = 8 + 7= 15 cycle",
-    "id": "pyq_78_794"
+    "id": "pyq_78_794",
+    "q_snippet": "snippets/q_pyq_78_794.webp",
+    "sol_snippet": "snippets/sol_pyq_78_794.webp"
   },
   {
     "num": 25,
@@ -13512,7 +14933,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.32",
     "answerKey": "d",
     "solution": "Branch to level if R1 = = 0\n\n(a) I1 : R2 R7 + R8\n\nUsed in I3 result of I1 (R2) used as operand.\n\n(b) I2 : ?\n\nR4 R5 - R6\n\nI4 is used as memory [R4] for memory store purpose\n\n(c) I3 : R1 R2 + R3\n\nUsed in Branch to total if R1 = 0\n\nNot proper working\n\n(d) I4: memory [R4] store",
-    "id": "pyq_75_795"
+    "id": "pyq_75_795",
+    "q_snippet": "snippets/q_pyq_75_795.webp",
+    "sol_snippet": "snippets/sol_pyq_75_795.webp"
   },
   {
     "num": 26,
@@ -13529,7 +14952,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.32",
     "answerKey": "a",
     "solution": "Instruction Pipelining\n\n(a) False\n\n(b) False: (Only branch)\n\n(When condition is True)\n\nI2: Next sequential Instruction\n\nCondition Branch Inst. JNZ.\n\nI1 - I101 - I102\n\n→→\n\nTaken Path.",
-    "id": "pyq_76_796"
+    "id": "pyq_76_796",
+    "q_snippet": "snippets/q_pyq_76_796.webp",
+    "sol_snippet": "snippets/sol_pyq_76_796.webp"
   },
   {
     "num": 27,
@@ -13546,7 +14971,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.33",
     "answerKey": "b",
     "solution": "1. By passing (operand forwarding): Handle\n\nAll Raw Hazards: (False)\n\nIf I1 Load Instn & I2 Next Instn using the results of I1 as a operand\n\n2. WAR (ANTI Dep.) ⇒ Register Remaining ⇒ True\n\n3. Control Hazards: eliminate by Branch Predication: (False)",
-    "id": "pyq_78_797"
+    "id": "pyq_78_797",
+    "q_snippet": "snippets/q_pyq_78_797.webp"
   },
   {
     "num": 1,
@@ -13563,7 +14989,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.41",
     "answerKey": "0.05 to 0.05",
     "solution": "2. (a)",
-    "id": "pyq_79_798"
+    "id": "pyq_79_798",
+    "q_snippet": "snippets/q_pyq_79_798.webp",
+    "sol_snippet": "snippets/sol_pyq_79_798.webp"
   },
   {
     "num": 3,
@@ -13580,7 +15008,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.42",
     "answerKey": "d",
     "solution": "(a) Incorrect because:\n\nSpatial locality: Adjacent word (Data)\n\nIf block size 4B\n\nMm to cm complete block transferred\n\nIf block size 8 B\n\n(b) Incorrect because\n\nPA = 10 bits, cm = 32 bytes, Block size = 2 bytes\n\nCase I:\n\nDirect mapping\n\nNumber of lines = 32 16 2 =\n\nCase II: block size = 4Byte\n\nNumber of lines = 32 8 4 =\n\nCase III: Block size = 16 byte\n\nNumber of lines = 32 2 16 =\n\nBut in fully associative :\n\nCase I : Block size = 2bytes\n\nCase II: Block size = 4 byte\n\nCase III: Block size = 16 byte\n\n(c) incorrect\n\n(d) correct because\n\nSmaller block size ⇒ then lower miss penalty\n\nIf B.S = 2 words or 2 bytes ⇒ only 2 W or 2 bytes bring from mm to cm\n\nIf B.S = 16 words or 16 byte ⇒ 16 W or 16 byte mm to cm ie miss peanalty increase.\n\nMemory Hierarchy",
-    "id": "pyq_80_799"
+    "id": "pyq_80_799",
+    "q_snippet": "snippets/q_pyq_80_799.webp",
+    "sol_snippet": "snippets/sol_pyq_80_799.webp"
   },
   {
     "num": 4,
@@ -13597,7 +15027,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.43",
     "answerKey": "19 to 19",
     "solution": "8 way set Associative.\n\nCache size = 64kB,\n\nPhysical address = 32 bit\n\nCache size = 64 KB = 216 Byte.\n\nDirect Mapping:\n\nBut In Question 8 way set Associative.\n\nLog2(8) = 3bit\n\n8 Way set Associative\n\nTAG = 32-13 = 19bit\n\nAlternate approach\n\n8 Way set Associative\n\nCache size = 64 KB\n\nPhysical address = 32bit\n\nAssume Block size = 1 Byte\n\nNumber of lines = CMsize Blocksize\n\n16 64KB 64K 2 Line 1B = =\n\nLine off set = log2 216 = 16 bit\n\n8 Way set associative\n\nNumber of set = 16 13 3 #Lines 2 2 N ways 2 = = −\n\nSet offset = 13 bit\n\nTag = 32-13 = 19bit.",
-    "id": "pyq_81_800"
+    "id": "pyq_81_800",
+    "q_snippet": "snippets/q_pyq_81_800.webp",
+    "sol_snippet": "snippets/sol_pyq_81_800.webp"
   },
   {
     "num": 5,
@@ -13614,7 +15046,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.43",
     "answerKey": "17 to 17",
     "solution": "Main memory size = 232 Byte\n\nCache size = 32 KB\n\nBlock size = 64 byte\n\nDirect mapped cache:\n\nMm size 232 byte = physical address (P.A) = 32 bit\n\nCache size = 32 kB = 215 Byte\n\nBlock size = 64 Byte ⇒ word offset = log2(64) = 6 bits\n\nNumber of Lines: = 15 9 6 CM size 2 B 2 Block size 2 B = =\n\nLine offset = log2(29)\n\n9 bits\n\nDirect mapped: -\n\nTAG = 32 - (9 + 6) = 32 - 15 = 17 bits",
-    "id": "pyq_82_801"
+    "id": "pyq_82_801",
+    "q_snippet": "snippets/q_pyq_82_801.webp",
+    "sol_snippet": "snippets/sol_pyq_82_801.webp"
   },
   {
     "num": 6,
@@ -13631,7 +15065,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.43",
     "answerKey": "2 to 2",
     "solution": "Physical address (P.A) = 32 bit\n\nCache size = 2 KB = 211 Bytes\n\nBlock size = 64 byte = 26 byte\n\nTag field = 22 bit\n\nNumber of sets = 24 = 16 set\n\nSet offset (SO) = 4\n\nWord offset = [log2 block size] ⇒ [log2 64]\n\nComputer Organization and Architecture\n\nWord offset 6 bit =\n\nSet associative cache.\n\n# LINES [#CM blocks] = cm Size Block size\n\n⇒ 11 5 6 2 B 2 32 lines 2 B = =\n\n# #Lines Set N way = −\n\n16 = 32 N way −\n\nN-way = 32 2 16 =",
-    "id": "pyq_79_802"
+    "id": "pyq_79_802",
+    "q_snippet": "snippets/q_pyq_79_802.webp",
+    "sol_snippet": "snippets/sol_pyq_79_802.webp"
   },
   {
     "num": 7,
@@ -13648,7 +15084,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.44",
     "answerKey": "b",
     "solution": "Main memory = 16 MB = 224 byte\n\nCache size = 64 MB = 216 Byte\n\nBlock size = 256 B = 28 Byte\n\n4 way set associative\n\nA1 : Ox 42C 8A4\n\nA2 Ox 546 888\n\nA3: Ox 6A2 89C\n\nA4: Ox 5E4 880\n\nPhysical address = 24 bit\n\nWord offset = log2 (block size)\n\n= [log2 256] ⇒ 8 bit\n\nWord Offset 8 bit =\n\nNumber of line = 16 8 8 CM size 2 B 2 Block size 2 B = =\n\nNumber of Set = Number of LINES 256 64 No way 4 = = −\n\nSet offset (S.O) = 6 bit\n\nA1 and A4 mapped to the same cache set\n\nA2 and A3 are mapped to the same cache set",
-    "id": "pyq_80_803"
+    "id": "pyq_80_803",
+    "q_snippet": "snippets/q_pyq_80_803.webp",
+    "sol_snippet": "snippets/sol_pyq_80_803.webp"
   },
   {
     "num": 8,
@@ -13665,7 +15103,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.44",
     "answerKey": "d",
     "solution": "Physical address = 32 bit\n\nCache size = 16 kB\n\nBlock size = 16 byte\n\nWord offset = [log2 block size] ⇒[log216]\n\nWord offset = 4bit\n\nFully associative cache\n\nTAG: 28 bit word offset = 4 bit\n\nIndex: 0 bit",
-    "id": "pyq_81_804"
+    "id": "pyq_81_804",
+    "q_snippet": "snippets/q_pyq_81_804.webp",
+    "sol_snippet": "snippets/sol_pyq_81_804.webp"
   },
   {
     "num": 9,
@@ -13682,7 +15122,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.44",
     "answerKey": "b",
     "solution": "P.A.S = 2p byte , word length = 2w byte\n\nCache = 2n byte\n\nBlock size = 2m words\n\nK-way set associative\n\nMemory Hierarchy\n\nBlock size = 2m word (each word size = 2w byte)\n\n⇒ 2m × 2w Byte\n\nm+w Block size=2 Byte\n\nWord offset =m+w Bits\n\nNumber of LINEs = n m w CM size 2 Block size 2\n+\n=\n\nNumber of Set = N-M-W Number of Lines 2 N way K = −\n\nSet offset ⇒ log2 (# SET) ⇒ log2( N-M-W 2 K\n\n⇒ Log2(2(N--M-W) - log2k\n\n⇒ 2 N - M - W - log k\n\nTAG : = P.A - (S.O + W.O)\n\n⇒ 2 P - N - M - W - log k M W\n+\n+\n\n2 TAG P - N log k ⇒\n+",
-    "id": "pyq_82_805"
+    "id": "pyq_82_805",
+    "q_snippet": "snippets/q_pyq_82_805.webp",
+    "sol_snippet": "snippets/sol_pyq_82_805.webp"
   },
   {
     "num": 10,
@@ -13699,7 +15141,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.45",
     "answerKey": "c",
     "solution": "MM size of 232 byte\n\nPhysical address (P.A) = 32 bit\n\nBlock size = 32 bytes\n\nWord offset = [log232]\n\nWord offset = 5 bit\n\nNumber of lines = 512; direct mapped cache\n\nLine offset (L.O) = [log2 512]\n\nLine Offset 9 bit =\n\nTAG = 32 - (9 + 5)\n\nTAG = 32 - 14\n\nTAG 18 bit =",
-    "id": "pyq_79_806"
+    "id": "pyq_79_806",
+    "q_snippet": "snippets/q_pyq_79_806.webp",
+    "sol_snippet": "snippets/sol_pyq_79_806.webp"
   },
   {
     "num": 11,
@@ -13716,7 +15160,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.45",
     "answerKey": "14 to 14",
     "solution": "Direct mapped cache\n\n16 ways set associative (assume log = n bit)\n\nNumber of set = N Number of Line B N ways 16\n\n=\n\nSet offset = 2 N B log 16\n\n⇒ 2 2 N log\n- log 16\nB\n\n⇒ 2 N log\n- 4\nB\n\n2 10 log\n+\n2 N log B + 2 B n log =\n+\n2 N\n- 4\nlog B\n+\n\nB\n\n10 = n - 4 ⇒ n = 14 bit\n\nTAG 14 bit =\n\nAlternate Approach\n\nDirect mapped cache: TAG Line offset Word offset\n\n10 bits\n\n16 way set associate cache: TAG (10 bit) Set offset Word offset\n\nComputer Organization and Architecture\n\n16-way set associate 1 set we can store 16 way (16 mm block), so in index now we require 4 less bits compare to direct mapped\n\nNow, TAG = 10 + 4\n\nTAG = 14 bits\n\nProof.\n\nMM = 1 MB cache size - 16 kB, block size = 128 byte\n\nPA = 20 bit\n\nDirect method cache\n\nWord offset = [log2128] = 7 bit\n\nNumber of LINES = CM size block size = 14 7 16 kB 2 128B 2 =\n\n= 27 lines\n\nL.O = 7 bit\n\n16-way set associate cache\n\nNumber of set = Number of line N ways − 7 3 4 2 2 set 8 set 2 16ways = = =\n\nset offset = 3bit\n\ncache size = N word, block size = B word\n\nTag = 10 bits\n\nWord offset = log2B\n\nNumber of line = CM size N Block size B =\n\nL.O = log2 N B",
-    "id": "pyq_80_807"
+    "id": "pyq_80_807",
+    "q_snippet": "snippets/q_pyq_80_807.webp",
+    "sol_snippet": "snippets/sol_pyq_80_807.webp"
   },
   {
     "num": 12,
@@ -13733,7 +15179,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.46",
     "answerKey": "a",
     "solution": "Physical address (P.A) = 40 bits\n\nCache size = 512 KB = 219\n\n8-way set associative\n\nP.A = TAG + set offset + word offset\n\nTAG set offset word offset 40bits\n+\n+\n= …..(1)\n\nCache = Number of sets × block per set × block size\n\n512 KB = Number of Sets × 8 × block size\n\n[216] KB = Number of sets × block size\n\nset offset word offset 16 bit\n+\n= ……(2)\n\nTAG + set offset + word offset = 40 bit\n\nTAG + 16 bits = 40 bits\n\nTAG = 40 - 16\n\nTAG 24 bits =",
-    "id": "pyq_81_808"
+    "id": "pyq_81_808",
+    "q_snippet": "snippets/q_pyq_81_808.webp"
   },
   {
     "num": 13,
@@ -13750,7 +15197,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.46",
     "answerKey": "a",
     "solution": "Main memory = 220 byte\n\nBlock size = 16 bytes\n\nNumber of lines = 212\n\nMm size = 220 Byte\n\nP.A = 20 bit\n\nWord offset = [log216]\n\nWord offset = 4bit\n\n# lines = 212\n\nLine offset = 12bit\n\nMemory Hierarchy\n\nDirect mapped cache:\n\nNote: A : 10\n\nB : 11\n\nC : 12\n\nD : 13\n\nE : 14\n\nF : 15\n\nMain memory address = (E2021F)16 E 201 F 4 bits 12 bits 4 bits\n\nTag = E\n\nCache line number = 201",
-    "id": "pyq_82_809"
+    "id": "pyq_82_809",
+    "q_snippet": "snippets/q_pyq_82_809.webp",
+    "sol_snippet": "snippets/sol_pyq_82_809.webp"
   },
   {
     "num": 14,
@@ -13767,7 +15216,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.47",
     "answerKey": "20 to 20",
     "solution": "Main (physical) memory = 4GB = 232 Byte\n\nCache size = 16 kB\n\nWord size = 32 bits\n\nBlock size = 8 words\n\n4-way set associative\n\nPhysical address = 32 bits\n\n1 word size 32 bit = 4 byte\n\nBlock size = 8 words\n\n= 8 × 4 bytes\n\n= 32 bytes\n\nWord offset = [log232] = 5 bit\n\nNumber of lines = CM Size Block size\n\n14 9 5 16kB 2 B 2 lines 32B 2 B = = =\n\nNumber of set = Number of LINE N way −\n\n9 7 2 2 2 128 set 2 = = =\n\nSet offset = 7bit\n\nTAG = 32 - (7 + 5)\n\nTAG 20 bit =",
-    "id": "pyq_79_810"
+    "id": "pyq_79_810",
+    "q_snippet": "snippets/q_pyq_79_810.webp",
+    "sol_snippet": "snippets/sol_pyq_79_810.webp"
   },
   {
     "num": 15,
@@ -13784,7 +15235,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.47",
     "answerKey": "d",
     "solution": "PA = 20 bit (mm = 1MB), cach size = 16 MB, Block size = 64 byte\n\nDirect mapping:\n\nNumber of line = CM size Block size = 14 16kB 2 64B 26 = = 28\n\n2-way set associative;\n\nNumber of set = 8 7 1 Lines 2 2 N way 2 = = −\n\nComputer Organization and Architecture\n\n4 way set associative\n\nNumber of set = 8 6 2 Lines 2 2 N way 2 = = −",
-    "id": "pyq_80_811"
+    "id": "pyq_80_811",
+    "q_snippet": "snippets/q_pyq_80_811.webp",
+    "sol_snippet": "snippets/sol_pyq_80_811.webp"
   },
   {
     "num": 16,
@@ -13801,7 +15254,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.48",
     "answerKey": "a",
     "solution": "Number of sets = each set consit 'k' lines\n\nSet associative mapping\n\nK mod S or mm request (mod) # set\n\n(J mod V)\n\nFind first Line of any set\n\nEach set contiant 4 lines (k = 4)\n\nSet 0 ⇒ 0 × 4 = 0\n\nSet 1 = 1 × 4 = 4\n\nSet 2 = 2 × 4 = 8\n\nSet 3 = 3 × 4 = 12\n\nFor first Line, set number × k\n\n0 × 4 to 0 × 4 + (4 - 1) = 0 to 3\n\n1 × 4 to 1 × 4 + (4 - 1) = 4 to 7x × k to x × k + (k - 1)\n\nEach set containt 8 lines\n\nK = 8\n\nFirst line of any set\n\nSet 0 = 0 × 8 = 0\n\nSet 1 = 1 × 8 = 8\n\nSet 2 = 2 × 8 = 16\n\nSet number × k\n\n0 to 7\n\n0 × 8 to 0 × 8 + (8 - 1)\n\n1 × 8 to 1 × 8 + (8 - 1)\n\n8 to 15\n\n(j mod v) × k to\n\n(j mod v) × k + (k - 1)",
-    "id": "pyq_81_812"
+    "id": "pyq_81_812",
+    "q_snippet": "snippets/q_pyq_81_812.webp",
+    "sol_snippet": "snippets/sol_pyq_81_812.webp"
   },
   {
     "num": 17,
@@ -13818,7 +15273,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.48",
     "answerKey": "a",
     "solution": "Memory Hierarchy",
-    "id": "pyq_82_813"
+    "id": "pyq_82_813",
+    "q_snippet": "snippets/q_pyq_82_813.webp",
+    "sol_snippet": "snippets/sol_pyq_82_813.webp"
   },
   {
     "num": 18,
@@ -13835,7 +15292,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.49",
     "answerKey": "d",
     "solution": "Main memory size = 1 MB (220 B)\n\nCache size = 8 KB\n\n1 word size = 1 byte\n\nBlock size = 128 words\n\nBlock size = 128 ×1 B = 128 bytes\n\nWord offset = log2 128 = 7 bits\n\nNumber of lines = cm size Block size = 6 8 KB 2 128 B =\n\nNumber of sets = 6 4 2 2 2 16 sets 2 = =\n\nSet offset = log2 16 = 4\n\nTag = 20 - (4 + 7) = 9 bits",
-    "id": "pyq_79_814"
+    "id": "pyq_79_814",
+    "q_snippet": "snippets/q_pyq_79_814.webp",
+    "sol_snippet": "snippets/sol_pyq_79_814.webp"
   },
   {
     "num": 19,
@@ -13852,7 +15311,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.49",
     "answerKey": "c",
     "solution": "Block size = 16 byte\n\nDouble = 8 byte\n\ni.e each block cache [cache block] contain 2 element of the Array\n\nGiven\n\nRow major = Accessing in serial order APR [0, 0] [0, 1] [0, 2] [0, 3]\n\nFor i = 0 ⇒ j = 0 to 1023 (1024 times)\n\nFor i = 1 ⇒ j = 0 to 1023 (1024 times)\n\nFrist element of array",
-    "id": "pyq_80_815"
+    "id": "pyq_80_815",
+    "q_snippet": "snippets/q_pyq_80_815.webp",
+    "sol_snippet": "snippets/sol_pyq_80_815.webp"
   },
   {
     "num": 20,
@@ -13869,7 +15330,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.49",
     "answerKey": "b",
     "solution": "Page size = 4 KB\n\nPage offset(d) = [log2 page size] = [log2 4KB]\n\nd = 12 bit\n\nStart address = (FF000)16\n\nV.A = 32 bit\nTAG SET OFFSET WORD OFFSET 17 bit 11 bit 4 bit\n\n11bit 1413121110 9 8 7 6 5 4 3 210\n\nPaging\nV.A = 32 bit\n\nPage Number Page Offset (d) 20 bit 12 bit\n\nAPR[0][0] FF000\n\n¯\n\nIst element of the Array ⇒ Start from (FF000)16[Page Number] and Page offset (000)F\n\n(FF000 000)\n\nAPR[0][0] =\n\nRow Major\n\nComputer Organization and Architecture\n\nAPR[0][4] = 5th element of the Ist row, i.e [0] [0], [0] [1], [0, 2] [0, 3]\n\nIst row 5th element (i.e already 4 element passed)\n\n4 × 8 = 32\n\nRow Major\n\nAPR[4][0] = Ist element of the 5th row [Row No 0, 1, 2, 3]\n\nAnd each row 1024 element\n\n4 × 1024 × 8\n\n22 × 210 × 23= 215 OR\n\n4 × 1024 × 8\n\n22 × 210 × 8\n\n212 × 8 = 4k × 8\n\n…. 217 216 215 214 213 212 211 210 29 28 27 26 25 24 23 22 21 20\n\nRow Major\n\nAPR[0][5] = First row, 6th element [[0][0], 0.1, 0.2, 0.3, 0.4] 5 element\n\n5 × 8 = 40 ( )16\n\n(in Hex virtual address) Set Index APR [0] [0] FF 000 000 000 0000 0000 APR [0] [4] FF 000 020 000 0000 0010 APR [4] [0] FF 008 000 000 0000 0000 APR [0] [5] FF 000 028 000 0000 0010\n\nMatch APR [4] [0]",
-    "id": "pyq_81_816"
+    "id": "pyq_81_816",
+    "q_snippet": "snippets/q_pyq_81_816.webp",
+    "sol_snippet": "snippets/sol_pyq_81_816.webp"
   },
   {
     "num": 21,
@@ -13886,7 +15349,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.50",
     "answerKey": "d",
     "solution": "2 way set associative, block size = 16 B, VA = 32 bit\n\nCache size = 64 KB\n\nBlock size = 16 Byte\n\nBlock offset = [log2 block size] = log216 = 4 bit\n\nNumber of lines = cm size 64 KB block size 16B =\n\n= 16 12 4 2 2 lines 2 =\n\nNumber of set = Number of lines N- way 12 11 2 = 2 set 2 =\n\nSet offset = 11 bit\n\nVIVT\n\nVirtual Index and virtually Tag\n\n32 bit TAG Set offset Block 1 word offset 17 bit 11 bit 4 bit\n\n2 way set associative\n\nTAG = 32 - (11 + 4)\n\nTag memory size = number of lines × Tag bits\n\n= 212 × 17 bit = 22 × 17 × 210 bit\n\n= 68 k bits OR\n\nTag memory size = Number of set × Block per set × Tag bit\n\n= 211 × 2 × 17 bit = 2 × 2 × 17 × 210 bit\n\nTag memory size = 68 k bits",
-    "id": "pyq_82_817"
+    "id": "pyq_82_817",
+    "q_snippet": "snippets/q_pyq_82_817.webp",
+    "sol_snippet": "snippets/sol_pyq_82_817.webp"
   },
   {
     "num": 22,
@@ -13903,7 +15368,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.50",
     "answerKey": "a, b, d",
     "solution": "Cache size = 2KB ⇒ 211 B\n\nBlock size = 64 Byte = 26 B\n\nWord offset = log2(block size) ⇒ log2(26)\n\nMemory Hierarchy\n\nWord offset (W.O) ⇒ 6 bits\n\nPhysical memory (MM) = 64KB = 216Byte.\n\nPhysical address (P.A) = 16 bits\n\nNumber of lines = 11 5 6 Cache size 2 B 2 Lines Block size 2 B = =\n\nLine offset (L.O) = 5 bits.\n\nDirect Mapping: 16bit TAG LINE(L.O) WORDOFFSET OFFSET (W.O) 5bit 5bit 6bit ⎯⎯⎯⎯⎯ ⎯⎯⎯⎯⎯→\n\nP:OxA248 TAG(5bit) Line offset Word offset (6bit) 10100 01001 001000\n\nLine No : 9\n\nQ:OxC28A TAG(5bit) Line Offset (5bit) Word offset (6bit) 11000 01010 001010\n\nLine No : 10\n\nR:OxCA8A TAG(5bit) Line Offset (5bit) Word offset (6bit) 11001 01010 001010\n\nLine No : 10\n\nS:OxA262 TAG(5bit) Line Offset (5bit) Word offset (6bit) 10100 01001 100010\n\nLine No : 9\n\nLine Number\n\nHere P and S same main memory block and mapped to the same cache line number.\n\nHere Q and R are the different main memory block but mapped to the same cache line number.\n\nEvery access to S is a hit.: True.\n\nOnce P is brought to the cache it is never evicted.\n\n: True.\n\nAt the end of the execution only R and S reside in\n\nthe cache.: False\n\nEvery access to R evicts Q from the cache. : True.",
-    "id": "pyq_79_818"
+    "id": "pyq_79_818",
+    "q_snippet": "snippets/q_pyq_79_818.webp",
+    "sol_snippet": "snippets/sol_pyq_79_818.webp"
   },
   {
     "num": 23,
@@ -13920,7 +15387,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.51",
     "answerKey": "76 to 76",
     "solution": "Computer Organization and Architecture\n\nNumber of CM blocks = 256\n\n(Number of Lines)\n\n2-way set associative\n\nNumber of set = 256 128 2 =\n\n[] SET S 128 =\n\nK MODS = i\n\nK MOD128 = i\n\nK : mm block number\n\nS : Number of cm set\n\ni = cache set number\n\n1st time\n\n2nd time",
-    "id": "pyq_80_819"
+    "id": "pyq_80_819",
+    "q_snippet": "snippets/q_pyq_80_819.webp",
+    "sol_snippet": "snippets/sol_pyq_80_819.webp"
   },
   {
     "num": 24,
@@ -13937,7 +15406,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.52",
     "answerKey": "a",
     "solution": "A ≥ k\n\n1 2 3 1 2 5 1 4 6 ⇒ N\n9 =\n\nUnique block address (1, 2, 3, 4, 5, 6) ⇒ n 6 =\n\nMin miss 6 9 [cold/compulsory miss.] OR\n\n1 2 4 1 5 6 1 8 9 1 7 8 2 5 3 ⇒ N 15\n=\n\nn = 9 Unique block address N 9 =\n\nmin miss = 9 15 (compulsory)\n\nminimum number of misses = n. [compulsory miss]\n\nfor maximum misses\n\nk concept\n\nWorst case: 71 3 6 7\n\n51 2 4 5\n\nAt most k [k =3]\n\nAssociativity A k ≥\n\nMemory Hierarchy\n\nCase I:\n\nMaximum allocation in same cache set (Any)\n\nCase II: If that unique address repeated\n\nk = 3 At most k unique = 3 address 1, 2, 4\n\nNo other extra miss\n\nTotal number of misses = n\n\nn Miss ratio = N\n\nAlternate approach:\n\nTotal access = N so divide by 'N' so option (c) and (d) wrong\n\nUnique block address = n\n\nSo minimum not 1 N option (b) also wrong\n\nn N",
-    "id": "pyq_81_820"
+    "id": "pyq_81_820",
+    "q_snippet": "snippets/q_pyq_81_820.webp",
+    "sol_snippet": "snippets/sol_pyq_81_820.webp"
   },
   {
     "num": 25,
@@ -13954,7 +15425,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.53",
     "answerKey": "d",
     "solution": "Mm = 256 block\n\nCache = 16 block\n\nnumber of line = 16\n\n4 way set Associative\n\nnumber of set = Number of LINES 16 N ways 4 = −\n\nNumber of SETS=4\n\nK MOD S = i Or\n\nCache set address = mm block mod number of cm set\n\nk MOD 4 i =\n\nComputer Organization and Architecture",
-    "id": "pyq_82_821"
+    "id": "pyq_82_821",
+    "q_snippet": "snippets/q_pyq_82_821.webp"
   },
   {
     "num": 26,
@@ -13971,7 +15443,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.54",
     "answerKey": "a, b, d",
     "solution": "Write through (Both cm & mm update at a same time) (simultaneously) so no need of dirty bit\n\nWrite Back: (first cache is update & mm update later).\n\nFalse\n\n(a) Incorrect, WB has dirty bit.\n\n(b) Incorrect/False:\n\n(c) Corect because in WT both cache memory & main\nmemory update at the same time.\n\n(d) False/Incorrect, depends on mapping technique &\nreplacement algorithm.",
-    "id": "pyq_79_822"
+    "id": "pyq_79_822",
+    "q_snippet": "snippets/q_pyq_79_822.webp"
   },
   {
     "num": 27,
@@ -13988,7 +15461,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.54",
     "answerKey": "0.85 to 0.85",
     "solution": "Range (0.85 to 0.85)\n\nCache Hit Rate [h] = 0.8\n\nCache Access Time [tc] = 10 ns.\n\nMiss penalty (M.P) = 100 ns.\n\nTavg = h × tc + (1 - h) (M.P + tc)\n\n= 0.8 × 10 + (1 - 0.8) (100 + 10)\n\n= 8 + 0.2(110)\n\nTavg = 30 ns.\n\nMemory with optimization (new)\n\nWants to reduce the miss rate ie increase the Hit Rate.\n\nMiss penalty = 100 ns (not affected in new)\n\nTavg = 30 ns.\n\nCache Access Time(tcnew) = 15 ns\n\nCache Hit Rate = hnew.\n\nTavg = hnew × tcnew + (1 - hnew)(M.P + tcnew)\n\n30 = 15 × hnew + (1 - hnew) (100 + 15)\n\n30 = 15 hnew + 115 - 115 hnew\n\n85 = 100 hnew\n\nhnew = 85/100\n\nhnew = 0.85\n\nMethod 2\n\nCache Hit Rate [h] = 0.8\n\nCache Access Time [tc] = 10 ns.\n\nMiss Penalty (M.P) = 100 ns.\n\nSo, its Hierarchical Access.\n\nTavg = cache time + (1 - h) miss penalty\n\n= 10 + (1 - 0.8) 100\n\nTavg = 30 ns\n\nMemory with optimization (new)\n\nWants to reduce the miss rate ie increase the Hit Rate.\n\nNew miss penalty = 100 ns (not affected in new)\n\nTavgnew = 30 ns. (not affected in new)\n\nCache Access Time (tcnew) = 15 ns.\n\nCache Hit Rate = hnew\n\nTavgnew = Cache time + (1 - hnew) miss penalty\n\n30 = 15 + (1 - hnew) 100\n\n30 = 15 + 100 - 100 hnew\n\n100 hnew = 85\n\nhnew = 85/100\n\nhnew = 0.85",
-    "id": "pyq_80_823"
+    "id": "pyq_80_823",
+    "q_snippet": "snippets/q_pyq_80_823.webp",
+    "sol_snippet": "snippets/sol_pyq_80_823.webp"
   },
   {
     "num": 28,
@@ -14005,7 +15480,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.54",
     "answerKey": "d",
     "solution": "S1: Write through → simultaneous update in L1 and\nNO role of dirty bit because here, its simultaneous update.\n\nIf miss occur directly replace the block\n\nMemory Hierarchy\n\nS2: Write through: No write allocate.\n\nWrite back: Write allocation\n\nIncorrect",
-    "id": "pyq_81_824"
+    "id": "pyq_81_824",
+    "q_snippet": "snippets/q_pyq_81_824.webp",
+    "sol_snippet": "snippets/sol_pyq_81_824.webp"
   },
   {
     "num": 29,
@@ -14022,7 +15499,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.55",
     "answerKey": "13.3 to 13.5",
     "solution": "Block size =256 bytes\n\nWord size = 64 bit = 8 bytes\n\nCache bit ratio = 94%\n\nCache access time [tc] = 3 nesec.\n\nFirst word takes 20 and each subsequent word take 5 nsec.\n\nNumber of word = 256 B 32 8 B =\n\nTavg = 0.94 × 3 + (1 - 0.94) (3 + 20 + 31×5)\n\n⇒ 2.82 + 0.06 [178]\n\n⇒ 2.82 + 10.68\n\n⇒ 13.5 sec",
-    "id": "pyq_82_825"
+    "id": "pyq_82_825",
+    "q_snippet": "snippets/q_pyq_82_825.webp",
+    "sol_snippet": "snippets/sol_pyq_82_825.webp"
   },
   {
     "num": 30,
@@ -14039,7 +15518,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.55",
     "answerKey": "160 to 160",
     "solution": "Clock frequency = 60 MHz\n\nCycle time = 6 1 1 sec clock frequency 60 l0 = ×\n\nCache block size = 8 Words\n\n1 word size = 4 Bytes\n\nBlock size = 4 Bytes\n\nBlock size = 8 × 4 byte = 32 Byte\n\nTotal time taken to\n\nTransfer cache block =\n\n8 1 3 12 cycle Transmit 1 word Accept Fetch per cycle\n+\n+\n=\n\nBand width = 6 Total data 32Byte 1 12 cycle 12 60 10 = ×\n\n×\n\n⇒ 32Byte 12 560 × 6 10 sec ×\n\n= 160 × 106 bytes/sec",
-    "id": "pyq_79_826"
+    "id": "pyq_79_826",
+    "q_snippet": "snippets/q_pyq_79_826.webp",
+    "sol_snippet": "snippets/sol_pyq_79_826.webp"
   },
   {
     "num": 31,
@@ -14056,7 +15537,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.55",
     "answerKey": "4.72 to 4.72",
     "solution": "Tavg read instn fetch = H1T1 + (1 - H1)H2(T2 + T1)\n+ (1 -H1) (1 - H2) H3 (Tm + T2 + T1)\n\nInstn fetch = 0.8 × 2 + (1 - 0.8) 0.9 (8 + 2) + (1 - 0.8) (1 - 0.9) [90 + 8 + 2]\n\n⇒ 1.6 + (0.2)(0.9)10 + (0.2)(0.1)(100)\n\nTavgread instn fetch = 5.4 nsec\n\nTavgread operand fetch = H1T + (1 - H1)H2(T2 + T1)\n+(1 - H1) (1 - H2) H3 (Tm + T2 + T1)\n\n= 0.9 × 2 + ( 1 - 0.9) 0.9 (8 + 2) (0.1)(0.1) (90 + 8 + 2)\n\n= 1.8 + 0.9 + 1 = 3.7 nsec\n\nTavgread acceesstime = frequency of instn fetch × Tavgread instn fetch + frequency of operand fetch × Tavg operand fetch\n\n= 0.60 × 5.4 + - 0.40 × 3.7\n\nread access time avg T 4.72 nsec =\n\nComputer Organization and Architecture",
-    "id": "pyq_80_827"
+    "id": "pyq_80_827",
+    "q_snippet": "snippets/q_pyq_80_827.webp",
+    "sol_snippet": "snippets/sol_pyq_80_827.webp"
   },
   {
     "num": 32,
@@ -14073,7 +15556,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.56",
     "answerKey": "30 to 30",
     "solution": "Cache access time [tc] = 1msec\n\nDisk access time [td] = 10 msec\n\nCase I: When cache size is 10 MB that time miss rate 10.8.\n\nTavg = h × tc + *(1 - h) (tD + tC)\n\n⇒ 0.2 ×1 + (0.8) (10 +1) ⇒ 0.2 + 0.8 (11)\n\nTavg = 9 msec at 10 MB cache size\n\nCase II: When size is 20 MB that time miss rate = 0.6\n\nTavg = 0.4 × 1 + 0.6 [10 + 1]\n\n⇒ 0.4 + 0.6 [11] ⇒ 0.4 + 6.6\n\navg T 7msec = at 20 MB\n\nCase III: When cache size is 30 MB, that time miss rate = 0.4\n\nHit rate (h) = 1- 0.4 = 0.6\n\nTavg = h × tc + (1 - h) (tD + tc)\n\n⇒ 0.6 × 1 + (0.4) (10 + 1) ⇒ 0.6 + 0.4(11)\n\n⇒ 0.6 + 4.4\n\navg T 5msec = at 30 MB cache size\n\nCase IV: When size 40 MB, that time miss rate 0.35\n\nTavg = h × tc + (1 - h) (tD + tC)\n\n⇒ 0.65 (1) + (0.35) (10 + 1) ⇒ 0.65 + 0.35 (11)\n\n⇒ 0.65 + 3.85\n\navg T 4.5msec = at cache size 40 MB\n\nCase V: when cache size is 50 MB that time miss rate = 0.3\n\nTavg = h × tC + (1 - h) (tD + tC)\n\n⇒ 0.7 × 1 + (0.3) (10 + 1)\n\navg T 4msec =\n\nHence, the smallest cache size required to ensure an average read latency of less than 6 ms will be 30 MB.",
-    "id": "pyq_81_828"
+    "id": "pyq_81_828",
+    "q_snippet": "snippets/q_pyq_81_828.webp"
   },
   {
     "num": 33,
@@ -14090,7 +15574,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.56",
     "answerKey": "14 to 14",
     "solution": "Hit ratio = 80%\n\nCache read hit takes = 5 nsec\n\nRead miss = 50 nsec\n\nTavg = 0.80 × 5 + (1 - 0.80) × 50\n\n⇒ 4 + (0.20) 50\n\n⇒ = 4 + 10\n\navg T 14 nsec =",
-    "id": "pyq_82_829"
+    "id": "pyq_82_829",
+    "q_snippet": "snippets/q_pyq_82_829.webp"
   },
   {
     "num": 34,
@@ -14107,7 +15592,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.56",
     "answerKey": "1.68 to 1.68",
     "solution": "100 instruciton fetch operation + 60 memmory operand read + 40 memory operand write\n\nTotal # Instn/operatin = 200\n\n100 instruction fetch operation (memory read) and 60 memory read\n\nTotal memory read operation = 100 + 60 = 160\n\nRead: tC = 1 ns\n\nHit ratio = 0.9\n\nTreadmiss = 5 nsec\n\nTavgread = 0.9 × 1 + (0.1)(5)\n\n⇒ 0.9 + 0.5 = 1.4 nsec\n\nTotal time required to perform read operation = 160 × 1.4 = 224 nsec\n\n40 memory write operation\n\nWrite:\n\ntC = 2nsec\n\nHit ratio = 0.9\n\nTwirtemiss = 10 ns\n\nTavgwrite = 0.9 × 2 + 0.1 (10)\n\n⇒ 1.8 + 1\n\navgwrite T =\n\nMemory Hierarchy\n\nTotal time taken to perform write operation = 40 × 2.8\n\n= 112 nsec\n\nTotal time taken for 200 instructions = 224 + 112 = 336 nsec\n\nAverage memory access time = 336 1.68 nsec 200 =",
-    "id": "pyq_79_830"
+    "id": "pyq_79_830",
+    "q_snippet": "snippets/q_pyq_79_830.webp",
+    "sol_snippet": "snippets/sol_pyq_79_830.webp"
   },
   {
     "num": 35,
@@ -14124,7 +15611,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.57",
     "answerKey": "c",
     "solution": "Tag 16 bit =\n\nPhysical address = 32 bit\n\nCache size = 256 k byte\n\nBlock size = 32 byte\n\n4 way set associative [22]\n\nWord offset = [ log2 blog size] ⇒ [log2 32]\n\nWord offset = 5 bit\n\nNumber lines = CM size 256kB Block size 32B = 18 T 2 B 2 B =\n\n13 2 Lines =\n\nNumber set = 13 11 2 Number Lines 2 2 set N.way 2 = =\n\nS. O = 11 bit\n\nTAG 16bits =",
-    "id": "pyq_80_831"
+    "id": "pyq_80_831",
+    "q_snippet": "snippets/q_pyq_80_831.webp",
+    "sol_snippet": "snippets/sol_pyq_80_831.webp"
   },
   {
     "num": 36,
@@ -14141,7 +15630,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.57",
     "answerKey": "a",
     "solution": "Tag directory size = Number of of lines × tag entry in bits\n\n= 213 × [16 + 2 + 1+1] bits\n\n= 23 × 20 × 210 bits = 160 k bits",
-    "id": "pyq_81_832"
+    "id": "pyq_81_832",
+    "q_snippet": "snippets/q_pyq_81_832.webp",
+    "sol_snippet": "snippets/sol_pyq_81_832.webp"
   },
   {
     "num": 37,
@@ -14158,7 +15649,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.57",
     "answerKey": "d",
     "solution": "Physical address = 32 bit\n\n1 valid bit\n\nCache size = 8 kB\n\n1 modified bit\n\nBlock size = 32 byte\n\nWord offset = [log2 Block size] ⇒ [log232]\n\nWord offset 5 bit =\n\n# lines = 13 8 5 CM size 8kB 2 2 lines Block size 32byte 2 = = =\n\n#LINES 256 =\n\nLine offset [L.0] =[log2256]\n\nL.O 8 bit =\n\n(direct mapped cache)\n\nTAG ⇒ 32 - (8 + 5)\n\nTAG 19 bit =\n\nWrite back cache = Tag entry = 19 + 1 + 1 = 21 bits\n\nTag memory size = number of lines × Tag entry size\n\n⇒ 256 × 21 bit\n\nTAG memory size 5376 bit =",
-    "id": "pyq_82_833"
+    "id": "pyq_82_833",
+    "q_snippet": "snippets/q_pyq_82_833.webp",
+    "sol_snippet": "snippets/sol_pyq_82_833.webp"
   },
   {
     "num": 38,
@@ -14175,7 +15668,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.57",
     "answerKey": "c",
     "solution": "Computer Organization and Architecture\n\nTime taken to transfer L2 to L1 = time to read word from L2 + update or write/store in L1\n\n= 20 + 2 = 22 nsec",
-    "id": "pyq_79_834"
+    "id": "pyq_79_834",
+    "q_snippet": "snippets/q_pyq_79_834.webp",
+    "sol_snippet": "snippets/sol_pyq_79_834.webp"
   },
   {
     "num": 39,
@@ -14192,7 +15687,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.58",
     "answerKey": "c",
     "solution": "Time taken to transfer data from mm to L2 = Time to read word from mm + time to store or update write in L2.\n\n4[200 + 20] ⇒ 4 × 220 = 880 nsec\n\nTime taken to transfer data from L2 to L1 = time to read word form L2 + time to store or update / write word in L1\n\n= 20 + 2 = 22 nsec.\n\nTotal time to transfer data\n\n= 880 (mm to L2) + 22 (L2 to L1)\n\nFrom mm to L2 and L2 to L1 = 902 nsec.",
-    "id": "pyq_80_835"
+    "id": "pyq_80_835",
+    "q_snippet": "snippets/q_pyq_80_835.webp",
+    "sol_snippet": "snippets/sol_pyq_80_835.webp"
   },
   {
     "num": 40,
@@ -14209,7 +15706,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.58",
     "answerKey": "a",
     "solution": "1. L1 must be write through cache: not correct always\n\n(we can use write back cache)\n\n2. L2: not correct\n\n3. Not correct\n\n4. Correct : its necessary\n\n2 l L L ≥",
-    "id": "pyq_81_836"
+    "id": "pyq_81_836",
+    "q_snippet": "snippets/q_pyq_81_836.webp",
+    "sol_snippet": "snippets/sol_pyq_81_836.webp"
   },
   {
     "num": 41,
@@ -14226,7 +15725,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.58",
     "answerKey": "c",
     "solution": "IA4 IA3 Connect to decodes.\n\nIA4 IA3\n\n0 0 : x1 enabled\n\n0 1 : x2 enabled\n\n1 0 : x3 enabled\n\n1 1 : x4 enabled\n\n16 8 4 2 1\n\n24 23 22 21 20\n\nIA6 IA5 IA4 IA3 IA2 IA1 IA0\n\n0 0→ x1 enabled (0)\n\n0 1→ x2 enabled (8)\n\n1 0→ x3 enabled (16)\n\n1 1→ x4 enabled (24)",
-    "id": "pyq_82_837"
+    "id": "pyq_82_837",
+    "q_snippet": "snippets/q_pyq_82_837.webp"
   },
   {
     "num": 42,
@@ -14243,7 +15743,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.58",
     "answerKey": "59 to 60",
     "solution": "In chip total number of rows = 214\n\nTime to per form one refresh operation = 50 nsecs\n\nTotal time taken to refresh operation in all rows\n\n= 214 × 50 nsecs\n\n⇒ 24 × 210 × 50 = 819200nsec = 0.8192 msec.\n\nRefresh period = 2 msec\n\n= 0.8192 msec\n\nPercentage of time spend in refersh operation = 40.96% 2 =\n\nPercentage of time available for read write operation\n\n=100 - 40.96 = 59.04%\n\nAlternate method\n\nTotal time taken for refresh operation = 0.8192 msec\n\nMemory Hierarchy\n\nRefresh period = 2 msec\n\nTime available for read/write operationi = 2 - 0.8192 ⇒ 1.1808 msec\n\n%time available for read/write operation = 59.04% 2 =",
-    "id": "pyq_79_838"
+    "id": "pyq_79_838",
+    "q_snippet": "snippets/q_pyq_79_838.webp",
+    "sol_snippet": "snippets/sol_pyq_79_838.webp"
   },
   {
     "num": 43,
@@ -14260,7 +15762,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.59",
     "answerKey": "31 to 31",
     "solution": "Main memory size = 4 GB [232 byte]\n\n1 word size = 2 Byte\n\nMemory is word addressable\n\n1 word 2Byte =\n\n4 G Byte → 4 G Byte Word 2 G word 2 Byte →\n\nWord addressable\n\nMm size = 2G word\n\n⇒ 21230 word = 231 words\n\nAddress bus size 31 Bit =",
-    "id": "pyq_80_839"
+    "id": "pyq_80_839",
+    "q_snippet": "snippets/q_pyq_80_839.webp",
+    "sol_snippet": "snippets/sol_pyq_80_839.webp"
   },
   {
     "num": 44,
@@ -14277,7 +15781,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.59",
     "answerKey": "10000 to 10000",
     "solution": "Starting 0 to 100 ns ⇒ data is available in bus for module 0\n\n0 to 100 ⇒ module 0 ⇒ 100 ns + 500 = 600 nsec\n\n100 to 200 ⇒ module 1 ⇒ 200 ns + 500 = 700 nsec\n\n200 to 300 ⇒ module 2 ⇒ 300 ns + 500 = 800 nsec\n\n300 to 400 ⇒ module 3 ⇒ 400 ns + 500 = 900 nsec\n\n400 to 500 ⇒ module 4 ⇒ 500 ns + 500 = 1000 nsec\n\n500 to 600 ⇒ module 5 ⇒ 600 ns + 500 = 1100 nsec\n\n600 to 700 ⇒ module 6 ⇒ 700 ns + 500 = 1200 nsec\n\n700 to 800 ⇒ module 7 ⇒ 800 ns + 500 = 1300 nsec\n\nIn every 100 ns, initiate 1 word data to the bus.\n\n⇒ bus→ initate one request (1 word request)\n\nFor 1 milli second number of words we can initate\n\n⇒\n-3\n4\n-9\n1 millisec 10 10 100 nsec 100 10 = = × = 10,000",
-    "id": "pyq_81_840"
+    "id": "pyq_81_840",
+    "q_snippet": "snippets/q_pyq_81_840.webp",
+    "sol_snippet": "snippets/sol_pyq_81_840.webp"
   },
   {
     "num": 45,
@@ -14294,7 +15800,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.59",
     "answerKey": "b",
     "solution": "RAM CHIP size = 1 k × 8 (1024 word, 8 bit)\n\nWants to contruct RAM of size = 16 k × 16\n\nNumber of RAM chip requried = 16 k 16 × 1k×8\n\n⇒ 16 × 2 RAM chip ⇒ 16 lines\n\nDecoder (4 × 16) required\n\nAsking how many 2 × 4 decodes required\n\nTotal 2 × 4 decodes is = 4 + 1 = 5\n\nComputer Organization and Architecture",
-    "id": "pyq_82_841"
+    "id": "pyq_82_841",
+    "q_snippet": "snippets/q_pyq_82_841.webp",
+    "sol_snippet": "snippets/sol_pyq_82_841.webp"
   },
   {
     "num": 46,
@@ -14311,7 +15819,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.60",
     "answerKey": "b",
     "solution": "Mm capacity = 4m byte\n\n1DRAM size = 1 m × 1 bit\n\nNumber of RAM chip = 4 m Byte 4 m 8bit 1m 1bit 1m 1bit × × = × ×\n\n= 32 RAM chip\n\nNote: Dram chip one refresh ⇒ one row is refresh (one row cells)\n\nTotal number of rows = 210\n\nIn 1 chip, total number of refresh required = 210 refresh operations\n\n1 refresh operation takes = 100 nsec.\n\n1 Chip refresh time = 210 × 100 nsec\n\nNote: all ram chip are refresh in parallel\n\nTotal refersh time = 10 2 100nsec ×",
-    "id": "pyq_79_842"
+    "id": "pyq_79_842",
+    "q_snippet": "snippets/q_pyq_79_842.webp"
   },
   {
     "num": 47,
@@ -14328,7 +15837,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.60",
     "answerKey": "c",
     "solution": "Memory capcity = 256 k Byte\n\nEach ram chip size = 32 k × 1 bit\n\nNumer of ram chip required = MM size RAM chip size\n\n= 256 k Byte 32k 1bit × = 8256 k 8 × 8 Bit 32k 1 bit × 64 =",
-    "id": "pyq_80_843"
+    "id": "pyq_80_843",
+    "q_snippet": "snippets/q_pyq_80_843.webp",
+    "sol_snippet": "snippets/sol_pyq_80_843.webp"
   },
   {
     "num": 1,
@@ -14345,7 +15856,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.64",
     "answerKey": "a",
     "solution": "2. (80000 to 80000)",
-    "id": "pyq_83_844"
+    "id": "pyq_83_844",
+    "q_snippet": "snippets/q_pyq_83_844.webp",
+    "sol_snippet": "snippets/sol_pyq_83_844.webp"
   },
   {
     "num": 2,
@@ -14362,7 +15875,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.64",
     "answerKey": "80000 to 80000",
     "solution": "Clock frequency = 2 MHz\n\nCycle time = 1 sec sec 2MHz = μ\n\n1 cycle time = 6\n1 10\nsec 2 − ×\n\nIn one second total number of CPU cycle = 2 × 106 cycle\n\n0.5 % of the CPU cycle are used to data transfer by the DMA = 0.5% × 2 × 106 =\n\n6\n2 10\n10000 cycle 100 ×× =\n\nTotal number of cycle taken by the DMA for data transfer = 10, 000 cycle\n\nIn 1 cycle - 8 bit data transfer\n\nIn 10,000 cycle = 10000 × 8 = 80000\n\nData transfer rate = 80000 OR\n\nCPU cycles can be completed in ½ * 106 seconds.\n\nTherefore, there will be 2 * 106 cycles in a second plus an additional 10,000 DMA cycles, or 0.5%, at which time 8 bits are transmitted.\n\nThus, 80,000 bits will be sent in total in one second.",
-    "id": "pyq_84_845"
+    "id": "pyq_84_845",
+    "q_snippet": "snippets/q_pyq_84_845.webp",
+    "sol_snippet": "snippets/sol_pyq_84_845.webp"
   },
   {
     "num": 3,
@@ -14379,7 +15894,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.64",
     "answerKey": "c",
     "solution": "I Daisy Channing: true\n\nII false\n\nIII true\n\nIV false\n\nAt a time either CPU or DMA can be master on bus.\n\nI/O Interface",
-    "id": "pyq_83_846"
+    "id": "pyq_83_846",
+    "q_snippet": "snippets/q_pyq_83_846.webp",
+    "sol_snippet": "snippets/sol_pyq_83_846.webp"
   },
   {
     "num": 4,
@@ -14396,7 +15913,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.65",
     "answerKey": "456 to 456",
     "solution": "Data count register = 16 bit\n\nCount value : How many number of byte/word transferred by the DMA from input output (I/O) to memory in one cycle\n\nTotal count value = 216 - 1\n\nIn one time. Total # byte transferred\n\n= 216 - 1 = 65,535 Byte\n\nTotal # byte to be transferred = 29, 154 Byte\n\nNumber of time DMA needs the control on system bus\n\n29,154 1024 Byte 456 65,535 Byte × = =",
-    "id": "pyq_84_847"
+    "id": "pyq_84_847",
+    "q_snippet": "snippets/q_pyq_84_847.webp"
   },
   {
     "num": 5,
@@ -14413,7 +15931,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.65",
     "answerKey": "a",
     "solution": "Initialize the address register → 1 cycle\n\nInitialize the count to 500 → 1 cycle\n\nLOOP7: Load a byte from device → 2 cycle\n\nStore in memory at address given by address register → 2 cycle\n\nIncrement the address register → 1 cycle\n\nDecrement the court → 1 cycle\n\nIf count! = 0 go to LOOP → 1 cycle\n\nIn each one interation of loop takes\n\n= 2+ 2 + 1 + 1 +1 = 7 Cycle\n\nLoop execute = 500 times (Iteration)\n\nTotal time taken in 500 interatin = 500 × 7 = 3500 Cycle\n\nTotal time in ISR = 3500 + 2 = 3502 Cycle\n\n500 Byte transfer using DMA\n\nIn DMA transfer Tim = 20 + 2 × 500 = 1020 Cycle\n\nSpeed up = 3502 1020 =",
-    "id": "pyq_83_848"
+    "id": "pyq_83_848",
+    "q_snippet": "snippets/q_pyq_83_848.webp",
+    "sol_snippet": "snippets/sol_pyq_83_848.webp"
   },
   {
     "num": 6,
@@ -14430,7 +15950,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.65",
     "answerKey": "10.2 to 10.2",
     "solution": "1 key stroke per second,\n\nEach polling takes = 100μsec.\n\nAfter every 10 m sec polling is done.\n\nIf key is press then additional = 200 μsec\n\nIn every 10 × 10-3 sec →1 poll.\n\nIn 1 sec → 3 1 10 10− × ⇒ 10+2 = 100 poll in one second.\n\nEach poll takes = 100μsec\n\nTotal 100 poll takes = 100 × 100 = 10000μsec = 10 msec.\n\nIf key stroke is pressed then addition = 200μsec\n\nTotal time for polling and processing pressing key stroke = 10.000 + 200 = 10,200μsec = 10.2msec\n\nT1 in 1 sec -- 10.2 msec.\n\n1 T 1000 =\n\nT2 Alternative approach: Interrupt\n\nTotal time taken to servicing interrupt = 1msec.\n\nand processing key stroke.\n\n2 1 T 1000 =\n\n(In 1 sec = 1000 msec)\n\n= 1000 × 10-3 = 1 sec\n\n1 2 T 1000 T 1000 1 = × =\n\nComputer Organization and Architecture",
-    "id": "pyq_84_849"
+    "id": "pyq_84_849",
+    "q_snippet": "snippets/q_pyq_84_849.webp",
+    "sol_snippet": "snippets/sol_pyq_84_849.webp"
   },
   {
     "num": 7,
@@ -14447,7 +15969,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.66",
     "answerKey": "6.1 to 6.2",
     "solution": "Average disk access time or average read/write time\n\n= Average S.T + Average R.T + D.T.T + overhead (if any given)\n\n15000 RPM\n\n15000 rotation in 60 sec\n\nIn 1 rotation =\n2 60\n15000 500 1 250 = 1000 sec ×1000\n\n1 rotation time = 4 m sec\n\n1 Average rotational Latency RT 2msec 2 = × =\n\nAverage S.T = 2 × average R.T\n\n⇒ 2 × 2 = 4msec\n\nAverage S.T 4msec =\n\nTransfer rate = 50 × 106 Byte/second\n\n50 × 106 Byte …..1second\n\n1 byte ……… 6 1 sec 50 10 ×\n\n512 Byte _____\n-6\n512 10 50 ×\n\n⇒ 10.24 × 10-6\n\n0.01024 msec\n\nD.T.T 0.0102 msec =\n\nControl time = 10 × 0.01024 msec.\n\n= 0.1024 m sec.\n\nD.A.T. = 4 + 2 + 0.01024 + 0.1024\n\nD.A.T = 6.11 msec\n\n6.1 m sec",
-    "id": "pyq_83_850"
+    "id": "pyq_83_850",
+    "q_snippet": "snippets/q_pyq_83_850.webp"
   },
   {
     "num": 8,
@@ -14464,7 +15987,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.66",
     "answerKey": "14020 to 14020",
     "solution": "Time required to read one sector = seek time + average R.T + Data transfer time\n\nSeek time (S.T) = 4 msec\n\n600 sector /track each sector capcity = 512 Byte\n\n10000 rpm\n\n10000 rotation in 60 second\n\n1 rotation ….. 60 10000\n\n⇒ 6 × 10-3 sec\n\n1 rotation takes = 6 msec\n\nAverage roational latency = 1 6 2 ×\n\nAverage Rotational latency = 3 msec\n\n1 Track capacity = 600 × 512 Byte\n\nIn 1 Rotational 1 complete track\n\n600 × 512 Byte takes _______6msec\n\n1 Byte → 6 msec 600 512 ×\n\n512 Byte (1 sector) → 512 6 1 msec 600 12 100 × = ×\n\nD.T.T = 0.01 msec\n\nTotal time required for 1 sector\n\n= 4 + 3 + 0.01 = 7.01 msec\n\nTotal time requird for 2000 sector = 2000 × 7.01\n\n= 14020 msec",
-    "id": "pyq_84_851"
+    "id": "pyq_84_851",
+    "q_snippet": "snippets/q_pyq_84_851.webp",
+    "sol_snippet": "snippets/sol_pyq_84_851.webp"
   },
   {
     "num": 9,
@@ -14481,7 +16006,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.66",
     "answerKey": "d",
     "solution": "<c, h, s > <1200, 9, 40 >\n\n16 Recording surface, 64 sector\n\nStarting sector = <c, h, s >\n\nNumber of the file = <1200, 9, 40>\n\n⇒ 1200 × 16 × 64 + 9 × 64 + 40 = 1229416\n\nStarting (first) sector number of the file = 1229416\n\n16384 cylinder\n\nI/O Interface\n\nFile size = 42,797 kB & each sector capacity = 512 byte.\n\nTotal number of sector needed (Required) to store the file = 42797 KB 512 Byte = 85594 Sector\n\nRange [o to 85593]\n\nStarting (first) sector Address of the file = 1229416\n\nLast sector number of the file = 1229416 + 85594 - 1 = 1315009\n\nLast Sector number = 1315009\n\n<c, h, s >\n\nCylinder number =1315009 64 6 = ×\n\n1284 cyclinder number\n\nNumber of sectors covered = 1284 × 16 × 64\n\n= 1314816 sectors.\n\nRemaining sector = 1315009 - 1314816 = 193 sector\n\nSurface Number = 193 3 64 =\n\n64 sector per surface 16 Recording surface\n\nc, h , s\n\n16 64\n\n⇓ ⇓\n\nOR\n\nAlternative Approach\n\nNumber of sector required = 85594\n\nNeed to cross = 85594 sector\n\nNumber of cylinders required to cross = 85594 16 64 ×\n\n= 83 cylinder.\n\nIn 83 cylinder the number of sector = 83×16 ×64\n\n= 84992\n\nNumber of sector remaining = 85594 - 84992\n\n= 602 sector\n\nSurface number = 602 64 = 9 Surface.\n\n(1 more cylinder required)\n\nNumber of cylinder = 83 + 1 = 84\n\nStarting = 1200 + 84 = 1284",
-    "id": "pyq_83_852"
+    "id": "pyq_83_852",
+    "q_snippet": "snippets/q_pyq_83_852.webp",
+    "sol_snippet": "snippets/sol_pyq_83_852.webp"
   },
   {
     "num": 10,
@@ -14498,7 +16025,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.67",
     "answerKey": "b",
     "solution": "Total 100 libraries\n\nSeek time = 10 msec\n\nD.T.T (neglected)\n\nRotational speed = 6000 rpm\n\nAverage disk access time = S.T + Average R.T + D.T.T\n\nAverage R.T = 1 2 × rotational time\n\n6000 rotation in 60 second\n\n⇒ 60 1Rotation 10 msec 6000 = =\n\nAverage R.T = 1 2 × 10 msec = 5 msec\n\nTotal time 1 library access = S.T + R.L + D.T.T\n\n⇒ 10 + 5 = 15 msec\n\nTotal tme taken for 100 libraries = 100 × 15 msec\n\n= 100 × 5 × 10-3 m sec = 1.5 second\n\nComputer Organization and Architecture",
-    "id": "pyq_84_853"
+    "id": "pyq_84_853",
+    "q_snippet": "snippets/q_pyq_84_853.webp",
+    "sol_snippet": "snippets/sol_pyq_84_853.webp"
   },
   {
     "num": 11,
@@ -14515,7 +16044,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.68",
     "answerKey": "c",
     "solution": "63 Sector per track\n\n10 platter: 2 recording surface\n\neach\n\n1000 cylinder\n\n< c, h, s>\n\n<400, 16, 29>\n\n400 cylinder = 400 [10 ×2 × 63]\n\n16 surface = 16 × 63\n\n29 sector = 29\n\nSector Number = 400 [10 ×2 × 63] + 16 × 63 + 29\n\n= 400 × [1260] + 16 × 63 + 29\n\n= 504000 + 1008 + 29 = 505037\n\nAlternate approach:\n\nBy formula: <c, h, s> <400, 16, 29>\n\nSt: number of sector per track = 63\n\ntc: number of track per cylinder = 2×10 = 20\n\nSector Numebr = s + st × h + st × tc × c\n\n⇒ S + St (h + tc × c)\n\n⇒ 29 + 63 [16 + 20 × 400]\n\n= 29 + 63 × 16 + 63 × 20 × 400 = 505037",
-    "id": "pyq_83_854"
+    "id": "pyq_83_854",
+    "q_snippet": "snippets/q_pyq_83_854.webp"
   },
   {
     "num": 12,
@@ -14532,7 +16062,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.68",
     "answerKey": "c",
     "solution": "63 sector per track\n\n1 cylinder = 10 × 2 × 63 = 1260\n\n(a) < 0, 15, 31> ⇒ 15 × 63 + 31 = 945 + 31 = 976\n\n(b) < 0, 16, 30> ⇒ 16 × 63 + 30 = 1008 + 30 = 1038\n\n(c) < 0, 16, 31> ⇒ 16 × 63 + 31 = 1008 + 31 = 1039\n\n(d) < 0, 17, 31> ⇒ 17 × 63 + 31 = 1071 + 31 = 1102",
-    "id": "pyq_84_855"
+    "id": "pyq_84_855",
+    "q_snippet": "snippets/q_pyq_84_855.webp",
+    "sol_snippet": "snippets/sol_pyq_84_855.webp"
   },
   {
     "num": 13,
@@ -14549,7 +16081,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "4.68",
     "answerKey": "b",
     "solution": "Every time the head changes tracks, its speed and direction change, which is just a change in motion or the result of inertia.\n\nHence option (b) is correct.",
-    "id": "pyq_83_856"
+    "id": "pyq_83_856",
+    "q_snippet": "snippets/q_pyq_83_856.webp",
+    "sol_snippet": "snippets/sol_pyq_83_856.webp"
   },
   {
     "num": 1,
@@ -14566,7 +16100,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.4",
     "answerKey": "a",
     "solution": "Arity (Degree): Number of Attributes/fields\n\nCardinality: Number of Tuples/Records",
-    "id": "pyq_85_857"
+    "id": "pyq_85_857",
+    "q_snippet": "snippets/q_pyq_85_857.webp",
+    "sol_snippet": "snippets/sol_pyq_85_857.webp"
   },
   {
     "num": 2,
@@ -14583,7 +16119,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.4",
     "answerKey": "19 to 19",
     "solution": "In order for Student Name, Student Age to be the key, it must be unique, therefore the value of X ≠ 19 satisfies the criteria of Student Name, Student Age being the key.\n\nHence, 19 is the answer.",
-    "id": "pyq_86_858"
+    "id": "pyq_86_858",
+    "q_snippet": "snippets/q_pyq_86_858.webp",
+    "sol_snippet": "snippets/sol_pyq_86_858.webp"
   },
   {
     "num": 3,
@@ -14600,7 +16138,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.4",
     "answerKey": "b",
     "solution": "Prime attribute is a attribute that is present in some candidate key of a relation.\n\nExample: Consider for relation R(ABCDE) if the candidate keys are AC, and BC, then the set of prime attributes are {A, B, C}.",
-    "id": "pyq_87_859"
+    "id": "pyq_87_859",
+    "q_snippet": "snippets/q_pyq_87_859.webp",
+    "sol_snippet": "snippets/sol_pyq_87_859.webp"
   },
   {
     "num": 4,
@@ -14617,7 +16157,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.4",
     "answerKey": "a",
     "solution": "(a) BankAccount_Num is a candidate key: Incorrect.\n\nBecause a student can have multiple account and joint account.\n\nExample\n\nAssume 2 person Ramesh and Suresh have joint account they both have some account number in a primary account number. So, Bank account number can not uniquely determine and Bank account cannot be candidate key.\n\n(b) Registration number can be primary key: True.\nBecause registration number is a unique for each registered student\n\nSo, it can be uniquely determining each tuple of relation.\n\n(c) UID is a candidate if all student is from same\ncountry: correct.\n\nBecause UID is unique at National level\n\nExample\n\nIndian Aadhar card is unique for each person in India.\n\n(d) If S is a super key, then S ∪ UID is also super\nkey: correct\n\nBecause any super set of super keys is also super key.\n\nDatabase Design and ER Model",
-    "id": "pyq_85_860"
+    "id": "pyq_85_860",
+    "q_snippet": "snippets/q_pyq_85_860.webp",
+    "sol_snippet": "snippets/sol_pyq_85_860.webp"
   },
   {
     "num": 5,
@@ -14634,7 +16176,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.5",
     "answerKey": "d",
     "solution": "• A relation scheme can have zero or more foreign key. • A foreign key in a relation scheme R can be used to refer to tuples of R.",
-    "id": "pyq_86_861"
+    "id": "pyq_86_861",
+    "q_snippet": "snippets/q_pyq_86_861.webp"
   },
   {
     "num": 6,
@@ -14651,7 +16194,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.5",
     "answerKey": "0 to 0",
     "solution": "On delete cascade: Whenever primary key is deleted from referenced (parent) table then that related value (Tuple/Row) (that primary key value) from referencing (CHILD table) has to be deleted.\n\nOn delete set NULL: Whenever primary key is deleted from reference (parent) table then that related value (Tuple/Row) in referencing [CHILD table (which contain foreign key)] is set to NULL.\n\nBy default foreign key references to the primary key of referenced relation.",
-    "id": "pyq_87_862"
+    "id": "pyq_87_862",
+    "q_snippet": "snippets/q_pyq_87_862.webp",
+    "sol_snippet": "snippets/sol_pyq_87_862.webp"
   },
   {
     "num": 7,
@@ -14668,7 +16213,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.5",
     "answerKey": "d",
     "solution": "• Statement S1 is false as a foreign key declaration cannot be replaced by check assertion in SQL, because foreign key may have duplicate and Null values and having ON DELETE cascade operation then if any primary key deleted from referential relation then the referential integrity constraint may not be maintained. • Statement S2: R(a b c)\n\nHere ab is primary key\n\nS(a d e)\n\nPrimary key : d, foreign key a references R, foreign key reference to the primary key of referenced relation R. But in referenced relation ab is primary key, only a is not a primary key so here foreign key 'a' not references key (ab) of referenced relation R. therefore S2 is false.\n\nDatabase Management System",
-    "id": "pyq_85_863"
+    "id": "pyq_85_863",
+    "q_snippet": "snippets/q_pyq_85_863.webp",
+    "sol_snippet": "snippets/sol_pyq_85_863.webp"
   },
   {
     "num": 8,
@@ -14685,7 +16232,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.6",
     "answerKey": "a",
     "solution": "The relationship between strong entity set and weak entity set is represented by double/bold diamond.",
-    "id": "pyq_86_864"
+    "id": "pyq_86_864",
+    "q_snippet": "snippets/q_pyq_86_864.webp"
   },
   {
     "num": 9,
@@ -14702,7 +16250,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.6",
     "answerKey": "a",
     "solution": "Cardinality of E1 > Cardinality of E2\n\n(a) Correct. Every entity of E1 is associated with\nexactly one entity in E2.\n\n(Θ its total participation and many to one from E1 to E2).\n\n(b) Incorrect. Because mention some entity in E1\nbut here total participation and mention more than one entity in E2 but here many to one (of E2 side).\n\n(c) Incorrect. Because there is a many to one from\nE1 to E2, not from E2 to E1.\n\n(d) Incorrect. Because there is a many to one from\nE1 to E2.",
-    "id": "pyq_87_865"
+    "id": "pyq_87_865",
+    "q_snippet": "snippets/q_pyq_87_865.webp",
+    "sol_snippet": "snippets/sol_pyq_87_865.webp"
   },
   {
     "num": 10,
@@ -14719,7 +16269,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.6",
     "answerKey": "c",
     "solution": "Relationship R is many to one and participation of A in R is total.",
-    "id": "pyq_85_866"
+    "id": "pyq_85_866",
+    "q_snippet": "snippets/q_pyq_85_866.webp"
   },
   {
     "num": 11,
@@ -14736,7 +16287,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.6",
     "answerKey": "4 to 4",
     "solution": "R12 is many to many relationships between E1 and E2. So, separate table is created\n\nE1 (a11 a12) E2 (a21 a22) R12 (a11 a21)\n\na11 → a12 a21 → a22\n\nE3 R13(a31 a32 a11) a31 → a32a11\n\n3NF (Third normal form): Let R be the relational schema and X → Y is non trivial FD is in 3NF\n\nIf X: super key\n\nor\n\nY: prime attribute\n\nE1 (a11 a12) a11 → a12\n\nE2 (a21 a22) a21 → a22\n\nDatabase Design and ER Model\n\nR12 (a11a21)\n\nE3R13 (a31 a32 a11)a31 → a32a11\n\nX is a super key\n\nSo, R is in 3NF\n\nMinimum 4 table required",
-    "id": "pyq_86_867"
+    "id": "pyq_86_867",
+    "q_snippet": "snippets/q_pyq_86_867.webp",
+    "sol_snippet": "snippets/sol_pyq_86_867.webp"
   },
   {
     "num": 12,
@@ -14753,7 +16306,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.7",
     "answerKey": "c",
     "solution": "(a) Statement given is correct with respect to ER\ndiagram.\n\n(b) Statement given is correct with respect to ER\ndiagram.\n\n(c) In ER diagram multivalued attribute and\ncomposite attribute both are allowed, but in RDBMS Multivalued attribute and composite attribute are not allowed.\n\nEach Tuple in RDBMS can have only one value or NULL for each field (Attribute exactly)\n\nSo, option (c) is incorrect.",
-    "id": "pyq_87_868"
+    "id": "pyq_87_868",
+    "q_snippet": "snippets/q_pyq_87_868.webp",
+    "sol_snippet": "snippets/sol_pyq_87_868.webp"
   },
   {
     "num": 13,
@@ -14770,7 +16325,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.7",
     "answerKey": "b",
     "solution": "MR1P ⇒ many to one and total participation at many side\n\nMR1(M1M2 M3P1) , here P1 is a foreign key\n\nP(P1 P2)\n\nNR2(N1N2 P1) , here P1 is a foreign key",
-    "id": "pyq_85_869"
+    "id": "pyq_85_869",
+    "q_snippet": "snippets/q_pyq_85_869.webp"
   },
   {
     "num": 14,
@@ -14787,7 +16343,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.7",
     "answerKey": "a",
     "solution": "MR1(M1 M2 M3 P1), here P1 is a foreign key\n\nP(P1 P2), P1 is primary key\n\nNR2(N1N2P1), here P1 is a foreign key",
-    "id": "pyq_86_870"
+    "id": "pyq_86_870",
+    "q_snippet": "snippets/q_pyq_86_870.webp",
+    "sol_snippet": "snippets/sol_pyq_86_870.webp"
   },
   {
     "num": 1,
@@ -14804,7 +16362,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.12",
     "answerKey": "8 to 8",
     "solution": "Given Relation R(ABCDE) having following FD\nsets: {AB → C, BC→ D, C→ E}\n\n[AB]+ = {A, B, C, D, E}\n\n[A]+ = {A}\n\n[B]+ = {B}\n\nThe proper subset of \"AB\" is not determining all attributes. Thus, AB is minimal set of attributes which determines all attributes. So, AB is candidate key.\n\nNow, R (A, B, C, D, E)\n\nCandidate key = AB\n\nAny combination of non-prime attribute with the candidate key will yield super key:\n\nAB combined with {Φ, C, D, E, CD, DE, CE, CDE}\n\nTotal Number of super keys with combinations with the remaining (n - 2) attributes (where n is the number of Attributes)\n\n= 25 - 2 ⇒ 23\n\n⇒ 8 Super keys for the relation R that is{AB, ABC,\nABD, ABE, ABCD, ABDE, ABCE, ABCDE}",
-    "id": "pyq_94_871"
+    "id": "pyq_94_871",
+    "q_snippet": "snippets/q_pyq_94_871.webp",
+    "sol_snippet": "snippets/sol_pyq_94_871.webp"
   },
   {
     "num": 2,
@@ -14821,7 +16381,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.12",
     "answerKey": "b",
     "solution": "Method 1:\n\nSuper key: Any super set of candidate key (primary key) is super key.\n\nGiven that \"VY\" is primary key so, any super set of \"VY\" will be a super key:\n\n(a) vxyz\n\n(b) vwxz (y is not present) ∴ not super key\n\n(c) vwxy\n\n(d) vwxyz\n\nSo, vwxz is not a super key.\n\nMethod 2:\n\nAttributes = V, W, X, Y, Z\n\nPrimary key = VY\n\nTotal super key = 23 = 8\n\n= {VY, VYX, VYW, VYZ, VYXW, VYXZ,\nVYWZ, VYWXZ}\n\nVWXZ is not a super key\n\nHence, option b is correct.\n\nFunctional Dependency and Normalization",
-    "id": "pyq_95_872"
+    "id": "pyq_95_872",
+    "q_snippet": "snippets/q_pyq_95_872.webp",
+    "sol_snippet": "snippets/sol_pyq_95_872.webp"
   },
   {
     "num": 3,
@@ -14838,7 +16400,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.13",
     "answerKey": "8 to 8",
     "solution": "Super key:\n\nAny super set of candidate key is a super key.\n\nR(EFGH)\n\nCandidate Key = [E]\n\nNumber of super keys = 2n-1 (n is number of attributes)\n\n= 24 - 1 = 23\n\n= 8 super keys OR\n\nR(EFGH)\n\n23 = 8 super keys.\n\nThe super keys of R(EFGH)-\n\nE, EF, EG, EH, EFG, EGH, EFH, EFGH}",
-    "id": "pyq_96_873"
+    "id": "pyq_96_873",
+    "q_snippet": "snippets/q_pyq_96_873.webp"
   },
   {
     "num": 4,
@@ -14855,7 +16418,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.13",
     "answerKey": "b",
     "solution": "Relation R(EFGHIJKLMN)\n\n{EF → G, F → IJ, EH → KL, K → M, L → N}\n\n(a) [EF]+ = {EFGIJ}\n\n(b) [E]+ = {E}\n\n(c) [EFH]+ = {EFGHIJKLMN};\n\nSince, (EFH)+ contains all the attributes of R, EFH is the key for R.",
-    "id": "pyq_94_874"
+    "id": "pyq_94_874",
+    "q_snippet": "snippets/q_pyq_94_874.webp",
+    "sol_snippet": "snippets/sol_pyq_94_874.webp"
   },
   {
     "num": 5,
@@ -14872,7 +16437,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.13",
     "answerKey": "b",
     "solution": "Given FD set:\n\n{CH → G, A → B, A → C, B → C, B → F,\n\nB → H, E → A, F → E, F → G}.\n\n[A]+ = [ABCEFGH]\n\nD is not present in FD set, whenever any attribute not present in FD then add that attribute in a candidate key.\n\n[AD]+ = {ABCDEFGH}\n\n[ED]+ = {ABCDEFGH}\n\n[FD]+ = {ABCDEFGH}\n\n[BD]+ = {ABCDEFGH}\n\nCandidate keys = [AD, ED, FD, BD]\n\nHence, 4 Candidate keys for the relation R.",
-    "id": "pyq_95_875"
+    "id": "pyq_95_875",
+    "q_snippet": "snippets/q_pyq_95_875.webp",
+    "sol_snippet": "snippets/sol_pyq_95_875.webp"
   },
   {
     "num": 6,
@@ -14889,7 +16456,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.13",
     "answerKey": "a, c, d",
     "solution": "Given relation: U(P, Q, R, S, T)\n\nGiven FD set: {P → QR, RS → T}\n\n(a) (PS)+ = {PQRST}; PS → T can be inferred.\n\n(b) (R)+ = {R}; R → T cannot be inferred.\n\n(c) (P)+ = {PQR};P → R can be inferred.\n\n(d) (PS)+ = {PQRST}; PS → Q can be inferred.",
-    "id": "pyq_96_876"
+    "id": "pyq_96_876",
+    "q_snippet": "snippets/q_pyq_96_876.webp",
+    "sol_snippet": "snippets/sol_pyq_96_876.webp"
   },
   {
     "num": 7,
@@ -14906,7 +16475,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.13",
     "answerKey": "c",
     "solution": "X → Y is trivial functional dependency if and only if, X ⊇ Y\n\nPS → S\n\nPS ⊇ S; So, it is a trivial FD.\n\nOption b is a semi-trivial FD. Hence, it is incorrect.\n\nDatabase Management System",
-    "id": "pyq_94_877"
+    "id": "pyq_94_877",
+    "q_snippet": "snippets/q_pyq_94_877.webp",
+    "sol_snippet": "snippets/sol_pyq_94_877.webp"
   },
   {
     "num": 8,
@@ -14923,7 +16494,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.14",
     "answerKey": "a",
     "solution": "Given FDs are as follows:\n\nV → W, VW →X, Y→ VX, Y → Z\n\nStep 1: Split the FD such that R.H.S contain single attribute.\n\nV → W, VW → X, Y → V, Y → X, Y → Z\n\nStep 2: Find the redundant (extraneous) attribute from L.H.S of FD and delete them.\n\nVW → X, [W]+ = {W}; V is not extraneous.\n\nNOTE: The attribute V will be extraneous if [W]+ contain V. So, [V]+ = {VW…}; W is extraneous attribute. Thus, W is extraneous as [V]+ contain W\n\nV → W, V → X, Y → V, Y → X, Y → Z\n\nStep 3: Find the redundant FD and delete them from FD set.\n\nNOTE: A functional dependency in the set is redundant if it can be derived from the other functional dependencies in the set. • Y → X is redundant as it can be derived from Y → V and V → X.\n\nHence, the minimal cover is:\n\nV W V X Y V Y Z → → → →",
-    "id": "pyq_95_878"
+    "id": "pyq_95_878",
+    "q_snippet": "snippets/q_pyq_95_878.webp"
   },
   {
     "num": 9,
@@ -14940,7 +16512,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.14",
     "answerKey": "a",
     "solution": "F: [PQ → X, P → XY, Q → Y, Y → ZW]\n\nD1: R1(PQST) R2 (PTX) R3 (QY) R4 (YZW)\n\nR1: (PQST) ∩ R2 (PTX) = PT\n\n[PT]+ = [PTXY…] super key of R2\n\nR12 (PQSTX) ∩ R3 (QY) = Q\n\n[Q]+ = [QY…..] Super key of R3\n\nR123 (PQSTXY) ∩ R4 (YZW) = Y\n\n[Y]+ = [YZW] Super key of R4\n\nR1234 (PQSTXYZW)\n\nD1 is lossless decomposition\n\nD1: Lossless Decomposition\n\nR (PQSTXYZW)\n\nF: [PQ → X, P → YX, Q → Y, Y → ZW]\n\nR1(PQS) R2(TX) R3(QY) R4(YZW)\n\nR3(QY) ∩ R4(YZW) ⇒Y\n\nR34(QYZW)\n\n[Y]+ = [YZW] Super key of R4\n\nR1(PQS) ∩ R34(QYZW) ⇒Q\n\n[Q]+ = [QYZW…..] Super key of R34\n\nBut in R134 (PQSYZW) ∩ R2 (TX)-\n\nNo Common Attribute is present.\n\nD2 is a lossy decomposition.\n\nNo Common Attribute\n\nD2: Lossy Decomposition\n\nFunctional Dependency and Normalization",
-    "id": "pyq_96_879"
+    "id": "pyq_96_879",
+    "q_snippet": "snippets/q_pyq_96_879.webp",
+    "sol_snippet": "snippets/sol_pyq_96_879.webp"
   },
   {
     "num": 10,
@@ -14957,7 +16531,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.15",
     "answerKey": "c",
     "solution": "I: INCORRECT\n\nX (PQRS) [QR → S, R → P, S → Q]\n\n[QR]+ = [QRSP]\n\nQR is Candidate key\n\nS → Q\n\n[SR]+ = [SRQP]\n\nSR is Candidate key\n\nCandidate key = [QR, SR]\n\nX → Y\n\nS Q X: is Not Superkey R P →\n\n→\n\nSo, relation is not in BCNF\n\nSo, relation Y is in BCNF S → Q ¯ Not a super key Z is not in BCNF\n\nII: CORRECT\n\nThe union of the attribute set of Y and Z is equivalent to R.\n\nY (PR) ∩ Z (QRS) = R\n\n[R]+ = [RP] ; Super key of Y.\n\nR → P preserved in Y and QR → RS, S → Q preserved in Z.\n\nLossless and dependency preserving decomposition.",
-    "id": "pyq_94_880"
+    "id": "pyq_94_880",
+    "q_snippet": "snippets/q_pyq_94_880.webp"
   },
   {
     "num": 11,
@@ -14974,7 +16549,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.15",
     "answerKey": "a",
     "solution": "Consider the following relation R (ABCD) with FD\nset as {A → B, B → C, C → D, D → B}\n\nDecompose relation: (A, B) (B, C) (B, D)\n\n(1) R1(AB) ⋃ R2(BC) ⋃R3(BD) ⇒ R[ABCD]\n\nR1(AB)⋂ R2(BC) = B\n\n[B]+ = [BCD] Super key of R2\n\nR12(ABC) ⋂ R3(BD)= B\n\n[B+] = [BCD] super key of R3\n\nR123 (ABCD)\n\nLossless join\n\nR1(AB) R2(BC) R3(BD) Dependency preserving: R1(AB) R2(BC) R3(BD) A → B B→ C D → B C → B B → D [A]+ = [ABCD] [B]+ = [BCD] [C]+ = [CDB] [D]+ = [DBC] A → B, B → C, D → B, C → B, B → D A → B, B → C, D → B, C → D If F1⋃ F2 ⋃ F3 ……⋃ Fn ≡ F (Dependency preserving) OR\n\nR1(AB) R2(BC) R3(BD) R1(AB) R2(BC) R3(BD) A → B B → C D → B\n\nDatabase Management System\n\nC → D Indirectly preserved C → B in R2, and B → D in R3 ∴ Dependency is preserved. Hence, option (a) is correct",
-    "id": "pyq_95_881"
+    "id": "pyq_95_881",
+    "q_snippet": "snippets/q_pyq_95_881.webp"
   },
   {
     "num": 12,
@@ -14991,7 +16567,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.16",
     "answerKey": "a",
     "solution": "(a) A relation with two attributes always in BCNF:\n\nTrue\n\nBCNF: Every non-trivial FD x → y is in BCNF\nif and only if x is super key.\n\nLet us consider the following instances with two attributes:\n\nR (AB) [A → B]\n\nCandidate key = [A]\n\nA is super key\n\nR (AB) [B → A]\n\nCandidate key = [B]\n\nB is super key\n\nR (AB) [A → B, B → A]\n\nCandidate key = A, B\n\nA & B are super keys. .\n(b) If all attributes of relation are prime attributes,\nthen relation is in BCNF: False\n\nThere may exist a possibility that one prime attribute may determine another prime attribute. Such a FD is allowed in 3NF but not in BCNF design.\n\n(c) False\n\nR(ABCD) [A→B, B→ C, C → A]\n\nCandidate key = [AD, BD, CD]\n\nKey/Prime Attribute = [A, B, C, D]\n\nHere all attributes are prime/key attribute and R is in 3NF. So, it is not mandatory that there must exist at least one non-prime attribute for a 3NF design. However, the correct statement is \"Every relation has at-least one prime attribute\".\n\n(d) BCNF Preserve functional Dependency: False\n\nR (ABCD) [AB → CD, D → A]\n\nCandidate key = [AB, DB]\n\nNot in BCNF ( D→ A; D is not a super key)\n\nBCNF Decomposition\n\n1 R B C D\n\n2 R D A\n\nThe above decomposition satisfies BCNF design. It is lossless but not dependency preserving.",
-    "id": "pyq_96_882"
+    "id": "pyq_96_882",
+    "q_snippet": "snippets/q_pyq_96_882.webp",
+    "sol_snippet": "snippets/sol_pyq_96_882.webp"
   },
   {
     "num": 13,
@@ -15008,7 +16586,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.16",
     "answerKey": "a",
     "solution": "3NF: R is in 3NF\n\nIf every X→ Y (Non-Trivial FD)\n\nsatisfies the following conditions\n\nX: Super key or\n\nY: Prime key Attribute\n\nBCNF\n\nR is in BCNF if every non-trivial\n\nX→ Y FD must satisfy the following condition:\n\nX: Superkey\n\nX → A is in 3NF But Not in BCNF\n\nX : is Not Superkey (Not in BCNF)\n\nThen\n\nFor 3NF design, A must be a prime Attribute.\n\nFunctional Dependency and Normalization",
-    "id": "pyq_94_883"
+    "id": "pyq_94_883",
+    "q_snippet": "snippets/q_pyq_94_883.webp",
+    "sol_snippet": "snippets/sol_pyq_94_883.webp"
   },
   {
     "num": 14,
@@ -15025,7 +16605,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.17",
     "answerKey": "b",
     "solution": "SCHEMA-I:\n\nRegistration (rollno. course)\n\nrollno → course is in BCNF because rollno is a super key. So, schema I is in BCNF.\n\nSCHEMA-II:\n\nRegistration (rollno. courseid. email)\n\nI. rollno courseid → email\n\nII. email → rollno.\n\nCandidate keys = [rollno courseid, email courseid]\n\nFD - I: rollno course id → email → BCNF\n\nFD-II: email → roll no; email is Not superkey, but rollno is key/Prime Attribute.\n\nSo, SCHEMA-II is in 3NF But Not is BCNF.",
-    "id": "pyq_95_884"
+    "id": "pyq_95_884",
+    "q_snippet": "snippets/q_pyq_95_884.webp"
   },
   {
     "num": 15,
@@ -15042,7 +16623,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.17",
     "answerKey": "a",
     "solution": "Consider the following examples: R (AB) [A→B] Candidate key = [A] A is super key So, R is in BCNF R(AB) [A→B, B → A] Candidate key = (A, B) A and B are super keys So, R is in BCNF R(AB) [B → A] Candidate key = [B] B is super key So, R is in BCNF A relation with two attributes is always in BCNF implies it is in 1NF, 2NF, 3NF and BCNF. S1 is correct. OR A set A is called the minimal cover of set B iff\n\n(a) A covers B and\n\n(b) B covers A and\n\n(c) A is irreducible\n\nGiven FD set (B): {AB → C, D → E, AB → E,\nE → C}\n\nGiven minimal cover(A): {AB → C, D → E,\nE → C}\n(1) Check if A covers B\n\nA cover B means all FD's of B will be reducible using FD's of A or Every FD of B is A member of A\n\n(AB)+ = {A B C} (D)+ = {D E} (E)+ = {E C}\n\n(AB) + is not determining E ⇓\n\nAB → E is not covered by the given minimal cover.\n\n∴ Statement S2 is FALSE.",
-    "id": "pyq_96_885"
+    "id": "pyq_96_885",
+    "q_snippet": "snippets/q_pyq_96_885.webp",
+    "sol_snippet": "snippets/sol_pyq_96_885.webp"
   },
   {
     "num": 16,
@@ -15059,7 +16642,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.17",
     "answerKey": "a",
     "solution": "Given FD set - F = {CH → G, A → BC, B → CFH, E →A,\nF → EG}\nCandidate keys - {AD, ED, FD, BD}\nNon-key/non-prime attribute = {C, G, H}\nTesting of normal forms\n\nBCN F 3NF CH→ G × × A→B C ×\n-\nB→CF H ×\n-\nE→ A ×\n-\nF→E G ×\n-\n\nA → C, B → C, B → H, F → G violates 2NF\n\n2NF - proper subset of CK should not determine non-prime subset of CK -\n\n{A}+ = {A B C F H G}\n\n{B}+\nnon-prime\n\n{D}+\n\n{E}+\n\n{F}+\n\n∴ The relation is not in 2NF\n(a) It is in 1NF but not in 2NF.\n\nDatabase Management System",
-    "id": "pyq_94_886"
+    "id": "pyq_94_886",
+    "q_snippet": "snippets/q_pyq_94_886.webp",
+    "sol_snippet": "snippets/sol_pyq_94_886.webp"
   },
   {
     "num": 17,
@@ -15076,7 +16661,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.18",
     "answerKey": "c",
     "solution": "3NF definition\n\nEvery non trivial FD X → Y is in 3 NF iff\n\nX: super key or\n\nY: key/Prime attribute\n\nEvery non trivial FD X → Y is in BCNF iff , X : Super key\n\nOption (a): False\n\nLet us assume-\n\nR (ABCD) with FD set as [AB → CD, D → A]\n\nCandidate key = [AB, DB]\n\nAB → CD D→A 3NF YES (as AB is a candidate key) YES (as A is a prime attribute) BCNF YES (as AB is a candidate key) NO (D is not a candidate key)\n\n(c) True.\n\nLet us assume, R (AB) with FD set [A → B]\n\nCandidate key = [A]\n\nSince, A is the key, R is in BCNF and also in 3NF.",
-    "id": "pyq_95_887"
+    "id": "pyq_95_887",
+    "q_snippet": "snippets/q_pyq_95_887.webp"
   },
   {
     "num": 18,
@@ -15093,7 +16679,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.18",
     "answerKey": "a",
     "solution": "Supplier (Sid, Sname, City, Street)\n\nEach supplier, each street within a city has a unique name\n\nSid Street City → Sname\n\nSname City form a candidate key\n\nSname City → Sid Street\n\nSid is primary key.\n\nSid → Sname City Street\n\nKeys (Sid, Sname City)\n\nCheck 2NF, as there is no partial dependency so R is in 2NF\n\nCheck 3NF in X → Y, either X is a super key or Y is the prime attribute\n\nI.\nSid Street City → Sname\n\nII. Sname City → Sid Street\n\nIII. Sid → Sname City Street\n\n∴ R is 3NF\n\nCheck for BCNF\n\nX is super key, therefore R is in BCNF.",
-    "id": "pyq_96_888"
+    "id": "pyq_96_888",
+    "q_snippet": "snippets/q_pyq_96_888.webp",
+    "sol_snippet": "snippets/sol_pyq_96_888.webp"
   },
   {
     "num": 19,
@@ -15110,7 +16698,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.18",
     "answerKey": "c",
     "solution": "Book (Title, Author, Catalog_no, Publisher, Year, price)\n\nCollection (Title, Author, Catalog_no)\n\nFD I. TitleAuthor ⟶ Catalog_no\n\nFD II. Catalog_no ⟶ Title Author Publisher Year\n\nFD III. Publisher Title Year ⟶ Price\n\nKey = [Author Title]\n\nCollection (Title, Author, Catalog_no)\n\nFD I. TitleAuthor ⟶ Catalog_no\n\nThe relation Collection is in BCNF because Title Author is a super key\n\nCollection is in BCNF so its in also in 3NF, 2NF and 1NF.\n\nKey = [Author Title]\n\nBook (Title, Author, Catalog_no, Publisher, Year, price)\n\nFD I. Title Author → Catalog_no\n\nFD II. Catalog_no → Title Author Publisher Year\n\nFD III. Publisher Title Year → Price\n\nIn FD II Catalog_no → Title Author\n\nPublisher Year\n\nCatalog no is a key\n\nCandidate key = [Title author, catalog]\n\nIn book schema\n\nFD I. Satisfy BCNF\n\nFD II. Satisfy BCNF\n\nFunctional Dependency and Normalization\n\nFD III. Publisher Title Year → Price\n\nSatisfy 2NF but not 3NF\n\nBecause neither publisher title year is super key\n\nNor price is key/prime attribute\n\n∴ Book is in 2NF only.",
-    "id": "pyq_94_889"
+    "id": "pyq_94_889",
+    "q_snippet": "snippets/q_pyq_94_889.webp",
+    "sol_snippet": "snippets/sol_pyq_94_889.webp"
   },
   {
     "num": 20,
@@ -15127,7 +16717,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.19",
     "answerKey": "d",
     "solution": "Consider relation R(ABCDEPG) with FD set as [AB → CD, DE → P, C → E, P → C, B → G]\n\n[AB]+ = [ABCDEPG]\n\n[A]+ = [A]\n\n[B]+ = [BG]\n\nAB is candidate key ….(1)\n\nThere aren't multiple candidate keys.\n\nPrime/key attributes = [A, B]\n\nNon-prime/ non key attribute= [C, D, E, P, G]\n\nA relational design is not in 2NF if there exists B → G (partial dependency).\n\nB (Proper subset of candidate key) → G (non key attribute) Violation of 2NF.\n\n∴ R is not in 2 NF",
-    "id": "pyq_95_890"
+    "id": "pyq_95_890",
+    "q_snippet": "snippets/q_pyq_95_890.webp",
+    "sol_snippet": "snippets/sol_pyq_95_890.webp"
   },
   {
     "num": 21,
@@ -15144,7 +16736,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.19",
     "answerKey": "b",
     "solution": "Journal (VOLUME, NUMBER, STARTPAGE, ENDPAGE, TITLE, YEAR, PRICE)\n\nFD I: (VOLUME, NUMBER, STARTPAGE, ENDPAGE) → TITLE\n\nFD II: (VOLUME, NUMBER) → YEAR\n\nFD III: (VOLUME, NUMBER, STARTPAGE, ENDPAGE) → PRICE\n\nKeys: (VOLUME, NUMBER, STARTPAGE, ENDPAGE)\n\nFD I: is in BCNF or satisfy BCNF definition\n\n(Because in x → y, x is super key)\n\nFD III: is in BCNF or satisfy BCNF definition\n\nBut FD II (VOLUME, NUMBER) → YEAR not satisfy 2NF definition because the non-key attribute is not fully dependent on key or proper subset of candidate key → non-key attribute, violation of 2NF exists.\n\nFD II:\n\nJournal Not in 2 NF\n\nRedesign\n\nSchema\n\nSC I: Volume, Number, Start page, end page, Title price\n\nSC II: Volume Number year\n\nSchema I: Volume number start page end page Title price\n\nFD I: Volume Number start page end page → Title price.\n\nFD II: Volume Number start page end page → Price\n\n∴ Satisfy BCNF definition is schema I\n\nSchema II: Volume number year\n\nVolume Number → year\n\n∴ Satisfy BCNF definition\n\nNew design is in BCNF but old design\n\nOnly 1 NF but not satisfy 2NF",
-    "id": "pyq_96_891"
+    "id": "pyq_96_891",
+    "q_snippet": "snippets/q_pyq_96_891.webp",
+    "sol_snippet": "snippets/sol_pyq_96_891.webp"
   },
   {
     "num": 1,
@@ -15161,7 +16755,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.25",
     "answerKey": "a",
     "solution": "2.\n(a)",
-    "id": "pyq_97_892"
+    "id": "pyq_97_892",
+    "q_snippet": "snippets/q_pyq_97_892.webp",
+    "sol_snippet": "snippets/sol_pyq_97_892.webp"
   },
   {
     "num": 2,
@@ -15178,7 +16774,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.25",
     "answerKey": "a",
     "solution": "S is serializable, as the graph is Acyclic\n\nTopological sorting",
-    "id": "pyq_98_893"
+    "id": "pyq_98_893",
+    "q_snippet": "snippets/q_pyq_98_893.webp",
+    "sol_snippet": "snippets/sol_pyq_98_893.webp"
   },
   {
     "num": 3,
@@ -15195,7 +16793,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.25",
     "answerKey": "d",
     "solution": "In A C I D:\n\nA stands for Atomicity\n\nC stands for Consistency\n\nI stands for Isolation\n\nD stands for Durability",
-    "id": "pyq_97_894"
+    "id": "pyq_97_894",
+    "q_snippet": "snippets/q_pyq_97_894.webp",
+    "sol_snippet": "snippets/sol_pyq_97_894.webp"
   },
   {
     "num": 4,
@@ -15212,7 +16812,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.25",
     "answerKey": "6 to 6",
     "solution": "a _ _ _ _ f a b c d e f a d e b c f a b d c e f a b d e c f a d b e c f a d b c e f\n\nDatabase Management System\n\nThere exists 6 topological orders for the given graph.",
-    "id": "pyq_98_895"
+    "id": "pyq_98_895",
+    "q_snippet": "snippets/q_pyq_98_895.webp",
+    "sol_snippet": "snippets/sol_pyq_98_895.webp"
   },
   {
     "num": 5,
@@ -15229,7 +16831,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.26",
     "answerKey": "a",
     "solution": "Redo: T2\n\nUndo: T1,T3",
-    "id": "pyq_97_896"
+    "id": "pyq_97_896",
+    "q_snippet": "snippets/q_pyq_97_896.webp",
+    "sol_snippet": "snippets/sol_pyq_97_896.webp"
   },
   {
     "num": 6,
@@ -15246,7 +16850,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.26",
     "answerKey": "b",
     "solution": "Consistency ensures integrity of the data before and after the transaction operations have been performed that is the initial value before the start of the operations should match with the value that is obtained after the operations have completed.",
-    "id": "pyq_98_897"
+    "id": "pyq_98_897",
+    "q_snippet": "snippets/q_pyq_98_897.webp",
+    "sol_snippet": "snippets/sol_pyq_98_897.webp"
   },
   {
     "num": 7,
@@ -15263,7 +16869,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.26",
     "answerKey": "a",
     "solution": "Ti: R(Q) Before Tj = W(Q)\n\nTi: W(Q) Before Tj = R(Q)\n\nTi: W(Q) Before Tj = R(Q) Same Data item (Q)\n\nR Q\n- W Q\nW Q\n- R Q\nconflict operation W Q\n- W Q\n|\n\n|\n\nS: R4(x)R2(x) R3(x) R1(y) W1(y) W2(x) W3(y) R4(y) T1 T2 T3 T4\n\nR(x)\n\nR(x)\n\nR(x)\n\nR(y)\n\nW(y)\n\nW(x)\n\nW(y)\n\nR(y)\n\nSeralizablility order as T1 → T3 → T4 → T2\n\nAlternate Method\n\nS: R4(x)R2(x) R3(x) R1(y) W1(y) W2(x) W3(y) R4(y)\n\nFor data item x:\n\nT4 → T2 (R4(x) →W2(x))\n\nT3 → T2 (R3(x) →W2(x))\n\nFor data item y:\n\nT1 → T3 (R1(y) → W3(y))\n\nT1 → T3 (W1(y) → W3(y))\n\nT1 → T4 (W1(y) → R4(y))\n\nT3 → T4 (W3(y) → R4(y))\n\nTransaction and Concurrency Control\n\nSeralizablility order as T1 → T3 → T4→ T2",
-    "id": "pyq_97_898"
+    "id": "pyq_97_898",
+    "q_snippet": "snippets/q_pyq_97_898.webp",
+    "sol_snippet": "snippets/sol_pyq_97_898.webp"
   },
   {
     "num": 8,
@@ -15280,7 +16888,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.27",
     "answerKey": "b",
     "solution": "R2 (Y), R1(X), R3(Z), R1(Y), W1(X), R2(Z), W2(Y), R3(X), W3(Z) T1 T2 T3\n\nR(y)\n\nR(x)\n\nR(z) R(y)\n\nW(x)\n\nR(z)\n\nW(y)\n\nR(x)\n\nW(z)\n\nCommit\n\nConflict Serializable\n\nS1: True < T1 T2 T3>\n\nIrrecoverable or Non-Recoverable schedule (Ti) (Tj) T1 T2 W(Q)\n\nR(Q) C/R\n\n→ Commit\n\nRecoverable schedule",
-    "id": "pyq_98_899"
+    "id": "pyq_98_899",
+    "q_snippet": "snippets/q_pyq_98_899.webp",
+    "sol_snippet": "snippets/sol_pyq_98_899.webp"
   },
   {
     "num": 9,
@@ -15297,7 +16907,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.27",
     "answerKey": "b",
     "solution": "Conflict operation\n\nR(A) -- W(A)\n\nW(A) -- R(A)\n\nW(A) -- W(A)\n\nS1: r1(x) r1(y) r2(x) r2(y) w2(y) w1(x)\n\nIf cycle exists in the precedence graph, not conflict serializable.\n\nS2: r1(x) r2(x) r2(y) w2(y) r1(y) w1(x)\n\nConflict serializable as the precedence graph is acyclic.\n\nT2 → T1\n\nDatabase Management System",
-    "id": "pyq_97_900"
+    "id": "pyq_97_900",
+    "q_snippet": "snippets/q_pyq_97_900.webp",
+    "sol_snippet": "snippets/sol_pyq_97_900.webp"
   },
   {
     "num": 10,
@@ -15314,7 +16926,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.28",
     "answerKey": "a",
     "solution": "In the given question,\n\nConflict operations\n\nR2(B) - W1(B)\n\nW2(B) - W1(B)\n\nR1(C) - W2(C)\n\nR2 (D) - W1(D) OR\n\nR(B) - W(B) : T2 → T1\n\nW(B) - W(B) : T2 → T1\n\nR(C) - W(C) : T1 → T2\n\nR(D) - W(D) : T2 → T1\n\nIn option (a), the conflicts are as follows:\n\nR2(B) - W1(B)\n\nW2(B) - W1(B)\n\nR1(C) - W2(C)\n\nR2 (D) - W1(D) OR\n\nR(B) - W(B) : T2 → T1\n\nW(B) - W(B) : T2 → T1\n\nR(C) - W(C) : T1 → T2\n\nR(D) - W(D) : T2 → T1\n\nIn option (b), the conflicts are as follows:\n\nW1(B) - R2(B) ⊆\n\nW1(B) - W2(B) ⊆\n\nR1(C)- W2(C) Π\n\nW1 (D) - R2(D) ⊆ OR\n\nW(B) - R(B) : T1 → T2 ⊆\n\nW(B) - W(B) : T1 → T2 ⊆\n\nR(C) - W(C) : T1 → T2 Π\n\nW(D) - R(D) : T1 → T2 ⊆\n\nIn option (c), the conflicts are as follows:\n\nR2(B) - W1(B)\n\nW2(B) - W1(B)\n\nR1(C)- W2(C)\n\nW1 (D) - R2 (D) ⊆ OR\n\nR(B) - W(B) : T2 → T1\n\nW(B) - W(B) : T2 → T1\n\nR(C) - W(C) : T1 → T2\n\nW(D) - R(D) : T1 → T2 ⊆\n\nIn option (d), the conflicts are as follows:\n\nR2(B) - W1(B)\n\nW2(B) - W1(B)\n\nW2(C)- R1(C) ⊆\n\nR2 (D) - W1(D) OR\n\nR(B) - W(B) : T2 → T1\n\nW(B) - W(B) : T2 → T1\n\nW(C) - R(C) : T2 → T1 ⊆\n\nR(D) - W(D) : T2 → T1\n\nTransaction and Concurrency Control",
-    "id": "pyq_98_901"
+    "id": "pyq_98_901",
+    "q_snippet": "snippets/q_pyq_98_901.webp",
+    "sol_snippet": "snippets/sol_pyq_98_901.webp"
   },
   {
     "num": 11,
@@ -15331,7 +16945,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.29",
     "answerKey": "a",
     "solution": "Schedule S1 :\n\nSchedule S2: below schedule wrong including precedence graph:\n\nTherefore, only S1 is conflict serializable schedule but not schedule S2.",
-    "id": "pyq_97_902"
+    "id": "pyq_97_902",
+    "q_snippet": "snippets/q_pyq_97_902.webp"
   },
   {
     "num": 12,
@@ -15348,7 +16963,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.29",
     "answerKey": "c",
     "solution": "To check for conflict serializability we check the precedence graph, which is as below:\n\nSince there exists no cycle in the precedence graph therefore it is conflict serializable schedule.\n\nFor Recoverable schedule we check for write-read uncommitted / dirty Read. In the given Schedule there exists no uncommitted Read, so it is Recoverable and Cascade-less also, no write-write conflict so it is strict recoverable.\n\nHere C/R represents Commit or Rollback operation.",
-    "id": "pyq_98_903"
+    "id": "pyq_98_903",
+    "q_snippet": "snippets/q_pyq_98_903.webp"
   },
   {
     "num": 13,
@@ -15365,7 +16981,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.29",
     "answerKey": "d",
     "solution": "For conflict serializability we check the precedence graph: 1. If cycle present then not conflict serializable schedule. 2. If no cycle, then schedule is conflict serializable schedule.\n\nDatabase Management System\n\n(a)\n\n(b)\n\n(c)\n\n(d)",
-    "id": "pyq_97_904"
+    "id": "pyq_97_904",
+    "q_snippet": "snippets/q_pyq_97_904.webp",
+    "sol_snippet": "snippets/sol_pyq_97_904.webp"
   },
   {
     "num": 14,
@@ -15382,7 +17000,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.30",
     "answerKey": "b",
     "solution": "T1: read (P)\n\nread (Q)\n\nif P = 0 then Q = Q +1\n\nwrite (Q)\n\nT2: read (Q)\n\nread (P)\n\nif Q = 0 then P = P +1\n\nwrite (P) T1 T2 read(P)\n\nread (Q) read (P) If Q = 0 then P: P + 1 write (P) read (Q) If P = 0 then Q = Q + 1 write (Q)\n\n• Cycle in the precedence graph therefore not conflict serializable but it may be view serializable. • View serializable (view equivalent)\n\nFor each data item\n(1) Initial Read same order\n(2) Final -write same order\n(3) Write-Read (updated-read) same order\n\nTransaction and Concurrency Control\n\nCheck for view serializable: T1 T2 read(P) read (Q)\nif P = 0 then Q; = Q + 1\nwrite (Q)\n\nread (Q) read (P)\nif Q = 0 then P: P + 1\nwrite (P) <T1, T2>\n\nUpdated read on data item Q is T1 → T2 exists therefore it fails. T1 T2\n\nread (P) read (Q) If Q = 0 then Q: Q + 1 write (Q) read (Q) read (P) If Q = 0 then P: P +1 write (P)\n\n<T2, T1>\n\nUpdated read on data item Q is T2 → T1 exists therefore it fails.\n\nThe given schedule is not view serializable as well.",
-    "id": "pyq_98_905"
+    "id": "pyq_98_905",
+    "q_snippet": "snippets/q_pyq_98_905.webp"
   },
   {
     "num": 15,
@@ -15399,7 +17018,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.31",
     "answerKey": "a",
     "solution": "No cycle in the precedence graph, therefore conflict serializable schedule and equivalent to the serial schedule: (T1 T3 T2).",
-    "id": "pyq_97_906"
+    "id": "pyq_97_906",
+    "q_snippet": "snippets/q_pyq_97_906.webp",
+    "sol_snippet": "snippets/sol_pyq_97_906.webp"
   },
   {
     "num": 16,
@@ -15416,7 +17037,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.31",
     "answerKey": "b",
     "solution": "Schedule S1\n\nSchedule S2\n\nSchedule S3\n\nSchedule S4\n\nDatabase Management System",
-    "id": "pyq_98_907"
+    "id": "pyq_98_907",
+    "q_snippet": "snippets/q_pyq_98_907.webp"
   },
   {
     "num": 17,
@@ -15433,7 +17055,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.32",
     "answerKey": "d",
     "solution": "Schedule S1\n\nConflict pairs are as follows:\n\n1. R2(A) -W3(A)\n\n2. R2(A) - W1(A)\n\n3. W2(A) - W3(A)\n\n4. W2(A) - R1(A)\n\n5. W2(A) - W1(A)\n\n6. W2(B) - R1(B)\n\n7. W2(B) - W1(B)\n\n8. W3(A) - R1(A)\n\n9. W3(A) - W1(A)\n\nSchedule S2\n\nConflict pairs are as follows:\n\n1. R2(A) - W3(A)\n\n2. R2(A) - W1(A)\n\n3. W2(A) - W3(A)\n\n4. W2(A) - R1(A)\n\n5. W2(A) - W1(A)\n\n6. W2(B) - R1(B)\n\n7. W2(B) - W1(B)\n\n8. W3(A) - R1(A)\n\n9. W3(A) - W1(A)\n\nAll conflict operation pair in S1 and S2 are in same order.\n\nSchedule S3\n\nSo, here S1 is conflict equivalent to S2, but not to S3.",
-    "id": "pyq_97_908"
+    "id": "pyq_97_908",
+    "q_snippet": "snippets/q_pyq_97_908.webp"
   },
   {
     "num": 18,
@@ -15450,7 +17073,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.32",
     "answerKey": "54 to 54",
     "solution": "T1 → T2\n\nT2 → T1\n\nT1 : r1(x)w1 (x) r1(y) w1(y)\n\nT2 : r2(y) w2 (y) r2(z) w2(z)\n\nHow to find number of conflict serializable schedules.\n\nT1 → (T2) & T2→ (T1)\n\nT1 → T2\n\nr1(x) w1(x) r1(y) w1(y) r2(y) w2(y) r2(z) w2(z)\n\nTransaction and Concurrency Control\n\nT1 → (T2) : 1\n\nT1 : r1(x) w1(x) r1(y) w1(y)\n\nT2 : r2(y) w2(y) r2(z) w2(z)\n\nT2 → (T1)\n\nr2(z) w2(z) can be placed any where but only after w2(y)\n\nCase I r1(x) w1(x) w2(y) r1(y) w1(y)\n\nCase II r1(x) w2(y) w1(x) r1(y) w1(y)\n\nCase III w2(y) r1(x) w1(x) r1(y) w1(y)\n\nNow check for r2(y).\n\nCase I\n\nfor r2(z) w2(z)\n\nout of three places either we can place together [3C1] OR place them separately [3C2]\n\n3 × [3C1 + 3C2]\n\n3 × [3 + 3]\n\nCase I - 18 ways\n\nCase II\n\nSit together (or) separately\n\n4C1 + 4C2\n\nr2(y) → 2\n\n2 × [4C1 + 4C2]\n\n2 × [4 + 6]\n\nCase II = 20\n\nCase III\n\n1 × [5C1 + 5C2]\n\nSit together 5C1 OR sit Separately 5C2\n\n1× [5C1 + 5C2]\n\n5 + 10 = 15\n\nCase III : 15 ways\n\nTherefore, T2 → T1 : Case I + Case II + Case III\n\n= 18 + 20 + 15 =53\n\nT2 → (T1) = 53 ways\n\nT1 → (T2) : 1 way\n\nTotal conflict serializable 54 schedules.",
-    "id": "pyq_98_909"
+    "id": "pyq_98_909",
+    "q_snippet": "snippets/q_pyq_98_909.webp",
+    "sol_snippet": "snippets/sol_pyq_98_909.webp"
   },
   {
     "num": 19,
@@ -15467,7 +17092,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.33",
     "answerKey": "c",
     "solution": "Recoverable, Cascadeless (no cascadeding roll back) because there exists no uncommitted read but not strict schedule.\n\nDatabase Management System",
-    "id": "pyq_97_910"
+    "id": "pyq_97_910",
+    "q_snippet": "snippets/q_pyq_97_910.webp",
+    "sol_snippet": "snippets/sol_pyq_97_910.webp"
   },
   {
     "num": 20,
@@ -15484,7 +17111,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.34",
     "answerKey": "b",
     "solution": "(a) Both T1 & T2 Restarted, ensure\n\natomicity: Incorrect.\n\n(b) Non Recoverable & cannot ensure\n\nAtomicity: Correct\n\nCannot perform undo of Transaction T2 because T2 commits.\n\n(c) Incorrect, Because T2 performs commit so only\nRedo operation can be performed.\n\n(d) Recoverable: Incorrect.",
-    "id": "pyq_98_911"
+    "id": "pyq_98_911",
+    "q_snippet": "snippets/q_pyq_98_911.webp",
+    "sol_snippet": "snippets/sol_pyq_98_911.webp"
   },
   {
     "num": 21,
@@ -15501,7 +17130,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.34",
     "answerKey": "c",
     "solution": "Strict 2PL: 2PL+ All Exclusive [x Lock] held by the transaction until Commit (or) Rollback (OR)\n\n2PL + All Exclusive Lock (x Lock) Release by the transaction after commit or rollback.\n\nThomas write Rule: Obsolete write ensures view serializable but not conflict serializable.\n\nTransaction and Concurrency Control",
-    "id": "pyq_97_912"
+    "id": "pyq_97_912",
+    "q_snippet": "snippets/q_pyq_97_912.webp",
+    "sol_snippet": "snippets/sol_pyq_97_912.webp"
   },
   {
     "num": 22,
@@ -15518,7 +17149,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.35",
     "answerKey": "a",
     "solution": "Deadlock prevention algorithm\n\n(1) Wait - Die: Transaction T1 Request a Data item\ncurrently held by Tj, Ti is allowed to wait only\n\nTime stamp of Ti [TS (Ti)] is smaller than that of Tj.\n\n(2) Wound -wait: Transaction Ti Request a data\nitem currently held Tj then Ti is allowed to wait only if time stamp of Ti [TS(Ti)] is larger than that of Tj.\n\nWound wait: Older Transaction kills the younger Transaction. But restarted with same time stamp. TS(T1): 10 TS(T2): 20",
-    "id": "pyq_98_913"
+    "id": "pyq_98_913",
+    "q_snippet": "snippets/q_pyq_98_913.webp"
   },
   {
     "num": 23,
@@ -15535,7 +17167,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.35",
     "answerKey": "a",
     "solution": "STEP-1: T acquire x lock (Exclusive lock) O1 …. Ok in increasing order of the address i.e. other transaction cannot take any lock on that data item.\n\nTj\n\nSame Data Item S X Ti S Yes No\n\nX No No\n\nSTEP-2: Required operation are performed.\n\nSTEP-3: All lock are released.\n\n& Serializability order is determined by lock point.",
-    "id": "pyq_97_914"
+    "id": "pyq_97_914",
+    "q_snippet": "snippets/q_pyq_97_914.webp",
+    "sol_snippet": "snippets/sol_pyq_97_914.webp"
   },
   {
     "num": 24,
@@ -15552,7 +17186,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.35",
     "answerKey": "b",
     "solution": "2PL ensures conflict serializability but may not be free from deadlock.",
-    "id": "pyq_98_915"
+    "id": "pyq_98_915",
+    "q_snippet": "snippets/q_pyq_98_915.webp",
+    "sol_snippet": "snippets/sol_pyq_98_915.webp"
   },
   {
     "num": 1,
@@ -15569,7 +17205,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.47",
     "answerKey": "a, b",
     "solution": "2. (819 to 820 or 205 to 205)",
-    "id": "pyq_88_916"
+    "id": "pyq_88_916",
+    "q_snippet": "snippets/q_pyq_88_916.webp",
+    "sol_snippet": "snippets/sol_pyq_88_916.webp"
   },
   {
     "num": 2,
@@ -15586,7 +17224,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.48",
     "answerKey": "819 to 820 or 205 to 205",
     "solution": "Ist approach\n\nr(AB) = 1200 Tuples\n\nA range is = 6 to 20 ⇒ 15 distinct values\n\nB range is = 1 to 20 ⇒ 20 distinct values\n\nσ(A > 10) V(B = 18) (r)\n\nA has = 15 distinct values\n\nB has = 20 distinct values\n\nP A 10 10 2 15 3 11,12,13....20\n\n= = ⇓\n\nP(B = 18) = 1 20\n\nP(A > 10 ∧ B = 18)\n\n= 2 1 1 3 20 30 × =\n\nσ(A > 10) V(B = 18) (r) = P(A > 10) + P(B = 18)\n- P(A > 10 ∧ B = 18)\n\n⇒ 2 1 1\n-\n3 20 30\n+\n\n⇒ 40 3 - 2 41 60 60\n+\n=\n\nEstimated number of tuples\n\n= 41 60 201200 × 820 =\n\nIInd approach\n\nσ(A > 10) V(B = 18) (r)\n\nA range 6 to 20 = 15 distinct values\n\nB range 1 to 20 = 20 distinct values\n\n(1) A > 10 ⇒ For (11, 12, 13, ….. 20), for 10 A value\nthere are 20 distinct value of B (11, 12, 13 ….. 20)\n\nSo total for A = 10 × 20 = 200\n\nFor B = 18, one tuple of B value there are total 15 distinct value of A.\n\nSo total for B = 1 × 15 = 15\n\nBut there are some value A > 10, B = 18 appearing more than once, so there are 10 tuples that are appearing more than once = 10\n\nEstimated number of tuples is = 200 + 15 - 10 = 205 Or\n\nBy Relational Algebra:\n\nIn A distinct value = 15 (6 to 20)\n\nB distinct value = 20\n\nEstimated number of tuples\n\nσ(A > 10 V B = 18) = 3 41 60 20 × 15 × 5\n\n= 205",
-    "id": "pyq_89_917"
+    "id": "pyq_89_917",
+    "q_snippet": "snippets/q_pyq_89_917.webp",
+    "sol_snippet": "snippets/sol_pyq_89_917.webp"
   },
   {
     "num": 3,
@@ -15603,7 +17243,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.48",
     "answerKey": "c",
     "solution": "ΠempNo. (empAge ⋈ (age > age1) ρempNo1, age1 (empAge)) ⇓\n\nEmployee number whose age is greater than any employee age. empAge\n\nempAge1 empNo age\n\nempNo1 age1 e1 30 > e1 30 e2 40\n\ne2 40 e3 50\n\ne3 50\n\ne1 30 > 30 false\n\ne2 40 > 30 true\n\ne3 50 > 30 true\n\ne3 50 > 40 true\n\nOutput 2 3 empNo. e e → emp No. whose age is not Minimum.\n\nRelational Algebra, SQL Queries, TRC\n\nTherefore, option C is the correct expression generated for given RA query.",
-    "id": "pyq_90_918"
+    "id": "pyq_90_918",
+    "q_snippet": "snippets/q_pyq_90_918.webp",
+    "sol_snippet": "snippets/sol_pyq_90_918.webp"
   },
   {
     "num": 4,
@@ -15620,7 +17262,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.49",
     "answerKey": "1 to 1",
     "solution": "x2 - x1 = x2 ⇒ 1 tuple P R 4 tuples 4 tuples 3 attributes 2 attributes\n\nP × R = 4 × 4 = 16 tuples\n\n3 + 2 = 5 attributes P.X P.Y P.Z Ry R.V x2 y2 z2 y2 v2\n\nx 2 x\n-\noutput of part I x Π ⇒\n\nQ R 4 tuples 4 tuples 3 attributes 2 attributes\n\nQ × R = 4 × 4 = 16 tuples\n\n3 + 2 = 5 attributes\n\nQ.T > 2 Q.X Q.Y Q.T Ry R.V x1 y2 5 y1 v3 x1 y2 5 y2 v2 x1 y1 6 y1 v1\n\nx 1 x output of part II x Π⇒\n\nPart I - Part II\n\nx2 - x1 ⇒ x2 , only 1 tuple in output.",
-    "id": "pyq_92_919"
+    "id": "pyq_92_919",
+    "q_snippet": "snippets/q_pyq_92_919.webp",
+    "sol_snippet": "snippets/sol_pyq_92_919.webp"
   },
   {
     "num": 5,
@@ -15637,7 +17281,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.49",
     "answerKey": "c",
     "solution": "Q: r ⋈ (σ𝐵<5 (S)), Outputs: A B C a11 3 C21 a12 3 C21 a13 4 C22\n\nNow, checking for given options R\n\nS A B FK ⎯⎯⎯⎯⎯⎯→ B C a11 3 3 C21 a12 3\n\n4 C22 a13 4\n\n7 C23 a14 7\n\n9 C24 a15 9\n\na16 9\n\nR ⋈ S A B C a11 3 C21 a12 3 C21 a13 4 C22 a14 7 C23 a15 9 C24 a16 9 C24\n\nIn option (a) the output is same as given query A B C a11 3 C21 a12 3 C21 a13 4 C22\n\n∴ Equivalent\n\nIn option (b) the output is same as given query therefore equivalent A B C a11 3 C21 a12 3 C21 a13 4 C22\n\nDatabase Management System\n\nIn option (c) the output is not same as given query A B C a11 3 C21 a12 3 C21 a13 4 C22 a14 7 NULL a15 9 NULL a16 9 NULL\n\nIn option (d) the output is same as given query A B C a11 3 C21 a12 3 C21 a13 4 C22",
-    "id": "pyq_93_920"
+    "id": "pyq_93_920",
+    "q_snippet": "snippets/q_pyq_93_920.webp"
   },
   {
     "num": 6,
@@ -15654,7 +17299,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.50",
     "answerKey": "4 to 4",
     "solution": "πcourse Name ( σ student Name = 'SA' (CR))\n\nT1 : Course Name CA &CB CC\n\nT2 : CR ÷ T1\n\nCR ÷ CA CB CC\n\n• When CR ÷ CA, the output is as below: SA SC SD SE SF\n\n• When CR ÷ CA CB the output is as below: SA SC SD SE SF\n\n• When CR÷ CA CB CC the output is as below: SA SC SD SF",
-    "id": "pyq_88_921"
+    "id": "pyq_88_921",
+    "q_snippet": "snippets/q_pyq_88_921.webp",
+    "sol_snippet": "snippets/sol_pyq_88_921.webp"
   },
   {
     "num": 7,
@@ -15671,7 +17318,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.50",
     "answerKey": "c",
     "solution": "R1(AB)\n\nR2 (AC) 1 5 1 7 3 7 4 9\n\nNatural join between R1 and R2: R1 ⋈ R2 = A B C 1 5 7\n\nFull natural outer join between R1 and R2:\n\nA B C a 1 5 Null b 1 Null 7 c 3 Null 9 d 4 7 Null e 1 5 7 f 3 7 Null g 4 Null 9\n\nR1 ⟗ R2 = A B C\n\n1 5 7 e 3 7 Null f 4 Null 9 g\n\nR1 ⟗ R2 = contain e, f and g.\n\nRelational Algebra, SQL Queries, TRC",
-    "id": "pyq_89_922"
+    "id": "pyq_89_922",
+    "q_snippet": "snippets/q_pyq_89_922.webp",
+    "sol_snippet": "snippets/sol_pyq_89_922.webp"
   },
   {
     "num": 8,
@@ -15688,7 +17337,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.51",
     "answerKey": "a",
     "solution": "πA1 (πA2 (σF1 (σF2 (r))))\n\nA1 & A1 one set of Attributes such that 1 2 A A ⊂\n\nI.\nπA1 (πA2 (r)) ⇒ πA1 (r) [ 1 2 A A ⊂\n\nII.\n(σF1 (σF2 (r) ⇒ 1 2 F F σ (r) ∧\n\nπA1 (πA2 (σF1 (σF2 (r)))) ⇒ πA1( 1 2 F F σ (r) ∧\n\nF1 & F2 are Boolean expression based on attribute in Relation r. Example:\nI.\nAssume 1 2 A A ⊂\n\nA2 : Sid Sname\n\nA1 : Sid\n\nSid A1 (A2) (A1) Sid Sid ,Sname π π (r)\n\nπ π\n\n⇓ ≡\n\nII.\nF1 CGPA > 8\n\nF2 Branch = 'CS'\n\nCGPA > 8 Branch: = 'CS' CGPA > 8 Branch ='CS' σ σ (r) σ (r) ⇒ ∧",
-    "id": "pyq_90_923"
+    "id": "pyq_90_923",
+    "q_snippet": "snippets/q_pyq_90_923.webp"
   },
   {
     "num": 9,
@@ -15705,7 +17355,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.51",
     "answerKey": "d",
     "solution": "The inner query chooses workers whose ages are lower than or equal to those of at least one of his dependents. Employees whose ages exceed those of all of his dependents are obtained by removing those from the collection of employees.",
-    "id": "pyq_92_924"
+    "id": "pyq_92_924",
+    "q_snippet": "snippets/q_pyq_92_924.webp",
+    "sol_snippet": "snippets/sol_pyq_92_924.webp"
   },
   {
     "num": 10,
@@ -15722,7 +17374,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.51",
     "answerKey": "a",
     "solution": "Two factors are involved when A is in the outer loop of a nested loop to join A and B.\n\nThe number of blocks that include all the rows in A should be fetched.\n\nNumber of blocks comprising all rows of B divided by the number of rows of A.\n\n(Worst case scenario) All rows of B match all rows of A.\n\nIn the above question |R| < |S|\n\n(i) Will decrease when the outer table's row count decreases since fewer rows require fewer blocks.\n\n(ii) If we continue R in the outer loop, there are fewer rows and more blocks.\n\nIf we continue S in the outer loop, there are more rows and fewer blocks in R.",
-    "id": "pyq_93_925"
+    "id": "pyq_93_925",
+    "q_snippet": "snippets/q_pyq_93_925.webp"
   },
   {
     "num": 11,
@@ -15739,7 +17392,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.51",
     "answerKey": "a",
     "solution": "R1(AB) A B FK ⎯⎯⎯⎯⎯⎯→ C D 1 7 6 1 2 7\n\n7 2 3 8\n\n8 5 4 9\n\n9 6\n\n(a)\nπB(r1) -πc (r2) = ϕ\n\n[7, 8, 9] - [6, 7, 8, 9] = ϕ\n\n(b)\nπC(r2) - πB (r1) = ϕ\n\n[6, 7, 8, 9] - [7, 8, 9] = 6 ≠ ϕ\n\n(c)\nπB(r1) = πc (r2)\n\n[7, 8, 9] ≠ [6, 7, 8, 9]\n\n(d)\nπB(r1) -πc (r2) ≠ ϕ\n\n[7, 8, 9] - [6, 7, 8, 9] = ϕ\n\nDatabase Management System",
-    "id": "pyq_88_926"
+    "id": "pyq_88_926",
+    "q_snippet": "snippets/q_pyq_88_926.webp",
+    "sol_snippet": "snippets/sol_pyq_88_926.webp"
   },
   {
     "num": 12,
@@ -15756,7 +17411,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.52",
     "answerKey": "a",
     "solution": "A ∪ B ≡ A ID Name Age 12 Arun 60 15 Shreya 24 99 Rohit 11 25 Hari 40 98 Rohit 20\n\nC ID Phone Area 10 2200 02 99 2100 01\n\nA C 5 tuple 2 tuple 3 attribute 3 attribute\n\nA × C = 5 × 2 = 10 Tuples\n\n= 3 + 3 = 6 Attribute\n\n(A ∪ B) ⋈ A.I.d > 40V C.I.d < 15 (C) A.Id A.Name A.Age C.Id C.Phone C. Area 12 Arun 60 10 2200 02 12 Arun 60 99 2100 01 15 Shreya 24 10 2200 02 15 Shreya 24 99 2100 01 99 Rohit 11 10 2200 02 99 Rohit 11 99 2100 01 25 Hari 40 99 2200 02 25 Hari 40 99 2100 01 98 Rohit 20 10 2200 02 98 Rohit 20 99 2100 01\n\nThe output relation will consist of 7 tuples marked in bold in the above relation.",
-    "id": "pyq_89_927"
+    "id": "pyq_89_927",
+    "q_snippet": "snippets/q_pyq_89_927.webp"
   },
   {
     "num": 13,
@@ -15773,7 +17429,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.52",
     "answerKey": "c",
     "solution": "Query I: Condition applied on a particular value.\n\nQuery II: Condition applied on a Range C1 to C2 ⇒ range queries.\n\nHashing will perform better for a particular value Q1.\n\nOrdered index perform better on range queries Q2\n\n(B+ Tree).",
-    "id": "pyq_90_928"
+    "id": "pyq_90_928",
+    "q_snippet": "snippets/q_pyq_90_928.webp"
   },
   {
     "num": 14,
@@ -15790,7 +17447,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.52",
     "answerKey": "a",
     "solution": "ABCDE R.B S.B Tuples Tuples R(ABC) S(BDE) R(ABC) S(BDE) R S= (R × S)] 200 100 = ¯ ¯ π σ FD'S : [B →A, A → C]\n\n[B]+ = [ABC] getting all attribute of relation R\n\n∴ B is the candidate key for relation R.\n\nRelation R having 200 unique values (entries)\n\nR⋈S = 100 Tuples\n\nBecause maximum 100 entries (value) of relation S match with relation R.",
-    "id": "pyq_92_929"
+    "id": "pyq_92_929",
+    "q_snippet": "snippets/q_pyq_92_929.webp",
+    "sol_snippet": "snippets/sol_pyq_92_929.webp"
   },
   {
     "num": 15,
@@ -15807,7 +17466,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.52",
     "answerKey": "d",
     "solution": "R (PQ, R1 R2, R3) S (P.Q, S1S2)\n\nI.\nπp (R⋈ S)\n\nP R.P = S.P R.Q = S.Q (R ×S) π σ ∧\n\nII.\nπp (R) ⋈ πp (S)\n\nHere we get the value of P in which Q not equal. R (PQ R1 R2 R3)\n\nS (PQ S1 S2) P Q\n\nP Q 1 2 1 2 3 5\n\n3 6 4 7\n\n4 7\n\nRelational Algebra, SQL Queries, TRC\n\nI.\nπp(R⋈ S) = P P Q 1 2 1 4 7 4 p π ⎯⎯⎯⎯⎯→\n\nII.\nπP(R) × πP(S)\n\nP 1 3 4 ⋈ Output P P 1 1 3 3 4 4 ⎯⎯⎯⎯⎯⎯⎯→\n\n(III) πP[πPQ (R) ∩ πPQ (S)]\n\nP P Q 1 2 4 7 π\n\nP 1 4\n\n(IV) R S R (R S) ∩ = − −\n\nTherefore, I, III & IV are equivalent.",
-    "id": "pyq_93_930"
+    "id": "pyq_93_930",
+    "q_snippet": "snippets/q_pyq_93_930.webp",
+    "sol_snippet": "snippets/sol_pyq_93_930.webp"
   },
   {
     "num": 16,
@@ -15824,7 +17485,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.53",
     "answerKey": "2 to 2",
     "solution": "Roll Num Name Gender Marks 1 Naman M 62 2 Aliya F 70 3 Aliya F 80 4 James M 82 5 Swati F 65\n\nThe given query on above relation will yield two tuples in the output relation\n\n\"SELECT *\n\nFROM Student\n\nWHERE gender = 'F' AND marks > 65;\"\n\nNumber of tuples (Records) = 2\n\nOutput Roll No. Name Gender Marks 2 Aliya F 70 3 Aliya F 80",
-    "id": "pyq_88_931"
+    "id": "pyq_88_931",
+    "q_snippet": "snippets/q_pyq_88_931.webp",
+    "sol_snippet": "snippets/sol_pyq_88_931.webp"
   },
   {
     "num": 17,
@@ -15841,7 +17504,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.53",
     "answerKey": "2 to 2",
     "solution": "Not exist: Return true if inner Query Result empty.\n\nWorking of EXCEPT/minus:\n\na11 a12 Except a11 ⇒ a12\n\na11 a12 Except a12 ⇒ a11\n\na11 a12 Except a12 a11 ⇒ Empty\n\na11 a12 Except a22 a23 ⇒ a11 a12\n\nS01: C11 C12 Except C11 C12 ⇒ Empty, therefore S01 returns true\n\nS02: C11 C12 Except C11 results C12, non-empty relation (false)\n\nS03: C11 C12 Except C21 C22 C23 results C11 C12 in non- empty relation (false)\n\nS04 C11 C12 Except C11 C12 results in empty relation (true)\n\nS05: C11 C12 Except C11 C21 results C12 non-empty relation (false)\n\nTherefore, the output: SNo S01 S04",
-    "id": "pyq_89_932"
+    "id": "pyq_89_932",
+    "q_snippet": "snippets/q_pyq_89_932.webp"
   },
   {
     "num": 18,
@@ -15858,7 +17522,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.53",
     "answerKey": "b",
     "solution": "It's a nested query but not Co-related query.\n\nEvaluate the innermost query first:\n\nInner Query Select average salary from emp. Average salary\n\nwill yield the average salary of all the employees and the outer query will generate the department id of employees whose gender is female and whose salary is greater than the salaries generated in the inner query.\n\nDatabase Management System",
-    "id": "pyq_90_933"
+    "id": "pyq_90_933",
+    "q_snippet": "snippets/q_pyq_90_933.webp",
+    "sol_snippet": "snippets/sol_pyq_90_933.webp"
   },
   {
     "num": 19,
@@ -15875,7 +17541,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.54",
     "answerKey": "a",
     "solution": "Running the inner query, the average cost from catalogue where part number is P4\n\nAverage cost = 200 250 2\n+\n\nAverage cost = 225\n\nNow the outer query executes and we select sno., sname from the join of Suppliers and Catalogue relation where s.no = c.sno AND cost > 225, the output relation is as below: sno. sname S2 Balaji furniture S3 Premium furniture S3 Premium furniture S3 Premium furniture",
-    "id": "pyq_92_934"
+    "id": "pyq_92_934",
+    "q_snippet": "snippets/q_pyq_92_934.webp"
   },
   {
     "num": 21,
@@ -15892,7 +17559,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.54",
     "answerKey": "d",
     "solution": "Book (B) Isbn Bname 1 A 2 B 3 C 4 D 5 E 6 F\n\nStock (S) Isbn Bname 2 10 4 20 5 30 6 40 7 50\n\nQuery I: Inner join Isbn Copies 2 10 4 20 5 30 6 40\n\nQuery II: B left outer join S Isbn Copies 2 10 4 20 5 30 6 40 1 NULL 3 NULL\n\nQuery III B right outer join S Isbn Copies 2 10 4 20 5 30 6 40 7 50\n\nRelational Algebra, SQL Queries, TRC\n\nQuery IV B full outer join S Isbn Copies 2 10 4 20 5 30 6 40 1 Null 3 Null 7 50",
-    "id": "pyq_93_935"
+    "id": "pyq_93_935",
+    "q_snippet": "snippets/q_pyq_93_935.webp",
+    "sol_snippet": "snippets/sol_pyq_93_935.webp"
   },
   {
     "num": 22,
@@ -15909,7 +17578,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.55",
     "answerKey": "7 to 7",
     "solution": "Lets say the query structure is Q1 AND Q2 where Q1 is:\n\nSELECT ta.player FROM top_scorer AS ta\n\nWHERE ta.goals > ALL (SELECT tb.goals FROM top_scorer AS tb\n\nWHERE tb.country='Spain'), and Q2 is:\n\nta.goals > ANY (SELECT tc.goals FROM top_scorer AS tc\n\nWHERE tc.country ='Germany')\n\nNote:\n\nALL returns true when the condition is false.\n\nANY returns true when the condition is true for atleast one value.\n\nIn Q1 , ALL (empty set) returns true as there is no entry for the country 'Spain'\n\nQ2 returns the following tuples:\n\n2 Germany:(16,14,11,10,10) Q ta.goal>Any(16,14,11,10,10)\n{||\n\nta.goal will yield 7 Tuples, So Q1 AND Q2 returns 7 tuples. The output relation will be: Player Country Goals Klose Germany 16 Ronaldo Brazil 15 G Muller Germany 14 Fontaine France 13 Pele Brazil 12 Klinsmann Germany 11 Kocsis Hungary 11",
-    "id": "pyq_88_936"
+    "id": "pyq_88_936",
+    "q_snippet": "snippets/q_pyq_88_936.webp",
+    "sol_snippet": "snippets/sol_pyq_88_936.webp"
   },
   {
     "num": 23,
@@ -15926,7 +17597,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.55",
     "answerKey": "2.6 to 2.6",
     "solution": "The given query is a related nested query. Output of inner Query:\n\n\"(SELECT DeptName, COUNT(EmpId) AS EC( DeptName, Num)\n\nFROM EMP\n\nGROUP BY DeptName)\" is as follows: EC: DeptName Num AA 4 AB 3 AC 3 AD 2 AE 1\n\nAfter the inner query execution, the outer query will find the average as follows:\n\nAverage = 4 3 3 2 1 5\n+\n+\n+\n+\n13 5 = = 2.6",
-    "id": "pyq_89_937"
+    "id": "pyq_89_937",
+    "q_snippet": "snippets/q_pyq_89_937.webp",
+    "sol_snippet": "snippets/sol_pyq_89_937.webp"
   },
   {
     "num": 24,
@@ -15943,7 +17616,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.55",
     "answerKey": "2 to 2",
     "solution": "Total\n\nName Capacity\n\nAjmer 20\n\nBikaner 40 > 25 Churu 30\n\nDungargarh 10\n\nTotal Average = 20 40 30 10 4\n+\n+\n+\n= 100 4 = 25 Total Average Capacity 25\n\nTotal Capacity > Total Average Capacity\n\nTotal Capacity 25\n\nDatabase Management System Name Capacity Bikaner 40 Churu 30\n\n2 Tuples in the output relation.",
-    "id": "pyq_90_938"
+    "id": "pyq_90_938",
+    "q_snippet": "snippets/q_pyq_90_938.webp",
+    "sol_snippet": "snippets/sol_pyq_90_938.webp"
   },
   {
     "num": 25,
@@ -15960,7 +17635,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.56",
     "answerKey": "a",
     "solution": "Consider the given relation Cinema along with the data:\n\nCinema Theater Address Capacity T1 A 100 T2 B 200 T3 C 300 T4 D 400\n\nWhen we execute the query with the condition mentioned in options on the above relation we get:\n\n(a)\nWHERE P1. Capacity ≥ ALL (100, 200, 300, 400)\n\n(x ≥ 100) AND (x ≥ 200) AND (x ≥ 300) AND (x ≥ 400)\n\n400 is in output i.e theater with maximum Capacity.\n\n(b) WHERE P1 Capacity ≥ ANY (100, 200, 300,\n400)\n\n(x ≥ 100) OR (x ≥ 200) OR (x ≥ 300) (OR) (x ≥ 400)\n\n100, 200, 300, 400 is in output, i.e not getting theater with maximum Capacity\n\n(c)\nWHERE P1. Capacity > ALL (400) returns 0 tuples.\n\n(d) WHERE P1. Capacity > ANY (400) returns 0\ntuples.\n\nTherefore, condition in option(a) will always find the addresses of theaters with maximum capacity.",
-    "id": "pyq_92_939"
+    "id": "pyq_92_939",
+    "q_snippet": "snippets/q_pyq_92_939.webp",
+    "sol_snippet": "snippets/sol_pyq_92_939.webp"
   },
   {
     "num": 26,
@@ -15977,7 +17654,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.56",
     "answerKey": "d",
     "solution": "SELECT operation in SQL is equivalent to PROJECTION operation in relational algebra except the fact that PROJECTION contains only distinct values and eliminates duplicates while SELECT in SQL retains the duplicate values.\n\nFor example consider SELECT and PROJECTION operation outputs on the given relation R with A, B, and C fields:\n\nR (ABC) O/P A B C A B 2 5 7 SELECT AB 2 5 3 6 9 FROMR 3 6 2 5 8 2 5 ⎯⎯⎯⎯⎯⎯→\n\nπAB(R) --→ A B 2 5 3 6 = SELECT [DISTINCT]AB\nFROM R;\n\nSQL:\n\n1 2 3 n 1 2 3 n Select[Distinct] A A A ...... A Projection[ ] From R R R ....R Cross product[x] Where condition [P] = Selection[ ] = π\n||\n=\n||\nσ\n|\n\nRelation Algebra query:\n\nπA1A2 …… An [σcondition (R1 × R2 × R3 × …. × Rm)]",
-    "id": "pyq_93_940"
+    "id": "pyq_93_940",
+    "q_snippet": "snippets/q_pyq_93_940.webp"
   },
   {
     "num": 28,
@@ -15994,7 +17672,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.57",
     "answerKey": "b",
     "solution": "The query is a co-related nested query. The inner query yields the customer Id whose rating is NOT GOOD. The Operator NOT EXISTS returns true if inner query result is empty. It works like a complement operation, so the outer query returns the names of all the employees with all their customers having a 'GOOD' rating.\n\nAll A.Id will be in output",
-    "id": "pyq_88_941"
+    "id": "pyq_88_941",
+    "q_snippet": "snippets/q_pyq_88_941.webp",
+    "sol_snippet": "snippets/sol_pyq_88_941.webp"
   },
   {
     "num": 29,
@@ -16011,7 +17691,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.57",
     "answerKey": "c",
     "solution": "R: A B C 1 4 8 1 4 8 5 6 10 5 6 10\n\nS: A D E 1 4 8 4 5 11 5 8 9 5 8 9\n\nThe output of the given query: Select * from R where a in (select S.a from S) is as follows: A B C 1 4 8 1 4 8 5 6 10 5 6 10\n\nIn option (a):\n\n4 × 4 = 16 tuple\n\n3 + 3 = 6 attribute A B C 1 4 8 1 4 8 5 6 10 5 6 10 5 6 10 5 6 10\n\nIn option (b): A B C 1 4 8 5 6 10\n\nIn option (c): A B C 1 4 8 1 4 8 5 6 10 5 6 10",
-    "id": "pyq_89_942"
+    "id": "pyq_89_942",
+    "q_snippet": "snippets/q_pyq_89_942.webp",
+    "sol_snippet": "snippets/sol_pyq_89_942.webp"
   },
   {
     "num": 30,
@@ -16028,7 +17710,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.57",
     "answerKey": "b",
     "solution": "Inner query gives dept id and max(Hire data) in each department where location id is 1700.\n\nComplete query gives last name and hire date\n\nOf maximum (latest hiring) in their respective dept at which location id = 1700\n\nDatabase Management System",
-    "id": "pyq_90_943"
+    "id": "pyq_90_943",
+    "q_snippet": "snippets/q_pyq_90_943.webp",
+    "sol_snippet": "snippets/sol_pyq_90_943.webp"
   },
   {
     "num": 31,
@@ -16045,7 +17729,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.58",
     "answerKey": "c",
     "solution": "• Having even does not have group by clause. • Having clause applies condition on each group. • All Attribute used in the group by clause must be (Present) in select clause.",
-    "id": "pyq_92_944"
+    "id": "pyq_92_944",
+    "q_snippet": "snippets/q_pyq_92_944.webp"
   },
   {
     "num": 32,
@@ -16062,7 +17747,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.58",
     "answerKey": "b",
     "solution": "ALL returns True if inner query returns no tuples or φ. So, Number of tuples returned will be number of tuples in relation A that is 3.",
-    "id": "pyq_93_945"
+    "id": "pyq_93_945",
+    "q_snippet": "snippets/q_pyq_93_945.webp",
+    "sol_snippet": "snippets/sol_pyq_93_945.webp"
   },
   {
     "num": 33,
@@ -16079,7 +17766,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.58",
     "answerKey": "c",
     "solution": "S:\n\nT: Borrower Bank_ Manager\n\nBank_ Manager Loan_ Amount Ramesh Sunderaja n [SJ] ⋈ Sunderajan [SJ] 10000 Suresh Ramgopal [RG]\n\nRam Gopal [RG] 5000 Mahesh Sunderaja n [SJ]\n\nSunderajan [SJ] 7000\n\n3×3 = 9 Tuple\n\n2+2 = 4 Attribute S. Borrower S. Bank_ Manager T. Bank_ Manager T.Loan_ Amount Ramesh [SJ] [SJ] 10,000 Ramesh [SJ] RG 5000 Ramesh [SJ] [SJ] 7000 Suresh RG [SJ] 10,000 Suresh RG RG 5000 Suresh RG [SJ] 7000 Mahesh [SJ] [SJ] 10000 Mahesh [SJ] RG 5000 Mahesh [SJ] [SJ] 7000\n\n5 Tuples in the output.",
-    "id": "pyq_88_946"
+    "id": "pyq_88_946",
+    "q_snippet": "snippets/q_pyq_88_946.webp",
+    "sol_snippet": "snippets/sol_pyq_88_946.webp"
   },
   {
     "num": 34,
@@ -16096,7 +17785,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.58",
     "answerKey": "a",
     "solution": "X Y 1 1\n\n[MX + 1] X Y 2 * MY + 1\n\n1 1\n\nX = 1 + 1 = 2 2 3 2 × 1 + 1 = 3 2 + 1 = 3 3 7 2 × 3 + 1 = 7 3 + 1 = 4 4 15 2 × 7 + 1 = 15 4 + 1 = 5 5 31 2 × 15 + 1 = 31 5 + 1 = 6 6 63 2 × 31 + 1 = 63 6 + 1 = 7 7 127 2 × 63 + 1 = 127 7 + 1 = 8 8 255 2 × 127+ 1 = 255 8 + 1 = 9 9 511 2 × 255 + 1 = 511\n\nTherefore, the query: SELECT Y FROM T WHERE X = 7; will yield 127.",
-    "id": "pyq_89_947"
+    "id": "pyq_89_947",
+    "q_snippet": "snippets/q_pyq_89_947.webp",
+    "sol_snippet": "snippets/sol_pyq_89_947.webp"
   },
   {
     "num": 35,
@@ -16113,7 +17804,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.58",
     "answerKey": "c",
     "solution": "EXIST returns true if inner query result is non-empty.\n\nIt is a corelated nested query & inner query condition is Age > 65 & passenger Pid = reservation Pid.\n\nCorelated nested query: Top → Bottom → Top\n\nOuter → Inner → Outer query\n\nIn outer query ⇒ condition class = 'AC'\n\nwill return Pid 0, 1, 5, 3 and inner query Age > 65.\n\nreturns Pid 1, 2, 3, final the output relation is as follows: Pid 1 3\n\nRelational Algebra, SQL Queries, TRC",
-    "id": "pyq_90_948"
+    "id": "pyq_90_948",
+    "q_snippet": "snippets/q_pyq_90_948.webp",
+    "sol_snippet": "snippets/sol_pyq_90_948.webp"
   },
   {
     "num": 37,
@@ -16130,7 +17823,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.59",
     "answerKey": "d",
     "solution": "If the select clause includes columns with and without aggregate data. The Select clause's non-aggregate columns must all exist in the Group By clause. Nevertheless, this query's Group by clause uses school-id rather than school-name. Hence, the query generates the syntax error.",
-    "id": "pyq_92_949"
+    "id": "pyq_92_949",
+    "q_snippet": "snippets/q_pyq_92_949.webp",
+    "sol_snippet": "snippets/sol_pyq_92_949.webp"
   },
   {
     "num": 38,
@@ -16147,7 +17842,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.59",
     "answerKey": "d",
     "solution": "All three expressions are identical before ∧ the operation, i.e.return true if for each tuple t we have finite number of tuple u in employee table for which they have same employee_name.\n\n(I) But in part two, for each tuple v in department there may exist infinite number of tuple t for which they may not be equal. i.e. true for finite number of tuples ∧ true for infinite number of tuples, over all true for finite tuple.\n\n(II) There may exist infinite number of tuple for which at least one tuple v belongs to department table for which they may not be equal. i.e. true\nfor finite number of tuples ∧ true for infinite\nnumber of tuples, over all true for finite tuple.\n\n(III) This statement is true for a finite number of tuples because only a finite number of tuples that are identical to at least one tuple in department. Due to the limited number of tuples in department tables, tuples that are identical may not exceed all tuples in department table in the event of equity. Specifically, true for a finite tuple, true for a finite tuple overall.\n\nTherefore, all TRC queries will yield finite tuples, indicating that all are safe.",
-    "id": "pyq_93_950"
+    "id": "pyq_93_950",
+    "q_snippet": "snippets/q_pyq_93_950.webp",
+    "sol_snippet": "snippets/sol_pyq_93_950.webp"
   },
   {
     "num": 39,
@@ -16164,7 +17861,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.59",
     "answerKey": "a",
     "solution": "(a) This is a SQL query expression. It first perform\na cross product of Students and Registration, then WHERE clause only keeps those rows in the cross product set where the student is registered\nfor course no 107, and percentage is > 90. Then\nselect distinct statement gives the distinct names of those students as the result set.\n\n(b) This is a relational algebra expression. It first\nperform a NATURAL JOIN of Students and Registration (NATURAL JOIN implicitly joins on the basis of common attribute, which here is rollno), then the select operation(sigma) keeps only those rows where the student is registered\nfor courseno 107, and percentage is > 90. And\nthen the projection operation (pi) projects only distinct student names from the set.\n\nNote: Projection operation (pi) always gives the distinct result.\n\nDatabase Management System\n\n(c) This is a Tuple Relational Calculus (TRC)\nlanguage expression, It is not a procedural language (i.e. it only tells \"what to do\", not \"how to do\"). It just represents a declarative mathematical expression.\n\nHere T is a Tuple variable.\n\nFrom left to right, it can be read like this, \"It is a set of tuples T, where, there exists a tuple S in Relation Students, and there exist a tuple R in relation Registration, such that S.rollno = R.rollno AND R.couseno = 107 AND R.percent > 90 AND T.sname = S.sname\". And the schema of this result is (sname), i.e. each tuple T will contain only student name, because only T.sname has been defined in the expression.\n\nAs TRC is a mathematical expression, hence it is expected to give only distinct result set.\n\n(d) This is a Domain Relational Calculus (DRC)\nlanguage expression. This is also not procedural. Here SN is a Domain Variable. It can be read from left to right like this \"The set of domain variable SN, where, there exist a domain variable SR, and a domain variable Rp, such that, SN and SR domain variables is in relation Students and SR, 107, RP is a domain variables set in relation Registration, AND RP > 90 \"Above, SN represents sname domain attribute in Students relation, SR represents rollno domain attribute in Students relation, and RP represents percentage domain attribute in Registration relation. The schema for the result set is (SN), i.e. only student name.\n\nAs DRC is a mathematical expression, hence it is expected to give only distinct result set.",
-    "id": "pyq_88_951"
+    "id": "pyq_88_951",
+    "q_snippet": "snippets/q_pyq_88_951.webp",
+    "sol_snippet": "snippets/sol_pyq_88_951.webp"
   },
   {
     "num": 41,
@@ -16181,7 +17880,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.60",
     "answerKey": "c",
     "solution": "t | ∃E Enrolment t = E. school-id\n\nReturns school-ids from Enrolment table SUCH THAT •\n|{x; | x ∈ Enrolment ∧ x. school-id = t ∧ (∃B ∈\nExamResult B. erollno x. erollno ∧ B.examname = x. examname ∧ B.marks > 35)}÷ • the number of student enrolments from the school\nfor exams with marks > 35 divides\n\n|{x | x ∈ Enrolment ∧ x.school-id = t}|\n\ntotal number of student enrolments from the school\n\n*100 > 35\n\npercentage of student enrolments with mark > 35 is > 35\n\nSelecting the school-ids where the pass percentage of students across all the examinations taken combined is > 35 is necessary because passing an exam requires a mark of > 35.",
-    "id": "pyq_89_952"
+    "id": "pyq_89_952",
+    "q_snippet": "snippets/q_pyq_89_952.webp",
+    "sol_snippet": "snippets/sol_pyq_89_952.webp"
   },
   {
     "num": 1,
@@ -16198,7 +17899,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.64",
     "answerKey": "c",
     "solution": "2. (c)",
-    "id": "pyq_91_953"
+    "id": "pyq_91_953",
+    "q_snippet": "snippets/q_pyq_91_953.webp",
+    "sol_snippet": "snippets/sol_pyq_91_953.webp"
   },
   {
     "num": 2,
@@ -16215,7 +17918,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.64",
     "answerKey": "c",
     "solution": "The data record of the file is organized in the same order as the date entries of the index. A clustered index consists of non-key + ordered file.",
-    "id": "pyq_91_954"
+    "id": "pyq_91_954",
+    "q_snippet": "snippets/q_pyq_91_954.webp",
+    "sol_snippet": "snippets/sol_pyq_91_954.webp"
   },
   {
     "num": 3,
@@ -16232,7 +17937,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.64",
     "answerKey": "a",
     "solution": "Clustering Index: Non key + ordered field\n\nPrimary Index: Key + ordered field\n\nSecondary Index:\n\n(a) Non key + unordered field [Secondary index\nover non key attribute].\n\n(b) Key + unordered field [Secondary index over key\nattribute].",
-    "id": "pyq_91_955"
+    "id": "pyq_91_955",
+    "q_snippet": "snippets/q_pyq_91_955.webp",
+    "sol_snippet": "snippets/sol_pyq_91_955.webp"
   },
   {
     "num": 4,
@@ -16249,7 +17956,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.64",
     "answerKey": "6 to 6",
     "solution": "Total number of Records = 25,000\n\nBlock size = 1024 Byte, Records size = 100 Byte\n\nKey = 15 byte, BP = 5 byte, Fixed length, Unspanned organization, primary index\n\nBlock factor of DB file [BFDB] = Block size Record size\n\n⇒ 1024 B 100 B\n\n= 10 Records per Block\n\nTotal number of Records = 25,000\n\nTotal number of DB block = 25000 10\n\n= 2500 Data Blocks\n\nOne Index record size = Size of key + size of block pointer\n\n15 + 5 = 20 Byte\n\nBlock factor of Index file = 1024 B 20 B\n\n= 51.2\n\n= 51 51 index record per Block (entries).\n\nPrimary Index:\n\nSPARSE ⇒ Total number of Index Entries = 2500 (Number of DB Block)\n\nTotal number Index entries = 2500\n\nFile Organization and Indexing\n\nBlock factor of Index file = 51 Index entries per Block.\n\nB: Index Block\n\nTotal number of Index Block [b] = 2500 51\n\n= 49.01\n\n= 50 Index Block\n\nIn worst case number of Block Access Required = 2 log b\n\n⇒ 2 log 50\n\n= 6 Block Access",
-    "id": "pyq_91_956"
+    "id": "pyq_91_956",
+    "q_snippet": "snippets/q_pyq_91_956.webp",
+    "sol_snippet": "snippets/sol_pyq_91_956.webp"
   },
   {
     "num": 5,
@@ -16266,7 +17975,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.65",
     "answerKey": "698 to 698",
     "solution": "Total number of Record = 1,50,000, Block size = 4096 Byte, Record Pointer = 7 Byte, key (ANum) size =12 Byte.\n\nData file is sorted based on primary key (Roll No),\n\nbut index is build on the field ANum. [candidate key] secondary Index.\n\n∴ so its dense index i.e number of index entries = number DB records = 1,50,000 and Record of Data file & Index file are not split across Disk Block, i.e un-spanned organization.\n\nOne index record size = size of key (ANum) + size of (Record Pointer) Rp = 12 + 7\n\nOne index record size = 19 Byte\n\nBlock Factor of Index File (Unspanned) = Blocksize 4096 215 Record size 19\n\n=\n\nIndex Record Per Block.\n\nTotal Number of Index Block = 1,50,000 698 215\n\n=\n\nIndex Blocks.",
-    "id": "pyq_91_957"
+    "id": "pyq_91_957",
+    "q_snippet": "snippets/q_pyq_91_957.webp",
+    "sol_snippet": "snippets/sol_pyq_91_957.webp"
   },
   {
     "num": 6,
@@ -16283,7 +17994,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.65",
     "answerKey": "c",
     "solution": "Total number of records = 16384 (214)\n\nRecord size = 32 Byte, Block size = 1024 Byte, Key size = 6 Byte, Block Pointer = 10 Byte\n\nThe index is unspanned, secondary (dense) index.\n\nOne index record size = Size of search key + size of block pointer ⇒ 6 + 10 = 16 Byte\n\nBlock factor of index file (BFi) (Unspanned organization) Block size Record size\n\n=\n\n1024B 16B\n\n=\n\n10 4 2 2 ⇒ = 26 = 64. Index entries per Block\n\nSecondary Index: Total number of Index entries\n\n= Total number of records = 16,384.\n\nIst level- Total number of Index Block = Total Index Entries Number of Entries per Block\n\n16384 = 64 14 6 2 2 = = 28 = 256 Index Block.\n\nIInd Level-\n\nTotal number of Index Entries = 256 (Number of Ist level Block) & BFi = 64 Index Entries per Block\n\nTotal number of Index Block =\n\nTotal Index Entries Number of Entries per Block\n\n256 = 64 8 6 2 2 = = 22 = 4 Index Blocks.\n\nSo, first Level and second level blocks are: 256 & 4, respectively.",
-    "id": "pyq_91_958"
+    "id": "pyq_91_958",
+    "q_snippet": "snippets/q_pyq_91_958.webp"
   },
   {
     "num": 7,
@@ -16300,7 +18012,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.65",
     "answerKey": "4 to 4",
     "solution": "Block size = 4KB,\n\nSearch key = 12 Byte\n\nBP = 8B\n\nTotal number of records = 106\n\nDatabase Management System\n\nORDER of B+ Tree\n\nP × BP + (P -1) key < Block size\n\nP × 8 + (P -1) 12 < 4 ×1024\n\n8P + 12P - 12 < 4096\n\n20P - 12 < 4096\n\n20P < 4108\n\nP = 4108 20\n\n= 205.4\n\nP = 205\n\nMinimum number of levels means that we get maximum number of keys at a block.\n\n(BP) ORDER (P) = 205\n\n(P - 1) maximum key = 204\n\nOr (RP)\n\n1st level:\n\nTotal number of Record = 106 (Entries)\n\nTotal number of Block = 6 10 204\n\n= 4902 Blocks\n\n2nd level\n\nTotal number of entries = 4902 (No. of 1st level block)\n\nTotal number of blocks = 4902 205\n\n= 24 blocks\n\n3rd level\n\nTotal number of entries = 24 (No. of 2nd level block)\n\nTotal number of Block = 24 205\n\n= 1 block\n\nHere, 3 Block access for 3 level + 1 block access for accessing the records = 3 + 1 = 4.",
-    "id": "pyq_91_959"
+    "id": "pyq_91_959",
+    "q_snippet": "snippets/q_pyq_91_959.webp",
+    "sol_snippet": "snippets/sol_pyq_91_959.webp"
   },
   {
     "num": 8,
@@ -16317,7 +18031,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.66",
     "answerKey": "52 to 52",
     "solution": "Key = 8 Byte, Block pointer(Bp) = 2 Byte, Block size = 512 Byte\n\nMaximum order of B+ tree: Internal node\n\nInternal Node: ORDER P: P × Bp + (P - 1) key ≤ Block size\n\nP × 2 + (P - 1) 8 ≤ 512\n\n2P + 8 P - 8 ≤ 512\n\n10P ≤ 520\n\n520 P = 52 10\n\n=\n\nP = 52",
-    "id": "pyq_91_960"
+    "id": "pyq_91_960",
+    "q_snippet": "snippets/q_pyq_91_960.webp",
+    "sol_snippet": "snippets/sol_pyq_91_960.webp"
   },
   {
     "num": 9,
@@ -16334,7 +18050,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.66",
     "answerKey": "a",
     "solution": "In a B+ tree the length of the paths from the root to all leaf nodes are all equal.",
-    "id": "pyq_91_961"
+    "id": "pyq_91_961",
+    "q_snippet": "snippets/q_pyq_91_961.webp",
+    "sol_snippet": "snippets/sol_pyq_91_961.webp"
   },
   {
     "num": 10,
@@ -16351,7 +18069,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.66",
     "answerKey": "50 to 50",
     "solution": "Key = 12 Byte, Block Pointer(BP) = 8 Byte, Block size = 1024Byte, Record Pointer (RP) = 10 Byte.\n\nB+ tree: Non leaf Node:\n\nORDER(P): P × BP + (P-1) key ≤ Block size\n\nP × 8 + (P - 1) 12 ≤ 1024\n\n8P + 12 P - 12 ≤ 1024\n\n20P ≤ 1036 Maximum Block Pointer\n\n1036 P = P = 51 20\n\n= =\n\nMaximum Number of keys = P - 1\n\n= 51 - 1\n\n= 50.\n\nFile Organization and Indexing",
-    "id": "pyq_91_962"
+    "id": "pyq_91_962",
+    "q_snippet": "snippets/q_pyq_91_962.webp",
+    "sol_snippet": "snippets/sol_pyq_91_962.webp"
   },
   {
     "num": 11,
@@ -16368,7 +18088,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.67",
     "answerKey": "5 to 5",
     "solution": "The minimum number of nodes including the root node that must be fetched in order to satisfy the given query is 5.",
-    "id": "pyq_91_963"
+    "id": "pyq_91_963",
+    "q_snippet": "snippets/q_pyq_91_963.webp"
   },
   {
     "num": 12,
@@ -16385,7 +18106,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.67",
     "answerKey": "b",
     "solution": "Maximum Number of keys = 5\n\nORDER P : Maximum Number of key = P - 1\n\n⇒ P - 1 = 5 P = 6\n\nOrder of B+ tree = 6\n\nMinimum Number of Block Pointer (in non-root (internal) node = [P/2]\n\nMinimum number of key in non-root node = [ P/2] - 1 [6/2] - 1 ⇒ 3 - 1 = 2.",
-    "id": "pyq_91_964"
+    "id": "pyq_91_964",
+    "q_snippet": "snippets/q_pyq_91_964.webp",
+    "sol_snippet": "snippets/sol_pyq_91_964.webp"
   },
   {
     "num": 13,
@@ -16402,7 +18125,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.67",
     "answerKey": "c",
     "solution": "B+ tree, keys to be inserted are: 10, 3, 6, 8, 4, 2, 1\n\nOrder = 3\n\nMaximum key = 2\n\nDatabase Management System\n\nSplit number (2) when '4' inserted.\n\n10, 3, 6, 8, 4, 2, 1\n\nSplit number (3) when '2' inserted.\n\nSplit number (4) when '1' inserted.\n\nSo, total number of splits at leaf node = 4.",
-    "id": "pyq_91_965"
+    "id": "pyq_91_965",
+    "q_snippet": "snippets/q_pyq_91_965.webp",
+    "sol_snippet": "snippets/sol_pyq_91_965.webp"
   },
   {
     "num": 14,
@@ -16419,7 +18144,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "1.68",
     "answerKey": "c",
     "solution": "B Tree Order: 4\n\nMax key =3\n\nFile Organization and Indexing\n\nLet assume: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10\n\nTotal number of splits = 4 + 1 = 5",
-    "id": "pyq_91_966"
+    "id": "pyq_91_966",
+    "q_snippet": "snippets/q_pyq_91_966.webp",
+    "sol_snippet": "snippets/sol_pyq_91_966.webp"
   },
   {
     "num": 1,
@@ -16436,7 +18163,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.4",
     "answerKey": "b",
     "solution": "Option b is incorrect because bit synchronization is the functionality of physical layer.",
-    "id": "pyq_85_967"
+    "id": "pyq_85_967",
+    "q_snippet": "snippets/q_pyq_85_967.webp",
+    "sol_snippet": "snippets/sol_pyq_85_967.webp"
   },
   {
     "num": 2,
@@ -16453,7 +18182,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.4",
     "answerKey": "c",
     "solution": "NID HID\n\n24 8\n\n110 2\n| 1bit\n\n↓\n\nThe number of networks in class C = 221\n\nSo, option C is the correct answer.",
-    "id": "pyq_86_968"
+    "id": "pyq_86_968",
+    "q_snippet": "snippets/q_pyq_86_968.webp",
+    "sol_snippet": "snippets/sol_pyq_86_968.webp"
   },
   {
     "num": 3,
@@ -16470,7 +18201,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.4",
     "answerKey": "3",
     "solution": "First start with the longest subnet mask\n\nI\n\n200.150.68.01110110\n\nAND\n\n255.255.255.11100000\n\nNID = 200.150.68.96\n\nNot matched with interface (4)\n\nII\n\n200.150.68.118\n\nAND\n\n255.255.255.0\n\nNID = 200.150.68.0\n\nMatched with interface (3)\n\nNo need to check further if it matches with more than one interfaces then we choose longest subnet mask.",
-    "id": "pyq_87_969"
+    "id": "pyq_87_969",
+    "q_snippet": "snippets/q_pyq_87_969.webp",
+    "sol_snippet": "snippets/sol_pyq_87_969.webp"
   },
   {
     "num": 4,
@@ -16487,7 +18220,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.4",
     "answerKey": "c",
     "solution": "IP address\n\nAND\n\nSubnetMask Subnetid\n\nM: 100.10.5.00000010\n\nAND\n\n255.255.255.11111100\n\nSID = 100.10.5.0\n\nN : 100.10.5.00000101\n\nAND\n\n255.255.255.11111100\n\nSID = 100.10.5.00000100\n\nSID = 100.10.5.4\n\nP : 100.10.5.00000110\n\nAND\n\n255.255.255.11111100\n\nSID = 100.10.5.00000100\n\n100.10.5.4\n\nBasic Concepts and IPv4 Addressing\n\nN & P belong to same subnet. So, option c is the answer.",
-    "id": "pyq_88_970"
+    "id": "pyq_88_970",
+    "q_snippet": "snippets/q_pyq_88_970.webp",
+    "sol_snippet": "snippets/sol_pyq_88_970.webp"
   },
   {
     "num": 5,
@@ -16504,7 +18239,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.5",
     "answerKey": "a",
     "solution": "Note: First start with longest mask\n\n(a)\n\n128.96.171.92\n\nAND\n\n255.255.254.0\n\nNID = 128.96.170.0\n\nMatched with interface (0)\n\n(b)\n\n128.96.167.151\n\nAND\n\n255.255.254.0\n\nNID = 128.96.166.0\n\nMatched with R2.\n\n(c)\n\n128.96.163.151\n\nAND\n\n255.255.254.0\n\nNID = 128.96.162.0\n\nNot matched\n\n128.96.163.151\n\nAND\n\n255.255.252.0\n\nNID = 128.96.160.0\n\nNot matched\n\nNote:- Does not match with any given interface then 128.96.163.151 will forward to default interface R4.\n\n(d)\n\n128.96.165.121\n\nAND\n\n255.255.254.0\n\n128.96.164.0\n\n128.96.165.121\n\nAND\n\n255.255.252.0\n\n128.96.164.0\n\nMatched with R3.\n\nSo, option A is correct answer.",
-    "id": "pyq_85_971"
+    "id": "pyq_85_971",
+    "q_snippet": "snippets/q_pyq_85_971.webp",
+    "sol_snippet": "snippets/sol_pyq_85_971.webp"
   },
   {
     "num": 6,
@@ -16521,7 +18258,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.5",
     "answerKey": "d",
     "solution": "(a) 10.105.1.113\n\nAND\n\n255.255.255.0\n\nNID = 10.105.1.0\n\n10.105.1.91\n\nAND\n\n255.255.255.0\n\nNID = 10.105.1.0 So, option a is incorrect.\n(b) 10.105.1.113\n\nAND\n\n255.255.255.128\n\nNID = 10.105.1.0\n\n10.105.1.91\n\nAND\n\n255.255.255.128\n\nNID = 10.105.1.0 So, option b is incorrect\n\n(c) 10.105.1.113\n\nComputer Networks\n\nAND\n\n255.255.255.192\n\nNID = 10.105.1.64\n\n10.105.1.91\n\nAND\n\n255.255.255.192\n\nNID = 10.105.1.64\n\nSo, option c is incorrect\n\n(d)\n10.105.1.113\n\nAND\n\n255.255.255.224\n\nNID = 10.105.1.96\n\n10.105.1.91\n\nAND\n\n255.255.255.224\n\nNID = 10.105.1.64\n\nSo, option d is the correct answer.",
-    "id": "pyq_86_972"
+    "id": "pyq_86_972",
+    "q_snippet": "snippets/q_pyq_86_972.webp",
+    "sol_snippet": "snippets/sol_pyq_86_972.webp"
   },
   {
     "num": 7,
@@ -16538,7 +18277,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.6",
     "answerKey": "c",
     "solution": "Netmask: 255.255.255.224\n\nI 192.168.1.97\n\nAND\n\n255.255.255.224\n\nSID = 192.168.1.96\n\nII 192.168.1.135\n\nAND\n\n255.255.255.224\n\nSID = 192.168.1.128\n\nIII 192.168.1.110\n\nAND\n\n255.255.255.224\n\nSID = 192.168.1.96\n\nIV 192.168.1.67\n\nAND\n\n255.255.255.224\n\nSID = 192.168.1.64\n\nV 192.168.1.155\n\nAND\n\n255.255.255.224\n\nSID = 192.168.1.128\n\nVI 192.168.1.80\n\nAND\n\n255.255.255.224\n\nSID = 192.168.1.64\n\nDifferent subnet id's\n\n192.168.1.96 192.168.1.128 192.168.1.64\n|\n|\n3 different subnet id's\n\nSo, option C is the correct answer.\n\nShortcut\n\n255.255.255.111 00000\n\nNID SID HID\n\nBasic Concepts and IPv4 Addressing",
-    "id": "pyq_87_973"
+    "id": "pyq_87_973",
+    "q_snippet": "snippets/q_pyq_87_973.webp",
+    "sol_snippet": "snippets/sol_pyq_87_973.webp"
   },
   {
     "num": 8,
@@ -16555,7 +18296,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.7",
     "answerKey": "b",
     "solution": "X : 192.168.1.97\n\nAND\n\n255.255.255.224\n\n192.168.1.96\n\nNote: Gateway must also have the same subnet id\n\n(a) 192.168.1.67\n\nAND\n\n255.255.255.224\n\nSID = 192.168.1.64\n\nSo, option a is incorrect.\n\n(b) 192.168.1.110\n\nAND\n\n255.255.255.224\n\nSID = 192.168.1.96\n\nTherefore, option B is the correct answer.",
-    "id": "pyq_88_974"
+    "id": "pyq_88_974",
+    "q_snippet": "snippets/q_pyq_88_974.webp"
   },
   {
     "num": 9,
@@ -16572,7 +18314,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.7",
     "answerKey": "c",
     "solution": "Given,\n\nSubnet Mask: 255.255.248.0\n\nSM : 11111111.11111111.11111000.00000000 HID = 11 bit\n\nMaximum number of Hosts/Subnet = 211 - 2\n\n= 2048 - 2\n\n= 2046\n\nSo, option C is the correct answer.",
-    "id": "pyq_85_975"
+    "id": "pyq_85_975",
+    "q_snippet": "snippets/q_pyq_85_975.webp",
+    "sol_snippet": "snippets/sol_pyq_85_975.webp"
   },
   {
     "num": 10,
@@ -16589,7 +18333,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.7",
     "answerKey": "b",
     "solution": "For 1500 computers HID must be minimum 11 bits\n\n202.61.0.0/17\n\nNID = 17bit, HID = 32 - 17 = 15bit\n\n202.61.0 - - - - - - - - . - - - - - - - -\n\n8 + 8 + 1 HID\n\nNID\n\n202.61.00000000 00000000 → 202.61.0.0\n\n⁞ ⁞ ⁞\n\n202.61.01111111.11111111 → 202.61.127.255\n\nI 202.61.84.0/21\n\nNID = 21, HID = 11 bit\n\nFirst IP address of the block must be divisible by size of the block means all host id bits should be zero.\n\n202.61.01010100.00000000/211\n\nHID\n\nIt is incorrect\n\nII 202.61.01101000.00000000/211\n\nHID\n\nIt is correct\n\nIII 202.61.01000000.00000000/211\n\nHID\n\nIt is correct\n\nSo, option b is the correct answer.",
-    "id": "pyq_86_976"
+    "id": "pyq_86_976",
+    "q_snippet": "snippets/q_pyq_86_976.webp",
+    "sol_snippet": "snippets/sol_pyq_86_976.webp"
   },
   {
     "num": 11,
@@ -16606,7 +18352,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.7",
     "answerKey": "158",
     "solution": "200.10.11.144/27\n\nNID = 27 bit, HID = 5 bit\n\n200.10.11.10010000\n\n8 + 8 + 8 + 3 HID\n\nNID\n\n200.10.11.100 - - - - -\n\nComputer Networks\n\nHID\n\n200.10.11.10011110\n\n↓\n\n200.10.11.158",
-    "id": "pyq_87_977"
+    "id": "pyq_87_977",
+    "q_snippet": "snippets/q_pyq_87_977.webp",
+    "sol_snippet": "snippets/sol_pyq_87_977.webp"
   },
   {
     "num": 12,
@@ -16623,7 +18371,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.8",
     "answerKey": "1",
     "solution": "Prefix Subnet mask Output Interface Identifier 131.16.0.0/12 255.240.0.0 3 131.28.0.0/14 255.252.0.0 5 131.19.0.0/16 255.255.0.0 2 131.22.0.0/15 255.254.0.0 1\n\nFirst start with the longest subnet mask\n\nI. DIP\n= 131.23.151.76\n\nAND AND\n\nSM 255.255.0.0\n\nNID = 131.23.0.0\n\nNot matched with interface (2)\n\nII. DIP\n= 131.23.151.76\n\nAND AND\n\nSM 255.254.0.0\n\nNID = 131.22.0.0\n\nMatched with interface (1)\n\n23 : 00010111\n\nAND AND\n\n254\n\n11111110\n\n(22)\n\n00010110",
-    "id": "pyq_88_978"
+    "id": "pyq_88_978",
+    "q_snippet": "snippets/q_pyq_88_978.webp",
+    "sol_snippet": "snippets/sol_pyq_88_978.webp"
   },
   {
     "num": 13,
@@ -16640,7 +18390,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.8",
     "answerKey": "a",
     "solution": "Given,\n\n245.248.128.0/20\n\nNID = 20 bit, HID = 32 - 20 = 12 bit\n\n245.248.1000 . . . . . . . .\n\nNID HID\n\nNumber of IP Addresses = 212\n\nOr\n\nSo, option a is the correct answer.\n\nBasic Concepts and IPv4 Addressing",
-    "id": "pyq_85_979"
+    "id": "pyq_85_979",
+    "q_snippet": "snippets/q_pyq_85_979.webp"
   },
   {
     "num": 14,
@@ -16657,7 +18408,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.9",
     "answerKey": "b, d",
     "solution": "12.20.164.0/23 12.20.170.0/23 12.20.168.0/23 12.20.166.0/23\n\nI.\n\nII.\n\nIII.\n\nIV.\n\nNetwork IV is the part of Network I so we can just ignore Network IV\nI. 12. 20. 164. 0/22\nII. 12.20.170.0/23\nIII. 12.20.168.0/23\n\nCan't combine further so answer is option b and d.",
-    "id": "pyq_86_980"
+    "id": "pyq_86_980",
+    "q_snippet": "snippets/q_pyq_86_980.webp"
   },
   {
     "num": 1,
@@ -16674,7 +18426,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.14",
     "answerKey": "b",
     "solution": "Efficiency (η) = 1 1 2( ) a\n+\n\np t T a = T\n\nTransmission Time (Tt) = Frame Size Bandwidth\n\nPropagation time (TP) = Length Velocity\n\nη = p t 1 T 1+2 T\n\n• TP increases then overall efficiency will decrease (as denominator bigger than the numerator)\n\n• Also, if bandwidth (Transmission Rate) is higher than Tt value will be small and hence Tp / Tt will be a large value.\n\n• Therefore, to get overall η low, higher link length and higher transmission rate is required.",
-    "id": "pyq_89_981"
+    "id": "pyq_89_981",
+    "q_snippet": "snippets/q_pyq_89_981.webp",
+    "sol_snippet": "snippets/sol_pyq_89_981.webp"
   },
   {
     "num": 2,
@@ -16691,7 +18445,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.14",
     "answerKey": "7.08",
     "solution": "Given,\n\nd = 2100 km, v = 3 ×108 m /sec.\n\nPd = d u\n\n= 5 2100 km 3×10 km/sec\n\n= 7 × 10-3 sec. = 7 msec\n\nPacket size = 1000 byte\n\n= 8000 bits\n\nB = 100 mbps\n\n= 100 × 106 bits/sec.\n\nTd = Pkt size Bandwidth\n\n= 0.08 × 10-3 sec.\n\n= 0.08 m sec. Td (pkt)\n\nTotal time taken to send a packet form source to destination = Td (pkt) + Pd (pkt)\n\n= 0.08 + 7 = 7.08 m sec.\n\nData Link Layer",
-    "id": "pyq_90_982"
+    "id": "pyq_90_982",
+    "q_snippet": "snippets/q_pyq_90_982.webp",
+    "sol_snippet": "snippets/sol_pyq_90_982.webp"
   },
   {
     "num": 3,
@@ -16708,7 +18464,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.15",
     "answerKey": "51",
     "solution": "Frame size = 2000 bits\n\nBandwidth = 106 bit/sec.\n\nPd = 100 m /sec.\n\n𝜂 = 50% ( 1 2)\n\nTd (frame) = Frame size Bandwidth\n\n= 6 200 bits 10 bit/sec.\n\n= 2×10-3 sec.\n\n= 2 msec.\n\nAck size = 10 bits\n\nTd (Ack) = Ack size Bandwidth\n\n= 6 10 bits 10 bits/sec\n\n= 10-5 ×103 m sec.\n\n= 10-2 msec.\n\n= 1 m sec 100 .\n\n= 0.01 m sec.\n\nLink utilization (𝜂) = Useful time Total time\n\nd d d d rd d N× T frame\n1 2\nT frame 2 P + Q P T (Ack) =\n+ ×\n+\n+\n\n1 N × 2 2 2\n2 100\n=\n+ ×\n+\n\n4N = 202.01\n\nN = 4\n\nN = 50.51\n\nN = 51",
-    "id": "pyq_92_983"
+    "id": "pyq_92_983",
+    "q_snippet": "snippets/q_pyq_92_983.webp"
   },
   {
     "num": 4,
@@ -16725,7 +18482,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.15",
     "answerKey": "89.33",
     "solution": "B = 106 bit /sec.\n\nPd = 0.75 m sec/\n\nPacket size = data + Header\n\nFrame size = 1980 + 20\n\n= 20,00 byte\n\n= 16,000 bits\n\nTd (frame) = Frame size Bandwidth\n\n= 6 16,000 bits 10 bits / sec.\n\n= 16 msec.\n\nAck size = 20 byte = 160 bits\n\nTd (ack) = Ack size Bandwidth\n\n= 6 160 bits 10 bit/sec\n\n= 160 ×10-6 sec.\n\n= .16 ×10-6 sec.\n\n= 0.16 m sec.\n\nuseful time total time η=\n\nd d d d rd d T frame η = T frame + 2 × P + Q + P + T Ack\n\n16 16 2 0 =\n+\n×\n+\n+\n+\n\n16 η=\n\nη=\n\n89.33% η=",
-    "id": "pyq_89_984"
+    "id": "pyq_89_984",
+    "q_snippet": "snippets/q_pyq_89_984.webp"
   },
   {
     "num": 5,
@@ -16742,7 +18500,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.15",
     "answerKey": "d",
     "solution": "B = 106 bit /sec.\n\nPacket size = 50,000 byte\n\n= 8 ×50,000 bits\n\n= 4,00000 bits\n\nComputer Networks\n\nTd (P) = Packet size Bandwidth\n\n= 6 4,00000 bits 10 bits/sec\n\n= 400×10-3 sec.\n\nP = 400 m/sec.\n\nd = 10,000 km\n\nv = 2 × 108 m/sec. = 2×105 km/sec.\n\nPd (q) = Distance Velocity\n\n= 5 10,000 km 2×10 km/sec\n\n= 50 ×10-3 sec.\n\nq = 50 msec.",
-    "id": "pyq_90_985"
+    "id": "pyq_90_985",
+    "q_snippet": "snippets/q_pyq_90_985.webp",
+    "sol_snippet": "snippets/sol_pyq_90_985.webp"
   },
   {
     "num": 6,
@@ -16759,7 +18519,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.16",
     "answerKey": "2500",
     "solution": "Pd = 100 m sec.\n\n= 100 × 10-3 sec.\n\n= 10-1 sec. = 1 10sec.\n\nFrame size = 1000 Byte = 8000 bits\n\nB (Sender) = 80 kbps\n\n= 80 × 103 bits/sec.\n\nTd (frame) = Frame size Bandwidth = 8 8000 bits 80×10 bits/sec\n\n1 = sec. 10\n\nAck size = 100 byte\n\n= 800 bits\n\nB (Receiver) = 8 ×103 bit/sec.\n\nTd (Ack) = Ack size Bandwidth\n\n= 3 800 1 = sec 10 8 × 10 bit/sec\n\nThroughput = Frame size Bandwidth\n\nd d d rd d 800bits T frame + 2 × P + Q + P + T Ack =\n\n= 800 bits 1 1 1 sec + 2 × sec, + sec, 10 10 10\n\n= 800 bits 0.4 sec\n\n= 20,000 bits/sec.\n\n= 20,000 byte/sec 8\n\nThroughput = 2500 byte /sec.",
-    "id": "pyq_92_986"
+    "id": "pyq_92_986",
+    "q_snippet": "snippets/q_pyq_92_986.webp",
+    "sol_snippet": "snippets/sol_pyq_92_986.webp"
   },
   {
     "num": 7,
@@ -16776,7 +18538,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.16",
     "answerKey": "4",
     "solution": "B = 128 × 103 bits/sec.\n\nPd = 150 m sec.\n\nFrame size = 1 KB\n\n= 1024 byte\n\n= 8 × 1024 bits\n\nTd(frame) = Frame size Bandwidth\n\n= 8\n8 1024bit\n128 10 bits/sec × ×\n\n= 64 × 10-3 sec.\n\n= 64 m sec.\n\nuseful total time η=\n\n1 = s d d d d rd d W T frame T frame + 2 × P + Q + P + T Ack\n\ns W 64 1 1 64\n2 150\n× =\n+ ×\n\ns 364 W 64 =\n\nWs = 5.68 Ws ≅6 In selective repeat minimum sequence number required = 6 + 6 = 12\n\n2k = 12\n\nData Link Layer\n\n2k = 24\n\nK = 4 bit",
-    "id": "pyq_89_987"
+    "id": "pyq_89_987",
+    "q_snippet": "snippets/q_pyq_89_987.webp",
+    "sol_snippet": "snippets/sol_pyq_89_987.webp"
   },
   {
     "num": 8,
@@ -16793,7 +18557,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.17",
     "answerKey": "8",
     "solution": "Given,\n\nd = 8000 Km\n\nB = 500×106 bits/sec.\n\nu = 4 × 106 m /sec.\n\nPacket size/Frame size = 107 bits\n\nu = 4 × 103 km/sec.\n\nPd = d u\n\n= 3 8000km 2sec\n4 10 km/sec\n= ×\n\nTd (frame) = Frame size Bandwidth\n\n7 6 10 bits 0.02sec 500 10 bits/sec = = × .\n\n𝜂 = useful time total time\n\nd d d d rd d N × T frame 1 T frame + 2 × P + Q + P + T Ack =\n\n1 N × 0.02 = I 0.02 + 2 × 2\n\nN=\n\nN = 201\n\nMinimum sequence number required in GB-N =\n\n201 +1 = 202\n\n2k = 202\n\n2k = 28\n\nK = 8 bit",
-    "id": "pyq_90_988"
+    "id": "pyq_90_988",
+    "q_snippet": "snippets/q_pyq_90_988.webp",
+    "sol_snippet": "snippets/sol_pyq_90_988.webp"
   },
   {
     "num": 9,
@@ -16810,7 +18576,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.17",
     "answerKey": "12",
     "solution": "Given,\n\nFrame size = 1000 byte\n\n= 8000 byte\n\n1 4 η=\n\nB = 106 bits/sec.\n\nTd (frame) = Frame size Bandwidth\n\n= 6 8000 bits 10 bits/sec\n\n= 8 × 10-3 sec.\n\n= 8 m sec.\n\nη = useful time total time\n\nd d d d rd d T frame 1 = 4 T frame + 2 × P + Q + P + T Ack\n\nD 1 8 = 4 8 + 2 × p\n\n8 + 2× Pd = 32\n\n2× Pd = 32 - 8\n\n2× Pd = 24\n\nP = 12 m sec.",
-    "id": "pyq_92_989"
+    "id": "pyq_92_989",
+    "q_snippet": "snippets/q_pyq_92_989.webp",
+    "sol_snippet": "snippets/sol_pyq_92_989.webp"
   },
   {
     "num": 10,
@@ -16827,7 +18595,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.17",
     "answerKey": "320",
     "solution": "Given,\n\nB = 64×103 bit/sec, Pd = 20 m sec.\n\nη > 0.5\n\n1 2 η≥\n\nuse ful ltime 1 ³ total time 2\n\nd d d d rd d T frame 1 T frame + 2 × P + Q + P + T Ack 2 ⇒ ≥\n\nd d d T frame 1 T frame + 2× P 2 ⇒ ≥\n\n⇒ 2 × Td (Frame) > Td (frame) +2 × Pd\n\n⇒ Td (frame) > 2 × Pd\n\nComputer Networks\n\n⇒Frame size Bandwidth > 2 × Pd\n\n⇒ 𝐿 𝐵> 2 × 𝑃𝑑\n\n⇒ L > 2 × Pd × B\n\n⇒ L > 2 × 20 × 10-3 sec × 64 ×10-3 bits/sec.\n\n⇒ L > 2 × 20 × 64 bits\n\n⇒ 2 20 64 byte 8 L × × ≥\n\n⇒ L > 320 byte",
-    "id": "pyq_89_990"
+    "id": "pyq_89_990",
+    "q_snippet": "snippets/q_pyq_89_990.webp",
+    "sol_snippet": "snippets/sol_pyq_89_990.webp"
   },
   {
     "num": 11,
@@ -16844,7 +18614,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.18",
     "answerKey": "5",
     "solution": "Given,\n\nFrame size = 1KB = 1024 Byte = 8 × 1024 bits\n\n= 8192 bits\n\nB = 1.5 mbps\n\n= 1.5 × 106 bits/sec.\n\nPd = 50 msec.\n\nTd(frame) = Frame size Bandwidth\n\n= 6 8192 bits 1.5 10 bits/sec. ×\n\n= 5461.33 × 10-6 sec.\n\n= 5.461 × 10-3 sec.\n\n= 5.461 m sec.\n\nη = useful time total time = 60% = 0.6\n\ns d d d d rd d W × T Frame 0.6 = T Frame + 2 × P + Q + P + T Ack\n\ns W 1 2 50 × =\n+\n×\n\ns 105.461×0.6 W =\n\n12 s W =\n\nMinimum sequence Number required in SR\n\n= 12+12 = 24\n\n2k = 24\n\n2k = 25\n\nK = 5 bit",
-    "id": "pyq_90_991"
+    "id": "pyq_90_991",
+    "q_snippet": "snippets/q_pyq_90_991.webp",
+    "sol_snippet": "snippets/sol_pyq_90_991.webp"
   },
   {
     "num": 12,
@@ -16861,7 +18633,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.18",
     "answerKey": "d",
     "solution": "Frame size = 1000 bits\n\nB = 106 bps = 106 bits/sec, Pd = 25 msec.\n\nd Framesize T (frame) = Bandwidth\n\n= 6 1000 bits 10 bits / sec. = 10-3 sec. = 1 msec.\n\nMaximally packed means capacity of link\n\nCapacity of link = B× Pd\n\n= 106 bit/sec. × 25×10-3 sec.\n\n= 25 ×103 bits\n\n= 25,000 bits\n\nNumber of frame = 25,000 bits 25 1000 bits =\n\n2l = 25\n\n2l = 25\n\n5 bit l =",
-    "id": "pyq_92_992"
+    "id": "pyq_92_992",
+    "q_snippet": "snippets/q_pyq_92_992.webp",
+    "sol_snippet": "snippets/sol_pyq_92_992.webp"
   },
   {
     "num": 13,
@@ -16878,7 +18652,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.18",
     "answerKey": "c",
     "solution": "Sender window size = 2l = 25 = 32\n\nMinimum time the sender will have to wait before transmitting the next frame = total time - useful time\n\n= Total time - Ws × Td\n\n= 52 m sec. - 32 × 1 msec.\n\n= 20 msec.\n\nd d d Total time - T frame + 2× P + Q rd\n+ P\nd\n+ T\nAck\n\n= 1 msec. + 2× 25msec. + 1 msec.\n\nData Link Layer\n\n(ACK is piggy backed we are assuming frame size\nfor piggybacking is also 1000 bits.)\n\n= 52 msec.",
-    "id": "pyq_89_993"
+    "id": "pyq_89_993",
+    "q_snippet": "snippets/q_pyq_89_993.webp",
+    "sol_snippet": "snippets/sol_pyq_89_993.webp"
   },
   {
     "num": 14,
@@ -16895,7 +18671,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.19",
     "answerKey": "a",
     "solution": "v = 3 ×108 m/sec.\n\nη = 1 4 , GB - 127\n\nN = 127\n\nd = 36,504 ×2 = 73008 km\n\nPd = 5 d 73,008 km\n3 10 km\nv = ×\n\n= 24336 ×10-5 sec. = 0.24336 sec.\n\nUseful time Efficiency = Total time d d d d N× T (PKt) 1 4 T (PKt) 2×P + Q =\n+\nrd\n+ P\nd\n+ T (ACk)\n0 0 0\n\nd d d 127 T (Pkt) 1 4 T (Pkt)+2×P × =\n\n127 × 4 ×Td (Pkt) = Td (Pkt) +2 × Pd\n\n508 Td = Td + 2× Pd\n\n507 Td = 2× Pd\n\nd d 2 P T 507 × =\n\nd\n2 0.24336sec.\nT 507 × =\n\nL\n2 0.24336sec.\nB 507 × =\n\n2 0.24336 sec L = × 6 . 10 bits/ sec. × 507\n\nL = 960 bits\n\n960 L = Byte 8\n\nL = 120 Byte.",
-    "id": "pyq_90_994"
+    "id": "pyq_90_994",
+    "q_snippet": "snippets/q_pyq_90_994.webp",
+    "sol_snippet": "snippets/sol_pyq_90_994.webp"
   },
   {
     "num": 15,
@@ -16912,7 +18690,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.19",
     "answerKey": "a",
     "solution": "C1 C2 3 C4 5 6 7 C8 9 10 11 12 0 1 1 0 0 1 0 y x 0 1 1\n\nC1 1 3 5 7 9 11 0 1 0 0 X 1\n\nX = 0 (for even parity)\n\nC2 2 3 6 7 10 11 1 1 1 0 0 1\n\nNumber of 1's→ even (even parity)\n\nC4 4 5 6 7 12 0 0 1 0 1\n\nNumber of 1's → even (even parity)\n\nC8 8 9 10 11 12 y x 0 1 1 0 0 0 1 1\n\n→ even parity (y = 0)",
-    "id": "pyq_92_995"
+    "id": "pyq_92_995",
+    "q_snippet": "snippets/q_pyq_92_995.webp",
+    "sol_snippet": "snippets/sol_pyq_92_995.webp"
   },
   {
     "num": 16,
@@ -16929,7 +18709,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.19",
     "answerKey": "c",
     "solution": "Generator = X3+ X+ 1 = 1.X3 + 0.X2 + 1.X1 + 1.X0 = (1011)2\n\nComputer Networks",
-    "id": "pyq_89_996"
+    "id": "pyq_89_996",
+    "q_snippet": "snippets/q_pyq_89_996.webp",
+    "sol_snippet": "snippets/sol_pyq_89_996.webp"
   },
   {
     "num": 17,
@@ -16946,7 +18728,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.20",
     "answerKey": "a",
     "solution": "0 0 0 0 0 (a)\n\n0 1 0 1 1 (b)\n\n1 0 1 0 1 (c)\n\n1 1 1 1 0 (d)\n\nHamming distance (a, b) = 3\n\nHamming distance (a, c) = 3\n\nHamming distance (a, d) = 4\n\nHamming distance (b, c) = 4\n\nHamming distance (b, d) = 3\n\nMinimum Hamming distance = 3\n\nMin Hamming distance required to correct 'd' bit error = 2d + 1\n\n2d + 1 = 3\n\n2d = 2\n\nd = 1",
-    "id": "pyq_90_997"
+    "id": "pyq_90_997",
+    "q_snippet": "snippets/q_pyq_90_997.webp",
+    "sol_snippet": "snippets/sol_pyq_90_997.webp"
   },
   {
     "num": 18,
@@ -16963,7 +18747,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.20",
     "answerKey": "c",
     "solution": "Given, x3 +x + 1\n\n= 1- x3 + 0.x2 + 1.x1 + 1xº\n\n= 1011\n\nCRC = 101\n\nTransmitted data: 01011011101",
-    "id": "pyq_92_998"
+    "id": "pyq_92_998",
+    "q_snippet": "snippets/q_pyq_92_998.webp",
+    "sol_snippet": "snippets/sol_pyq_92_998.webp"
   },
   {
     "num": 19,
@@ -16980,7 +18766,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.20",
     "answerKey": "c",
     "solution": "If G(x) has a factor of x+1 then it can detect odd number of bits error.",
-    "id": "pyq_89_999"
+    "id": "pyq_89_999",
+    "q_snippet": "snippets/q_pyq_89_999.webp",
+    "sol_snippet": "snippets/sol_pyq_89_999.webp"
   },
   {
     "num": 20,
@@ -16997,7 +18785,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.20",
     "answerKey": "c",
     "solution": "2-D parity scheme and column do and row r4 of parity bits computed using even parity scheme.\n\nd7 d6 d5 d4 d3 d2 d1 d0 r0 0 1 0 1 0 0 1 1 r1 1 1\n0 1\n0 1 1 1 0 × (error) r2 0 0 0 1 0 1 0 0 r3 0 1 1 0 1 0 1 0 r4 1 1 0 0 0\n1 0\n1\n0 1\n\n🗸 🗸 × (error) 🗸 🗸 × (error) 🗸 × (error) Bits got corrupted are:\n\n(r1, d5), (r4, d2), (r4, d0)\n\nTotal three bits got corrupted.\n\nData Link Layer",
-    "id": "pyq_90_1000"
+    "id": "pyq_90_1000",
+    "q_snippet": "snippets/q_pyq_90_1000.webp",
+    "sol_snippet": "snippets/sol_pyq_90_1000.webp"
   },
   {
     "num": 21,
@@ -17014,7 +18804,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.21",
     "answerKey": "b",
     "solution": "Given\n\nBaud rate = 9600 Bps\n\nMode: Asynchronous mode with odd parity and stop bits\n\nNote: In asynchronous mode data is transmitted in the form of byte or character.\n\nStar bit = 1\n\nOdd parity bit =1\n\nStop bit = 2\n\nNumber of bits sent in 1 byte = 8 + 1 + 1 + 2 = 12 bits\n\nBaud rate = 9600 12 bytes /sec = 800 bytes/sec.\n\nIn 1 sec. 800 bytes\n\nThen In 15 sec. 15 × 800 = 12000 bytes",
-    "id": "pyq_92_1001"
+    "id": "pyq_92_1001",
+    "q_snippet": "snippets/q_pyq_92_1001.webp"
   },
   {
     "num": 22,
@@ -17031,7 +18822,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.21",
     "answerKey": "b",
     "solution": "8-bit delimiter pattern (flag) = 01111110\n\nOutput bit string = 01111100101\n\nIn bit stuffing a bit in stuffed in the input data after every continuous 1's, one less than in the flag or delimiter pattern.\n\nOutput data: 01111100101\n\nBit is stuffed in the input data\n\nSo, the input data will be: 0111110101",
-    "id": "pyq_89_1002"
+    "id": "pyq_89_1002",
+    "q_snippet": "snippets/q_pyq_89_1002.webp"
   },
   {
     "num": 1,
@@ -17048,7 +18840,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.24",
     "answerKey": "130 to 140",
     "solution": "2. (50 to 50)",
-    "id": "pyq_93_1003"
+    "id": "pyq_93_1003",
+    "q_snippet": "snippets/q_pyq_93_1003.webp",
+    "sol_snippet": "snippets/sol_pyq_93_1003.webp"
   },
   {
     "num": 2,
@@ -17065,7 +18859,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.24",
     "answerKey": "50",
     "solution": "Carrier sense time t = 5 unit\n\nTransmission time = 20 unit\n\nSpeed = 10 meter/unit\n\nt < 5 unit\n\nDistance = speed × time\n\nDistance < 10 meter/unit × 5 unit\n\nDistance < 50 meter.",
-    "id": "pyq_94_1004"
+    "id": "pyq_94_1004",
+    "q_snippet": "snippets/q_pyq_94_1004.webp",
+    "sol_snippet": "snippets/sol_pyq_94_1004.webp"
   },
   {
     "num": 3,
@@ -17082,7 +18878,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.24",
     "answerKey": "3",
     "solution": "Using 8-port ethernet switch with no separate unlink port 7 machines or computers can be connected. So,\nfor 15 machines we required 3 such kind of\nswitches.",
-    "id": "pyq_93_1005"
+    "id": "pyq_93_1005",
+    "q_snippet": "snippets/q_pyq_93_1005.webp",
+    "sol_snippet": "snippets/sol_pyq_93_1005.webp"
   },
   {
     "num": 4,
@@ -17099,7 +18897,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.24",
     "answerKey": "d",
     "solution": "The exponential back off algorithm is a collision resolution mechanism. This mechanism reduces the probability of collision on retransmission.\n\nMAC Sublayer",
-    "id": "pyq_94_1006"
+    "id": "pyq_94_1006",
+    "q_snippet": "snippets/q_pyq_94_1006.webp",
+    "sol_snippet": "snippets/sol_pyq_94_1006.webp"
   },
   {
     "num": 5,
@@ -17116,7 +18916,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.25",
     "answerKey": "200",
     "solution": "B = 20 * 106 bits/sec, Pd = 40 sec= 40 * 10-6 sec\n\nTd(frame) ≥ 2 * Pd\n\nL B ≥ 2 * Pd\n\nL ≥ 2 * Pd * B\n\nL ≥ 2 * 40 * 10-6 sec * 20 * 106 bits/sec\n\n= 1600 bits\n\n= 1600 8 Byte = 200 Byte.",
-    "id": "pyq_93_1007"
+    "id": "pyq_93_1007",
+    "q_snippet": "snippets/q_pyq_93_1007.webp"
   },
   {
     "num": 6,
@@ -17133,7 +18934,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.25",
     "answerKey": "d",
     "solution": "B = 108 bits/sec.\n\nd = 1 km\n\nMinimum Frame size (l) = 1250 bytes\n\n= 8 × 1250 bits\n\n= 10,000 bits\n\nv = ?\n\nd d d JAM signal T frame 2× P T\n\n+\n0\n\nL d 2 × B v\n\n8 10,000 bits 2 × 1 km\n\nv 10 bits/sec\n\n4 1 2\n\n10 v\n\nv = 2 ×104 km/sec\n\nv = 20,000 km/sec",
-    "id": "pyq_94_1008"
+    "id": "pyq_94_1008",
+    "q_snippet": "snippets/q_pyq_94_1008.webp",
+    "sol_snippet": "snippets/sol_pyq_94_1008.webp"
   },
   {
     "num": 7,
@@ -17150,7 +18953,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.25",
     "answerKey": "0.4404",
     "solution": "Probability = S1 (1 - S2) (1 - S3) (1 - S4) + (1 - S1) S2 (1 - S3) (1 - S4) + (1 - S1) (1 - S2) S3 (1 - S4) +(1 - S1) (1 - S2) (1 - S3) S4\n\n= (0.1 × 0.8 × 0.7 × 0.6) + (0.9 × 0.2 × 0.7 × 0. 6) + (0.9 × 0.8 × 0.3 × 0.6) + (0.9 × 0.8× 0.7 × 0.4) = 0.4404",
-    "id": "pyq_93_1009"
+    "id": "pyq_93_1009",
+    "q_snippet": "snippets/q_pyq_93_1009.webp",
+    "sol_snippet": "snippets/sol_pyq_93_1009.webp"
   },
   {
     "num": 8,
@@ -17167,7 +18972,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.25",
     "answerKey": "b",
     "solution": "Td(frame) ≥ 2 * Pd\n\n2* ≥ L d B v\n\n6 10000bits 2* 200000 / sec 500*10 bits/sec ≥ d km\n\n2KM ≤ d",
-    "id": "pyq_94_1010"
+    "id": "pyq_94_1010",
+    "q_snippet": "snippets/q_pyq_94_1010.webp",
+    "sol_snippet": "snippets/sol_pyq_94_1010.webp"
   },
   {
     "num": 9,
@@ -17184,7 +18991,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.25",
     "answerKey": "b",
     "solution": "B = 109 bits/sec\n\nd = 200 mtr\n\nv = 2 * 108 m/sec\n\n8 200 2*10 / sec = = d d P v m\n\n= 100 * 10-8 sec.\n\nMinimum frame size in CSMA/CD\n\n2* ≥\n+\nframe JAM signal d d d T P T\n\n2* ≥ d L P B\n\nL ≥ 2 * Pd * B\n\nL ≥ 2 * 100 * 10-8 sec * 109 bits/sec\n\nL ≥ 2 * 100 * 10 bits\n\nL ≥ 2000 bits\n\nL ≥ 2000 8 Byte = 250 Byte.",
-    "id": "pyq_93_1011"
+    "id": "pyq_93_1011",
+    "q_snippet": "snippets/q_pyq_93_1011.webp",
+    "sol_snippet": "snippets/sol_pyq_93_1011.webp"
   },
   {
     "num": 1,
@@ -17201,7 +19010,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.32",
     "answerKey": "a, c",
     "solution": "2.\n(d)\n\nDue to the TTL value changing during forwarding, a router alters the IP packets. Since it can simply forward packets in all directions without performing any routing, a router is not required to implement any routing protocols. The packets are not assembled by the router. At the destination system, assembly is completed.",
-    "id": "pyq_95_1012"
+    "id": "pyq_95_1012",
+    "q_snippet": "snippets/q_pyq_95_1012.webp",
+    "sol_snippet": "snippets/sol_pyq_95_1012.webp"
   },
   {
     "num": 2,
@@ -17218,7 +19029,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.32",
     "answerKey": "d",
     "solution": "Official GATE Answer: (d)",
-    "id": "pyq_96_1013"
+    "id": "pyq_96_1013",
+    "q_snippet": "snippets/q_pyq_96_1013.webp",
+    "sol_snippet": "snippets/sol_pyq_96_1013.webp"
   },
   {
     "num": 3,
@@ -17235,7 +19048,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.32",
     "answerKey": "144",
     "solution": "Network Layer",
-    "id": "pyq_95_1014"
+    "id": "pyq_95_1014",
+    "q_snippet": "snippets/q_pyq_95_1014.webp",
+    "sol_snippet": "snippets/sol_pyq_95_1014.webp"
   },
   {
     "num": 4,
@@ -17252,7 +19067,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.33",
     "answerKey": "9",
     "solution": "Option = 40 Byte\n\n2 Bytes are resered for option type & length\n\n40 - 2 = 38 byte\n\nIn 38 bytes he can store 9 IPv4 address as each IPv4 address is of 4 Bytes.",
-    "id": "pyq_96_1015"
+    "id": "pyq_96_1015",
+    "q_snippet": "snippets/q_pyq_96_1015.webp",
+    "sol_snippet": "snippets/sol_pyq_96_1015.webp"
   },
   {
     "num": 5,
@@ -17269,7 +19086,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.33",
     "answerKey": "13",
     "solution": "12 × 80 = 960\n\n980 × 960 = 20B (last fragment)",
-    "id": "pyq_95_1016"
+    "id": "pyq_95_1016",
+    "q_snippet": "snippets/q_pyq_95_1016.webp",
+    "sol_snippet": "snippets/sol_pyq_95_1016.webp"
   },
   {
     "num": 6,
@@ -17286,7 +19105,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.33",
     "answerKey": "b",
     "solution": "Not Changed May be Changed Definitely Changed 1. VER 2. Header Length 3. Services\n\n4. Identification number 5. DF (Don't fragment 6. Protocol 7. SIP, DIP 1. Total length 2. MF (more fragment) 3. Fragment offset 1. TTL 2. Checksum",
-    "id": "pyq_96_1017"
+    "id": "pyq_96_1017",
+    "q_snippet": "snippets/q_pyq_96_1017.webp",
+    "sol_snippet": "snippets/sol_pyq_96_1017.webp"
   },
   {
     "num": 7,
@@ -17303,7 +19124,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.33",
     "answerKey": "c",
     "solution": "¯\n\nOffset = 6 1480 8880 8 8 × = = 1110",
-    "id": "pyq_95_1018"
+    "id": "pyq_95_1018",
+    "q_snippet": "snippets/q_pyq_95_1018.webp",
+    "sol_snippet": "snippets/sol_pyq_95_1018.webp"
   },
   {
     "num": 8,
@@ -17320,7 +19143,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.33",
     "answerKey": "262.14",
     "solution": "Number of bits in IPV4 = 32\n\nTotal number of hosts = 232\n\nTotal number of unique identifier (ID) generated per second = 232 ×1000\n\nTotal number of IDS = 250\n\nWrap around time = Total IDs IDs generated/sec\n\n= 50 32 2 2 ×1000 = 262.14 sec.",
-    "id": "pyq_96_1019"
+    "id": "pyq_96_1019",
+    "q_snippet": "snippets/q_pyq_96_1019.webp",
+    "sol_snippet": "snippets/sol_pyq_96_1019.webp"
   },
   {
     "num": 9,
@@ -17337,7 +19162,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.33",
     "answerKey": "d",
     "solution": "All the given filed TTL, Checksum, and Fragment Offset value may have change in their values.\n\nComputer Networks",
-    "id": "pyq_95_1020"
+    "id": "pyq_95_1020",
+    "q_snippet": "snippets/q_pyq_95_1020.webp",
+    "sol_snippet": "snippets/sol_pyq_95_1020.webp"
   },
   {
     "num": 10,
@@ -17354,7 +19181,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.34",
     "answerKey": "a",
     "solution": "11. (c)\n\nHLEN = 10\n\nHeader size = 10 × 4 = 10 Byte\n\nTotal Length = 400B\n\nTotal Length = Data + Header\n\nData (Payload) = 400 - 40 = 360B\n\nOffset = 300 Byte\n\nNumber of byte alned = 3 × 300\n\n= 2400 Byte",
-    "id": "pyq_96_1021"
+    "id": "pyq_96_1021",
+    "q_snippet": "snippets/q_pyq_96_1021.webp"
   },
   {
     "num": 11,
@@ -17371,7 +19199,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.34",
     "answerKey": "c",
     "solution": "12.\n(d)",
-    "id": "pyq_95_1022"
+    "id": "pyq_95_1022",
+    "q_snippet": "snippets/q_pyq_95_1022.webp",
+    "sol_snippet": "snippets/sol_pyq_95_1022.webp"
   },
   {
     "num": 12,
@@ -17388,7 +19218,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.34",
     "answerKey": "d",
     "solution": "TTL is used to Avoid Infinite looping",
-    "id": "pyq_96_1023"
+    "id": "pyq_96_1023",
+    "q_snippet": "snippets/q_pyq_96_1023.webp",
+    "sol_snippet": "snippets/sol_pyq_96_1023.webp"
   },
   {
     "num": 13,
@@ -17405,7 +19237,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.34",
     "answerKey": "c",
     "solution": "ARP request is broadcasting\n\nARP reply is unicasting",
-    "id": "pyq_95_1024"
+    "id": "pyq_95_1024",
+    "q_snippet": "snippets/q_pyq_95_1024.webp",
+    "sol_snippet": "snippets/sol_pyq_95_1024.webp"
   },
   {
     "num": 14,
@@ -17422,7 +19256,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.34",
     "answerKey": "b",
     "solution": "15. (c)\n\nAL→2times N→Intermediate Node or Router\n\nTL→2times AL→2 times\n\nNL→4times TL→2 times\n\nDLL→6times NL→ N + 2 times\n\nPL→6times DLL→2N + 2 times\n\nPL→2N + 2 times",
-    "id": "pyq_96_1025"
+    "id": "pyq_96_1025",
+    "q_snippet": "snippets/q_pyq_96_1025.webp"
   },
   {
     "num": 15,
@@ -17439,7 +19274,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.34",
     "answerKey": "c",
     "solution": "16. (a, c)",
-    "id": "pyq_95_1026"
+    "id": "pyq_95_1026",
+    "q_snippet": "snippets/q_pyq_95_1026.webp",
+    "sol_snippet": "snippets/sol_pyq_95_1026.webp"
   },
   {
     "num": 16,
@@ -17456,7 +19293,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.34",
     "answerKey": "a,c",
     "solution": "OSPF uses Dijkstra's algorithm not bellman ford algorithm. OSPF is an intra-domain routing protocol not inter domain. OSPF supports hierarchical network design (implemented using two layers).\n\nNetwork Layer",
-    "id": "pyq_96_1027"
+    "id": "pyq_96_1027",
+    "q_snippet": "snippets/q_pyq_96_1027.webp",
+    "sol_snippet": "snippets/sol_pyq_96_1027.webp"
   },
   {
     "num": 17,
@@ -17473,7 +19312,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.35",
     "answerKey": "0.5",
     "solution": "In distance vector routing every router will know the complete information of the network only with the help of neighbors.\n\nIf link Q-R is broken. Then there are two possibility that among P and Q which will send information first to each other.\n\n• If P will send the information first to Q then Q will update then its entry to reach R as 3 and network will enter in count to infinity problem. • If Q sends first then P will come to know that link Q-R is broken and will update its entry to reach R as ∞. No count to infinity problem. So, the probability that network will enter in count to infinity problem will be: 1 2 =",
-    "id": "pyq_95_1028"
+    "id": "pyq_95_1028",
+    "q_snippet": "snippets/q_pyq_95_1028.webp"
   },
   {
     "num": 18,
@@ -17490,7 +19330,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.35",
     "answerKey": "a, d",
     "solution": "R to Q\n\nR to Q = min {R-X-Q, R-Y-Q, R-Z-Q}\n3 + 4 2 + 6 5 + 8\n\n7 8 13\n\nMin = 7 (through x)\n\nR to P\n\nR to P = min {R-X-P, R-Y-P, R-Z-P}\n3 + 7 2 + 6 5 +5\n\nR to p = 8 (Through y)",
-    "id": "pyq_96_1029"
+    "id": "pyq_96_1029",
+    "q_snippet": "snippets/q_pyq_96_1029.webp",
+    "sol_snippet": "snippets/sol_pyq_96_1029.webp"
   },
   {
     "num": 19,
@@ -17507,7 +19349,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.35",
     "answerKey": "c",
     "solution": "RIP is based on distance vector routing. RIP uses UDP as transport layer protocol. And OSPF is based on link state routing. OSPF does not uses either TCP or UDP.",
-    "id": "pyq_95_1030"
+    "id": "pyq_95_1030",
+    "q_snippet": "snippets/q_pyq_95_1030.webp"
   },
   {
     "num": 20,
@@ -17524,7 +19367,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.35",
     "answerKey": "a",
     "solution": "Open Shortest Path First (OSPF) and Routing Information Protocol (RIP) are both Interior Gateway Protocols, i.e., they are both employed within an autonomous system. RIP is based on distance vector routing. And OSPF is based on link state routing.",
-    "id": "pyq_96_1031"
+    "id": "pyq_96_1031",
+    "q_snippet": "snippets/q_pyq_96_1031.webp",
+    "sol_snippet": "snippets/sol_pyq_96_1031.webp"
   },
   {
     "num": 21,
@@ -17541,7 +19386,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.35",
     "answerKey": "d",
     "solution": "• In link state protocols due to LSD (link state database) the computational overhead is higher than in distance vector protocols.\n\n• Distance vector protocols with split horizon avoids persistent loop, but link state protocol there is no loop. It avoids persistent routing loops.\n\n• The states of the links can be known to the router with the help of trigger update and this values will be known immediately. Whenever there is a change in topology trigger updates are used.\n\nComputer Networks",
-    "id": "pyq_95_1032"
+    "id": "pyq_95_1032",
+    "q_snippet": "snippets/q_pyq_95_1032.webp",
+    "sol_snippet": "snippets/sol_pyq_95_1032.webp"
   },
   {
     "num": 22,
@@ -17558,7 +19405,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.36",
     "answerKey": "a",
     "solution": "At N3\n\nN3 Receive the distance vector from N2, N4\n\nNew Routing table at N3 Destination Distance NH N1 3 N2 N2 2 N2 N3 0\n-\nN4 2 N4 N5 5 N2",
-    "id": "pyq_96_1033"
+    "id": "pyq_96_1033",
+    "q_snippet": "snippets/q_pyq_96_1033.webp"
   },
   {
     "num": 23,
@@ -17575,7 +19423,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.36",
     "answerKey": "c",
     "solution": "At N3\n\nN3 receiver DV from N2, N4\n\nRouting table at N3 Destination Distance NH N1 10 N4 N2\n\nN3 0\n-\nN4\n\nN5",
-    "id": "pyq_95_1034"
+    "id": "pyq_95_1034",
+    "q_snippet": "snippets/q_pyq_95_1034.webp",
+    "sol_snippet": "snippets/sol_pyq_95_1034.webp"
   },
   {
     "num": 24,
@@ -17592,7 +19442,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.36",
     "answerKey": "c",
     "solution": "Shortest distance from R1 to R2 = 5\n\nR1 to R3 = 3\n\nR1 to R4 = 12\n\nR1 to R5 = 12\n\nR1 to R6 = 6\n\nShortest distance from R2 to R3 = 2\n\nR2 to R4 = 7\n\nR2 to R5 = 8\n\nR2 to R6 = 12\n\nShortest distance from R4 to R5 = 1\n\nR3 to R5 = 9\n\nR3 to R6 = 13\n\nShortest distance from R4 to R5 = 1\n\nR4 to R6 = 5\n\nShortest distance from R5 to R6 = 4\n\nThe links used for the shortest path. From every Routery to every other router are:\n\nR1 - R3, R2 - R3, R2 - R4, R4 - R5, R3 - R5, R5 - R6\n\nLinks Not used = R1 - R2, R4 - R6\n\nNetwork Layer\n\n1 2 4 6 R to R not used R to R not used",
-    "id": "pyq_96_1035"
+    "id": "pyq_96_1035",
+    "q_snippet": "snippets/q_pyq_96_1035.webp",
+    "sol_snippet": "snippets/sol_pyq_96_1035.webp"
   },
   {
     "num": 25,
@@ -17609,7 +19461,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.37",
     "answerKey": "b",
     "solution": "If we change the unused link value to 2 i.e. 2 1 2 R R ⎯⎯→ , 2 4 6 R R ⎯⎯→ . Then R5 - R6 will remains unused.\n\n(R5 - R6) Not used",
-    "id": "pyq_95_1036"
+    "id": "pyq_95_1036",
+    "q_snippet": "snippets/q_pyq_95_1036.webp",
+    "sol_snippet": "snippets/sol_pyq_95_1036.webp"
   },
   {
     "num": 26,
@@ -17626,7 +19480,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.37",
     "answerKey": "d",
     "solution": "Count to infinity is a problem in distance vector routing. But there is no count to infinity problem in link state routing.\n\nIn link state and distance vector routing the shortest path algorithm is run at every node.\n\nIn link state LSDP (link state database packets) generated with latest into of the network. So, in link state a greater number of network message are required.",
-    "id": "pyq_96_1037"
+    "id": "pyq_96_1037",
+    "q_snippet": "snippets/q_pyq_96_1037.webp",
+    "sol_snippet": "snippets/sol_pyq_96_1037.webp"
   },
   {
     "num": 27,
@@ -17643,7 +19499,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.37",
     "answerKey": "1575",
     "solution": "B = 107 bits sec.\n\nPkt size = 5000 byte\n\nData size = 10,000 byte\n\nNumber of Pkt = 10000B 2 5000B =\n\nd Pkt size T B = = 7 0,000 Bits 10 Bits/sec.\n\n= 500 × 10-6 sec. = 500 msec.\n\nX →HOP ⇒ N - Pkts\n\nTT = X [Td + Pd] + X-1(Qd + Prd] + N-1 (Td)\n\n= 2 [500 + 20] + 1 (35) + 1 × 500\n\n= 1000 + 40 + 35 + 500\n\n= 1575 msec.",
-    "id": "pyq_95_1038"
+    "id": "pyq_95_1038",
+    "q_snippet": "snippets/q_pyq_95_1038.webp"
   },
   {
     "num": 28,
@@ -17660,7 +19517,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.37",
     "answerKey": "a",
     "solution": "v = 108 m/sec. = 105 km/sec\n\nB = 1 Mbps\n\nd Pkt size T B = 6 1000 bits 10 bits/sec. = 1m sec.\n\nX →HOP ⇒ N Pkts\n\nd d d rd d TT= X T P X-1 Q + P N-1 T\n+\n+\n+\n\n[Queuing delay & processing delay are not given so assume 0]\n\n= 3 [1+1] + 999 ×1\n\n= 6 + 999 = 1005 msec.\n\nComputer Networks",
-    "id": "pyq_96_1039"
+    "id": "pyq_96_1039",
+    "q_snippet": "snippets/q_pyq_96_1039.webp",
+    "sol_snippet": "snippets/sol_pyq_96_1039.webp"
   },
   {
     "num": 29,
@@ -17677,7 +19536,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.38",
     "answerKey": "d",
     "solution": "Header size = 100B\n\nB = 106 Byte/sec\n\nFile size = 103 Byte\n\n= 1000 Byte\n\n1st Case:\n\nPKT size = 1000 + 100 = 1100 Byte\n\nB = 106 Byte/sec.\n\nTd = Pkt size Bandwidth = 6 1100 Byte 10 Byte/sec.\n\n= 11× 10-4 sec.\n\n= 1.1×10-3 sec.\n\n= 1.1×10-3 sec.\n\nX→ Number of Hops/ Links\n\nTotal time = x(Td) + X(Pd) + X- 1 (Qd + Prd)\n\n= 3× 1.1 msec. + 3 × 0 + 2 × 0 (Processing dealy, Queuing dealy & propagation delay are given negligiable)\n\n= 3.3 msec. (T1)\n\n2nd Case:\n\n10 Parts\n\nData size in each Pkt = 1000 Byte 100 Byte 10 =\n\nPkt size = 100 + 100 = 200 Byte\n\nTd = Pkt Byte Bandwidth\n\n= 6 200 Byte 10 Byte/sec. = 0.2 msec.\n\nFor X →HOP ⇒ N Pkts\n\nTotal time = Time for 1st Pkt + Time for Remainin (N-1) Pkt. d d d rd d Total time =X T + P X-1 Q + P N-1 T\n+\n+\n\n= 3× 0.2 + 9×0.2 = 0.6 + 1.8 = 2.4 (T2)\n\n3rd Case:\n\n20 Part N = 20\n\nData size in each Pkt =1000B 20 = 50 Byte\n\nPkt size = 50 + 100 = 150 Byte\n\nTd = Pkt size Bandwith = 6 150B 10 B/sec. = 0.15 msec.\n\nX → HoP & N- Pkt\n\nTT = X [Td + Pd] + X-1 (Qd + Prd] + N-1 (Td)\n\n= 3× 0.15 + 19 × 0.15\n\n= 0.45 + 2.28\n\n= 3.3 (T3)\n\nT1 = T3 > T2",
-    "id": "pyq_95_1040"
+    "id": "pyq_95_1040",
+    "q_snippet": "snippets/q_pyq_95_1040.webp"
   },
   {
     "num": 30,
@@ -17694,7 +19554,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.38",
     "answerKey": "c",
     "solution": "Number of subnets are calculated are number of interfaces for a router.\n\nHence in the question one router is having 3 interfaces (firewall web server and router) rest both the routers are having 2 interfaces each.\n\nSo, total number of interfaces (subnets)\n\n= 3 + 2 ×2 = 7\n\nBut among these three routers 2 routers are having a common interface.\n\nSo, total number of subnets = 7 -1 = 6",
-    "id": "pyq_96_1041"
+    "id": "pyq_96_1041",
+    "q_snippet": "snippets/q_pyq_96_1041.webp",
+    "sol_snippet": "snippets/sol_pyq_96_1041.webp"
   },
   {
     "num": 7,
@@ -17711,7 +19573,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.44",
     "answerKey": "a, b, c",
     "solution": "If a client is not using the keepalive timer then it may wait indefinitely for a packet to receive. The TCP server application on S can listen on P after reboot because session still present. If the client sends a packet after the server reboot, it will receive a RST segment.",
-    "id": "pyq_97_1042"
+    "id": "pyq_97_1042",
+    "q_snippet": "snippets/q_pyq_97_1042.webp",
+    "sol_snippet": "snippets/sol_pyq_97_1042.webp"
   },
   {
     "num": 8,
@@ -17728,7 +19592,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.44",
     "answerKey": "d",
     "solution": "Consider the state transition diagram of TCP.\n\nTransport Layer",
-    "id": "pyq_98_1043"
+    "id": "pyq_98_1043",
+    "q_snippet": "snippets/q_pyq_98_1043.webp",
+    "sol_snippet": "snippets/sol_pyq_98_1043.webp"
   },
   {
     "num": 9,
@@ -17745,7 +19611,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.45",
     "answerKey": "b",
     "solution": "10. (c)\n\nListen system call (socket API function) keeps the socket in a passive mode, where it waits for the client to approach the server to make a connection.",
-    "id": "pyq_97_1044"
+    "id": "pyq_97_1044",
+    "q_snippet": "snippets/q_pyq_97_1044.webp"
   },
   {
     "num": 10,
@@ -17762,7 +19629,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.45",
     "answerKey": "c",
     "solution": "Official GATE Answer: (c)",
-    "id": "pyq_98_1045"
+    "id": "pyq_98_1045",
+    "q_snippet": "snippets/q_pyq_98_1045.webp",
+    "sol_snippet": "snippets/sol_pyq_98_1045.webp"
   },
   {
     "num": 11,
@@ -17779,7 +19648,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.45",
     "answerKey": "c",
     "solution": "If the server Process has not executed any accept () system call that means client's process connect () system call returns an error.\n\nThere will not be any connection established between client and server.",
-    "id": "pyq_97_1046"
+    "id": "pyq_97_1046",
+    "q_snippet": "snippets/q_pyq_97_1046.webp",
+    "sol_snippet": "snippets/sol_pyq_97_1046.webp"
   },
   {
     "num": 12,
@@ -17796,7 +19667,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.45",
     "answerKey": "d",
     "solution": "Connect system call used to send the SYN packets.",
-    "id": "pyq_98_1047"
+    "id": "pyq_98_1047",
+    "q_snippet": "snippets/q_pyq_98_1047.webp",
+    "sol_snippet": "snippets/sol_pyq_98_1047.webp"
   },
   {
     "num": 13,
@@ -17813,7 +19686,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.45",
     "answerKey": "b",
     "solution": "Computer Networks",
-    "id": "pyq_97_1048"
+    "id": "pyq_97_1048",
+    "q_snippet": "snippets/q_pyq_97_1048.webp",
+    "sol_snippet": "snippets/sol_pyq_97_1048.webp"
   },
   {
     "num": 14,
@@ -17830,7 +19705,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.46",
     "answerKey": "33",
     "solution": "B = 109 bits/sec = 9 10 byte/sec. 8\n\nLT = 60 sec.\n\nMinimum sequence number required to Avoid with in the life time = 2 10g B×LT\n\n= 9 2 10 10g ×60 8\n\n= 9 2 10g 7.5 × 10\n\n= 32.8\n\n= 33 bits\n\nOR\n\n1 sec. 9 10 Byte 8\n\n1 sec. 9 10 seq No 8\n\n60sec. 9 60 10 seq No 8 ×\n\n= 7.5 ×109 seq. No\n\nMinimum sequence number required to Avoid wrap Around = 7.5× 109\n\n= 9 2 10g 7.5 10 ×\n\n= 32.8\n\n= 33 bit",
-    "id": "pyq_98_1049"
+    "id": "pyq_98_1049",
+    "q_snippet": "snippets/q_pyq_98_1049.webp"
   },
   {
     "num": 15,
@@ -17847,7 +19723,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.46",
     "answerKey": "a",
     "solution": "16. (44)\n\nRTT = 6msec.\n\nWR = 50 km\n\nSlow start threshold = 32 KB\n\nMSS = 2 KB\n\nt = 0\n\n(t + 60) m sec. , Wc = ?\n\nAt t = 0 : 2 KB At t + 6 : 4 KB Slow start At t + 12 : 8 KB At t + 18 : 16 KB At t + 24 : 32 KB\n|\n||\n|\n|\n|\n\nAt t 30: 34 KB At t 36: 36 KB At t 42: 38 KB Congestion Avoidance At t 48: 40 KB At t 54: 42 KB At t 60: 44 KB\n+\n|\n+\n|\n|\n+\n|\n+\n|\n|\n+\n|\n+\n|\n\nOR",
-    "id": "pyq_97_1050"
+    "id": "pyq_97_1050",
+    "q_snippet": "snippets/q_pyq_97_1050.webp",
+    "sol_snippet": "snippets/sol_pyq_97_1050.webp"
   },
   {
     "num": 16,
@@ -17864,7 +19742,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.46",
     "answerKey": "44 to 44",
     "solution": "Official GATE Answer: (44 to 44)",
-    "id": "pyq_98_1051"
+    "id": "pyq_98_1051",
+    "q_snippet": "snippets/q_pyq_98_1051.webp",
+    "sol_snippet": "snippets/sol_pyq_98_1051.webp"
   },
   {
     "num": 17,
@@ -17881,7 +19761,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.46",
     "answerKey": "34",
     "solution": "B = 109 bits/sec.\n\nB = 9 10 8 bits/sec.\n\n9 10 8 Bits 1 sec.\n\n9 10 8 Seq No. 1 sec.\n\n1 Seq. No 9 9 1 8 sec. sec. 10 10 8 =\n\n232 Seq. No = 32 9 2 8sec. 10 × = 34.35 = 34sec.\n\nTransport Layer OR\n\nWAT = ( Total Sec. No Bandwidth Byte/sec.\n\n= 32 2 8 = 32 9\n8 2\n10 × = 34.35 = 34. Sec.",
-    "id": "pyq_97_1052"
+    "id": "pyq_97_1052",
+    "q_snippet": "snippets/q_pyq_97_1052.webp",
+    "sol_snippet": "snippets/sol_pyq_97_1052.webp"
   },
   {
     "num": 18,
@@ -17898,7 +19780,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.47",
     "answerKey": "c",
     "solution": "Slow Start Phase: • After one RT congestion window will be double in slow start phase. • If an Ack arrives then congestion window increased by one i.e. (wc = wc + 1)",
-    "id": "pyq_98_1053"
+    "id": "pyq_98_1053",
+    "q_snippet": "snippets/q_pyq_98_1053.webp",
+    "sol_snippet": "snippets/sol_pyq_98_1053.webp"
   },
   {
     "num": 20,
@@ -17915,7 +19799,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.47",
     "answerKey": "b",
     "solution": "Statement 1 and 3 are the false statements.\n\n• If a sequence number of a segment in m, then the sequence number of the subsequent segment need not to be m +1 always because TCP can accept out of order segment but always sends in order acknowledgement.\n\n• Advertised window size can be change during the course of TCP connection.",
-    "id": "pyq_97_1054"
+    "id": "pyq_97_1054",
+    "q_snippet": "snippets/q_pyq_97_1054.webp",
+    "sol_snippet": "snippets/sol_pyq_97_1054.webp"
   },
   {
     "num": 21,
@@ -17932,7 +19818,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.47",
     "answerKey": "26",
     "solution": "Computer Networks",
-    "id": "pyq_98_1055"
+    "id": "pyq_98_1055",
+    "q_snippet": "snippets/q_pyq_98_1055.webp",
+    "sol_snippet": "snippets/sol_pyq_98_1055.webp"
   },
   {
     "num": 22,
@@ -17949,7 +19837,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.48",
     "answerKey": "1100-1300",
     "solution": "N + H = 16KB\n\nRTT= 100 × 11= 1100 msec.",
-    "id": "pyq_97_1056"
+    "id": "pyq_97_1056",
+    "q_snippet": "snippets/q_pyq_97_1056.webp"
   },
   {
     "num": 23,
@@ -17966,7 +19855,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.48",
     "answerKey": "c",
     "solution": "For this gate question marks given to all students some of students has picked the answer as 8 MSS & some of students has picked the answer as 7 MSS.",
-    "id": "pyq_98_1057"
+    "id": "pyq_98_1057",
+    "q_snippet": "snippets/q_pyq_98_1057.webp",
+    "sol_snippet": "snippets/sol_pyq_98_1057.webp"
   },
   {
     "num": 24,
@@ -17983,7 +19874,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.48",
     "answerKey": "b",
     "solution": "Capacity of token bucket = 16m bits\n\nToken added into the bucket at the rate of 'r' token per sec. r = 2m bits/sec.\n\nMaximum transmission rate 'm' = 10m bits/sec.\n\nMaximum burst time 't' = ?\n\nC t m - r =\n\n10 Mbits t 10 Mbps - 2Mpbs = , 16M bits t 8 M bits/sec = = t = 2sec.",
-    "id": "pyq_97_1058"
+    "id": "pyq_97_1058",
+    "q_snippet": "snippets/q_pyq_97_1058.webp",
+    "sol_snippet": "snippets/sol_pyq_97_1058.webp"
   },
   {
     "num": 25,
@@ -18000,7 +19893,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.48",
     "answerKey": "b",
     "solution": "• TCP uses the congestion policies to deal with congestion. And with the help of window scaling factor it deals with the flow control.\n\n• Fast retransmit deals with congestion.\n\nSo, statements S1 and S3 are the only correct statement.",
-    "id": "pyq_98_1059"
+    "id": "pyq_98_1059",
+    "q_snippet": "snippets/q_pyq_98_1059.webp",
+    "sol_snippet": "snippets/sol_pyq_98_1059.webp"
   },
   {
     "num": 26,
@@ -18017,7 +19912,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.48",
     "answerKey": "d",
     "solution": "In slow start-phase of the TCP congestion algorithm, the size of the congestion window increases exponentially.",
-    "id": "pyq_97_1060"
+    "id": "pyq_97_1060",
+    "q_snippet": "snippets/q_pyq_97_1060.webp",
+    "sol_snippet": "snippets/sol_pyq_97_1060.webp"
   },
   {
     "num": 6,
@@ -18034,7 +19931,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.51",
     "answerKey": "a",
     "solution": "FTP uses two types of connection\n\n(i) Control connection\n\n(ii) Data Connection\n\nIn Non-persistent mode HTTP can use different TCP connections for different objects of webpage.\n\nComputer Networks",
-    "id": "pyq_98_1061"
+    "id": "pyq_98_1061",
+    "q_snippet": "snippets/q_pyq_98_1061.webp",
+    "sol_snippet": "snippets/sol_pyq_98_1061.webp"
   },
   {
     "num": 7,
@@ -18051,7 +19950,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.52",
     "answerKey": "d",
     "solution": "Protocol used for sending email - SMTP Protocols used to retrieve emails - POP3, IMAP4",
-    "id": "pyq_98_1062"
+    "id": "pyq_98_1062",
+    "q_snippet": "snippets/q_pyq_98_1062.webp"
   },
   {
     "num": 8,
@@ -18068,7 +19968,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.52",
     "answerKey": "c",
     "solution": "Steless Stefull DNS POP SMTP IMAP HTTP FTP",
-    "id": "pyq_98_1063"
+    "id": "pyq_98_1063",
+    "q_snippet": "snippets/q_pyq_98_1063.webp",
+    "sol_snippet": "snippets/sol_pyq_98_1063.webp"
   },
   {
     "num": 9,
@@ -18085,7 +19987,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.52",
     "answerKey": "c",
     "solution": "SMTP uses TCP as transport layer protocol. In transport layer TCP is used to support electronic mail.",
-    "id": "pyq_98_1064"
+    "id": "pyq_98_1064",
+    "q_snippet": "snippets/q_pyq_98_1064.webp",
+    "sol_snippet": "snippets/sol_pyq_98_1064.webp"
   },
   {
     "num": 10,
@@ -18102,7 +20006,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.52",
     "answerKey": "c",
     "solution": "M1- SMTP (Push the mail from client to server) M2- POP (is usded for downloading the mail\n\nfrom mail server) M3 - HTTP (Messaging from receiving server\n\nto web browser is done through\n\nHTTP)",
-    "id": "pyq_98_1065"
+    "id": "pyq_98_1065",
+    "q_snippet": "snippets/q_pyq_98_1065.webp",
+    "sol_snippet": "snippets/sol_pyq_98_1065.webp"
   },
   {
     "num": 11,
@@ -18119,7 +20025,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.52",
     "answerKey": "c",
     "solution": "DNS→ Domain Name to IP Add\n\nARP→ IP to MAC to Address\n\nRARP→ MAC add to IP Address",
-    "id": "pyq_98_1066"
+    "id": "pyq_98_1066",
+    "q_snippet": "snippets/q_pyq_98_1066.webp"
   },
   {
     "num": 12,
@@ -18136,7 +20043,9 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.52",
     "answerKey": "4",
     "solution": "Number of query response pairs = 4",
-    "id": "pyq_98_1067"
+    "id": "pyq_98_1067",
+    "q_snippet": "snippets/q_pyq_98_1067.webp",
+    "sol_snippet": "snippets/sol_pyq_98_1067.webp"
   },
   {
     "num": 13,
@@ -18153,6 +20062,8 @@ var PYQS_DATA = window.PYQS_DATA = [
     "sol_book_page": "3.52",
     "answerKey": "c",
     "solution": "Initially we send DNS request to find IP address then we send SYN segment for connection establishment and then we get the result through HTTP.\n\nThe correct sequence is: DNS query, TCP SYN, HTTP GET request",
-    "id": "pyq_98_1068"
+    "id": "pyq_98_1068",
+    "q_snippet": "snippets/q_pyq_98_1068.webp",
+    "sol_snippet": "snippets/sol_pyq_98_1068.webp"
   }
 ];
