@@ -1,5 +1,5 @@
 # 🎓 GATE CS 2027 Preparation Hub & Command Center
-**Authoritative Preparation Dashboard for GATE 2027 **  
+**Authoritative Preparation Dashboard for GATE 2027**  
 **Start Date: 22 September 2026 | Timeline: ~139 Days (20 Weeks) | Target: AIR < 100**
 
 ---
