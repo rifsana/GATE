@@ -1403,6 +1403,155 @@
       from { opacity: 0; transform: translateY(-4px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    /* Book Page Badges & Viewer */
+    .pyq-page-pill {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: rgba(148, 163, 184, 0.1);
+      color: var(--text-2);
+      border: 1px solid var(--border);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .pyq-page-pill i {
+      color: var(--accent);
+    }
+
+    .pyq-sol-tabs-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .pyq-tab-btn {
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      background: var(--bg-surface);
+      color: var(--text-2);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .pyq-tab-btn:hover {
+      color: var(--text-1);
+      background: var(--bg-surface-hover);
+      border-color: var(--border-strong);
+    }
+
+    .pyq-tab-btn.active {
+      background: var(--accent-muted);
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .pyq-sol-book-container {
+      background: #0f172a;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      margin-top: 8px;
+    }
+
+    .book-img-header-hint {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 14px;
+      background: rgba(0, 0, 0, 0.3);
+      font-size: 11.5px;
+      color: var(--text-3);
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .book-page-wrapper {
+      max-height: 520px;
+      overflow-y: auto;
+      text-align: center;
+      background: #1e293b;
+      padding: 10px;
+    }
+
+    .book-page-embed {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      background: #ffffff;
+      display: inline-block;
+    }
+
+    /* Fullscreen Book Modal */
+    .book-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .book-modal-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 900px;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    }
+
+    .book-modal-header {
+      padding: 12px 18px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg-surface-elevated);
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .book-modal-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px;
+      background: #090d16;
+      text-align: center;
+    }
+
+    .book-modal-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.5);
+      background: #ffffff;
+    }
   </style>
 </head>
 <body>
@@ -2131,6 +2280,72 @@
       return escaped;
     }
 
+    
+    let CURRENT_MODAL_PAGE = 1;
+    let CURRENT_MODAL_INFO = {};
+
+    function switchSolTab(id, tab) {
+      const bookBtn = document.getElementById('tab-book-' + id);
+      const textBtn = document.getElementById('tab-text-' + id);
+      const bookView = document.getElementById('sol-view-book-' + id);
+      const textView = document.getElementById('sol-view-text-' + id);
+
+      if (tab === 'book') {
+        if (bookBtn) bookBtn.classList.add('active');
+        if (textBtn) textBtn.classList.remove('active');
+        if (bookView) bookView.style.display = 'block';
+        if (textView) textView.style.display = 'none';
+      } else {
+        if (bookBtn) bookBtn.classList.remove('active');
+        if (textBtn) textBtn.classList.add('active');
+        if (bookView) bookView.style.display = 'none';
+        if (textView) textView.style.display = 'block';
+      }
+    }
+
+    function openBookModal(pageNum, subject, chapter, qNum, bookPageLabel) {
+      CURRENT_MODAL_PAGE = pageNum || 1;
+      CURRENT_MODAL_INFO = { subject, chapter, qNum, bookPageLabel };
+      updateBookModalView();
+      const modal = document.getElementById('book-page-modal');
+      if (modal) modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function updateBookModalView() {
+      const img = document.getElementById('book-modal-img');
+      const pageNumEl = document.getElementById('book-modal-page-num');
+      const titleEl = document.getElementById('book-modal-title');
+      const externalLink = document.getElementById('book-modal-external');
+
+      const imgUrl = `book_pages/p_${CURRENT_MODAL_PAGE}.webp`;
+      if (img) img.src = imgUrl;
+      if (externalLink) externalLink.href = imgUrl;
+
+      if (pageNumEl) {
+        pageNumEl.textContent = `PDF p. ${CURRENT_MODAL_PAGE}`;
+      }
+
+      if (titleEl) {
+        titleEl.innerHTML = `
+          <i class="fa-solid fa-book-open" style="color: var(--accent);"></i>
+          <span>${CURRENT_MODAL_INFO.subject || 'GATE'} • ${CURRENT_MODAL_INFO.chapter || 'PYQ'} (PDF p. ${CURRENT_MODAL_PAGE})</span>
+        `;
+      }
+    }
+
+    function navBookModal(delta) {
+      CURRENT_MODAL_PAGE = Math.max(1, Math.min(606, CURRENT_MODAL_PAGE + delta));
+      updateBookModalView();
+    }
+
+    function closeBookModal(event) {
+      if (event && event.target && event.target.closest('.book-modal-box')) return;
+      const modal = document.getElementById('book-page-modal');
+      if (modal) modal.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
     function togglePyqSolution(id) {
       const drawer = document.getElementById('sol-drawer-' + id);
       const btn = document.getElementById('btn-sol-' + id);
@@ -2277,10 +2492,22 @@
                         <span class="res-type-tag">${q.type}</span>
                         <span class="badge-time">${q.exam}</span>
                         <span class="pyq-sub-tag">${q.subject} • ${q.chapter}</span>
+                        <span class="pyq-page-pill" title="Original printed book page">
+                          <i class="fa-solid fa-book"></i> Book p. ${q.q_book_page} (PDF p. ${q.q_page})
+                        </span>
+                        <span class="pyq-page-pill" title="Original question number in book">
+                          <i class="fa-solid fa-hashtag"></i> Book #${q.book_qnum || q.num}
+                        </span>
                       </div>
-                      <button class="action-link-btn" onclick="flagPyqToMistakes('${q.subject}', '${q.chapter} Q${q.num}', '${q.exam}')" title="Send trap to Mistake Vault" style="padding: 3px 8px; font-size: 11px;">
-                        <i class="fa-solid fa-triangle-exclamation"></i> Flag Trap
-                      </button>
+                      
+                      <div style="display: flex; align-items: center; gap: 6px;">
+                        <button class="action-link-btn" onclick="openBookModal(${q.q_page}, '${q.subject}', '${q.chapter}', ${q.book_qnum || q.num}, '${q.q_book_page}')" title="Open original printed book question page">
+                          <i class="fa-solid fa-file-lines"></i> View Book Page
+                        </button>
+                        <button class="action-link-btn" onclick="flagPyqToMistakes('${q.subject}', '${q.chapter} Q${q.num}', '${q.exam}')" title="Send trap to Mistake Vault" style="padding: 3px 8px; font-size: 11px;">
+                          <i class="fa-solid fa-triangle-exclamation"></i> Flag Trap
+                        </button>
+                      </div>
                     </div>
 
                     <div class="pyq-body-text">${formatQuestionBody(q.body)}</div>
@@ -2291,13 +2518,50 @@
                       <span>View Solution &amp; Answer Key</span>
                     </button>
 
-                    <!-- Dropdown Drawer with Solution -->
+                    <!-- Dropdown Drawer with Dual Exact Book Page & Clean Text Tabs -->
                     <div class="pyq-solution-drawer" id="sol-drawer-${q.id}">
-                      <div class="pyq-answer-banner">
-                        <i class="fa-solid fa-circle-check" style="color: var(--success);"></i>
-                        <span>Official Answer Key: <strong>(${q.answerKey})</strong></span>
+                      <div class="pyq-answer-banner" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                          <i class="fa-solid fa-circle-check" style="color: var(--success); font-size: 15px;"></i>
+                          <span>Official Answer Key: <strong>(${q.answerKey})</strong></span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                          <span class="pyq-page-pill" title="Solution location in book">
+                            <i class="fa-solid fa-lightbulb"></i> Sol p. ${q.sol_book_page} (PDF p. ${q.sol_page})
+                          </span>
+                          <button class="action-link-btn" onclick="openBookModal(${q.sol_page}, '${q.subject}', '${q.chapter}', ${q.book_qnum || q.num}, '${q.sol_book_page}')" style="padding: 3px 8px; font-size: 11px;">
+                            <i class="fa-solid fa-expand"></i> Fullscreen
+                          </button>
+                        </div>
                       </div>
-                      <div class="pyq-solution-text">${formatSolutionText(q.solution)}</div>
+
+                      <!-- Tabs: Exact Book Solution vs Text Derivation -->
+                      <div class="pyq-sol-tabs-bar">
+                        <button class="pyq-tab-btn active" id="tab-book-${q.id}" onclick="switchSolTab('${q.id}', 'book')">
+                          <i class="fa-solid fa-image"></i> Exact Book Solution (Original Page)
+                        </button>
+                        <button class="pyq-tab-btn" id="tab-text-${q.id}" onclick="switchSolTab('${q.id}', 'text')">
+                          <i class="fa-solid fa-align-left"></i> Text Derivation
+                        </button>
+                      </div>
+
+                      <!-- 1. Exact Book Page Snippet Display -->
+                      <div id="sol-view-book-${q.id}" class="pyq-sol-book-container">
+                        <div class="book-img-header-hint">
+                          <span><i class="fa-solid fa-circle-info"></i> GATE Wallah Book — Page ${q.sol_book_page} (PDF p. ${q.sol_page}) • Solution for #${q.book_qnum || q.num}. Scroll below:</span>
+                          <a href="book_pages/p_${q.sol_page}.webp" target="_blank" class="action-link-btn" style="font-size: 11px; padding: 2px 8px;">
+                            <i class="fa-solid fa-up-right-from-square"></i> Open High-Res
+                          </a>
+                        </div>
+                        <div class="book-page-wrapper">
+                          <img src="book_pages/p_${q.sol_page}.webp" alt="Book Solution Page ${q.sol_book_page}" loading="lazy" class="book-page-embed" />
+                        </div>
+                      </div>
+
+                      <!-- 2. Clean Text Derivation -->
+                      <div id="sol-view-text-${q.id}" class="pyq-solution-text" style="display: none;">
+                        ${formatSolutionText(q.solution)}
+                      </div>
                     </div>
                   </div>
                 `).join('')}
@@ -2910,5 +3174,36 @@
 
     document.addEventListener('DOMContentLoaded', init);
   </script>
+
+  <!-- Fullscreen Book Page Viewer Modal -->
+  <div id="book-page-modal" class="book-modal-overlay" style="display: none;" onclick="closeBookModal(event)">
+    <div class="book-modal-box" onclick="event.stopPropagation()">
+      <div class="book-modal-header">
+        <div id="book-modal-title" style="font-weight: 700; font-size: 14.5px; color: var(--text-1); display: flex; align-items: center; gap: 8px;">
+          <i class="fa-solid fa-book-open" style="color: var(--accent);"></i>
+          <span>GATE Wallah Official Book Viewer</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button class="day-arrow-btn" onclick="navBookModal(-1)" title="Previous Page">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <span id="book-modal-page-num" style="font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: var(--accent); padding: 0 6px;">Page</span>
+          <button class="day-arrow-btn" onclick="navBookModal(1)" title="Next Page">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <a id="book-modal-external" href="#" target="_blank" class="action-link-btn" style="padding: 4px 10px; font-size: 11.5px; margin-left: 6px;">
+            <i class="fa-solid fa-up-right-from-square"></i> Full Res
+          </a>
+          <button class="action-link-btn" onclick="closeBookModal()" style="padding: 4px 10px; font-size: 11.5px; color: var(--danger); border-color: rgba(239, 68, 68, 0.3);">
+            <i class="fa-solid fa-xmark"></i> Close
+          </button>
+        </div>
+      </div>
+      <div class="book-modal-body">
+        <img id="book-modal-img" src="" alt="Book Page" />
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
