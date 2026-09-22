@@ -18,6 +18,7 @@ Access the live interactive preparation portal at:
 - ☁️ **Live Cloud Sync**: Seamless cross-device synchronization (Laptop $\leftrightarrow$ Mobile $\leftrightarrow$ Tablet) with a single secret key.
 - 📓 **Mistake Vault**: 4-tag error tracking system (`[Concept Gap]`, `[Trap]`, `[Calculation]`, `[Formula]`) with 72-hour re-attempt protocol.
 - 🔒 **Locked Resource Directory**: Curated primary and backup resources for all 10 subjects.
+- 📖 **Official GATE Wallah Topic-Wise PYQ Bank (1,068+ Questions)**: Digitized exact questions, options, official answer keys, and step-by-step solutions mapped to every day's study topics with interactive dropdown toggle solutions.
 - 🌗 **Minimalist Design System**: Dark/Light mode, clean typography, and uncluttered interface.
 
 ---
@@ -25,6 +26,7 @@ Access the live interactive preparation portal at:
 ## 📂 Repository Contents
 
 - `index.html` — The main interactive single-page web app.
+- `pyqs_data.js` — Digitized topic-wise database containing 1,068+ GATE PYQs with official answer keys and step-by-step solutions.
 - `GATE_2027_CS_COMPLETE_BLUEPRINT.pdf` — Multi-page printable master PDF blueprint.
 - `GATE_2027_CS_MASTER_ROADMAP.md` — Detailed markdown roadmap & execution strategies.
 - `RESOURCE_MASTER_GUIDE.md` — Subject-by-subject locked video playlists & book chapters.

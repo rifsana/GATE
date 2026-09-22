@@ -5,5 +5,8 @@ compile_html.py
 build_clean_ui.py
 days_data.json
 run_server.bat
+*.py
+*.bat
+scratch/
 *.pyc
 __pycache__/
